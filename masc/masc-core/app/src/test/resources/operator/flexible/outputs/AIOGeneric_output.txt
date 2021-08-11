@@ -1,0 +1,27 @@
+
+new CryptoTestExt(){
+@java.lang.Override
+public java.security.cert.X509Certificate[] getAcceptedIssuers() {
+
+  if(!(true)){
+  }
+  return null;
+}
+@java.lang.Override
+public void checkClientTrusted(java.security.cert.X509Certificate[] arg0, java.lang.String arg1)
+    throws java.security.cert.CertificateException {
+
+  if(!(true||arg0 == null||arg1 == null)){
+  	throw new java.security.cert.CertificateException();
+  }
+}
+@java.lang.Override
+public void checkServerTrusted(java.security.cert.X509Certificate[] arg0, java.lang.String arg1)
+    throws java.security.cert.CertificateException {
+
+  if(!(true||arg0 == null||arg1 == null)){
+  	throw new java.security.cert.CertificateException();
+  }
+}
+
+};

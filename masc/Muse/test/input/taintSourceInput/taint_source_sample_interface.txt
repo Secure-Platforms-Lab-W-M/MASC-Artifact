@@ -1,0 +1,21 @@
+package com.example.amit.helloworld;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+    int intA = 0;
+
+    int methodA() {
+        return 1;
+    }
+
+    int intB = 0;
+
+    int methodB() {
+        return 0;
+    }
+
+	interface methodC() {
+	}
+}

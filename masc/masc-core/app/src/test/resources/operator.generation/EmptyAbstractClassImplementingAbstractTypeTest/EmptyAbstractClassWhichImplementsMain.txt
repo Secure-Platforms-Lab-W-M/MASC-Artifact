@@ -1,0 +1,21 @@
+public class BareBone_X509TrustManagerCanBypass {
+  public static javax.net.ssl.X509TrustManager getBareBone_X509TrustManagerCanBypassExt() {
+    return new BareBone_X509TrustManagerCanBypassExt(){
+    @Override
+    public java.security.cert.X509Certificate[] getAcceptedIssuers() {
+    	return null;
+    }
+    @Override
+    public void checkClientTrusted(java.security.cert.X509Certificate[] arg0, java.lang.String arg1) throws java.security.cert.CertificateException {
+    }
+    @Override
+    public void checkServerTrusted(java.security.cert.X509Certificate[] arg0, java.lang.String arg1) throws java.security.cert.CertificateException {
+    }
+    };
+  }
+
+  public static void main(java.lang.String[] args) {
+    java.lang.System.out.println("Hello");
+    getBareBone_X509TrustManagerCanBypassExt();
+  }
+}

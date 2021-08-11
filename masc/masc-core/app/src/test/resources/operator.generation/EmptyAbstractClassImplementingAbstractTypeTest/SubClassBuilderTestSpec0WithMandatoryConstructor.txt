@@ -1,0 +1,5 @@
+public abstract class BareBone_X509TrustManagerCanBypassExt extends javax.net.ssl.SSLContext {
+  BareBone_X509TrustManagerCanBypassExt() {
+    super(null, null, null);
+  }
+}

@@ -1,0 +1,36 @@
+package com.example.amit.helloworld;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+    String cipherName2 = "AES/CBC/PKCS5PADDING";
+
+	String cipherName1 = "AES/CBC/PKCS5PADDING";
+
+	int intA = 0;
+
+    int methodA() {
+        cipherName0 =  "DES";
+		return 1;
+    }
+
+    int intB = 0;
+
+    int methodB() {
+        cipherName1 =  "DES";
+		return 0;
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+		cipherName2 =  "DES";
+
+        this.intA = 1;
+        this.methodA();
+        this.intB = 2;
+        this.methodB();
+        setContentView(R.layout.activity_main);
+    }
+}

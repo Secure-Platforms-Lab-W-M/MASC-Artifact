@@ -1,0 +1,42 @@
+package com.example.amit.helloworld;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+    int intA = 0;
+
+    int methodA() {
+        String dataLeAk0 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+		String[] leakArRay0 = new String[] {"n/a", dataLeAk0};
+		String leAkPath0 = leakArRay0[leakArRay0.length - 1];
+		android.util.Log.d("leak-0", leAkPath0);
+		return 1;
+    }
+
+    int intB = 0;
+
+    int methodB() {
+        String dataLeAk1 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+		java.util.HashMap<String, java.util.HashMap<String, String>> leakMaP1 = new java.util.HashMap<String, java.util.HashMap<String, String>>();
+		leakMaP1.put("test", new java.util.HashMap<String, String>());
+		leakMaP1.get("test").put("test", dataLeAk1);
+		String leAkPath1 = leakMaP1.get("test").get("test");
+		android.util.Log.d("leak-1", leAkPath1);
+		return 0;
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+		String dataLeAk2 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+		StringBuffer leakBuFFer2 = new StringBuffer();for (char chAr2 : dataLeAk2.toCharArray()) {leakBuFFer2.append(chAr2);}String leAkPath2 = leakBuFFer2.toString();
+		android.util.Log.d("leak-2", leAkPath2);
+
+        this.intA = 1;
+        this.methodA();
+        this.intB = 2;
+        this.methodB();
+        setContentView(R.layout.activity_main);
+    }
+}

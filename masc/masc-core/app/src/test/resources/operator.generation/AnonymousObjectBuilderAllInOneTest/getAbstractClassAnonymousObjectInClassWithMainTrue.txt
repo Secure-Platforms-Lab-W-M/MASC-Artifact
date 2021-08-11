@@ -1,0 +1,15 @@
+public class BareBone_X509TrustManagerCanBypass {
+  public static javax.net.ssl.HostnameVerifier getHostnameVerifier() {
+    return new javax.net.ssl.HostnameVerifier(){
+    @Override
+    public boolean verify(java.lang.String arg0, javax.net.ssl.SSLSession arg1) {
+    	return true;
+    }
+    };
+  }
+
+  public static void main(java.lang.String[] args) {
+    java.lang.System.out.println("Hello");
+    getHostnameVerifier();;
+  }
+}

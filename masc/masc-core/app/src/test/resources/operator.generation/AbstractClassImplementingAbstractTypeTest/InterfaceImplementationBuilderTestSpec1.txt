@@ -1,0 +1,11 @@
+public class BareBone_X509TrustManagerCanBypass {
+  public static javax.net.ssl.X509TrustManager getBareBone_X509TrustManagerCanBypassExt() {
+    return new BareBone_X509TrustManagerCanBypassExt(){
+    };
+  }
+
+  public static void main(java.lang.String[] args) {
+    java.lang.System.out.println("Hello");
+    getBareBone_X509TrustManagerCanBypassExt();
+  }
+}

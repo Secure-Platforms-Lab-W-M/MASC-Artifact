@@ -1,0 +1,11 @@
+public class BareBone_X509TrustManagerCanBypass {
+  public static javax.net.ssl.SSLContext getSSLContext() {
+    return new javax.net.ssl.SSLContext(null, null, null){
+    };
+  }
+
+  public static void main(java.lang.String[] args) {
+    java.lang.System.out.println("Hello");
+    getSSLContext();;
+  }
+}

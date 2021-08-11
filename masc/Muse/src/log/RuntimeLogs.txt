@@ -1,0 +1,6 @@
+11-28 16:31:53.569 18932-18932/com.example.amit.helloworld D/leak-18: GMT+00:00\n
+11-28 16:31:53.599 18932-18932/com.example.amit.helloworld D/leak-22: GMT+00:00\n
+11-28 16:32:11.114 18932-18932/com.example.amit.helloworld D/leak-21: GMT+00:00\n
+11-28 16:32:11.114 18932-18932/com.example.amit.helloworld D/leak-19: GMT+00:00\n
+11-28 16:32:12.745 18932-18932/com.example.amit.helloworld D/leak-21: GMT+00:00\n
+11-28 16:32:12.745 18932-18932/com.example.amit.helloworld D/leak-19: GMT+00:00\n

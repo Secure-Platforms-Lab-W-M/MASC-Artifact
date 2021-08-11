@@ -1,0 +1,147 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>MDroidPlus</groupId>
+	<artifactId>MDroidPlus</artifactId>
+	<version>1.0.0</version>
+	<name>MDroidPlus</name>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>src</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>2.3</version>
+				<executions>
+					<!-- Run shade goal on package phase -->
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<transformers>
+								<!-- add Main-Class to manifest file -->
+								<transformer
+									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+									<mainClass>MPlus</mainClass>
+								</transformer>
+							</transformers>
+							<filters>
+								<filter>
+									<artifact>*:*</artifact>
+									<excludes>
+										<exclude>META-INF/*.SF</exclude>
+										<exclude>META-INF/*.DSA</exclude>
+										<exclude>META-INF/*.RSA</exclude>
+									</excludes>
+								</filter>
+							</filters>
+							<!-- Additional configuration. -->
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+<!--		<dependency>-->
+<!--			<groupId>org.apache.directory.studio</groupId>-->
+<!--			<artifactId>org.apache.commons.io</artifactId>-->
+<!--			<version>2.4</version>-->
+<!--		</dependency>-->
+		<dependency>
+			<groupId>org.eclipse.core</groupId>
+			<artifactId>contenttype</artifactId>
+			<version>3.4.200-v20140207-1251</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.core</groupId>
+			<artifactId>jobs</artifactId>
+			<version>3.5.300-v20130429-1813</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.core</groupId>
+			<artifactId>resources</artifactId>
+			<version>3.3.0-v20070604</version>
+		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.eclipse.core</groupId>-->
+<!--			<artifactId>runtime</artifactId>-->
+<!--			<version>3.9.0-v20130326-1255</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>org.eclipse.core</groupId>-->
+<!--			<artifactId>runtime</artifactId>-->
+<!--			<version>3.9.0-v20130326-1255</version>-->
+<!--		</dependency>-->
+		<!-- https://mvnrepository.com/artifact/org.eclipse.core/org.eclipse.core.runtime -->
+<!--		<dependency>-->
+<!--			<groupId>org.eclipse.core</groupId>-->
+<!--			<artifactId>org.eclipse.core.runtime</artifactId>-->
+<!--			<version>3.7.0</version>-->
+<!--		</dependency>-->
+		<!-- https://mvnrepository.com/artifact/org.eclipse.core/runtime -->
+		<dependency>
+			<groupId>org.eclipse.core</groupId>
+			<artifactId>runtime</artifactId>
+			<version>3.10.0-v20140318-2214</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.equinox</groupId>
+			<artifactId>common</artifactId>
+			<version>3.6.200-v20130402-1505</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.equinox</groupId>
+			<artifactId>preferences</artifactId>
+			<version>3.5.200-v20140224-1527</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jdt</groupId>
+			<artifactId>org.eclipse.jdt.core</artifactId>
+			<version>3.12.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse</groupId>
+			<artifactId>osgi</artifactId>
+			<version>3.9.1-v20130814-1242</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.eclipse.equinox/app -->
+		<dependency>
+			<groupId>org.eclipse.equinox</groupId>
+			<artifactId>app</artifactId>
+			<version>1.0.0-v20070606</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.eclipse.jdt/org.eclipse.jdt.core -->
+<!--		<dependency>-->
+<!--			<groupId>org.eclipse.jdt</groupId>-->
+<!--			<artifactId>org.eclipse.jdt.core</artifactId>-->
+<!--			<version>3.21.0</version>-->
+<!--		</dependency>-->
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
+
+
+	</dependencies>
+</project>

@@ -1,0 +1,72 @@
+package edu.wm.cs.mplus.detectors.ast.locator;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import edu.wm.cs.mplus.helper.FileHelper;
+import edu.wm.cs.mplus.model.location.MutationLocation;
+
+public class InvalidKeyIntentPutExtraLocator implements Locator {
+
+	@Override
+	public List<MutationLocation> findExactLocations(List<MutationLocation> locations) {
+		List<MutationLocation> exactMutationLocations = new ArrayList<MutationLocation>();
+
+		for(MutationLocation loc : locations){
+
+			try{
+				//Fix start column
+				loc.setStartColumn(loc.getStartColumn()+1);
+
+				List<String> lines = FileHelper.readLines(loc.getFilePath());
+
+				//Select API call substring
+				int start = loc.getStartColumn();
+				int end = loc.getStartColumn()+loc.getLength();
+
+				String linesToConsider = "";
+				boolean newLine = false;
+				for(int i = loc.getStartLine(); i <= loc.getEndLine(); i++){
+					if(newLine){
+						linesToConsider += " "+lines.get(i);
+					} else {
+						linesToConsider += lines.get(i);
+						newLine = true;
+					}
+				}
+
+				String apiCall = linesToConsider.substring(start, end);			
+
+				//Select arguments in parenthesis
+				int parStart = apiCall.indexOf("(")+1;
+				int parEnd = apiCall.lastIndexOf(")");
+				String parString = apiCall.substring(parStart, parEnd);
+				String[] arguments = parString.split(",");
+				if(arguments.length<2 || arguments.length > 2){
+					continue;
+				}
+
+				//Select first argument
+				String key = arguments[0];
+				int relativeStartColumn = apiCall.indexOf(key);			
+				int startColumn = relativeStartColumn + loc.getStartColumn();
+				int endColumn = startColumn + key.length();
+
+				//Build exact mutation location
+				loc.setStartColumn(startColumn);
+				loc.setEndColumn(endColumn);
+
+				exactMutationLocations.add(loc);
+			}catch(Exception e){
+				e.printStackTrace();
+			}
+			
+			//System.out.println("API call: "+apiCall);
+			//System.out.println("To Replace: "+linesToConsider.substring(startColumn, endColumn));
+
+		}
+
+		return exactMutationLocations;
+	}
+
+}

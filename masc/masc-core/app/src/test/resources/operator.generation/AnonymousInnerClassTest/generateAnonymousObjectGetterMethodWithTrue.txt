@@ -1,0 +1,8 @@
+public static javax.net.ssl.HostnameVerifier BareBone_X509TrustManagerCanBypass() {
+  return new BareBone_X509TrustManagerCanBypassExt(){
+  @Override
+  public boolean verify(java.lang.String arg0, javax.net.ssl.SSLSession arg1) {
+  	return true;
+  }
+  };
+}

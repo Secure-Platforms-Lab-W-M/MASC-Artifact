@@ -1,0 +1,21 @@
+package com.example.amit.helloworld;
+
+
+public class sample_switch_case_no_return {
+ 
+ public boolean switchCase(String cases){
+ 	switch (cases){
+	 	case "A":
+	 		System.out.println("A");
+	 		return 5;
+	 		
+	 	case "B":
+	 		System.out.println("B");
+	 	
+	 	case "C":
+	 		System.out.println("C");
+	 	
+ 	}
+
+ } 
+}
