@@ -1,0 +1,49 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Apache Qpid AMQP 1.0 BDB Link Store Plug-in
+
+
+From: 'an unknown organization'
+  - Guava InternalFutureFailureAccess and InternalFutures (https://github.com/google/guava/failureaccess) com.google.guava:failureaccess:bundle:1.0.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Guava: Google Core Libraries for Java (https://github.com/google/guava/guava) com.google.guava:guava:bundle:28.2-jre
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'FasterXML' (http://fasterxml.com/)
+  - Jackson-annotations (http://github.com/FasterXML/jackson) com.fasterxml.jackson.core:jackson-annotations:bundle:2.10.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Jackson-core (https://github.com/FasterXML/jackson-core) com.fasterxml.jackson.core:jackson-core:bundle:2.10.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - jackson-databind (http://github.com/FasterXML/jackson) com.fasterxml.jackson.core:jackson-databind:bundle:2.10.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Oracle Corporation' (http://www.oracle.com/)
+  - je  com.sleepycat:je:jar:7.4.5
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:1.7.30
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Apache Commons BCEL (http://commons.apache.org/proper/commons-bcel) org.apache.bcel:bcel:jar:6.3.1
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - Apache Qpid Broker-J BDB Message Store Plug-in (http://qpid.apache.org/components/qpid-bdbstore) org.apache.qpid:qpid-bdbstore:jar:8.0.1-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Qpid Broker-J Code Generation (http://qpid.apache.org/components/qpid-broker-codegen) org.apache.qpid:qpid-broker-codegen:jar:8.0.1-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Qpid Broker-J Core (http://qpid.apache.org/components/qpid-broker-core) org.apache.qpid:qpid-broker-core:jar:8.0.1-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Qpid Broker-J AMQP 0-8 Protocol Plug-in (http://qpid.apache.org/components/broker-plugins/qpid-broker-plugins-amqp-0-8-protocol) org.apache.qpid:qpid-broker-plugins-amqp-0-8-protocol:jar:8.0.1-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Qpid Broker-J AMQP 1-0 Protocol Plug-in (http://qpid.apache.org/components/broker-plugins/qpid-broker-plugins-amqp-1-0-protocol) org.apache.qpid:qpid-broker-plugins-amqp-1-0-protocol:jar:8.0.1-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

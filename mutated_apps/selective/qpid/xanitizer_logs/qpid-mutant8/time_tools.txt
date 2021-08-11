@@ -1,0 +1,2075 @@
+Jun 13, 2020 9:29:45 AM com.rigsit.xanitizer.util.ab b
+INFO: Collecting Xanitizer plugins in directory '/media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/xanitizer-plugins'.
+Jun 13, 2020 9:29:45 AM com.rigsit.xanitizer.util.ab b
+INFO: Detected Xanitizer plugin jar 'file:/media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/xanitizer-plugins/predefined-xanitizer-plugins-4.3.3.jar'.
+Jun 13, 2020 9:29:45 AM com.rigsit.xanitizer.util.ab b
+INFO: Detected Xanitizer plugin jar 'file:/media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/xanitizer-plugins/com.rigsit.xanitizer.pub-4.3.3.jar'.
+Jun 13, 2020 9:29:45 AM com.rigsit.xanitizer.util.ab b
+INFO: Detected Xanitizer plugin jar 'file:/media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/xanitizer-plugins/lib/jasper-el.jar'.
+Jun 13, 2020 9:29:45 AM com.rigsit.xanitizer.util.ab b
+INFO: Detected Xanitizer plugin jar 'file:/media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/xanitizer-plugins/lib/spring-beans-3.2.5.RELEASE.jar'.
+Jun 13, 2020 9:29:45 AM com.rigsit.xanitizer.util.ab b
+INFO: Detected Xanitizer plugin jar 'file:/media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/xanitizer-plugins/lib/freemarker-2.3.28.jar'.
+Jun 13, 2020 9:29:45 AM com.rigsit.xanitizer.util.ab b
+INFO: Detected Xanitizer plugin jar 'file:/media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/xanitizer-plugins/lib/spring-core-3.2.5.RELEASE.jar'.
+Jun 13, 2020 9:29:45 AM com.rigsit.xanitizer.util.ab b
+INFO: Detected Xanitizer plugin jar 'file:/media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/xanitizer-plugins/lib/commons-logging-1.1.3.jar'.
+Jun 13, 2020 9:29:45 AM com.rigsit.xanitizer.util.ab b
+INFO: Detected Xanitizer plugin jar 'file:/media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/xanitizer-plugins/lib/asm-7.2.jar'.
+Jun 13, 2020 9:29:45 AM com.rigsit.xanitizer.util.ab b
+INFO: Detected Xanitizer plugin jar 'file:/media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/xanitizer-plugins/lib/el-api.jar'.
+Jun 13, 2020 9:29:45 AM com.rigsit.xanitizer.util.ab b
+INFO: Collecting Xanitizer plugins in directory '/home/nacoop/.Xanitizer/xanitizer-plugins'.
+Jun 13, 2020 9:29:45 AM com.rigsit.xanitizer.util.ab b
+INFO: 	No Xanitizer plugins found.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.annows.AnnotationBasedWSFrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'Annotation Based Web Services'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.axis.AxisFrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'AXIS SOAP Engine'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.el.ELFrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'Expression Language'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.freemarker.FreemarkerOnSpringMVCFrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'Freemarker Template Processing via Spring MVC Web'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.generic.GenericFrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'Basic Generic Framework Support'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.gwt.GWTFrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'Google Widget Toolkit (GWT)'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.hibernate.HibernateFrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'Hibernate'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.javaxservlets.JavaxServletFrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'JavaX Servlets'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.jsf.JSFFrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'JSF JavaServer Faces'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.jsp.JSPFrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'Java Server Pages'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.jsr181.JSR181FrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'JSR181-Based Web Services (including Java EE and JAX-WS)'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.jsr299.JSR299FrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'JSR299 CDI Contexts and Dependency Injection / Web Beans'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.play.Play'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'ScalaPlay Web Framework'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.sling.SlingFrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'Sling'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.springioc.SpringIOCFrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'Spring IOC Container'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.springmvc.SpringMVCFrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'Spring MVC Web'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.struts1.Struts1FrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'Struts 1'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.struts2.Struts2FrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'Struts 2'.
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Plugin loading: Found class implementing IXanitizerPlugin 'com.rigsit.xanitizer.plugins.frameworks.tiles.TilesFrameworkAnalysis'; trying to instantiate
+Jun 13, 2020 9:29:46 AM com.rigsit.xanitizer.util.ab a
+INFO: Successfully loaded plugin 'Tiles'.
+Log Level set to INFO
+[2020-06-13 09:29:46] 
+--------------------------------------------------------------
+Sat Jun 13 09:29:46 EDT 2020: Starting Xanitizer (HEADLESS), version 4.3.3, build no. 61 of 11/26/19
+OS Platform: Linux 4.4.0-174-generic
+OpenJDK Runtime Environment 11+28
+Default Encoding: UTF-8
+Locale: en_US
+Max Heap Size (approx.): 3000 MB   (to be set in file Xanitizer.ini via argument e.g. '-Xmx4000m')
+Current Log Level: INFO   (to be set in file Xanitizer.ini; possible values: WARNING, INFO, FINE, FINER, ALL)
+JVM Args:
+-Dosgi.parentClassloader=ext
+-Xms100m
+-Xmx3000m
+
+[2020-06-13 09:29:46] Using this license:
+File FQN=/home/nacoop/.Xanitizer/Xanitizer.license
+No. of Bytecode Instructions=no restriction
+License Start Date=2020-02-05
+License Number=
+HostIds=1C9F BFD0 5815 8148 BC6B B5D3 304E CB8F, 24E9 178C 1B4E 5731 31E8 DB32 0CFE 3222, E3F4 395E 0F70 F652 CEA1 83AD 8BBA 55C4
+Update Service Expiration Date=2020-07-31
+License Owner=Adwait Nadkarni <apnadkarni@wm.edu>
+License Description=Academical License for William & Mary University - only for non-commercial usage!
+License Expiration Date=2020-07-31
+Creation Date=2020-03-06
+File FQN=/home/nacoop/.Xanitizer/Xanitizer.license
+Licensed Languages=Java
+Licensed Package Patterns=no restriction
+
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-1BadHostNameVerifier'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-1BadSSL_Naive'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-1des_no_cond'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-2BadHostNameVerifier'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-2BareBone_X509TrustManager'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-2des_no_string_var'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-3BadHostNameVerifier'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-3BareBone_X509TrustManagerCanNotBypass'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-4BadHostnameVerifierWithCondition'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-4BadHostnameVerifierWithGenericCondition'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-4BareBone_X509ExtendedTrustManagerCanBypass'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-5BadHostnameVerifierWithCondition'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-5BadHostnameVerifierWithGenericCondition'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-5BareBone_X509TrustManagerCanBypass'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-6ITrustManagerUser'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-7BareBone_x509TrustManagerCanNotBypass'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-8.5.1BareboneTrustManagerConditional'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-8.5BareboneTrustManagerConditional'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-8.6BareboneTrustManagerConditional'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-8BareboneTrustManagerConditional'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AE$S'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCBCISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCBCNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCBCOAEPPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCBCPKCS1Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCBCPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCBCSSL3Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCCMISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCCMNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCFBISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCFBNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCFBPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCTRNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCTRPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESECBISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESECBPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESGCMNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESGCMPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESOFBISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESOFBNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESOFBPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESPCBCISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESPCBCPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-ARCFOUR'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-ARCFOURECBNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BadHostNameVerifier'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCBCISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCBCPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCFBISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCFBNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCFBPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCTRNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCTRPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCTSNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCTSPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishECBISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishECBPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishOFBISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishOFBNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishOFBPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishPCBCISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishPCBCPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCBCISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCBCPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCFBISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCFBNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCFBPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCTRNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCTRPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCTSNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCTSPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESECBISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESECBPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESOFBISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESOFBNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESOFBPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESPCBCISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESPCBCPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCBCISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCBCPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCFBISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCFBNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCFBPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCTRNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCTRPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCTSNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCTSPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeECBISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeECBPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeOFBISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeOFBNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeOFBPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedePCBCISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedePCBCPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-GarbageGarbageGarbage'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CBCISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CBCPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CFBISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CFBNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CFBPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CTRNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CTRPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CTSNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CTSPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2ECBISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2ECBPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2OFBISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2OFBNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2OFBPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2PCBCISO10126Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2PCBCPKCS5Padding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC4ECBNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-aes'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-aesGCMNoPadding'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-aesGCMNoPaddingReplaceDES'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-aesStringReplace'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-aes_128'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-aes_192'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-aes_256'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-apache-qpid-broker-j'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-baseCase'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-baseCaseInterProc'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-baseCaseVariable'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-basecase'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-basecase_getinstance'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-basecase_seedconstructor'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-blowfish'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-broker-core'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-complexCase'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-des'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-desede'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-differentCase'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-interprocedureCase'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-muse2repo_qpid_reachability'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-origin_core'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-origin_core_tests'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-origin_plugin_amqp'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-origin_plugin_management'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant1'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant10'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant11'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant12'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant13'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant16'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant17'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant18'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant19'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant2'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant20'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant21'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant22'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant23'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant24'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant3'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant4'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant8'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant9'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-rc2'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-rc4'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-replaceSHA256DES'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-src'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-stringCaseTransform'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-stringCaseTransformation'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-stringReplace'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-target'.
+[2020-06-13 09:29:46] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-timeCase'.
+[2020-06-13 09:29:48] [ICancelListener.showProgressMessage] Checked 1 directories or files. Current: tools
+[2020-06-13 09:29:48] [ICancelListener.showProgressMessage] Checked 10 directories or files. Current: util
+[2020-06-13 09:29:48] [ICancelListener.showProgressMessage] Removing duplicate search paths
+[2020-06-13 09:29:49] WARNING: The following errors occured while resolving Maven POM file dependencies of '/media/data/muse2/muse2repo_qpid_src/qpid-mutant8/tools/pom.xml':
+[2020-06-13 09:29:49] WARNING: Could not resolve Dependency {groupId=org.slf4j, artifactId=slf4j-api, version=1.7.25, type=jar} defined in '/home/nacoop/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.pom'
+[2020-06-13 09:29:49] WARNING: Could not resolve Dependency {groupId=com.fasterxml.jackson.core, artifactId=jackson-annotations, version=2.10.0, type=jar} defined in '/home/nacoop/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.2/jackson-databind-2.10.2.pom'
+[2020-06-13 09:29:49] [ICancelListener.showProgressMessage] Checked 1 directories or files. Current: logback-classic-1.2.3.jar
+[2020-06-13 09:29:49] [ICancelListener.showProgressMessage] Checked 2 directories or files. Current: logback-core-1.2.3.jar
+[2020-06-13 09:29:49] [ICancelListener.showProgressMessage] Checked 3 directories or files. Current: jackson-core-2.10.2.jar
+[2020-06-13 09:29:49] [ICancelListener.showProgressMessage] Checked 4 directories or files. Current: jackson-databind-2.10.2.jar
+[2020-06-13 09:29:49] [ICancelListener.showProgressMessage] Checked 5 directories or files. Current: geronimo-jms_1.1_spec-1.1.1.jar
+[2020-06-13 09:29:49] [ICancelListener.showProgressMessage] Checked 6 directories or files. Current: qpid-tools-8.0.1-SNAPSHOT.jar
+[2020-06-13 09:29:49] [ICancelListener.showProgressMessage] Checked 1 directories or files. Current: java
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-1BadHostNameVerifier'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-1BadSSL_Naive'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-1des_no_cond'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-2BadHostNameVerifier'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-2BareBone_X509TrustManager'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-2des_no_string_var'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-3BadHostNameVerifier'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-3BareBone_X509TrustManagerCanNotBypass'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-4BadHostnameVerifierWithCondition'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-4BadHostnameVerifierWithGenericCondition'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-4BareBone_X509ExtendedTrustManagerCanBypass'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-5BadHostnameVerifierWithCondition'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-5BadHostnameVerifierWithGenericCondition'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-5BareBone_X509TrustManagerCanBypass'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-6ITrustManagerUser'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-7BareBone_x509TrustManagerCanNotBypass'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-8.5.1BareboneTrustManagerConditional'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-8.5BareboneTrustManagerConditional'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-8.6BareboneTrustManagerConditional'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-8BareboneTrustManagerConditional'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AE$S'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCBCISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCBCNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCBCOAEPPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCBCPKCS1Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCBCPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCBCSSL3Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCCMISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCCMNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCFBISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCFBNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCFBPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCTRNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESCTRPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESECBISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESECBPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESGCMNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESGCMPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESOFBISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESOFBNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESOFBPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESPCBCISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-AESPCBCPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-ARCFOUR'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-ARCFOURECBNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BadHostNameVerifier'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCBCISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCBCPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCFBISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCFBNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCFBPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCTRNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCTRPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCTSNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishCTSPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishECBISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishECBPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishOFBISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishOFBNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishOFBPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishPCBCISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-BlowfishPCBCPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCBCISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCBCPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCFBISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCFBNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCFBPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCTRNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCTRPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCTSNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESCTSPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESECBISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESECBPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESOFBISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESOFBNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESOFBPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESPCBCISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESPCBCPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCBCISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCBCPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCFBISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCFBNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCFBPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCTRNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCTRPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCTSNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeCTSPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeECBISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeECBPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeOFBISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeOFBNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedeOFBPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedePCBCISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-DESedePCBCPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-GarbageGarbageGarbage'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CBCISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CBCPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CFBISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CFBNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CFBPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CTRNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CTRPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CTSNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2CTSPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2ECBISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2ECBPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2OFBISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2OFBNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2OFBPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2PCBCISO10126Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC2PCBCPKCS5Padding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-RC4ECBNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-aes'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-aesGCMNoPadding'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-aesGCMNoPaddingReplaceDES'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-aesStringReplace'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-aes_128'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-aes_192'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-aes_256'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-apache-qpid-broker-j'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-baseCase'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-baseCaseInterProc'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-baseCaseVariable'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-basecase'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-basecase_getinstance'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-basecase_seedconstructor'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-blowfish'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-broker-core'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-complexCase'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-des'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-desede'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-differentCase'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-interprocedureCase'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-muse2repo_qpid_reachability'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-origin_core'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-origin_core_tests'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-origin_plugin_amqp'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-origin_plugin_management'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant1'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant10'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant11'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant12'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant13'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant16'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant17'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant18'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant19'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant2'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant20'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant21'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant22'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant23'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant24'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant3'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant4'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant8'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-qpid-mutant9'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-rc2'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-rc4'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-replaceSHA256DES'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-src'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-stringCaseTransform'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-stringCaseTransformation'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-stringReplace'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-target'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-timeCase'.
+[2020-06-13 09:29:50] WARNING: Unable to determine refed config file of project dir '/home/nacoop/.Xanitizer/XanitizerProject-tools'.
+[2020-06-13 09:29:50] #### Opening project 'tools'
+[2020-06-13 09:29:50] Start security analysis
+[2020-06-13 09:29:50] Running security analysis
+Config file '/home/nacoop/.Xanitizer/defaultConfigurations/tools.XanitizerConfig':
+[2020-06-13 09:29:50] <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TaintAnalysis version="1.1">
+    
+  <ConfigItems>
+        
+    <!--      
+      Framework simulation might in rare cases generate wrong code (since it is complex); in such cases it is possible to edit this wrong code by hand and thus correct it, but normally, this corrected code is overwritten on the next analysis run. By setting this flag to 'true' no new simulation code is generated and therefore the existing generation code is not overridden.
+       This setting serves only as a workaround. Please report erroneous simulation code to the Xanitizer support team and do not forget to remove this setting when there is a fix available.
+    -->
+        
+    <WS_SuppressFrameworkSimulationCodeGeneration value="false"/>
+      
+    
+    <!--      
+      Framework simulation might in rare cases generate wrong code (since it is complex); in such cases it is possible to switch to simpler code generation algorithms, which sometimes might not generate the problem, and often are also good enough for the analysis. By setting this flag to 'true', these simpler algorithms are used instead of the more complicated ones.
+       This setting serves only as a workaround. Please report erroneous simulation code to the Xanitizer support team and do not forget to remove this setting when there is a fix available.
+    -->
+        
+    <WS_AvoidComplicatedFrameworkSimulationCodeGeneration value="false"/>
+      
+    
+    <!--      
+      A time-out value, in seconds, specifying for which duration Xanitizer searches for view names used in Spring MVC. The usage of this limit prevents the analysis from getting tied up by the string search in scenarios where for the dataflow analysis, a large part of the search space would have to be visited.
+      The default value is 60 seconds.
+    -->
+        
+    <FR_TimeoutForMvcViewNameSearch value="60"/>
+      
+    
+    <!--      
+      A time-out value, in seconds, specifying for which duration Xanitizer searches for assignments to model maps in Spring MVC. The usage of this limit prevents the analysis from getting tied up by the string search in scenarios where for the dataflow analysis, a large part of the search space would have to be visited.
+      The default value is 60 seconds.
+    -->
+        
+    <FR_TimeoutForMvcModelValueAssignmentSearch value="60"/>
+      
+    
+    <!--      
+      While a call graph is being constructed, it can occur that a method is called on an object (receiver) for which the heap analysis did not determine a value. In this case, the call graph normally does not contain a called method for this location.
+      But since the heap model cannot normally be assumed to be complete in the simulation, Xanitizer allows to extend the call graph heuristically.
+      The default strategy (a) (IF_EMPTY) is to generate synthetically heap elements for all concrete workspace subtypes of the declared type in the call location, but only if the set of heap model elements the respective pointer points to is empty.
+       Variants are:
+      (b) (NEVER) to never extend the call graph heuristically,
+      (c) (ALWAYS) to always extend it (i.e., also when the described set of heap model elements is not empty), and
+      (d) (IF_EMPTY_EXTENDING_ONLY_WITH_WORKSPACE_METHODS) to only extend the call graph if the set is empty, but only with methods that are declared in the workspace.
+    -->
+        
+    <CG_ExtendCallgraphHeuristically value="IF_EMPTY"/>
+      
+    
+    <!--      
+      When the call graph is extended heuristically, Xanitizer can either use all concrete types that are assignment compatible with the type at the location at the method call, or it can restrict itself only to types for which constructor invocations are found in the code.  The latter alternative reduces the number of false alarms, but if instances are created by reflection rather than by direct constructor invocation in the application, the heuristics will not use the respective types for extending the callgraph.
+      The default value is 'false'.
+    -->
+        
+    <CG_UseOnlyConstructedClassesForHeuristicCallgraphExtension value="false"/>
+      
+    
+    <!--      
+      Call graph construction can need much memory and time.  When this timeout is reached before the call graph construction has terminated regularly, the call graph construction is stopped, and the analysis continues with the partial call graph constructed up to that point in time.  Note that this means that some vulnerabilites might be missed that might have been found with a more complete call graph.
+      0 means: disabling timeout for call graph computation.
+      Default value is 3600 seconds.
+    -->
+        
+    <CG_TimeoutForCallgraphComputation value="3600"/>
+      
+    
+    <!--      
+      A huge call graph can lead to memory problems or very long running times.  This limit can be used in order to limit the number of nodes that the created call graph will have.  If the limit is reached, an issue is generated, because the analysis might miss problems that it might have found w/o the limit, but the analysis is performed nevertheless.
+      0 means: disabling limit for number of call graph nodes.
+      Default value is 0.
+    -->
+        
+    <CG_CallgraphNodeCountLimit value="0"/>
+      
+    
+    <!--      
+      The number of threads running in parallel during the security analysis.
+      0 means the available number of processor cores on the system, a negative number means: use so many threads *less* than the number of processor cores on the system (or 1, if the result is not positive)
+      This system contains 8 processor cores.
+      A higher number of parallel threads requires more main memory for the security analysis. Only increase the number of threads if you are sure that your available memory is sufficient.
+      Default value is 1.
+    -->
+        
+    <RAPS_NumberOfThreads value="1"/>
+      
+    
+    <!--      
+      The maximal number of taint sources to be used per problem type.
+      Keeping this number small will shorten the run time of the taint analysis, but might loose results, since the tainted data starting from some of the taint sources will not be followed.
+      If more taint sources have been found for some problem type than this limit specifies, an issue is generated, so you notice if some taint sources have been disregared. In this case, increasing this limit might lead to more findings.
+      0 means: no limit.
+      Default is 500.
+    -->
+        
+    <RA_MaximalNumberOfSourcesOfAProblemToProcess value="500"/>
+      
+    
+    <!--      
+      In data flow reachability computation, specify how many taint sources are combined for a single job that is processed at once.
+      0 means: all taint sources of a single problem type are processed together in one job.This is the fastest way to get a security analysis executed but it might require more dynamic memory.
+      1 means: for each single taint source, a single job is started.
+      Any number n larger than 1 means: the taint sources for each single problem type are split into subsets with n elements, and for each such subset, a single job is started. If the number of sources is not divisible by n, the last generated job has less than n sources.
+      The default value is 100.
+      
+      If you receive 'out-of-memory' error messages, a high percentage of garbage collection or if you experience data losses due to a time-out of reachability computation it is recommended to reduce this job size. Please be aware that small job sizes with high time limit settings could lead to an overlong analysis duration. Therefore adjust reachability job size and time limit always together.
+    -->
+        
+    <RA_NumberOfSourcesOfAProblemToProcessAtOnce value="100"/>
+      
+    
+    <!--      
+      A reached-values computation is conducted when some problem type requires that the receiver of some method call stems from some given taint source. An example are XSS problem types: writing a tainted value to a stream is a problem if the stream leads to the browser.  In order to detect this, Xanitizer performs a dataflow analysis starting from methods that determine streams that lead back to the browser.
+      This parameter can be used to limit the time used for this specific dataflow analysis.
+      0 means: disabling timeout for reached values computation.
+      Default value is 300 seconds.
+    -->
+        
+    <RA_TimeoutForReachedValuesComputation value="300"/>
+      
+    
+    <!--      
+      A data flow reachability computation is conducted for some set of taint sources, in which it is checked which taint sinks can be reached by and of these taint sources. This time limit applies to such a reachability search. Even if this time limit is reached before a reachability search has been completed, there might be some taint sinks that have been reached with respect to this specific sources. For other sources, the analysis will continue.
+      Setting a time limit in conjunction with reachability job size can be used to avoid a very long overall analysis duration which might be caused by individual, overlong reachability searches. Therefore adjust reachability job size and time limit always together.
+      0 means: disabling timeout for data flow reachability computation.
+      Default value is 300 seconds.
+    -->
+        
+    <RA_TimeoutForDataflowReachabilityComputation value="300"/>
+      
+    
+    <!--      
+      Phi instructions are used in Xanitizer to model data flows where different values from different control flows are combined into one common value. During computation of retroactive taint implications, normally one would expect that also phi instructions should be considered, since if one value is tainted retroactively, also another one that is phi-related to the first one should be tainted.
+    -->
+        
+    <RA_DoPhiProcessingWhileComputingRetroactiveTaintImplications value="false"/>
+      
+    
+    <!--      
+      Toggles if control flow into 'catch' blocks should be included in the analysis. Note that by not entering catch blocks, Xanitizer might miss some taint paths; but in some projects, the taint flow via catch blocks leads to many false alarms, in which case this flag should be switched off.
+      Default value is 'YES'.
+    -->
+        
+    <RA_AnalyseCaughtExceptions value="true"/>
+      
+    
+    <!--      
+      Xanitizer can generate findings for applied taint sanitizers, non-tainting sources (i.e. sources whose data does not reach a taint sink) and non-tainted sinks (i.e. taint sinks that are not reached by tainted data). In general, these findings are not of interest for a security analysis. But if you suspect an error in the analysis results it might help to collect these findings to understand why there is no taint flow.
+    -->
+        
+    <RA_CollectInformationalTaintAnalysisFindings value="false"/>
+      
+    
+    <!--      
+      Xanitizer can automatically identify certain taint sink occurrences as always harmless in context of a specific security problem (e.g. constant data written to the response cannot carry XSS threatening data). By default such harmless findings are not added to the result set. Here you can instruct the tool to add them, e.g. for a deepened analysis.
+      Default value is 'No'.
+    -->
+        
+    <RA_CollectHarmlessSinks value="false"/>
+      
+    
+    <!--      
+      It can be defined with every map-like accessor kind if non-constant keys should be ignored for it. If this flag is TRUE or FALSE, it overrides the setting at the map-like accessor kind accordingly. This allows to override the settings for all map-like accessors at once. If this flag has the value NO_VALUE, the settings at the map-like accessor kinds are in force.
+      The default is 'TRUE'; this should produce considerably shorter analysis duration and avoid many false positives, but might potentially overlook some true positives.
+    -->
+        
+    <RA_GloballyIgnoreAllNonConstantMapLikeAccessorKeys value="TRUE"/>
+      
+    
+    <!--      
+      There are several strategies how to handle tainted values in the Xanitizer heap simulation. In a comprehensive approach once some heap element has been tainted, this taint will never disappear again. This is because one heap element in the Xanitizer model represents many heap elements in reality, and even when the taint would vanish in one heap element in reality, it might exist further on in others. On the other hand this could lead in some situations to false alarms; 
+      Thus, this flag can be set to 'true' in order to remove the taint from heap element when it is detected that a non-tainted datum is overriding it. This approach reduces the number of potential false alarms, but possibly also increases the number of missed true problems.
+      The default is 'false', in order to reduce the danger of overlooking true positives. Switch to 'true' if you have many false positive findings in your result which are caused by tainted heap facts, that are not tainted anymore in reality.
+    -->
+        
+    <RA_TaintOnHeapCanVanish value="false"/>
+      
+    
+    <!--      
+      During data flow analysis, when a tainted datum travels in the system, Xanitizer checks at taint sink locations whether the datum matches the argument specified at the taint sink.  If it does, a taint sink has been reached by the taint flow.
+      However sometimes the datum itself is not tainted but the represented data object internally aggregates other data values and objects which might be tainted. They are located on the simulated heap and it must be checked whether there are tainted heap elements that are potentially recursively aggregated in the main object. The parameter number specifies how many hierarchical steps through the heap are checked by Xanitizer in this scenario. A value of 0 means that no heap content is checked. Large values mean that search time for matches increases.
+      The default value is 2.
+    -->
+        
+    <RA_MaxHeapIndirectionsForSinkMatching value="2"/>
+      
+    
+    <!--      
+      When a setter is called on an object with a tainted argument, normally its byte code is processed in order to see where the taint flows. If there is no byte code for the method, or the method is a system method, the normal semantics is to taint the whole receiver. This can lead to false alarms, since if one setter writes a tainted datum, all non-void methods return a tainted datum, not just the getter corresponding to the setter, deliver tainted return values. This might lead to many false alarms.
+      If this flag is 'true', Xanitizer uses a special semantics for getter and setter methods for which the byte code is not analyzed: Specialized taint is generated for such a setter, that can only be read by the corresponding getter. This can reduce the number of false alarms, but in the case that the tainted content written by a setter is being read from the object not by the corresponding getter but in some other way, for example by the toString() method, this will be missed.
+      The default valus is 'true'.
+    -->
+        
+    <RA_ApplySpecialGetterSetterSemantics value="true"/>
+      
+    
+    <!--      
+      Each end of a data flow can be declared to be a taint sink for a taint flow problem (by using the taint sink kind with name "End of Data Flow"). This kind of taint sink is typically required when searching for resource leaks. Because searching a taint path until 'end of data flow'  requires more memory than usual, the part of the call graph that is visited for such a search is reduced: only methods are visited that can be reached, from some method containing a taint source, within a maximum number of the method call depth. This is the number of invoked methods the path is passing either backward or forward when starting from the taint source.
+       A larger number means that more taint sanitizers (sanitizing a resource leak e.g. by invoking the close() method) might be found, but it increases memory requirements and running time for the problem.
+      The value 0 indicates that there is no limit for the call depth. The default value is 5.
+    -->
+        
+    <RA_CallGraphSearchLimitIfEndsOfDataflowsAreSinks value="5"/>
+      
+    
+    <!--      
+      Max. method call depth in a path.
+      This configuration value allows to reduce time and memory consumption during analysis by setting a small number for the method call depth. Only methods are visited that can be reached, from some method containing a taint source, within a maximum number of the method call depth. This is the number of invoked methods the path is passing either backward or forward when starting from the taint source.
+      This limit is used for taint flow problems with all kinds of sources and sinks except 'end of data flow' taint sinks.
+       A larger number means that longer taint paths might be found, but the longer they are, the more likely they are false positives.
+      The value 0 indicates that there is no limit for the call depth. The default value is 15.
+    -->
+        
+    <RA_GeneralCallGraphSearchLimit value="15"/>
+      
+    
+    <!--      
+      If a trust zone is defined for a problem type, the taint sinks should normally be located in the trust zone. If a taint sink outside a trust zone is found, a warning is generated for it. But if trust zones are used in a project in a different way, this can generate a lot of spurious warnings. This flag can be used to switch off these warnings.
+      The default value is 'true'
+    -->
+        
+    <RAGenerateWarningsForSinksOutsideOfTrustZones value="true"/>
+      
+    
+    <!--      
+      The maximum number of tainted data flow paths that are searched between a taint source and taint sink pair.
+      By default the shortest path is detected but there might be different paths as well.
+      A path is regarded as different, if the taint flows through at least one different method or a different sequence of methods.
+      Taint flow through different parts of the same method body are only searched if the separate configuration flag 'PS_LookForSeveralPathsInsideMethods' is set to true and an insufficient number of different paths with different sets of methods could be found.
+      Increasing the number of paths to search for might have a considerable impact on the time and memory consumption of the security analysis.
+      Default value is 1.
+    -->
+        
+    <PS_PathsPerEndpoint value="1"/>
+      
+    
+    <!--      
+      This flag is only relevant when the configuration of 'Number of paths per source/sink pair' is set to a number larger 1. When looking for several paths per source/sink pair, one can configure with this flag if for paths inside the same method, several variants should be looked for. Normally, this is less interesting than looking globally for path variants and consumes additional analysis time.
+      Default value is 'false'.
+    -->
+        
+    <PS_LookForSeveralPathsInsideMethods value="false"/>
+      
+    
+    <!--      
+      Xanitizer filters out found taint paths if they exceed the max number of method path segments; this makes sense since very long paths (a) need a lot of memory, and (b) they often are false alarms.
+      Default value is 50; specifying 0 means that there is no maximal path segment count.
+    -->
+        
+    <PS_MaximalMethodPathSegmentCountInPath value="50"/>
+      
+    
+    <!--      
+      For every source or taint data sink combination, where the taint reaches the sink from the source, Xanitizer looks for callers before checking if there is a path. If this time limit is reached before the caller search has been completed, the result is limited to those callers which have been found up to that moment.
+       Setting a time limit can be used to avoid a very long overall analysis duration at the cost that some of the data flow paths potentially remain unidentified.
+      Default value is 120 seconds.
+    -->
+        
+    <PS_TimeoutForCallerSearch value="120"/>
+      
+    
+    <!--      
+      For every pair of a tainted source and a taint sink combination that has been detected during reachability computation, the data flow paths are determined which connect the two. This time limit applies to the path search for one single source/sink pair only. If this time limit is reached before a path search has been completed, the result is limited to those paths of the related source/sink pair which have been found up to that moment. Analysis for other source/sink pairs is not affected and will just continue.
+       Setting a time limit can be used to avoid a very long overall analysis duration at the cost that some of the data flow paths potentially remain unidentified.
+      Default value is 120 seconds.
+    -->
+        
+    <PS_TimeoutForPathFinding value="120"/>
+      
+    
+    <!--      
+      If a reachability analysis job reaches a very large number of taint sinks, the path search can take extraordinarily long time.
+      This configuration parameter can be used to limit the number of taint sink combinations that are used from the result. If there are more, the rest is dropped, and a warning is generated in the issues.
+      A number of 0 means: no limit.
+      The default value is 10000.
+    -->
+        
+    <PS_MaxTaintDataSinkCombinationsToUsePerJob value="10000"/>
+      
+    
+    <!--      
+      The report template file that is used to generate the finding details report. The default value is the standard location in the Xanitizer installation.
+    -->
+        
+    <RP_FindingDetailsReportTemplate value="&lt;INSTALL_DIR&gt;/reporting/reportdesign/xanitizer_finding_details.rptdesign"/>
+      
+    
+    <!--      
+      The report template file that is used to generate the finding list report. The default value is the standard location in the Xanitizer installation.
+    -->
+        
+    <RP_FindingListReportTemplate value="&lt;INSTALL_DIR&gt;/reporting/reportdesign/xanitizer_findings_list.rptdesign"/>
+      
+    
+    <!--      
+      The report template file that is used to generate the overview report. The default value is the standard location in the Xanitizer installation.
+    -->
+        
+    <RP_OverviewReportTemplate value="&lt;INSTALL_DIR&gt;/reporting/reportdesign/xanitizer_overview.rptdesign"/>
+      
+    
+    <!--      
+      Freemaker templates contain escaping functions for HTML, JSON, Javascript and other contexts that are used to esacpe a string that is entered by the rendering engine. By default, outputs of strings that are escaped in this way are not registered as potential taint sinks. However it is possible that an applied escaping is not the correct one for the local context in the template file (i.e. a HTML escaping does not sanitize a string that is entered into a Javascript code). For such locations the registration as a taint sink would be appropriate.
+      Setting this flag to 'false' will switch off the sanitizing effect of all Freemarker escaping functions; note that this leads to more findings including potentially false positives because also locations are affected where the escaping in fact is correct.
+      The default value is 'true'.
+    -->
+        
+    <FR_HonorQuotingFunctionsInFreemarkerCode value="true"/>
+      
+    
+    <!--      
+      Java Server Faces simulation looks at setters and getters of managed beans and defines taint sources and taint sinks for these.  By default, all setters are registered as taint sources, and all getters are registered as as taint sinks.
+      Setting this flag to 'true' means that XHTML template files are looked up, EL code is collected in these files, and properties are determined that are used in EL code used for transferring user input into some bean via a setter, or for transferring program output via a getter in a non-escaping context.  Only getters and setters for which such a property is found are then declared are taint sinks and taint sources.
+      The default value is 'true'.
+    -->
+        
+    <FR_FilterJsfSourcesAndSinksByElInTemplates value="true"/>
+      
+    
+    <!--      
+      When JSP files are found, they are converted to Java code and compiled to byte code. Xanitizer uses Tomcat's Jasper for the first step.
+      Xanitizer comes with several versions of the Tomcat libraries that can be used.
+      The default value is version 8.5.*. For compatibility reasons with older jsp files it might be necessary to switch to an earlier tomcat version.
+    -->
+        
+    <WS_TomcatVersionForJspProcessing value="V9_0"/>
+      
+    
+    <!--      
+      If a target of a RequestDispatcher.forward, RequestDispatcher.include or JspRuntimeLibrary.include is not a constant, it can not be determined which JSP template is invoked. This flag configures if in this case the control moves to all or to non JSP templates.
+      The default value is 'false'.
+    -->
+        
+    <FR_DispatchToAllJspsIfTargetNotResolvable value="false"/>
+      
+  </ConfigItems>
+    
+  
+  
+  <!--    
+    Configuration of problem types, taint sources, taint sinks, taint sanitizers, etc. usually is defined implicitly (via files in the Xanitizer installation), but in addition to the standard ones they can also be defined locally, i.e. project-specific, in the project's config file. These configuration elements are used for the definition of project-specific problem configuration.
+  -->
+    
+  <PD_LocalProblemDefinitions version="1.0">
+    <!--Cf. chapter 'Extra Information for Method Patterns' for description of method pattern attributes-->
+    <StartMethods kind="StartMethod:MyStartMethods" presentationName="My Start Methods">
+      <Description>
+        <![CDATA[You can add your project-specific start methods here. Do not forget to edit or delete the sample entry.]]>
+      </Description>
+      <!--    
+    Method pattern, for matching method invocations or method definitions.
+  -->
+            
+      <Method alsoInSubclasses="true" restrictToWorkspace="false">
+        void sample.package.path.ExampleClass.dummyMethod()
+      </Method>
+    </StartMethods>
+  </PD_LocalProblemDefinitions>
+    
+  
+  <!--    
+    Specifies all problem types which should be set 'active' for this analysis, i.e. during security analysis Xanitizer searches for findings of the specified problem types only.By skipping uninteresting problem types the duration of the analysis can be reduced considerably.
+    Sample usage:
+    <PD_ProblemType name="ci:SQLInjection"/>
+      Attribute 'name': Problem type name.
+  -->
+    
+  <PD_ProblemType name="LiteralStringsInVariablesSearch:password"/>
+  <PD_ProblemType name="LiteralStringsInVariablesSearch:username"/>
+  <PD_ProblemType name="OWASPDependencyCheck"/>
+  <PD_ProblemType name="RegexSearch:PasswordInConfigFile"/>
+  <PD_ProblemType name="SpecialMethodCall:AppliedClassLoading"/>
+  <PD_ProblemType name="SpecialMethodCall:AppliedDNSResolution"/>
+  <PD_ProblemType name="SpecialMethodCall:AppliedPrivilegedAction"/>
+  <PD_ProblemType name="SpecialMethodCall:AppliedReflection"/>
+  <PD_ProblemType name="SpecialMethodCall:Deserialization:UnsafeDeserializationConfiguration"/>
+  <PD_ProblemType name="SpecialMethodCall:EncryptionUsedInProject"/>
+  <PD_ProblemType name="SpecialMethodCall:EncryptionUsedInProjectWOProvider"/>
+  <PD_ProblemType name="SpecialMethodCall:JNICall"/>
+  <PD_ProblemType name="SpecialMethodCall:JavaServletFindAndInclude"/>
+  <PD_ProblemType name="SpecialMethodCall:PrintStackTrace"/>
+  <PD_ProblemType name="SpecialMethodCall:java.util.Random"/>
+  <PD_ProblemType name="SpotBugs"/>
+  <PD_ProblemType name="USER:GeneralCodeIssue"/>
+  <PD_ProblemType name="XPathSearch:directoryBrowsingEnabled"/>
+  <PD_ProblemType name="XPathSearch:exceptionTypeJavaLangThrowableMissing"/>
+  <PD_ProblemType name="XPathSearch:sessionConfigMissing"/>
+  <PD_ProblemType name="XPathSearch:sessionConfigWOHttpOnlyAndSecureInCookieConfig"/>
+  <PD_ProblemType name="XPathSearch:sessionConfigWOTrackingModeCookieConfig"/>
+  <PD_ProblemType name="XPathSearch:sessionTimeout"/>
+  <PD_ProblemType name="XPathSearch:sessionTimeoutNotConfigured"/>
+  <PD_ProblemType name="XPathSearch:useHttpOnly"/>
+  <PD_ProblemType name="ci:CodeInclusion"/>
+  <PD_ProblemType name="ci:CodeInjection"/>
+  <PD_ProblemType name="ci:CommandInjection"/>
+  <PD_ProblemType name="ci:LDAPInjection"/>
+  <PD_ProblemType name="ci:LogInjection"/>
+  <PD_ProblemType name="ci:OSCommandInjection"/>
+  <PD_ProblemType name="ci:ReflectionInjection"/>
+  <PD_ProblemType name="ci:SQLInjection"/>
+  <PD_ProblemType name="ci:XPathInjection"/>
+  <PD_ProblemType name="cook:HttpOnlyCookie"/>
+  <PD_ProblemType name="cook:UnsecuredCookie"/>
+  <PD_ProblemType name="hcc:Hard-CodedCredentials:CredentialsAsMethodParameter"/>
+  <PD_ProblemType name="hcc:Hard-CodedCredentials:CryptographicKeyAsMethodParameter"/>
+  <PD_ProblemType name="hcc:Hard-CodedCredentials:PasswordAsMethodParameter"/>
+  <PD_ProblemType name="id:InsecureDeserializationFromDb"/>
+  <PD_ProblemType name="id:InsecureDeserializationFromRequest"/>
+  <PD_ProblemType name="idor:InsecureDirectObjectReferences"/>
+  <PD_ProblemType name="pl:PrivacyLeak"/>
+  <PD_ProblemType name="protocolCheckProblemType:AES_BothEncryptionAndDecryption"/>
+  <PD_ProblemType name="protocolCheckProblemType:AES_Decryption"/>
+  <PD_ProblemType name="protocolCheckProblemType:AES_Encryption"/>
+  <PD_ProblemType name="protocolCheckProblemType:CryptographicHashing"/>
+  <PD_ProblemType name="protocolCheckProblemType:InitializationVectorConstruction"/>
+  <PD_ProblemType name="protocolCheckProblemType:OnlyAllowedCryptoAlgorithms"/>
+  <PD_ProblemType name="protocolCheckProblemType:OnlyAllowedHashAlgorithms"/>
+  <PD_ProblemType name="protocolCheckProblemType:PBE"/>
+  <PD_ProblemType name="protocolCheckProblemType:RSA_BothEncryptionAndDecryption"/>
+  <PD_ProblemType name="protocolCheckProblemType:RSA_Decryption"/>
+  <PD_ProblemType name="protocolCheckProblemType:RSA_Encryption"/>
+  <PD_ProblemType name="protocolCheckProblemType:SecureRandomNumberConstruction"/>
+  <PD_ProblemType name="protocolCheckProblemType:SecureRandomNumberGeneratorConstruction"/>
+  <PD_ProblemType name="protocolCheckProblemType:SecureXMLProcessing"/>
+  <PD_ProblemType name="protocolCheckProblemType:SignatureSigning"/>
+  <PD_ProblemType name="protocolCheckProblemType:SignatureVerifying"/>
+  <PD_ProblemType name="protocolCheckProblemType:XMLExternalDTDs"/>
+  <PD_ProblemType name="pt:PathTraversal"/>
+  <PD_ProblemType name="rhi:ResponseHeaderInjection"/>
+  <PD_ProblemType name="rl:IOStreamResourceLeak"/>
+  <PD_ProblemType name="rl:SocketResourceLeak"/>
+  <PD_ProblemType name="ssl:SpecialMethodCall:SSL/TLSValidation"/>
+  <PD_ProblemType name="ssl:SpecialMethodOverwriting:SSL/TLSValidation"/>
+  <PD_ProblemType name="tbv:TrustBoundaryViolationSession"/>
+  <PD_ProblemType name="ufdt:UploadofFilewithDangerousType"/>
+  <PD_ProblemType name="xss:URLRedirectAbuse"/>
+  <PD_ProblemType name="xss:XSSFromDb"/>
+  <PD_ProblemType name="xss:XSSFromDbUnrendered"/>
+  <PD_ProblemType name="xss:XSSFromRequest"/>
+  <PD_ProblemType name="xss:XSSFromRequestUnrendered"/>
+  <PD_ProblemType name="xxe:DisallowDoc"/>
+  <PD_ProblemType name="xxe:GeneralEntities"/>
+  <PD_ProblemType name="xxe:ParamEntities"/>
+    
+  
+  <!--    
+    Pattern-based definition of classes that are entirely excluded from the analysis (not even considered as library classes). This reduces the complete amount of classes to handle with and hence could save memory consumption of the tool. 
+    CAUTION: Be very careful with this feature. Many classes of the libraries and the project are required in some part of the analysis even if they are not belonging to the specified workspace. When in doubt, do not exclude a class entirely.
+    Sample usage:
+    <WS_ClassesToBeExcludedEntirely positivePattern="javax.swing.**" />
+      Attribute 'positivePattern': A name matching a positive pattern will be included, if it does not match a negative pattern.
+    The following wildcard characters are supported: 
+    ? means any single character
+    * means any sequence of characters not containing a path separator character like '.' or '/'
+    ** means any sequence of characters, also including path separators
+      Attribute 'negativePattern': A name matching a negative pattern will not be included, even if it does match a positive pattern.
+    The same wildcard characters as with positive pattern are supported
+  -->
+    
+  <WS_ClassesToBeExcludedEntirely positivePattern="com.sun.**"/>
+  <WS_ClassesToBeExcludedEntirely positivePattern="java.applet.**"/>
+  <WS_ClassesToBeExcludedEntirely positivePattern="java.awt.**"/>
+  <WS_ClassesToBeExcludedEntirely positivePattern="javafx.**"/>
+  <WS_ClassesToBeExcludedEntirely positivePattern="javax.swing.**"/>
+  <WS_ClassesToBeExcludedEntirely positivePattern="org.omg.**"/>
+  <WS_ClassesToBeExcludedEntirely positivePattern="sun.**"/>
+  <WS_ClassesToBeExcludedEntirely negativePattern="com.sun.faces.**"/>
+  <WS_ClassesToBeExcludedEntirely negativePattern="com.sun.net.ssl.**"/>
+  <WS_ClassesToBeExcludedEntirely negativePattern="java.awt.datatransfer.Transferable"/>
+  <WS_ClassesToBeExcludedEntirely negativePattern="sun.misc.JavaSecurityAccess"/>
+  <WS_ClassesToBeExcludedEntirely negativePattern="sun.misc.JavaSecurityProtectionDomainAccess"/>
+  <WS_ClassesToBeExcludedEntirely negativePattern="sun.misc.JavaSecurityProtectionDomainAccess$ProtectionDomainCache"/>
+  <WS_ClassesToBeExcludedEntirely negativePattern="sun.security.**"/>
+    
+  
+  <!--    
+    Search path elements define the entire scope of input data to be considered during a security analysis. This includes workspace, external libraries and various types of resources; there are different kinds of search paths, including Java class directories, Java source directories, and Java archives.
+    Sample usage:
+    <WS_SearchPathElement kind="JAVA_CLASS_DIR" path="WEB-INF/classes"/>
+    <WS_SearchPathElement kind="JAVA_JAR" path="WEB-INF/lib/axis-1.2.jar "/>
+      Attribute 'kind': Kind of a search path element.
+      Attribute 'path': Filesystem path of a search path element.
+  -->
+    
+  <WS_SearchPathElement kind="JAVA_JAR" path="../../../../media/data/muse2/muse2repo_qpid_src/qpid-mutant8/tools/target/qpid-tools-8.0.1-SNAPSHOT.jar"/>
+  <WS_SearchPathElement kind="JAVA_SRC_DIR" path="../../../../media/data/muse2/muse2repo_qpid_src/qpid-mutant8/tools/src/main/java"/>
+  <WS_SearchPathElement kind="XML_DIR" path="../../../../media/data/muse2/muse2repo_qpid_src/qpid-mutant8/tools/src/main/resources"/>
+  <WS_SearchPathElement kind="XML_DIR" path="../../../../media/data/muse2/muse2repo_qpid_src/qpid-mutant8/tools/target/antrun"/>
+  <WS_SearchPathElement kind="CONFIG_FILE_DIR" path="../../../../media/data/muse2/muse2repo_qpid_src/qpid-mutant8/tools/src/main/resources"/>
+  <WS_SearchPathElement kind="CONFIG_FILE_DIR" path="../../../../media/data/muse2/muse2repo_qpid_src/qpid-mutant8/tools/target/maven-archiver"/>
+  <WS_SearchPathElement kind="POM_FILE" path="../../../../media/data/muse2/muse2repo_qpid_src/qpid-mutant8/tools/pom.xml"/>
+    
+  
+  <!--    
+    The overall set of classes is specified by the configured search paths.
+    Workspace patterns define which portion of that set will belong to the workspace. All other classes (specified in the search paths but not matching workspace patterns) are handled as library code. 
+    Positive workspace patterns define a base collection; if negative patterns are given, classes matching them are not considered to belong to the work space.
+      Attribute 'positivePattern': A name matching a positive pattern will be included, if it does not match a negative pattern.
+    The following wildcard characters are supported: 
+    ? means any single character
+    * means any sequence of characters not containing a path separator character like '.' or '/'
+    ** means any sequence of characters, also including path separators
+      Attribute 'negativePattern': A name matching a negative pattern will not be included, even if it does match a positive pattern.
+    The same wildcard characters as with positive pattern are supported
+  -->
+    
+  <WS_WorkspaceClasses positivePattern="org.apache.qpid.tools.**"/>
+    
+  
+  <!--    
+    Resource patterns further tailor the set of workspace resource files which is basically determined by the configured search paths. 
+    Resource files are registered in the Xanitizer workspace if 
+      (a) the file is located directly in a search path of kind XML_DIR or EXTRA_RESOURCES_DIR and matches these patterns
+      (b) or some framework simulation automatically picks up a resource file anywhere from the file system, and it matches these patterns.
+    CAUTION: Be careful with the exclusion of jsp, ftl files and certain xml files as they are required by framework simulation due to case b.
+    *.java, *.class are usually always excluded as they are not treated as resources but separately as Java package code content.
+    Default settings:
+    <WS_Resources positivePattern="**" />
+    <WS_Resources negativePattern="**/*.java" />
+    <WS_Resources negativePattern="**/*.class" />
+    <WS_Resources negativePattern="**/*.png" />
+    <WS_Resources negativePattern="**/*.gif" />
+    <WS_Resources negativePattern="**/*.jpg" />
+      Attribute 'positivePattern': A name matching a positive pattern will be included, if it does not match a negative pattern.
+    The following wildcard characters are supported: 
+    ? means any single character
+    * means any sequence of characters not containing a path separator character like '.' or '/'
+    ** means any sequence of characters, also including path separators
+      Attribute 'negativePattern': A name matching a negative pattern will not be included, even if it does match a positive pattern.
+    The same wildcard characters as with positive pattern are supported
+  -->
+    
+  <WS_Resources positivePattern="**"/>
+  <WS_Resources negativePattern="${MAVEN_REPOSITORY}**"/>
+  <WS_Resources negativePattern="**.XanitizerConfig"/>
+  <WS_Resources negativePattern="**.XanitizerProject"/>
+  <WS_Resources negativePattern="**.class"/>
+  <WS_Resources negativePattern="**.gif"/>
+  <WS_Resources negativePattern="**.gitignore"/>
+  <WS_Resources negativePattern="**.java"/>
+  <WS_Resources negativePattern="**.jpg"/>
+  <WS_Resources negativePattern="**.png"/>
+  <WS_Resources negativePattern="**.scala"/>
+  <WS_Resources negativePattern="**.txt"/>
+  <WS_Resources negativePattern="**.zip"/>
+  <WS_Resources negativePattern="**Xanitizer-Findings-List.xml"/>
+  <WS_Resources negativePattern="**readme.md"/>
+  <WS_Resources negativePattern="**sonar-project.properties"/>
+    
+  
+  <!--    
+    Some system libraries are implicitly used during an analysis; they are taken from the Xanitizer installation. If instead of this, the user wants to supply other instances of such system libraries, the implicitly used ones must be suppressed by use of this configuration element.
+    Default setting:
+    			<WS_SuppressedSystemLibrary>lib/jfxrt.jar</WS_SuppressedSystemLibrary>
+    			<WS_SuppressedSystemLibrary>lib/jfr.jar</WS_SuppressedSystemLibrary>
+  -->
+    
+  <WS_SuppressedSystemLibrary>lib/jfxrt.jar</WS_SuppressedSystemLibrary>
+  <WS_SuppressedSystemLibrary>lib/jfr.jar</WS_SuppressedSystemLibrary>
+    
+  
+  <!--    
+    Patterns for specifying all the frameworks which should be simulated in this analyis project.
+    Default settings:
+    <FR_FrameworksToBeAnalyzed positivePattern="**" />
+    <FR_FrameworksToBeAnalyzed negativePattern="Hibernate"/>
+      Attribute 'positivePattern': A name matching a positive pattern will be included, if it does not match a negative pattern.
+    The following wildcard characters are supported: 
+    ? means any single character
+    * means any sequence of characters not containing a path separator character like '.' or '/'
+    ** means any sequence of characters, also including path separators
+      Attribute 'negativePattern': A name matching a negative pattern will not be included, even if it does match a positive pattern.
+    The same wildcard characters as with positive pattern are supported
+  -->
+    
+  <FR_FrameworksToBeAnalyzed positivePattern="**"/>
+  <FR_FrameworksToBeAnalyzed negativePattern="BasicGenericFrameworkSupport"/>
+  <FR_FrameworksToBeAnalyzed negativePattern="Hibernate"/>
+</TaintAnalysis>
+
+[2020-06-13 09:29:51] WARNING: The following errors occured while resolving Maven POM file dependencies of '/media/data/muse2/muse2repo_qpid_src/qpid-mutant8/tools/pom.xml':
+[2020-06-13 09:29:51] WARNING: Could not resolve Dependency {groupId=org.slf4j, artifactId=slf4j-api, version=1.7.25, type=jar} defined in '/home/nacoop/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.pom'
+[2020-06-13 09:29:51] WARNING: Could not resolve Dependency {groupId=com.fasterxml.jackson.core, artifactId=jackson-annotations, version=2.10.0, type=jar} defined in '/home/nacoop/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.2/jackson-databind-2.10.2.pom'
+[2020-06-13 09:29:51] Using JAR from search path: /media/data/muse2/muse2repo_qpid_src/qpid-mutant8/tools/target/qpid-tools-8.0.1-SNAPSHOT.jar
+[2020-06-13 09:29:51] Using JAR from search path: /home/nacoop/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.2/jackson-core-2.10.2.jar
+[2020-06-13 09:29:51] Using JAR from search path: /home/nacoop/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar
+[2020-06-13 09:29:51] Using JAR from search path: /home/nacoop/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar
+[2020-06-13 09:29:51] Using JAR from search path: /home/nacoop/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.2/jackson-databind-2.10.2.jar
+[2020-06-13 09:29:51] Using JAR from search path: /home/nacoop/.m2/repository/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar
+[2020-06-13 09:29:51] Using JAR from search path: /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/lib/extra-libs/javax.faces-2.1.26.jar
+[2020-06-13 09:29:51] Using JAR from search path: /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/lib/extra-libs/javax.servlet.jsp.jstl-api-1.2.1.jar
+[2020-06-13 09:29:51] Using JAR from search path: /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/lib/extra-libs/javax.servlet.jsp.jstl-1.2.1.jar
+[2020-06-13 09:29:51] Using directory from search path: /media/data/muse2/muse2repo_qpid_src/qpid-mutant8/tools/src/main/java
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.naming.rmi.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.dynalink.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.zipfs.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.compiler.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.accessibility.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.security.auth.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.transaction.xa.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.management.jfr.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.javadoc.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.pack.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.rmic.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.rmi.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.hotspot.agent.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.compiler.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.datatransfer.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.logging.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.jfr.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.naming.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.localedata.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.sctp.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.internal.jvmstat.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.base.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.internal.vm.compiler.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.net.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.httpserver.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.internal.vm.ci.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.aot.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.jshell.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.smartcardio.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.unsupported.desktop.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.desktop.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.jartool.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.internal.ed.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.management.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.internal.vm.compiler.management.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.se.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.naming.dns.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.jlink.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.security.jgss.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.management.rmi.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.jdeps.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.net.http.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.jcmd.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.sql.rowset.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.security.jgss.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.scripting.nashorn.shell.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.xml.crypto.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.charsets.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.crypto.cryptoki.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.management.agent.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.attach.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.editpad.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.prefs.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.jstatd.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.security.sasl.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.crypto.ec.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.jdwp.agent.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.jsobject.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.xml.dom.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.instrument.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.management.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.xml.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.jdi.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.sql.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.scripting.nashorn.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.internal.opt.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.unsupported.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.internal.le.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/java.scripting.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/jmods/jdk.jconsole.jmod - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/lib/apache-tomcat-9.0.22/tomcat-api.jar - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/lib/apache-tomcat-9.0.22/jsp-api.jar - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/lib/apache-tomcat-9.0.22/annotations-api.jar - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/lib/apache-tomcat-9.0.22/catalina.jar - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/lib/apache-tomcat-9.0.22/el-api.jar - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/lib/apache-tomcat-9.0.22/servlet-api.jar - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/lib/apache-tomcat-9.0.22/jaspic-api.jar - primordial=true
+[2020-06-13 09:29:51] Using preinstalled library : /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/lib/apache-tomcat-9.0.22/websocket-api.jar - primordial=true
+[2020-06-13 09:29:51] [STATE]: Building class hierarchy...
+[2020-06-13 09:29:52] [STATE]: Building class hierarchy (step 1 of 8)
+[2020-06-13 09:29:52] [STATE]: Building class hierarchy (step 2 of 8)
+[2020-06-13 09:29:53] [STATE]: Building class hierarchy (step 3 of 8)
+[2020-06-13 09:29:53] [STATE]: Building class hierarchy (step 4 of 8)
+[2020-06-13 09:29:53] [STATE]: Building class hierarchy (step 5 of 8)
+[2020-06-13 09:29:53] [STATE]: Building class hierarchy (step 6 of 8)
+[2020-06-13 09:29:53] [STATE]: Building class hierarchy (step 7 of 8)
+[2020-06-13 09:29:53] [STATE]: Building class hierarchy (step 8 of 8)
+[2020-06-13 09:29:53] [STATE]: Building class hierarchy done
+[2020-06-13 09:29:53] [STATE]: Creating framework simulation code...
+[2020-06-13 09:29:53] [STATE]: Checked 1 directories or files. Current: logback-classic-1.2.3.jar
+[2020-06-13 09:29:53] [STATE]: Checked 2 directories or files. Current: logback-core-1.2.3.jar
+[2020-06-13 09:29:53] [STATE]: Checked 3 directories or files. Current: jackson-core-2.10.2.jar
+[2020-06-13 09:29:53] [STATE]: Checked 4 directories or files. Current: jackson-databind-2.10.2.jar
+[2020-06-13 09:29:53] [STATE]: Checked 5 directories or files. Current: geronimo-jms_1.1_spec-1.1.1.jar
+[2020-06-13 09:29:53] [STATE]: Checked 6 directories or files. Current: qpid-tools-8.0.1-SNAPSHOT.jar
+[2020-06-13 09:29:54] [STATE]:  framework support: processing XML files in search path
+[2020-06-13 09:29:54] [STATE]:  framework support: processing XML files in search path: done
+[2020-06-13 09:29:54] [STATE]:  framework support: processing class hierarchy
+[2020-06-13 09:29:54] [STATE]: AnnotationBasedWS framework support: processing class hierarchy
+[2020-06-13 09:29:54] [STATE]: EL framework support: processing class hierarchy
+[2020-06-13 09:29:54] [STATE]: GWT framework support: processing class hierarchy
+[2020-06-13 09:29:54] Did not find any GWT service interfaces of 'com.google.gwt.user.client.rpc.RemoteService': assuming this is no Google Widget Toolkit (GWT) project.
+[2020-06-13 09:29:54] [STATE]: JSF framework support: processing class hierarchy
+[2020-06-13 09:29:54] No Facelets template files found
+[2020-06-13 09:29:54] [STATE]: JSR181 framework support: processing class hierarchy
+[2020-06-13 09:29:54] [STATE]: JSR299 framework support: processing class hierarchy
+[2020-06-13 09:29:54] [STATE]: ScalaPlay framework support: processing class hierarchy
+[2020-06-13 09:29:54] [STATE]: Sling framework support: processing class hierarchy
+[2020-06-13 09:29:54] [STATE]: SpringIOC framework support: processing class hierarchy
+[2020-06-13 09:29:54] [STATE]: Tiles framework support: processing class hierarchy
+[2020-06-13 09:29:54] [STATE]: JavaXServlets framework support: processing class hierarchy
+[2020-06-13 09:29:54] [STATE]: SpringMVC framework support: processing class hierarchy
+[2020-06-13 09:29:55] [STATE]: X_AXIS framework support: processing class hierarchy
+[2020-06-13 09:29:55] [STATE]: FreemarkerOnSpringMVC framework support: processing class hierarchy
+[2020-06-13 09:29:55] [STATE]: JSP framework support: processing class hierarchy
+[2020-06-13 09:29:55] [STATE]: Struts1 framework support: processing class hierarchy
+[2020-06-13 09:29:55] [STATE]: Struts2 framework support: processing class hierarchy
+[2020-06-13 09:29:55] Did not find class 'com.opensymphony.xwork2.Action': assuming this is no Struts2 project.
+[2020-06-13 09:29:55] [STATE]:  framework support: processing class hierarchy: done
+[2020-06-13 09:29:55] [STATE]: AnnotationBasedWS framework support: generating simulation code
+[2020-06-13 09:29:55] [STATE]: EL framework support: generating simulation code
+[2020-06-13 09:29:55] [STATE]: GWT framework support: generating simulation code
+[2020-06-13 09:29:55] [STATE]: JSF framework support: generating simulation code
+[2020-06-13 09:29:55] [STATE]: JSR181 framework support: generating simulation code
+[2020-06-13 09:29:55] [STATE]: JSR299 framework support: generating simulation code
+[2020-06-13 09:29:55] [STATE]: ScalaPlay framework support: generating simulation code
+[2020-06-13 09:29:55] [STATE]: Sling framework support: generating simulation code
+[2020-06-13 09:29:55] [STATE]: SpringIOC framework support: generating simulation code
+[2020-06-13 09:29:55] [STATE]: Tiles framework support: generating simulation code
+[2020-06-13 09:29:55] [STATE]: JavaXServlets framework support: generating simulation code
+[2020-06-13 09:29:55] [STATE]: SpringMVC framework support: generating simulation code
+[2020-06-13 09:29:55] [STATE]: X_AXIS framework support: generating simulation code
+[2020-06-13 09:29:55] [STATE]: FreemarkerOnSpringMVC framework support: generating simulation code
+[2020-06-13 09:29:55] [STATE]: JSP framework support: generating simulation code
+[2020-06-13 09:29:55] [STATE]: Struts1 framework support: generating simulation code
+[2020-06-13 09:29:55] [STATE]: Struts2 framework support: generating simulation code
+[2020-06-13 09:29:55] [STATE]:  framework support: generating simulation code: done
+[2020-06-13 09:29:55] [STATE]: AnnotationBasedWS framework support: collecting additional resources
+[2020-06-13 09:29:55] [STATE]: EL framework support: collecting additional resources
+[2020-06-13 09:29:55] [STATE]: GWT framework support: collecting additional resources
+[2020-06-13 09:29:55] [STATE]: JSF framework support: collecting additional resources
+[2020-06-13 09:29:55] [STATE]: JSR181 framework support: collecting additional resources
+[2020-06-13 09:29:55] [STATE]: JSR299 framework support: collecting additional resources
+[2020-06-13 09:29:55] [STATE]: ScalaPlay framework support: collecting additional resources
+[2020-06-13 09:29:55] [STATE]: Sling framework support: collecting additional resources
+[2020-06-13 09:29:55] [STATE]: SpringIOC framework support: collecting additional resources
+[2020-06-13 09:29:55] [STATE]: Tiles framework support: collecting additional resources
+[2020-06-13 09:29:55] [STATE]: JavaXServlets framework support: collecting additional resources
+[2020-06-13 09:29:55] [STATE]: SpringMVC framework support: collecting additional resources
+[2020-06-13 09:29:55] [STATE]: X_AXIS framework support: collecting additional resources
+[2020-06-13 09:29:55] [STATE]: FreemarkerOnSpringMVC framework support: collecting additional resources
+[2020-06-13 09:29:55] [STATE]: JSP framework support: collecting additional resources
+[2020-06-13 09:29:55] [STATE]: Struts1 framework support: collecting additional resources
+[2020-06-13 09:29:55] [STATE]: Struts2 framework support: collecting additional resources
+[2020-06-13 09:29:55] [STATE]:  framework support: collecting additional resources: done
+[2020-06-13 09:29:55] [STATE]: Creating framework simulation code done
+[2020-06-13 09:29:55] [STATE]: Looking for invalid opcodes etc....
+[2020-06-13 09:29:55] [STATE]: Looking for invalid opcodes etc. (step 1 of 17966)
+[2020-06-13 09:29:56] [STATE]: Looking for invalid opcodes etc. (step 1022 of 17966)
+[2020-06-13 09:29:56] [STATE]: Looking for invalid opcodes etc. (step 2110 of 17966)
+[2020-06-13 09:29:56] [STATE]: Looking for invalid opcodes etc. (step 3138 of 17966)
+[2020-06-13 09:29:56] [STATE]: Looking for invalid opcodes etc. (step 3949 of 17966)
+[2020-06-13 09:29:56] [STATE]: Looking for invalid opcodes etc. (step 5602 of 17966)
+[2020-06-13 09:29:57] [STATE]: Looking for invalid opcodes etc. (step 8827 of 17966)
+[2020-06-13 09:29:57] [STATE]: Looking for invalid opcodes etc. (step 12201 of 17966)
+[2020-06-13 09:29:57] [STATE]: Looking for invalid opcodes etc. (step 14616 of 17966)
+[2020-06-13 09:29:57] [STATE]: Looking for invalid opcodes etc. (step 15761 of 17966)
+[2020-06-13 09:29:57] [STATE]: Looking for invalid opcodes etc. (step 16564 of 17966)
+[2020-06-13 09:29:58] [STATE]: Looking for invalid opcodes etc. (step 17816 of 17966)
+[2020-06-13 09:29:58] [STATE]: Looking for invalid opcodes etc. done
+[2020-06-13 09:29:58] [STATE]: Computing basic metrics...
+[2020-06-13 09:29:58] [STATE]: Checked 1 directories or files. Current: java
+[2020-06-13 09:29:58] [STATE]: Checked 2 directories or files. Current: logback-classic-1.2.3.jar
+[2020-06-13 09:29:58] [STATE]: Checked 3 directories or files. Current: logback-core-1.2.3.jar
+[2020-06-13 09:29:58] [STATE]: Checked 4 directories or files. Current: jackson-core-2.10.2.jar
+[2020-06-13 09:29:58] [STATE]: Checked 5 directories or files. Current: jackson-databind-2.10.2.jar
+[2020-06-13 09:29:58] [STATE]: Checked 6 directories or files. Current: geronimo-jms_1.1_spec-1.1.1.jar
+[2020-06-13 09:29:58] [STATE]: Checked 7 directories or files. Current: java
+[2020-06-13 09:29:58] [STATE]: Checked 13 directories or files. Current: qpid-tools-8.0.1-SNAPSHOT.jar
+[2020-06-13 09:29:58] [STATE]: Computing basic metrics done
+[2020-06-13 09:29:58] [STATE]: Computing missing supertypes...
+[2020-06-13 09:29:58] [STATE]: Checked 1 directories or files. Current: logback-classic-1.2.3.jar
+[2020-06-13 09:29:58] [STATE]: Checked 2 directories or files. Current: logback-core-1.2.3.jar
+[2020-06-13 09:29:58] [STATE]: Checked 3 directories or files. Current: jackson-core-2.10.2.jar
+[2020-06-13 09:29:58] [STATE]: Checked 4 directories or files. Current: jackson-databind-2.10.2.jar
+[2020-06-13 09:29:58] [STATE]: Checked 5 directories or files. Current: geronimo-jms_1.1_spec-1.1.1.jar
+[2020-06-13 09:29:58] [STATE]: Checked 6 directories or files. Current: qpid-tools-8.0.1-SNAPSHOT.jar
+[2020-06-13 09:29:58] [STATE]: Checked 7 directories or files. Current: java.base.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 8 directories or files. Current: java.compiler.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 9 directories or files. Current: java.datatransfer.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 10 directories or files. Current: java.desktop.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 11 directories or files. Current: java.instrument.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 12 directories or files. Current: java.logging.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 13 directories or files. Current: java.management.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 14 directories or files. Current: java.management.rmi.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 15 directories or files. Current: java.naming.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 16 directories or files. Current: java.net.http.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 17 directories or files. Current: java.prefs.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 18 directories or files. Current: java.rmi.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 19 directories or files. Current: java.scripting.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 20 directories or files. Current: java.se.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 21 directories or files. Current: java.security.jgss.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 22 directories or files. Current: java.security.sasl.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 23 directories or files. Current: java.smartcardio.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 24 directories or files. Current: java.sql.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 25 directories or files. Current: java.sql.rowset.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 26 directories or files. Current: java.transaction.xa.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 27 directories or files. Current: java.xml.crypto.jmod
+[2020-06-13 09:29:58] [STATE]: Checked 28 directories or files. Current: java.xml.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 29 directories or files. Current: jdk.accessibility.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 30 directories or files. Current: jdk.aot.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 31 directories or files. Current: jdk.attach.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 32 directories or files. Current: jdk.charsets.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 33 directories or files. Current: jdk.compiler.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 34 directories or files. Current: jdk.crypto.cryptoki.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 35 directories or files. Current: jdk.crypto.ec.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 36 directories or files. Current: jdk.dynalink.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 37 directories or files. Current: jdk.editpad.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 38 directories or files. Current: jdk.hotspot.agent.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 39 directories or files. Current: jdk.httpserver.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 40 directories or files. Current: jdk.internal.ed.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 41 directories or files. Current: jdk.internal.jvmstat.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 42 directories or files. Current: jdk.internal.le.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 43 directories or files. Current: jdk.internal.opt.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 44 directories or files. Current: jdk.internal.vm.ci.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 45 directories or files. Current: jdk.internal.vm.compiler.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 46 directories or files. Current: jdk.internal.vm.compiler.management.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 47 directories or files. Current: jdk.jartool.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 48 directories or files. Current: jdk.javadoc.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 49 directories or files. Current: jdk.jcmd.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 50 directories or files. Current: jdk.jconsole.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 51 directories or files. Current: jdk.jdeps.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 52 directories or files. Current: jdk.jdi.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 53 directories or files. Current: jdk.jdwp.agent.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 54 directories or files. Current: jdk.jfr.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 55 directories or files. Current: jdk.jlink.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 56 directories or files. Current: jdk.jshell.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 57 directories or files. Current: jdk.jsobject.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 58 directories or files. Current: jdk.jstatd.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 59 directories or files. Current: jdk.localedata.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 60 directories or files. Current: jdk.management.agent.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 61 directories or files. Current: jdk.management.jfr.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 62 directories or files. Current: jdk.management.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 63 directories or files. Current: jdk.naming.dns.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 64 directories or files. Current: jdk.naming.rmi.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 65 directories or files. Current: jdk.net.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 66 directories or files. Current: jdk.pack.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 67 directories or files. Current: jdk.rmic.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 68 directories or files. Current: jdk.scripting.nashorn.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 69 directories or files. Current: jdk.scripting.nashorn.shell.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 70 directories or files. Current: jdk.sctp.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 71 directories or files. Current: jdk.security.auth.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 72 directories or files. Current: jdk.security.jgss.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 73 directories or files. Current: jdk.unsupported.desktop.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 74 directories or files. Current: jdk.unsupported.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 75 directories or files. Current: jdk.xml.dom.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 76 directories or files. Current: jdk.zipfs.jmod
+[2020-06-13 09:29:59] [STATE]: Checked 77 directories or files. Current: annotations-api.jar
+[2020-06-13 09:29:59] [STATE]: Checked 78 directories or files. Current: catalina.jar
+[2020-06-13 09:29:59] [STATE]: Checked 79 directories or files. Current: el-api.jar
+[2020-06-13 09:29:59] [STATE]: Checked 80 directories or files. Current: jaspic-api.jar
+[2020-06-13 09:29:59] [STATE]: Checked 81 directories or files. Current: jsp-api.jar
+[2020-06-13 09:29:59] [STATE]: Checked 82 directories or files. Current: servlet-api.jar
+[2020-06-13 09:29:59] [STATE]: Checked 83 directories or files. Current: tomcat-api.jar
+[2020-06-13 09:29:59] [STATE]: Checked 84 directories or files. Current: websocket-api.jar
+[2020-06-13 09:30:00] [STATE]: Computing missing supertypes done
+[2020-06-13 09:30:01] [STATE]: Updating Method Name Caches...
+[2020-06-13 09:30:01] [STATE]: Checked 1 directories or files. Current: classes
+[2020-06-13 09:30:01] [STATE]: Checked 2 directories or files. Current: logback-classic-1.2.3.jar
+[2020-06-13 09:30:01] [STATE]: Checked 3 directories or files. Current: logback-core-1.2.3.jar
+[2020-06-13 09:30:01] [STATE]: Checked 4 directories or files. Current: jackson-core-2.10.2.jar
+[2020-06-13 09:30:01] [STATE]: Checked 5 directories or files. Current: jackson-databind-2.10.2.jar
+[2020-06-13 09:30:01] [STATE]: Checked 6 directories or files. Current: geronimo-jms_1.1_spec-1.1.1.jar
+[2020-06-13 09:30:01] [STATE]: Checked 7 directories or files. Current: qpid-tools-8.0.1-SNAPSHOT.jar
+[2020-06-13 09:30:01] [STATE]: Checked 8 directories or files. Current: java.base.jmod
+[2020-06-13 09:30:02] [STATE]: Checked 9 directories or files. Current: java.compiler.jmod
+[2020-06-13 09:30:02] [STATE]: Checked 10 directories or files. Current: java.datatransfer.jmod
+[2020-06-13 09:30:02] [STATE]: Checked 11 directories or files. Current: java.desktop.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 12 directories or files. Current: java.instrument.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 13 directories or files. Current: java.logging.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 14 directories or files. Current: java.management.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 15 directories or files. Current: java.management.rmi.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 16 directories or files. Current: java.naming.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 17 directories or files. Current: java.net.http.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 18 directories or files. Current: java.prefs.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 19 directories or files. Current: java.rmi.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 20 directories or files. Current: java.scripting.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 21 directories or files. Current: java.se.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 22 directories or files. Current: java.security.jgss.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 23 directories or files. Current: java.security.sasl.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 24 directories or files. Current: java.smartcardio.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 25 directories or files. Current: java.sql.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 26 directories or files. Current: java.sql.rowset.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 27 directories or files. Current: java.transaction.xa.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 28 directories or files. Current: java.xml.crypto.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 29 directories or files. Current: java.xml.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 30 directories or files. Current: jdk.accessibility.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 31 directories or files. Current: jdk.aot.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 32 directories or files. Current: jdk.attach.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 33 directories or files. Current: jdk.charsets.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 34 directories or files. Current: jdk.compiler.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 35 directories or files. Current: jdk.crypto.cryptoki.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 36 directories or files. Current: jdk.crypto.ec.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 37 directories or files. Current: jdk.dynalink.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 38 directories or files. Current: jdk.editpad.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 39 directories or files. Current: jdk.hotspot.agent.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 40 directories or files. Current: jdk.httpserver.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 41 directories or files. Current: jdk.internal.ed.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 42 directories or files. Current: jdk.internal.jvmstat.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 43 directories or files. Current: jdk.internal.le.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 44 directories or files. Current: jdk.internal.opt.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 45 directories or files. Current: jdk.internal.vm.ci.jmod
+[2020-06-13 09:30:03] [STATE]: Checked 46 directories or files. Current: jdk.internal.vm.compiler.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 47 directories or files. Current: jdk.internal.vm.compiler.management.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 48 directories or files. Current: jdk.jartool.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 49 directories or files. Current: jdk.javadoc.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 50 directories or files. Current: jdk.jcmd.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 51 directories or files. Current: jdk.jconsole.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 52 directories or files. Current: jdk.jdeps.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 53 directories or files. Current: jdk.jdi.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 54 directories or files. Current: jdk.jdwp.agent.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 55 directories or files. Current: jdk.jfr.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 56 directories or files. Current: jdk.jlink.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 57 directories or files. Current: jdk.jshell.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 58 directories or files. Current: jdk.jsobject.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 59 directories or files. Current: jdk.jstatd.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 60 directories or files. Current: jdk.localedata.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 61 directories or files. Current: jdk.management.agent.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 62 directories or files. Current: jdk.management.jfr.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 63 directories or files. Current: jdk.management.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 64 directories or files. Current: jdk.naming.dns.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 65 directories or files. Current: jdk.naming.rmi.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 66 directories or files. Current: jdk.net.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 67 directories or files. Current: jdk.pack.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 68 directories or files. Current: jdk.rmic.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 69 directories or files. Current: jdk.scripting.nashorn.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 70 directories or files. Current: jdk.scripting.nashorn.shell.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 71 directories or files. Current: jdk.sctp.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 72 directories or files. Current: jdk.security.auth.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 73 directories or files. Current: jdk.security.jgss.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 74 directories or files. Current: jdk.unsupported.desktop.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 75 directories or files. Current: jdk.unsupported.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 76 directories or files. Current: jdk.xml.dom.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 77 directories or files. Current: jdk.zipfs.jmod
+[2020-06-13 09:30:04] [STATE]: Checked 78 directories or files. Current: annotations-api.jar
+[2020-06-13 09:30:04] [STATE]: Checked 79 directories or files. Current: catalina.jar
+[2020-06-13 09:30:05] [STATE]: Checked 80 directories or files. Current: el-api.jar
+[2020-06-13 09:30:05] [STATE]: Checked 81 directories or files. Current: jaspic-api.jar
+[2020-06-13 09:30:05] [STATE]: Checked 82 directories or files. Current: jsp-api.jar
+[2020-06-13 09:30:05] [STATE]: Checked 83 directories or files. Current: servlet-api.jar
+[2020-06-13 09:30:05] [STATE]: Checked 84 directories or files. Current: tomcat-api.jar
+[2020-06-13 09:30:05] [STATE]: Checked 85 directories or files. Current: websocket-api.jar
+[2020-06-13 09:30:05] [STATE]: Updating Method Name Caches done
+[2020-06-13 09:30:05] [STATE]: Saving Workspace Data
+[2020-06-13 09:30:05] #### Constructing Workspace of 'tools' completed; Duration: 15 sec (including JSP Compilation)
+[2020-06-13 09:30:05] Workspace Metrics of 'tools': 
+Classes (All): 17,966
+Bytecode Instructions (Entire Workspace): 9,922
+Bytecode Instructions (w/o Framework Simulation): 9,922
+Workspace Classes: 10
+Workspace Source Files: 4
+Workspace Source Files (Referenced by Class Files): 4
+Workspace Packages: 2
+Workspace LOC: 2,059
+Classes (In Libraries): 17,956
+Workspace Methods (Non-empty): 94
+Workspace Methods (All): 94
+Used External Libraries: 6
+
+[2020-06-13 09:30:05] Number of threads used/specified in config/processors: 1/1/8
+[2020-06-13 09:30:06] [STATE]: Looking for start methods in class sun.security.provider.X509Factory (1 of 17966)
+[2020-06-13 09:30:07] [STATE]: Looking for start methods in class java.time.ZonedDateTime$1 (8203 of 17966)
+[2020-06-13 09:30:07] [STATE]: Looking for start methods in class org.apache.catalina.webresources.Cache (17192 of 17966)
+[2020-06-13 09:30:07] Found 3 start method(s) for the code.
+[2020-06-13 09:30:07] Starting call graph processing with 3 start methods
+[2020-06-13 09:30:07] STARTING compute call graph
+[2020-06-13 09:30:07] Creating call graph based on call hierarchy with 17966 classes
+[2020-06-13 09:30:07] [STATE]: Computing call graph...
+[2020-06-13 09:30:08] [STATE]: Nodes of refined call graph: 2
+[2020-06-13 09:30:08]     current worklist size = 0
+[2020-06-13 09:30:08] [STATE]: Nodes of refined call graph: 29
+[2020-06-13 09:30:08]     current worklist size = 14
+[2020-06-13 09:30:08] [STATE]: Nodes of refined call graph: 87
+[2020-06-13 09:30:08]     current worklist size = 131
+[2020-06-13 09:30:08] [STATE]: Nodes of refined call graph: 97
+[2020-06-13 09:30:08]     current worklist size = 141
+[2020-06-13 09:30:08] [STATE]: Nodes of refined call graph: 117
+[2020-06-13 09:30:08]     current worklist size = 164
+[2020-06-13 09:30:08] Constructed call graph has 117 nodes and 160 edges.
+[2020-06-13 09:30:08] [STATE]: Collecting field access info...
+[2020-06-13 09:30:08] [STATE]: Collecting field accesses for method 1/117
+[2020-06-13 09:30:08] [STATE]: Collecting field access info done
+[2020-06-13 09:30:08] [STATE]: Collecting end-of-dataflow sanitizer info...
+[2020-06-13 09:30:08] [STATE]: Collecting end-of-dataflow sanitizer info done
+[2020-06-13 09:30:08] [STATE]: Collecting unconditionally recursive methods...
+[2020-06-13 09:30:08] [STATE]: Collecting unconditionally recursive methods 1/117
+[2020-06-13 09:30:08] [STATE]: Collecting unconditionally recursive methods done
+[2020-06-13 09:30:08] [STATE]: Collecting methods that can return exceptionally...
+[2020-06-13 09:30:08] [STATE]: Collecting potentially exceptionally returning methods 1/117
+[2020-06-13 09:30:08] [STATE]: Collecting methods that can return exceptionally done
+[2020-06-13 09:30:08] [STATE]: Computing call graph done
+[2020-06-13 09:30:08] [STATE]: Counting project and library methods...
+[2020-06-13 09:30:08] Call graph construction took 0 sec; call graph has 117 nodes (nodes/methods: project: 88/88, library: 29/27)
+[2020-06-13 09:30:08] [STATE]: Counting project and library methods done
+[2020-06-13 09:30:08] FINISHED compute call graph
+[2020-06-13 09:30:08] [STATE]: Checking problem type 'XSS: Reflected XSS'...
+[2020-06-13 09:30:08] STARTING check problem type xss:XSSFromRequest
+[2020-06-13 09:30:08] FINISHED check problem type xss:XSSFromRequest
+[2020-06-13 09:30:08] [STATE]: Checking problem type 'XSS: Reflected XSS' done
+[2020-06-13 09:30:08] [STATE]: Checking problem type 'Injection: LDAP Injection'...
+[2020-06-13 09:30:08] STARTING check problem type ci:LDAPInjection
+[2020-06-13 09:30:08] FINISHED check problem type ci:LDAPInjection
+[2020-06-13 09:30:08] [STATE]: Checking problem type 'Injection: LDAP Injection' done
+[2020-06-13 09:30:08] [STATE]: Checking problem type 'Injection: XPath Injection'...
+[2020-06-13 09:30:08] STARTING check problem type ci:XPathInjection
+[2020-06-13 09:30:08] FINISHED check problem type ci:XPathInjection
+[2020-06-13 09:30:08] [STATE]: Checking problem type 'Injection: XPath Injection' done
+[2020-06-13 09:30:08] [STATE]: Checking problem type 'Usage: Java Reflection'...
+[2020-06-13 09:30:08] STARTING check problem type SpecialMethodCall:AppliedReflection
+[2020-06-13 09:30:09] FINISHED check problem type SpecialMethodCall:AppliedReflection
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Usage: Java Reflection' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cookies: Unsecured Cookie'...
+[2020-06-13 09:30:09] STARTING check problem type cook:UnsecuredCookie
+[2020-06-13 09:30:09] FINISHED check problem type cook:UnsecuredCookie
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cookies: Unsecured Cookie' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Deserialization: Insecure Stored Deserialization'...
+[2020-06-13 09:30:09] STARTING check problem type id:InsecureDeserializationFromDb
+[2020-06-13 09:30:09] FINISHED check problem type id:InsecureDeserializationFromDb
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Deserialization: Insecure Stored Deserialization' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Usage: Loading External Classes'...
+[2020-06-13 09:30:09] STARTING check problem type SpecialMethodCall:AppliedClassLoading
+[2020-06-13 09:30:09] FINISHED check problem type SpecialMethodCall:AppliedClassLoading
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Usage: Loading External Classes' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Check that only allowed crypto algorithms are used'...
+[2020-06-13 09:30:09] STARTING check problem type protocolCheckProblemType:OnlyAllowedCryptoAlgorithms
+[2020-06-13 09:30:09] FINISHED check problem type protocolCheckProblemType:OnlyAllowedCryptoAlgorithms
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Check that only allowed crypto algorithms are used' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XXE: Param Entities'...
+[2020-06-13 09:30:09] STARTING check problem type xxe:ParamEntities
+[2020-06-13 09:30:09] FINISHED check problem type xxe:ParamEntities
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XXE: Param Entities' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XSS: URL Redirection Abuse'...
+[2020-06-13 09:30:09] STARTING check problem type xss:URLRedirectAbuse
+[2020-06-13 09:30:09] FINISHED check problem type xss:URLRedirectAbuse
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XSS: URL Redirection Abuse' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Construction of Secure Random Number Generator'...
+[2020-06-13 09:30:09] STARTING check problem type protocolCheckProblemType:SecureRandomNumberGeneratorConstruction
+[2020-06-13 09:30:09] FINISHED check problem type protocolCheckProblemType:SecureRandomNumberGeneratorConstruction
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Construction of Secure Random Number Generator' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Path Traversal: Insecure Direct Object References'...
+[2020-06-13 09:30:09] STARTING check problem type idor:InsecureDirectObjectReferences
+[2020-06-13 09:30:09] FINISHED check problem type idor:InsecureDirectObjectReferences
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Path Traversal: Insecure Direct Object References' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XML: Do not access external DTDs'...
+[2020-06-13 09:30:09] STARTING check problem type protocolCheckProblemType:XMLExternalDTDs
+[2020-06-13 09:30:09] FINISHED check problem type protocolCheckProblemType:XMLExternalDTDs
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XML: Do not access external DTDs' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Trust Boundary Violation: HTTP Session'...
+[2020-06-13 09:30:09] STARTING check problem type tbv:TrustBoundaryViolationSession
+[2020-06-13 09:30:09] FINISHED check problem type tbv:TrustBoundaryViolationSession
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Trust Boundary Violation: HTTP Session' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Injection: Command Injection'...
+[2020-06-13 09:30:09] STARTING check problem type ci:CommandInjection
+[2020-06-13 09:30:09] FINISHED check problem type ci:CommandInjection
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Injection: Command Injection' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Basic Protocol Violations for AES Encryption and Decryption'...
+[2020-06-13 09:30:09] STARTING check problem type protocolCheckProblemType:AES_BothEncryptionAndDecryption
+[2020-06-13 09:30:09] FINISHED check problem type protocolCheckProblemType:AES_BothEncryptionAndDecryption
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Basic Protocol Violations for AES Encryption and Decryption' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cookies: No HttpOnly Cookie'...
+[2020-06-13 09:30:09] STARTING check problem type cook:HttpOnlyCookie
+[2020-06-13 09:30:09] FINISHED check problem type cook:HttpOnlyCookie
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cookies: No HttpOnly Cookie' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Deserialization: Unsafe Deserialization Configuration'...
+[2020-06-13 09:30:09] STARTING check problem type SpecialMethodCall:Deserialization:UnsafeDeserializationConfiguration
+[2020-06-13 09:30:09] FINISHED check problem type SpecialMethodCall:Deserialization:UnsafeDeserializationConfiguration
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Deserialization: Unsafe Deserialization Configuration' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Password-Based Encryption'...
+[2020-06-13 09:30:09] STARTING check problem type protocolCheckProblemType:PBE
+[2020-06-13 09:30:09] FINISHED check problem type protocolCheckProblemType:PBE
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Password-Based Encryption' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XXE: General Entities'...
+[2020-06-13 09:30:09] STARTING check problem type xxe:GeneralEntities
+[2020-06-13 09:30:09] FINISHED check problem type xxe:GeneralEntities
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XXE: General Entities' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Injection: Log Injection'...
+[2020-06-13 09:30:09] STARTING check problem type ci:LogInjection
+[2020-06-13 09:30:09] FINISHED check problem type ci:LogInjection
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Injection: Log Injection' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Construction of Initialization Vectors'...
+[2020-06-13 09:30:09] STARTING check problem type protocolCheckProblemType:InitializationVectorConstruction
+[2020-06-13 09:30:09] FINISHED check problem type protocolCheckProblemType:InitializationVectorConstruction
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Construction of Initialization Vectors' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Hard-Coded Credentials: Credentials as Method Parameter'...
+[2020-06-13 09:30:09] STARTING check problem type hcc:Hard-CodedCredentials:CredentialsAsMethodParameter
+[2020-06-13 09:30:09] FINISHED check problem type hcc:Hard-CodedCredentials:CredentialsAsMethodParameter
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Hard-Coded Credentials: Credentials as Method Parameter' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'JNI: Unsafe Java Native Interface'...
+[2020-06-13 09:30:09] STARTING check problem type SpecialMethodCall:JNICall
+[2020-06-13 09:30:09] FINISHED check problem type SpecialMethodCall:JNICall
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'JNI: Unsafe Java Native Interface' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Injection: SQL Injection'...
+[2020-06-13 09:30:09] STARTING check problem type ci:SQLInjection
+[2020-06-13 09:30:09] FINISHED check problem type ci:SQLInjection
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Injection: SQL Injection' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Cryptographic Hashing'...
+[2020-06-13 09:30:09] STARTING check problem type protocolCheckProblemType:CryptographicHashing
+[2020-06-13 09:30:09] FINISHED check problem type protocolCheckProblemType:CryptographicHashing
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Cryptographic Hashing' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Cryptographic Algorithms w/o Specified Crypto-Provider'...
+[2020-06-13 09:30:09] STARTING check problem type SpecialMethodCall:EncryptionUsedInProjectWOProvider
+[2020-06-13 09:30:09] FINISHED check problem type SpecialMethodCall:EncryptionUsedInProjectWOProvider
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Cryptographic Algorithms w/o Specified Crypto-Provider' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: RSA Encryption'...
+[2020-06-13 09:30:09] STARTING check problem type protocolCheckProblemType:RSA_Encryption
+[2020-06-13 09:30:09] FINISHED check problem type protocolCheckProblemType:RSA_Encryption
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: RSA Encryption' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: AES Decryption'...
+[2020-06-13 09:30:09] STARTING check problem type protocolCheckProblemType:AES_Decryption
+[2020-06-13 09:30:09] FINISHED check problem type protocolCheckProblemType:AES_Decryption
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: AES Decryption' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Injection: OS Command Injection'...
+[2020-06-13 09:30:09] STARTING check problem type ci:OSCommandInjection
+[2020-06-13 09:30:09] FINISHED check problem type ci:OSCommandInjection
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Injection: OS Command Injection' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Digital Signatures Verifying'...
+[2020-06-13 09:30:09] STARTING check problem type protocolCheckProblemType:SignatureVerifying
+[2020-06-13 09:30:09] FINISHED check problem type protocolCheckProblemType:SignatureVerifying
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Digital Signatures Verifying' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Usage: Privileged Action'...
+[2020-06-13 09:30:09] STARTING check problem type SpecialMethodCall:AppliedPrivilegedAction
+[2020-06-13 09:30:09] FINISHED check problem type SpecialMethodCall:AppliedPrivilegedAction
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Usage: Privileged Action' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Resource Leak: Socket Resource Leak'...
+[2020-06-13 09:30:09] STARTING check problem type rl:SocketResourceLeak
+[2020-06-13 09:30:09] FINISHED check problem type rl:SocketResourceLeak
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Resource Leak: Socket Resource Leak' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Check that only allowed hash algorithms are used'...
+[2020-06-13 09:30:09] STARTING check problem type protocolCheckProblemType:OnlyAllowedHashAlgorithms
+[2020-06-13 09:30:09] FINISHED check problem type protocolCheckProblemType:OnlyAllowedHashAlgorithms
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Check that only allowed hash algorithms are used' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Basic Protocol Violations for RSA Encryption and Decryption'...
+[2020-06-13 09:30:09] STARTING check problem type protocolCheckProblemType:RSA_BothEncryptionAndDecryption
+[2020-06-13 09:30:09] FINISHED check problem type protocolCheckProblemType:RSA_BothEncryptionAndDecryption
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Basic Protocol Violations for RSA Encryption and Decryption' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: RSA Decryption'...
+[2020-06-13 09:30:09] STARTING check problem type protocolCheckProblemType:RSA_Decryption
+[2020-06-13 09:30:09] FINISHED check problem type protocolCheckProblemType:RSA_Decryption
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: RSA Decryption' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Construction of Secure Random Numbers'...
+[2020-06-13 09:30:09] STARTING check problem type protocolCheckProblemType:SecureRandomNumberConstruction
+[2020-06-13 09:30:09] FINISHED check problem type protocolCheckProblemType:SecureRandomNumberConstruction
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Construction of Secure Random Numbers' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Digital Signatures Signing'...
+[2020-06-13 09:30:09] STARTING check problem type protocolCheckProblemType:SignatureSigning
+[2020-06-13 09:30:09] FINISHED check problem type protocolCheckProblemType:SignatureSigning
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Digital Signatures Signing' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XSS: Stored XSS'...
+[2020-06-13 09:30:09] STARTING check problem type xss:XSSFromDb
+[2020-06-13 09:30:09] FINISHED check problem type xss:XSSFromDb
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XSS: Stored XSS' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Path Traversal: Manipulated File System Access'...
+[2020-06-13 09:30:09] STARTING check problem type pt:PathTraversal
+[2020-06-13 09:30:09] FINISHED check problem type pt:PathTraversal
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Path Traversal: Manipulated File System Access' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Usage: PrintStackTrace'...
+[2020-06-13 09:30:09] STARTING check problem type SpecialMethodCall:PrintStackTrace
+[2020-06-13 09:30:09] FINISHED check problem type SpecialMethodCall:PrintStackTrace
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Usage: PrintStackTrace' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Injection: Response Header Injection'...
+[2020-06-13 09:30:09] STARTING check problem type rhi:ResponseHeaderInjection
+[2020-06-13 09:30:09] FINISHED check problem type rhi:ResponseHeaderInjection
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Injection: Response Header Injection' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: AES Encryption'...
+[2020-06-13 09:30:09] STARTING check problem type protocolCheckProblemType:AES_Encryption
+[2020-06-13 09:30:09] FINISHED check problem type protocolCheckProblemType:AES_Encryption
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: AES Encryption' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Usage: java.util.Random'...
+[2020-06-13 09:30:09] STARTING check problem type SpecialMethodCall:java.util.Random
+[2020-06-13 09:30:09] FINISHED check problem type SpecialMethodCall:java.util.Random
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Usage: java.util.Random' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Injection: Code Injection'...
+[2020-06-13 09:30:09] STARTING check problem type ci:CodeInjection
+[2020-06-13 09:30:09] FINISHED check problem type ci:CodeInjection
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Injection: Code Injection' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XSS: Stored XSS from Unrendered Output'...
+[2020-06-13 09:30:09] STARTING check problem type xss:XSSFromDbUnrendered
+[2020-06-13 09:30:09] FINISHED check problem type xss:XSSFromDbUnrendered
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XSS: Stored XSS from Unrendered Output' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XSS: Reflected XSS from Unrendered Output'...
+[2020-06-13 09:30:09] STARTING check problem type xss:XSSFromRequestUnrendered
+[2020-06-13 09:30:09] FINISHED check problem type xss:XSSFromRequestUnrendered
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XSS: Reflected XSS from Unrendered Output' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Usage: Java Servlet Forward and Include'...
+[2020-06-13 09:30:09] STARTING check problem type SpecialMethodCall:JavaServletFindAndInclude
+[2020-06-13 09:30:09] FINISHED check problem type SpecialMethodCall:JavaServletFindAndInclude
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Usage: Java Servlet Forward and Include' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Hard-Coded Credentials: Cryptographic Key as Method Parameter'...
+[2020-06-13 09:30:09] STARTING check problem type hcc:Hard-CodedCredentials:CryptographicKeyAsMethodParameter
+[2020-06-13 09:30:09] FINISHED check problem type hcc:Hard-CodedCredentials:CryptographicKeyAsMethodParameter
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Hard-Coded Credentials: Cryptographic Key as Method Parameter' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Hard-Coded Credentials: Password as Method Parameter'...
+[2020-06-13 09:30:09] STARTING check problem type hcc:Hard-CodedCredentials:PasswordAsMethodParameter
+[2020-06-13 09:30:09] FINISHED check problem type hcc:Hard-CodedCredentials:PasswordAsMethodParameter
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Hard-Coded Credentials: Password as Method Parameter' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Injection: Reflection Injection'...
+[2020-06-13 09:30:09] STARTING check problem type ci:ReflectionInjection
+[2020-06-13 09:30:09] FINISHED check problem type ci:ReflectionInjection
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Injection: Reflection Injection' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Deserialization: Insecure Reflected Deserialization'...
+[2020-06-13 09:30:09] STARTING check problem type id:InsecureDeserializationFromRequest
+[2020-06-13 09:30:09] FINISHED check problem type id:InsecureDeserializationFromRequest
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Deserialization: Insecure Reflected Deserialization' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XXE: Disallow Doc - Xerces 2 only'...
+[2020-06-13 09:30:09] STARTING check problem type xxe:DisallowDoc
+[2020-06-13 09:30:09] FINISHED check problem type xxe:DisallowDoc
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XXE: Disallow Doc - Xerces 2 only' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Resource Leak: IO Stream Resource Leak'...
+[2020-06-13 09:30:09] STARTING check problem type rl:IOStreamResourceLeak
+[2020-06-13 09:30:09] FINISHED check problem type rl:IOStreamResourceLeak
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Resource Leak: IO Stream Resource Leak' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Usage: Reverse DNS Resolution'...
+[2020-06-13 09:30:09] STARTING check problem type SpecialMethodCall:AppliedDNSResolution
+[2020-06-13 09:30:09] FINISHED check problem type SpecialMethodCall:AppliedDNSResolution
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Usage: Reverse DNS Resolution' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Path Traversal: Upload of File with Dangerous Type'...
+[2020-06-13 09:30:09] STARTING check problem type ufdt:UploadofFilewithDangerousType
+[2020-06-13 09:30:09] FINISHED check problem type ufdt:UploadofFilewithDangerousType
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Path Traversal: Upload of File with Dangerous Type' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Cryptographic Algorithms Used in Project'...
+[2020-06-13 09:30:09] STARTING check problem type SpecialMethodCall:EncryptionUsedInProject
+[2020-06-13 09:30:09] FINISHED check problem type SpecialMethodCall:EncryptionUsedInProject
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Cryptography: Cryptographic Algorithms Used in Project' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'SSL/TLS Validation: Suspicious Usage'...
+[2020-06-13 09:30:09] STARTING check problem type ssl:SpecialMethodCall:SSL/TLSValidation
+[2020-06-13 09:30:09] FINISHED check problem type ssl:SpecialMethodCall:SSL/TLSValidation
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'SSL/TLS Validation: Suspicious Usage' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XML: Secure XML Processing'...
+[2020-06-13 09:30:09] STARTING check problem type protocolCheckProblemType:SecureXMLProcessing
+[2020-06-13 09:30:09] FINISHED check problem type protocolCheckProblemType:SecureXMLProcessing
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'XML: Secure XML Processing' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Injection: Code Inclusion'...
+[2020-06-13 09:30:09] STARTING check problem type ci:CodeInclusion
+[2020-06-13 09:30:09] FINISHED check problem type ci:CodeInclusion
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Injection: Code Inclusion' done
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Privacy Leak: Output of Confidential Data'...
+[2020-06-13 09:30:09] STARTING check problem type pl:PrivacyLeak
+[2020-06-13 09:30:09] FINISHED check problem type pl:PrivacyLeak
+[2020-06-13 09:30:09] [STATE]: Checking problem type 'Privacy Leak: Output of Confidential Data' done
+[2020-06-13 09:30:09] STARTING collecting explicitly specified data flow problem types
+[2020-06-13 09:30:09] FINISHED collecting explicitly specified data flow problem types
+[2020-06-13 09:30:09] STARTING collecting additionally needed problem types
+[2020-06-13 09:30:09] FINISHED collecting additionally needed problem types
+[2020-06-13 09:30:09] [STATE]: Call graph processing...
+[2020-06-13 09:30:09] [STATE]: Call graph processing done
+[2020-06-13 09:30:09] [STATE]: Registering call graph...
+[2020-06-13 09:30:09] [STATE]: Registering call graph method 0 of 117
+[2020-06-13 09:30:09] [STATE]: Registering call graph done
+[2020-06-13 09:30:09] [STATE]: Running Taint Analysis...
+[2020-06-13 09:30:09] [STATE]: Collecting taint sources and sinks...
+[2020-06-13 09:30:09] [STATE]: Computing values reached from source 'TaintSource:HttpResponseOutput'...
+[2020-06-13 09:30:09] STARTING mkReachedValuesPerCGNode_inner(TaintSource:HttpResponseOutput)
+[2020-06-13 09:30:09] [STATE]: Filling taint sources, sanitizers etc: processing node 117 of 117
+[2020-06-13 09:30:09] Filling taint sources, sanitizers etc: processing node 117 of 117
+[2020-06-13 09:30:09] [STATE]: Computing reached values for taint source kind 'TaintSource:HttpResponseOutput'...
+[2020-06-13 09:30:09] [STATE]: Computing reached values for taint source kind 'TaintSource:HttpResponseOutput' done
+[2020-06-13 09:30:09] FINISHED mkReachedValuesPerCGNode_inner(TaintSource:HttpResponseOutput)
+[2020-06-13 09:30:09] [STATE]: Computing values reached from source 'TaintSource:HttpResponseOutput' done
+[2020-06-13 09:30:10] [STATE]: Filling taint sources, sanitizers etc: processing node 22 of 117
+[2020-06-13 09:30:10] Filling taint sources, sanitizers etc: processing node 22 of 117
+[2020-06-13 09:30:11] [STATE]: Filling taint sources, sanitizers etc: processing node 117 of 117
+[2020-06-13 09:30:11] Filling taint sources, sanitizers etc: processing node 117 of 117
+[2020-06-13 09:30:11] Before filtering: For xss:XSSFromRequest, found 3 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For ci:LDAPInjection, found 8 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For ci:XPathInjection, found 8 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For cook:UnsecuredCookie, found 0 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For id:InsecureDeserializationFromDb, found 0 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For xxe:ParamEntities, found 0 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For xss:URLRedirectAbuse, found 0 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For idor:InsecureDirectObjectReferences, found 3 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For tbv:TrustBoundaryViolationSession, found 8 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For ci:CommandInjection, found 8 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For cook:HttpOnlyCookie, found 0 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For xxe:GeneralEntities, found 0 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For ci:LogInjection, found 5 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For hcc:Hard-CodedCredentials:CredentialsAsMethodParameter, found 0 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For ci:SQLInjection, found 8 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For ci:OSCommandInjection, found 8 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For rl:SocketResourceLeak, found 0 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For xss:XSSFromDb, found 0 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For pt:PathTraversal, found 8 taint sources, 1 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Before filtering: For rhi:ResponseHeaderInjection, found 5 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For ci:CodeInjection, found 8 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For xss:XSSFromDbUnrendered, found 0 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For xss:XSSFromRequestUnrendered, found 3 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For hcc:Hard-CodedCredentials:CryptographicKeyAsMethodParameter, found 0 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For hcc:Hard-CodedCredentials:PasswordAsMethodParameter, found 0 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For ci:ReflectionInjection, found 5 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For id:InsecureDeserializationFromRequest, found 3 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For xxe:DisallowDoc, found 0 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For rl:IOStreamResourceLeak, found 7 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Before filtering: For ufdt:UploadofFilewithDangerousType, found 3 taint sources, 1 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Before filtering: For ci:CodeInclusion, found 8 taint sources, 0 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] Sources or sinks are empty - no paths possible, dropping both
+[2020-06-13 09:30:11] Before filtering: For pl:PrivacyLeak, found 1 taint sources, 54 taint sinks and 0 uncritical sinks.
+[2020-06-13 09:30:11] [STATE]: Collecting taint sources and sinks done
+[2020-06-13 09:30:11] Taint Source and Sink collection: 2 sec
+[2020-06-13 09:30:11] STARTING collecting paths in com.rigsit.xanitizer.a.d.a.d
+[2020-06-13 09:30:11] [STATE]: Running jobs...
+[2020-06-13 09:30:11] Have to process altogether 110 taint sources and 56 taint sinks.
+[2020-06-13 09:30:11] [STATE]: Analyzing a total of 110 taint sources and 56 taint sinks in 4 jobs ...
+[2020-06-13 09:30:11] Computing transitive hull for node 34 (Node: < Application, Lorg/apache/qpid/tools/MemoryConsumptionTestClient, generateCSV(Lorg/apache/qpid/tools/MemoryConsumptionTestClient$MemoryStatistic;IIZIIIILjava/lang/String;)V > Context: DelegatingContext [A=JavaTypeContext<point: <Application,Lorg/apache/qpid/tools/MemoryConsumptionTestClient>>, B=Everywhere]), in round 1, cache has values for 0 of 117 nodes, current work list has 4 elements
+[2020-06-13 09:30:11] [STATE]: Path Traversal: Manipulated File System Access with 8 sources and 1 sink...
+[2020-06-13 09:30:11] Computing transitive hull for node 34 (Node: < Application, Lorg/apache/qpid/tools/MemoryConsumptionTestClient, generateCSV(Lorg/apache/qpid/tools/MemoryConsumptionTestClient$MemoryStatistic;IIZIIIILjava/lang/String;)V > Context: DelegatingContext [A=JavaTypeContext<point: <Application,Lorg/apache/qpid/tools/MemoryConsumptionTestClient>>, B=Everywhere]), in round 1, cache has values for 0 of 117 nodes, current work list has 4 elements
+[2020-06-13 09:30:11] Computing transitive hull for node 2 (Node: < Application, Lorg/apache/qpid/tools/RestStressTestClient, main([Ljava/lang/String;)V > Context: DelegatingContext [A=Everywhere, B=Everywhere]), in round 1, cache has values for 0 of 117 nodes, current work list has 7 elements
+[2020-06-13 09:30:11] [STATE]: Path Traversal: Manipulated File System Access with 8 sources and 1 sink done
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks...
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks done
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks...
+[2020-06-13 09:30:11] Source 1/7: processed 0% of sinks for current source
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks (looking for paths, source 1/7, taint data sink combination 1/5)...
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks (looking for paths, source 1/7, taint data sink combination 1/5) done
+[2020-06-13 09:30:11] Source 1/7: processed 100% of sinks for current source
+[2020-06-13 09:30:11] Source 2/7: processed 0% of sinks for current source
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks (looking for paths, source 2/7, taint data sink combination 1/5)...
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks (looking for paths, source 2/7, taint data sink combination 1/5) done
+[2020-06-13 09:30:11] Source 2/7: processed 100% of sinks for current source
+[2020-06-13 09:30:11] Source 3/7: processed 0% of sinks for current source
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks (looking for paths, source 3/7, taint data sink combination 1/5)...
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks (looking for paths, source 3/7, taint data sink combination 1/5) done
+[2020-06-13 09:30:11] Source 3/7: processed 100% of sinks for current source
+[2020-06-13 09:30:11] Source 4/7: processed 0% of sinks for current source
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks (looking for paths, source 4/7, taint data sink combination 1/5)...
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks (looking for paths, source 4/7, taint data sink combination 1/5) done
+[2020-06-13 09:30:11] Source 4/7: processed 100% of sinks for current source
+[2020-06-13 09:30:11] Source 5/7: processed 0% of sinks for current source
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks (looking for paths, source 5/7, taint data sink combination 1/5)...
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks (looking for paths, source 5/7, taint data sink combination 1/5) done
+[2020-06-13 09:30:11] Source 5/7: processed 100% of sinks for current source
+[2020-06-13 09:30:11] Source 6/7: processed 0% of sinks for current source
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks (looking for paths, source 6/7, taint data sink combination 1/5)...
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks (looking for paths, source 6/7, taint data sink combination 1/5) done
+[2020-06-13 09:30:11] Source 6/7: processed 100% of sinks for current source
+[2020-06-13 09:30:11] Source 7/7: processed 0% of sinks for current source
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks (looking for paths, source 7/7, taint data sink combination 1/5)...
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks (looking for paths, source 7/7, taint data sink combination 1/5) done
+[2020-06-13 09:30:11] Source 7/7: processed 100% of sinks for current source
+[2020-06-13 09:30:11] [STATE]: Resource Leak: IO Stream Resource Leak with 7 sources and unknown number of sinks done
+[2020-06-13 09:30:11] [STATE]: Path Traversal: Upload of File with Dangerous Type with 3 sources and 1 sink...
+[2020-06-13 09:30:11] [STATE]: Path Traversal: Upload of File with Dangerous Type with 3 sources and 1 sink done
+[2020-06-13 09:30:11] [STATE]: Privacy Leak: Output of Confidential Data with 1 source and 54 sinks...
+[2020-06-13 09:30:11] Computing transitive hull for node 47 (Node: < Application, Lorg/apache/qpid/tools/RestStressTestClient$RestClient, authenticateIfSaslAuthenticationRequested()V > Context: DelegatingContext [A=JavaTypeContext<point: <Application,Lorg/apache/qpid/tools/RestStressTestClient$RestClient>>, B=Everywhere]), in round 1, cache has values for 0 of 117 nodes, current work list has 1 elements
+[2020-06-13 09:30:12] [STATE]: Privacy Leak: Output of Confidential Data with 1 source and 54 sinks done
+[2020-06-13 09:30:12] [STATE]: Privacy Leak: Output of Confidential Data with 1 source and 54 sinks...
+[2020-06-13 09:30:12] Source 1/1: processed 0% of sinks for current source
+[2020-06-13 09:30:12] [STATE]: Privacy Leak: Output of Confidential Data with 1 source and 54 sinks (looking for paths, source 1/1, taint data sink combination 1/3)...
+[2020-06-13 09:30:12] [STATE]: Privacy Leak: Output of Confidential Data with 1 source and 54 sinks (looking for paths, source 1/1, taint data sink combination 1/3) done
+[2020-06-13 09:30:12] Source 1/1: processed 100% of sinks for current source
+[2020-06-13 09:30:12] [STATE]: Privacy Leak: Output of Confidential Data with 1 source and 54 sinks done
+[2020-06-13 09:30:12] [STATE]: Running jobs done
+[2020-06-13 09:30:12] [STATE]: Wrapping up...
+[2020-06-13 09:30:12] While collecting paths, reached  8 taint data sink combination(s) for 2 problem type(s) [pl:PrivacyLeak, rl:IOStreamResourceLeak], with 8 path(s)
+[2020-06-13 09:30:12] [STATE]: Wrapping up done
+[2020-06-13 09:30:12] FINISHED collecting paths in com.rigsit.xanitizer.a.d.a.d
+[2020-06-13 09:30:12] Dataflow: 0 sec
+[2020-06-13 09:30:12] [STATE]: Running Taint Analysis done
+[2020-06-13 09:30:12] [STATE]: Running Protocol Checks...
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Check Allowed Cryptography Algorithms: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Check Allowed Cryptography Algorithms: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for XML: Do not access external DTDs: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for XML: Do not access external DTDs: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for MessageDigest Use for Cryptographic Hashing: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for MessageDigest Use for Cryptographic Hashing: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Check Allowed Hash Algorithms: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Check Allowed Hash Algorithms: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Creation of a secure XML parser factory: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Creation of a secure XML parser factory: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Creation of an RSAKeyGenParameterSpec Instance for RSA Key Generation: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Creation of an RSAKeyGenParameterSpec Instance for RSA Key Generation: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Generation of a PBEKeySpec: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Generation of a PBEKeySpec: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Generation of a PBE Key: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Generation of a PBE Key: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Creation of an PBEParameterSpec Instance: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Creation of an PBEParameterSpec Instance: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Creation of a PBE AlgorithmParameters Instance: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Creation of a PBE AlgorithmParameters Instance: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Creation of an Initialization Vector Parameter Spec: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Creation of an Initialization Vector Parameter Spec: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Generation of an AES KeySpec: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Generation of an AES KeySpec: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Generation of an AES Key from Existing Key Material: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Generation of an AES Key from Existing Key Material: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Construction of a Strong Random Number Generator: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Construction of a Strong Random Number Generator: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Construction of Strong Random Numbers: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Construction of Strong Random Numbers: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Creation and use of a PBE Cipher: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Creation and use of a PBE Cipher: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Generation of an RSA Key Pair: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Generation of an RSA Key Pair: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Creation and use of an RSA Cipher for Encryption: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Creation and use of an RSA Cipher for Encryption: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Verify a Digital Signature: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Verify a Digital Signature: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Creation and use of an RSA Cipher for Decryption: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Creation and use of an RSA Cipher for Decryption: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Digitally Signing Some Data: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Digitally Signing Some Data: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Creation of an AES Cipher for Decryption: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Creation of an AES Cipher for Decryption: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Decryption via a CipherInputStream: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Decryption via a CipherInputStream: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Generation of a New AES Encryption Key: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Generation of a New AES Encryption Key: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Creation of an AES Cipher for Encryption: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Creation of an AES Cipher for Encryption: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Filling protocol start points for Encryption via AES: processing node 117 of 117
+[2020-06-13 09:30:12] Filling protocol start points for Encryption via AES: processing node 117 of 117
+[2020-06-13 09:30:12] [STATE]: Running Protocol Checks done
+[2020-06-13 09:30:12] Finished call graph processing
+[2020-06-13 09:30:12] [STATE]: Registering results...
+[2020-06-13 09:30:12] [STATE]: Registering results: 1/586
+[2020-06-13 09:30:12] [STATE]: Registering results done
+[2020-06-13 09:30:12] #### Call Graph Analysis of 'tools' completed; Duration: 6 sec
+[2020-06-13 09:30:12] [STATE]: Searching for further security bugs
+[2020-06-13 09:30:12] [STATE]: Running Integrated Tools
+[2020-06-13 09:30:12] Looking at file no. 1: /home/nacoop/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar
+[2020-06-13 09:30:13] Looking at file no. 1944: /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/lib/apache-tomcat-9.0.22/catalina.jar!org/apache/catalina/util/RequestUtil.class
+[2020-06-13 09:30:13] Running spotbugs
+[2020-06-13 09:30:22] Spotbugs run returned code 0
+Stderr:
+    The following classes needed for analysis were missing:
+      org.slf4j.Logger
+      org.slf4j.LoggerFactory
+      onException
+      handleNotification
+    Warnings generated: 5
+    Missing classes: 4
+
+[2020-06-13 09:30:22] #### Run SpotBugs of 'tools' completed; Duration: 9 sec
+[2020-06-13 09:30:22] 
+
+[2020-06-13 09:30:28] OWASP Dependency Check run returned code 0
+Stdout:
+    [INFO] 
+
+    Dependency-Check is an open source tool performing a best effort analysis of 3rd party dependencies; false positives and false negatives may exist in the analysis performed by the tool. Use of the tool and the reporting provided constitutes acceptance for use in an AS IS condition, and there are NO warranties, implied or otherwise, with regard to the analysis or its use. Any use of the tool and the reporting provided is at the user’s risk. In no event shall the copyright holder or OWASP be held liable for any damages whatsoever arising out of or in connection with the use of this tool, the analysis performed, or the resulting report.
+
+
+    [INFO] Analysis Started
+    [INFO] Finished Archive Analyzer (0 seconds)
+    [INFO] Finished File Name Analyzer (0 seconds)
+    [INFO] Finished Jar Analyzer (0 seconds)
+    [INFO] Finished Dependency Merging Analyzer (0 seconds)
+    [INFO] Finished Version Filter Analyzer (0 seconds)
+    [INFO] Finished Hint Analyzer (0 seconds)
+    [INFO] Created CPE Index (2 seconds)
+    [INFO] Finished CPE Analyzer (2 seconds)
+    [INFO] Finished False Positive Analyzer (0 seconds)
+    [INFO] Finished NVD CVE Analyzer (0 seconds)
+    [INFO] Finished Vulnerability Suppression Analyzer (0 seconds)
+    [INFO] Finished Dependency Bundling Analyzer (0 seconds)
+    [INFO] Analysis Complete (3 seconds)
+
+[2020-06-13 09:30:28] #### OWASP Dependency Check 'tools' completed; Duration: 6 sec
+[2020-06-13 09:30:28] 
+
+[2020-06-13 09:30:28] [STATE]: Running Integrated Tools: done
+[2020-06-13 09:30:28] [STATE]: Checking for special code
+[2020-06-13 09:30:28] [STATE]: Checking for special code
+[2020-06-13 09:30:29] #### Special code check of 'tools' completed; Duration: 0 sec
+[2020-06-13 09:30:29] 
+
+[2020-06-13 09:30:29] 
+#### Duration of complete security analysis: 19 sec
+[2020-06-13 09:30:29] Security Analysis Metrics of 'tools': 
+Taint Paths: 3
+Resource Leaks: 5
+Taint Sanitizers (All): 125
+Taint Sinks (Tainted): 3
+Taint Sinks (Non-Tainted): 53
+Taint Sources (Non-Tainting): 107
+Taint Sources (Tainting): 3
+Findings (All): 34
+Findings (Problems): 29
+Findings (XSS: Reflected XSS): 0
+Findings (Injection: LDAP Injection): 0
+Findings (Injection: XPath Injection): 0
+Findings (Usage: Java Reflection): 0
+Findings (Application Server: 'cookie-config' Not Properly Configured): 0
+Findings (Cookies: Unsecured Cookie): 0
+Findings (Hard-Coded Credentials: Username in Variables): 2
+Findings (Deserialization: Insecure Stored Deserialization): 0
+Findings (Application Server: 'tracking-mode' Not Set to 'COOKIE'): 0
+Findings (Usage: Loading External Classes): 0
+Findings (Cryptography: Check that only allowed crypto algorithms are used): 2
+Findings (Application Server: 'session-config' Is Missing): 0
+Findings (XXE: Param Entities): 0
+Findings (XSS: URL Redirection Abuse): 0
+Findings (Cryptography: Construction of Secure Random Number Generator): 0
+Findings (Path Traversal: Insecure Direct Object References): 0
+Findings (XML: Do not access external DTDs): 0
+Findings (Trust Boundary Violation: HTTP Session): 0
+Findings (Injection: Command Injection): 0
+Findings (Cryptography: Basic Protocol Violations for AES Encryption and Decryption): 0
+Findings (Hard-Coded Credentials: Password in Variables): 1
+Findings (Cookies: No HttpOnly Cookie): 0
+Findings (Deserialization: Unsafe Deserialization Configuration): 0
+Findings (Cryptography: Password-Based Encryption): 0
+Findings (Application Server: Password in Configuration File): 3
+Findings (XXE: General Entities): 0
+Findings (Injection: Log Injection): 0
+Findings (Cryptography: Construction of Initialization Vectors): 0
+Findings (Hard-Coded Credentials: Credentials as Method Parameter): 0
+Findings (JNI: Unsafe Java Native Interface): 0
+Findings (Injection: SQL Injection): 0
+Findings (Cryptography: Cryptographic Hashing): 0
+Findings (Application Server: Directory Browsing Enabled): 0
+Findings (Cryptography: Cryptographic Algorithms w/o Specified Crypto-Provider): 1
+Findings (Cryptography: RSA Encryption): 0
+Findings (Application Server: 'session-timeout' Too Large): 0
+Findings (Cryptography: AES Decryption): 0
+Findings (Injection: OS Command Injection): 0
+Findings (Cryptography: Digital Signatures Verifying): 0
+Findings (Usage: Privileged Action): 0
+Findings (Resource Leak: Socket Resource Leak): 0
+Findings (Cryptography: Check that only allowed hash algorithms are used): 0
+Findings (Cryptography: Basic Protocol Violations for RSA Encryption and Decryption): 0
+Findings (Cryptography: RSA Decryption): 0
+Findings (Cryptography: Construction of Secure Random Numbers): 0
+Findings (Cryptography: Digital Signatures Signing): 0
+Findings (XSS: Stored XSS): 0
+Findings (Path Traversal: Manipulated File System Access): 0
+Findings (Usage: PrintStackTrace): 4
+Findings (Injection: Response Header Injection): 0
+Findings (Cryptography: AES Encryption): 0
+Findings (Usage: java.util.Random): 1
+Findings (Injection: Code Injection): 0
+Findings (XSS: Stored XSS from Unrendered Output): 0
+Findings (XSS: Reflected XSS from Unrendered Output): 0
+Findings (Usage: Java Servlet Forward and Include): 0
+Findings (Application Server: 'session-timeout' Not Configured): 0
+Findings (Hard-Coded Credentials: Cryptographic Key as Method Parameter): 0
+Findings (Hard-Coded Credentials: Password as Method Parameter): 0
+Findings (General Code Issue): 0
+Findings (Injection: Reflection Injection): 0
+Findings (SpotBugs): 5
+Findings (Deserialization: Insecure Reflected Deserialization): 0
+Findings (XXE: Disallow Doc - Xerces 2 only): 0
+Findings (Resource Leak: IO Stream Resource Leak): 5
+Findings (SSL/TLS Validation: Suspicious Implementation): 2
+Findings (OWASP Dependency Check): 0
+Findings (Usage: Reverse DNS Resolution): 0
+Findings (Application Server: 'useHttpOnly' Disabled): 0
+Findings (Path Traversal: Upload of File with Dangerous Type): 0
+Findings (Cryptography: Cryptographic Algorithms Used in Project): 0
+Findings (SSL/TLS Validation: Suspicious Usage): 0
+Findings (Application Server: 'error-page' or 'exception-type' Configuration Wrong or Missing): 0
+Findings (XML: Secure XML Processing): 0
+Findings (Injection: Code Inclusion): 0
+Findings (Privacy Leak: Output of Confidential Data): 3
+
+
+[2020-06-13 09:30:29] [STATE]: Saving results
+[2020-06-13 09:30:30] [STATE]: Security analysis finished
+[2020-06-13 09:30:30] Finished security analysis
+[2020-06-13 09:30:30] Start creating findings list report
+[2020-06-13 09:30:30] Create report from template file '/media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/reporting/reportdesign/xanitizer_findings_list.rptdesign'
+[2020-06-13 09:30:34] Finished creating findings list report
+[2020-06-13 09:30:34] Batch run completed sucessfully
+
+real	0m51.603s
+user	2m55.724s
+sys	0m9.516s

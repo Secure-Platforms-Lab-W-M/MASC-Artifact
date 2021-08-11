@@ -1,0 +1,3 @@
+﻿Type,Impact,Category,File,Function,Count
+Android application debug mode enabled,Low,Low impact security,/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant15/aTalk/build/intermediates/packaged_manifests/fdroidDebug/AndroidManifest.xml,,2
+Android application debug mode enabled,Low,Low impact security,/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant15/aTalk/build/intermediates/merged_manifest/fdroidDebug/out/AndroidManifest.xml,,1

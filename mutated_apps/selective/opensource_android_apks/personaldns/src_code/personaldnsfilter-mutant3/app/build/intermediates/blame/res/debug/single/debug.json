@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable_checkbox_inactive.xml.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable/checkbox_inactive.xml"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable-ldpi_icon.png.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable-ldpi/icon.png"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable_scroll_bar.xml.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable/scroll_bar.xml"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/layout_filterconfigentry.xml.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/layout/filterconfigentry.xml"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/layout_filterentryeditdialog.xml.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/layout/filterentryeditdialog.xml"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable_baseline_cancel_24px.png.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable/baseline_cancel_24px.png"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable_baseline_done_24px.png.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable/baseline_done_24px.png"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable_custom_checkbox.xml.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable/custom_checkbox.xml"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable_button_focused.xml.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable/button_focused.xml"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable-xhdpi_icon.png.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable-xhdpi/icon.png"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable_twotone_delete_forever_24px.png.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable/twotone_delete_forever_24px.png"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable_button_pressed.xml.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable/button_pressed.xml"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable_baseline_settings_remote_24px.png.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable/baseline_settings_remote_24px.png"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable_button_default.xml.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable/button_default.xml"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable_checkbox_active.xml.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable/checkbox_active.xml"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable-hdpi_icon.png.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/layout_dnsconfigdialog.xml.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/layout/dnsconfigdialog.xml"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/layout_main.xml.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable_custom_button.xml.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable/custom_button.xml"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_icon.png.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable-xxxhdpi/icon.png"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable-xxhdpi_icon.png.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable-xxhdpi/icon.png"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable_twotone_edit_24px.png.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable/twotone_edit_24px.png"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable_outline_settings_remote_24px.png.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable/outline_settings_remote_24px.png"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable_text_view.xml.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable/text_view.xml"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/drawable-mdpi_icon.png.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/drawable-mdpi/icon.png"
+    },
+    {
+        "merged": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/build/intermediates/res/merged/debug/layout_appselectorcheckbox.xml.flat",
+        "source": "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/res/layout/appselectorcheckbox.xml"
+    }
+]

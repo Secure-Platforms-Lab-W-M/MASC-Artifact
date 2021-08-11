@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: de.cketti.library.changelog:ckchangelog:1.2.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ckchangelog-1.2.2.aar/f25b09319ec2ba6985ff0de188c4b6ef/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ckchangelog-1.2.2.aar/f25b09319ec2ba6985ff0de188c4b6ef/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.cketti.library.changelog/ckchangelog/1.2.2/a22a47206108b6d658707db7898539d9c69f2219/ckchangelog-1.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,91 @@
+[2020-11-23 10:18:10] [build] [2020-11-23 10:18:10] Build directory is /media/data/muse2/muse2repo_apk_mutation_reach_src/Kaltura/.
+[2020-11-23 10:18:10] [build] [2020-11-23 10:18:10] [autobuild] > chmod +x gradlew
+[2020-11-23 10:18:10] [build] [2020-11-23 10:18:10] [autobuild] > ./gradlew -Dorg.gradle.caching=false --no-daemon -S clean
+[2020-11-23 10:18:16] [build] [2020-11-23 10:18:16] [autobuild] > Task :clean
+[2020-11-23 10:18:16] [build] [2020-11-23 10:18:16] [autobuild] > Task :app:clean
+[2020-11-23 10:18:16] [build] [2020-11-23 10:18:16] [autobuild] Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+[2020-11-23 10:18:16] [build] [2020-11-23 10:18:16] [autobuild] Use '--warning-mode all' to show the individual deprecation warnings.
+[2020-11-23 10:18:16] [build] [2020-11-23 10:18:16] [autobuild] See https://docs.gradle.org/4.10.1/userguide/command_line_interface.html#sec:command_line_warnings
+[2020-11-23 10:18:16] [build] [2020-11-23 10:18:16] [autobuild] BUILD SUCCESSFUL in 5s
+[2020-11-23 10:18:16] [build] [2020-11-23 10:18:16] [autobuild] 2 actionable tasks: 2 executed
+[2020-11-23 10:18:16] [build] [2020-11-23 10:18:16] [autobuild] > ./gradlew -Dorg.gradle.caching=false --no-daemon -S assemble
+[2020-11-23 10:18:22] [build] [2020-11-23 10:18:22] [autobuild] > Task :app:preBuild UP-TO-DATE
+[2020-11-23 10:18:23] [build] [2020-11-23 10:18:23] [autobuild] > Task :app:preDebugBuild
+[2020-11-23 10:18:23] [build] [2020-11-23 10:18:23] [autobuild] > Task :app:compileDebugAidl
+[2020-11-23 10:18:23] [build] [2020-11-23 10:18:23] [autobuild] > Task :app:compileDebugRenderscript
+[2020-11-23 10:18:23] [build] [2020-11-23 10:18:23] [autobuild] > Task :app:checkDebugManifest
+[2020-11-23 10:18:23] [build] [2020-11-23 10:18:23] [autobuild] > Task :app:generateDebugBuildConfig
+[2020-11-23 10:18:23] [build] [2020-11-23 10:18:23] [autobuild] > Task :app:prepareLintJar UP-TO-DATE
+[2020-11-23 10:18:23] [build] [2020-11-23 10:18:23] [autobuild] > Task :app:generateDebugResValues
+[2020-11-23 10:18:23] [build] [2020-11-23 10:18:23] [autobuild] > Task :app:generateDebugResources
+[2020-11-23 10:18:24] [build] [2020-11-23 10:18:24] [autobuild] > Task :app:mergeDebugResources
+[2020-11-23 10:18:25] [build] [2020-11-23 10:18:25] [autobuild] > Task :app:createDebugCompatibleScreenManifests
+[2020-11-23 10:18:25] [build] [2020-11-23 10:18:25] [autobuild] > Task :app:processDebugManifest
+[2020-11-23 10:18:25] [build] [2020-11-23 10:18:25] [autobuild] > Task :app:splitsDiscoveryTaskDebug
+[2020-11-23 10:18:25] [build] [2020-11-23 10:18:25] [autobuild] > Task :app:processDebugResources
+[2020-11-23 10:18:25] [build] [2020-11-23 10:18:25] [autobuild] > Task :app:generateDebugSources
+[2020-11-23 10:18:25] [build] [2020-11-23 10:18:25] [autobuild] > Task :app:javaPreCompileDebug
+[2020-11-23 10:18:27] [build] [2020-11-23 10:18:27] [autobuild] > Task :app:compileDebugJavaWithJavac
+[2020-11-23 10:18:27] [build] [2020-11-23 10:18:27] [autobuild] Note: Some input files use or override a deprecated API.
+[2020-11-23 10:18:27] [build] [2020-11-23 10:18:27] [autobuild] Note: Recompile with -Xlint:deprecation for details.
+[2020-11-23 10:18:27] [build] [2020-11-23 10:18:27] [autobuild] Note: Some input files use unchecked or unsafe operations.
+[2020-11-23 10:18:27] [build] [2020-11-23 10:18:27] [autobuild] Note: Recompile with -Xlint:unchecked for details.
+[2020-11-23 10:18:34] [build] [2020-11-23 10:18:34] [autobuild] > Task :app:compileDebugNdk NO-SOURCE
+[2020-11-23 10:18:34] [build] [2020-11-23 10:18:34] [autobuild] > Task :app:compileDebugSources
+[2020-11-23 10:18:34] [build] [2020-11-23 10:18:34] [autobuild] > Task :app:mergeDebugShaders
+[2020-11-23 10:18:34] [build] [2020-11-23 10:18:34] [autobuild] > Task :app:compileDebugShaders
+[2020-11-23 10:18:34] [build] [2020-11-23 10:18:34] [autobuild] > Task :app:generateDebugAssets
+[2020-11-23 10:18:34] [build] [2020-11-23 10:18:34] [autobuild] > Task :app:mergeDebugAssets
+[2020-11-23 10:18:35] [build] [2020-11-23 10:18:35] [autobuild] > Task :app:transformClassesWithDexBuilderForDebug
+[2020-11-23 10:18:36] [build] [2020-11-23 10:18:36] [autobuild] > Task :app:transformDexArchiveWithExternalLibsDexMergerForDebug
+[2020-11-23 10:18:36] [build] [2020-11-23 10:18:36] [autobuild] > Task :app:transformDexArchiveWithDexMergerForDebug
+[2020-11-23 10:18:36] [build] [2020-11-23 10:18:36] [autobuild] > Task :app:mergeDebugJniLibFolders
+[2020-11-23 10:18:37] [build] [2020-11-23 10:18:37] [autobuild] > Task :app:transformNativeLibsWithMergeJniLibsForDebug
+[2020-11-23 10:18:37] [build] [2020-11-23 10:18:37] [autobuild] > Task :app:processDebugJavaRes NO-SOURCE
+[2020-11-23 10:18:37] [build] [2020-11-23 10:18:37] [autobuild] > Task :app:transformResourcesWithMergeJavaResForDebug
+[2020-11-23 10:18:37] [build] [2020-11-23 10:18:37] [autobuild] > Task :app:validateSigningDebug
+[2020-11-23 10:18:38] [build] [2020-11-23 10:18:38] [autobuild] > Task :app:packageDebug
+[2020-11-23 10:18:38] [build] [2020-11-23 10:18:38] [autobuild] > Task :app:assembleDebug
+[2020-11-23 10:18:38] [build] [2020-11-23 10:18:38] [autobuild] > Task :app:preReleaseBuild
+[2020-11-23 10:18:38] [build] [2020-11-23 10:18:38] [autobuild] > Task :app:compileReleaseAidl
+[2020-11-23 10:18:38] [build] [2020-11-23 10:18:38] [autobuild] > Task :app:compileReleaseRenderscript
+[2020-11-23 10:18:38] [build] [2020-11-23 10:18:38] [autobuild] > Task :app:checkReleaseManifest
+[2020-11-23 10:18:38] [build] [2020-11-23 10:18:38] [autobuild] > Task :app:generateReleaseBuildConfig
+[2020-11-23 10:18:38] [build] [2020-11-23 10:18:38] [autobuild] > Task :app:generateReleaseResValues
+[2020-11-23 10:18:38] [build] [2020-11-23 10:18:38] [autobuild] > Task :app:generateReleaseResources
+[2020-11-23 10:18:38] [build] [2020-11-23 10:18:38] [autobuild] > Task :app:mergeReleaseResources
+[2020-11-23 10:18:38] [build] [2020-11-23 10:18:38] [autobuild] > Task :app:createReleaseCompatibleScreenManifests
+[2020-11-23 10:18:39] [build] [2020-11-23 10:18:39] [autobuild] > Task :app:processReleaseManifest
+[2020-11-23 10:18:39] [build] [2020-11-23 10:18:39] [autobuild] > Task :app:splitsDiscoveryTaskRelease
+[2020-11-23 10:18:39] [build] [2020-11-23 10:18:39] [autobuild] > Task :app:processReleaseResources
+[2020-11-23 10:18:39] [build] [2020-11-23 10:18:39] [autobuild] > Task :app:generateReleaseSources
+[2020-11-23 10:18:39] [build] [2020-11-23 10:18:39] [autobuild] > Task :app:javaPreCompileRelease
+[2020-11-23 10:18:41] [build] [2020-11-23 10:18:41] [autobuild] > Task :app:compileReleaseJavaWithJavac
+[2020-11-23 10:18:41] [build] [2020-11-23 10:18:41] [autobuild] Note: Some input files use or override a deprecated API.
+[2020-11-23 10:18:41] [build] [2020-11-23 10:18:41] [autobuild] Note: Recompile with -Xlint:deprecation for details.
+[2020-11-23 10:18:41] [build] [2020-11-23 10:18:41] [autobuild] Note: Some input files use unchecked or unsafe operations.
+[2020-11-23 10:18:41] [build] [2020-11-23 10:18:41] [autobuild] Note: Recompile with -Xlint:unchecked for details.
+[2020-11-23 10:18:43] [build] [2020-11-23 10:18:43] [autobuild] > Task :app:compileReleaseNdk NO-SOURCE
+[2020-11-23 10:18:43] [build] [2020-11-23 10:18:43] [autobuild] > Task :app:compileReleaseSources
+[2020-11-23 10:18:48] [build] [2020-11-23 10:18:48] [autobuild] > Task :app:lintVitalRelease
+[2020-11-23 10:18:48] [build] [2020-11-23 10:18:48] [autobuild] > Task :app:mergeReleaseShaders
+[2020-11-23 10:18:48] [build] [2020-11-23 10:18:48] [autobuild] > Task :app:compileReleaseShaders
+[2020-11-23 10:18:48] [build] [2020-11-23 10:18:48] [autobuild] > Task :app:generateReleaseAssets
+[2020-11-23 10:18:48] [build] [2020-11-23 10:18:48] [autobuild] > Task :app:mergeReleaseAssets
+[2020-11-23 10:18:49] [build] [2020-11-23 10:18:49] [autobuild] > Task :app:transformClassesWithPreDexForRelease
+[2020-11-23 10:18:49] [build] [2020-11-23 10:18:49] [autobuild] > Task :app:transformDexWithDexForRelease
+[2020-11-23 10:18:49] [build] [2020-11-23 10:18:49] [autobuild] > Task :app:mergeReleaseJniLibFolders
+[2020-11-23 10:18:49] [build] [2020-11-23 10:18:49] [autobuild] > Task :app:transformNativeLibsWithMergeJniLibsForRelease
+[2020-11-23 10:18:49] [build] [2020-11-23 10:18:49] [autobuild] > Task :app:processReleaseJavaRes NO-SOURCE
+[2020-11-23 10:18:49] [build] [2020-11-23 10:18:49] [autobuild] > Task :app:transformResourcesWithMergeJavaResForRelease
+[2020-11-23 10:18:50] [build] [2020-11-23 10:18:50] [autobuild] > Task :app:packageRelease
+[2020-11-23 10:18:50] [build] [2020-11-23 10:18:50] [autobuild] > Task :app:assembleRelease
+[2020-11-23 10:18:50] [build] [2020-11-23 10:18:50] [autobuild] > Task :app:assemble
+[2020-11-23 10:18:50] [build] [2020-11-23 10:18:50] [autobuild] Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+[2020-11-23 10:18:50] [build] [2020-11-23 10:18:50] [autobuild] Use '--warning-mode all' to show the individual deprecation warnings.
+[2020-11-23 10:18:50] [build] [2020-11-23 10:18:50] [autobuild] See https://docs.gradle.org/4.10.1/userguide/command_line_interface.html#sec:command_line_warnings
+[2020-11-23 10:18:50] [build] [2020-11-23 10:18:50] [autobuild] BUILD SUCCESSFUL in 33s
+[2020-11-23 10:18:50] [build] [2020-11-23 10:18:50] [autobuild] 48 actionable tasks: 47 executed, 1 up-to-date
+[2020-11-23 10:18:52] [build-err] Scanning for files in /media/data/muse2/muse2repo_apk_mutation_reach_src/Kaltura...
+[2020-11-23 10:18:52] [build-err] /media/data/muse2/muse2repo_apk_mutation_reach_src/Kaltura/codeql-db: Indexing files in in /media/data/muse2/muse2repo_apk_mutation_reach_src/Kaltura...
+[2020-11-23 10:18:52] [build-err] /media/data/muse2/muse2repo_apk_mutation_reach_src/Kaltura/codeql-db: Running in /media/data/muse2/muse2repo_apk_mutation_reach_src/Kaltura: [/media/data/nacoop/codeql-home/codeql/xml/tools/index-files.sh, /media/data/muse2/muse2repo_apk_mutation_reach_src/Kaltura/codeql-db/working/files-to-index16032691582948182583.list]

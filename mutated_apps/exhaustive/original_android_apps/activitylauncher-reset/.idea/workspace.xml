@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="088aaa99-97b6-4ba6-9911-d2c4927ac4f2" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/ActivityLauncherApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/ActivityLauncherApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/generated/source/buildConfig/release/de/szalkowski/activitylauncher/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/generated/source/buildConfig/release/de/szalkowski/activitylauncher/BuildConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/generated/source/r/release/android/support/compat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/generated/source/r/release/android/support/compat/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/generated/source/r/release/android/support/coreui/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/generated/source/r/release/android/support/coreui/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/generated/source/r/release/android/support/coreutils/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/generated/source/r/release/android/support/coreutils/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/generated/source/r/release/android/support/fragment/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/generated/source/r/release/android/support/fragment/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/generated/source/r/release/android/support/mediacompat/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/generated/source/r/release/android/support/mediacompat/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/generated/source/r/release/android/support/v4/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/generated/source/r/release/android/support/v4/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/generated/source/r/release/de/szalkowski/activitylauncher/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/generated/source/r/release/de/szalkowski/activitylauncher/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-af.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-af.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-ar.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-ar.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-ca.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-ca.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-de-rCH.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-de-rCH.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-de.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-el.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-el.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-en-rGB.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-en-rGB.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-en.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-es.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-es.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-fi.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-fi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-fr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-he.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-he.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-hu.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-hu.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-id.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-id.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-it.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-it.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-ja.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-ja.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-ko.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-ko.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-nl.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-nl.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-no.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-no.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-pl.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-pl.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-pt-rBR.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-pt-rBR.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-pt.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-pt.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-ro.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-ro.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-ru.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-si-rLK.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-si-rLK.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-sk.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-sk.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-sv.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-sv.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-sw720dp-land-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-sw720dp-land-v13.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-tr.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-tr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-uk.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-uk.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-v11.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-v11.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-v14.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-v14.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-v21.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-v21.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-vi.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-vi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-zh-rCN.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values-zh-rCN.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/multi/values.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/single/drawable-hdpi.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/single/drawable-hdpi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/single/drawable-mdpi.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/single/drawable-mdpi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/single/drawable-xhdpi.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/single/drawable-xhdpi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/single/drawable-xxhdpi.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/single/drawable-xxhdpi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/single/layout.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/single/layout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/single/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/blame/res/release/single/menu.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/incremental/mergeReleaseResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/incremental/mergeReleaseResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/incremental/mergeReleaseResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/intermediates/incremental/mergeReleaseResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivityLauncherApp/build/outputs/logs/manifest-merger-release-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityLauncherApp/build/outputs/logs/manifest-merger-release-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+    </list>
+    <ignored path="ActivityLauncher.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/build/classes/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ActivityLauncher" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ActivityLauncherApp/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/keystore-szalkowski.de" />
+    <option name="KEY_ALIAS" value="szalkowski.de" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="643" />
+    <option name="y" value="20" />
+    <option name="width" value="1268" />
+    <option name="height" value="998" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="activitylauncher-reset" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExportApk.ApkPath" value="$USER_HOME$/Desktop" />
+    <property name="ExportApk.BuildType" value="release" />
+    <property name="ExportApk.Flavors" value="" />
+    <property name="ExportApk.SignV2" value="true" />
+    <property name="android.project.structure.last.selected" value="ActivityLauncherApp" />
+    <property name="android.project.structure.proportion" value="0.12515646" />
+    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="device.picker.selection" value="10.42.42.101:5555" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LocationShare-reset" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="show.do.not.ask.upgrade.gradle.plugin" value="2.3.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="088aaa99-97b6-4ba6-9911-d2c4927ac4f2" name="Default" comment="" />
+      <created>1491028659133</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1491028659133</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Build Variants" order="1" sideWeight="0.28084415" side_tool="true" visible="true" weight="0.12153518" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.71915585" visible="true" weight="0.12153518" />
+      <window_info id="Structure" order="5" weight="0.24963072" />
+      <window_info id="Captures" order="6" side_tool="true" weight="0.24963072" />
+      <window_info anchor="bottom" id="Build" visible="true" weight="0.3125" />
+      <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Logcat" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32924107" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32990867" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Android Monitor" order="7" weight="0.6130137" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32990867" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Gradle Console" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32903227" />
+      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Gradle" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Android Model" order="6" side_tool="true" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/import-summary.txt" />
+    <entry file="file://$PROJECT_DIR$/ActivityLauncher.iml" />
+    <entry file="file://$PROJECT_DIR$/build.gradle" />
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties" />
+    <entry file="file://$PROJECT_DIR$/ActivityLauncherApp/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ActivityLauncherApp/src/main/java/de/szalkowski/activitylauncher/ShortcutEditDialogFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ActivityLauncherApp/src/main/java/de/szalkowski/activitylauncher/AllTasksListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+    <entry file="file://$PROJECT_DIR$/ActivityLauncherApp/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

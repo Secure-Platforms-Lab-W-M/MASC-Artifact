@@ -1,0 +1,293 @@
+[2020-11-23 10:14:03] [build] [2020-11-23 10:14:03] Build directory is /media/data/muse2/muse2repo_apk_mutation_reach_src/ActivityLauncher/.
+[2020-11-23 10:14:03] [build] [2020-11-23 10:14:03] [autobuild] > chmod +x gradlew
+[2020-11-23 10:14:03] [build] [2020-11-23 10:14:03] [autobuild] > ./gradlew -Dorg.gradle.caching=false --no-daemon -S clean
+[2020-11-23 10:14:07] [build] [2020-11-23 10:14:07] [autobuild] Download https://jcenter.bintray.com/com/android/tools/build/gradle/2.3.0/gradle-2.3.0.pom
+[2020-11-23 10:14:07] [build] [2020-11-23 10:14:07] [autobuild] Download https://jcenter.bintray.com/com/android/tools/build/gradle-core/2.3.0/gradle-core-2.3.0.pom
+[2020-11-23 10:14:07] [build] [2020-11-23 10:14:07] [autobuild] Download https://jcenter.bintray.com/com/android/tools/build/builder/2.3.0/builder-2.3.0.pom
+[2020-11-23 10:14:07] [build] [2020-11-23 10:14:07] [autobuild] Download https://jcenter.bintray.com/com/android/tools/lint/lint/25.3.0/lint-25.3.0.pom
+[2020-11-23 10:14:07] [build] [2020-11-23 10:14:07] [autobuild] Download https://jcenter.bintray.com/com/android/tools/build/gradle-api/2.3.0/gradle-api-2.3.0.pom
+[2020-11-23 10:14:08] [build] [2020-11-23 10:14:08] [autobuild] Download https://jcenter.bintray.com/com/android/databinding/compilerCommon/2.3.0/compilerCommon-2.3.0.pom
+[2020-11-23 10:14:08] [build] [2020-11-23 10:14:08] [autobuild] Download https://jcenter.bintray.com/com/android/tools/build/builder-model/2.3.0/builder-model-2.3.0.pom
+[2020-11-23 10:14:08] [build] [2020-11-23 10:14:08] [autobuild] Download https://jcenter.bintray.com/com/android/tools/build/builder-test-api/2.3.0/builder-test-api-2.3.0.pom
+[2020-11-23 10:14:08] [build] [2020-11-23 10:14:08] [autobuild] Download https://jcenter.bintray.com/com/android/tools/sdklib/25.3.0/sdklib-25.3.0.pom
+[2020-11-23 10:14:08] [build] [2020-11-23 10:14:08] [autobuild] Download https://jcenter.bintray.com/com/android/tools/sdk-common/25.3.0/sdk-common-25.3.0.pom
+[2020-11-23 10:14:08] [build] [2020-11-23 10:14:08] [autobuild] Download https://jcenter.bintray.com/com/android/tools/common/25.3.0/common-25.3.0.pom
+[2020-11-23 10:14:08] [build] [2020-11-23 10:14:08] [autobuild] Download https://jcenter.bintray.com/com/android/tools/build/manifest-merger/25.3.0/manifest-merger-25.3.0.pom
+[2020-11-23 10:14:08] [build] [2020-11-23 10:14:08] [autobuild] Download https://jcenter.bintray.com/com/android/tools/ddms/ddmlib/25.3.0/ddmlib-25.3.0.pom
+[2020-11-23 10:14:09] [build] [2020-11-23 10:14:09] [autobuild] Download https://jcenter.bintray.com/com/android/tools/analytics-library/protos/25.3.0/protos-25.3.0.pom
+[2020-11-23 10:14:09] [build] [2020-11-23 10:14:09] [autobuild] Download https://jcenter.bintray.com/com/android/tools/analytics-library/shared/25.3.0/shared-25.3.0.pom
+[2020-11-23 10:14:09] [build] [2020-11-23 10:14:09] [autobuild] Download https://jcenter.bintray.com/com/android/tools/analytics-library/tracker/25.3.0/tracker-25.3.0.pom
+[2020-11-23 10:14:09] [build] [2020-11-23 10:14:09] [autobuild] Download https://jcenter.bintray.com/com/android/tools/lint/lint-checks/25.3.0/lint-checks-25.3.0.pom
+[2020-11-23 10:14:09] [build] [2020-11-23 10:14:09] [autobuild] Download https://jcenter.bintray.com/com/android/databinding/baseLibrary/2.3.0/baseLibrary-2.3.0.pom
+[2020-11-23 10:14:09] [build] [2020-11-23 10:14:09] [autobuild] Download https://jcenter.bintray.com/com/android/tools/layoutlib/layoutlib-api/25.3.0/layoutlib-api-25.3.0.pom
+[2020-11-23 10:14:09] [build] [2020-11-23 10:14:09] [autobuild] Download https://jcenter.bintray.com/com/android/tools/dvlib/25.3.0/dvlib-25.3.0.pom
+[2020-11-23 10:14:09] [build] [2020-11-23 10:14:09] [autobuild] Download https://jcenter.bintray.com/com/android/tools/repository/25.3.0/repository-25.3.0.pom
+[2020-11-23 10:14:10] [build] [2020-11-23 10:14:10] [autobuild] Download https://jcenter.bintray.com/com/android/tools/lint/lint-api/25.3.0/lint-api-25.3.0.pom
+[2020-11-23 10:14:10] [build] [2020-11-23 10:14:10] [autobuild] Download https://jcenter.bintray.com/com/android/tools/annotations/25.3.0/annotations-25.3.0.pom
+[2020-11-23 10:14:10] [build] [2020-11-23 10:14:10] [autobuild] Download https://jcenter.bintray.com/com/android/tools/build/gradle/2.3.0/gradle-2.3.0.jar
+[2020-11-23 10:14:12] [build] [2020-11-23 10:14:12] [autobuild] Download https://jcenter.bintray.com/com/android/tools/build/gradle-core/2.3.0/gradle-core-2.3.0.jar
+[2020-11-23 10:14:12] [build] [2020-11-23 10:14:12] [autobuild] Download https://jcenter.bintray.com/com/android/tools/build/builder/2.3.0/builder-2.3.0.jar
+[2020-11-23 10:14:12] [build] [2020-11-23 10:14:12] [autobuild] Download https://jcenter.bintray.com/com/android/tools/lint/lint/25.3.0/lint-25.3.0.jar
+[2020-11-23 10:14:12] [build] [2020-11-23 10:14:12] [autobuild] Download https://jcenter.bintray.com/com/android/tools/build/gradle-api/2.3.0/gradle-api-2.3.0.jar
+[2020-11-23 10:14:13] [build] [2020-11-23 10:14:13] [autobuild] Download https://jcenter.bintray.com/com/android/databinding/compilerCommon/2.3.0/compilerCommon-2.3.0.jar
+[2020-11-23 10:14:13] [build] [2020-11-23 10:14:13] [autobuild] Download https://jcenter.bintray.com/com/android/tools/build/builder-model/2.3.0/builder-model-2.3.0.jar
+[2020-11-23 10:14:13] [build] [2020-11-23 10:14:13] [autobuild] Download https://jcenter.bintray.com/com/android/tools/build/builder-test-api/2.3.0/builder-test-api-2.3.0.jar
+[2020-11-23 10:14:13] [build] [2020-11-23 10:14:13] [autobuild] Download https://jcenter.bintray.com/com/android/tools/sdklib/25.3.0/sdklib-25.3.0.jar
+[2020-11-23 10:14:13] [build] [2020-11-23 10:14:13] [autobuild] Download https://jcenter.bintray.com/com/android/tools/sdk-common/25.3.0/sdk-common-25.3.0.jar
+[2020-11-23 10:14:13] [build] [2020-11-23 10:14:13] [autobuild] Download https://jcenter.bintray.com/com/android/tools/common/25.3.0/common-25.3.0.jar
+[2020-11-23 10:14:13] [build] [2020-11-23 10:14:13] [autobuild] Download https://jcenter.bintray.com/com/android/tools/build/manifest-merger/25.3.0/manifest-merger-25.3.0.jar
+[2020-11-23 10:14:14] [build] [2020-11-23 10:14:14] [autobuild] Download https://jcenter.bintray.com/com/android/tools/ddms/ddmlib/25.3.0/ddmlib-25.3.0.jar
+[2020-11-23 10:14:14] [build] [2020-11-23 10:14:14] [autobuild] Download https://jcenter.bintray.com/com/android/tools/analytics-library/protos/25.3.0/protos-25.3.0.jar
+[2020-11-23 10:14:14] [build] [2020-11-23 10:14:14] [autobuild] Download https://jcenter.bintray.com/com/android/tools/analytics-library/shared/25.3.0/shared-25.3.0.jar
+[2020-11-23 10:14:15] [build] [2020-11-23 10:14:15] [autobuild] Download https://jcenter.bintray.com/com/android/tools/analytics-library/tracker/25.3.0/tracker-25.3.0.jar
+[2020-11-23 10:14:15] [build] [2020-11-23 10:14:15] [autobuild] Download https://jcenter.bintray.com/com/android/tools/lint/lint-checks/25.3.0/lint-checks-25.3.0.jar
+[2020-11-23 10:14:16] [build] [2020-11-23 10:14:16] [autobuild] Download https://jcenter.bintray.com/com/android/databinding/baseLibrary/2.3.0/baseLibrary-2.3.0.jar
+[2020-11-23 10:14:16] [build] [2020-11-23 10:14:16] [autobuild] Download https://jcenter.bintray.com/com/android/tools/layoutlib/layoutlib-api/25.3.0/layoutlib-api-25.3.0.jar
+[2020-11-23 10:14:16] [build] [2020-11-23 10:14:16] [autobuild] Download https://jcenter.bintray.com/com/android/tools/dvlib/25.3.0/dvlib-25.3.0.jar
+[2020-11-23 10:14:16] [build] [2020-11-23 10:14:16] [autobuild] Download https://jcenter.bintray.com/com/android/tools/repository/25.3.0/repository-25.3.0.jar
+[2020-11-23 10:14:16] [build] [2020-11-23 10:14:16] [autobuild] Download https://jcenter.bintray.com/com/android/tools/lint/lint-api/25.3.0/lint-api-25.3.0.jar
+[2020-11-23 10:14:16] [build] [2020-11-23 10:14:16] [autobuild] Download https://jcenter.bintray.com/com/android/tools/annotations/25.3.0/annotations-25.3.0.jar
+[2020-11-23 10:14:17] [build] [2020-11-23 10:14:17] [autobuild] NDK is missing a "platforms" directory.
+[2020-11-23 10:14:17] [build] [2020-11-23 10:14:17] [autobuild] If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /media/data/Android/Sdk/ndk-bundle.
+[2020-11-23 10:14:17] [build] [2020-11-23 10:14:17] [autobuild] If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+[2020-11-23 10:14:19] [build] [2020-11-23 10:14:19] [autobuild] Incremental java compilation is an incubating feature.
+[2020-11-23 10:14:19] [build] [2020-11-23 10:14:19] [autobuild] :ActivityLauncherApp:clean
+[2020-11-23 10:14:19] [build] [2020-11-23 10:14:19] [autobuild] BUILD SUCCESSFUL
+[2020-11-23 10:14:19] [build] [2020-11-23 10:14:19] [autobuild] Total time: 15.878 secs
+[2020-11-23 10:14:19] [build] [2020-11-23 10:14:19] [autobuild] > ./gradlew -Dorg.gradle.caching=false --no-daemon -S assemble
+[2020-11-23 10:14:23] [build] [2020-11-23 10:14:23] [autobuild] NDK is missing a "platforms" directory.
+[2020-11-23 10:14:23] [build] [2020-11-23 10:14:23] [autobuild] If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /media/data/Android/Sdk/ndk-bundle.
+[2020-11-23 10:14:23] [build] [2020-11-23 10:14:23] [autobuild] If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+[2020-11-23 10:14:25] [build] [2020-11-23 10:14:25] [autobuild] Incremental java compilation is an incubating feature.
+[2020-11-23 10:14:25] [build] [2020-11-23 10:14:25] [autobuild] :ActivityLauncherApp:preBuild UP-TO-DATE
+[2020-11-23 10:14:25] [build] [2020-11-23 10:14:25] [autobuild] :ActivityLauncherApp:preDebugBuild UP-TO-DATE
+[2020-11-23 10:14:25] [build] [2020-11-23 10:14:25] [autobuild] :ActivityLauncherApp:checkDebugManifest
+[2020-11-23 10:14:25] [build] [2020-11-23 10:14:25] [autobuild] :ActivityLauncherApp:preReleaseBuild UP-TO-DATE
+[2020-11-23 10:14:25] [build] [2020-11-23 10:14:25] [autobuild] :ActivityLauncherApp:prepareComAndroidSupportSupportCompat2600Alpha1Library
+[2020-11-23 10:14:25] [build] [2020-11-23 10:14:25] [autobuild] :ActivityLauncherApp:prepareComAndroidSupportSupportCoreUi2600Alpha1Library
+[2020-11-23 10:14:25] [build] [2020-11-23 10:14:25] [autobuild] :ActivityLauncherApp:prepareComAndroidSupportSupportCoreUtils2600Alpha1Library
+[2020-11-23 10:14:25] [build] [2020-11-23 10:14:25] [autobuild] :ActivityLauncherApp:prepareComAndroidSupportSupportFragment2600Alpha1Library
+[2020-11-23 10:14:25] [build] [2020-11-23 10:14:25] [autobuild] :ActivityLauncherApp:prepareComAndroidSupportSupportMediaCompat2600Alpha1Library
+[2020-11-23 10:14:25] [build] [2020-11-23 10:14:25] [autobuild] :ActivityLauncherApp:prepareComAndroidSupportSupportV42600Alpha1Library
+[2020-11-23 10:14:25] [build] [2020-11-23 10:14:25] [autobuild] :ActivityLauncherApp:prepareDebugDependencies
+[2020-11-23 10:14:25] [build] [2020-11-23 10:14:25] [autobuild] :ActivityLauncherApp:compileDebugAidl
+[2020-11-23 10:14:25] [build] [2020-11-23 10:14:25] [autobuild] :ActivityLauncherApp:compileDebugRenderscript
+[2020-11-23 10:14:25] [build] [2020-11-23 10:14:25] [autobuild] :ActivityLauncherApp:generateDebugBuildConfig
+[2020-11-23 10:14:26] [build] [2020-11-23 10:14:26] [autobuild] :ActivityLauncherApp:generateDebugResValues
+[2020-11-23 10:14:26] [build] [2020-11-23 10:14:26] [autobuild] :ActivityLauncherApp:generateDebugResources
+[2020-11-23 10:14:26] [build] [2020-11-23 10:14:26] [autobuild] :ActivityLauncherApp:mergeDebugResources
+[2020-11-23 10:14:26] [build] [2020-11-23 10:14:26] [autobuild] :ActivityLauncherApp:processDebugManifest
+[2020-11-23 10:14:26] [build] [2020-11-23 10:14:26] [autobuild] :ActivityLauncherApp:processDebugResources
+[2020-11-23 10:14:26] [build] [2020-11-23 10:14:26] [autobuild] :ActivityLauncherApp:generateDebugSources
+[2020-11-23 10:14:26] [build] [2020-11-23 10:14:26] [autobuild] :ActivityLauncherApp:incrementalDebugJavaCompilationSafeguard
+[2020-11-23 10:14:26] [build] [2020-11-23 10:14:26] [autobuild] :ActivityLauncherApp:javaPreCompileDebug
+[2020-11-23 10:14:26] [build] [2020-11-23 10:14:26] [autobuild] :ActivityLauncherApp:compileDebugJavaWithJavac
+[2020-11-23 10:14:26] [build] [2020-11-23 10:14:26] [autobuild] :ActivityLauncherApp:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+[2020-11-23 10:14:27] [build] [2020-11-23 10:14:27] [autobuild] Note: Some input files use or override a deprecated API.
+[2020-11-23 10:14:27] [build] [2020-11-23 10:14:27] [autobuild] Note: Recompile with -Xlint:deprecation for details.
+[2020-11-23 10:14:34] [build] [2020-11-23 10:14:34] [autobuild] :ActivityLauncherApp:compileDebugNdk UP-TO-DATE
+[2020-11-23 10:14:34] [build] [2020-11-23 10:14:34] [autobuild] :ActivityLauncherApp:compileDebugSources
+[2020-11-23 10:14:34] [build] [2020-11-23 10:14:34] [autobuild] :ActivityLauncherApp:mergeDebugShaders
+[2020-11-23 10:14:34] [build] [2020-11-23 10:14:34] [autobuild] :ActivityLauncherApp:compileDebugShaders
+[2020-11-23 10:14:34] [build] [2020-11-23 10:14:34] [autobuild] :ActivityLauncherApp:generateDebugAssets
+[2020-11-23 10:14:34] [build] [2020-11-23 10:14:34] [autobuild] :ActivityLauncherApp:mergeDebugAssets
+[2020-11-23 10:14:37] [build] [2020-11-23 10:14:37] [autobuild] :ActivityLauncherApp:transformClassesWithDexForDebug
+[2020-11-23 10:14:37] [build] [2020-11-23 10:14:37] [autobuild] :ActivityLauncherApp:mergeDebugJniLibFolders
+[2020-11-23 10:14:37] [build] [2020-11-23 10:14:37] [autobuild] :ActivityLauncherApp:transformNativeLibsWithMergeJniLibsForDebug
+[2020-11-23 10:14:37] [build] [2020-11-23 10:14:37] [autobuild] :ActivityLauncherApp:processDebugJavaRes UP-TO-DATE
+[2020-11-23 10:14:37] [build] [2020-11-23 10:14:37] [autobuild] :ActivityLauncherApp:transformResourcesWithMergeJavaResForDebug
+[2020-11-23 10:14:37] [build] [2020-11-23 10:14:37] [autobuild] :ActivityLauncherApp:validateSigningDebug
+[2020-11-23 10:14:38] [build] [2020-11-23 10:14:38] [autobuild] :ActivityLauncherApp:packageDebug
+[2020-11-23 10:14:38] [build] [2020-11-23 10:14:38] [autobuild] :ActivityLauncherApp:assembleDebug
+[2020-11-23 10:14:38] [build] [2020-11-23 10:14:38] [autobuild] :ActivityLauncherApp:checkReleaseManifest
+[2020-11-23 10:14:38] [build] [2020-11-23 10:14:38] [autobuild] :ActivityLauncherApp:prepareReleaseDependencies
+[2020-11-23 10:14:38] [build] [2020-11-23 10:14:38] [autobuild] :ActivityLauncherApp:compileReleaseAidl
+[2020-11-23 10:14:38] [build] [2020-11-23 10:14:38] [autobuild] :ActivityLauncherApp:compileReleaseRenderscript
+[2020-11-23 10:14:38] [build] [2020-11-23 10:14:38] [autobuild] :ActivityLauncherApp:generateReleaseBuildConfig
+[2020-11-23 10:14:38] [build] [2020-11-23 10:14:38] [autobuild] :ActivityLauncherApp:generateReleaseResValues
+[2020-11-23 10:14:38] [build] [2020-11-23 10:14:38] [autobuild] :ActivityLauncherApp:generateReleaseResources
+[2020-11-23 10:14:38] [build] [2020-11-23 10:14:38] [autobuild] :ActivityLauncherApp:mergeReleaseResources
+[2020-11-23 10:14:38] [build] [2020-11-23 10:14:38] [autobuild] :ActivityLauncherApp:processReleaseManifest
+[2020-11-23 10:14:38] [build] [2020-11-23 10:14:38] [autobuild] :ActivityLauncherApp:processReleaseResources
+[2020-11-23 10:14:38] [build] [2020-11-23 10:14:38] [autobuild] :ActivityLauncherApp:generateReleaseSources
+[2020-11-23 10:14:38] [build] [2020-11-23 10:14:38] [autobuild] :ActivityLauncherApp:incrementalReleaseJavaCompilationSafeguard
+[2020-11-23 10:14:38] [build] [2020-11-23 10:14:38] [autobuild] :ActivityLauncherApp:javaPreCompileRelease
+[2020-11-23 10:14:38] [build] [2020-11-23 10:14:38] [autobuild] :ActivityLauncherApp:compileReleaseJavaWithJavac
+[2020-11-23 10:14:38] [build] [2020-11-23 10:14:38] [autobuild] :ActivityLauncherApp:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+[2020-11-23 10:14:39] [build] [2020-11-23 10:14:39] [autobuild] Note: Some input files use or override a deprecated API.
+[2020-11-23 10:14:39] [build] [2020-11-23 10:14:39] [autobuild] Note: Recompile with -Xlint:deprecation for details.
+[2020-11-23 10:14:41] [build] [2020-11-23 10:14:41] [autobuild] :ActivityLauncherApp:compileReleaseNdk UP-TO-DATE
+[2020-11-23 10:14:41] [build] [2020-11-23 10:14:41] [autobuild] :ActivityLauncherApp:compileReleaseSources
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] [Fatal Error] :3:214: The value of attribute "name" associated with an element type "item" must not contain the '<' character.
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] Could not read /media/data/Android/Sdk/platform-tools/api/annotations.zip
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] java.io.IOException: Could not parse XML from android/accounts/annotations.xml
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.ExternalAnnotationRepository$AnnotationsDatabase.initializePackage(ExternalAnnotationRepository.java:912)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.ExternalAnnotationRepository$AnnotationsDatabase.initializeFromJar(ExternalAnnotationRepository.java:855)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.ExternalAnnotationRepository$AnnotationsDatabase.<init>(ExternalAnnotationRepository.java:603)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.ExternalAnnotationRepository.getDatabase(ExternalAnnotationRepository.java:248)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.ExternalAnnotationRepository.create(ExternalAnnotationRepository.java:179)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.ExternalAnnotationRepository.get(ExternalAnnotationRepository.java:160)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.psi.EcjPsiManager.getAnnotationRepository(EcjPsiManager.java:985)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.psi.EcjPsiJavaEvaluator.getAllAnnotations(EcjPsiJavaEvaluator.java:278)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.checks.SupportAnnotationDetector$CallVisitor.checkCall(SupportAnnotationDetector.java:2426)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.checks.SupportAnnotationDetector$CallVisitor.visitCallExpression(SupportAnnotationDetector.java:2412)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitCallExpression(JavaPsiVisitor.java:951)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.JavaElementVisitor.visitMethodCallExpression(JavaElementVisitor.java:183)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitMethodCallExpression(JavaPsiVisitor.java:943)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.JavaPsiVisitor$DelegatingPsiVisitor.visitMethodCallExpression(JavaPsiVisitor.java:1585)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.psi.EcjPsiMethodCallExpression.accept(EcjPsiMethodCallExpression.java:39)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.psi.EcjPsiSourceElement.acceptChildren(EcjPsiSourceElement.java:84)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.JavaRecursiveElementVisitor.visitElement(JavaRecursiveElementVisitor.java:62)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.JavaElementVisitor.visitStatement(JavaElementVisitor.java:272)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitStatement(JavaPsiVisitor.java:1168)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.JavaElementVisitor.visitExpressionStatement(JavaElementVisitor.java:115)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitExpressionStatement(JavaPsiVisitor.java:756)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.psi.EcjPsiExpressionStatement.accept(EcjPsiExpressionStatement.java:49)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.psi.EcjPsiSourceElement.acceptChildren(EcjPsiSourceElement.java:84)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.JavaRecursiveElementVisitor.visitElement(JavaRecursiveElementVisitor.java:62)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.JavaElementVisitor.visitCodeBlock(JavaElementVisitor.java:67)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitCodeBlock(JavaPsiVisitor.java:623)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.psi.EcjPsiCodeBlock.accept(EcjPsiCodeBlock.java:39)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.psi.EcjPsiSourceElement.acceptChildren(EcjPsiSourceElement.java:84)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.JavaRecursiveElementVisitor.visitElement(JavaRecursiveElementVisitor.java:62)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.JavaElementVisitor.visitStatement(JavaElementVisitor.java:272)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitStatement(JavaPsiVisitor.java:1168)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.JavaElementVisitor.visitTryStatement(JavaElementVisitor.java:300)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitTryStatement(JavaPsiVisitor.java:1245)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.psi.EcjPsiTryStatement.accept(EcjPsiTryStatement.java:65)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.psi.EcjPsiSourceElement.acceptChildren(EcjPsiSourceElement.java:84)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.JavaRecursiveElementVisitor.visitElement(JavaRecursiveElementVisitor.java:62)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.JavaElementVisitor.visitCodeBlock(JavaElementVisitor.java:67)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitCodeBlock(JavaPsiVisitor.java:623)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.psi.EcjPsiCodeBlock.accept(EcjPsiCodeBlock.java:39)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.psi.EcjPsiSourceElement.acceptChildren(EcjPsiSourceElement.java:84)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.JavaRecursiveElementVisitor.visitElement(JavaRecursiveElementVisitor.java:62)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.JavaElementVisitor.visitMethod(JavaElementVisitor.java:179)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitMethod(JavaPsiVisitor.java:932)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.psi.EcjPsiMethod.accept(EcjPsiMethod.java:104)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.psi.EcjPsiSourceElement.acceptChildren(EcjPsiSourceElement.java:84)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.JavaRecursiveElementVisitor.visitElement(JavaRecursiveElementVisitor.java:62)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.JavaElementVisitor.visitClass(JavaElementVisitor.java:55)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitClass(JavaPsiVisitor.java:589)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.psi.EcjPsiClass.accept(EcjPsiClass.java:658)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.psi.EcjPsiSourceElement.acceptChildren(EcjPsiSourceElement.java:84)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.JavaRecursiveElementVisitor.visitElement(JavaRecursiveElementVisitor.java:62)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.PsiElementVisitor.visitFile(PsiElementVisitor.java:34)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.intellij.psi.JavaElementVisitor.visitJavaFile(JavaElementVisitor.java:336)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.JavaPsiVisitor$DispatchPsiVisitor.visitJavaFile(JavaPsiVisitor.java:1333)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.psi.EcjPsiJavaFile.accept(EcjPsiJavaFile.java:137)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.JavaPsiVisitor.lambda$visitFile$3(JavaPsiVisitor.java:315)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.LintClient.runReadAction(LintClient.java:1285)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.LintDriver$LintClientWrapper.runReadAction(LintDriver.java:2112)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.JavaPsiVisitor.visitFile(JavaPsiVisitor.java:311)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.LintDriver.visitJavaFiles(LintDriver.java:1677)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.LintDriver.checkJava(LintDriver.java:1654)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.LintDriver.runFileDetectors(LintDriver.java:1185)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.LintDriver.checkProject(LintDriver.java:1039)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:552)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:483)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.tools.lint.LintCliClient.run(LintCliClient.java:143)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.build.gradle.internal.LintGradleClient.run(LintGradleClient.java:197)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.build.gradle.tasks.Lint.runLint(Lint.java:340)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.build.gradle.tasks.Lint.lintSingleVariant(Lint.java:307)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at com.android.build.gradle.tasks.Lint.lint(Lint.java:119)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.doExecute(DefaultTaskClassInfoStore.java:141)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:134)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:123)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:632)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:615)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:95)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:76)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:55)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:88)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:46)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:51)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:236)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:228)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:61)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:228)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:215)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:77)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:58)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:32)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:113)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:196)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:193)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:56)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:193)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:119)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:102)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.exec.GradleBuildController.run(GradleBuildController.java:71)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:75)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:49)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:44)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:29)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:51)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:173)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:244)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:217)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:33)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.cli.JavaRuntimeValidationAction.execute(JavaRuntimeValidationAction.java:24)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:210)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:174)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.Main.doAction(Main.java:33)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] 	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] :ActivityLauncherApp:lintVitalRelease
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] :ActivityLauncherApp:mergeReleaseShaders
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] :ActivityLauncherApp:compileReleaseShaders
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] :ActivityLauncherApp:generateReleaseAssets
+[2020-11-23 10:14:42] [build] [2020-11-23 10:14:42] [autobuild] :ActivityLauncherApp:mergeReleaseAssets
+[2020-11-23 10:14:43] [build] [2020-11-23 10:14:43] [autobuild] :ActivityLauncherApp:transformClassesWithDexForRelease
+[2020-11-23 10:14:43] [build] [2020-11-23 10:14:43] [autobuild] :ActivityLauncherApp:mergeReleaseJniLibFolders
+[2020-11-23 10:14:43] [build] [2020-11-23 10:14:43] [autobuild] :ActivityLauncherApp:transformNativeLibsWithMergeJniLibsForRelease
+[2020-11-23 10:14:43] [build] [2020-11-23 10:14:43] [autobuild] :ActivityLauncherApp:processReleaseJavaRes UP-TO-DATE
+[2020-11-23 10:14:43] [build] [2020-11-23 10:14:43] [autobuild] :ActivityLauncherApp:transformResourcesWithMergeJavaResForRelease
+[2020-11-23 10:14:43] [build] [2020-11-23 10:14:43] [autobuild] :ActivityLauncherApp:packageRelease
+[2020-11-23 10:14:43] [build] [2020-11-23 10:14:43] [autobuild] :ActivityLauncherApp:assembleRelease
+[2020-11-23 10:14:43] [build] [2020-11-23 10:14:43] [autobuild] :ActivityLauncherApp:assemble
+[2020-11-23 10:14:43] [build] [2020-11-23 10:14:43] [autobuild] BUILD SUCCESSFUL
+[2020-11-23 10:14:43] [build] [2020-11-23 10:14:43] [autobuild] Total time: 23.466 secs
+[2020-11-23 10:14:44] [build-err] Scanning for files in /media/data/muse2/muse2repo_apk_mutation_reach_src/ActivityLauncher...
+[2020-11-23 10:14:45] [build-err] /media/data/muse2/muse2repo_apk_mutation_reach_src/ActivityLauncher/codeql-db: Indexing files in in /media/data/muse2/muse2repo_apk_mutation_reach_src/ActivityLauncher...
+[2020-11-23 10:14:45] [build-err] /media/data/muse2/muse2repo_apk_mutation_reach_src/ActivityLauncher/codeql-db: Running in /media/data/muse2/muse2repo_apk_mutation_reach_src/ActivityLauncher: [/media/data/nacoop/codeql-home/codeql/xml/tools/index-files.sh, /media/data/muse2/muse2repo_apk_mutation_reach_src/ActivityLauncher/codeql-db/working/files-to-index17874083413224137217.list]

@@ -1,0 +1,159 @@
+[2020-11-23 10:17:00] [build] [2020-11-23 10:17:00] Build directory is /media/data/muse2/muse2repo_apk_mutation_reach_src/CalendarTrigger/.
+[2020-11-23 10:17:00] [build] [2020-11-23 10:17:00] [autobuild] > chmod +x gradlew
+[2020-11-23 10:17:00] [build] [2020-11-23 10:17:00] [autobuild] > ./gradlew -Dorg.gradle.caching=false --no-daemon -S clean
+[2020-11-23 10:17:00] [build] [2020-11-23 10:17:00] [autobuild] To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/4.6/userguide/gradle_daemon.html.
+[2020-11-23 10:17:01] [build] [2020-11-23 10:17:01] [autobuild] Daemon will be stopped at the end of the build stopping after processing
+[2020-11-23 10:17:07] [build] [2020-11-23 10:17:07] [autobuild] :app:clean
+[2020-11-23 10:17:07] [build] [2020-11-23 10:17:07] [autobuild] BUILD SUCCESSFUL in 7s
+[2020-11-23 10:17:07] [build] [2020-11-23 10:17:07] [autobuild] 1 actionable task: 1 executed
+[2020-11-23 10:17:08] [build] [2020-11-23 10:17:08] [autobuild] > ./gradlew -Dorg.gradle.caching=false --no-daemon -S assemble
+[2020-11-23 10:17:08] [build] [2020-11-23 10:17:08] [autobuild] To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/4.6/userguide/gradle_daemon.html.
+[2020-11-23 10:17:10] [build] [2020-11-23 10:17:10] [autobuild] Daemon will be stopped at the end of the build stopping after processing
+[2020-11-23 10:17:16] [build] [2020-11-23 10:17:16] [autobuild] :app:checkDebugClasspath
+[2020-11-23 10:17:16] [build] [2020-11-23 10:17:16] [autobuild] :app:preBuild UP-TO-DATE
+[2020-11-23 10:17:16] [build] [2020-11-23 10:17:16] [autobuild] :app:preDebugBuild
+[2020-11-23 10:17:16] [build] [2020-11-23 10:17:16] [autobuild] :app:compileDebugAidl NO-SOURCE
+[2020-11-23 10:17:16] [build] [2020-11-23 10:17:16] [autobuild] :app:compileDebugRenderscript
+[2020-11-23 10:17:16] [build] [2020-11-23 10:17:16] [autobuild] :app:checkDebugManifest
+[2020-11-23 10:17:16] [build] [2020-11-23 10:17:16] [autobuild] :app:generateDebugBuildConfig
+[2020-11-23 10:17:16] [build] [2020-11-23 10:17:16] [autobuild] :app:prepareLintJar UP-TO-DATE
+[2020-11-23 10:17:16] [build] [2020-11-23 10:17:16] [autobuild] :app:mainApkListPersistenceDebug
+[2020-11-23 10:17:16] [build] [2020-11-23 10:17:16] [autobuild] :app:generateDebugResValues
+[2020-11-23 10:17:16] [build] [2020-11-23 10:17:16] [autobuild] :app:generateDebugResources
+[2020-11-23 10:17:17] [build] [2020-11-23 10:17:17] [autobuild] :app:mergeDebugResources
+[2020-11-23 10:17:17] [build] [2020-11-23 10:17:17] [autobuild] :app:createDebugCompatibleScreenManifests
+[2020-11-23 10:17:17] [build] [2020-11-23 10:17:17] [autobuild] :app:processDebugManifest
+[2020-11-23 10:17:17] [build] [2020-11-23 10:17:17] [autobuild] :app:splitsDiscoveryTaskDebug
+[2020-11-23 10:17:17] [build] [2020-11-23 10:17:17] [autobuild] :app:processDebugResources
+[2020-11-23 10:17:17] [build] [2020-11-23 10:17:17] [autobuild] W/ResourceType( 8273): For resource 0x0101053d, entry index(1341) is beyond type entryCount(1266)
+[2020-11-23 10:17:17] [build] [2020-11-23 10:17:17] [autobuild] W/ResourceType( 8273): For resource 0x0101053e, entry index(1342) is beyond type entryCount(1266)
+[2020-11-23 10:17:17] [build] [2020-11-23 10:17:17] [autobuild] W/ResourceType( 8273): For resource 0x0101053b, entry index(1339) is beyond type entryCount(1266)
+[2020-11-23 10:17:17] [build] [2020-11-23 10:17:17] [autobuild] W/ResourceType( 8273): For resource 0x0101053c, entry index(1340) is beyond type entryCount(1266)
+[2020-11-23 10:17:17] [build] [2020-11-23 10:17:17] [autobuild] :app:generateDebugSources
+[2020-11-23 10:17:17] [build] [2020-11-23 10:17:17] [autobuild] :app:javaPreCompileDebug
+[2020-11-23 10:17:19] [build] [2020-11-23 10:17:19] [autobuild] Note: /media/data/muse2/muse2repo_apk_mutation_reach_src/CalendarTrigger/app/src/main/java/uk/co/yahoo/p1rpp/calendartrigger/activites/ArrayAdapter.java uses unchecked or unsafe operations.
+[2020-11-23 10:17:19] [build] [2020-11-23 10:17:19] [autobuild] Note: Recompile with -Xlint:unchecked for details.
+[2020-11-23 10:17:27] [build] [2020-11-23 10:17:27] [autobuild] :app:compileDebugJavaWithJavac
+[2020-11-23 10:17:27] [build] [2020-11-23 10:17:27] [autobuild] :app:compileDebugNdk NO-SOURCE
+[2020-11-23 10:17:27] [build] [2020-11-23 10:17:27] [autobuild] :app:compileDebugSources
+[2020-11-23 10:17:27] [build] [2020-11-23 10:17:27] [autobuild] :app:mergeDebugShaders
+[2020-11-23 10:17:27] [build] [2020-11-23 10:17:27] [autobuild] :app:compileDebugShaders
+[2020-11-23 10:17:27] [build] [2020-11-23 10:17:27] [autobuild] :app:generateDebugAssets
+[2020-11-23 10:17:27] [build] [2020-11-23 10:17:27] [autobuild] :app:mergeDebugAssets
+[2020-11-23 10:17:29] [build] [2020-11-23 10:17:29] [autobuild] :app:transformClassesWithDexBuilderForDebug
+[2020-11-23 10:17:30] [build] [2020-11-23 10:17:30] [autobuild] :app:transformDexArchiveWithExternalLibsDexMergerForDebug
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:transformDexArchiveWithDexMergerForDebug
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:mergeDebugJniLibFolders
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:transformNativeLibsWithMergeJniLibsForDebug
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:checkDebugLibraries
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:processDebugJavaRes NO-SOURCE
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:transformResourcesWithMergeJavaResForDebug
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:validateSigningDebug
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:packageDebug
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:assembleDebug
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:checkReleaseClasspath
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:extractProguardFiles UP-TO-DATE
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:preReleaseBuild
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:compileReleaseAidl NO-SOURCE
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:compileReleaseRenderscript
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:checkReleaseManifest
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:generateReleaseBuildConfig
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:mainApkListPersistenceRelease
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:generateReleaseResValues
+[2020-11-23 10:17:31] [build] [2020-11-23 10:17:31] [autobuild] :app:generateReleaseResources
+[2020-11-23 10:17:32] [build] [2020-11-23 10:17:32] [autobuild] :app:mergeReleaseResources
+[2020-11-23 10:17:32] [build] [2020-11-23 10:17:32] [autobuild] :app:createReleaseCompatibleScreenManifests
+[2020-11-23 10:17:32] [build] [2020-11-23 10:17:32] [autobuild] :app:processReleaseManifest
+[2020-11-23 10:17:32] [build] [2020-11-23 10:17:32] [autobuild] :app:splitsDiscoveryTaskRelease
+[2020-11-23 10:17:32] [build] [2020-11-23 10:17:32] [autobuild] :app:processReleaseResources
+[2020-11-23 10:17:32] [build] [2020-11-23 10:17:32] [autobuild] W/ResourceType( 8273): For resource 0x0101053d, entry index(1341) is beyond type entryCount(1266)
+[2020-11-23 10:17:32] [build] [2020-11-23 10:17:32] [autobuild] W/ResourceType( 8273): For resource 0x0101053e, entry index(1342) is beyond type entryCount(1266)
+[2020-11-23 10:17:32] [build] [2020-11-23 10:17:32] [autobuild] W/ResourceType( 8273): For resource 0x0101053b, entry index(1339) is beyond type entryCount(1266)
+[2020-11-23 10:17:32] [build] [2020-11-23 10:17:32] [autobuild] W/ResourceType( 8273): For resource 0x0101053c, entry index(1340) is beyond type entryCount(1266)
+[2020-11-23 10:17:32] [build] [2020-11-23 10:17:32] [autobuild] :app:generateReleaseSources
+[2020-11-23 10:17:32] [build] [2020-11-23 10:17:32] [autobuild] :app:javaPreCompileRelease
+[2020-11-23 10:17:32] [build] [2020-11-23 10:17:32] [autobuild] Note: /media/data/muse2/muse2repo_apk_mutation_reach_src/CalendarTrigger/app/src/main/java/uk/co/yahoo/p1rpp/calendartrigger/activites/ArrayAdapter.java uses unchecked or unsafe operations.
+[2020-11-23 10:17:32] [build] [2020-11-23 10:17:32] [autobuild] Note: Recompile with -Xlint:unchecked for details.
+[2020-11-23 10:17:36] [build] [2020-11-23 10:17:36] [autobuild] :app:compileReleaseJavaWithJavac
+[2020-11-23 10:17:36] [build] [2020-11-23 10:17:36] [autobuild] :app:compileReleaseNdk NO-SOURCE
+[2020-11-23 10:17:36] [build] [2020-11-23 10:17:36] [autobuild] :app:compileReleaseSources
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] /media/data/muse2/muse2repo_apk_mutation_reach_src/CalendarTrigger/app/build.gradle:22: Error: Google Play requires that apps target API level 26 or higher.
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild]  [ExpiredTargetSdkVersion]
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild]         targetSdkVersion 22
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild]         ~~~~~~~~~~~~~~~~~~~
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild]    Explanation for issues of type "ExpiredTargetSdkVersion":
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild]    As of the second half of 2018, Google Play requires that new apps and app
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild]    updates target API level 26 or higher.
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild]    Configuring your app to target a recent API level ensures that users
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild]    benefit from significant security and performance improvements, while still
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild]    allowing your app to run on older Android versions (down to the
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild]    minSdkVersion).
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild]    To update your targetSdkVersion, follow the steps from "Meeting Google Play
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild]    requirements for target API level",
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild]    https://developer.android.com/distribute/best-practices/develop/target-sdk.
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild]    html
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild]    https://support.google.com/googleplay/android-developer/answer/113469#targetsdk
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild]    https://support.google.com/googleplay/android-developer/answer/113469#targetsdk
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild]    https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] 1 errors, 0 warnings
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] :app:lintVitalRelease
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] :app:mergeReleaseShaders
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] :app:compileReleaseShaders
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] :app:generateReleaseAssets
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] :app:mergeReleaseAssets
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] :app:checkReleaseLibraries
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] :app:processReleaseJavaRes NO-SOURCE
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] :app:transformResourcesWithMergeJavaResForRelease
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] :app:transformClassesAndResourcesWithProguardForRelease
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] Request to incrementing alive workforce from 0. Current workforce (dead or alive) 0
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] thread-pool size=4
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] ProGuard, version 6.0.3
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] Reading input...
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] Reading program jar [/media/data/nacoop/.gradle/caches/transforms-1/files-1.1/support-v4-23.2.1.aar/4aca2e4c91d1ff58871dc213899daf31/jars/classes.jar] (filtered)
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] Reading program jar [/media/data/nacoop/.gradle/caches/transforms-1/files-1.1/support-v4-23.2.1.aar/4aca2e4c91d1ff58871dc213899daf31/jars/libs/internal_impl-23.2.1.jar] (filtered)
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] Reading program jar [/media/data/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar] (filtered)
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] Reading program directory [/media/data/muse2/muse2repo_apk_mutation_reach_src/CalendarTrigger/app/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes] (filtered)
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] Reading program jar [/media/data/muse2/muse2repo_apk_mutation_reach_src/CalendarTrigger/app/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+[2020-11-23 10:17:38] [build] [2020-11-23 10:17:38] [autobuild] Reading library jar [/media/data/Android/Sdk/platforms/android-23/android.jar]
+[2020-11-23 10:17:39] [build] [2020-11-23 10:17:39] [autobuild] Reading library jar [/media/data/Android/Sdk/build-tools/28.0.3/core-lambda-stubs.jar]
+[2020-11-23 10:17:39] [build] [2020-11-23 10:17:39] [autobuild] Reading library jar [/media/data/Android/Sdk/platforms/android-23/optional/org.apache.http.legacy.jar]
+[2020-11-23 10:17:39] [build] [2020-11-23 10:17:39] [autobuild] Initializing...
+[2020-11-23 10:17:39] [build] [2020-11-23 10:17:39] [autobuild] Note: the configuration keeps the entry point 'uk.co.yahoo.p1rpp.calendartrigger.activites.FileListView { void setOnDirectoryOrFileClickListener(uk.co.yahoo.p1rpp.calendartrigger.activites.FileListView$OnDirectoryOrFileClickListener); }', but not the descriptor class 'uk.co.yahoo.p1rpp.calendartrigger.activites.FileListView$OnDirectoryOrFileClickListener'
+[2020-11-23 10:17:39] [build] [2020-11-23 10:17:39] [autobuild] Note: the configuration keeps the entry point 'uk.co.yahoo.p1rpp.calendartrigger.activites.FileListView { void setComparator(uk.co.yahoo.p1rpp.calendartrigger.Comparator.ComparatorChain); }', but not the descriptor class 'uk.co.yahoo.p1rpp.calendartrigger.Comparator.ComparatorChain'
+[2020-11-23 10:17:39] [build] [2020-11-23 10:17:39] [autobuild] Note: the configuration keeps the entry point 'uk.co.yahoo.p1rpp.calendartrigger.activites.FileListView { void setOnGetView(uk.co.yahoo.p1rpp.calendartrigger.activites.FileSystemAdapter$OnGetView); }', but not the descriptor class 'uk.co.yahoo.p1rpp.calendartrigger.activites.FileSystemAdapter$OnGetView'
+[2020-11-23 10:17:39] [build] [2020-11-23 10:17:39] [autobuild] Note: there were 3 unkept descriptor classes in kept class members.
+[2020-11-23 10:17:39] [build] [2020-11-23 10:17:39] [autobuild]       You should consider explicitly keeping the mentioned classes
+[2020-11-23 10:17:39] [build] [2020-11-23 10:17:39] [autobuild]       (using '-keep').
+[2020-11-23 10:17:39] [build] [2020-11-23 10:17:39] [autobuild]       (http://proguard.sourceforge.net/manual/troubleshooting.html#descriptorclass)
+[2020-11-23 10:17:39] [build] [2020-11-23 10:17:39] [autobuild] Ignoring unused library classes...
+[2020-11-23 10:17:39] [build] [2020-11-23 10:17:39] [autobuild]   Original number of library classes: 3888
+[2020-11-23 10:17:39] [build] [2020-11-23 10:17:39] [autobuild]   Final number of library classes:    871
+[2020-11-23 10:17:39] [build] [2020-11-23 10:17:39] [autobuild] Printing kept classes, fields, and methods...
+[2020-11-23 10:17:39] [build] [2020-11-23 10:17:39] [autobuild] Inlining subroutines...
+[2020-11-23 10:17:39] [build] [2020-11-23 10:17:39] [autobuild] Shrinking...
+[2020-11-23 10:17:39] [build] [2020-11-23 10:17:39] [autobuild] Printing usage to [/media/data/muse2/muse2repo_apk_mutation_reach_src/CalendarTrigger/app/build/outputs/mapping/release/usage.txt]...
+[2020-11-23 10:17:40] [build] [2020-11-23 10:17:40] [autobuild] Removing unused program classes and class elements...
+[2020-11-23 10:17:40] [build] [2020-11-23 10:17:40] [autobuild]   Original number of program classes: 1310
+[2020-11-23 10:17:40] [build] [2020-11-23 10:17:40] [autobuild]   Final number of program classes:    212
+[2020-11-23 10:17:40] [build] [2020-11-23 10:17:40] [autobuild] Obfuscating...
+[2020-11-23 10:17:40] [build] [2020-11-23 10:17:40] [autobuild] Printing mapping to [/media/data/muse2/muse2repo_apk_mutation_reach_src/CalendarTrigger/app/build/outputs/mapping/release/mapping.txt]...
+[2020-11-23 10:17:40] [build] [2020-11-23 10:17:40] [autobuild] Preverifying...
+[2020-11-23 10:17:40] [build] [2020-11-23 10:17:40] [autobuild] Writing output...
+[2020-11-23 10:17:40] [build] [2020-11-23 10:17:40] [autobuild] Preparing output jar [/media/data/muse2/muse2repo_apk_mutation_reach_src/CalendarTrigger/app/build/intermediates/transforms/proguard/release/0.jar]
+[2020-11-23 10:17:40] [build] [2020-11-23 10:17:40] [autobuild]   Copying resources from program jar [/media/data/nacoop/.gradle/caches/transforms-1/files-1.1/support-v4-23.2.1.aar/4aca2e4c91d1ff58871dc213899daf31/jars/classes.jar] (filtered)
+[2020-11-23 10:17:40] [build] [2020-11-23 10:17:40] [autobuild]   Copying resources from program jar [/media/data/nacoop/.gradle/caches/transforms-1/files-1.1/support-v4-23.2.1.aar/4aca2e4c91d1ff58871dc213899daf31/jars/libs/internal_impl-23.2.1.jar] (filtered)
+[2020-11-23 10:17:40] [build] [2020-11-23 10:17:40] [autobuild]   Copying resources from program jar [/media/data/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar] (filtered)
+[2020-11-23 10:17:40] [build] [2020-11-23 10:17:40] [autobuild]   Copying resources from program directory [/media/data/muse2/muse2repo_apk_mutation_reach_src/CalendarTrigger/app/build/intermediates/javac/release/compileReleaseJavaWithJavac/classes] (filtered)
+[2020-11-23 10:17:41] [build] [2020-11-23 10:17:41] [autobuild]   Copying resources from program jar [/media/data/muse2/muse2repo_apk_mutation_reach_src/CalendarTrigger/app/build/intermediates/transforms/mergeJavaRes/release/0.jar] (filtered)
+[2020-11-23 10:17:41] [build] [2020-11-23 10:17:41] [autobuild] :app:transformClassesWithDexBuilderForRelease
+[2020-11-23 10:17:41] [build] [2020-11-23 10:17:41] [autobuild] :app:transformDexArchiveWithDexMergerForRelease
+[2020-11-23 10:17:41] [build] [2020-11-23 10:17:41] [autobuild] :app:mergeReleaseJniLibFolders
+[2020-11-23 10:17:42] [build] [2020-11-23 10:17:42] [autobuild] :app:transformNativeLibsWithMergeJniLibsForRelease
+[2020-11-23 10:17:42] [build] [2020-11-23 10:17:42] [autobuild] :app:packageRelease
+[2020-11-23 10:17:42] [build] [2020-11-23 10:17:42] [autobuild] :app:assembleRelease
+[2020-11-23 10:17:42] [build] [2020-11-23 10:17:42] [autobuild] :app:assemble
+[2020-11-23 10:17:42] [build] [2020-11-23 10:17:42] [autobuild] BUILD SUCCESSFUL in 34s
+[2020-11-23 10:17:42] [build] [2020-11-23 10:17:42] [autobuild] 54 actionable tasks: 52 executed, 2 up-to-date
+[2020-11-23 10:17:43] [build-err] Scanning for files in /media/data/muse2/muse2repo_apk_mutation_reach_src/CalendarTrigger...
+[2020-11-23 10:17:44] [build-err] /media/data/muse2/muse2repo_apk_mutation_reach_src/CalendarTrigger/codeql-db: Indexing files in in /media/data/muse2/muse2repo_apk_mutation_reach_src/CalendarTrigger...
+[2020-11-23 10:17:44] [build-err] /media/data/muse2/muse2repo_apk_mutation_reach_src/CalendarTrigger/codeql-db: Running in /media/data/muse2/muse2repo_apk_mutation_reach_src/CalendarTrigger: [/media/data/nacoop/codeql-home/codeql/xml/tools/index-files.sh, /media/data/muse2/muse2repo_apk_mutation_reach_src/CalendarTrigger/codeql-db/working/files-to-index14574289146887251797.list]

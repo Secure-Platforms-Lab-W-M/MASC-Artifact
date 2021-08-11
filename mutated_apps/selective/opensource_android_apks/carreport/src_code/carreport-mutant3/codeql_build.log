@@ -1,0 +1,874 @@
+[2020-12-02 13:48:14] [build-err] Picked up _JAVA_OPTIONS: -Xms512m -Xmx1024m
+[2020-12-02 13:48:15] [build] To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/4.10.1/userguide/gradle_daemon.html.
+[2020-12-02 13:48:16] [build] Daemon will be stopped at the end of the build stopping after processing
+[2020-12-02 13:48:23] [build] > Task :app:clean
+[2020-12-02 13:48:23] [build] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform constraintlayout-solver.jar (androidx.constraintlayout:constraintlayout-solver:2.0.0-alpha2) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform core-common.jar (androidx.arch.core:core-common:2.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform annotation.jar (androidx.annotation:annotation:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform okio.jar (com.squareup.okio:okio:1.14.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform lifecycle-common.jar (androidx.lifecycle:lifecycle-common:2.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform annotation.jar (androidx.annotation:annotation:1.0.0) with IdentityTransform
+[2020-12-02 13:48:23] [build] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform constraintlayout-solver.jar (androidx.constraintlayout:constraintlayout-solver:2.0.0-alpha2) with IdentityTransform
+[2020-12-02 13:48:23] [build] > Transform core-common.jar (androidx.arch.core:core-common:2.0.0) with IdentityTransform
+[2020-12-02 13:48:23] [build] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform print.aar (androidx.print:print:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform joda-time-no-tzdb.jar (joda-time:joda-time:2.9.9) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform print.aar (androidx.print:print:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform okio.jar (com.squareup.okio:okio:1.14.0) with IdentityTransform
+[2020-12-02 13:48:23] [build] > Transform lifecycle-common.jar (androidx.lifecycle:lifecycle-common:2.0.0) with IdentityTransform
+[2020-12-02 13:48:23] [build] > Transform localbroadcastmanager.aar (androidx.localbroadcastmanager:localbroadcastmanager:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform localbroadcastmanager.aar (androidx.localbroadcastmanager:localbroadcastmanager:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform joda-time-no-tzdb.jar (joda-time:joda-time:2.9.9) with IdentityTransform
+[2020-12-02 13:48:23] [build] > Transform documentfile.aar (androidx.documentfile:documentfile:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform documentfile.aar (androidx.documentfile:documentfile:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform localbroadcastmanager.aar (androidx.localbroadcastmanager:localbroadcastmanager:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.1-alpha01) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform print.aar (androidx.print:print:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform documentfile.aar (androidx.documentfile:documentfile:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.1-alpha01) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform sqlite.aar (androidx.sqlite:sqlite:2.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform sqlite.aar (androidx.sqlite:sqlite:2.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform room-common.jar (androidx.room:room-common:2.1.0-alpha02) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform collection.jar (androidx.collection:collection:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform room-common.jar (androidx.room:room-common:2.1.0-alpha02) with IdentityTransform
+[2020-12-02 13:48:23] [build] > Transform sqlite-framework.aar (androidx.sqlite:sqlite-framework:2.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform collection.jar (androidx.collection:collection:1.0.0) with IdentityTransform
+[2020-12-02 13:48:23] [build] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform sqlite-framework.aar (androidx.sqlite:sqlite-framework:2.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.1-alpha01) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform core.aar (androidx.core:core:1.0.1) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform core.aar (androidx.core:core:1.0.1) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform sqlite.aar (androidx.sqlite:sqlite:2.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform asynclayoutinflater.aar (androidx.asynclayoutinflater:asynclayoutinflater:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform swiperefreshlayout.aar (androidx.swiperefreshlayout:swiperefreshlayout:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform asynclayoutinflater.aar (androidx.asynclayoutinflater:asynclayoutinflater:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform swiperefreshlayout.aar (androidx.swiperefreshlayout:swiperefreshlayout:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform sqlite-framework.aar (androidx.sqlite:sqlite-framework:2.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform slidingpanelayout.aar (androidx.slidingpanelayout:slidingpanelayout:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform slidingpanelayout.aar (androidx.slidingpanelayout:slidingpanelayout:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform coordinatorlayout.aar (androidx.coordinatorlayout:coordinatorlayout:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform coordinatorlayout.aar (androidx.coordinatorlayout:coordinatorlayout:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform customview.aar (androidx.customview:customview:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform customview.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform swiperefreshlayout.aar (androidx.swiperefreshlayout:swiperefreshlayout:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform slidingpanelayout.aar (androidx.slidingpanelayout:slidingpanelayout:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform loader.aar (androidx.loader:loader:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform loader.aar (androidx.loader:loader:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform asynclayoutinflater.aar (androidx.asynclayoutinflater:asynclayoutinflater:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform transition.aar (androidx.transition:transition:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform transition.aar (androidx.transition:transition:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform coordinatorlayout.aar (androidx.coordinatorlayout:coordinatorlayout:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform legacy-support-core-ui.aar (androidx.legacy:legacy-support-core-ui:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform loader.aar (androidx.loader:loader:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform legacy-support-core-ui.aar (androidx.legacy:legacy-support-core-ui:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.0.1) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform fragment.aar (androidx.fragment:fragment:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.0.1) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform fragment.aar (androidx.fragment:fragment:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform legacy-support-core-ui.aar (androidx.legacy:legacy-support-core-ui:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform customview.aar (androidx.customview:customview:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform legacy-support-core-utils.aar (androidx.legacy:legacy-support-core-utils:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform legacy-support-core-utils.aar (androidx.legacy:legacy-support-core-utils:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform media.aar (androidx.media:media:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform jackson-core.jar (com.fasterxml.jackson.core:jackson-core:2.7.4) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform media.aar (androidx.media:media:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.0.1) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform jackson-core.jar (com.fasterxml.jackson.core:jackson-core:2.7.4) with IdentityTransform
+[2020-12-02 13:48:23] [build] > Transform jsr305.jar (com.google.code.findbugs:jsr305:3.0.1) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform fragment.aar (androidx.fragment:fragment:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform jsr305.jar (com.google.code.findbugs:jsr305:3.0.1) with IdentityTransform
+[2020-12-02 13:48:23] [build] > Transform android.joda.aar (net.danlew:android.joda:2.9.9.4) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform android-color-picker.aar (uk.co.jordanrobinson:android-color-picker:1.0.2) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform fab.aar (com.github.clans:fab:1.6.4) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform android.joda.aar (net.danlew:android.joda:2.9.9.4) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform legacy-support-core-utils.aar (androidx.legacy:legacy-support-core-utils:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform transition.aar (androidx.transition:transition:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform okhttp.jar (com.squareup.okhttp3:okhttp:3.10.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform android-color-picker.aar (uk.co.jordanrobinson:android-color-picker:1.0.2) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform fab.aar (com.github.clans:fab:1.6.4) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform media.aar (androidx.media:media:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform okhttp.jar (com.squareup.okhttp3:okhttp:3.10.0) with IdentityTransform
+[2020-12-02 13:48:23] [build] > Transform recyclerview.aar (androidx.recyclerview:recyclerview:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform room-runtime.aar (androidx.room:room-runtime:2.1.0-alpha02) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform recyclerview.aar (androidx.recyclerview:recyclerview:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform room-runtime.aar (androidx.room:room-runtime:2.1.0-alpha02) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform cardview.aar (androidx.cardview:cardview:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform cardview.aar (androidx.cardview:cardview:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform fab.aar (com.github.clans:fab:1.6.4) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform recyclerview.aar (androidx.recyclerview:recyclerview:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform room-runtime.aar (androidx.room:room-runtime:2.1.0-alpha02) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform appcompat.aar (androidx.appcompat:appcompat:1.0.2) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform appcompat.aar (androidx.appcompat:appcompat:1.0.2) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform constraintlayout.aar (androidx.constraintlayout:constraintlayout:2.0.0-alpha2) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform constraintlayout.aar (androidx.constraintlayout:constraintlayout:2.0.0-alpha2) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform material.aar (com.google.android.material:material:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform material.aar (com.google.android.material:material:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform cardview.aar (androidx.cardview:cardview:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform recyclerview-multiselect.aar (com.bignerdranch.android:recyclerview-multiselect:0.2) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform recyclerview-multiselect.aar (com.bignerdranch.android:recyclerview-multiselect:0.2) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform recyclerview-multiselect.aar (com.bignerdranch.android:recyclerview-multiselect:0.2) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform legacy-support-v4.aar (androidx.legacy:legacy-support-v4:1.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform legacy-support-v4.aar (androidx.legacy:legacy-support-v4:1.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform legacy-support-v4.aar (androidx.legacy:legacy-support-v4:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform licensesdialog.aar (de.psdev.licensesdialog:licensesdialog:1.8.3) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform licensesdialog.aar (de.psdev.licensesdialog:licensesdialog:1.8.3) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform licensesdialog.aar (de.psdev.licensesdialog:licensesdialog:1.8.3) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform dropbox-core-sdk.jar (com.dropbox.core:dropbox-core-sdk:3.0.8) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform dropbox-core-sdk.jar (com.dropbox.core:dropbox-core-sdk:3.0.8) with IdentityTransform
+[2020-12-02 13:48:23] [build] > Transform commons-csv.jar (org.apache.commons:commons-csv:1.5) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform commons-csv.jar (org.apache.commons:commons-csv:1.5) with IdentityTransform
+[2020-12-02 13:48:23] [build] > Transform core.aar (androidx.core:core:1.0.1) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform multidex.aar (androidx.multidex:multidex:2.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform multidex.aar (androidx.multidex:multidex:2.0.0) with ExtractAarTransform
+[2020-12-02 13:48:23] [build] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform animal-sniffer-annotations.jar (org.codehaus.mojo:animal-sniffer-annotations:1.14) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform j2objc-annotations.jar (com.google.j2objc:j2objc-annotations:1.1) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform multidex.aar (androidx.multidex:multidex:2.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform error_prone_annotations.jar (com.google.errorprone:error_prone_annotations:2.0.18) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform jsr305.jar (com.google.code.findbugs:jsr305:1.3.9) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform checker-qual.jar (org.checkerframework:checker-qual:2.0.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform gson.jar (com.google.code.gson:gson:2.8.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform icu4j.jar (com.ibm.icu:icu4j:58.2) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform javax.json.jar (org.glassfish:javax.json:1.0.4) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform org.abego.treelayout.core.jar (org.abego.treelayout:org.abego.treelayout.core:1.0.3) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform ST4.jar (org.antlr:ST4:4.0.8) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform antlr4-runtime.jar (org.antlr:antlr4-runtime:4.7.1) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform guava.jar (com.google.guava:guava:23.5-jre) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform annotations.jar (org.jetbrains:annotations:13.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform kotlin-stdlib-common.jar (org.jetbrains.kotlin:kotlin-stdlib-common:1.2.70) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform commons-codec.jar (commons-codec:commons-codec:1.10) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform material.aar (com.google.android.material:material:1.0.0) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform sqlite-jdbc.jar (org.xerial:sqlite-jdbc:3.20.1) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform javapoet.jar (com.squareup:javapoet:1.8.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform antlr4.jar (org.antlr:antlr4:4.7.1) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform auto-value-annotations.jar (com.google.auto.value:auto-value-annotations:1.6.2) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform auto-common.jar (com.google.auto:auto-common:0.10) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform kotlin-stdlib.jar (org.jetbrains.kotlin:kotlin-stdlib:1.2.70) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform kotlin-compiler-lite.jar (me.eugeniomarletti.kotlin.metadata:kotlin-compiler-lite:1.0.3-k-1.2.40) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform room-migration.jar (androidx.room:room-migration:2.1.0-alpha02) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform kotlin-metadata.jar (me.eugeniomarletti.kotlin.metadata:kotlin-metadata:1.4.0) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+[2020-12-02 13:48:23] [build] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.0.0) with AarTransform
+[2020-12-02 13:48:23] [build] > Transform room-compiler.jar (androidx.room:room-compiler:2.1.0-alpha02) with JetifyTransform
+[2020-12-02 13:48:23] [build] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+[2020-12-02 13:48:23] [build] > Transform android-color-picker.aar (uk.co.jordanrobinson:android-color-picker:1.0.2) with AarCompileClassesTransform
+[2020-12-02 13:48:23] [build] > Transform print.aar (androidx.print:print:1.0.0) with AarTransform
+[2020-12-02 13:48:23] [build] > Transform localbroadcastmanager.aar (androidx.localbroadcastmanager:localbroadcastmanager:1.0.0) with AarTransform
+[2020-12-02 13:48:23] [build] > Transform documentfile.aar (androidx.documentfile:documentfile:1.0.0) with AarTransform
+[2020-12-02 13:48:23] [build] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.1-alpha01) with AarTransform
+[2020-12-02 13:48:23] [build] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with AarTransform
+[2020-12-02 13:48:23] [build] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+[2020-12-02 13:48:23] [build] > Transform sqlite.aar (androidx.sqlite:sqlite:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform sqlite-framework.aar (androidx.sqlite:sqlite-framework:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform core.aar (androidx.core:core:1.0.1) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform asynclayoutinflater.aar (androidx.asynclayoutinflater:asynclayoutinflater:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform swiperefreshlayout.aar (androidx.swiperefreshlayout:swiperefreshlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform customview.aar (androidx.customview:customview:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform slidingpanelayout.aar (androidx.slidingpanelayout:slidingpanelayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform coordinatorlayout.aar (androidx.coordinatorlayout:coordinatorlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform loader.aar (androidx.loader:loader:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform transition.aar (androidx.transition:transition:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.0.1) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-core-utils.aar (androidx.legacy:legacy-support-core-utils:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-core-ui.aar (androidx.legacy:legacy-support-core-ui:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform fragment.aar (androidx.fragment:fragment:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform media.aar (androidx.media:media:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform android-color-picker.aar (uk.co.jordanrobinson:android-color-picker:1.0.2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform fab.aar (com.github.clans:fab:1.6.4) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform recyclerview.aar (androidx.recyclerview:recyclerview:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform room-runtime.aar (androidx.room:room-runtime:2.1.0-alpha02) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform cardview.aar (androidx.cardview:cardview:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform android.joda.aar (net.danlew:android.joda:2.9.9.4) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform android.joda.aar (net.danlew:android.joda:2.9.9.4) with AarCompileClassesTransform
+[2020-12-02 13:48:24] [build] > Transform material.aar (com.google.android.material:material:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform recyclerview-multiselect.aar (com.bignerdranch.android:recyclerview-multiselect:0.2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-v4.aar (androidx.legacy:legacy-support-v4:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform licensesdialog.aar (de.psdev.licensesdialog:licensesdialog:1.8.3) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform multidex.aar (androidx.multidex:multidex:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform print.aar (androidx.print:print:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform localbroadcastmanager.aar (androidx.localbroadcastmanager:localbroadcastmanager:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform documentfile.aar (androidx.documentfile:documentfile:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.1-alpha01) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform sqlite.aar (androidx.sqlite:sqlite:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform sqlite-framework.aar (androidx.sqlite:sqlite-framework:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform core.aar (androidx.core:core:1.0.1) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform asynclayoutinflater.aar (androidx.asynclayoutinflater:asynclayoutinflater:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform swiperefreshlayout.aar (androidx.swiperefreshlayout:swiperefreshlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform customview.aar (androidx.customview:customview:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform slidingpanelayout.aar (androidx.slidingpanelayout:slidingpanelayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform coordinatorlayout.aar (androidx.coordinatorlayout:coordinatorlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform loader.aar (androidx.loader:loader:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform transition.aar (androidx.transition:transition:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.0.1) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-core-utils.aar (androidx.legacy:legacy-support-core-utils:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-core-ui.aar (androidx.legacy:legacy-support-core-ui:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform fragment.aar (androidx.fragment:fragment:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform android.joda.aar (net.danlew:android.joda:2.9.9.4) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform media.aar (androidx.media:media:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform android-color-picker.aar (uk.co.jordanrobinson:android-color-picker:1.0.2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform fab.aar (com.github.clans:fab:1.6.4) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform room-runtime.aar (androidx.room:room-runtime:2.1.0-alpha02) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform recyclerview.aar (androidx.recyclerview:recyclerview:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform cardview.aar (androidx.cardview:cardview:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform appcompat.aar (androidx.appcompat:appcompat:1.0.2) with AarCompileClassesTransform
+[2020-12-02 13:48:24] [build] > Transform material.aar (com.google.android.material:material:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform recyclerview-multiselect.aar (com.bignerdranch.android:recyclerview-multiselect:0.2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-v4.aar (androidx.legacy:legacy-support-v4:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform licensesdialog.aar (de.psdev.licensesdialog:licensesdialog:1.8.3) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform multidex.aar (androidx.multidex:multidex:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform constraintlayout.aar (androidx.constraintlayout:constraintlayout:2.0.0-alpha2) with AarCompileClassesTransform
+[2020-12-02 13:48:24] [build] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform hellocharts-android.aar (com.github.gudatcomputers:hellocharts-android:ba603174d302931c0985afb4e54d597fba28146b) with JetifyTransform
+[2020-12-02 13:48:24] [build] > Transform appcompat.aar (androidx.appcompat:appcompat:1.0.2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform appcompat.aar (androidx.appcompat:appcompat:1.0.2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform antlr-runtime.jar (org.antlr:antlr-runtime:3.5.2) with JetifyTransform
+[2020-12-02 13:48:24] [build] > Transform constraintlayout.aar (androidx.constraintlayout:constraintlayout:2.0.0-alpha2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform constraintlayout.aar (androidx.constraintlayout:constraintlayout:2.0.0-alpha2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform print.aar (androidx.print:print:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform localbroadcastmanager.aar (androidx.localbroadcastmanager:localbroadcastmanager:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform documentfile.aar (androidx.documentfile:documentfile:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.1-alpha01) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform sqlite-framework.aar (androidx.sqlite:sqlite-framework:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform sqlite.aar (androidx.sqlite:sqlite:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform hellocharts-android.aar (com.github.gudatcomputers:hellocharts-android:ba603174d302931c0985afb4e54d597fba28146b) with ExtractAarTransform
+[2020-12-02 13:48:24] [build] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform asynclayoutinflater.aar (androidx.asynclayoutinflater:asynclayoutinflater:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform core.aar (androidx.core:core:1.0.1) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform swiperefreshlayout.aar (androidx.swiperefreshlayout:swiperefreshlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform slidingpanelayout.aar (androidx.slidingpanelayout:slidingpanelayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform coordinatorlayout.aar (androidx.coordinatorlayout:coordinatorlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform customview.aar (androidx.customview:customview:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform loader.aar (androidx.loader:loader:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform transition.aar (androidx.transition:transition:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.0.1) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform fragment.aar (androidx.fragment:fragment:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-core-ui.aar (androidx.legacy:legacy-support-core-ui:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-core-utils.aar (androidx.legacy:legacy-support-core-utils:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform media.aar (androidx.media:media:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform android-color-picker.aar (uk.co.jordanrobinson:android-color-picker:1.0.2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform android.joda.aar (net.danlew:android.joda:2.9.9.4) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform fab.aar (com.github.clans:fab:1.6.4) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform hellocharts-android.aar (com.github.gudatcomputers:hellocharts-android:ba603174d302931c0985afb4e54d597fba28146b) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform room-runtime.aar (androidx.room:room-runtime:2.1.0-alpha02) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform recyclerview.aar (androidx.recyclerview:recyclerview:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform hellocharts-android.aar (com.github.gudatcomputers:hellocharts-android:ba603174d302931c0985afb4e54d597fba28146b) with AarCompileClassesTransform
+[2020-12-02 13:48:24] [build] > Transform hellocharts-android.aar (com.github.gudatcomputers:hellocharts-android:ba603174d302931c0985afb4e54d597fba28146b) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform licensesdialog.aar (de.psdev.licensesdialog:licensesdialog:1.8.3) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-v4.aar (androidx.legacy:legacy-support-v4:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform recyclerview-multiselect.aar (com.bignerdranch.android:recyclerview-multiselect:0.2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform appcompat.aar (androidx.appcompat:appcompat:1.0.2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform constraintlayout.aar (androidx.constraintlayout:constraintlayout:2.0.0-alpha2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform material.aar (com.google.android.material:material:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform cardview.aar (androidx.cardview:cardview:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform multidex.aar (androidx.multidex:multidex:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform hellocharts-android.aar (com.github.gudatcomputers:hellocharts-android:ba603174d302931c0985afb4e54d597fba28146b) with AarTransform
+[2020-12-02 13:48:24] [build] > Task :app:preBuild UP-TO-DATE
+[2020-12-02 13:48:24] [build] > Task :app:preFossDebugBuild
+[2020-12-02 13:48:24] [build] > Task :app:compileFossDebugAidl NO-SOURCE
+[2020-12-02 13:48:24] [build] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform print.aar (androidx.print:print:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform localbroadcastmanager.aar (androidx.localbroadcastmanager:localbroadcastmanager:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.1-alpha01) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform documentfile.aar (androidx.documentfile:documentfile:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform sqlite.aar (androidx.sqlite:sqlite:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform sqlite-framework.aar (androidx.sqlite:sqlite-framework:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform core.aar (androidx.core:core:1.0.1) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform swiperefreshlayout.aar (androidx.swiperefreshlayout:swiperefreshlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform customview.aar (androidx.customview:customview:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform asynclayoutinflater.aar (androidx.asynclayoutinflater:asynclayoutinflater:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform slidingpanelayout.aar (androidx.slidingpanelayout:slidingpanelayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform coordinatorlayout.aar (androidx.coordinatorlayout:coordinatorlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform loader.aar (androidx.loader:loader:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform transition.aar (androidx.transition:transition:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.0.1) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-core-ui.aar (androidx.legacy:legacy-support-core-ui:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform fragment.aar (androidx.fragment:fragment:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-core-utils.aar (androidx.legacy:legacy-support-core-utils:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform media.aar (androidx.media:media:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform android.joda.aar (net.danlew:android.joda:2.9.9.4) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform fab.aar (com.github.clans:fab:1.6.4) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform android-color-picker.aar (uk.co.jordanrobinson:android-color-picker:1.0.2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform recyclerview.aar (androidx.recyclerview:recyclerview:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform room-runtime.aar (androidx.room:room-runtime:2.1.0-alpha02) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform appcompat.aar (androidx.appcompat:appcompat:1.0.2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform material.aar (com.google.android.material:material:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform cardview.aar (androidx.cardview:cardview:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform recyclerview-multiselect.aar (com.bignerdranch.android:recyclerview-multiselect:0.2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform hellocharts-android.aar (com.github.gudatcomputers:hellocharts-android:ba603174d302931c0985afb4e54d597fba28146b) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-v4.aar (androidx.legacy:legacy-support-v4:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform constraintlayout.aar (androidx.constraintlayout:constraintlayout:2.0.0-alpha2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform multidex.aar (androidx.multidex:multidex:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform licensesdialog.aar (de.psdev.licensesdialog:licensesdialog:1.8.3) with AarTransform
+[2020-12-02 13:48:24] [build] > Task :app:checkFossDebugManifest
+[2020-12-02 13:48:24] [build] > Task :app:compileFossDebugRenderscript
+[2020-12-02 13:48:24] [build] > Task :app:generateFossDebugBuildConfig
+[2020-12-02 13:48:24] [build] > Task :app:prepareLintJar UP-TO-DATE
+[2020-12-02 13:48:24] [build] > Task :app:generateFossDebugSources
+[2020-12-02 13:48:24] [build] > Task :app:javaPreCompileFossDebug
+[2020-12-02 13:48:24] [build] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform localbroadcastmanager.aar (androidx.localbroadcastmanager:localbroadcastmanager:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform print.aar (androidx.print:print:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.1-alpha01) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform documentfile.aar (androidx.documentfile:documentfile:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform sqlite-framework.aar (androidx.sqlite:sqlite-framework:2.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform sqlite.aar (androidx.sqlite:sqlite:2.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform customview.aar (androidx.customview:customview:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform asynclayoutinflater.aar (androidx.asynclayoutinflater:asynclayoutinflater:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform core.aar (androidx.core:core:1.0.1) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform swiperefreshlayout.aar (androidx.swiperefreshlayout:swiperefreshlayout:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform slidingpanelayout.aar (androidx.slidingpanelayout:slidingpanelayout:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform loader.aar (androidx.loader:loader:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform coordinatorlayout.aar (androidx.coordinatorlayout:coordinatorlayout:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.0.1) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform fragment.aar (androidx.fragment:fragment:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform transition.aar (androidx.transition:transition:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-core-ui.aar (androidx.legacy:legacy-support-core-ui:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-core-utils.aar (androidx.legacy:legacy-support-core-utils:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform media.aar (androidx.media:media:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform android.joda.aar (net.danlew:android.joda:2.9.9.4) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform room-runtime.aar (androidx.room:room-runtime:2.1.0-alpha02) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform fab.aar (com.github.clans:fab:1.6.4) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform appcompat.aar (androidx.appcompat:appcompat:1.0.2) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform recyclerview.aar (androidx.recyclerview:recyclerview:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform constraintlayout.aar (androidx.constraintlayout:constraintlayout:2.0.0-alpha2) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform android-color-picker.aar (uk.co.jordanrobinson:android-color-picker:1.0.2) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform recyclerview-multiselect.aar (com.bignerdranch.android:recyclerview-multiselect:0.2) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform cardview.aar (androidx.cardview:cardview:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform material.aar (com.google.android.material:material:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-v4.aar (androidx.legacy:legacy-support-v4:1.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform hellocharts-android.aar (com.github.gudatcomputers:hellocharts-android:ba603174d302931c0985afb4e54d597fba28146b) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform licensesdialog.aar (de.psdev.licensesdialog:licensesdialog:1.8.3) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform multidex.aar (androidx.multidex:multidex:2.0.0) with LibrarySymbolTableTransform
+[2020-12-02 13:48:24] [build] > Transform aapt2-linux.jar (com.android.tools.build:aapt2:3.3.1-5013011) with Aapt2Extractor
+[2020-12-02 13:48:24] [build] > Task :app:mainApkListPersistenceFossDebug
+[2020-12-02 13:48:24] [build] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform localbroadcastmanager.aar (androidx.localbroadcastmanager:localbroadcastmanager:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform print.aar (androidx.print:print:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform documentfile.aar (androidx.documentfile:documentfile:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.1-alpha01) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform sqlite.aar (androidx.sqlite:sqlite:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform sqlite-framework.aar (androidx.sqlite:sqlite-framework:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform asynclayoutinflater.aar (androidx.asynclayoutinflater:asynclayoutinflater:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform swiperefreshlayout.aar (androidx.swiperefreshlayout:swiperefreshlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform core.aar (androidx.core:core:1.0.1) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform slidingpanelayout.aar (androidx.slidingpanelayout:slidingpanelayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform customview.aar (androidx.customview:customview:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform coordinatorlayout.aar (androidx.coordinatorlayout:coordinatorlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.0.1) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-core-utils.aar (androidx.legacy:legacy-support-core-utils:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform transition.aar (androidx.transition:transition:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform loader.aar (androidx.loader:loader:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform fragment.aar (androidx.fragment:fragment:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-core-ui.aar (androidx.legacy:legacy-support-core-ui:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform media.aar (androidx.media:media:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform room-runtime.aar (androidx.room:room-runtime:2.1.0-alpha02) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform android-color-picker.aar (uk.co.jordanrobinson:android-color-picker:1.0.2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform recyclerview.aar (androidx.recyclerview:recyclerview:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform fab.aar (com.github.clans:fab:1.6.4) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform android.joda.aar (net.danlew:android.joda:2.9.9.4) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform cardview.aar (androidx.cardview:cardview:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform appcompat.aar (androidx.appcompat:appcompat:1.0.2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform material.aar (com.google.android.material:material:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform recyclerview-multiselect.aar (com.bignerdranch.android:recyclerview-multiselect:0.2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform constraintlayout.aar (androidx.constraintlayout:constraintlayout:2.0.0-alpha2) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform licensesdialog.aar (de.psdev.licensesdialog:licensesdialog:1.8.3) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform legacy-support-v4.aar (androidx.legacy:legacy-support-v4:1.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform multidex.aar (androidx.multidex:multidex:2.0.0) with AarTransform
+[2020-12-02 13:48:24] [build] > Transform hellocharts-android.aar (com.github.gudatcomputers:hellocharts-android:ba603174d302931c0985afb4e54d597fba28146b) with AarTransform
+[2020-12-02 13:48:24] [build] > Task :app:generateFossDebugResValues
+[2020-12-02 13:48:24] [build] > Task :app:generateFossDebugResources
+[2020-12-02 13:48:26] [build] > Task :app:mergeFossDebugResources
+[2020-12-02 13:48:26] [build] > Task :app:createFossDebugCompatibleScreenManifests
+[2020-12-02 13:48:26] [build] > Task :app:processFossDebugManifest
+[2020-12-02 13:48:27] [build] > Task :app:processFossDebugResources
+[2020-12-02 13:48:29] [build] > Task :app:compileFossDebugJavaWithJavac
+[2020-12-02 13:48:29] [build] Gradle may disable incremental compilation as the following annotation processors are not incremental: room-compiler-2.1.0-alpha02.jar (androidx.room:room-compiler:2.1.0-alpha02).
+[2020-12-02 13:48:29] [build] Consider setting the experimental feature flag android.enableSeparateAnnotationProcessing=true in the gradle.properties file to run annotation processing in a separate task and make compilation incremental.
+[2020-12-02 13:48:29] [build-err] /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/model/entity/Reminder.java:22: warning: car_id column references a foreign key but it is not part of an index. This may trigger full table scans whenever parent table is modified so you are highly advised to create an index that covers this column.
+[2020-12-02 13:48:29] [build-err] public class Reminder implements IReminder {
+[2020-12-02 13:48:29] [build-err]        ^
+[2020-12-02 13:48:29] [build-err] /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/model/entity/Refueling.java:27: warning: fuel_type_id column references a foreign key but it is not part of an index. This may trigger full table scans whenever parent table is modified so you are highly advised to create an index that covers this column.
+[2020-12-02 13:48:29] [build-err] public class Refueling implements IRefueling {
+[2020-12-02 13:48:29] [build-err]        ^
+[2020-12-02 13:48:29] [build-err] /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/model/entity/Refueling.java:27: warning: car_id column references a foreign key but it is not part of an index. This may trigger full table scans whenever parent table is modified so you are highly advised to create an index that covers this column.
+[2020-12-02 13:48:29] [build-err] public class Refueling implements IRefueling {
+[2020-12-02 13:48:29] [build-err]        ^
+[2020-12-02 13:48:29] [build-err] /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/model/entity/OtherCost.java:21: warning: There are multiple good constructors and Room will pick the no-arg constructor. You can use the @Ignore annotation to eliminate unwanted constructors.
+[2020-12-02 13:48:29] [build-err] public class OtherCost implements IOtherCost {
+[2020-12-02 13:48:29] [build-err]        ^
+[2020-12-02 13:48:29] [build-err] /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/model/entity/OtherCost.java:21: warning: car_id column references a foreign key but it is not part of an index. This may trigger full table scans whenever parent table is modified so you are highly advised to create an index that covers this column.
+[2020-12-02 13:48:29] [build-err] public class OtherCost implements IOtherCost {
+[2020-12-02 13:48:29] [build-err]        ^
+[2020-12-02 13:48:29] [build-err] /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/model/entity/OtherCost.java:21: warning: There are multiple good constructors and Room will pick the no-arg constructor. You can use the @Ignore annotation to eliminate unwanted constructors.
+[2020-12-02 13:48:29] [build-err] public class OtherCost implements IOtherCost {
+[2020-12-02 13:48:29] [build-err]        ^
+[2020-12-02 13:48:29] [build-err] /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/model/CarReportDatabase.java:39: warning: Schema export directory is not provided to the annotation processor so we cannot export the schema. You can either provide `room.schemaLocation` annotation processor argument OR set exportSchema to false.
+[2020-12-02 13:48:29] [build-err] public abstract class CarReportDatabase extends RoomDatabase {
+[2020-12-02 13:48:29] [build-err]                 ^
+[2020-12-02 13:48:32] [build-err] Note: Some input files use or override a deprecated API.
+[2020-12-02 13:48:32] [build-err] Note: Recompile with -Xlint:deprecation for details.
+[2020-12-02 13:48:32] [build-err] 7 warnings
+[2020-12-02 13:48:32] [build-err] Picked up _JAVA_OPTIONS: -Xms512m -Xmx1024m
+[2020-12-02 13:48:49] [build] > Task :app:compileFossDebugNdk NO-SOURCE
+[2020-12-02 13:48:49] [build] > Task :app:compileFossDebugSources
+[2020-12-02 13:48:49] [build] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.1-alpha01) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform documentfile.aar (androidx.documentfile:documentfile:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform sqlite.aar (androidx.sqlite:sqlite:2.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform core.aar (androidx.core:core:1.0.1) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform sqlite-framework.aar (androidx.sqlite:sqlite-framework:2.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform asynclayoutinflater.aar (androidx.asynclayoutinflater:asynclayoutinflater:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform swiperefreshlayout.aar (androidx.swiperefreshlayout:swiperefreshlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform slidingpanelayout.aar (androidx.slidingpanelayout:slidingpanelayout:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform coordinatorlayout.aar (androidx.coordinatorlayout:coordinatorlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform customview.aar (androidx.customview:customview:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform loader.aar (androidx.loader:loader:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.0.1) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform legacy-support-core-utils.aar (androidx.legacy:legacy-support-core-utils:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform legacy-support-core-ui.aar (androidx.legacy:legacy-support-core-ui:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform transition.aar (androidx.transition:transition:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform fragment.aar (androidx.fragment:fragment:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform media.aar (androidx.media:media:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform android.joda.aar (net.danlew:android.joda:2.9.9.4) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform fab.aar (com.github.clans:fab:1.6.4) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform print.aar (androidx.print:print:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform localbroadcastmanager.aar (androidx.localbroadcastmanager:localbroadcastmanager:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform android-color-picker.aar (uk.co.jordanrobinson:android-color-picker:1.0.2) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform recyclerview.aar (androidx.recyclerview:recyclerview:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform cardview.aar (androidx.cardview:cardview:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform constraintlayout.aar (androidx.constraintlayout:constraintlayout:2.0.0-alpha2) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform material.aar (com.google.android.material:material:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform appcompat.aar (androidx.appcompat:appcompat:1.0.2) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform room-runtime.aar (androidx.room:room-runtime:2.1.0-alpha02) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform recyclerview-multiselect.aar (com.bignerdranch.android:recyclerview-multiselect:0.2) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform legacy-support-v4.aar (androidx.legacy:legacy-support-v4:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform licensesdialog.aar (de.psdev.licensesdialog:licensesdialog:1.8.3) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform hellocharts-android.aar (com.github.gudatcomputers:hellocharts-android:ba603174d302931c0985afb4e54d597fba28146b) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform multidex.aar (androidx.multidex:multidex:2.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Task :app:mergeFossDebugShaders
+[2020-12-02 13:48:49] [build] > Task :app:compileFossDebugShaders
+[2020-12-02 13:48:49] [build] > Task :app:generateFossDebugAssets
+[2020-12-02 13:48:49] [build] > Task :app:mergeFossDebugAssets
+[2020-12-02 13:48:49] [build] > Task :app:validateSigningFossDebug
+[2020-12-02 13:48:49] [build] > Task :app:signingConfigWriterFossDebug
+[2020-12-02 13:48:49] [build] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform print.aar (androidx.print:print:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.1-alpha01) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform documentfile.aar (androidx.documentfile:documentfile:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform localbroadcastmanager.aar (androidx.localbroadcastmanager:localbroadcastmanager:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform sqlite.aar (androidx.sqlite:sqlite:2.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform sqlite-framework.aar (androidx.sqlite:sqlite-framework:2.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform core.aar (androidx.core:core:1.0.1) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform asynclayoutinflater.aar (androidx.asynclayoutinflater:asynclayoutinflater:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform swiperefreshlayout.aar (androidx.swiperefreshlayout:swiperefreshlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform customview.aar (androidx.customview:customview:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform slidingpanelayout.aar (androidx.slidingpanelayout:slidingpanelayout:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform coordinatorlayout.aar (androidx.coordinatorlayout:coordinatorlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform loader.aar (androidx.loader:loader:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform transition.aar (androidx.transition:transition:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.0.1) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform legacy-support-core-utils.aar (androidx.legacy:legacy-support-core-utils:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform legacy-support-core-ui.aar (androidx.legacy:legacy-support-core-ui:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform fragment.aar (androidx.fragment:fragment:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform media.aar (androidx.media:media:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform android-color-picker.aar (uk.co.jordanrobinson:android-color-picker:1.0.2) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform recyclerview.aar (androidx.recyclerview:recyclerview:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform cardview.aar (androidx.cardview:cardview:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform android.joda.aar (net.danlew:android.joda:2.9.9.4) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform fab.aar (com.github.clans:fab:1.6.4) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform room-runtime.aar (androidx.room:room-runtime:2.1.0-alpha02) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform appcompat.aar (androidx.appcompat:appcompat:1.0.2) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform constraintlayout.aar (androidx.constraintlayout:constraintlayout:2.0.0-alpha2) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform material.aar (com.google.android.material:material:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform legacy-support-v4.aar (androidx.legacy:legacy-support-v4:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform multidex.aar (androidx.multidex:multidex:2.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform licensesdialog.aar (de.psdev.licensesdialog:licensesdialog:1.8.3) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform hellocharts-android.aar (com.github.gudatcomputers:hellocharts-android:ba603174d302931c0985afb4e54d597fba28146b) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform recyclerview-multiselect.aar (com.bignerdranch.android:recyclerview-multiselect:0.2) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform print.aar (androidx.print:print:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform localbroadcastmanager.aar (androidx.localbroadcastmanager:localbroadcastmanager:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.1-alpha01) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform documentfile.aar (androidx.documentfile:documentfile:1.0.0) with AarTransform
+[2020-12-02 13:48:49] [build] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with AarTransform
+[2020-12-02 13:48:53] [build] > Task :app:transformClassesWithDexBuilderForFossDebug
+[2020-12-02 13:48:55] [build] > Task :app:transformClassesWithMultidexlistForFossDebug
+[2020-12-02 13:48:58] [build] > Task :app:transformDexArchiveWithDexMergerForFossDebug
+[2020-12-02 13:48:58] [build] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform sqlite.aar (androidx.sqlite:sqlite:2.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform sqlite-framework.aar (androidx.sqlite:sqlite-framework:2.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform core.aar (androidx.core:core:1.0.1) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform swiperefreshlayout.aar (androidx.swiperefreshlayout:swiperefreshlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform coordinatorlayout.aar (androidx.coordinatorlayout:coordinatorlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform slidingpanelayout.aar (androidx.slidingpanelayout:slidingpanelayout:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform customview.aar (androidx.customview:customview:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform asynclayoutinflater.aar (androidx.asynclayoutinflater:asynclayoutinflater:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform transition.aar (androidx.transition:transition:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform loader.aar (androidx.loader:loader:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform legacy-support-core-ui.aar (androidx.legacy:legacy-support-core-ui:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform legacy-support-core-utils.aar (androidx.legacy:legacy-support-core-utils:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.0.1) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform fragment.aar (androidx.fragment:fragment:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform android-color-picker.aar (uk.co.jordanrobinson:android-color-picker:1.0.2) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform room-runtime.aar (androidx.room:room-runtime:2.1.0-alpha02) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform fab.aar (com.github.clans:fab:1.6.4) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform recyclerview.aar (androidx.recyclerview:recyclerview:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform android.joda.aar (net.danlew:android.joda:2.9.9.4) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform media.aar (androidx.media:media:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform cardview.aar (androidx.cardview:cardview:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform constraintlayout.aar (androidx.constraintlayout:constraintlayout:2.0.0-alpha2) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform recyclerview-multiselect.aar (com.bignerdranch.android:recyclerview-multiselect:0.2) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform legacy-support-v4.aar (androidx.legacy:legacy-support-v4:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform hellocharts-android.aar (com.github.gudatcomputers:hellocharts-android:ba603174d302931c0985afb4e54d597fba28146b) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform material.aar (com.google.android.material:material:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform licensesdialog.aar (de.psdev.licensesdialog:licensesdialog:1.8.3) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform joda-time-no-tzdb.jar (joda-time:joda-time:2.9.9) with IdentityTransform
+[2020-12-02 13:48:58] [build] > Transform okio.jar (com.squareup.okio:okio:1.14.0) with IdentityTransform
+[2020-12-02 13:48:58] [build] > Transform multidex.aar (androidx.multidex:multidex:2.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform constraintlayout-solver.jar (androidx.constraintlayout:constraintlayout-solver:2.0.0-alpha2) with IdentityTransform
+[2020-12-02 13:48:58] [build] > Transform annotation.jar (androidx.annotation:annotation:1.0.0) with IdentityTransform
+[2020-12-02 13:48:58] [build] > Transform lifecycle-common.jar (androidx.lifecycle:lifecycle-common:2.0.0) with IdentityTransform
+[2020-12-02 13:48:58] [build] > Transform core-common.jar (androidx.arch.core:core-common:2.0.0) with IdentityTransform
+[2020-12-02 13:48:58] [build] > Transform lifecycle-viewmodel.aar (androidx.lifecycle:lifecycle-viewmodel:2.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform lifecycle-runtime.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform interpolator.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform print.aar (androidx.print:print:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform localbroadcastmanager.aar (androidx.localbroadcastmanager:localbroadcastmanager:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform documentfile.aar (androidx.documentfile:documentfile:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform core-runtime.aar (androidx.arch.core:core-runtime:2.0.1-alpha01) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform lifecycle-livedata-core.aar (androidx.lifecycle:lifecycle-livedata-core:2.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform sqlite.aar (androidx.sqlite:sqlite:2.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform lifecycle-livedata.aar (androidx.lifecycle:lifecycle-livedata:2.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform room-common.jar (androidx.room:room-common:2.1.0-alpha02) with IdentityTransform
+[2020-12-02 13:48:58] [build] > Transform appcompat.aar (androidx.appcompat:appcompat:1.0.2) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform collection.jar (androidx.collection:collection:1.0.0) with IdentityTransform
+[2020-12-02 13:48:58] [build] > Transform sqlite-framework.aar (androidx.sqlite:sqlite-framework:2.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform cursoradapter.aar (androidx.cursoradapter:cursoradapter:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform drawerlayout.aar (androidx.drawerlayout:drawerlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform asynclayoutinflater.aar (androidx.asynclayoutinflater:asynclayoutinflater:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform customview.aar (androidx.customview:customview:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform slidingpanelayout.aar (androidx.slidingpanelayout:slidingpanelayout:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform swiperefreshlayout.aar (androidx.swiperefreshlayout:swiperefreshlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform coordinatorlayout.aar (androidx.coordinatorlayout:coordinatorlayout:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform viewpager.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform loader.aar (androidx.loader:loader:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform vectordrawable.aar (androidx.vectordrawable:vectordrawable:1.0.1) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform transition.aar (androidx.transition:transition:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform jackson-core.jar (com.fasterxml.jackson.core:jackson-core:2.7.4) with IdentityTransform
+[2020-12-02 13:48:58] [build] > Transform jsr305.jar (com.google.code.findbugs:jsr305:3.0.1) with IdentityTransform
+[2020-12-02 13:48:58] [build] > Transform legacy-support-core-utils.aar (androidx.legacy:legacy-support-core-utils:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform vectordrawable-animated.aar (androidx.vectordrawable:vectordrawable-animated:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform legacy-support-core-ui.aar (androidx.legacy:legacy-support-core-ui:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform okhttp.jar (com.squareup.okhttp3:okhttp:3.10.0) with IdentityTransform
+[2020-12-02 13:48:58] [build] > Transform android.joda.aar (net.danlew:android.joda:2.9.9.4) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform android-color-picker.aar (uk.co.jordanrobinson:android-color-picker:1.0.2) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform media.aar (androidx.media:media:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform fragment.aar (androidx.fragment:fragment:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform fab.aar (com.github.clans:fab:1.6.4) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform core.aar (androidx.core:core:1.0.1) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform versionedparcelable.aar (androidx.versionedparcelable:versionedparcelable:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform room-runtime.aar (androidx.room:room-runtime:2.1.0-alpha02) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform cardview.aar (androidx.cardview:cardview:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform dropbox-core-sdk.jar (com.dropbox.core:dropbox-core-sdk:3.0.8) with IdentityTransform
+[2020-12-02 13:48:58] [build] > Transform commons-csv.jar (org.apache.commons:commons-csv:1.5) with IdentityTransform
+[2020-12-02 13:48:58] [build] > Transform material.aar (com.google.android.material:material:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform constraintlayout.aar (androidx.constraintlayout:constraintlayout:2.0.0-alpha2) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform legacy-support-v4.aar (androidx.legacy:legacy-support-v4:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform recyclerview-multiselect.aar (com.bignerdranch.android:recyclerview-multiselect:0.2) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform licensesdialog.aar (de.psdev.licensesdialog:licensesdialog:1.8.3) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform appcompat.aar (androidx.appcompat:appcompat:1.0.2) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform recyclerview.aar (androidx.recyclerview:recyclerview:1.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform hellocharts-android.aar (com.github.gudatcomputers:hellocharts-android:ba603174d302931c0985afb4e54d597fba28146b) with AarTransform
+[2020-12-02 13:48:58] [build] > Transform multidex.aar (androidx.multidex:multidex:2.0.0) with AarTransform
+[2020-12-02 13:48:58] [build] > Task :app:mergeFossDebugJniLibFolders
+[2020-12-02 13:48:59] [build] > Task :app:transformNativeLibsWithMergeJniLibsForFossDebug
+[2020-12-02 13:48:59] [build] > Task :app:transformNativeLibsWithStripDebugSymbolForFossDebug
+[2020-12-02 13:48:59] [build] > Task :app:processFossDebugJavaRes NO-SOURCE
+[2020-12-02 13:48:59] [build] > Task :app:transformResourcesWithMergeJavaResForFossDebug
+[2020-12-02 13:49:01] [build] > Task :app:packageFossDebug
+[2020-12-02 13:49:01] [build] > Task :app:assembleFossDebug
+[2020-12-02 13:49:01] [build] > Transform google-http-client-jackson2.jar (com.google.http-client:google-http-client-jackson2:1.22.0) with JetifyTransform
+[2020-12-02 13:49:01] [build] > Transform google-http-client.jar (com.google.http-client:google-http-client:1.22.0) with JetifyTransform
+[2020-12-02 13:49:01] [build] > Transform guava-jdk5.jar (com.google.guava:guava-jdk5:17.0) with JetifyTransform
+[2020-12-02 13:49:01] [build] > Transform google-http-client-jackson2.jar (com.google.http-client:google-http-client-jackson2:1.22.0) with IdentityTransform
+[2020-12-02 13:49:01] [build] > Transform google-http-client.jar (com.google.http-client:google-http-client:1.22.0) with IdentityTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-base.aar (com.google.android.gms:play-services-auth-base:15.0.1) with JetifyTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-api-phone.aar (com.google.android.gms:play-services-auth-api-phone:15.0.1) with JetifyTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-tasks.aar (com.google.android.gms:play-services-tasks:15.0.1) with JetifyTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-base.aar (com.google.android.gms:play-services-auth-base:15.0.1) with ExtractAarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-api-phone.aar (com.google.android.gms:play-services-auth-api-phone:15.0.1) with ExtractAarTransform
+[2020-12-02 13:49:01] [build] > Transform google-oauth-client.jar (com.google.oauth-client:google-oauth-client:1.22.0) with JetifyTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-base.aar (com.google.android.gms:play-services-base:15.0.1) with JetifyTransform
+[2020-12-02 13:49:01] [build] > Transform google-http-client-android.jar (com.google.http-client:google-http-client-android:1.22.0) with JetifyTransform
+[2020-12-02 13:49:01] [build] > Transform google-oauth-client.jar (com.google.oauth-client:google-oauth-client:1.22.0) with IdentityTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-tasks.aar (com.google.android.gms:play-services-tasks:15.0.1) with ExtractAarTransform
+[2020-12-02 13:49:01] [build] > Transform google-http-client-android.jar (com.google.http-client:google-http-client-android:1.22.0) with IdentityTransform
+[2020-12-02 13:49:01] [build] > Transform google-api-client-android.jar (com.google.api-client:google-api-client-android:1.22.0) with JetifyTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-base.aar (com.google.android.gms:play-services-auth-base:15.0.1) with AarCompileClassesTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-tasks.aar (com.google.android.gms:play-services-tasks:15.0.1) with AarCompileClassesTransform
+[2020-12-02 13:49:01] [build] > Transform google-api-client-android.jar (com.google.api-client:google-api-client-android:1.22.0) with IdentityTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-api-phone.aar (com.google.android.gms:play-services-auth-api-phone:15.0.1) with AarCompileClassesTransform
+[2020-12-02 13:49:01] [build] > Transform google-api-client.jar (com.google.api-client:google-api-client:1.22.0) with JetifyTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-base.aar (com.google.android.gms:play-services-base:15.0.1) with ExtractAarTransform
+[2020-12-02 13:49:01] [build] > Transform google-api-services-drive.jar (com.google.apis:google-api-services-drive:v3-rev81-1.22.0) with JetifyTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth.aar (com.google.android.gms:play-services-auth:15.0.1) with JetifyTransform
+[2020-12-02 13:49:01] [build] > Transform google-api-client.jar (com.google.api-client:google-api-client:1.22.0) with IdentityTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-tasks.aar (com.google.android.gms:play-services-tasks:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-base.aar (com.google.android.gms:play-services-auth-base:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-api-phone.aar (com.google.android.gms:play-services-auth-api-phone:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-drive.aar (com.google.android.gms:play-services-drive:15.0.1) with JetifyTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-tasks.aar (com.google.android.gms:play-services-tasks:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-drive.aar (com.google.android.gms:play-services-drive:15.0.1) with ExtractAarTransform
+[2020-12-02 13:49:01] [build] > Transform google-api-services-drive.jar (com.google.apis:google-api-services-drive:v3-rev81-1.22.0) with IdentityTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth.aar (com.google.android.gms:play-services-auth:15.0.1) with ExtractAarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth.aar (com.google.android.gms:play-services-auth:15.0.1) with AarCompileClassesTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth.aar (com.google.android.gms:play-services-auth:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-base.aar (com.google.android.gms:play-services-auth-base:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-api-phone.aar (com.google.android.gms:play-services-auth-api-phone:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-drive.aar (com.google.android.gms:play-services-drive:15.0.1) with AarCompileClassesTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-drive.aar (com.google.android.gms:play-services-drive:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-drive.aar (com.google.android.gms:play-services-drive:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth.aar (com.google.android.gms:play-services-auth:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-tasks.aar (com.google.android.gms:play-services-tasks:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-base.aar (com.google.android.gms:play-services-auth-base:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-api-phone.aar (com.google.android.gms:play-services-auth-api-phone:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth.aar (com.google.android.gms:play-services-auth:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-drive.aar (com.google.android.gms:play-services-drive:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-tasks.aar (com.google.android.gms:play-services-tasks:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-base.aar (com.google.android.gms:play-services-auth-base:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform guava-jdk5.jar (com.google.guava:guava-jdk5:17.0) with IdentityTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-api-phone.aar (com.google.android.gms:play-services-auth-api-phone:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-basement.aar (com.google.android.gms:play-services-basement:15.0.1) with JetifyTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-drive.aar (com.google.android.gms:play-services-drive:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth.aar (com.google.android.gms:play-services-auth:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-tasks.aar (com.google.android.gms:play-services-tasks:15.0.1) with LibrarySymbolTableTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-basement.aar (com.google.android.gms:play-services-basement:15.0.1) with ExtractAarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-basement.aar (com.google.android.gms:play-services-basement:15.0.1) with AarCompileClassesTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-basement.aar (com.google.android.gms:play-services-basement:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-basement.aar (com.google.android.gms:play-services-basement:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-basement.aar (com.google.android.gms:play-services-basement:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-basement.aar (com.google.android.gms:play-services-basement:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-basement.aar (com.google.android.gms:play-services-basement:15.0.1) with LibrarySymbolTableTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-base.aar (com.google.android.gms:play-services-auth-base:15.0.1) with LibrarySymbolTableTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-api-phone.aar (com.google.android.gms:play-services-auth-api-phone:15.0.1) with LibrarySymbolTableTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-drive.aar (com.google.android.gms:play-services-drive:15.0.1) with LibrarySymbolTableTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth.aar (com.google.android.gms:play-services-auth:15.0.1) with LibrarySymbolTableTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-basement.aar (com.google.android.gms:play-services-basement:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-tasks.aar (com.google.android.gms:play-services-tasks:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-base.aar (com.google.android.gms:play-services-auth-base:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-api-phone.aar (com.google.android.gms:play-services-auth-api-phone:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-drive.aar (com.google.android.gms:play-services-drive:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth.aar (com.google.android.gms:play-services-auth:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-basement.aar (com.google.android.gms:play-services-basement:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-tasks.aar (com.google.android.gms:play-services-tasks:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-base.aar (com.google.android.gms:play-services-base:15.0.1) with AarCompileClassesTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-base.aar (com.google.android.gms:play-services-base:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-base.aar (com.google.android.gms:play-services-base:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-base.aar (com.google.android.gms:play-services-base:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-base.aar (com.google.android.gms:play-services-base:15.0.1) with LibrarySymbolTableTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-base.aar (com.google.android.gms:play-services-base:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-base.aar (com.google.android.gms:play-services-auth-base:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-base.aar (com.google.android.gms:play-services-base:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-base.aar (com.google.android.gms:play-services-base:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-drive.aar (com.google.android.gms:play-services-drive:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth.aar (com.google.android.gms:play-services-auth:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Transform play-services-auth-api-phone.aar (com.google.android.gms:play-services-auth-api-phone:15.0.1) with AarTransform
+[2020-12-02 13:49:01] [build] > Task :app:preFullDebugBuild
+[2020-12-02 13:49:01] [build] > Task :app:compileFullDebugAidl NO-SOURCE
+[2020-12-02 13:49:01] [build] > Task :app:compileFullDebugRenderscript
+[2020-12-02 13:49:01] [build] > Task :app:checkFullDebugManifest
+[2020-12-02 13:49:01] [build] > Task :app:generateFullDebugBuildConfig
+[2020-12-02 13:49:01] [build] > Task :app:generateFullDebugSources
+[2020-12-02 13:49:01] [build] > Task :app:javaPreCompileFullDebug
+[2020-12-02 13:49:01] [build] > Task :app:mainApkListPersistenceFullDebug
+[2020-12-02 13:49:01] [build] > Task :app:generateFullDebugResValues
+[2020-12-02 13:49:01] [build] > Task :app:generateFullDebugResources
+[2020-12-02 13:49:02] [build] > Task :app:mergeFullDebugResources
+[2020-12-02 13:49:02] [build] > Task :app:createFullDebugCompatibleScreenManifests
+[2020-12-02 13:49:02] [build] > Task :app:processFullDebugManifest
+[2020-12-02 13:49:03] [build] > Task :app:processFullDebugResources
+[2020-12-02 13:49:05] [build] > Task :app:compileFullDebugJavaWithJavac
+[2020-12-02 13:49:05] [build] Gradle may disable incremental compilation as the following annotation processors are not incremental: room-compiler-2.1.0-alpha02.jar (androidx.room:room-compiler:2.1.0-alpha02).
+[2020-12-02 13:49:05] [build-err] /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/model/entity/Reminder.java:22: warning: car_id column references a foreign key but it is not part of an index. This may trigger full table scans whenever parent table is modified so you are highly advised to create an index that covers this column.
+[2020-12-02 13:49:05] [build] Consider setting the experimental feature flag android.enableSeparateAnnotationProcessing=true in the gradle.properties file to run annotation processing in a separate task and make compilation incremental.
+[2020-12-02 13:49:05] [build-err] public class Reminder implements IReminder {
+[2020-12-02 13:49:05] [build-err]        ^
+[2020-12-02 13:49:05] [build-err] /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/model/entity/Refueling.java:27: warning: fuel_type_id column references a foreign key but it is not part of an index. This may trigger full table scans whenever parent table is modified so you are highly advised to create an index that covers this column.
+[2020-12-02 13:49:05] [build-err] public class Refueling implements IRefueling {
+[2020-12-02 13:49:05] [build-err]        ^
+[2020-12-02 13:49:05] [build-err] /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/model/entity/Refueling.java:27: warning: car_id column references a foreign key but it is not part of an index. This may trigger full table scans whenever parent table is modified so you are highly advised to create an index that covers this column.
+[2020-12-02 13:49:05] [build-err] public class Refueling implements IRefueling {
+[2020-12-02 13:49:05] [build-err]        ^
+[2020-12-02 13:49:05] [build-err] /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/model/entity/OtherCost.java:21: warning: There are multiple good constructors and Room will pick the no-arg constructor. You can use the @Ignore annotation to eliminate unwanted constructors.
+[2020-12-02 13:49:05] [build-err] public class OtherCost implements IOtherCost {
+[2020-12-02 13:49:05] [build-err]        ^
+[2020-12-02 13:49:05] [build-err] /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/model/entity/OtherCost.java:21: warning: car_id column references a foreign key but it is not part of an index. This may trigger full table scans whenever parent table is modified so you are highly advised to create an index that covers this column.
+[2020-12-02 13:49:05] [build-err] public class OtherCost implements IOtherCost {
+[2020-12-02 13:49:05] [build-err]        ^
+[2020-12-02 13:49:05] [build-err] /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/model/entity/OtherCost.java:21: warning: There are multiple good constructors and Room will pick the no-arg constructor. You can use the @Ignore annotation to eliminate unwanted constructors.
+[2020-12-02 13:49:05] [build-err] public class OtherCost implements IOtherCost {
+[2020-12-02 13:49:05] [build-err]        ^
+[2020-12-02 13:49:05] [build-err] /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/model/CarReportDatabase.java:39: warning: Schema export directory is not provided to the annotation processor so we cannot export the schema. You can either provide `room.schemaLocation` annotation processor argument OR set exportSchema to false.
+[2020-12-02 13:49:05] [build-err] public abstract class CarReportDatabase extends RoomDatabase {
+[2020-12-02 13:49:05] [build-err]                 ^
+[2020-12-02 13:49:06] [build-err] Note: Some input files use or override a deprecated API.
+[2020-12-02 13:49:06] [build-err] Note: Recompile with -Xlint:deprecation for details.
+[2020-12-02 13:49:06] [build-err] 7 warnings
+[2020-12-02 13:49:06] [build-err] Picked up _JAVA_OPTIONS: -Xms512m -Xmx1024m
+[2020-12-02 13:49:15] [build] > Task :app:compileFullDebugNdk NO-SOURCE
+[2020-12-02 13:49:15] [build] > Task :app:compileFullDebugSources
+[2020-12-02 13:49:16] [build] > Task :app:mergeFullDebugShaders
+[2020-12-02 13:49:16] [build] > Task :app:compileFullDebugShaders
+[2020-12-02 13:49:16] [build] > Task :app:generateFullDebugAssets
+[2020-12-02 13:49:16] [build] > Task :app:mergeFullDebugAssets
+[2020-12-02 13:49:16] [build] > Task :app:validateSigningFullDebug
+[2020-12-02 13:49:16] [build] > Task :app:signingConfigWriterFullDebug
+[2020-12-02 13:49:16] [build] > Transform play-services-tasks.aar (com.google.android.gms:play-services-tasks:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-basement.aar (com.google.android.gms:play-services-basement:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-auth-api-phone.aar (com.google.android.gms:play-services-auth-api-phone:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-auth.aar (com.google.android.gms:play-services-auth:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-base.aar (com.google.android.gms:play-services-base:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-tasks.aar (com.google.android.gms:play-services-tasks:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-base.aar (com.google.android.gms:play-services-base:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-auth-base.aar (com.google.android.gms:play-services-auth-base:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-auth-api-phone.aar (com.google.android.gms:play-services-auth-api-phone:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform guava-jdk5.jar (com.google.guava:guava-jdk5:17.0) with IdentityTransform
+[2020-12-02 13:49:16] [build] > Transform google-http-client.jar (com.google.http-client:google-http-client:1.22.0) with IdentityTransform
+[2020-12-02 13:49:16] [build] > Transform google-http-client-jackson2.jar (com.google.http-client:google-http-client-jackson2:1.22.0) with IdentityTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-tasks.aar (com.google.android.gms:play-services-tasks:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-auth.aar (com.google.android.gms:play-services-auth:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-base.aar (com.google.android.gms:play-services-base:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-drive.aar (com.google.android.gms:play-services-drive:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-auth-base.aar (com.google.android.gms:play-services-auth-base:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform google-http-client-android.jar (com.google.http-client:google-http-client-android:1.22.0) with IdentityTransform
+[2020-12-02 13:49:16] [build] > Transform google-oauth-client.jar (com.google.oauth-client:google-oauth-client:1.22.0) with IdentityTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-auth-base.aar (com.google.android.gms:play-services-auth-base:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform google-api-client.jar (com.google.api-client:google-api-client:1.22.0) with IdentityTransform
+[2020-12-02 13:49:16] [build] > Transform google-api-client-android.jar (com.google.api-client:google-api-client-android:1.22.0) with IdentityTransform
+[2020-12-02 13:49:16] [build] > Transform google-api-services-drive.jar (com.google.apis:google-api-services-drive:v3-rev81-1.22.0) with IdentityTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-auth-api-phone.aar (com.google.android.gms:play-services-auth-api-phone:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-basement.aar (com.google.android.gms:play-services-basement:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-drive.aar (com.google.android.gms:play-services-drive:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-drive.aar (com.google.android.gms:play-services-drive:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-auth.aar (com.google.android.gms:play-services-auth:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Transform play-services-basement.aar (com.google.android.gms:play-services-basement:15.0.1) with AarTransform
+[2020-12-02 13:49:16] [build] > Task :app:mergeFullDebugJniLibFolders
+[2020-12-02 13:49:18] [build] > Task :app:transformClassesWithDexBuilderForFullDebug
+[2020-12-02 13:49:21] [build] > Task :app:transformClassesWithMultidexlistForFullDebug
+[2020-12-02 13:49:23] [build] > Task :app:transformDexArchiveWithDexMergerForFullDebug
+[2020-12-02 13:49:24] [build] > Task :app:transformNativeLibsWithMergeJniLibsForFullDebug
+[2020-12-02 13:49:24] [build] > Task :app:transformNativeLibsWithStripDebugSymbolForFullDebug
+[2020-12-02 13:49:24] [build] > Task :app:processFullDebugJavaRes NO-SOURCE
+[2020-12-02 13:49:24] [build] > Task :app:transformResourcesWithMergeJavaResForFullDebug
+[2020-12-02 13:49:26] [build] > Task :app:packageFullDebug
+[2020-12-02 13:49:26] [build] > Task :app:assembleFullDebug
+[2020-12-02 13:49:26] [build] > Task :app:assembleDebug
+[2020-12-02 13:49:26] [build] BUILD SUCCESSFUL in 1m 11s
+[2020-12-02 13:49:26] [build] 52 actionable tasks: 51 executed, 1 up-to-date
+[2020-12-02 13:49:26] [build-err] Picked up _JAVA_OPTIONS: -Xms512m -Xmx1024m
+[2020-12-02 13:49:27] [build-err] Scanning for files in /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3...
+[2020-12-02 13:49:28] [build-err] /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/codeql-db: Indexing files in in /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3...
+[2020-12-02 13:49:28] [build-err] /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/codeql-db: Running in /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3: [/media/data/nacoop/codeql-home/codeql/xml/tools/index-files.sh, /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/codeql-db/working/files-to-index151823391967186742.list]
+[2020-12-02 13:49:28] [build] [2020-12-02 13:49:28] [build-err] Picked up _JAVA_OPTIONS: -Xms512m -Xmx1024m

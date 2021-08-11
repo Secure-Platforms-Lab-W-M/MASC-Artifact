@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Apod Classic</string>
+    <string name="title_activity_view">ViewActivity</string>
+    <string name="copyright">\u00A9</string>
+
+    <string name="title_activity_image">ImageAPOD</string>
+    <string name="date">Date:</string>
+</resources>

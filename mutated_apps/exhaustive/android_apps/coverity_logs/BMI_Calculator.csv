@@ -1,0 +1,4 @@
+﻿Type,Impact,Category,File,Function,Count
+Android application supports unsafe SDK versions,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/BMI_Calculator/BMI/src/main/AndroidManifest.xml,,1
+Android application does not target the latest Android version,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/BMI_Calculator/BMI/src/main/AndroidManifest.xml,,1
+Android application allows backups,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/BMI_Calculator/BMI/src/main/AndroidManifest.xml,,1

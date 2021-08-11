@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+//def keystorePropertiesFile = rootProject.file("keystore.properties")
+//def keystoreProperties = new Properties()
+//keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+android {
+    signingConfigs{}
+//    signingConfigs {
+//        config {
+//            keyAlias keystoreProperties['keyAlias']
+//            keyPassword keystoreProperties['keyPassword']
+//            storeFile file(keystoreProperties['storeFile'])
+//            storePassword keystoreProperties['storePassword']
+//        }
+//    }
+    compileSdkVersion 23
+    project.archivesBaseName = "CalendarTrigger";
+    defaultConfig {
+        applicationId 'uk.co.yahoo.p1rpp.calendartrigger'
+        minSdkVersion 21
+        targetSdkVersion 22
+        versionCode 7
+        versionName "2.2"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                          'proguard-rules.pro'
+//            signingConfig signingConfigs.config
+//            resValue("string", 'build_time', "${(new Date()).toString()}")
+        }
+        debug {
+//            signingConfig signingConfigs.config
+//            resValue("string", 'build_time', "${(new Date()).toString()}")
+        }
+    }
+    sourceSets {
+        main {
+            java.srcDirs =
+                    ['src/main/java']
+        }
+    }
+    lintOptions {
+//        disable("ExpiredTargetSdkVersion")
+        abortOnError false
+    }
+
+
+
+}
+
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.android.support:support-v4:23.2.1'
+}

@@ -1,0 +1,210 @@
+In file: LauncherIconCreator.java
+Input operator: REACHABILITY
+mutation-0: LauncherIconCreator.getActivityIntent
+mutation-1: LauncherIconCreator.createLauncherIcon
+mutation-2: LauncherIconCreator.createLauncherIcon
+mutation-3: LauncherIconCreator.createLauncherIcon
+mutation-4: LauncherIconCreator.createLauncherIcon
+mutation-5: LauncherIconCreator.createLauncherIcon
+mutation-6: LauncherIconCreator.createLauncherIcon
+mutation-7: LauncherIconCreator.createLauncherIcon
+mutation-8: LauncherIconCreator.launchActivity
+mutation-9: LauncherIconCreator.launchActivity
+mutation-10: LauncherIconCreator.launchActivity
+In file: IconListAsyncProvider.java
+Input operator: REACHABILITY
+mutation-11: IconListAsyncProvider.IconListAsyncProvider
+mutation-12: IconListAsyncProvider.run
+In file: RecentTaskListFragment.java
+Input operator: REACHABILITY
+mutation-13: RecentTaskListFragment.onCreate
+mutation-14: RecentTaskListFragment.onActivityCreated
+mutation-15: RecentTaskListFragment.onListItemClick
+mutation-16: RecentTaskListFragment.onCreateContextMenu
+mutation-17: RecentTaskListFragment.onContextItemSelected
+mutation-18: RecentTaskListFragment.onProviderFininshed
+mutation-19: RecentTaskListFragment.onProviderFininshed
+mutation-20: RecentTaskListFragment.onProviderFininshed
+In file: PackageManagerCache.java
+Input operator: REACHABILITY
+mutation-21: PackageManagerCache.getPackageManagerCache
+mutation-22: PackageManagerCache.getPackageManagerCache
+mutation-23: PackageManagerCache.PackageManagerCache
+mutation-24: PackageManagerCache.getPackageInfo
+mutation-25: PackageManagerCache.getPackageInfo
+mutation-26: PackageManagerCache.getPackageInfo
+mutation-27: PackageManagerCache.getPackageInfo
+mutation-28: PackageManagerCache.getPackageInfo
+mutation-29: PackageManagerCache.getAllPackageInfo
+mutation-30: PackageManagerCache.getActivityInfo
+mutation-31: PackageManagerCache.getActivityInfo
+mutation-32: PackageManagerCache.getActivityInfo
+In file: RecentTaskListAsyncProvider.java
+Input operator: REACHABILITY
+mutation-33: RecentTaskListAsyncProvider.RecentTaskListAsyncProvider
+mutation-34: RecentTaskListAsyncProvider.run
+mutation-35: RecentTaskListAsyncProvider.run
+mutation-36: RecentTaskListAsyncProvider.run
+In file: IconPickerDialogFragment.java
+Input operator: REACHABILITY
+mutation-37: IconPickerDialogFragment.onAttach
+mutation-38: IconPickerDialogFragment.attachIconPickerListener
+mutation-39: IconPickerDialogFragment.onCreateDialog
+mutation-40: 1.onItemClick
+mutation-41: 1.onItemClick
+mutation-42: 1.onClick
+mutation-43: IconPickerDialogFragment.onProviderFininshed
+mutation-44: IconPickerDialogFragment.onProviderFininshed
+mutation-45: IconPickerDialogFragment.onProviderFininshed
+In file: ShortcutEditDialogFragment.java
+Input operator: REACHABILITY
+mutation-46: ShortcutEditDialogFragment.onCreateDialog
+mutation-47: 1.onTextChanged
+mutation-48: 1.beforeTextChanged
+mutation-49: 1.afterTextChanged
+mutation-50: 1.onClick
+mutation-51: 1.iconPicked
+mutation-52: 1.onClick
+mutation-53: 1.onClick
+mutation-54: 1.onClick
+mutation-55: 1.onClick
+mutation-56: 1.onClick
+mutation-57: 1.onClick
+mutation-58: 1.onClick
+In file: MainActivity.java
+Input operator: REACHABILITY
+mutation-59: MainActivity.onCreate
+mutation-60: MainActivity.onCreate
+mutation-61: MainActivity.getActionBarThemedContextCompat
+mutation-62: MainActivity.getActionBarThemedContextCompat
+mutation-63: MainActivity.getActionBarThemedContextCompat
+mutation-64: MainActivity.onRestoreInstanceState
+mutation-65: MainActivity.onRestoreInstanceState
+mutation-66: MainActivity.onCreateOptionsMenu
+mutation-67: MainActivity.onOptionsItemSelected
+mutation-68: MainActivity.onSaveInstanceState
+mutation-69: MainActivity.onNavigationItemSelected
+In file: MyPackageInfo.java
+Input operator: REACHABILITY
+mutation-70: MyPackageInfo.MyPackageInfo
+mutation-71: MyPackageInfo.MyPackageInfo
+mutation-72: MyPackageInfo.MyPackageInfo
+mutation-73: MyPackageInfo.MyPackageInfo
+mutation-74: MyPackageInfo.MyPackageInfo
+mutation-75: MyPackageInfo.MyPackageInfo
+mutation-76: MyPackageInfo.MyPackageInfo
+mutation-77: MyPackageInfo.MyPackageInfo
+mutation-78: MyPackageInfo.MyPackageInfo
+mutation-79: MyPackageInfo.MyPackageInfo
+mutation-80: MyPackageInfo.MyPackageInfo
+mutation-81: MyPackageInfo.MyPackageInfo
+mutation-82: MyPackageInfo.countActivitiesFromInfo
+mutation-83: MyPackageInfo.countActivitiesFromInfo
+mutation-84: MyPackageInfo.countActivitiesFromInfo
+mutation-85: MyPackageInfo.getActivitiesCount
+mutation-86: MyPackageInfo.getActivity
+mutation-87: MyPackageInfo.getPackageName
+mutation-88: MyPackageInfo.getIcon
+mutation-89: MyPackageInfo.getName
+mutation-90: MyPackageInfo.getIconResourceName
+mutation-91: MyPackageInfo.compareTo
+mutation-92: MyPackageInfo.equals
+mutation-93: MyPackageInfo.equals
+In file: AllTasksListFragment.java
+Input operator: REACHABILITY
+mutation-94: AllTasksListFragment.onCreateView
+mutation-95: 1.onChildClick
+mutation-96: AllTasksListFragment.onActivityCreated
+mutation-97: AllTasksListFragment.onCreateContextMenu
+mutation-98: AllTasksListFragment.onContextItemSelected
+mutation-99: AllTasksListFragment.onProviderFininshed
+mutation-100: AllTasksListFragment.onProviderFininshed
+mutation-101: AllTasksListFragment.onProviderFininshed
+In file: AllTasksListAsyncProvider.java
+Input operator: REACHABILITY
+mutation-102: AllTasksListAsyncProvider.AllTasksListAsyncProvider
+mutation-103: AllTasksListAsyncProvider.run
+In file: AsyncProvider.java
+Input operator: REACHABILITY
+mutation-104: Updater.Updater
+mutation-105: Updater.update
+mutation-106: Updater.updateMax
+mutation-107: AsyncProvider.AsyncProvider
+mutation-108: AsyncProvider.AsyncProvider
+mutation-109: AsyncProvider.AsyncProvider
+mutation-110: AsyncProvider.onProgressUpdate
+mutation-111: AsyncProvider.onProgressUpdate
+mutation-112: AsyncProvider.onProgressUpdate
+mutation-113: AsyncProvider.onPreExecute
+mutation-114: AsyncProvider.onPreExecute
+mutation-115: AsyncProvider.onPostExecute
+mutation-116: AsyncProvider.onPostExecute
+mutation-117: AsyncProvider.onPostExecute
+mutation-118: AsyncProvider.doInBackground
+In file: IconListAdapter.java
+Input operator: REACHABILITY
+mutation-119: IconListAdapter.IconListAdapter
+mutation-120: IconListAdapter.IconListAdapter
+mutation-121: IconListAdapter.IconListAdapter
+mutation-122: IconListAdapter.IconListAdapter
+mutation-123: IconListAdapter.IconListAdapter
+mutation-124: IconListAdapter.IconListAdapter
+mutation-125: IconListAdapter.getCount
+mutation-126: IconListAdapter.getItem
+mutation-127: IconListAdapter.getItemId
+mutation-128: IconListAdapter.getIcon
+mutation-129: IconListAdapter.getIcon
+mutation-130: IconListAdapter.getIcon
+mutation-131: IconListAdapter.getView
+In file: MyActivityInfo.java
+Input operator: REACHABILITY
+mutation-132: MyActivityInfo.MyActivityInfo
+mutation-133: MyActivityInfo.MyActivityInfo
+mutation-134: MyActivityInfo.MyActivityInfo
+mutation-135: MyActivityInfo.MyActivityInfo
+mutation-136: MyActivityInfo.MyActivityInfo
+mutation-137: MyActivityInfo.MyActivityInfo
+mutation-138: MyActivityInfo.MyActivityInfo
+mutation-139: MyActivityInfo.MyActivityInfo
+mutation-140: MyActivityInfo.getComponentName
+mutation-141: MyActivityInfo.getIcon
+mutation-142: MyActivityInfo.getName
+mutation-143: MyActivityInfo.getIconResouceName
+mutation-144: MyActivityInfo.compareTo
+mutation-145: MyActivityInfo.equals
+mutation-146: MyActivityInfo.equals
+In file: AllTasksListAdapter.java
+Input operator: REACHABILITY
+mutation-147: AllTasksListAdapter.AllTasksListAdapter
+mutation-148: AllTasksListAdapter.AllTasksListAdapter
+mutation-149: AllTasksListAdapter.AllTasksListAdapter
+mutation-150: AllTasksListAdapter.AllTasksListAdapter
+mutation-151: AllTasksListAdapter.AllTasksListAdapter
+mutation-152: AllTasksListAdapter.getChild
+mutation-153: AllTasksListAdapter.getChildId
+mutation-154: AllTasksListAdapter.getChildView
+mutation-155: AllTasksListAdapter.getChildrenCount
+mutation-156: AllTasksListAdapter.getGroup
+mutation-157: AllTasksListAdapter.getGroupCount
+mutation-158: AllTasksListAdapter.getGroupId
+mutation-159: AllTasksListAdapter.getGroupView
+mutation-160: AllTasksListAdapter.hasStableIds
+mutation-161: AllTasksListAdapter.isChildSelectable
+In file: IconPickerFragment.java
+Input operator: REACHABILITY
+mutation-162: IconPickerFragment.onCreateView
+mutation-163: 1.onItemClick
+mutation-164: IconPickerFragment.onAttach
+mutation-165: IconPickerFragment.onProviderFininshed
+mutation-166: IconPickerFragment.onProviderFininshed
+mutation-167: IconPickerFragment.onProviderFininshed
+In file: RecentTaskListAdapter.java
+Input operator: REACHABILITY
+mutation-168: RecentTaskListAdapter.RecentTaskListAdapter
+mutation-169: RecentTaskListAdapter.RecentTaskListAdapter
+mutation-170: RecentTaskListAdapter.getView
+In file: DisclaimerDialogFragment.java
+Input operator: REACHABILITY
+mutation-171: DisclaimerDialogFragment.onCreateDialog
+mutation-172: 1.onClick
+mutation-173: 1.onClick

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="EnableAdfilter">विज्ञापन-ब्लॉकिंग शुरु करें</string>
+    <string name="EnableAutoStart">बन्द होने पर स्वत: आरंभ करे</string>
+    <string name="EnableConfigCheckBox">एडव्हान्स सेटिंग्ज</string>
+    <string name="active">सक्रिय</string>
+    <string name="addFilter">"फिल्टर जोड़ें"</string>
+    <string name="appWhitelistCheckBox">ऐप इच्छा सूची</string>
+    <string name="app_name">DNS फिलटर</string>
+    <string name="backupConfig">बैकअप कॉन्फ़िगरेशन</string>
+    <string name="category">वर्ग</string>
+    <string name="cfgBackupRestore">बैकअप और पुनर्स्थापना</string>
+    <string name="dnsCfgConfigDialogTitle">DNS सर्वर कॉन्फ़िगरेशन</string>
+    <string name="dnsLabel">DNS:</string>
+    <string name="editAdditionalHostsCheckBox">अतिरिक्त होस्ट्स कॉंफ़िगर करें</string>
+    <string name="editFilterDialogTitle">फ़िल्टर संपादित करें</string>
+    <string name="editFilterLoadCheckBox">फ़िल्टर अद्यतन कॉंफ़िगर करें</string>
+    <string name="filterReloadBtnLabel">फ़िल्टर पुनः शुरु करें</string>
+    <string name="filterUpdateDays">फ़िल्टर अपडेट अंतराल दिनों में:</string>
+    <string name="keepAwakeCheckBox">डिवाइस स्लीप ना होने दे</string>
+    <string name="listenPortLabel">पोर्ट:</string>
+    <string name="manualDNSCheck">अक्षम DNS सर्वर खोज - मैनुअल DNS सर्वर के नीचे है:</string>
+    <string name="name">नाम</string>
+    <string name="proxyModeCheckBox">DNS प्रॉक्सी मोड के बिना स्थानीय वीपीएन</string>
+    <string name="removeFilter">"फ़िल्टर निकालें"</string>
+    <string name="restoreBackup">बैकअप बहाल</string>
+    <string name="restoreDefault">डिफ़ॉल्ट कॉन्फ़िगरेशन पुनर्स्थापित करें</string>
+    <string name="rootModeCheckBox">रूट मोड के बिना स्थानीय वीपीएन</string>
+    <string name="shortText">लघु पाठ</string>
+    <string name="startBtnLabel">पुनरारंभ</string>
+    <string name="stopBtnLabel">बंद करें</string>
+</resources>

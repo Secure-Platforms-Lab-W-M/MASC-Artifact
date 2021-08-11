@@ -1,0 +1,47 @@
+[2020-11-30 09:58:52] [build] WARNING: Configuration 'compile' is obsolete and has been replaced with 'implementation'.
+[2020-11-30 09:58:52] [build] It will be removed at the end of 2018
+[2020-11-30 09:58:52] [build] WARNING: The specified Android SDK Build Tools version (24.0.1) is ignored, as it is below the minimum supported version (27.0.3) for Android Gradle Plugin 3.1.0.
+[2020-11-30 09:58:52] [build] Android SDK Build Tools 27.0.3 will be used.
+[2020-11-30 09:58:52] [build] To suppress this warning, remove "buildToolsVersion '24.0.1'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+[2020-11-30 09:58:55] [build] :preBuild UP-TO-DATE
+[2020-11-30 09:58:55] [build] :preDebugBuild
+[2020-11-30 09:58:55] [build] :compileDebugAidl
+[2020-11-30 09:58:55] [build] :compileDebugRenderscript
+[2020-11-30 09:58:55] [build] :checkDebugManifest
+[2020-11-30 09:58:55] [build] :generateDebugBuildConfig
+[2020-11-30 09:58:55] [build] :prepareLintJar UP-TO-DATE
+[2020-11-30 09:58:55] [build] :mainApkListPersistenceDebug
+[2020-11-30 09:58:55] [build] :generateDebugResValues
+[2020-11-30 09:58:55] [build] :generateDebugResources
+[2020-11-30 09:58:56] [build] :mergeDebugResources
+[2020-11-30 09:58:56] [build] :createDebugCompatibleScreenManifests
+[2020-11-30 09:58:56] [build] :processDebugManifest
+[2020-11-30 09:58:56] [build] :splitsDiscoveryTaskDebug
+[2020-11-30 09:58:56] [build] :processDebugResources
+[2020-11-30 09:58:56] [build] :generateDebugSources
+[2020-11-30 09:58:56] [build] :javaPreCompileDebug
+[2020-11-30 09:58:57] [build-err] Note: /media/data/muse2/muse2repo_apk_mutation_reach_src/2048/src/com/uberspot/a2048/MainActivity.java uses or overrides a deprecated API.
+[2020-11-30 09:58:57] [build-err] Note: Recompile with -Xlint:deprecation for details.
+[2020-11-30 09:59:01] [build] :compileDebugJavaWithJavac
+[2020-11-30 09:59:01] [build] :compileDebugNdk NO-SOURCE
+[2020-11-30 09:59:01] [build] :compileDebugSources
+[2020-11-30 09:59:01] [build] :mergeDebugShaders
+[2020-11-30 09:59:02] [build] :compileDebugShaders
+[2020-11-30 09:59:02] [build] :generateDebugAssets
+[2020-11-30 09:59:02] [build] :mergeDebugAssets
+[2020-11-30 09:59:02] [build] :transformClassesWithDexBuilderForDebug
+[2020-11-30 09:59:03] [build] :transformDexArchiveWithExternalLibsDexMergerForDebug
+[2020-11-30 09:59:03] [build] :transformDexArchiveWithDexMergerForDebug
+[2020-11-30 09:59:03] [build] :mergeDebugJniLibFolders
+[2020-11-30 09:59:04] [build] :transformNativeLibsWithMergeJniLibsForDebug
+[2020-11-30 09:59:04] [build] :transformNativeLibsWithStripDebugSymbolForDebug
+[2020-11-30 09:59:04] [build] :processDebugJavaRes NO-SOURCE
+[2020-11-30 09:59:04] [build] :transformResourcesWithMergeJavaResForDebug
+[2020-11-30 09:59:04] [build] :validateSigningDebug
+[2020-11-30 09:59:04] [build] :packageDebug
+[2020-11-30 09:59:04] [build] :assembleDebug
+[2020-11-30 09:59:04] [build] BUILD SUCCESSFUL in 16s
+[2020-11-30 09:59:04] [build] 27 actionable tasks: 26 executed, 1 up-to-date
+[2020-11-30 09:59:06] [build-err] Scanning for files in /media/data/muse2/muse2repo_apk_mutation_reach_src/2048...
+[2020-11-30 09:59:06] [build-err] /media/data/muse2/muse2repo_apk_mutation_reach_src/2048/codeql-db: Indexing files in in /media/data/muse2/muse2repo_apk_mutation_reach_src/2048...
+[2020-11-30 09:59:06] [build-err] /media/data/muse2/muse2repo_apk_mutation_reach_src/2048/codeql-db: Running in /media/data/muse2/muse2repo_apk_mutation_reach_src/2048: [/media/data/nacoop/codeql-home/codeql/xml/tools/index-files.sh, /media/data/muse2/muse2repo_apk_mutation_reach_src/2048/codeql-db/working/files-to-index14843506363390235469.list]

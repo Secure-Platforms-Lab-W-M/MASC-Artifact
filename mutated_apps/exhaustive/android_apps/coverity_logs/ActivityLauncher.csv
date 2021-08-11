@@ -1,0 +1,8 @@
+﻿Type,Impact,Category,File,Function,Count
+Unguarded read,Medium,Concurrent data access violations,/media/data/muse2/muse2repo_apk_mutation_reach_src/ActivityLauncher/ActivityLauncherApp/src/main/java/de/szalkowski/activitylauncher/PackageManagerCache.java,PackageManagerCache.getActivityInfo,1
+Structurally dead code,Medium,Control flow issues,/media/data/muse2/muse2repo_apk_mutation_reach_src/ActivityLauncher/ActivityLauncherApp/src/main/java/de/szalkowski/activitylauncher/AllTasksListFragment.java,AllTasksListFragment.onContextItemSelected,2
+Structurally dead code,Medium,Control flow issues,/media/data/muse2/muse2repo_apk_mutation_reach_src/ActivityLauncher/ActivityLauncherApp/src/main/java/de/szalkowski/activitylauncher/AllTasksListFragment.java,AllTasksListFragment.onCreateContextMenu,2
+Structurally dead code,Medium,Control flow issues,/media/data/muse2/muse2repo_apk_mutation_reach_src/ActivityLauncher/ActivityLauncherApp/src/main/java/de/szalkowski/activitylauncher/MainActivity.java,MainActivity.onOptionsItemSelected,3
+Android application supports unsafe SDK versions,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/ActivityLauncher/ActivityLauncherApp/src/main/AndroidManifest.xml,,1
+Android application does not target the latest Android version,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/ActivityLauncher/ActivityLauncherApp/src/main/AndroidManifest.xml,,1
+Android application allows backups,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/ActivityLauncher/ActivityLauncherApp/src/main/AndroidManifest.xml,,1

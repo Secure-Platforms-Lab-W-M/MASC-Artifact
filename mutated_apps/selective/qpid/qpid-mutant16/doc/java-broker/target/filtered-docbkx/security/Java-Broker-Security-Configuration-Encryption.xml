@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--
+
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+
+-->
+
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="Java-Broker-Security-Configuration-Encryption">
+  <title>Configuration Encryption</title>
+  <para> The Broker is capable of encrypting passwords and other security items stored in the
+    Broker's configuration. This is means that items such as keystore/truststore passwords, JDBC
+    passwords, and LDAP passwords can be stored in the configure in a form that is difficult to
+    read.</para>
+  <para>The Broker ships with an encryptor implementation called <literal>AESKeyFile</literal>. This
+    uses a securely generated random key of 256bit<footnote><para>Java Cryptography Extension (JCE)
+        Unlimited Strength required</para></footnote> to encrypt the secrets stored within a key
+    file. Of course, the key itself must be guarded carefully, otherwise the passwords encrypted
+    with it may be compromised. For this reason, the Broker ensures that the file's permissions
+    allow the file to be read exclusively by the user account used for running the Broker.</para>
+  <important>
+    <para>If the keyfile is lost or corrupted, the secrets will be irrecoverable.</para>
+  </important>
+  <section xml:id="Java-Broker-Security-Configuration-Encryption-Configuration">
+    <title>Configuration</title>
+    <para>The <literal>AESKeyFile</literal> encyptor provider is enabled/disabled via the <link linkend="Java-Broker-Management-Managing-Broker">Broker attributes</link> within the
+      Web Management Console.  On enabling the provider, any existing passwords within the
+      configuration will be automatically rewritten in the encrypted form.</para>
+    <para>Note that passwords stored by the Authentication Providers <link linkend="Java-Broker-Security-PlainPasswordFile-Provider">PlainPasswordFile</link> and.
+        <link linkend="Java-Broker-Security-Base64MD5PasswordFile-Provider">PlainPasswordFile</link>
+      with the external password files are <emphasis>not</emphasis> encrypted by the key. Use the
+      Scram Authentication Managers instead; these make use of the Configuration Encryption when
+      storing the users' passwords. </para>
+  </section>
+  <section xml:id="Java-Broker-Security-Configuration-Encryption-Alternate-Implementations">
+    <title>Alternate Implementations</title>
+    <para>If the <literal>AESKeyFile</literal> encryptor implementation does not meet the needs of
+      the user, perhaps owing to the security standards of their institution, the
+        <literal>ConfigurationSecretEncrypter</literal> interface is designed as an extension point.
+      Users may implement their own implementation of ConfigurationSecretEncrypter perhaps to employ
+      stronger encryption or delegating the storage of the key to an Enterprise Password
+      Safe.</para>
+  </section>
+</section>

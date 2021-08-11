@@ -1,0 +1,1894 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Class File Analyzer",
+          "rules": [
+            {
+              "id": "CRLF_INJECTION_LOGS",
+              "help": {
+                "text": "This use of org/slf4j/Logger.debug(Ljava/lang/String;)V might be used to include CRLF characters into log messages \nAt DojoHelper.java:[lines 31-132] \nIn class org.apache.qpid.server.management.plugin.DojoHelper \nIn method org.apache.qpid.server.management.plugin.DojoHelper.<static initializer for DojoHelper>() \nAt DojoHelper.java:[line 84] \nSink method org/slf4j/Logger.debug(Ljava/lang/String;)V \nSink parameter 0 \nTainted source java/util/Properties.load(Ljava/io/InputStream;)V \nTainted source java/util/Iterator.next()Ljava/lang/Object; \nTainted source java/util/Map$Entry.getKey()Ljava/lang/Object; \nTainted source java/util/Map$Entry.getValue()Ljava/lang/Object; \nTainted source java/util/Properties.entrySet()Ljava/util/Set; \nAt DojoHelper.java:[line 65] \nAt DojoHelper.java:[line 82] \nAt DojoHelper.java:[line 84].",
+                "markdown": "This use of org/slf4j/Logger.debug(Ljava/lang/String;)V might be used to include CRLF characters into log messages \nAt DojoHelper.java:[lines 31-132] \nIn class org.apache.qpid.server.management.plugin.DojoHelper \nIn method org.apache.qpid.server.management.plugin.DojoHelper.<static initializer for DojoHelper>() \nAt DojoHelper.java:[line 84] \nSink method org/slf4j/Logger.debug(Ljava/lang/String;)V \nSink parameter 0 \nTainted source java/util/Properties.load(Ljava/io/InputStream;)V \nTainted source java/util/Iterator.next()Ljava/lang/Object; \nTainted source java/util/Map$Entry.getKey()Ljava/lang/Object; \nTainted source java/util/Map$Entry.getValue()Ljava/lang/Object; \nTainted source java/util/Properties.entrySet()Ljava/util/Set; \nAt DojoHelper.java:[line 65] \nAt DojoHelper.java:[line 82] \nAt DojoHelper.java:[line 84]."
+              },
+              "name": "CRLF INJECTION LOGS",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "This use of org/slf4j/Logger.debug(Ljava/lang/String;)V might be used to include CRLF characters into log messages ."
+              },
+              "helpUri": "https://slscan.io?q=CRLF_INJECTION_LOGS",
+              "shortDescription": {
+                "text": "This use of org/slf4j/Logger.debug(Ljava/lang/String;)V might be used to include CRLF characters into log messages \nAt DojoHelper.java:[lines 31-132] \nIn class org.apache.qpid.server.management.plugin.DojoHelper \nIn method org.apache.qpid.server.management.plugin.DojoHelper.<static initializer for DojoHelper>() \nAt DojoHelper.java:[line 84] \nSink method org/slf4j/Logger.debug(Ljava/lang/String;)V \nSink parameter 0 \nTainted source java/util/Properties.load(Ljava/io/InputStream;)V \nTainted source java/util/Iterator.next()Ljava/lang/Object; \nTainted source java/util/Map$Entry.getKey()Ljava/lang/Object; \nTainted source java/util/Map$Entry.getValue()Ljava/lang/Object; \nTainted source java/util/Properties.entrySet()Ljava/util/Set; \nAt DojoHelper.java:[line 65] \nAt DojoHelper.java:[line 82] \nAt DojoHelper.java:[line 84]."
+              }
+            },
+            {
+              "id": "HRS_REQUEST_PARAMETER_TO_HTTP_HEADER",
+              "help": {
+                "text": "HTTP parameter directly written to HTTP header output in org.apache.qpid.server.management.plugin.RewriteServlet.service(HttpServletRequest, HttpServletResponse) \nAt RewriteServlet.java:[lines 38-54] \nIn class org.apache.qpid.server.management.plugin.RewriteServlet \nIn method org.apache.qpid.server.management.plugin.RewriteServlet.service(HttpServletRequest, HttpServletResponse) \nLocal variable named location \nAt RewriteServlet.java:[line 53].",
+                "markdown": "HTTP parameter directly written to HTTP header output in org.apache.qpid.server.management.plugin.RewriteServlet.service(HttpServletRequest, HttpServletResponse) \nAt RewriteServlet.java:[lines 38-54] \nIn class org.apache.qpid.server.management.plugin.RewriteServlet \nIn method org.apache.qpid.server.management.plugin.RewriteServlet.service(HttpServletRequest, HttpServletResponse) \nLocal variable named location \nAt RewriteServlet.java:[line 53]."
+              },
+              "name": "HRS REQUEST PARAMETER TO HTTP HEADER",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "HTTP parameter directly written to HTTP header output in org.apache.qpid.server.management.plugin.RewriteServlet.service(HttpServletRequest, HttpServletResponse) ."
+              },
+              "helpUri": "https://slscan.io?q=HRS_REQUEST_PARAMETER_TO_HTTP_HEADER",
+              "shortDescription": {
+                "text": "HTTP parameter directly written to HTTP header output in org.apache.qpid.server.management.plugin.RewriteServlet.service(HttpServletRequest, HttpServletResponse) \nAt RewriteServlet.java:[lines 38-54] \nIn class org.apache.qpid.server.management.plugin.RewriteServlet \nIn method org.apache.qpid.server.management.plugin.RewriteServlet.service(HttpServletRequest, HttpServletResponse) \nLocal variable named location \nAt RewriteServlet.java:[line 53]."
+              }
+            },
+            {
+              "id": "UNVALIDATED_REDIRECT",
+              "help": {
+                "text": "The following redirection could be used by an attacker to redirect users to a phishing website. \nAt RewriteServlet.java:[lines 38-54] \nIn class org.apache.qpid.server.management.plugin.RewriteServlet \nIn method org.apache.qpid.server.management.plugin.RewriteServlet.service(HttpServletRequest, HttpServletResponse) \nAt RewriteServlet.java:[line 53] \nSink method javax/servlet/http/HttpServletResponse.sendRedirect(Ljava/lang/String;)V \nSink parameter 0 \nTainted source javax/servlet/http/HttpServletRequest.getQueryString()Ljava/lang/String; \nTainted source javax/servlet/http/HttpServletRequest.getRequestURI()Ljava/lang/String; \nUnknown source org/apache/qpid/server/management/plugin/RewriteServlet._replacement \nAt RewriteServlet.java:[line 48] \nAt RewriteServlet.java:[line 51].",
+                "markdown": "The following redirection could be used by an attacker to redirect users to a phishing website. \nAt RewriteServlet.java:[lines 38-54] \nIn class org.apache.qpid.server.management.plugin.RewriteServlet \nIn method org.apache.qpid.server.management.plugin.RewriteServlet.service(HttpServletRequest, HttpServletResponse) \nAt RewriteServlet.java:[line 53] \nSink method javax/servlet/http/HttpServletResponse.sendRedirect(Ljava/lang/String;)V \nSink parameter 0 \nTainted source javax/servlet/http/HttpServletRequest.getQueryString()Ljava/lang/String; \nTainted source javax/servlet/http/HttpServletRequest.getRequestURI()Ljava/lang/String; \nUnknown source org/apache/qpid/server/management/plugin/RewriteServlet._replacement \nAt RewriteServlet.java:[line 48] \nAt RewriteServlet.java:[line 51]."
+              },
+              "name": "Unvalidated Redirect",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "fullDescription": {
+                "text": "The following redirection could be used by an attacker to redirect users to a phishing website. ."
+              },
+              "helpUri": "https://slscan.io?q=UNVALIDATED_REDIRECT",
+              "shortDescription": {
+                "text": "The following redirection could be used by an attacker to redirect users to a phishing website"
+              }
+            },
+            {
+              "id": "XSS_SERVLET",
+              "help": {
+                "text": "This use of javax/servlet/http/HttpServletResponse.sendError(ILjava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt OAuth2InteractiveAuthenticator.java:[lines 383-404] \nIn class org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator$FailedAuthenticationHandler \nIn method org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator$FailedAuthenticationHandler.handleAuthentication(HttpServletResponse) \nAt OAuth2InteractiveAuthenticator.java:[line 398] \nSink method javax/servlet/http/HttpServletResponse.sendError(ILjava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator$FailedAuthenticationHandler._throwable \nUnknown source org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator$FailedAuthenticationHandler._message \nAt OAuth2InteractiveAuthenticator.java:[line 398].",
+                "markdown": "This use of javax/servlet/http/HttpServletResponse.sendError(ILjava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt OAuth2InteractiveAuthenticator.java:[lines 383-404] \nIn class org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator$FailedAuthenticationHandler \nIn method org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator$FailedAuthenticationHandler.handleAuthentication(HttpServletResponse) \nAt OAuth2InteractiveAuthenticator.java:[line 398] \nSink method javax/servlet/http/HttpServletResponse.sendError(ILjava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator$FailedAuthenticationHandler._throwable \nUnknown source org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator$FailedAuthenticationHandler._message \nAt OAuth2InteractiveAuthenticator.java:[line 398]."
+              },
+              "name": "Xss Servlet",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "This use of javax/servlet/http/HttpServletResponse.sendError(ILjava/lang/String;)V could be vulnerable to XSS in the Servlet ."
+              },
+              "helpUri": "https://slscan.io?q=XSS_SERVLET",
+              "shortDescription": {
+                "text": "This use of javax/servlet/http/HttpServletResponse.sendError(ILjava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt OAuth2InteractiveAuthenticator.java:[lines 383-404] \nIn class org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator$FailedAuthenticationHandler \nIn method org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator$FailedAuthenticationHandler.handleAuthentication(HttpServletResponse) \nAt OAuth2InteractiveAuthenticator.java:[line 398] \nSink method javax/servlet/http/HttpServletResponse.sendError(ILjava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator$FailedAuthenticationHandler._throwable \nUnknown source org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator$FailedAuthenticationHandler._message \nAt OAuth2InteractiveAuthenticator.java:[line 398]."
+              }
+            },
+            {
+              "id": "REQUESTDISPATCHER_FILE_DISCLOSURE",
+              "help": {
+                "text": "RequestDispatcher populated with user controlled parameters \nAt RewriteRequestForUncompressedJavascript.java:[lines 46-78] \nIn class org.apache.qpid.server.management.plugin.filter.RewriteRequestForUncompressedJavascript \nIn method org.apache.qpid.server.management.plugin.filter.RewriteRequestForUncompressedJavascript.doFilter(ServletRequest, ServletResponse, FilterChain) \nAt RewriteRequestForUncompressedJavascript.java:[line 72] \nSink method javax/servlet/RequestDispatcher.forward(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V \nSink parameter 2 \nTainted source javax/servlet/ServletRequest.getRequestDispatcher(Ljava/lang/String;)Ljavax/servlet/RequestDispatcher; \nTainted source javax/servlet/http/HttpServletRequest.getRequestURI()Ljava/lang/String; \nAt RewriteRequestForUncompressedJavascript.java:[line 68] \nAt RewriteRequestForUncompressedJavascript.java:[line 71] \nAt RewriteRequestForUncompressedJavascript.java:[line 72].",
+                "markdown": "RequestDispatcher populated with user controlled parameters \nAt RewriteRequestForUncompressedJavascript.java:[lines 46-78] \nIn class org.apache.qpid.server.management.plugin.filter.RewriteRequestForUncompressedJavascript \nIn method org.apache.qpid.server.management.plugin.filter.RewriteRequestForUncompressedJavascript.doFilter(ServletRequest, ServletResponse, FilterChain) \nAt RewriteRequestForUncompressedJavascript.java:[line 72] \nSink method javax/servlet/RequestDispatcher.forward(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V \nSink parameter 2 \nTainted source javax/servlet/ServletRequest.getRequestDispatcher(Ljava/lang/String;)Ljavax/servlet/RequestDispatcher; \nTainted source javax/servlet/http/HttpServletRequest.getRequestURI()Ljava/lang/String; \nAt RewriteRequestForUncompressedJavascript.java:[line 68] \nAt RewriteRequestForUncompressedJavascript.java:[line 71] \nAt RewriteRequestForUncompressedJavascript.java:[line 72]."
+              },
+              "name": "REQUESTDISPATCHER FILE DISCLOSURE",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "RequestDispatcher populated with user controlled parameters ."
+              },
+              "helpUri": "https://slscan.io?q=REQUESTDISPATCHER_FILE_DISCLOSURE",
+              "shortDescription": {
+                "text": "RequestDispatcher populated with user controlled parameters \nAt RewriteRequestForUncompressedJavascript.java:[lines 46-78] \nIn class org.apache.qpid.server.management.plugin.filter.RewriteRequestForUncompressedJavascript \nIn method org.apache.qpid.server.management.plugin.filter.RewriteRequestForUncompressedJavascript.doFilter(ServletRequest, ServletResponse, FilterChain) \nAt RewriteRequestForUncompressedJavascript.java:[line 72] \nSink method javax/servlet/RequestDispatcher.forward(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V \nSink parameter 2 \nTainted source javax/servlet/ServletRequest.getRequestDispatcher(Ljava/lang/String;)Ljavax/servlet/RequestDispatcher; \nTainted source javax/servlet/http/HttpServletRequest.getRequestURI()Ljava/lang/String; \nAt RewriteRequestForUncompressedJavascript.java:[line 68] \nAt RewriteRequestForUncompressedJavascript.java:[line 71] \nAt RewriteRequestForUncompressedJavascript.java:[line 72]."
+              }
+            },
+            {
+              "id": "PREDICTABLE_RANDOM",
+              "help": {
+                "text": "This random generator (java.util.Random) is predictable \nAt SaslServlet.java:[lines 62-303] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.SaslServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.SaslServlet.getRandom(HttpServletRequest) \nAt SaslServlet.java:[line 116] \nValue java.util.Random.",
+                "markdown": "This random generator (java.util.Random) is predictable \nAt SaslServlet.java:[lines 62-303] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.SaslServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.SaslServlet.getRandom(HttpServletRequest) \nAt SaslServlet.java:[line 116] \nValue java.util.Random."
+              },
+              "name": "Predictable Random",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "This random generator (java.util.Random) is predictable ."
+              },
+              "helpUri": "https://slscan.io?q=PREDICTABLE_RANDOM",
+              "shortDescription": {
+                "text": "This random generator (java.util.Random) is predictable \nAt SaslServlet.java:[lines 62-303] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.SaslServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.SaslServlet.getRandom(HttpServletRequest) \nAt SaslServlet.java:[line 116] \nValue java.util.Random."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Class File Analyzer"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-jar",
+            "/tmp/.mount_scan9snVwo/opt/spotbugs/lib/spotbugs.jar",
+            "-textui",
+            "-include",
+            "/tmp/.mount_scan9snVwo/usr/src/tools_config/spotbugs/include.xml",
+            "-exclude",
+            "/tmp/.mount_scan9snVwo/usr/src/tools_config/spotbugs/exclude.xml",
+            "-noClassOk",
+            "-auxclasspathFromFile",
+            "/tmp/tmpemjw2jau",
+            "-sourcepath",
+            "/media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http",
+            "-quiet",
+            "-medium",
+            "-xml:withMessages",
+            "-effort:max",
+            "-nested:false",
+            "-output",
+            "/media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/reports/class-report.xml",
+            "/media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-jar /tmp/.mount_scan9snVwo/opt/spotbugs/lib/spotbugs.jar -textui -include /tmp/.mount_scan9snVwo/usr/src/tools_config/spotbugs/include.xml -exclude /tmp/.mount_scan9snVwo/usr/src/tools_config/spotbugs/exclude.xml -noClassOk -auxclasspathFromFile /tmp/tmpemjw2jau -sourcepath /media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http -quiet -medium -xml:withMessages -effort:max -nested:false -output /media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/reports/class-report.xml /media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http",
+          "endTimeUtc": "2020-12-03T13:44:51Z",
+          "workingDirectory": {
+            "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2020-12-03T13:44:51Z",
+          "workingDirectory": {
+            "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 45,
+          "critical": 6,
+          "high": 31,
+          "medium": 8,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of org/slf4j/Logger.debug(Ljava/lang/String;)V might be used to include CRLF characters into log messages \nAt DojoHelper.java:[lines 31-132] \nIn class org.apache.qpid.server.management.plugin.DojoHelper \nIn method org.apache.qpid.server.management.plugin.DojoHelper.<static initializer for DojoHelper>() \nAt DojoHelper.java:[line 84] \nSink method org/slf4j/Logger.debug(Ljava/lang/String;)V \nSink parameter 0 \nTainted source java/util/Properties.load(Ljava/io/InputStream;)V \nTainted source java/util/Iterator.next()Ljava/lang/Object; \nTainted source java/util/Map$Entry.getKey()Ljava/lang/Object; \nTainted source java/util/Map$Entry.getValue()Ljava/lang/Object; \nTainted source java/util/Properties.entrySet()Ljava/util/Set; \nAt DojoHelper.java:[line 65] \nAt DojoHelper.java:[line 82] \nAt DojoHelper.java:[line 84]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                        LOGGER.debug(\"Property: \" + entry.getKey() + \" Value: \" + entry.getValue());\n"
+                  },
+                  "startLine": 84
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/DojoHelper.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                    {\n                        LOGGER.debug(\"Property: \" + entry.getKey() + \" Value: \" + entry.getValue());\n"
+                  },
+                  "endLine": 84,
+                  "startLine": 83
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CRLF_INJECTION_LOGS",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "HTTP parameter directly written to HTTP header output in org.apache.qpid.server.management.plugin.RewriteServlet.service(HttpServletRequest, HttpServletResponse) \nAt RewriteServlet.java:[lines 38-54] \nIn class org.apache.qpid.server.management.plugin.RewriteServlet \nIn method org.apache.qpid.server.management.plugin.RewriteServlet.service(HttpServletRequest, HttpServletResponse) \nLocal variable named location \nAt RewriteServlet.java:[line 53]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        resp.sendRedirect(location);\n"
+                  },
+                  "startLine": 53
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/RewriteServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        }\n        resp.sendRedirect(location);\n"
+                  },
+                  "endLine": 53,
+                  "startLine": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "HRS_REQUEST_PARAMETER_TO_HTTP_HEADER",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The following redirection could be used by an attacker to redirect users to a phishing website. \nAt RewriteServlet.java:[lines 38-54] \nIn class org.apache.qpid.server.management.plugin.RewriteServlet \nIn method org.apache.qpid.server.management.plugin.RewriteServlet.service(HttpServletRequest, HttpServletResponse) \nAt RewriteServlet.java:[line 53] \nSink method javax/servlet/http/HttpServletResponse.sendRedirect(Ljava/lang/String;)V \nSink parameter 0 \nTainted source javax/servlet/http/HttpServletRequest.getQueryString()Ljava/lang/String; \nTainted source javax/servlet/http/HttpServletRequest.getRequestURI()Ljava/lang/String; \nUnknown source org/apache/qpid/server/management/plugin/RewriteServlet._replacement \nAt RewriteServlet.java:[line 48] \nAt RewriteServlet.java:[line 51]."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        resp.sendRedirect(location);\n"
+                  },
+                  "startLine": 53
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/RewriteServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        }\n        resp.sendRedirect(location);\n"
+                  },
+                  "endLine": 53,
+                  "startLine": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "UNVALIDATED_REDIRECT",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of org/slf4j/Logger.debug(Ljava/lang/String;Ljava/lang/Object;)V might be used to include CRLF characters into log messages \nAt AnonymousInteractiveAuthenticator.java:[lines 43-131] \nIn class org.apache.qpid.server.management.plugin.auth.AnonymousInteractiveAuthenticator \nIn method org.apache.qpid.server.management.plugin.auth.AnonymousInteractiveAuthenticator.lambda$getAuthenticationHandler$1(HttpManagementConfiguration, HttpServletRequest, Port, HttpServletResponse) \nAt AnonymousInteractiveAuthenticator.java:[line 79] \nSink method org/slf4j/Logger.debug(Ljava/lang/String;Ljava/lang/Object;)V \nSink parameter 0 \nTainted source org/apache/qpid/server/management/plugin/auth/AnonymousInteractiveAuthenticator.getOriginalRequestUri(Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/String; \nTainted source java/lang/StringBuffer.append(Ljava/lang/String;)Ljava/lang/StringBuffer; \nTainted source javax/servlet/http/HttpServletRequest.getRequestURL()Ljava/lang/StringBuffer; \nTainted source javax/servlet/http/HttpServletRequest.getQueryString()Ljava/lang/String; \nTainted source java/lang/StringBuffer.toString()Ljava/lang/String; \nAt AnonymousInteractiveAuthenticator.java:[line 78] \nAt AnonymousInteractiveAuthenticator.java:[line 125] \nAt AnonymousInteractiveAuthenticator.java:[line 126] \nAt AnonymousInteractiveAuthenticator.java:[line 129] \nAt AnonymousInteractiveAuthenticator.java:[line 131]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                    LOGGER.debug(\"Successful login. Redirect to original resource {}\", originalRequestUri);\n"
+                  },
+                  "startLine": 79
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/auth/AnonymousInteractiveAuthenticator.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                    String originalRequestUri = getOriginalRequestUri(request);\n                    LOGGER.debug(\"Successful login. Redirect to original resource {}\", originalRequestUri);\n"
+                  },
+                  "endLine": 79,
+                  "startLine": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CRLF_INJECTION_LOGS",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The following redirection could be used by an attacker to redirect users to a phishing website. \nAt AnonymousInteractiveAuthenticator.java:[lines 43-131] \nIn class org.apache.qpid.server.management.plugin.auth.AnonymousInteractiveAuthenticator \nIn method org.apache.qpid.server.management.plugin.auth.AnonymousInteractiveAuthenticator.lambda$getAuthenticationHandler$1(HttpManagementConfiguration, HttpServletRequest, Port, HttpServletResponse) \nAt AnonymousInteractiveAuthenticator.java:[line 80] \nSink method javax/servlet/http/HttpServletResponse.sendRedirect(Ljava/lang/String;)V \nSink parameter 0 \nTainted source org/apache/qpid/server/management/plugin/auth/AnonymousInteractiveAuthenticator.getOriginalRequestUri(Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/String; \nTainted source java/lang/StringBuffer.append(Ljava/lang/String;)Ljava/lang/StringBuffer; \nTainted source javax/servlet/http/HttpServletRequest.getRequestURL()Ljava/lang/StringBuffer; \nTainted source javax/servlet/http/HttpServletRequest.getQueryString()Ljava/lang/String; \nTainted source java/lang/StringBuffer.toString()Ljava/lang/String; \nAt AnonymousInteractiveAuthenticator.java:[line 78] \nAt AnonymousInteractiveAuthenticator.java:[line 125] \nAt AnonymousInteractiveAuthenticator.java:[line 126] \nAt AnonymousInteractiveAuthenticator.java:[line 129] \nAt AnonymousInteractiveAuthenticator.java:[line 131]."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                    response.sendRedirect(originalRequestUri);\n"
+                  },
+                  "startLine": 80
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/auth/AnonymousInteractiveAuthenticator.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                    LOGGER.debug(\"Successful login. Redirect to original resource {}\", originalRequestUri);\n                    response.sendRedirect(originalRequestUri);\n"
+                  },
+                  "endLine": 80,
+                  "startLine": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "UNVALIDATED_REDIRECT",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of org/slf4j/Logger.warn(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V might be used to include CRLF characters into log messages \nAt OAuth2InteractiveAuthenticator.java:[lines 55-372] \nIn class org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator \nIn method org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator.getAuthenticationHandler(HttpServletRequest, HttpManagementConfiguration) \nAt OAuth2InteractiveAuthenticator.java:[line 122] \nSink method org/slf4j/Logger.warn(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V \nSink parameter 0 \nTainted source java/util/Enumeration.nextElement()Ljava/lang/Object; \nTainted source javax/servlet/http/HttpServletRequest.getParameterValues(Ljava/lang/String;)[Ljava/lang/String; \nTainted source java/util/Map.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; \nTainted source org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator.getRequestParameters(Ljavax/servlet/http/HttpServletRequest;)Ljava/util/Map; \nTainted source java/util/Map.get(Ljava/lang/Object;)Ljava/lang/Object; \nTainted source javax/servlet/http/HttpServletRequest.getParameterNames()Ljava/util/Enumeration; \nAt OAuth2InteractiveAuthenticator.java:[line 102] \nAt OAuth2InteractiveAuthenticator.java:[line 113] \nAt OAuth2InteractiveAuthenticator.java:[line 307] \nAt OAuth2InteractiveAuthenticator.java:[line 310] \nAt OAuth2InteractiveAuthenticator.java:[line 311] \nAt OAuth2InteractiveAuthenticator.java:[line 322]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                    LOGGER.warn(\"Authorization endpoint failed, error : '{}', error description '{}'\",\n"
+                  },
+                  "startLine": 122
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                {\n                    LOGGER.warn(\"Authorization endpoint failed, error : '{}', error description '{}'\",\n"
+                  },
+                  "endLine": 122,
+                  "startLine": 121
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CRLF_INJECTION_LOGS",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of org/slf4j/Logger.warn(Ljava/lang/String;Ljava/lang/Object;)V might be used to include CRLF characters into log messages \nAt OAuth2InteractiveAuthenticator.java:[lines 55-372] \nIn class org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator \nIn method org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator.getAuthenticationHandler(HttpServletRequest, HttpManagementConfiguration) \nAt OAuth2InteractiveAuthenticator.java:[line 147] \nSink method org/slf4j/Logger.warn(Ljava/lang/String;Ljava/lang/Object;)V \nSink parameter 0 \nTainted source java/util/Enumeration.nextElement()Ljava/lang/Object; \nTainted source javax/servlet/http/HttpServletRequest.getParameterValues(Ljava/lang/String;)[Ljava/lang/String; \nTainted source java/util/Map.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; \nTainted source org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator.getRequestParameters(Ljavax/servlet/http/HttpServletRequest;)Ljava/util/Map; \nTainted source java/util/Map.get(Ljava/lang/Object;)Ljava/lang/Object; \nTainted source javax/servlet/http/HttpServletRequest.getParameterNames()Ljava/util/Enumeration; \nAt OAuth2InteractiveAuthenticator.java:[line 102] \nAt OAuth2InteractiveAuthenticator.java:[line 143] \nAt OAuth2InteractiveAuthenticator.java:[line 307] \nAt OAuth2InteractiveAuthenticator.java:[line 310] \nAt OAuth2InteractiveAuthenticator.java:[line 311] \nAt OAuth2InteractiveAuthenticator.java:[line 322]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                    LOGGER.warn(\"Deny login attempt with wrong state: {}\", state);\n"
+                  },
+                  "startLine": 147
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                {\n                    LOGGER.warn(\"Deny login attempt with wrong state: {}\", state);\n"
+                  },
+                  "endLine": 147,
+                  "startLine": 146
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CRLF_INJECTION_LOGS",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of org/slf4j/Logger.warn(Ljava/lang/String;Ljava/lang/Object;)V might be used to include CRLF characters into log messages \nAt OAuth2InteractiveAuthenticator.java:[lines 55-372] \nIn class org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator \nIn method org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator.getAuthenticationHandler(HttpServletRequest, HttpManagementConfiguration) \nAt OAuth2InteractiveAuthenticator.java:[line 153] \nSink method org/slf4j/Logger.warn(Ljava/lang/String;Ljava/lang/Object;)V \nSink parameter 0 \nTainted source java/util/Enumeration.nextElement()Ljava/lang/Object; \nTainted source javax/servlet/http/HttpServletRequest.getParameterValues(Ljava/lang/String;)[Ljava/lang/String; \nTainted source java/util/Map.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; \nTainted source org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator.getRequestParameters(Ljavax/servlet/http/HttpServletRequest;)Ljava/util/Map; \nTainted source java/util/Map.get(Ljava/lang/Object;)Ljava/lang/Object; \nTainted source javax/servlet/http/HttpServletRequest.getParameterNames()Ljava/util/Enumeration; \nAt OAuth2InteractiveAuthenticator.java:[line 102] \nAt OAuth2InteractiveAuthenticator.java:[line 143] \nAt OAuth2InteractiveAuthenticator.java:[line 307] \nAt OAuth2InteractiveAuthenticator.java:[line 310] \nAt OAuth2InteractiveAuthenticator.java:[line 311] \nAt OAuth2InteractiveAuthenticator.java:[line 322]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                    LOGGER.warn(\"Deny login attempt with wrong state: {}\", state);\n"
+                  },
+                  "startLine": 153
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                {\n                    LOGGER.warn(\"Deny login attempt with wrong state: {}\", state);\n"
+                  },
+                  "endLine": 153,
+                  "startLine": 152
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CRLF_INJECTION_LOGS",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The following redirection could be used by an attacker to redirect users to a phishing website. \nAt OAuth2InteractiveAuthenticator.java:[lines 55-372] \nIn class org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator \nIn method org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator.lambda$getAuthenticationHandler$0(HttpManagementConfiguration, HttpServletRequest, OAuth2AuthenticationProvider, String, HttpServletResponse) \nAt OAuth2InteractiveAuthenticator.java:[line 137] \nSink method javax/servlet/http/HttpServletResponse.sendRedirect(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator.lambda$getAuthenticationHandler$0(Lorg/apache/qpid/server/management/plugin/HttpManagementConfiguration;Ljavax/servlet/http/HttpServletRequest;Lorg/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProvider;Ljava/lang/String;Ljavax/servlet/http/HttpServletResponse;)V parameter 1 \nMethod usage not detected."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                    response.sendRedirect(authorizationRedirectURL);\n"
+                  },
+                  "startLine": 137
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                    LOGGER.debug(\"Sending redirect to authorization endpoint {}\", oauth2Provider.getAuthorizationEndpointURI(addressSpace));\n                    response.sendRedirect(authorizationRedirectURL);\n"
+                  },
+                  "endLine": 137,
+                  "startLine": 136
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "UNVALIDATED_REDIRECT",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The following redirection could be used by an attacker to redirect users to a phishing website. \nAt OAuth2InteractiveAuthenticator.java:[lines 166-214] \nIn class org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator$1 \nIn method org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator$1.handleAuthentication(HttpServletResponse) \nAt OAuth2InteractiveAuthenticator.java:[line 178] \nSink method javax/servlet/http/HttpServletResponse.sendRedirect(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator$1.val$originalRequestUri \nAt OAuth2InteractiveAuthenticator.java:[line 178]."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                            response.sendRedirect(originalRequestUri);\n"
+                  },
+                  "startLine": 178
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                            LOGGER.debug(\"Successful login. Redirect to original resource {}\", originalRequestUri);\n                            response.sendRedirect(originalRequestUri);\n"
+                  },
+                  "endLine": 178,
+                  "startLine": 177
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "UNVALIDATED_REDIRECT",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The following redirection could be used by an attacker to redirect users to a phishing website. \nAt OAuth2InteractiveAuthenticator.java:[lines 237-242] \nIn class org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator$2 \nIn method org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator$2.handleLogout(HttpServletResponse) \nAt OAuth2InteractiveAuthenticator.java:[line 241] \nSink method javax/servlet/http/HttpServletResponse.sendRedirect(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator$2.val$postLogoutRedirect \nAt OAuth2InteractiveAuthenticator.java:[line 241]."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                        response.sendRedirect(postLogoutRedirect);\n"
+                  },
+                  "startLine": 241
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                    {\n                        response.sendRedirect(postLogoutRedirect);\n"
+                  },
+                  "endLine": 241,
+                  "startLine": 240
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "UNVALIDATED_REDIRECT",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of javax/servlet/http/HttpServletResponse.sendError(ILjava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt OAuth2InteractiveAuthenticator.java:[lines 383-404] \nIn class org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator$FailedAuthenticationHandler \nIn method org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator$FailedAuthenticationHandler.handleAuthentication(HttpServletResponse) \nAt OAuth2InteractiveAuthenticator.java:[line 398] \nSink method javax/servlet/http/HttpServletResponse.sendError(ILjava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator$FailedAuthenticationHandler._throwable \nUnknown source org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator$FailedAuthenticationHandler._message \nAt OAuth2InteractiveAuthenticator.java:[line 398]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                response.sendError(_errorCode, _message + \": \" + _throwable);\n"
+                  },
+                  "startLine": 398
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            {\n                response.sendError(_errorCode, _message + \": \" + _throwable);\n"
+                  },
+                  "endLine": 398,
+                  "startLine": 397
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of javax/servlet/http/HttpServletResponse.sendError(ILjava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt OAuth2InteractiveAuthenticator.java:[lines 383-404] \nIn class org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator$FailedAuthenticationHandler \nIn method org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticator$FailedAuthenticationHandler.handleAuthentication(HttpServletResponse) \nAt OAuth2InteractiveAuthenticator.java:[line 402] \nSink method javax/servlet/http/HttpServletResponse.sendError(ILjava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator$FailedAuthenticationHandler._message \nAt OAuth2InteractiveAuthenticator.java:[line 402]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                response.sendError(_errorCode, _message);\n"
+                  },
+                  "startLine": 402
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            {\n                response.sendError(_errorCode, _message);\n"
+                  },
+                  "endLine": 402,
+                  "startLine": 401
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The following redirection could be used by an attacker to redirect users to a phishing website. \nAt OAuth2InteractiveAuthenticatorTest.java:[lines 77-434] \nIn class org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticatorTest \nIn method org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticatorTest.testInitialRedirect() \nAt OAuth2InteractiveAuthenticatorTest.java:[line 133] \nSink method javax/servlet/http/HttpServletResponse.sendRedirect(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/mockito/ArgumentCaptor.capture()Ljava/lang/Object;."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 133
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticatorTest.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "UNVALIDATED_REDIRECT",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The following redirection could be used by an attacker to redirect users to a phishing website. \nAt OAuth2InteractiveAuthenticatorTest.java:[lines 77-434] \nIn class org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticatorTest \nIn method org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticatorTest.testValidLogin() \nAt OAuth2InteractiveAuthenticatorTest.java:[line 169] \nSink method javax/servlet/http/HttpServletResponse.sendRedirect(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/mockito/ArgumentCaptor.capture()Ljava/lang/Object;."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 169
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticatorTest.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "UNVALIDATED_REDIRECT",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of javax/servlet/http/HttpServletResponse.sendError(ILjava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt OAuth2InteractiveAuthenticatorTest.java:[lines 77-434] \nIn class org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticatorTest \nIn method org.apache.qpid.server.management.plugin.auth.OAuth2InteractiveAuthenticatorTest.testUnauthorizedAuthorizationCode() \nAt OAuth2InteractiveAuthenticatorTest.java:[line 287] \nSink method javax/servlet/http/HttpServletResponse.sendError(ILjava/lang/String;)V \nSink parameter 0 \nUnknown source org/mockito/ArgumentMatchers.any(Ljava/lang/Class;)Ljava/lang/Object;."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 287
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticatorTest.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of org/slf4j/Logger.debug(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V might be used to include CRLF characters into log messages \nAt LoggingFilter.java:[lines 38-79] \nIn class org.apache.qpid.server.management.plugin.filter.LoggingFilter \nIn method org.apache.qpid.server.management.plugin.filter.LoggingFilter.doFilter(ServletRequest, ServletResponse, FilterChain) \nAt LoggingFilter.java:[line 59] \nSink method org/slf4j/Logger.debug(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V \nSink parameter 0 \nTainted source org/apache/qpid/server/management/plugin/HttpManagementUtil.getRequestURL(Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/String; \nTainted source javax/servlet/http/HttpServletRequest.getRequestURL()Ljava/lang/StringBuffer; \nTainted source javax/servlet/http/HttpServletRequest.getQueryString()Ljava/lang/String; \nAt HttpManagementUtil.java:[line 274] \nAt HttpManagementUtil.java:[line 275] \nAt HttpManagementUtil.java:[line 278] \nAt HttpManagementUtil.java:[line 280] \nAt LoggingFilter.java:[line 58]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            LOGGER.debug(\"REQUEST  method='{}' url='{}'\", method, url);\n"
+                  },
+                  "startLine": 59
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/filter/LoggingFilter.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            url = HttpManagementUtil.getRequestURL(httpRequest);\n            LOGGER.debug(\"REQUEST  method='{}' url='{}'\", method, url);\n"
+                  },
+                  "endLine": 59,
+                  "startLine": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CRLF_INJECTION_LOGS",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of org/slf4j/Logger.debug(Ljava/lang/String;[Ljava/lang/Object;)V might be used to include CRLF characters into log messages \nAt LoggingFilter.java:[lines 38-79] \nIn class org.apache.qpid.server.management.plugin.filter.LoggingFilter \nIn method org.apache.qpid.server.management.plugin.filter.LoggingFilter.doFilter(ServletRequest, ServletResponse, FilterChain) \nAt LoggingFilter.java:[line 70] \nSink method org/slf4j/Logger.debug(Ljava/lang/String;[Ljava/lang/Object;)V \nSink parameter 0 \nTainted source org/apache/qpid/server/management/plugin/HttpManagementUtil.getRequestURL(Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/String; \nTainted source javax/servlet/http/HttpServletRequest.getRequestURL()Ljava/lang/StringBuffer; \nTainted source javax/servlet/http/HttpServletRequest.getQueryString()Ljava/lang/String; \nAt HttpManagementUtil.java:[line 274] \nAt HttpManagementUtil.java:[line 275] \nAt HttpManagementUtil.java:[line 278] \nAt HttpManagementUtil.java:[line 280] \nAt LoggingFilter.java:[line 58]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                LOGGER.debug(\"RESPONSE method='{}' url='{}' status='{}'\", method, url, responseStatus);\n"
+                  },
+                  "startLine": 70
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/filter/LoggingFilter.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                String responseStatus = String.valueOf(httpResponse.getStatus());\n                LOGGER.debug(\"RESPONSE method='{}' url='{}' status='{}'\", method, url, responseStatus);\n"
+                  },
+                  "endLine": 70,
+                  "startLine": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CRLF_INJECTION_LOGS",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The following redirection could be used by an attacker to redirect users to a phishing website. \nAt RedirectFilter.java:[lines 33-58] \nIn class org.apache.qpid.server.management.plugin.filter.RedirectFilter \nIn method org.apache.qpid.server.management.plugin.filter.RedirectFilter.doFilter(ServletRequest, ServletResponse, FilterChain) \nAt RedirectFilter.java:[line 50] \nSink method javax/servlet/http/HttpServletResponse.sendRedirect(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/management/plugin/filter/RedirectFilter._redirectURI \nAt RedirectFilter.java:[line 50]."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            ((HttpServletResponse) response).sendRedirect(_redirectURI);\n"
+                  },
+                  "startLine": 50
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/filter/RedirectFilter.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        {\n            ((HttpServletResponse) response).sendRedirect(_redirectURI);\n"
+                  },
+                  "endLine": 50,
+                  "startLine": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "MEDIUM"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "UNVALIDATED_REDIRECT",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "RequestDispatcher populated with user controlled parameters \nAt RewriteRequestForUncompressedJavascript.java:[lines 46-78] \nIn class org.apache.qpid.server.management.plugin.filter.RewriteRequestForUncompressedJavascript \nIn method org.apache.qpid.server.management.plugin.filter.RewriteRequestForUncompressedJavascript.doFilter(ServletRequest, ServletResponse, FilterChain) \nAt RewriteRequestForUncompressedJavascript.java:[line 72] \nSink method javax/servlet/RequestDispatcher.forward(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V \nSink parameter 2 \nTainted source javax/servlet/ServletRequest.getRequestDispatcher(Ljava/lang/String;)Ljavax/servlet/RequestDispatcher; \nTainted source javax/servlet/http/HttpServletRequest.getRequestURI()Ljava/lang/String; \nAt RewriteRequestForUncompressedJavascript.java:[line 68] \nAt RewriteRequestForUncompressedJavascript.java:[line 71] \nAt RewriteRequestForUncompressedJavascript.java:[line 72]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            request.getRequestDispatcher(replacementRequestURI).forward(request, response);\n"
+                  },
+                  "startLine": 72
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/filter/RewriteRequestForUncompressedJavascript.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            final String replacementRequestURI = requestURI + UNCOMPRESSED_JS_SUFFIX;\n            request.getRequestDispatcher(replacementRequestURI).forward(request, response);\n"
+                  },
+                  "endLine": 72,
+                  "startLine": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "REQUESTDISPATCHER_FILE_DISCLOSURE",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of org/slf4j/Logger.info(Ljava/lang/String;)V might be used to include CRLF characters into log messages \nAt ReportRunner.java:[lines 49-417] \nIn class org.apache.qpid.server.management.plugin.report.ReportRunner \nIn method org.apache.qpid.server.management.plugin.report.ReportRunner.setReportParameters(QueueReport, Map) \nAt ReportRunner.java:[line 126] \nSink method org/slf4j/Logger.info(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/management/plugin/report/ReportRunner.setReportParameters(Lorg/apache/qpid/server/management/plugin/report/QueueReport;Ljava/util/Map;)V parameter 0 \nUnknown source java/util/Iterator.next()Ljava/lang/Object; \nUnknown source java/util/Map$Entry.getKey()Ljava/lang/Object; \nUnknown source org/apache/qpid/server/management/plugin/report/QueueReport.getName()Ljava/lang/String; \nUnknown source java/util/Map.entrySet()Ljava/util/Set; \nMethod usage with tainted arguments detected \nAt ReportRunner.java:[line 79] \nAt ReportRunner.java:[line 88] \nAt ReportRunner.java:[line 90] \nAt ReportRunner.java:[line 126] \nAt ReportRunner.java:[line 129] \nAt ReportRunnerTest.java:[line 55] \nAt ReportRunnerTest.java:[line 60] \nAt ReportRunnerTest.java:[line 65] \nAt ReportRunnerTest.java:[line 89] \nAt ReportRunnerTest.java:[line 100] \nAt ReportRunnerTest.java:[line 115] \nAt ReportRunnerTest.java:[line 126] \nAt ReportRunnerTest.java:[line 146] \nAt QueueReportServlet.java:[line 70]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 126
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/org/apache/qpid/server/management/plugin/report/ReportRunner.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CRLF_INJECTION_LOGS",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of org/slf4j/Logger.info(Ljava/lang/String;)V might be used to include CRLF characters into log messages \nAt ReportRunner.java:[lines 49-417] \nIn class org.apache.qpid.server.management.plugin.report.ReportRunner \nIn method org.apache.qpid.server.management.plugin.report.ReportRunner.setReportParameters(QueueReport, Map) \nAt ReportRunner.java:[line 140] \nSink method org/slf4j/Logger.info(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/management/plugin/report/ReportRunner.setReportParameters(Lorg/apache/qpid/server/management/plugin/report/QueueReport;Ljava/util/Map;)V parameter 0 \nUnknown source java/util/Iterator.next()Ljava/lang/Object; \nUnknown source java/util/Map$Entry.getKey()Ljava/lang/Object; \nUnknown source org/apache/qpid/server/management/plugin/report/QueueReport.getName()Ljava/lang/String; \nUnknown source java/util/Map.entrySet()Ljava/util/Set; \nMethod usage with tainted arguments detected \nAt ReportRunner.java:[line 79] \nAt ReportRunner.java:[line 88] \nAt ReportRunner.java:[line 90] \nAt ReportRunner.java:[line 140] \nAt ReportRunnerTest.java:[line 55] \nAt ReportRunnerTest.java:[line 60] \nAt ReportRunnerTest.java:[line 65] \nAt ReportRunnerTest.java:[line 89] \nAt ReportRunnerTest.java:[line 100] \nAt ReportRunnerTest.java:[line 115] \nAt ReportRunnerTest.java:[line 126] \nAt ReportRunnerTest.java:[line 146] \nAt QueueReportServlet.java:[line 70]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 140
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/org/apache/qpid/server/management/plugin/report/ReportRunner.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CRLF_INJECTION_LOGS",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of javax/servlet/http/HttpServletResponse.sendError(ILjava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt DefinedFileServlet.java:[lines 44-112] \nIn class org.apache.qpid.server.management.plugin.servlet.DefinedFileServlet \nIn method org.apache.qpid.server.management.plugin.servlet.DefinedFileServlet.doGet(HttpServletRequest, HttpServletResponse) \nAt DefinedFileServlet.java:[line 94] \nSink method javax/servlet/http/HttpServletResponse.sendError(ILjava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/management/plugin/servlet/DefinedFileServlet._filename \nAt DefinedFileServlet.java:[line 94]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                        response.sendError(HttpServletResponse.SC_NOT_FOUND, \"unknown file: \" + _filename);\n"
+                  },
+                  "startLine": 94
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/DefinedFileServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                    {\n                        response.sendError(HttpServletResponse.SC_NOT_FOUND, \"unknown file: \" + _filename);\n"
+                  },
+                  "endLine": 94,
+                  "startLine": 93
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of javax/servlet/http/HttpServletResponse.sendError(ILjava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt RootServlet.java:[lines 41-95] \nIn class org.apache.qpid.server.management.plugin.servlet.RootServlet \nIn method org.apache.qpid.server.management.plugin.servlet.RootServlet.doGet(HttpServletRequest, HttpServletResponse) \nAt RootServlet.java:[line 76] \nSink method javax/servlet/http/HttpServletResponse.sendError(ILjava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/management/plugin/servlet/RootServlet._filename \nAt RootServlet.java:[line 76]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                        response.sendError(HttpServletResponse.SC_NOT_FOUND, \"unknown file: \" + _filename);\n"
+                  },
+                  "startLine": 76
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/RootServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                    {\n                        response.sendError(HttpServletResponse.SC_NOT_FOUND, \"unknown file: \" + _filename);\n"
+                  },
+                  "endLine": 76,
+                  "startLine": 75
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.println(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.doGet(HttpServletRequest, HttpServletResponse, ConfiguredObject) \nAt ApiDocsServlet.java:[line 139] \nSink method java/io/PrintWriter.println(Ljava/lang/String;)V \nSink parameter 0 \nTainted source javax/servlet/http/HttpServletRequest.getServletPath()Ljava/lang/String; \nAt ApiDocsServlet.java:[line 82] \nAt ApiDocsServlet.java:[line 132] \nAt ApiDocsServlet.java:[line 136] \nAt ApiDocsServlet.java:[line 139]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                writer.println(\"<td class=\\\"path\\\">\" + path + \"</td>\");\n"
+                  },
+                  "startLine": 139
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                writer.println(\"<td class=\\\"type\\\"><a href=\" + ((servletPathParts.length == 2) ? \"\\\"latest/\" : \"\")+ objClass.getSimpleName().toLowerCase()+\"\\\">\"+objClass.getSimpleName()+\"</a></td>\");\n                writer.println(\"<td class=\\\"path\\\">\" + path + \"</td>\");\n"
+                  },
+                  "endLine": 139,
+                  "startLine": 138
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.print(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.writeUsage(PrintWriter, HttpServletRequest, Class[], Class) \nAt ApiDocsServlet.java:[line 216] \nSink method java/io/PrintWriter.print(Ljava/lang/String;)V \nSink parameter 0 \nTainted source javax/servlet/http/HttpServletRequest.getServletPath()Ljava/lang/String; \nAt ApiDocsServlet.java:[line 216] \nAt ApiDocsServlet.java:[line 217]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        writer.print(\"<tr><th class=\\\"operation\\\">Read</th><td class=\\\"method\\\">GET</td><td class=\\\"path\\\">\" + request.getServletPath()\n"
+                  },
+                  "startLine": 216
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        writer.println(\"<tbody>\");\n        writer.print(\"<tr><th class=\\\"operation\\\">Read</th><td class=\\\"method\\\">GET</td><td class=\\\"path\\\">\" + request.getServletPath()\n"
+                  },
+                  "endLine": 216,
+                  "startLine": 215
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.print(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.writeUsage(PrintWriter, HttpServletRequest, Class[], Class) \nAt ApiDocsServlet.java:[line 229] \nSink method java/io/PrintWriter.print(Ljava/lang/String;)V \nSink parameter 0 \nTainted source javax/servlet/http/HttpServletRequest.getServletPath()Ljava/lang/String; \nAt ApiDocsServlet.java:[line 230]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        writer.print(\"<tr><th class=\\\"operation\\\">Update</th><td class=\\\"method\\\">PUT or POST</td><td class=\\\"path\\\">\"\n"
+                  },
+                  "startLine": 229
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n        writer.print(\"<tr><th class=\\\"operation\\\">Update</th><td class=\\\"method\\\">PUT or POST</td><td class=\\\"path\\\">\"\n"
+                  },
+                  "endLine": 229,
+                  "startLine": 228
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.print(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.writeUsage(PrintWriter, HttpServletRequest, Class[], Class) \nAt ApiDocsServlet.java:[line 236] \nSink method java/io/PrintWriter.print(Ljava/lang/String;)V \nSink parameter 0 \nTainted source javax/servlet/http/HttpServletRequest.getServletPath()Ljava/lang/String; \nAt ApiDocsServlet.java:[line 238]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        writer.print(\n"
+                  },
+                  "startLine": 236
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n        writer.print(\n"
+                  },
+                  "endLine": 236,
+                  "startLine": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.print(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.writeUsage(PrintWriter, HttpServletRequest, Class[], Class) \nAt ApiDocsServlet.java:[line 244] \nSink method java/io/PrintWriter.print(Ljava/lang/String;)V \nSink parameter 0 \nTainted source javax/servlet/http/HttpServletRequest.getServletPath()Ljava/lang/String; \nAt ApiDocsServlet.java:[line 245]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        writer.print(\"<tr><th class=\\\"operation\\\">Delete</th><td class=\\\"method\\\">DELETE</td><td class=\\\"path\\\">\"\n"
+                  },
+                  "startLine": 244
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n        writer.print(\"<tr><th class=\\\"operation\\\">Delete</th><td class=\\\"method\\\">DELETE</td><td class=\\\"path\\\">\"\n"
+                  },
+                  "endLine": 244,
+                  "startLine": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.println(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.doGet(HttpServletRequest, HttpServletResponse, ConfiguredObject) \nAt ApiDocsServlet.java:[line 140] \nSink method java/io/PrintWriter.println(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/model/ManagedObject.description()Ljava/lang/String; \nAt ApiDocsServlet.java:[line 141]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                writer.println(\"<td class=\\\"description\\\">\"+\n"
+                  },
+                  "startLine": 140
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                writer.println(\"<td class=\\\"path\\\">\" + path + \"</td>\");\n                writer.println(\"<td class=\\\"description\\\">\"+\n"
+                  },
+                  "endLine": 140,
+                  "startLine": 139
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.println(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.writeAttributes(PrintWriter, Class, Model, List) \nAt ApiDocsServlet.java:[line 308] \nSink method java/io/PrintWriter.println(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/model/ManagedObject.type()Ljava/lang/String; \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.getTypeName(Ljava/lang/Class;Lorg/apache/qpid/server/model/Model;)Ljava/lang/String; \nAt ApiDocsServlet.java:[line 303] \nAt ApiDocsServlet.java:[line 308]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                writer.println(\"<h2><span class=\\\"type\\\">\"+typeName+\"</span> Specific Attributes</h2>\");\n"
+                  },
+                  "startLine": 308
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            {\n                writer.println(\"<h2><span class=\\\"type\\\">\"+typeName+\"</span> Specific Attributes</h2>\");\n"
+                  },
+                  "endLine": 308,
+                  "startLine": 307
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.println(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.writeAttributesTable(PrintWriter, Collection) \nAt ApiDocsServlet.java:[line 345] \nSink method java/io/PrintWriter.println(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/model/ConfiguredObjectAttribute.getDescription()Ljava/lang/String; \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.renderType(Ljava/lang/Class;Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String; parameter 0 \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.renderType(Ljava/lang/Class;Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String; parameter 1 \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.renderType(Lorg/apache/qpid/server/model/ConfiguredObjectAttributeOrStatistic;)Ljava/lang/String; \nUnknown source java/util/EnumSet.allOf(Ljava/lang/Class;)Ljava/util/EnumSet; \nUnknown source org/apache/qpid/server/model/ConfiguredObjectAttribute.getName()Ljava/lang/String; \nUnknown source org/apache/qpid/server/model/ConfiguredSettableAttribute.validValuePattern()Ljava/lang/String; \nUnknown source org/apache/qpid/server/model/ConfiguredSettableAttribute.validValues()Ljava/util/Collection; \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.renderType(Ljava/lang/Class;Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String; \nAt ApiDocsServlet.java:[line 346] \nAt ApiDocsServlet.java:[line 348] \nAt ApiDocsServlet.java:[line 352] \nAt ApiDocsServlet.java:[line 517] \nAt ApiDocsServlet.java:[line 530] \nAt ApiDocsServlet.java:[line 548] \nAt ApiDocsServlet.java:[line 552] \nAt ApiDocsServlet.java:[line 557] \nAt ApiDocsServlet.java:[line 561] \nAt ApiDocsServlet.java:[line 565] \nAt ApiDocsServlet.java:[line 570] \nAt ApiDocsServlet.java:[line 575] \nAt ApiDocsServlet.java:[line 579] \nAt ApiDocsServlet.java:[line 583] \nAt ApiDocsServlet.java:[line 585]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            writer.println(\"<tr><td class=\\\"name\\\">\"\n"
+                  },
+                  "startLine": 345
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            }\n            writer.println(\"<tr><td class=\\\"name\\\">\"\n"
+                  },
+                  "endLine": 345,
+                  "startLine": 344
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.println(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.writeCategoryDescription(PrintWriter, Class) \nAt ApiDocsServlet.java:[line 205] \nSink method java/io/PrintWriter.println(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/model/ManagedObject.description()Ljava/lang/String;."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        writer.println(configuredClass.getAnnotation(ManagedObject.class).description());\n"
+                  },
+                  "startLine": 205
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        writer.println(\"<h1>\"+configuredClass.getSimpleName()+\"</h1>\");\n        writer.println(configuredClass.getAnnotation(ManagedObject.class).description());\n"
+                  },
+                  "endLine": 205,
+                  "startLine": 204
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.println(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.writeContext(PrintWriter, Class, Model, List) \nAt ApiDocsServlet.java:[line 613] \nSink method java/io/PrintWriter.println(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/model/ManagedObject.type()Ljava/lang/String; \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.getTypeName(Ljava/lang/Class;Lorg/apache/qpid/server/model/Model;)Ljava/lang/String; \nAt ApiDocsServlet.java:[line 608] \nAt ApiDocsServlet.java:[line 613]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                writer.println(\"<h2><span class=\\\"type\\\">\"+typeName+\"</span> Specific Context Variables</h2>\");\n"
+                  },
+                  "startLine": 613
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            {\n                writer.println(\"<h2><span class=\\\"type\\\">\"+typeName+\"</span> Specific Context Variables</h2>\");\n"
+                  },
+                  "endLine": 613,
+                  "startLine": 612
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.println(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.writeContextDefaults(PrintWriter, Collection) \nAt ApiDocsServlet.java:[line 632] \nSink method java/io/PrintWriter.println(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/model/ManagedContextDefault.description()Ljava/lang/String; \nUnknown source org/apache/qpid/server/model/ManagedContextDefault.name()Ljava/lang/String; \nAt ApiDocsServlet.java:[line 633] \nAt ApiDocsServlet.java:[line 635]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            writer.println(\"<tr><td class=\\\"name\\\">\"\n"
+                  },
+                  "startLine": 632
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n            writer.println(\"<tr><td class=\\\"name\\\">\"\n"
+                  },
+                  "endLine": 632,
+                  "startLine": 631
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.println(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.writeOperations(PrintWriter, Class, Model, List) \nAt ApiDocsServlet.java:[line 429] \nSink method java/io/PrintWriter.println(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/model/ManagedObject.type()Ljava/lang/String; \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.getTypeName(Ljava/lang/Class;Lorg/apache/qpid/server/model/Model;)Ljava/lang/String; \nAt ApiDocsServlet.java:[line 423] \nAt ApiDocsServlet.java:[line 429]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                writer.println(\"<h2><span class=\\\"type\\\">\"+typeName+\"</span> Specific Operations</h2>\");\n"
+                  },
+                  "startLine": 429
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            {\n                writer.println(\"<h2><span class=\\\"type\\\">\"+typeName+\"</span> Specific Operations</h2>\");\n"
+                  },
+                  "endLine": 429,
+                  "startLine": 428
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.println(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.writeOperationsTables(PrintWriter, Collection) \nAt ApiDocsServlet.java:[line 447] \nSink method java/io/PrintWriter.println(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/model/ConfiguredObjectOperation.getGenericReturnType()Ljava/lang/reflect/Type; \nUnknown source java/lang/Object.toString()Ljava/lang/String; \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.renderType(Lorg/apache/qpid/server/model/ConfiguredObjectOperation;)Ljava/lang/String; \nUnknown source org/apache/qpid/server/model/ConfiguredObjectOperation.getDescription()Ljava/lang/String; \nUnknown source org/apache/qpid/server/model/ConfiguredObjectOperation.getName()Ljava/lang/String; \nAt ApiDocsServlet.java:[line 448] \nAt ApiDocsServlet.java:[line 450] \nAt ApiDocsServlet.java:[line 452] \nAt ApiDocsServlet.java:[line 593]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            writer.println(\"<tr><td class=\\\"name\\\">\"\n"
+                  },
+                  "startLine": 447
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n            writer.println(\"<tr><td class=\\\"name\\\">\"\n"
+                  },
+                  "endLine": 447,
+                  "startLine": 446
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.println(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.writeOperationsTables(PrintWriter, Collection) \nAt ApiDocsServlet.java:[line 456] \nSink method java/io/PrintWriter.println(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/model/OperationParameter.getDefaultValue()Ljava/lang/String; \nUnknown source org/apache/qpid/server/model/OperationParameter.getValidValues()Ljava/util/List; \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.renderType(Ljava/lang/Class;Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String; parameter 0 \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.renderType(Ljava/lang/Class;Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String; parameter 1 \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.renderType(Lorg/apache/qpid/server/model/OperationParameter;)Ljava/lang/String; \nUnknown source java/util/EnumSet.allOf(Ljava/lang/Class;)Ljava/util/EnumSet; \nUnknown source org/apache/qpid/server/model/OperationParameter.getDescription()Ljava/lang/String; \nUnknown source org/apache/qpid/server/model/OperationParameter.getName()Ljava/lang/String; \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.renderType(Ljava/lang/Class;Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String; \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.renderParameters(Ljava/util/List;)Ljava/lang/String; \nAt ApiDocsServlet.java:[line 457] \nAt ApiDocsServlet.java:[line 479] \nAt ApiDocsServlet.java:[line 480] \nAt ApiDocsServlet.java:[line 482] \nAt ApiDocsServlet.java:[line 484] \nAt ApiDocsServlet.java:[line 486] \nAt ApiDocsServlet.java:[line 488] \nAt ApiDocsServlet.java:[line 492] \nAt ApiDocsServlet.java:[line 493] \nAt ApiDocsServlet.java:[line 495] \nAt ApiDocsServlet.java:[line 524] \nAt ApiDocsServlet.java:[line 530] \nAt ApiDocsServlet.java:[line 548] \nAt ApiDocsServlet.java:[line 552] \nAt ApiDocsServlet.java:[line 557] \nAt ApiDocsServlet.java:[line 561] \nAt ApiDocsServlet.java:[line 565] \nAt ApiDocsServlet.java:[line 570] \nAt ApiDocsServlet.java:[line 575] \nAt ApiDocsServlet.java:[line 579] \nAt ApiDocsServlet.java:[line 583] \nAt ApiDocsServlet.java:[line 585]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                writer.println(\"<tr><td class=\\\"allparameters\\\" colspan=\\\"3\\\">\"\n"
+                  },
+                  "startLine": 456
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            {\n                writer.println(\"<tr><td class=\\\"allparameters\\\" colspan=\\\"3\\\">\"\n"
+                  },
+                  "endLine": 456,
+                  "startLine": 455
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.println(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.writeStatistics(PrintWriter, Class, Model, List) \nAt ApiDocsServlet.java:[line 376] \nSink method java/io/PrintWriter.println(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/model/ManagedObject.type()Ljava/lang/String; \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.getTypeName(Ljava/lang/Class;Lorg/apache/qpid/server/model/Model;)Ljava/lang/String; \nAt ApiDocsServlet.java:[line 371] \nAt ApiDocsServlet.java:[line 376]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                writer.println(\"<h2><span class=\\\"type\\\">\"+typeName+\"</span> Specific Statistics</h2>\");\n"
+                  },
+                  "startLine": 376
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            {\n                writer.println(\"<h2><span class=\\\"type\\\">\"+typeName+\"</span> Specific Statistics</h2>\");\n"
+                  },
+                  "endLine": 376,
+                  "startLine": 375
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.println(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.writeStatisticsTable(PrintWriter, Collection) \nAt ApiDocsServlet.java:[line 393] \nSink method java/io/PrintWriter.println(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/model/ConfiguredObjectStatistic.getDescription()Ljava/lang/String; \nUnknown source org/apache/qpid/server/model/ConfiguredObjectStatistic.getName()Ljava/lang/String; \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.renderType(Ljava/lang/Class;Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String; parameter 0 \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.renderType(Ljava/lang/Class;Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String; parameter 1 \nUnknown source org/apache/qpid/server/model/ConfiguredObjectStatistic.getUnits()Lorg/apache/qpid/server/model/StatisticUnit; \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.renderType(Lorg/apache/qpid/server/model/ConfiguredObjectAttributeOrStatistic;)Ljava/lang/String; \nUnknown source java/util/EnumSet.allOf(Ljava/lang/Class;)Ljava/util/EnumSet; \nUnknown source org/apache/qpid/server/model/ConfiguredSettableAttribute.validValuePattern()Ljava/lang/String; \nUnknown source org/apache/qpid/server/model/ConfiguredSettableAttribute.validValues()Ljava/util/Collection; \nUnknown source org/apache/qpid/server/model/ConfiguredObjectStatistic.getStatisticType()Lorg/apache/qpid/server/model/StatisticType; \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.renderType(Ljava/lang/Class;Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String; \nAt ApiDocsServlet.java:[line 394] \nAt ApiDocsServlet.java:[line 396] \nAt ApiDocsServlet.java:[line 398] \nAt ApiDocsServlet.java:[line 400] \nAt ApiDocsServlet.java:[line 402] \nAt ApiDocsServlet.java:[line 517] \nAt ApiDocsServlet.java:[line 530] \nAt ApiDocsServlet.java:[line 548] \nAt ApiDocsServlet.java:[line 552] \nAt ApiDocsServlet.java:[line 557] \nAt ApiDocsServlet.java:[line 561] \nAt ApiDocsServlet.java:[line 565] \nAt ApiDocsServlet.java:[line 570] \nAt ApiDocsServlet.java:[line 575] \nAt ApiDocsServlet.java:[line 579] \nAt ApiDocsServlet.java:[line 583] \nAt ApiDocsServlet.java:[line 585]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            writer.println(\"<tr><td class=\\\"name\\\">\"\n"
+                  },
+                  "startLine": 393
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        {\n            writer.println(\"<tr><td class=\\\"name\\\">\"\n"
+                  },
+                  "endLine": 393,
+                  "startLine": 392
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.print(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.writeTypes(PrintWriter, Model, List) \nAt ApiDocsServlet.java:[line 273] \nSink method java/io/PrintWriter.print(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/model/ManagedObject.type()Ljava/lang/String; \nUnknown source org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.getTypeName(Ljava/lang/Class;Lorg/apache/qpid/server/model/Model;)Ljava/lang/String; \nAt ApiDocsServlet.java:[line 273]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                writer.print(getTypeName(type, model));\n"
+                  },
+                  "startLine": 273
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                writer.print(\"<tr><td class=\\\"type\\\">\");\n                writer.print(getTypeName(type, model));\n"
+                  },
+                  "endLine": 273,
+                  "startLine": 272
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.print(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt ApiDocsServlet.java:[lines 48-662] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.ApiDocsServlet.writeTypes(PrintWriter, Model, List) \nAt ApiDocsServlet.java:[line 275] \nSink method java/io/PrintWriter.print(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/model/ManagedObject.description()Ljava/lang/String;."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                writer.print(type.getAnnotation(ManagedObject.class).description());\n"
+                  },
+                  "startLine": 275
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                writer.print(\"</td><td class=\\\"description\\\">\");\n                writer.print(type.getAnnotation(ManagedObject.class).description());\n"
+                  },
+                  "endLine": 275,
+                  "startLine": 274
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of java/io/PrintWriter.write(Ljava/lang/String;)V could be vulnerable to XSS in the Servlet \nAt QueueReportServlet.java:[lines 37-125] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.QueueReportServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.QueueReportServlet.doGet(HttpServletRequest, HttpServletResponse, ConfiguredObject) \nAt QueueReportServlet.java:[line 79] \nSink method java/io/PrintWriter.write(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/server/management/plugin/report/ReportRunner.runReport(Lorg/apache/qpid/server/model/Queue;)Ljava/lang/Object; \nUnknown source org/apache/qpid/server/management/plugin/report/QueueReport.getReport()Ljava/lang/Object; \nAt QueueReportServlet.java:[line 71]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                response.getWriter().write((String)output);\n"
+                  },
+                  "startLine": 79
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/QueueReportServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            {\n                response.getWriter().write((String)output);\n"
+                  },
+                  "endLine": 79,
+                  "startLine": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "XSS_SERVLET",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of org/slf4j/Logger.debug(Ljava/lang/String;Ljava/lang/Object;)V might be used to include CRLF characters into log messages \nAt SaslServlet.java:[lines 62-303] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.SaslServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.SaslServlet.doPost(HttpServletRequest, HttpServletResponse, ConfiguredObject) \nAt SaslServlet.java:[line 145] \nSink method org/slf4j/Logger.debug(Ljava/lang/String;Ljava/lang/Object;)V \nSink parameter 0 \nTainted source javax/servlet/http/HttpServletRequest.getParameter(Ljava/lang/String;)Ljava/lang/String; \nAt SaslServlet.java:[line 134] \nAt SaslServlet.java:[line 143]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                    LOGGER.debug(\"Creating SaslServer for mechanism: {}\", mechanism);\n"
+                  },
+                  "startLine": 145
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/SaslServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                {\n                    LOGGER.debug(\"Creating SaslServer for mechanism: {}\", mechanism);\n"
+                  },
+                  "endLine": 145,
+                  "startLine": 144
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CRLF_INJECTION_LOGS",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This random generator (java.util.Random) is predictable \nAt SaslServlet.java:[lines 62-303] \nIn class org.apache.qpid.server.management.plugin.servlet.rest.SaslServlet \nIn method org.apache.qpid.server.management.plugin.servlet.rest.SaslServlet.getRandom(HttpServletRequest) \nAt SaslServlet.java:[line 116] \nValue java.util.Random."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                rand = new Random(SECURE_RANDOM.nextLong());\n"
+                  },
+                  "startLine": 116
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant23/broker-plugins/management-http/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/SaslServlet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            {\n                rand = new Random(SECURE_RANDOM.nextLong());\n"
+                  },
+                  "endLine": 116,
+                  "startLine": 115
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PREDICTABLE_RANDOM",
+          "ruleIndex": 5
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "4657cddf-adc9-4498-9187-8389d2663ca0"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "",
+          "repositoryUri": "",
+          "revisionId": ""
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "4657cddf-adc9-4498-9187-8389d2663ca0",
+      "runGuid": "7e4897eb-9414-42b3-9062-2feed3ff89d7"
+    }
+  ]
+}

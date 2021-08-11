@@ -1,0 +1,84 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Java Source Analyzer",
+          "version": "1.0.0-scan",
+          "fullName": "Java Source Analyzer"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "pmd",
+            "-no-cache",
+            "--failOnViolation",
+            "false",
+            "-language",
+            "java",
+            "-d",
+            "/media/data/muse2/muse2repo_qpid_originals/management-http",
+            "-r",
+            "/media/data/muse2/muse2repo_qpid_originals/management-http/reports/source-java-report.csv",
+            "-f",
+            "csv",
+            "-R",
+            "/tmp/.mount_scan0scjtp/usr/src/tools_config/rules-pmd.xml"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "pmd -no-cache --failOnViolation false -language java -d /media/data/muse2/muse2repo_qpid_originals/management-http -r /media/data/muse2/muse2repo_qpid_originals/management-http/reports/source-java-report.csv -f csv -R /tmp/.mount_scan0scjtp/usr/src/tools_config/rules-pmd.xml",
+          "endTimeUtc": "2020-11-23T16:36:38Z",
+          "workingDirectory": {
+            "uri": "file:///media/data/muse2/muse2repo_qpid_originals/management-http"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2020-11-23T16:36:38Z",
+          "workingDirectory": {
+            "uri": "file:///media/data/muse2/muse2repo_qpid_originals/management-http"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "f71ff708-3d2c-47ea-8cde-89fb046a6e23"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "",
+          "repositoryUri": "",
+          "revisionId": ""
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "f71ff708-3d2c-47ea-8cde-89fb046a6e23",
+      "runGuid": "431630e9-917b-4baf-9063-e18ff2a84e87"
+    }
+  ]
+}

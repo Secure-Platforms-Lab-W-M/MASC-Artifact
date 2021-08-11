@@ -1,0 +1,53 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Qpid Broker-J Core 8.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ qpid-broker-core ---
+[INFO] Executing: /bin/sh -c cd '/media/data/muse2/muse2repo_qpid_reachability/broker-core' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /media/data/muse2/muse2repo_qpid_reachability/broker-core
+[INFO] Storing buildNumber: fac9510ccb672ba2c9fad44bca9d36f812863794 at timestamp: 1606492689944
+[INFO] Storing buildScmBranch: qpid_reachability
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.8:run (output-test-properties) @ qpid-broker-core ---
+[INFO] Executing tasks
+
+main:
+     [echo] Qpid Test Profile Properties
+     [echo] [profile] java-mms.1-0
+     [echo] [profile.broker.version] 1.0
+     [echo] [profile.virtualhostnode.type] Memory
+     [echo] [profile.virtualhostnode.context.blueprint] {"type":"ProvidedStore","globalAddressDomains":"${qpid.globalAddressDomains}"}
+     [echo] [profile.test_receive_timeout] 1000
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ qpid-broker-core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-minimum-versions) @ qpid-broker-core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-versions-standard-properties) @ qpid-broker-core ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-enableAmqp0x) @ qpid-broker-core ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.5:prepare-agent (default-prepare-agent) @ qpid-broker-core ---
+[INFO] argLine set to -javaagent:/home/nacoop/.m2/repository/org/jacoco/org.jacoco.agent/0.8.5/org.jacoco.agent-0.8.5-runtime.jar=destfile=/media/data/muse2/muse2repo_qpid_reachability/broker-core/target/jacoco.exec -Xmx512m
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ qpid-broker-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ qpid-broker-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] Copying 18 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ qpid-broker-core ---
+[INFO] Compiling 3 source files to /media/data/muse2/muse2repo_qpid_reachability/broker-core/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.029 s
+[INFO] Finished at: 2020-11-27T10:58:13-05:00
+[INFO] Final Memory: 38M/814M
+[INFO] ------------------------------------------------------------------------

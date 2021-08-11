@@ -1,0 +1,4 @@
+﻿Type,Impact,Owner,Category,File,Function,Count
+Android application debug mode enabled,Low,Unassigned,Low impact security,/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant27/aTalk/build/intermediates/packaged_manifests/playstoreDebug/AndroidManifest.xml,,2
+Android application debug mode enabled,Low,Unassigned,Low impact security,/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant27/aTalk/build/intermediates/packaged_manifests/fdroidDebug/AndroidManifest.xml,,2
+Android application debug mode enabled,Low,Unassigned,Low impact security,/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant27/aTalk/build/intermediates/merged_manifest/playstoreDebug/out/AndroidManifest.xml,,2

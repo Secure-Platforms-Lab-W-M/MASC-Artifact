@@ -1,0 +1,15 @@
+[2020-12-02 13:19:03] This is codeql database analyze codeql-db/ /media/data/nacoop/codeql-home/codeql-repo/java/ql/src/codeql-suites/java-code-scanning.qls --format=sarifv2.1.0 --output=non-shiftleft-reports/codeql-suite-code-scanning-results.sarif --threads 0
+[2020-12-02 13:19:03] Log file was started late.
+[2020-12-02 13:19:03] [PROGRESS] database analyze> Running queries.
+[2020-12-02 13:19:03] Running plumbing command: codeql database run-queries --threads=0 --ml-model-path= --native-library-path= --warnings=show --no-rerun -- /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant1/codeql-db /media/data/nacoop/codeql-home/codeql-repo/java/ql/src/codeql-suites/java-code-scanning.qls
+[2020-12-02 13:19:03] Calling plumbing command: codeql resolve ram --format=json
+[2020-12-02 13:19:04] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx1024M",
+                        "--off-heap-ram=0"
+                      ]
+[2020-12-02 13:19:04] Spawning plumbing command: execute queries -J-Xmx1024M --off-heap-ram=0 --verbosity=progress --logdir=/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant1/codeql-db/log --threads=0 --ml-model-path=/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant1 --native-library-path=/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant1 --warnings=show --no-rerun --output=/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant1/codeql-db/results -- /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant1/codeql-db/db-java /media/data/nacoop/codeql-home/codeql-repo/java/ql/src/codeql-suites/java-code-scanning.qls
+[2020-12-02 13:21:21] [ERROR] Spawned process exited abnormally (code 99; tried to run: [/media/data/nacoop/codeql-home/codeql/tools/linux64/java/bin/java, -Xmx1024M, -Djava.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib, -cp, /media/data/nacoop/codeql-home/codeql/tools/codeql.jar, com.semmle.cli2.CodeQL, execute, queries, -J-Xmx1024M, --off-heap-ram=0, --verbosity=progress, --logdir=/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant1/codeql-db/log, --threads=0, --ml-model-path=/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant1, --native-library-path=/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant1, --warnings=show, --no-rerun, --output=/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant1/codeql-db/results, --, /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant1/codeql-db/db-java, /media/data/nacoop/codeql-home/codeql-repo/java/ql/src/codeql-suites/java-code-scanning.qls])
+[2020-12-02 13:21:21] Plumbing command codeql execute queries terminated with status 99.
+[2020-12-02 13:21:21] Plumbing command codeql database run-queries completed with status 99.
+[2020-12-02 13:21:21] Exiting with code 99

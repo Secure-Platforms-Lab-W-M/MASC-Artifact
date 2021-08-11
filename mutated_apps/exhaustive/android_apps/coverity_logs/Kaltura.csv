@@ -1,0 +1,6 @@
+﻿Type,Impact,Category,File,Function,Count
+Unused value,Low,Code maintainability issues,/media/data/muse2/muse2repo_apk_mutation_reach_src/Kaltura/app/src/main/java/com/oF2pks/kalturadeviceinfos/Collector.java,Collector.tech2API,1
+Resource leak on an exceptional path,Low,Exceptional resource leaks,/media/data/muse2/muse2repo_apk_mutation_reach_src/Kaltura/app/src/main/java/com/oF2pks/kalturadeviceinfos/MainActivity.java,MainActivity$CollectorTask.onPostExecute,1
+Android application supports unsafe SDK versions,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/Kaltura/app/src/main/AndroidManifest.xml,,1
+Android application does not target the latest Android version,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/Kaltura/app/src/main/AndroidManifest.xml,,1
+Android application allows backups,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/Kaltura/app/src/main/AndroidManifest.xml,,1

@@ -1,0 +1,14 @@
+prefix=/home/cmeng/workspace/ndk/ffmpeg-x264/android/armeabi-v7a
+exec_prefix=${prefix}
+libdir=/home/cmeng/workspace/ndk/ffmpeg-x264/android/armeabi-v7a/lib
+includedir=/home/cmeng/workspace/ndk/ffmpeg-x264/android/armeabi-v7a/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 57.107.100
+Requires: libavutil >= 55.78.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -L/home/cmeng/workspace/ndk/ffmpeg-x264/android/armeabi-v7a/lib -lx264 -lm -lm -lz -pthread -pthread -lgcc -lstdc++
+Libs.private: 
+Cflags: -I${includedir}

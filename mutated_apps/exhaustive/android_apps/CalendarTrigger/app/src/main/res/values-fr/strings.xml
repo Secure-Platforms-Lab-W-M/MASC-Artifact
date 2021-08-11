@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Released under GPL V3 or later
+  -->
+
+<resources>
+    <string name="app_name">Calendar Trigger</string>
+    <string name="servicename">Calendar Trigger Serveur d\'arrière-plan</string>
+    <string name="typelog">journal</string>
+    <string name="typesettings">paramètres</string>
+    <string name="lognodir">Impossible de créer fichier %s</string>
+    <string name="lognodirdetail">existe comme simple fichier</string>
+    <string name="nocreatedetail">n\'existe pas at ne peut pas être créé
+    </string>
+    <string name="nowrite">Impossible d\'ouvrir %s file</string>
+    <string name="new_event_class">Nouvelle Classe d\'évènements</string>
+    <string name="create_it">Créer</string>
+    <string name="cancel_create">Annuler</string>
+    <string name="settings">Débogage</string>
+    <string name="lastcalldetail">Dernier appel à %s</string>
+    <string name="lastCallHelp">Ceci est l\'heure quand CalendarTrigger a été
+        invoqué le plus récemment, soit par l\'usager, soit par une alarme
+        provoqué par CalendarTrigger soi-même.</string>
+    <string name="lastalarmdetail">Dernière alarme à %s</string>
+    <string name="lastAlarmHelp">Ceci est l\'heure de l\'alarme le plus récent
+        installé par CalendarTrigger.</string>
+    <string name="laststatedetail">Dernière mode de la sonnerie %s</string>
+    <string name="lastStateHelp">Ceci est la dernière mode de la sonnerie
+        fixé par CalendarTrigger.</string>
+    <string name="userstatedetail">Usager mode de la sonnerie %s</string>
+    <string name="userStateHelp">Ceci est la dernière mode de la sonnerie
+        fixé par l\'usager avant d\'avoir été changée par CalendarTrigger.
+    </string>
+    <string name="currentstatedetail">Actuelle mode de la sonnerie %s</string>
+    <string name="currentStateHelp">Ceci est la actuelle mode de la sonnerie
+        fixé par n\'importe qui.</string>
+    <string name="yeslocation">CalendarTrigger surveillant location</string>
+    <string name="nolocation">CalendarTrigger non surveillant location</string>
+    <string name="LocationStateHelp">Montrer si CalendarTrigger est en train
+        d\'utiliser les services de location.</string>
+    <string name="yeswakelock">CalendarTrigger tient un verrouillage de
+        réveil.</string>
+    <string name="nowakelock">CalendarTrigger ne tient aucun verrouillage de
+        réveil.</string>
+    <string name="wakelockHelp">Montrer si CalendarTrigger tient un
+        verrouillage de réveil.</string>
+    <string name="Logging">Écrire journal sur fichier %s</string>
+    <string name="LoggingOn">Oui</string>
+    <string name="loggingOnHelp">Activer journal. Le répertoire et le fichier
+        pour le journal seront crées quand nécessaires s\'ils n\'existent pas.
+    </string>
+    <string name="cantLogHelp">Journal ne peut pas être activé parce que
+        CalendarTrigger n\'a pas la permission WRITE_EXTERNAL_STORAGE. Vous
+        pouvez activer cette permission en employant l\'outil \'Paramètres\'.
+    </string>string>
+    <string name="LoggingOff">Non</string>
+    <string name="loggingOffHelp">Désactiver journal. Le fichier journal s\'il
+		existe ne sera pas vidé.</string>
+    <string name="clearLog">Faire vider fichier journal</string>
+    <string name="clearLogHelp">Ce bouton détruit le fichier journal. Le
+        prochain écriture recréera le fichier, alors en effet ce bouton le
+        fait vider.
+    </string>
+    <string name="noclearLogHelp">Journal ne peut pas être vidé parce que
+    CalendarTrigger n\'a pas la permission WRITE_EXTERNAL_STORAGE. Vous
+    pouvez activer cette permission en employant l\'outil \'Paramètres\'.
+    </string>
+    <string name="logCleared">Fichier journal vidé</string>
+    <string name="showLog">Exposer fichier journal</string>
+    <string name="showLogHelp">Ce bouton expose le fichier journal dans une
+        fenêtre défilante: touchez le bouton de retour pour revoir l\'ecran
+        de debogage.</string>
+    <string name="noshowLogHelp">Journal ne peut pas être exposé parce que
+    CalendarTrigger n\'a pas la permission READ_EXTERNAL_STORAGE. Vous
+    pouvez activer cette permission en employant l\'outil \'Paramètres\'.
+    </string>
+    <string name="nologfile">Fichier journal n\'existe pas (l\'avez-vous vidé?)
+        </string>
+    <string name="logcyclinglabel">Activer recyclage du fichier journal</string>
+    <string name="logcyclinghelp">Si coché, CalendarTrigger effacera chaque
+        jour toutes les entrées du fichier journal plus anciens que
+        vingt-quatre heures. Ce contact peut être utile pour laisser le journal
+        activé en évitant que le fichier devient trop grand.
+    </string>
+    <string name="logcyclingerror">Faute pendant recyclage du fichier journal
+    </string>
+    <string name="logcyclingnotallowed">Cette option n\'est pas permise parce
+        que CalendarTrigger n\'a pas les permissions READ_EXTERNAL_STORAGE et
+        WRITE_EXTERNAL_STORAGE Vous pouvez activer ces permissions en employant
+        l\'outil \'Paramètres\'.
+    </string>
+    <string name="reset">Réinitialiser</string>
+    <string name="resethelp">Ce bouton contraint tous les classes de devenir
+        inactives et termine tous les delais temporaires. Il faut le toucher si
+        Calendar Trigger devient bloqué ou vous avez supprimé un évènement
+        actif. Remarquer que si vous êtes entre le temps du début et le temps
+        de la fin d\'un évènement, tous les classes auxquels l\'évènement
+        appartient redeviendront immédiatement actives.</string>
+    <string name="nextLocationLabel">Activer prochaine position</string>
+    <string name="nextLocationHelp">Si coché, CalendarTrigger créera un
+        contact virtuel nommé $Next $Location dont l\'addresse est toujours
+        le lieu du prochain évènement dans votre calendrier dont le lieu
+        existe. Ce contact peut être utile si vous avez un système de navigation
+        par satellite qui peut naviguer vers l\'addresse d\'un contact tiré
+        de votre téléphone portable.
+    </string>
+    <string name="nextLocationNotAllowed">Cette option n\'est pas permise parce
+        que CalendarTrigger n\'a pas les permissions READ_CONTACTS et
+        WRITE_CONTACTS. Vous pouvez activer ces permissions en employant
+        l\'outil \'Paramètres\'.
+        </string>
+    <string name="savesettings">Save Settings</string>
+    <string name="loadsettings">Load Settings</string>
+    <string name="settingsfail">Exception en ouvrant fichier de paramètres
+    </string>
+    <string name="saveSettingsHelp">Ce bouton écrit les paramètres de
+        CalendarTrigger dans un fichier.
+    </string>
+    <string name="noSaveSettingsHelp">CalendarTrigger ne peut pas écrire ses
+        paramètres parce que CalendarTrigger n\'a pas la permission
+        WRITE_EXTERNAL_STORAGE. Vous pouvez activer cette permission en
+        employant l\'outil \'Paramètres\'
+    </string>
+    <string name="loadSettingsHelp">Ce bouton détruit les paramètres de
+        CalendarTrigger el le replace avec les les paramètres lus du fichier.
+    </string>
+    <string name="noLoadSettingsHelp">CalendarTrigger ne peut pas lire ses
+        paramètres parce que CalendarTrigger n\'a pas la permission
+        READ_EXTERNAL_STORAGE. Vous pouvez activer cette permission en
+        employant l\'outil \'Paramètres\'
+    </string>
+    <string name="settingsfile">Fichier paramètres %s</string>
+    <string name="packageinfofail">Exception obtenant signature</string>
+    <string name="edit_event_class">Changer classe %s</string>
+    <string name="longpresslabel">Longue toucher ici pour un message
+        d\'assistance.</string>
+    <string name="editclassHelp">Ici vous pouvez définir les propriétés
+        de la classe %s ou la détruire. Quand vous avez fini, touchez \'fin\'.
+        Une longue touche d\'un bouton montrera un message d\'assistance.
+        </string>
+    <string name="deleteButtonLabel">Détruire classe %s (impossible d\'annuler)
+    </string>
+    <string name="deleteButtonHelp">Ce bouton détruit la classe at annule tous
+        les actions prévues pour cette classe. Destruction d\'une classe ne peut
+        pas être annulée. Les évènements eux-mêmes ne sont pas touchés.
+    </string>
+    <string name="defineButtonLabel">Conditions pour classe %s</string>
+    <string name="defineButtonHelp">Définir les conditions pour un évènement
+        d\'appartenir à la classe. Un évènement peut appartenir à plus q\'une
+        classe. En ce cas les actions seront déclenchées pour toutes les classes
+        auxquelles l\'évènement appartient.</string>
+    <string name="defineclasspopup">Définir quand un évènement calendrier
+        appartient à une classe %s. Tous les conditions doivent être réalisé
+        afin que l\'évènement appartient à la classe, mais pour chaque 
+        condition il y a une valeur par défaut qui est réalisé par tous
+        évènements. Quand vous avez fini, touchez \'fin\'. Une longue touche
+        d\'une commande montrera un message d\'assistance.</string>
+    <string name="defineclasslist">Un évènement appartient à classe %s
+        si:-</string>
+    <string name="ifanycalendar">l\'évènement appartient à quelconque
+        calendrier en dessous qui est coché</string>
+    <string name="allcalendars">Si aucun calendrier n\'est coché, l\'évènement
+        peu appartenir à la classe s\'il appartient à quelconque calendrier.
+        Ce n\'est pas la même chose que cocher tous le calendriers: si on
+        ajoute un nouveau calendrier plus tard, il ne sera pas coché jusqu\'à
+        ce que vous le cochez en changeant la classe.</string>
+    <string name="eventnamehelp">Choisir évènements dont le nom contient
+        certains caractères. Une chaîne de caractères vide correspond à tous
+        évènements.</string>
+    <string name="eventnamefirst">le nom de l\'évènement contient</string>
+    <string name="eventnamenotfirst">et le nom de l\'évènement contient</string>
+    <string name="locationhelp">Choisir évènements dont le lieu contient
+        certains caractères. Une chaîne de caractères vide correspond à tous
+        évènements.</string>
+    <string name="locationfirst">le lieu de l\'évènement contient</string>
+    <string name="locationnotfirst">et le lieu de l\'évènement contient</string>
+    <string name="descriptionlabel">et le description de l\'évènement
+        contient</string>
+    <string name="descriptionhelp">Choisir évènements dont le description
+        contient certains caractères. Une chaîne de caractères vide
+        correspond à tous évènements.</string>
+    <string name="busyhelp">Choisir évènements qui sont occupés, libres, ou
+        n\'importe lequel.</string>
+    <string name="busylabel">et l\'évènement est</string>
+    <string name="onlybusy">occupé</string>
+    <string name="onlynotbusy">libre</string>
+    <string name="busyandnot">n\'importe</string>
+    <string name="recurrenthelp">Choisir évènements qui sont récurrentes, non
+        récurrentes, ou n\'importe lequel.</string>
+    <string name="recurrentlabel">et l\'évènement est:</string>
+    <string name="onlyrecurrent">récurrente</string>
+    <string name="onlynotrecurrent">non récurrente</string>
+    <string name="recurrentandnot">n\'importe</string>
+    <string name="organiserhelp">Choisir évènements qui sont organisés par vous,
+        par autres (ou sans organisateur), ou n\'importe lequel.</string>
+    <string name="organiserlabel">et l\'organisateur de l\'évènement:
+    </string>
+    <string name="onlyorganiser">est vous</string>
+    <string name="onlynotorganiser">n\'est pas vous</string>
+    <string name="organiserandnot">n\'importe</string>
+    <string name="privatehelp">Choisir évènements qui sont privés, publiciques,
+        ou n\'importe lequel.</string>
+    <string name="privatelabel">et l\'évènement est:</string>
+    <string name="onlyprivate">privé</string>
+    <string name="onlynotprivate">publicique</string>
+    <string name="privateandnot">n\'importe</string>
+    <string name="attendeeshelp">Choisir évènements qui ont participants, ou
+        n\'ont pas participants, ou n\'importe lequel.</string>
+    <string name="attendeeslabel">et l\'évènement:</string>
+    <string name="onlyattendees">a participants</string>
+    <string name="onlynoattendees">n\'a pas participants</string>
+    <string name="attendeesandnot">n\'importe</string>
+    <string name="defineStartLabel">Définition début d\'un évènement de la
+        classe %s</string>
+    <string name="defineStartHelp">Définir conditions requises pour déclencher
+        les actions à ou en avant du début d\'un évènement de la classe.
+    </string>
+    <string name="definestartpopup">Ici vous pouvez définir les conditions
+        requises pour déclencher les actions du début d\'un évènement de la
+        classe %s. Ceci peut être un certain nombre de minutes (défaut zéro) en
+        avant du début, soit retardé jusqu\'à ce que l\'appareil arrive à un
+        état spécifié. Quand vous avez fini, touchez \'fin\'. Une longue touche
+        d\'un bouton montrera un message d\'assistance.</string>
+    <string name="definestartlist">Déclencher les actions du début d\'un
+        évènement de la classe %s:-</string>
+    <string name="startminuteslabel">minutes avant début de l\'évènement
+    </string>
+    <string name="startminuteshelp">Ceci précise le nombre de minutes
+        (zéro permis) en avant du début d\'un évènement quand CalendarTrigger
+        commencera de considérer déclenchant les actions du début de
+        l\'évènement. Il est possible d\'avoir un delai au conséquent des autres
+        conditions ci-dessous.</string>
+    <string name="startnotuntillabel">mais pas jusqu\'à ce que:-</string>
+    <string name="startnotuntilhelp">Retarder les actions du commencement de l\'évènement jusqu\'à ce que l\'appareil se trouve dans un certain état.</string>
+    <string name="devicepositionlabel">L\'écran est:-</string>
+    <string name="devicepositionhelp">Ici vous pouvez retarder les actions
+        jusqu\'a ce que l\'appareil soit orienté comme spécifié.</string>
+    <string name="devicefaceuplabel">vers le haut</string>
+    <string name="devicefaceuphelp">L\'appareil se trouve sur une surface
+        horizontale avec l\'écran en haut.</string>
+    <string name="devicefacedownlabel">vers le bas</string>
+    <string name="devicefacedownhelp">L\'appareil se trouve sur une surface
+        horizontale avec l\'écran en bas.</string>
+    <string name="deviceanypositionlabel">orienté en tout autre direction</string>
+    <string name="deviceanypositionhelp">L\'appareil ne se trouve pas sur
+        une surface horizontale.</string>
+    <string name="deviceUSBlabel">et l\'appareil est branché sur l\'un de</string>
+    <string name="devicestartUSBhelp">Retarder les actions de la commencament
+        de l\'évènement jusqu\'à ce que l\'appareil se trouve branché sur une
+        certaine source de courant ou un périphérique USB ou rien.</string>
+    <string name="deviceendUSBhelp">Retarder les actions de la fin de
+        l\'évènement jusqu\'à ce que l\'appareil se trouve branché sur une
+        certaine source de courant ou un périphérique USB ou rien.</string>
+    <string name="wirelesschargerlabel">un chargeur sans fil</string>
+    <string name="wirelesschargerhelp">L\'appareil est branché sur un chargeur sans fil.</string>
+    <string name="fastchargerlabel">un chargeur rapide</string>
+    <string name="fastchargerhelp">L\'appareil est branché sur un chargeur rapide qui régle sa tension selon l\'état de la pile de l\'appareil.</string>
+    <string name="plainchargerlabel">un chargeur USB simple</string>
+    <string name="plainchargerhelp">L\'appareil est branché sur un chargeur normale ou un ordinateur qui peut fournir énergie et aussi peut-être une connexion de données.</string>
+    <string name="usbotglabel">un périphérique USB</string>
+    <string name="usbotghelp">L\'appareil est branché sur un périphérique USB comme une souris ou clé par un câble \'on-the-go\'.</string>
+    <string name="usbnothinglabel">rien</string>
+    <string name="usbnothinghelp">L\'appareil n\'est pas branché ni sur une chargeur ni sur un périphérique.</string>
+    <string name="actionStartLabel">Action au début d\'un évènement de la classe
+        %s</string>
+    <string name="actionStartHelp">Définir action(s) déclenchées à ou en
+        avant du début d\'un évènement de la classe.</string>
+    <string name="actionstartpopup">Ici vous pouvez définir les actions
+        déclenchées au début d\'un évènement de la classe %s. Une longue
+        touche d\'un bouton montrera un message d\'assistance.</string>
+    <string name="actionstartlist">Au début d\'un évènement de la classe %s:-
+    </string>
+    <string name="setRinger">Fixer mode de sonnerie au plus</string>
+    <string name="setRingerHelp">Ceci fixe la mode de la sonnerie pendant
+        l\'évènement. CalendarTrigger fixera la mode de la sonnerie
+        seulement \"moins\" que la mode précédente fixée par l\'usager ou par
+        un évènement chevauchant. Silencieux est moins que vibreur qui est moins
+        que normale.</string>
+    <string name="normal">normale</string>
+    <string name="normalhelp">mode normale dans lequel tous sons de notification
+        (téléphone compris) sont entendus: comme CalendarTrigger déclenche
+        seulement une mode \"moins\", ceci est la même chose que 
+		\"pas de changement\"</string>
+    <string name="vibrate">vibreur</string>
+    <string name="vibratehelp">l\'appareil vibrera au lieu d\'une sonnerie
+        téléphone</string>
+    <string name="priority">ne pas déranger</string>
+    <string name="priorityhelp">une mode laquelle peut être configuré par
+		l\'écran paramètres de l\'appareil</string>
+	<string name="priorityforbidden">Cette option n\'est pas permise parce que
+		CalendarTrigger n\'a pas la permission ACCESS_NOTIFICATION_POLICY pour
+        engager la mode \"ne pas déranger\".
+        Vous pouvez activer cette permission en employant l\'outil \'Paramètres\'.</string>
+    <string name="unsupported">La système opérateur de l\'appareil n\'offre
+        pas cette option.</string>
+    <string name="muted">en sourdine</string>
+    <string name="mutedhelp">la téléphone ne sonnera pas, mais autres sons
+		peuvent être entendus</string>
+    <string name="alarms">alarmes</string>
+    <string name="alarmshelp">seulement alarmes (definies par Android) seront
+       entendus</string>
+	<string name="alarmsforbidden">Cette option n\'est pas permise parce que
+		CalendarTrigger n\'a pas la permission ACCESS_NOTIFICATION_POLICY pour engager la mode \"seulement alarmes\". Vous pouvez activer cette permission en employant l\'outil \'Paramètres\'.</string>
+    <string name="silent">silencieux</string>
+    <string name="silenthelp">Aucun son ne sera entendu, ni alarme ni sonnerie
+		du téléphone.</string>
+	<string name="silentforbidden">Cette option n\'est pas permise parce que
+		CalendarTrigger n\'a pas la permission ACCESS_NOTIFICATION_POLICY pour engager la mode \"complètement silencieux\". Vous pouvez activer cette permission en employant l\'outil \'Paramètres\'.</string>
+    <string name="startNotifyHelp">Si coché, CalendarTrigger montrera une
+        notification au début d\'un évènement. La présentation d\'une
+        notification est déterminée par les paramètres notification fixés par
+        l\'usager.</string>
+    <string name="playsound">Jouer un son</string>
+    <string name="startPlaySoundHelp">Si coché, CalendarTrigger jouera un son
+        au début d\'un évènement. On peut choisir le son au moyen d\'un
+        navigateur de fichiers.</string>
+    <string name="endPlaySoundHelp">Si coché, CalendarTrigger jouera un son
+        a la fin d\'un évènement. On peut choisir le son au moyen d\'un
+        navigateur de fichiers. Si cette classe assourdit l\'audio, le son ne
+        ne sera pas entendu. Il faut utiliser une autre classe pour faire
+        jouer le son avant le commencement de l\'évènement. </string>
+    <string name="browsenofile">Navigation de fichiers</string>
+    <string name="browsenofileHelp">Choisir un fichier de son</string>
+    <string name="browsefileHelp">Choisir un autre fichier de son </string>
+    <string name="defineStopLabel">Définition fin d\'un évènement de la classe
+        %s</string>
+    <string name="defineStopHelp">Définir conditions requises pour déclencher
+        les actions à ou après la fin d\'un évènement de la classe.</string>
+    <string name="definestoppopup">Ici vous pouvez définir les conditions
+        requises pour déclencher les actions à la fin d\'un évènement de la
+        classe %s. Ceci peut être un certain nombre de minutes (défaut zéro)
+        après la fin, soit retardé jusqu\'à ce que l\'appareil bouge par une
+        distance spécifiée ou arrive à un état spécifié. Quand vous avez fini,
+        touchez \'fin\'. Une longue touche d\'un bouton montrera un message
+        d\'assistance.</string>
+    <string name="definestoplist">Déclencher les actions pour la fin d\'un
+        évènement de la classe %s:- </string>
+    <string name="stopminuteslabel">minutes après la fin de l\'évènement
+    </string>
+    <string name="stopminuteshelp">Ceci précise le nombre de minutes
+        (zéro permis) après la fin d\'un évènement quand CalendarTrigger
+        commencera de considérer déclenchant les actions de la fin de
+        l\'évènement. Il est possible d\'avoir un delai au conséquent des autres
+        conditions ci-dessous.</string>
+    <string name="stopnotuntillabel">mais pas jusqu\'à ce que:-</string>
+    <string name="stopnotuntilhelp">Définir conditions requises après la fin
+        de l\'évènement.</string>
+    <string name="stepcounteryes">Retarder les actions de la fin de
+        l\'évènement jusqu\'à ce que l\'usager qui tient l\'appareil a pris un
+        certain nombre de pas. Ceci peut être utilisé quand l\'évènement est
+        une rencontre et vous ne voulez pas restaurer la sonnerie jusqu\'à ce
+        que la rencontre est finie et vous avez quitté la salle.</string>
+    <string name="stepcounterno">Cette option est désactivée parce que
+        l\'appareil n\'a pas de compteur de pas.</string>
+    <string name="firststepslabel">L\'appareil a bougé par</string>
+    <string name="laststepslabel">pas.</string>
+    <string name="locationyes">Retarder les actions de la fin de
+        l\'évènement jusqu\'à ce que l\'appareil a bougé par un certain nombre
+        de mètres. Ceci peut être utilisé quand l\'évènement se déroule dans
+        un bâtiment et vous ne voulez pas restaurer la sonnerie jusqu\'à ce que
+        vouz avez quitté le bâtiment. La précision de position est plus ou
+        moins 100 mètres (mieux si le bâtiment est muni de Wi-Fi ou
+        l\'appareil est muni de GPS), donc il ne faut pas choisir un nombre
+        trop petit. Si le nombre est zéro, il n\'y a aucun contrôle de
+        position.</string>
+    <string name="locationno">Cette option est désactivée parce que
+        CalendarTrigger n\'a pas la permission ACCESS_FINE_LOCATION nécessaire
+        pour créer un Geofence. Vous pouvez activer cette permission en
+        employant l\'outil \'Paramètres\'.</string>
+    <string name="firstlocationlabel">L\'appareil a bougé par</string>
+    <string name="lastlocationlabel">mètres.</string>
+    <string name="actionStopLabel">Action à la fin d\'un évènement de la classe
+        %s</string>
+    <string name="actionStopHelp">Définir action(s) déclenchées à ou après la
+        fin d\'un évènement de la classe.</string>
+    <string name="actionstoppopup">Ici vous pouvez définir les actions
+        déclenchées à la fin d\'un évènement de la classe %s. Une longue
+        touche d\'un bouton montrera un message d\'assistance.</string>
+    <string name="actionstoplist">À la fin d\'un évènement de la classe %s:-
+    </string>
+    <string name="restaurer_etat_precedent">Restaurer la mode sonnerie
+        précédente</string>
+    <string name="restoreRingerHelp">Si coché, CalendarTrigger restaurera
+        la mode précédente de la sonnerie, à condition que l\'usager n\'a pas
+        changé la mode pendant l\'évènement et qu\'il n\'y a pas d\'autre
+        évènement chevauchant qui demande un mode sonnerie \'moins\'.</string>
+    <string name="endNotifyHelp">Si coché, CalendarTrigger montrera une
+        notification à la fin d\'un évènement. La présentation d\'une
+        notification est déterminée par les paramètres notification fixés par
+        l\'usager.</string>
+    <string name="eventNowLabel">Évènement instantané de classe %s</string>
+    <string name="eventNowHelp">Ce bouton crée un évènement temporaire de la
+        classe qui commence tout de suite et puis finit tout de suite. Ceci
+        peut être utile quand la classe contient un delai de mouvement après
+        la fin de l\'évènement, par example si vous entrez dans une chambre
+        \'silence\' et vous voulez bloquer votre sonnerie jusq\'a ce que vouz
+        êtes sorti(e).</string>
+    <string name="erreur_listing_agendas">Erreur de listing de vos agendas;
+        Google Calendar est-il installé ?</string>
+    <string name="chargement">Chargement&#8230;</string>
+    <string name="synchronise">Synchronisé</string>
+    <string name="non_synchronise">Non synchronisé</string>
+    <string name="rafraichir_calendriers">Rafraîchir les calendriers</string>
+    <string name="rafraichir_calendriers_short">Rafraîchir calendriers</string>
+    <string name="afficher_notification">Afficher une notification</string>
+	<string name="mode_sonnerie_change">Mode d\'audio changé à\ </string>
+    <string name="name">nom</string>
+    <string name="settingTo">Mode de sonnerie</string>
+    <string name="ringerModeNone">non changée</string>
+    <string name="ringerModeNormal">normale</string>
+    <string name="ringerModeVibrate">vibreur</string>
+    <string name="ringerModeNoDisturb">pas-déranger</string>
+    <string name="ringerModeMuted">silencieux</string>
+    <string name="ringerModeAlarms">seulement alarmes</string>
+    <string name="ringerModeSilent">totalement silencieux</string>
+    <string name="invalidmode">[erreur - non valide]</string>
+    <string name="eventstart">pour début de l\'évènement</string>
+    <string name="ofclass">de classe</string>
+    <string name="eventend">fin de l\'évènement</string>
+	<string name="permissionfail">Pas de permission ACCESS_NOTIFICATION_POLICY
+		</string>
+	<string name="permissionfailbig">CalendarTrigger n\'a plus la permission
+		ACCESS_NOTIFICATION_POLICY. Cette permission est nécessaire pour 
+        engager la mode \"ne pas déranger\".</string>
+	<string name="readphonefail">Pas de permission READ_PHONE_STATE
+		</string>
+	<string name="readphonefailbig">CalendarTrigger n\'a plus la permission
+		READ_PHONE_STATE. Cette permission est nécessaire pour éviter de mettre
+		le téléphone en sourdine quand vous êtes au milieu d\'un appel.
+        </string>
+</resources>

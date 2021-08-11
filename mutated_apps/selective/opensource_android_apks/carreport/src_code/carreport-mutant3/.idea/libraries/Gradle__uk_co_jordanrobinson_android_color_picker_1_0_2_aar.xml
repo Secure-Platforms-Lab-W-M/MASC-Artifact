@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: uk.co.jordanrobinson:android-color-picker:1.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-color-picker-1.0.2.aar/093d241a421206993149624635cde566/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-color-picker-1.0.2.aar/093d241a421206993149624635cde566/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/uk.co.jordanrobinson/android-color-picker/1.0.2/61efce7e5dcfbf5c4be0c6b4862e6f6e7c28b784/android-color-picker-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

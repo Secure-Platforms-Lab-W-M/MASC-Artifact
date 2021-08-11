@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff8ab000</color>
+    <color name="TextColorPrimary">#ff0d47a1</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff9702</color>
+    <color name="light_font">#FBFBFB</color>
+    <color name="grey_font">#ff9e9e9e</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="text_shadow_black">#ff000000</color>
+    <color name="fdroid_blue">#ff1976d2</color>
+    <color name="fdroid_blue_dark">#ff0d47a1</color>
+    <color name="fdroid_blue_darkest">#ff042570</color>
+    <color name="fdroid_green">#ff8ab000</color>
+    <color name="fdroid_night">#ff222222</color>
+    <color name="fdroid_night_dark">#ff111111</color>
+</resources>

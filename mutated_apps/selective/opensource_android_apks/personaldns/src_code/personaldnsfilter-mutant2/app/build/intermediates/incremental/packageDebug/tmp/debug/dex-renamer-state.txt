@@ -1,0 +1,4 @@
+#Thu Dec 03 04:27:29 EST 2020
+base.0=/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant2/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

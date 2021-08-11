@@ -1,0 +1,11 @@
+
+> Task :app:compileFossDebugJavaWithJavac
+Gradle may disable incremental compilation as the following annotation processors are not incremental: room-compiler-2.1.0-alpha02.jar (androidx.room:room-compiler:2.1.0-alpha02).
+Consider setting the experimental feature flag android.enableSeparateAnnotationProcessing=true in the gradle.properties file to run annotation processing in a separate task and make compilation incremental.
+
+> Task :app:compileFullDebugJavaWithJavac
+Gradle may disable incremental compilation as the following annotation processors are not incremental: room-compiler-2.1.0-alpha02.jar (androidx.room:room-compiler:2.1.0-alpha02).
+Consider setting the experimental feature flag android.enableSeparateAnnotationProcessing=true in the gradle.properties file to run annotation processing in a separate task and make compilation incremental.
+
+BUILD SUCCESSFUL in 30s
+51 actionable tasks: 50 executed, 1 up-to-date

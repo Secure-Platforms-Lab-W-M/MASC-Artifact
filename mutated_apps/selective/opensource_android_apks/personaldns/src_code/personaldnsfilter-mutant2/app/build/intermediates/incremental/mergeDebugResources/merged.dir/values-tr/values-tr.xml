@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="EnableAdfilter">Engellemeyi etkinleştir</string>
+    <string name="EnableAutoStart">Otomatik başlatma</string>
+    <string name="EnableConfigCheckBox">Gelişmiş ayarlar</string>
+    <string name="active">Etkin</string>
+    <string name="addFilter">"Filtre ekle"</string>
+    <string name="appWhitelistCheckBox">Uygulama beyaz listesi</string>
+    <string name="app_name">DNSfiltresi</string>
+    <string name="backupConfig">Yedek yapılandırması</string>
+    <string name="category">Kategori</string>
+    <string name="cfgBackupRestore">Yedekle ve geri yükle</string>
+    <string name="dnsCfgConfigDialogTitle">DNS sunucu yapılandırması</string>
+    <string name="dnsLabel">DNS:</string>
+    <string name="editAdditionalHostsCheckBox">Ek ana bilgisayarları yapılandır</string>
+    <string name="editFilterDialogTitle">Filtreyi düzenle</string>
+    <string name="editFilterLoadCheckBox">Filtre güncellemesini yapılandır</string>
+    <string name="filterReloadBtnLabel">Filtreyi tekrar yükle</string>
+    <string name="filterUpdateDays">Filtreleri gün cinsinden güncelleme aralığı:</string>
+    <string name="keepAwakeCheckBox">Cihazın uykuya geçmesini önle</string>
+    <string name="listenPortLabel">Kapı:</string>
+    <string name="manualDNSCheck">DNS sunucusu bulmayı devre dışı bırak - Aşağıdaki DNS sunucularını kullan:</string>
+    <string name="name">Adı</string>
+    <string name="proxyModeCheckBox">Yerel VPN\'siz DNS proxy modu</string>
+    <string name="removeFilter">"Filtreyi kaldır"</string>
+    <string name="restoreBackup">Yedeği geri yükle</string>
+    <string name="restoreDefault">Varsayılan yapılandırmayı geri yükle</string>
+    <string name="rootModeCheckBox">Yerel VPN\'siz Root modu</string>
+    <string name="shortText">Kısa metin</string>
+    <string name="startBtnLabel">Yeniden başlat</string>
+    <string name="stopBtnLabel">Kapat</string>
+</resources>

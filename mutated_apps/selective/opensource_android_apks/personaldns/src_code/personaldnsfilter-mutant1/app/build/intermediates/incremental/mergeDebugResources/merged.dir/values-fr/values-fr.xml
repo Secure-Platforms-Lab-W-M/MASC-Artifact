@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="EnableAdfilter">Activer le blocage</string>
+    <string name="EnableAutoStart">Démarrage auto</string>
+    <string name="EnableConfigCheckBox">Paramètres avancés</string>
+    <string name="active">Actif</string>
+    <string name="addFilter">"Ajouter un filtre"</string>
+    <string name="appWhitelistCheckBox">Liste blanche d\'applications</string>
+    <string name="app_name">DNSfilter</string>
+    <string name="backupConfig">Sauver la configuration</string>
+    <string name="category">Catégorie</string>
+    <string name="cfgBackupRestore">Sauvegarde et restauration</string>
+    <string name="dnsCfgConfigDialogTitle">Configuration du serveur DNS</string>
+    <string name="dnsLabel">DNS :</string>
+    <string name="editAdditionalHostsCheckBox">Configurer des hôtes supplémentaires</string>
+    <string name="editFilterDialogTitle">Editer le filtre</string>
+    <string name="editFilterLoadCheckBox">Configurer la mise à jour du filtre</string>
+    <string name="filterReloadBtnLabel">Actualiser le filtre</string>
+    <string name="filterUpdateDays">Intervalle de mise à jour du filtre, en jours :</string>
+    <string name="keepAwakeCheckBox">Empêcher la veille de l\'appareil</string>
+    <string name="listenPortLabel">Port :</string>
+    <string name="manualDNSCheck">Désactiver la découverte de serveur DNS - Serveurs DNS manuels ci-dessous :</string>
+    <string name="name">Nom</string>
+    <string name="proxyModeCheckBox">Mode proxy DNS sans VPN local</string>
+    <string name="removeFilter">"Supprimer le filtre"</string>
+    <string name="restoreBackup">Restaurer la sauvegarde</string>
+    <string name="restoreDefault">Restaurer la configuration par défaut</string>
+    <string name="rootModeCheckBox">Mode racine sans VPN local</string>
+    <string name="shortText">Texte court</string>
+    <string name="startBtnLabel">Redémarrer</string>
+    <string name="stopBtnLabel">Fermer</string>
+</resources>

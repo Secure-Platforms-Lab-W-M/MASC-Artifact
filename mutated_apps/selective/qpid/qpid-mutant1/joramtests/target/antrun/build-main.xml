@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo>Joram Integration Tests: To run define system property -Djoramtests to a name of a JMS client e.g. qpid-jms-client</echo>
+</target>
+</project>

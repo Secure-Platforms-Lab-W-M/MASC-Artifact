@@ -1,0 +1,84 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Java Source Analyzer",
+          "version": "1.0.0-scan",
+          "fullName": "Java Source Analyzer"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "pmd",
+            "-no-cache",
+            "--failOnViolation",
+            "false",
+            "-language",
+            "java",
+            "-d",
+            "/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant17",
+            "-r",
+            "/media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant17/reports/source-java-report.csv",
+            "-f",
+            "csv",
+            "-R",
+            "/tmp/.mount_scanN406eJ/usr/src/tools_config/rules-pmd.xml"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "pmd -no-cache --failOnViolation false -language java -d /media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant17 -r /media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant17/reports/source-java-report.csv -f csv -R /tmp/.mount_scanN406eJ/usr/src/tools_config/rules-pmd.xml",
+          "endTimeUtc": "2020-12-02T11:22:15Z",
+          "workingDirectory": {
+            "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant17"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2020-12-02T11:22:15Z",
+          "workingDirectory": {
+            "uri": "file:///media/data/muse2/muse2repo_new_atalk/src_code/atalk-android-mutant17"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "ced3b18c-c7bc-47db-9658-9ea085b26b21"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "",
+          "repositoryUri": "",
+          "revisionId": ""
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "ced3b18c-c7bc-47db-9658-9ea085b26b21",
+      "runGuid": "074d7a1c-72dd-4e26-b6fc-58789975f23a"
+    }
+  ]
+}

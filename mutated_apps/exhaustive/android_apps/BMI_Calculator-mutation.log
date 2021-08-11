@@ -1,0 +1,23 @@
+In file: BMIMain.java
+Input operator: REACHABILITY
+mutation-0: BMIMain.onCreate
+mutation-1: BMIMain.onCreate
+mutation-2: BMIMain.calculateClickHandler
+mutation-3: BMIMain.calculateClickHandler
+mutation-4: BMIMain.calculateClickHandler
+mutation-5: BMIMain.calculateClickHandler
+mutation-6: BMIMain.calculateClickHandler
+mutation-7: BMIMain.calculateClickHandler
+mutation-8: BMIMain.calculateClickHandler
+mutation-9: BMIMain.calculateClickHandler
+mutation-10: BMIMain.calculateBMI
+mutation-11: BMIMain.interpretBMI
+mutation-12: BMIMain.interpretBMI
+mutation-13: BMIMain.interpretBMI
+mutation-14: BMIMain.interpretBMI
+mutation-15: BMIMain.interpretBMI
+mutation-16: BMIMain.interpretBMI
+mutation-17: BMIMain.interpretBMI
+mutation-18: BMIMain.interpretBMI
+mutation-19: PlaceholderFragment.PlaceholderFragment
+mutation-20: PlaceholderFragment.onCreateView

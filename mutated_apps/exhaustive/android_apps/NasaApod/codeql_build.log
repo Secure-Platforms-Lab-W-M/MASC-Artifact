@@ -1,0 +1,93 @@
+[2020-11-23 10:21:04] [build] [2020-11-23 10:21:04] Build directory is /media/data/muse2/muse2repo_apk_mutation_reach_src/NasaApod/.
+[2020-11-23 10:21:04] [build] [2020-11-23 10:21:04] [autobuild] > chmod +x gradlew
+[2020-11-23 10:21:04] [build] [2020-11-23 10:21:04] [autobuild] > ./gradlew -Dorg.gradle.caching=false --no-daemon -S clean
+[2020-11-23 10:21:05] [build] [2020-11-23 10:21:05] [autobuild] To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/4.1/userguide/gradle_daemon.html.
+[2020-11-23 10:21:06] [build] [2020-11-23 10:21:06] [autobuild] Daemon will be stopped at the end of the build stopping after processing
+[2020-11-23 10:21:10] [build] [2020-11-23 10:21:10] [autobuild] Configuration 'compile' in project ':app' is deprecated. Use 'implementation' instead.
+[2020-11-23 10:21:12] [build] [2020-11-23 10:21:12] [autobuild] :clean
+[2020-11-23 10:21:12] [build] [2020-11-23 10:21:12] [autobuild] :app:clean
+[2020-11-23 10:21:12] [build] [2020-11-23 10:21:12] [autobuild] BUILD SUCCESSFUL in 7s
+[2020-11-23 10:21:12] [build] [2020-11-23 10:21:12] [autobuild] 2 actionable tasks: 2 executed
+[2020-11-23 10:21:13] [build] [2020-11-23 10:21:13] [autobuild] > ./gradlew -Dorg.gradle.caching=false --no-daemon -S assemble
+[2020-11-23 10:21:13] [build] [2020-11-23 10:21:13] [autobuild] To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/4.1/userguide/gradle_daemon.html.
+[2020-11-23 10:21:14] [build] [2020-11-23 10:21:14] [autobuild] Daemon will be stopped at the end of the build stopping after processing
+[2020-11-23 10:21:18] [build] [2020-11-23 10:21:18] [autobuild] Configuration 'compile' in project ':app' is deprecated. Use 'implementation' instead.
+[2020-11-23 10:21:19] [build] [2020-11-23 10:21:19] [autobuild] :app:preBuild UP-TO-DATE
+[2020-11-23 10:21:20] [build] [2020-11-23 10:21:20] [autobuild] :app:preDebugBuild
+[2020-11-23 10:21:20] [build] [2020-11-23 10:21:20] [autobuild] :app:compileDebugAidl
+[2020-11-23 10:21:20] [build] [2020-11-23 10:21:20] [autobuild] :app:compileDebugRenderscript
+[2020-11-23 10:21:20] [build] [2020-11-23 10:21:20] [autobuild] :app:checkDebugManifest
+[2020-11-23 10:21:20] [build] [2020-11-23 10:21:20] [autobuild] :app:generateDebugBuildConfig
+[2020-11-23 10:21:20] [build] [2020-11-23 10:21:20] [autobuild] :app:prepareLintJar UP-TO-DATE
+[2020-11-23 10:21:20] [build] [2020-11-23 10:21:20] [autobuild] :app:generateDebugResValues
+[2020-11-23 10:21:20] [build] [2020-11-23 10:21:20] [autobuild] :app:generateDebugResources
+[2020-11-23 10:21:22] [build] [2020-11-23 10:21:22] [autobuild] :app:mergeDebugResources
+[2020-11-23 10:21:22] [build] [2020-11-23 10:21:22] [autobuild] :app:createDebugCompatibleScreenManifests
+[2020-11-23 10:21:22] [build] [2020-11-23 10:21:22] [autobuild] :app:processDebugManifest
+[2020-11-23 10:21:22] [build] [2020-11-23 10:21:22] [autobuild] :app:splitsDiscoveryTaskDebug
+[2020-11-23 10:21:22] [build] [2020-11-23 10:21:22] [autobuild] :app:processDebugResources
+[2020-11-23 10:21:22] [build] [2020-11-23 10:21:22] [autobuild] :app:generateDebugSources
+[2020-11-23 10:21:22] [build] [2020-11-23 10:21:22] [autobuild] :app:javaPreCompileDebug
+[2020-11-23 10:21:24] [build] [2020-11-23 10:21:24] [autobuild] Note: /media/data/muse2/muse2repo_apk_mutation_reach_src/NasaApod/app/src/main/java/com/jvillalba/apod/classic/API/Tls12SocketFactory.java uses or overrides a deprecated API.
+[2020-11-23 10:21:24] [build] [2020-11-23 10:21:24] [autobuild] Note: Recompile with -Xlint:deprecation for details.
+[2020-11-23 10:21:31] [build] [2020-11-23 10:21:31] [autobuild] :app:compileDebugJavaWithJavac
+[2020-11-23 10:21:31] [build] [2020-11-23 10:21:31] [autobuild] :app:compileDebugNdk NO-SOURCE
+[2020-11-23 10:21:31] [build] [2020-11-23 10:21:31] [autobuild] :app:compileDebugSources
+[2020-11-23 10:21:31] [build] [2020-11-23 10:21:31] [autobuild] :app:mergeDebugShaders
+[2020-11-23 10:21:31] [build] [2020-11-23 10:21:31] [autobuild] :app:compileDebugShaders
+[2020-11-23 10:21:31] [build] [2020-11-23 10:21:31] [autobuild] :app:generateDebugAssets
+[2020-11-23 10:21:31] [build] [2020-11-23 10:21:31] [autobuild] :app:mergeDebugAssets
+[2020-11-23 10:21:32] [build] [2020-11-23 10:21:32] [autobuild] :app:transformClassesWithDexBuilderForDebug
+[2020-11-23 10:21:33] [build] [2020-11-23 10:21:33] [autobuild] :app:transformDexArchiveWithExternalLibsDexMergerForDebug
+[2020-11-23 10:21:34] [build] [2020-11-23 10:21:34] [autobuild] :app:transformDexArchiveWithDexMergerForDebug
+[2020-11-23 10:21:34] [build] [2020-11-23 10:21:34] [autobuild] :app:mergeDebugJniLibFolders
+[2020-11-23 10:21:34] [build] [2020-11-23 10:21:34] [autobuild] :app:transformNativeLibsWithMergeJniLibsForDebug
+[2020-11-23 10:21:34] [build] [2020-11-23 10:21:34] [autobuild] :app:processDebugJavaRes NO-SOURCE
+[2020-11-23 10:21:35] [build] [2020-11-23 10:21:35] [autobuild] :app:transformResourcesWithMergeJavaResForDebug
+[2020-11-23 10:21:35] [build] [2020-11-23 10:21:35] [autobuild] :app:validateSigningDebug
+[2020-11-23 10:21:35] [build] [2020-11-23 10:21:35] [autobuild] :app:packageDebug
+[2020-11-23 10:21:35] [build] [2020-11-23 10:21:35] [autobuild] :app:assembleDebug
+[2020-11-23 10:21:35] [build] [2020-11-23 10:21:35] [autobuild] :app:preReleaseBuild
+[2020-11-23 10:21:35] [build] [2020-11-23 10:21:35] [autobuild] :app:compileReleaseAidl
+[2020-11-23 10:21:35] [build] [2020-11-23 10:21:35] [autobuild] :app:compileReleaseRenderscript
+[2020-11-23 10:21:35] [build] [2020-11-23 10:21:35] [autobuild] :app:checkReleaseManifest
+[2020-11-23 10:21:35] [build] [2020-11-23 10:21:35] [autobuild] :app:generateReleaseBuildConfig
+[2020-11-23 10:21:35] [build] [2020-11-23 10:21:35] [autobuild] :app:generateReleaseResValues
+[2020-11-23 10:21:35] [build] [2020-11-23 10:21:35] [autobuild] :app:generateReleaseResources
+[2020-11-23 10:21:36] [build] [2020-11-23 10:21:36] [autobuild] :app:mergeReleaseResources
+[2020-11-23 10:21:36] [build] [2020-11-23 10:21:36] [autobuild] :app:createReleaseCompatibleScreenManifests
+[2020-11-23 10:21:36] [build] [2020-11-23 10:21:36] [autobuild] :app:processReleaseManifest
+[2020-11-23 10:21:36] [build] [2020-11-23 10:21:36] [autobuild] :app:splitsDiscoveryTaskRelease
+[2020-11-23 10:21:37] [build] [2020-11-23 10:21:37] [autobuild] :app:processReleaseResources
+[2020-11-23 10:21:37] [build] [2020-11-23 10:21:37] [autobuild] :app:generateReleaseSources
+[2020-11-23 10:21:37] [build] [2020-11-23 10:21:37] [autobuild] :app:javaPreCompileRelease
+[2020-11-23 10:21:37] [build] [2020-11-23 10:21:37] [autobuild] Note: /media/data/muse2/muse2repo_apk_mutation_reach_src/NasaApod/app/src/main/java/com/jvillalba/apod/classic/API/Tls12SocketFactory.java uses or overrides a deprecated API.
+[2020-11-23 10:21:37] [build] [2020-11-23 10:21:37] [autobuild] Note: Recompile with -Xlint:deprecation for details.
+[2020-11-23 10:21:41] [build] [2020-11-23 10:21:41] [autobuild] :app:compileReleaseJavaWithJavac
+[2020-11-23 10:21:41] [build] [2020-11-23 10:21:41] [autobuild] :app:compileReleaseNdk NO-SOURCE
+[2020-11-23 10:21:41] [build] [2020-11-23 10:21:41] [autobuild] :app:compileReleaseSources
+[2020-11-23 10:21:46] [build] [2020-11-23 10:21:46] [autobuild] :app:lintVitalRelease
+[2020-11-23 10:21:46] [build] [2020-11-23 10:21:46] [autobuild] :app:mergeReleaseShaders
+[2020-11-23 10:21:46] [build] [2020-11-23 10:21:46] [autobuild] :app:compileReleaseShaders
+[2020-11-23 10:21:46] [build] [2020-11-23 10:21:46] [autobuild] :app:generateReleaseAssets
+[2020-11-23 10:21:46] [build] [2020-11-23 10:21:46] [autobuild] :app:mergeReleaseAssets
+[2020-11-23 10:21:47] [build] [2020-11-23 10:21:47] [autobuild] :app:transformClassesWithPreDexForRelease
+[2020-11-23 10:21:47] [build] [2020-11-23 10:21:47] [autobuild] Running dex as a separate process.
+[2020-11-23 10:21:47] [build] [2020-11-23 10:21:47] [autobuild] To run dex in process, the Gradle daemon needs a larger heap.
+[2020-11-23 10:21:47] [build] [2020-11-23 10:21:47] [autobuild] It currently has 512 MB.
+[2020-11-23 10:21:47] [build] [2020-11-23 10:21:47] [autobuild] For faster builds, increase the maximum heap size for the Gradle daemon to at least 1536 MB.
+[2020-11-23 10:21:47] [build] [2020-11-23 10:21:47] [autobuild] To do this set org.gradle.jvmargs=-Xmx1536M in the project gradle.properties.
+[2020-11-23 10:21:47] [build] [2020-11-23 10:21:47] [autobuild] For more information see https://docs.gradle.org/current/userguide/build_environment.html
+[2020-11-23 10:21:49] [build] [2020-11-23 10:21:49] [autobuild] :app:transformDexWithDexForRelease
+[2020-11-23 10:21:49] [build] [2020-11-23 10:21:49] [autobuild] :app:mergeReleaseJniLibFolders
+[2020-11-23 10:21:49] [build] [2020-11-23 10:21:49] [autobuild] :app:transformNativeLibsWithMergeJniLibsForRelease
+[2020-11-23 10:21:49] [build] [2020-11-23 10:21:49] [autobuild] :app:processReleaseJavaRes NO-SOURCE
+[2020-11-23 10:21:49] [build] [2020-11-23 10:21:49] [autobuild] :app:transformResourcesWithMergeJavaResForRelease
+[2020-11-23 10:21:50] [build] [2020-11-23 10:21:50] [autobuild] :app:packageRelease
+[2020-11-23 10:21:50] [build] [2020-11-23 10:21:50] [autobuild] :app:assembleRelease
+[2020-11-23 10:21:50] [build] [2020-11-23 10:21:50] [autobuild] :app:assemble
+[2020-11-23 10:21:50] [build] [2020-11-23 10:21:50] [autobuild] BUILD SUCCESSFUL in 37s
+[2020-11-23 10:21:50] [build] [2020-11-23 10:21:50] [autobuild] 48 actionable tasks: 47 executed, 1 up-to-date
+[2020-11-23 10:21:52] [build-err] Scanning for files in /media/data/muse2/muse2repo_apk_mutation_reach_src/NasaApod...
+[2020-11-23 10:21:53] [build-err] /media/data/muse2/muse2repo_apk_mutation_reach_src/NasaApod/codeql-db: Indexing files in in /media/data/muse2/muse2repo_apk_mutation_reach_src/NasaApod...
+[2020-11-23 10:21:53] [build-err] /media/data/muse2/muse2repo_apk_mutation_reach_src/NasaApod/codeql-db: Running in /media/data/muse2/muse2repo_apk_mutation_reach_src/NasaApod: [/media/data/nacoop/codeql-home/codeql/xml/tools/index-files.sh, /media/data/muse2/muse2repo_apk_mutation_reach_src/NasaApod/codeql-db/working/files-to-index9685498181006781874.list]

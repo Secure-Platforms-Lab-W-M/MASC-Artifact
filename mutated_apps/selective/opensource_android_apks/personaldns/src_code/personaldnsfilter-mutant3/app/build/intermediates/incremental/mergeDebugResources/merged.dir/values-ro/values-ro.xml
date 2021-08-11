@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="EnableAdfilter">Activează blocarea</string>
+    <string name="EnableAutoStart">Pornire automată</string>
+    <string name="EnableConfigCheckBox">Setări avansate</string>
+    <string name="active">Activ</string>
+    <string name="addFilter">"Adaugă filtru"</string>
+    <string name="appWhitelistCheckBox">Lista albă a aplicației</string>
+    <string name="app_name">FiltruDNS</string>
+    <string name="backupConfig">Configurare backup</string>
+    <string name="category">Categorie</string>
+    <string name="cfgBackupRestore">Backup și restaurare</string>
+    <string name="dnsCfgConfigDialogTitle">Configurare server DNS</string>
+    <string name="dnsLabel">DNS:</string>
+    <string name="editAdditionalHostsCheckBox">Configurați gazde adiționale</string>
+    <string name="editFilterDialogTitle">Editare filtru</string>
+    <string name="editFilterLoadCheckBox">Configurați actualizarea filtrului</string>
+    <string name="filterReloadBtnLabel">Reîncarcă filtrul</string>
+    <string name="filterUpdateDays">Intervalul de actualizare a filtrului în zile:</string>
+    <string name="keepAwakeCheckBox">Împiedică intrarea în repaus a dispozitivului</string>
+    <string name="listenPortLabel">Port:</string>
+    <string name="manualDNSCheck">Dezactivează descoperirea serverului DNS - servere DNS manuale mai jos:</string>
+    <string name="name">Nume</string>
+    <string name="proxyModeCheckBox">Mod proxy DNS fără VPN local</string>
+    <string name="removeFilter">"Elimină filtru"</string>
+    <string name="restoreBackup">Restaurare copie de rezervă</string>
+    <string name="restoreDefault">Restabilire configurație implicită</string>
+    <string name="rootModeCheckBox">Mod rădăcină fără VPN local</string>
+    <string name="shortText">Text scurt</string>
+    <string name="startBtnLabel">Repornește</string>
+    <string name="stopBtnLabel">Închide</string>
+</resources>

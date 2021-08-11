@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!--
+
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+
+-->
+
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="Java-Broker-Introduction">
+  <title>Introduction</title>
+  <para>The Apache Qpid Broker-J is a powerful open-source message broker that implements all versions of the
+      <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.amqp.org"> Advanced Message Queuing Protocol (AMQP)</link>. The Apache Qpid Broker-J
+    is actually one of two message brokers provided by the <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://qpid.apache.org">Apache Qpid project</link>: Qpid Broker-J and the C++
+    Broker.</para>
+  <para>This document relates to the Apache Qpid Broker-J. The <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="${qpidCppBook}">C++ Broker is
+    described separately</link>.</para>
+  <para><emphasis>Headline features</emphasis></para>
+  <itemizedlist mark="circle">
+    <listitem>
+      <para>100% Java implementation - runs on any platform supporting Java 1.8 or higher</para>
+    </listitem>
+    <listitem>
+      <para>Messaging clients support in Java (JMS 1.1 and 2.0 compliance), C++, Python and more.</para>
+    </listitem>
+    <listitem>
+      <para>Persistent and non-persistent (transient) message support</para>
+    </listitem>
+    <listitem>
+      <para>Supports for all common messaging patterns (point-to-point, publish/subscribe, fan-out
+        etc).</para>
+    </listitem>
+    <listitem>
+      <para>Transaction support including XA<footnote>
+          <para>XA provided when using AMQP 0-10</para>
+        </footnote></para>
+    </listitem>
+    <listitem>
+      <para>Supports for all versions of the AMQP protocol (0-8, 0-9, 0-9-1, 0-10 and 1.0).</para>
+    </listitem>
+    <listitem>
+      <para>Supports for AMQP over websockets.</para>
+    </listitem>
+    <listitem>
+      <para>Automatic message translation, allowing clients using different AMQP versions to communicate with each other.</para>
+    </listitem>
+    <listitem>
+      <para>Pluggable authentication architecture with out-of-the-box support for Kerberos, LDAP,
+        External, OAuth2, and file-based authentication mechanisms.</para>
+    </listitem>
+    <listitem>
+      <para>Support for message compression</para>
+    </listitem>
+    <listitem>
+      <para>Pluggable storage architecture with implementations including <link
+              xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://db.apache.org/derby/">Apache
+        Derby</link>, <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="${oracleBdbProductOverviewUrl}">
+        Oracle BDB JE</link>, and External Databases.
+      </para>
+    </listitem>
+    <listitem>
+      <para>Web based management interface and programmatic management interfaces via REST.</para>
+    </listitem>
+    <listitem>
+      <para>SSL support</para>
+    </listitem>
+    <listitem>
+      <para>High availability (HA) support.<footnote>
+          <para>HA currently only available with the Oracle BDB JE message store option.</para>
+        </footnote></para>
+    </listitem>
+  </itemizedlist>
+</chapter>

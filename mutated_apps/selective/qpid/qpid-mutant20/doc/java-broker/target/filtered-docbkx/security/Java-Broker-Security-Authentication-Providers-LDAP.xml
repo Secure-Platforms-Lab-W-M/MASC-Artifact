@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<!--
+
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+
+-->
+
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="Java-Broker-Security-LDAP-Provider">
+    <title>Simple LDAP</title>
+
+    <para> The Simple LDAP authenticates connections against a Directory (LDAP). </para>
+    <para> To create a SimpleLDAPAuthenticationProvider the following mandatory fields are required: <itemizedlist>
+        <listitem>
+            <para><emphasis>LDAP server URL</emphasis> is the URL of the server, for example,
+                <literal>ldaps://example.com:636</literal></para>
+        </listitem>
+        <listitem>
+            <para><emphasis>Search context</emphasis> is the distinguished name of the search base
+                object. It defines the location from which the search for users begins, for example,
+                <literal>dc=users,dc=example,dc=com</literal></para>
+        </listitem>
+        <listitem>
+            <para><emphasis>Search filter</emphasis> is a DN template to find an LDAP user entry by
+                provided user name, for example, <literal>(uid={0})</literal></para>
+        </listitem>
+    </itemizedlist> Additionally, the following optional fields can be specified: <itemizedlist>
+        <listitem>
+            <para><emphasis>LDAP context factory</emphasis> is a fully qualified class name for the
+                JNDI LDAP context factory. This class must implement the <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://docs.oracle.com/javase/7/docs/api/javax/naming/spi/InitialContextFactory.html">InitialContextFactory</link> interface and produce instances of <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://docs.oracle.com/javase/7/docs/api/javax/naming/directory/DirContext.html">DirContext</link>. If
+                not specified a default value of <literal>com.sun.jndi.ldap.LdapCtxFactory</literal> is
+                used.</para>
+        </listitem>
+        <listitem>
+            <para><emphasis>LDAP authentication URL</emphasis> is the URL of LDAP server for
+                performing "ldap bind". If not specified, the <emphasis>LDAP server URL</emphasis> will
+                be used for both searches and authentications.</para>
+        </listitem>
+        <listitem>
+            <para><emphasis>Truststore name</emphasis> is a name of <link linkend="Java-Broker-Management-Managing-Truststores-Attributes">configured
+                truststore</link>. Use this if connecting to a Directory over SSL (i.e. ldaps://)
+                which is protected by a certificate signed by a private CA (or utilising a self-signed
+                certificate).</para>
+        </listitem>
+        <listitem>
+            <para><emphasis>Authentication method</emphasis> is a method of authentication to use on binding into LDAP
+                when <literal>bind without search</literal> mode is not selected.
+                Supported methods are NONE, SIMPLE, GSSAPI. The latter requires setting of <emphasis>Login Config Scope</emphasis>
+                which is a name of JAAS login module from JASS login configuration file specified using JVM system
+                property <emphasis>java.security.auth.login.config</emphasis> or Java security properties file. If
+                <emphasis>Login Config Scope</emphasis> is not specified with <literal>GSSAPI</literal>
+                <emphasis>Authentication method</emphasis>, the scope <emphasis>qpid-broker-j</emphasis> will be used.
+            </para>
+        </listitem>
+        <listitem>
+            <para>Additional group information can be obtained from LDAP.
+                There are two common ways of representing group membership in LDAP.
+                <itemizedlist>
+                    <listitem>
+                        User entries can hold membership information as attribute.
+                        To use this the <emphasis>attribute name</emphasis> that holds the group information must be specified.
+                    </listitem>
+                    <listitem>
+                        Group entries can hold a list of their members as attribute.
+                        This can be used by specifying a <emphasis>search context</emphasis> and <emphasis>search filter</emphasis> to find all groups that the user should be considered a member of.
+                        Typically this involves filtering groups by looking for the user's DN on a group attribute.
+                        The <emphasis>subtree search scope</emphasis> determines whether the search should include the subtree extending from the <emphasis>search context</emphasis>.
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </listitem>
+    </itemizedlist>
+    </para>
+
+    <important>
+        <para>In order to protect the security of the user's password, when using LDAP authentication,
+            you must: </para>
+        <itemizedlist>
+            <listitem>
+                <para>Use SSL on the broker's AMQP and HTTP ports to protect the password during
+                    transmission to the Broker. The Broker enforces this restriction automatically on AMQP
+                    and HTTP ports.</para>
+            </listitem>
+            <listitem>
+                <para>Authenticate to the Directory using SSL (i.e. ldaps://) to protect the password
+                    during transmission from the Broker to the Directory.</para>
+            </listitem>
+        </itemizedlist>
+    </important>
+
+    <para> The LDAP Authentication Provider works in the following manner. If not in <literal>bind
+        without search</literal> mode, it first connects to the Directory and searches for the ldap
+        entity which is identified by the username. The search begins at the distinguished name
+        identified by <literal>Search Context</literal> and uses the username as a filter. The search
+        scope is sub-tree meaning the search will include the base object and the subtree extending
+        beneath it. </para>
+
+    <para> If the search returns a match, or is configured in <literal>bind without search</literal>
+        mode, the Authentication Provider then attempts to bind to the LDAP server with the given name
+        and the password. Note that <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://docs.oracle.com/javase/7/docs/api/javax/naming/Context.html#SECURITY_AUTHENTICATION">simple security
+            authentication</link> is used so the Directory receives the password in the clear.
+    </para>
+    <para>
+        By default, this authentication provider caches the result of an authentication for a short period of time. This
+        reduces the load on the Directory service if the same credentials are presented frequently within a short
+        period of time.  The length of time a result will be cached is defined by context variable
+        <literal>qpid.auth.cache.expiration_time</literal> (default to 600 seconds).  The cache can be disabled by
+        setting the context variable <literal>qpid.auth.cache.size</literal> to 0.
+    </para>
+</section>

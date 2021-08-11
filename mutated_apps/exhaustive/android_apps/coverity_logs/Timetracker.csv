@@ -1,0 +1,16 @@
+﻿Type,Impact,Category,File,Function,Count
+Structurally dead code,Medium,Control flow issues,/media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/src/main/java/com/markuspage/android/atimetracker/Report.java,Report.onClick,3
+Resource leak,High,Resource leaks,/media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/src/main/java/com/markuspage/android/atimetracker/Report.java,Report.export,1
+Missing call to superclass,Medium,Class hierarchy inconsistencies,/media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/src/main/java/com/markuspage/android/atimetracker/Settings.java,Settings.onListItemClick,1
+File on external storage,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/src/main/java/com/markuspage/android/atimetracker/Report.java,Report.export,1
+File on external storage,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/src/main/java/com/markuspage/android/atimetracker/Activities.java,Activities.export,1
+Exporting a component without requiring a permission,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/src/main/AndroidManifest.xml,,1
+Exporting a component without requiring a permission,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/src/main/AndroidManifest.xml,,1
+Exporting a component without requiring a permission,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/src/main/AndroidManifest.xml,,1
+Exporting a component without requiring a permission,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/src/main/AndroidManifest.xml,,1
+Dereference null return value,Medium,Null pointer dereferences,/media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/src/main/java/com/markuspage/android/atimetracker/Report.java,Report.getCurrentRange,1
+Dereference null return value,Medium,Null pointer dereferences,/media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/src/main/java/com/markuspage/android/atimetracker/Report.java,Report.getDays,1
+Dereference null return value,Medium,Null pointer dereferences,/media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/src/main/java/com/markuspage/android/atimetracker/Report.java,Report.createHeader,1
+Android application supports unsafe SDK versions,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/src/main/AndroidManifest.xml,,1
+Android application does not target the latest Android version,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/src/main/AndroidManifest.xml,,1
+Android application allows backups,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/src/main/AndroidManifest.xml,,1

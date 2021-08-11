@@ -1,0 +1,7 @@
+ <account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="org.atalk.android.account"
+    android:icon="@drawable/ic_logo"
+    android:smallIcon="@drawable/ic_icon"
+    android:label="@string/APPLICATION_NAME"
+    android:accountPreferences="@xml/account_preferences"
+ />

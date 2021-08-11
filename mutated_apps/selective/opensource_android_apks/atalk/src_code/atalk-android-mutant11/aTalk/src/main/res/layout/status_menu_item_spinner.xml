@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/statusMenuSpinner"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/action_item_btn"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp" >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/jabber_status_online" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/MediumFont"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/presenceSpinner"
+		android:spinnerMode="dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"/>
+</LinearLayout>

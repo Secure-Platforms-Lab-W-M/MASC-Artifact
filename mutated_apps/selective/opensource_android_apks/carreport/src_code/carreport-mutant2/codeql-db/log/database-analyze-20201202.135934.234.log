@@ -1,0 +1,11 @@
+[2020-12-02 13:59:34] This is codeql database analyze codeql-db/ /media/data/nacoop/codeql-home/codeql-repo/java/ql/src/codeql-suites/java-code-scanning.qls --format=sarifv2.1.0 --output=non-shiftleft-reports/codeql-suite-code-scanning-results.sarif --threads 0
+[2020-12-02 13:59:34] Log file was started late.
+[2020-12-02 13:59:34] [PROGRESS] database analyze> Running queries.
+[2020-12-02 13:59:34] Running plumbing command: codeql database run-queries --threads=0 --ml-model-path= --native-library-path= --warnings=show --no-rerun -- /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/codeql-db /media/data/nacoop/codeql-home/codeql-repo/java/ql/src/codeql-suites/java-code-scanning.qls
+[2020-12-02 13:59:34] Calling plumbing command: codeql resolve ram --format=json
+[2020-12-02 13:59:34] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx1024M",
+                        "--off-heap-ram=0"
+                      ]
+[2020-12-02 13:59:34] Spawning plumbing command: execute queries -J-Xmx1024M --off-heap-ram=0 --verbosity=progress --logdir=/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/codeql-db/log --threads=0 --ml-model-path=/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2 --native-library-path=/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2 --warnings=show --no-rerun --output=/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/codeql-db/results -- /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/codeql-db/db-java /media/data/nacoop/codeql-home/codeql-repo/java/ql/src/codeql-suites/java-code-scanning.qls

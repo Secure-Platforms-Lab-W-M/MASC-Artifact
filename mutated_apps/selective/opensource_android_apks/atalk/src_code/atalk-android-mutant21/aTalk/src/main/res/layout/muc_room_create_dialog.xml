@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/screen_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/jid_Account"
+            style="@style/MediumFont"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/service_gui_ACCOUNT" />
+
+        <Spinner
+            android:id="@+id/jid_Accounts_Spinner"
+            style="@style/SpinnerView"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/NickName"
+            style="@style/MediumFont"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/service_gui_NICKNAME_LABEL" />
+
+        <EditText
+            android:id="@+id/NickName_Edit"
+            style="@style/EntryTextView"
+            android:layout_width="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/password"
+            style="@style/MediumFont"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/service_gui_PASSWORD" />
+
+        <RelativeLayout
+            android:id="@+id/pwdTypingArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/passwordField"
+                style="@style/EntryTextView"
+                android:layout_width="match_parent"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+
+            <CheckBox
+                android:id="@+id/show_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/passwordField"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:button="@drawable/checkbox_password_view" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/none"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/store_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/store_password" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/chatRoom_Subject"
+            style="@style/MediumFont"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/chatRoom_Subject" />
+
+        <EditText
+            android:id="@+id/chatRoom_Subject_Edit"
+            style="@style/EntryTextView"
+            android:hint="@string/service_gui_GROUP_CHAT"
+            android:layout_width="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/chatRoom_Name"
+        style="@style/MediumFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/service_gui_CHATROOM" />
+
+    <org.atalk.android.gui.util.ComboBox
+        android:id="@+id/chatRoom_Combo"
+        style="@style/SpinnerView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/between_padding"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_Cancel"
+            style="@style/ButtonTop"
+            android:text="@string/service_gui_CANCEL" />
+
+        <Button
+            android:id="@+id/button_Join"
+            style="@style/ButtonTop"
+            android:layout_marginStart="4dp"
+            android:enabled="false"
+            android:text="@string/service_gui_JOIN" />
+    </LinearLayout>
+</LinearLayout>

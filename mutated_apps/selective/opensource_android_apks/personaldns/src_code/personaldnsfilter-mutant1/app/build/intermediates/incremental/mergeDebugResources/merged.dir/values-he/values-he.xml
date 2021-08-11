@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="EnableAdfilter">לאפשר חסימת</string>
+    <string name="EnableAutoStart">אתחול אוטומטי</string>
+    <string name="EnableConfigCheckBox">הגדרות מתקדמות</string>
+    <string name="active">פעיל</string>
+    <string name="addFilter">"הוסף מסנן"</string>
+    <string name="appWhitelistCheckBox">אפליקציה רשימה לבנה</string>
+    <string name="app_name">DNSfilter</string>
+    <string name="backupConfig">תצורת הגיבוי</string>
+    <string name="category">קטגוריה</string>
+    <string name="cfgBackupRestore">גיבוי ושחזור</string>
+    <string name="dnsCfgConfigDialogTitle">תצורת שרת ה-DNS</string>
+    <string name="dnsLabel">DNS:</string>
+    <string name="editAdditionalHostsCheckBox">הגדירו מארחים נוספים</string>
+    <string name="editFilterDialogTitle">עריכת מסנן</string>
+    <string name="editFilterLoadCheckBox">הגדירו עדכון מסנן</string>
+    <string name="filterReloadBtnLabel">מסנן טען מחדש</string>
+    <string name="filterUpdateDays">עדכון מסנן מרווח ימים:</string>
+    <string name="keepAwakeCheckBox">מנע הירדמות המכשיר</string>
+    <string name="listenPortLabel">יציאה:</string>
+    <string name="manualDNSCheck">להשבית את שרת ה-DNS של גילוי - מדריך שרתי DNS להלן:</string>
+    <string name="name">שם</string>
+    <string name="proxyModeCheckBox">DNS proxy מצב בלי המקומית VPN</string>
+    <string name="removeFilter">"הסר סינון"</string>
+    <string name="restoreBackup">שחזור גיבוי</string>
+    <string name="restoreDefault">שחזור הגדרות ברירת המחדל</string>
+    <string name="rootModeCheckBox">מצב שורש בלי המקומית VPN</string>
+    <string name="shortText">טקסט קצרים</string>
+    <string name="startBtnLabel">הפעל מחדש</string>
+    <string name="stopBtnLabel">סגירה</string>
+</resources>

@@ -1,0 +1,121 @@
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one or more
+  ~ contributor license agreements.  See the NOTICE file distributed with
+  ~ this work for additional information regarding copyright ownership.
+  ~ The ASF licenses this file to You under the Apache License, Version 2.0
+  ~ (the "License"); you may not use this file except in compliance with
+  ~ the License.  You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<div class="dijitHidden">
+    <div data-dojo-type="dijit.Dialog" style="width:600px;"
+         data-dojo-props="title:'View Message',
+                          autofocus: false"
+         id="showMessage">
+
+        <div id="confidentialInformationWarning" class="infoMessage">Confidential message information (headers
+            and content) is not available on an insecure transport. Switch to a secure management transport (i.e. one
+            that uses HTTPS) to see the message's full details.</div>
+
+        <table style="border: 0; width: 100%">
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">Message Number:</span></td>
+            <td><span class="message-id"></span></td>
+        </tr>
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">Payload Size:</span></td>
+            <td><span class="message-size"></span>&nbsp;bytes</td>
+        </tr>
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">Header Size:</span></td>
+            <td><span class="message-headerSize"></span>&nbsp;bytes</td>
+        </tr>
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">Message Id:</span></td>
+            <td><span class="message-messageId"></span></td>
+        </tr>
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">Correlation Id:</span></td>
+            <td><span class="message-correlationId"></span></td>
+        </tr>
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">Message Type:</span></td>
+            <td><span class="message-messageType"></span></td>
+        </tr>
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">State:</span></td>
+            <td><span class="message-state"></span></td>
+        </tr>
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">Persistent:</span></td>
+            <td><span class="message-persistent boolean"></span></td>
+        </tr>
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">Priority:</span></td>
+            <td><span class="message-priority"></span></td>
+        </tr>
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">Arrival Time:</span>
+            </td><td><span class="message-arrivalTime datetime"></span></td>
+        </tr>
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">Not Valid Before:</span></td>
+            <td><span class="message-notValidBefore datetime"></span></td>
+        </tr>
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">Expiration:</span></td>
+            <td><span class="message-expirationTime datetime"></span></td>
+        </tr>
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">MIME Type:</span></td>
+            <td><span class="message-mimeType"></span></td>
+        </tr>
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">Encoding:</span></td>
+            <td><span class="message-encoding"></span></td>
+        </tr>
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">User:</span></td>
+            <td><span class="message-userId"></span></td>
+        </tr>
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">Delivery Count:</span></td>
+            <td><span class="message-deliveryCount"></span></td>
+        </tr>
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">Headers:</span></td>
+            <td>
+                <div class="message-headers map confidential"></div>
+                <div class="confidentialPlaceholder highlightedText">Not available</div>
+            </td>
+        </tr>
+
+        <tr style="margin-bottom: 4pt">
+            <td style="width: 10em; vertical-align: top"><span style="font-weight: bold;">Content:</span></td>
+            <td>
+                <div class="confidential">
+                    <div id="contentAndPreview">
+                        Preview (<span id="preview-detail"></span>):<br/>
+                        <div id="message-content-preview"></div>
+                        <br/>
+                        <input type="button" id="message-download" label="Download Content" dojoType="dijit.form.Button"/>
+                    </div>
+                </div>
+                <div class="confidentialPlaceholder highlightedText">Not available</div>
+            </td>
+        </tr>
+    </table>
+        <br/>
+    <input type="button" value="Close" label="Close" dojoType="dijit.form.Button" class="closeViewMessage"/>
+
+    </div>
+</div>
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="?attr/colorBackground"
+    android:orientation="vertical"
+    android:padding="@dimen/screen_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/label_padding" >
+
+        <TextView
+            android:id="@+id/contactPhoneName"
+            style="@style/MediumFont"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/service_gui_CONTACT_PHONE_NUMBER"
+           />
+
+        <TextView
+            android:id="@+id/telephony"
+            style="@style/MediumFont"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/label_padding"
+            android:text="@string/service_gui_JBR_TELE_DOMAIN" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/between_padding" >
+
+        <org.atalk.android.gui.call.telephony.RecipientSelectView
+            android:id="@+id/address"
+            style="@style/EntryTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:dropDownAnchor="@id/address"
+            android:dropDownWidth="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="textNoSuggestions" />
+
+        <TextView
+            android:id="@+id/telephonyDomain"
+            style="@style/EntryTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+        android:layout_marginStart="@dimen/label_padding" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/contactService"
+        style="@style/MediumFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/label_padding"
+        android:text="@string/service_gui_EXT_CALL_VIA" />
+
+    <Spinner
+        android:id="@+id/selectAccountSpinner"
+        style="@style/SpinnerView"
+        android:layout_marginBottom="@dimen/between_padding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_cancel"
+            style="@style/ButtonTop"
+            android:text="@string/service_gui_CANCEL" />
+
+        <Button
+            android:id="@+id/button_video"
+            style="@style/ButtonTop"
+            android:layout_marginStart="4dp"
+            android:text="@string/service_gui_CALL_VIDEO" />
+
+        <Button
+            android:id="@+id/button_audio"
+            style="@style/ButtonTop"
+            android:layout_marginStart="4dp"
+            android:text="@string/service_gui_CALL" />
+    </LinearLayout>
+
+</LinearLayout>

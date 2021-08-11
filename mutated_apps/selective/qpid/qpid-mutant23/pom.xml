@@ -1,0 +1,1628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.apache</groupId>
+    <artifactId>apache</artifactId>
+    <version>21</version>
+  </parent>
+
+  <groupId>org.apache.qpid</groupId>
+  <artifactId>qpid-broker-parent</artifactId>
+  <version>8.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Apache Qpid Broker-J Parent</name>
+  <url>http://qpid.apache.org/components</url>
+  <description>Apache Qpid Broker-J</description>
+  <inceptionYear>2006</inceptionYear>
+
+  <issueManagement>
+    <system>JIRA</system>
+    <url>https://issues.apache.org/jira/browse/QPID</url>
+  </issueManagement>
+
+  <ciManagement>
+    <system>Jenkins</system>
+    <url>https://builds.apache.org/view/M-R/view/Qpid/</url>
+  </ciManagement>
+
+  <mailingLists>
+    <mailingList>
+      <name>Apache Qpid Users</name>
+      <subscribe>users-subscribe@qpid.apache.org</subscribe>
+      <unsubscribe>users-unsubscribe@qpid.apache.org</unsubscribe>
+      <post>users@qpid.apache.org</post>
+      <archive>http://mail-archives.apache.org/mod_mbox/qpid-users/</archive>
+    </mailingList>
+    <mailingList>
+      <name>Apache Qpid Developers</name>
+      <subscribe>dev-subscribe@qpid.apache.org</subscribe>
+      <unsubscribe>dev-unsubscribe@qpid.apache.org</unsubscribe>
+      <post>dev@qpid.apache.org</post>
+      <archive>http://mail-archives.apache.org/mod_mbox/qpid-dev/</archive>
+    </mailingList>
+  </mailingLists>
+
+  <scm>
+    <connection>scm:git:https://gitbox.apache.org/repos/asf/qpid-broker-j.git</connection>
+    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/qpid-broker-j.git</developerConnection>
+    <url>https://gitbox.apache.org/repos/asf/qpid-broker-j.git</url>
+    <tag>7.0.x</tag>
+  </scm>
+
+  <distributionManagement>
+    <site>
+      <id>${project.artifactId}-site</id>
+      <url>${project.baseUri}</url>
+    </site>
+  </distributionManagement>
+
+  <properties>
+    <minimum-maven-version>3.0.0</minimum-maven-version>
+    <minimum-java-version>1.8.0</minimum-java-version>
+    <java.source>1.8</java.source>
+    <java.target>1.8</java.target>
+    <skipTests>false</skipTests>
+
+    <!-- enforcer plugin config properties -->
+    <supported-test-profiles-regex>(java-mms.0-9|java-mms.0-9-1|java-mms.0-10|java-mms.1-0|java-bdb.0-9|java-bdb.0-9-1|java-bdb.0-10|java-bdb.1-0|java-dby.0-9|java-dby.0-9-1|java-dby.0-10|java-dby.1-0|java-dby-mem.0-9|java-dby-mem.0-9-1|java-dby-mem.0-10|cpp|java-json.0-9-1|java-json.0-10|java-json.1-0)</supported-test-profiles-regex>
+
+    <!-- surefire forked jvm arguments -->
+    <argLine>-Xmx512m</argLine>
+
+    <!-- Directory used for per test log file output -->
+    <test.output.dir>${basedir}${file.separator}target${file.separator}surefire-reports${file.separator}${profile}</test.output.dir>
+
+    <profile>java-mms.1-0</profile>
+    <profile.broker.version>1.0</profile.broker.version>
+    <profile.virtualhostnode.type>Memory</profile.virtualhostnode.type>
+    <profile.broker.clean.between.tests>true</profile.broker.clean.between.tests>
+    <profile.test_receive_timeout>1000</profile.test_receive_timeout>
+    <profile.qpid.tests.mms.messagestore.persistence>true</profile.qpid.tests.mms.messagestore.persistence>
+
+    <dollar.sign>$</dollar.sign>
+    <at.sign>@</at.sign>
+
+    <bdb-version>7.4.5</bdb-version>
+    <derby-version>10.14.2.0</derby-version>
+    <logback-version>1.2.3</logback-version>
+    <guava-version>28.2-jre</guava-version>
+    <fasterxml-jackson-version>2.10.2</fasterxml-jackson-version>
+    <fasterxml-jackson-databind-version>2.10.2</fasterxml-jackson-databind-version>
+    <slf4j-version>1.7.30</slf4j-version>
+    <jetty-version>9.4.26.v20200117</jetty-version>
+
+    <!-- dependency version numbers -->
+    <bonecp-version>0.7.1.RELEASE</bonecp-version>
+    <commons-cli-version>1.4</commons-cli-version>
+
+    <geronimo-jms-1-1-version>1.1.1</geronimo-jms-1-1-version>
+    <geronimo-jms-2-0-version>1.0-alpha-2</geronimo-jms-2-0-version>
+    <bcel-version>6.3.1</bcel-version>
+
+    <velocity-version>1.4</velocity-version>
+    <csvjdbc-version>1.0.35</csvjdbc-version>
+    <jfreechart-version>1.0.13</jfreechart-version>
+
+    <dojo-version>1.16.0</dojo-version>
+    <dstore-version>1.1.2</dstore-version>
+    <dgrid-version>1.2.1</dgrid-version>
+
+    <!-- test dependency version numbers -->
+    <junit-version>4.13</junit-version>
+    <mockito-version>3.2.4</mockito-version>
+    <netty-version>4.1.45.Final</netty-version>
+    <hamcrest-version>2.2</hamcrest-version>
+    <maven-core-version>3.5.4</maven-core-version>
+    <maven-resolver-version>1.1.1</maven-resolver-version>
+    <httpclient-version>4.5.3</httpclient-version>
+    <qpid-jms-client-version>0.49.0</qpid-jms-client-version>
+    <qpid-jms-client-amqp-0-x-version>6.3.4</qpid-jms-client-amqp-0-x-version>
+    <jaxb-api-version>2.3.1</jaxb-api-version>
+
+    <exec-maven-plugin-version>1.6.0</exec-maven-plugin-version>
+    <javacc-maven-plugin-version>2.6</javacc-maven-plugin-version>
+    <maven-rar-plugin-version>2.4</maven-rar-plugin-version>
+    <license-maven-plugin-version>1.8</license-maven-plugin-version>
+    <maven-jxr-plugin-version>3.0.0</maven-jxr-plugin-version>
+    <findbugs-maven-plugin-version>3.0.5</findbugs-maven-plugin-version>
+    <jacoco-plugin-version>0.8.5</jacoco-plugin-version>
+    <apache-rat-plugin-version>0.12</apache-rat-plugin-version>
+    <maven-docbx-plugin-version>2.0.15</maven-docbx-plugin-version>
+    <maven-docbook-xml-plugin-version>5.0-all</maven-docbook-xml-plugin-version>
+    <buildnumber-maven-plugin-version>1.4</buildnumber-maven-plugin-version>
+    <maven-jar-plugin-version>3.1.0</maven-jar-plugin-version>
+    <maven-surefire-report-plugin-version>2.22.0</maven-surefire-report-plugin-version>
+    <h2.version>1.4.200</h2.version>
+    <apache-directory-version>2.0.0.AM25</apache-directory-version>
+    <kerby-version>2.0.0</kerby-version>
+    <bcprov-version>1.64</bcprov-version>
+    <bcpkix-version>1.64</bcpkix-version>
+  </properties>
+
+  <modules>
+    <module>broker-codegen</module>
+    <module>broker-core</module>
+    <module>broker</module>
+    <module>apache-qpid-broker-j</module>
+    <module>broker-plugins/access-control</module>
+    <module>broker-plugins/amqp-0-8-protocol</module>
+    <module>broker-plugins/amqp-0-10-protocol</module>
+    <module>broker-plugins/amqp-1-0-protocol</module>
+    <module>broker-plugins/amqp-msg-conv-0-8-to-0-10</module>
+    <module>broker-plugins/amqp-msg-conv-0-8-to-1-0</module>
+    <module>broker-plugins/amqp-msg-conv-0-10-to-1-0</module>
+    <module>broker-plugins/derby-store</module>
+    <module>broker-plugins/jdbc-provider-bone</module>
+    <module>broker-plugins/jdbc-store</module>
+    <module>broker-plugins/jdbc-logging-logback</module>
+    <module>broker-plugins/logging-logback</module>
+    <module>broker-plugins/management-amqp</module>
+    <module>broker-plugins/management-http</module>
+    <module>broker-plugins/memory-store</module>
+    <module>broker-plugins/websocket</module>
+    <module>broker-plugins/amqp-1-0-bdb-store</module>
+    <module>broker-plugins/amqp-1-0-jdbc-store</module>
+    <module>tools</module>
+
+    <module>qpid-systests-parent</module>
+    <module>qpid-test-utils</module>
+    <module>systests/systests-utils</module>
+    <module>systests/qpid-systests-jms-core</module>
+    <module>systests/qpid-systests-jms_1.1</module>
+    <module>systests/qpid-systests-jms_2.0</module>
+    <module>systests/qpid-systests-http-management</module>
+    <module>systests/protocol-tests-core</module>
+    <module>systests/protocol-tests-amqp-0-8</module>
+    <module>systests/protocol-tests-amqp-0-10</module>
+    <module>systests/protocol-tests-amqp-1-0</module>
+    <module>systests/qpid-systests-spawn-admin</module>
+    <module>systests/end-to-end-conversion-tests</module>
+    <module>perftests</module>
+    <module>qpid-perftests-systests</module>
+
+    <module>perftests/visualisation-jfc</module>
+    <module>bdbstore</module>
+    <module>bdbstore/systests</module>
+
+    <module>joramtests</module>
+    <module>tck</module>
+
+    <module>doc</module>
+  </modules>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-library</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- Internal dependencies -->
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-bdbstore</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-bdbstore</artifactId>
+        <version>${project.version}</version>
+        <classifier>tests</classifier>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-core</artifactId>
+        <version>${project.version}</version>
+        <classifier>tests</classifier>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-codegen</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-access-control</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-jdbc-provider-bone</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-jdbc-store</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-amqp-msg-conv-0-8-to-0-10</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-amqp-msg-conv-0-8-to-1-0</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-amqp-msg-conv-0-10-to-1-0</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-amqp-0-8-protocol</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-amqp-0-10-protocol</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-amqp-1-0-protocol</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-amqp-1-0-protocol</artifactId>
+        <version>${project.version}</version>
+        <classifier>tests</classifier>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-derby-store</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-logging-logback</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-jdbc-logging-logback</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-memory-store</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-amqp-1-0-protocol-jdbc-link-store</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-amqp-1-0-protocol-bdb-link-store</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-management-http</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-management-amqp</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-broker-plugins-websocket</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-perftests</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-systests-utils</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-test-utils</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>apache-qpid-broker-j</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>protocol-tests-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>protocol-tests-amqp-1-0</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>protocol-tests-amqp-0-8</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>protocol-tests-amqp-0-10</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-systests-jms-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-systests-jms_1.1</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-systests-jms_2.0</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-systests-spawn-admin</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-systests-http</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <!-- External dependencies -->
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-client</artifactId>
+        <version>${qpid-jms-client-amqp-0-x-version}</version>
+      </dependency>
+      <!-- qpid-client requires jaxb-api for Base64 encoding-->
+      <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>${jaxb-api-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.glassfish.jaxb</groupId>
+        <artifactId>jaxb-runtime</artifactId>
+        <version>${jaxb-api-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.qpid</groupId>
+        <artifactId>qpid-jms-client</artifactId>
+        <version>${qpid-jms-client-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sleepycat</groupId>
+        <artifactId>je</artifactId>
+        <version>${bdb-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.derby</groupId>
+        <artifactId>derby</artifactId>
+        <version>${derby-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>${logback-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${guava-version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.google.j2objc</groupId>
+            <artifactId>j2objc-annotations</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.google.errorprone</groupId>
+            <artifactId>error_prone_annotations</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>listenablefuture</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
+        <version>${fasterxml-jackson-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>${fasterxml-jackson-databind-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.jolbox</groupId>
+        <artifactId>bonecp</artifactId>
+        <version>${bonecp-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-cli</groupId>
+        <artifactId>commons-cli</artifactId>
+        <version>${commons-cli-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.geronimo.specs</groupId>
+        <artifactId>geronimo-jms_1.1_spec</artifactId>
+        <version>${geronimo-jms-1-1-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.geronimo.specs</groupId>
+        <artifactId>geronimo-jms_2.0_spec</artifactId>
+        <version>${geronimo-jms-2-0-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-server</artifactId>
+        <version>${jetty-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-servlet</artifactId>
+        <version>${jetty-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-servlets</artifactId>
+        <version>${jetty-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty.websocket</groupId>
+        <artifactId>websocket-server</artifactId>
+        <version>${jetty-version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.eclipse.jetty.websocket</groupId>
+            <artifactId>websocket-client</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.bcel</groupId>
+        <artifactId>bcel</artifactId>
+        <version>${bcel-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>velocity</groupId>
+        <artifactId>velocity</artifactId>
+        <version>${velocity-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>velocity</groupId>
+        <artifactId>velocity-dep</artifactId>
+        <version>${velocity-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>net.sourceforge.csvjdbc</groupId>
+        <artifactId>csvjdbc</artifactId>
+        <version>${csvjdbc-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>jfree</groupId>
+        <artifactId>jfreechart</artifactId>
+        <version>${jfreechart-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>${httpclient-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.dojotoolkit</groupId>
+        <artifactId>dojo</artifactId>
+        <version>${dojo-version}</version>
+        <classifier>distribution</classifier>
+        <type>zip</type>
+      </dependency>
+      <dependency>
+        <groupId>org.webjars.bower</groupId>
+        <artifactId>dstore</artifactId>
+        <version>${dstore-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.webjars.bower</groupId>
+        <artifactId>dgrid</artifactId>
+        <version>${dgrid-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit-version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>${mockito-version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-buffer</artifactId>
+        <version>${netty-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-common</artifactId>
+        <version>${netty-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-handler</artifactId>
+        <version>${netty-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-transport</artifactId>
+        <version>${netty-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-codec-http</artifactId>
+        <version>${netty-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest</artifactId>
+        <version>${hamcrest-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest-core</artifactId>
+        <version>${hamcrest-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest-library</artifactId>
+        <version>${hamcrest-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven</groupId>
+        <artifactId>maven-core</artifactId>
+        <version>${maven-core-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven.resolver</groupId>
+        <artifactId>maven-resolver-api</artifactId>
+        <version>${maven-resolver-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven.resolver</groupId>
+        <artifactId>maven-resolver-connector-basic</artifactId>
+        <version>${maven-resolver-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven.resolver</groupId>
+        <artifactId>maven-resolver-transport-file</artifactId>
+        <version>${maven-resolver-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven.resolver</groupId>
+        <artifactId>maven-resolver-transport-http</artifactId>
+        <version>${maven-resolver-version}</version>
+      </dependency>
+
+      <!-- apacheds test dependencies -->
+      <dependency>
+        <groupId>org.apache.directory.server</groupId>
+        <artifactId>apacheds-core</artifactId>
+        <version>${apache-directory-version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.directory.server</groupId>
+        <artifactId>apacheds-core-annotations</artifactId>
+        <version>${apache-directory-version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.directory.server</groupId>
+        <artifactId>apacheds-core-api</artifactId>
+        <version>${apache-directory-version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.directory.server</groupId>
+        <artifactId>apacheds-interceptor-kerberos</artifactId>
+        <version>${apache-directory-version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.directory.server</groupId>
+        <artifactId>apacheds-kerberos-codec</artifactId>
+        <version>${apache-directory-version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.directory.server</groupId>
+        <artifactId>apacheds-protocol-kerberos</artifactId>
+        <version>${apache-directory-version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.directory.server</groupId>
+        <artifactId>apacheds-protocol-ldap</artifactId>
+        <version>${apache-directory-version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.directory.server</groupId>
+        <artifactId>apacheds-protocol-shared</artifactId>
+        <version>${apache-directory-version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.directory.server</groupId>
+        <artifactId>apacheds-server-annotations</artifactId>
+        <version>${apache-directory-version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.directory.server</groupId>
+        <artifactId>apacheds-server-config</artifactId>
+        <version>${apache-directory-version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.directory.server</groupId>
+        <artifactId>apacheds-test-framework</artifactId>
+        <version>${apache-directory-version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <!-- kerby test dependency -->
+      <dependency>
+        <groupId>org.apache.kerby</groupId>
+        <artifactId>kerb-simplekdc</artifactId>
+        <scope>test</scope>
+        <version>${kerby-version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcprov-jdk15on</artifactId>
+        <version>${bcprov-version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcpkix-jdk15on</artifactId>
+        <version>${bcpkix-version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <configuration>
+            <source>${java.source}</source>
+            <target>${java.target}</target>
+            <optimize>true</optimize>
+            <showDeprecation>true</showDeprecation>
+            <showWarnings>true</showWarnings>
+            <useIncrementalCompilation>false</useIncrementalCompilation>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>${jacoco-plugin-version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>${maven-jar-plugin-version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>license-maven-plugin</artifactId>
+          <version>${license-maven-plugin-version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jxr-plugin</artifactId>
+          <version>${maven-jxr-plugin-version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-rar-plugin</artifactId>
+          <version>${maven-rar-plugin-version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>findbugs-maven-plugin</artifactId>
+          <version>${findbugs-maven-plugin-version}</version>
+        </plugin>
+        <plugin>
+          <groupId>com.agilejava.docbkx</groupId>
+          <artifactId>docbkx-maven-plugin</artifactId>
+          <version>${maven-docbx-plugin-version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <configuration>
+            <tagNameFormat>@{project.version}</tagNameFormat>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>${exec-maven-plugin-version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-report-plugin</artifactId>
+          <version>${maven-surefire-report-plugin-version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.rat</groupId>
+          <artifactId>apache-rat-plugin</artifactId>
+          <version>${apache-rat-plugin-version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-enforcer-plugin</artifactId>
+          <version>3.0.0-M2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>buildnumber-maven-plugin</artifactId>
+        <version>${buildnumber-maven-plugin-version}</version>
+        <executions>
+          <execution>
+            <phase>validate</phase>
+            <goals>
+              <goal>create</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <doCheck>false</doCheck>
+          <doUpdate>false</doUpdate>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>${maven-jar-plugin-version}</version>
+        <configuration>
+          <archive>
+            <manifestEntries>
+              <Implementation-Build>${buildNumber}</Implementation-Build>
+            </manifestEntries>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>output-test-properties</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <target>
+                <echo>Qpid Test Profile Properties</echo>
+                <echo>[profile] ${profile}</echo>
+                <echo>[profile.broker.version] ${profile.broker.version}</echo>
+                <echo>[profile.virtualhostnode.type] ${profile.virtualhostnode.type}</echo>
+                <echo>[profile.virtualhostnode.context.blueprint] ${profile.virtualhostnode.context.blueprint}</echo>
+                <echo>[profile.test_receive_timeout] ${profile.test_receive_timeout}</echo>
+              </target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <includes>
+            <include>**/*Test.java</include>
+          </includes>
+          <redirectTestOutputToFile>true</redirectTestOutputToFile>
+          <reportsDirectory>${test.output.dir}</reportsDirectory>
+          <systemPropertyVariables>
+            <!-- Defaults -->
+            <qpid.dest_syntax>BURL</qpid.dest_syntax>
+
+            <!-- Profile Based Values -->
+            <profile>${profile}</profile>
+            <broker.version>${profile.broker.version}</broker.version>
+            <virtualhostnode.type>${profile.virtualhostnode.type}</virtualhostnode.type>
+            <virtualhostnode.context.blueprint>${profile.virtualhostnode.context.blueprint}</virtualhostnode.context.blueprint>
+            <broker.clean.between.tests>${profile.broker.clean.between.tests}</broker.clean.between.tests>
+            <qpid.globalAddressDomains>[]</qpid.globalAddressDomains>
+            <test.output.dir>${test.output.dir}</test.output.dir>
+            <broker.clean.between.tests>true</broker.clean.between.tests>
+            <qpid.test_receive_timeout>${profile.test_receive_timeout}</qpid.test_receive_timeout>
+            <qpid.tests.mms.messagestore.persistence>${profile.qpid.tests.mms.messagestore.persistence}</qpid.tests.mms.messagestore.persistence>
+            <java.io.tmpdir>${java.io.tmpdir}</java.io.tmpdir>
+          </systemPropertyVariables>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>enforce-minimum-versions</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireJavaVersion>
+                  <version>${minimum-java-version}</version>
+                </requireJavaVersion>
+                <requireMavenVersion>
+                  <version>${minimum-maven-version}</version>
+                </requireMavenVersion>
+              </rules>
+              <fail>true</fail>
+            </configuration>
+          </execution>
+          <execution>
+            <id>enforce-versions-standard-properties</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireProperty>
+                  <property>profile</property>
+                  <message>You must set a test profile!</message>
+                  <regex>${supported-test-profiles-regex}</regex>
+                  <regexMessage>You have set an unsupported test profile! Allowed values match: ${supported-test-profiles-regex}</regexMessage>
+                </requireProperty>
+              </rules>
+              <fail>true</fail>
+            </configuration>
+          </execution>
+          <execution>
+            <id>enforce-enableAmqp0x</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <evaluateBeanshell>
+                  <condition><![CDATA[
+                    boolean enableAmqp0xSet = System.getProperties().stringPropertyNames().contains("enableAmqp0-x");
+                    boolean amqp0xProfile = java.util.regex.Pattern.matches("java-.*\\.0-.*|cpp", "${profile}");
+
+                    if (amqp0xProfile && !enableAmqp0xSet)
+                    {
+                      return false;
+                    }
+                    else if (!amqp0xProfile && enableAmqp0xSet)
+                    {
+                      return false;
+                    }
+                    return true;
+                  ]]>
+                  </condition>
+                  <message>System property 'enableAmqp0-x' is required when running one of the older 0-x test profiles. It must not be set otherwise. You appear to be running '${profile}'.</message>
+                </evaluateBeanshell>
+              </rules>
+              <fail>true</fail>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>default-prepare-agent</id>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.rat</groupId>
+        <artifactId>apache-rat-plugin</artifactId>
+        <configuration>
+          <excludes>
+            <exclude>test-profiles/test_resources/ssl/**</exclude>
+            <exclude>specs/**</exclude>
+            <exclude>**/*.md</exclude>
+            <exclude>DEPENDENCIES</exclude>
+            <exclude>.travis.yml</exclude>
+            <exclude>appveyor.yml</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+
+  <repositories>
+    <!-- For the BDB JE dependency of the optional bdbstore plugin modules-->
+    <repository>
+      <id>oracle.releases</id>
+      <url>https://download.oracle.com/maven</url>
+      <layout>default</layout>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <configuration>
+          <dependencyDetailsEnabled>false</dependencyDetailsEnabled>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>license-maven-plugin</artifactId>
+        <version>${license-maven-plugin-version}</version>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-report-plugin</artifactId>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>report-only</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+        <configuration>
+          <alwaysGenerateSurefireReport>false</alwaysGenerateSurefireReport>
+          <reportsDirectory>${test.output.dir}</reportsDirectory>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jxr-plugin</artifactId>
+        <version>${maven-jxr-plugin-version}</version>
+      </plugin>
+
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>${jacoco-plugin-version}</version>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.rat</groupId>
+        <artifactId>apache-rat-plugin</artifactId>
+        <version>${apache-rat-plugin-version}</version>
+        <configuration>
+          <excludes>
+            <exclude>build/**</exclude>
+            <exclude>lib/**</exclude>
+            <exclude>test-profiles/test_resources/ssl/**</exclude>
+            <exclude>DEPENDENCIES</exclude>
+            <exclude>.travis.yml</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </reporting>
+
+  <profiles>
+    <profile>
+      <id>java-mms.0-10</id>
+      <activation>
+        <property>
+          <name>profile</name>
+          <value>java-mms.0-10</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-mms.0-10</profile>
+        <profile.broker.version>0-10</profile.broker.version>
+        <profile.virtualhostnode.type>Memory</profile.virtualhostnode.type>
+        <profile.virtualhostnode.context.blueprint>{"type":"ProvidedStore","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+        <profile.qpid.tests.mms.messagestore.persistence>true</profile.qpid.tests.mms.messagestore.persistence>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>java-mms.0-9-1</id>
+      <activation>
+        <property>
+          <name>profile</name>
+          <value>java-mms.0-9-1</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-mms.0-9-1</profile>
+        <profile.broker.version>0-9-1</profile.broker.version>
+        <profile.virtualhostnode.type>Memory</profile.virtualhostnode.type>
+        <profile.virtualhostnode.context.blueprint>{"type":"ProvidedStore","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+        <profile.qpid.tests.mms.messagestore.persistence>true</profile.qpid.tests.mms.messagestore.persistence>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>java-mms.0-9</id>
+      <activation>
+        <property>
+          <name>profile</name>
+          <value>java-mms.0-9</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-mms.0-9</profile>
+        <profile.broker.version>0-9</profile.broker.version>
+        <profile.virtualhostnode.type>Memory</profile.virtualhostnode.type>
+        <profile.virtualhostnode.context.blueprint>{"type":"ProvidedStore","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+        <profile.qpid.tests.mms.messagestore.persistence>true</profile.qpid.tests.mms.messagestore.persistence>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>java-bdb.0-10</id>
+      <activation>
+        <property>
+          <name>profile</name>
+          <value>java-bdb.0-10</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-bdb.0-10</profile>
+        <profile.broker.version>0-10</profile.broker.version>
+        <profile.virtualhostnode.type>BDB</profile.virtualhostnode.type>
+        <profile.virtualhostnode.context.blueprint>{"type":"ProvidedStore","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>java-bdb.0-9-1</id>
+      <activation>
+        <property>
+          <name>profile</name>
+          <value>java-bdb.0-9-1</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-bdb.0-9-1</profile>
+        <profile.broker.version>0-9-1</profile.broker.version>
+        <profile.virtualhostnode.type>BDB</profile.virtualhostnode.type>
+        <profile.virtualhostnode.context.blueprint>{"type":"ProvidedStore","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>java-bdb.0-9</id>
+      <activation>
+        <property>
+          <name>profile</name>
+          <value>java-bdb.0-9</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-bdb.0-9</profile>
+        <profile.broker.version>0-9</profile.broker.version>
+        <profile.virtualhostnode.type>BDB</profile.virtualhostnode.type>
+        <profile.virtualhostnode.context.blueprint>{"type":"ProvidedStore","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>java-dby-mem.0-10</id>
+      <activation>
+        <property>
+          <name>profile</name>
+          <value>java-dby-mem.0-10</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-dby-mem.0-10</profile>
+        <profile.broker.version>0-10</profile.broker.version>
+        <profile.virtualhostnode.type>DERBY</profile.virtualhostnode.type>
+        <profile.virtualhostnode.context.blueprint>{"type":"ProvidedStore","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>java-dby-mem.0-9-1</id>
+      <activation>
+        <property>
+          <name>profile</name>
+          <value>java-dby-mem.0-9-1</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-dby-mem.0-9-1</profile>
+        <profile.broker.version>0-9-1</profile.broker.version>
+        <profile.virtualhostnode.type>DERBY</profile.virtualhostnode.type>
+        <profile.virtualhostnode.context.blueprint>{"type":"ProvidedStore","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>java-dby-mem.0-9</id>
+      <activation>
+        <property>
+          <name>profile</name>
+          <value>java-dby-mem.0-9</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-dby-mem.0-9</profile>
+        <profile.broker.version>0-9</profile.broker.version>
+        <profile.virtualhostnode.type>DERBY</profile.virtualhostnode.type>
+        <profile.virtualhostnode.context.blueprint>{"type":"ProvidedStore","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>java-dby.0-10</id>
+      <activation>
+        <property>
+          <name>profile</name>
+          <value>java-dby.0-10</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-dby.0-10</profile>
+        <profile.broker.version>0-10</profile.broker.version>
+        <profile.virtualhostnode.type>DERBY</profile.virtualhostnode.type>
+        <profile.virtualhostnode.context.blueprint>{"type":"ProvidedStore","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+        <profile.test_receive_timeout>2000</profile.test_receive_timeout>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>java-dby.0-9-1</id>
+      <activation>
+        <property>
+          <name>profile</name>
+          <value>java-dby.0-9-1</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-dby.0-9-1</profile>
+        <profile.broker.version>0-9-1</profile.broker.version>
+        <profile.virtualhostnode.type>DERBY</profile.virtualhostnode.type>
+        <profile.virtualhostnode.context.blueprint>{"type":"ProvidedStore","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+        <profile.test_receive_timeout>2000</profile.test_receive_timeout>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>java-dby.0-9</id>
+      <activation>
+        <property>
+          <name>profile</name>
+          <value>java-dby.0-9</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-dby.0-9</profile>
+        <profile.broker.version>0-9</profile.broker.version>
+        <profile.test.amqp_port_protocols>["AMQP_0_8","AMQP_0_9"]</profile.test.amqp_port_protocols>
+        <profile.virtualhostnode.context.blueprint>{"type":"ProvidedStore","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+        <profile.test_receive_timeout>2000</profile.test_receive_timeout>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>java-mms.1-0</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+        <property>
+          <name>profile</name>
+          <value>java-mms.1-0</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-mms.1-0</profile>
+        <profile.broker.version>1.0</profile.broker.version>
+        <profile.virtualhostnode.type>Memory</profile.virtualhostnode.type>
+        <profile.virtualhostnode.context.blueprint>{"type":"ProvidedStore","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+        <profile.qpid.tests.mms.messagestore.persistence>true</profile.qpid.tests.mms.messagestore.persistence>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>java-bdb.1-0</id>
+      <activation>
+        <property>
+          <name>profile</name>
+          <value>java-bdb.1-0</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-bdb.1-0</profile>
+        <profile.broker.version>1.0</profile.broker.version>
+        <profile.virtualhostnode.type>BDB</profile.virtualhostnode.type>
+        <profile.virtualhostnode.context.blueprint>{"type":"ProvidedStore","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>java-dby.1-0</id>
+      <activation>
+        <property>
+          <name>profile</name>
+          <value>java-dby.1-0</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-dby.1-0</profile>
+        <profile.broker.version>1.0</profile.broker.version>
+        <profile.test.amqp_port_protocols>["AMQP_1_0"]</profile.test.amqp_port_protocols>
+        <profile.virtualhostnode.context.blueprint>{"type":"ProvidedStore","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+      </properties>
+    </profile>
+
+    <!--
+    Split store profiles.
+    Virtual host configuration can be overridden by setting blueprint property like below
+    -Dprofile.virtualhostnode.context.blueprint='{"type":"BDB","storePath":"${qpid.work_dir}/${this:name}/bdb"}'
+    -->
+    <profile>
+      <id>java-json.1-0</id>
+      <activation>
+        <property>
+          <name>profile</name>
+          <value>java-json.1-0</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-json.1-0</profile>
+        <profile.broker.version>1.0</profile.broker.version>
+        <profile.virtualhostnode.type>JSON</profile.virtualhostnode.type>
+        <profile.virtualhostnode.context.blueprint>{"type":"BDB","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+      </properties>
+    </profile>
+    <profile>
+      <id>java-json.0-9-1</id>
+      <activation>
+        <property>
+          <name>profile</name>
+          <value>java-json.0-9-1</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-json.0-9-1</profile>
+        <profile.broker.version>0-9-1</profile.broker.version>
+        <profile.virtualhostnode.type>JSON</profile.virtualhostnode.type>
+        <profile.virtualhostnode.context.blueprint>{"type":"BDB","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>java-json.0-10</id>
+      <activation>
+        <property>
+          <name>profile</name>
+          <value>java-json.0-10</value>
+        </property>
+      </activation>
+      <properties>
+        <profile>java-json.0-10</profile>
+        <profile.broker.version>0-10</profile.broker.version>
+        <profile.virtualhostnode.type>JSON</profile.virtualhostnode.type>
+        <profile.virtualhostnode.context.blueprint>{"type":"BDB","globalAddressDomains":"${dollar.sign}{qpid.globalAddressDomains}"}</profile.virtualhostnode.context.blueprint>
+      </properties>
+    </profile>
+
+    <!-- Profile to update the Apache parent pom profile of the same name to prevent source assembly at java build level.-->
+    <profile>
+      <id>apache-release</id>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>source-release-assembly</id>
+                <configuration>
+                  <skipAssembly>true</skipAssembly>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+
+    <profile>
+      <id>dependency-check</id>
+      <!-- Use this profile with the packaging phase, to perform some checks on the module dependencies.
+
+           Verifies that only the explicitly included licences have been used for any compile or runtime dependencies,
+           and additionally for any modules that set 'dependency-change-verification' true also checks for a change in
+           dependencies against a previous reference output that might signal need for updates to LICENSE and/or NOTICE
+           files included in their binary assembly files.
+      -->
+      <properties>
+        <license-maven-plugin-output-dir>${project.build.directory}/license-maven-plugin</license-maven-plugin-output-dir>
+        <dependency-verification-output-dir>${project.build.directory}/dependency-change-verification</dependency-verification-output-dir>
+        <dependency-verification-generated-file>${dependency-verification-output-dir}/PROCESSED_DEPENDENCIES_INFO</dependency-verification-generated-file>
+        <dependency-verification-reference-file>${basedir}/src/main/assembly/dependency-verification/DEPENDENCIES_REFERENCE</dependency-verification-reference-file>
+        <dependency-change-verification>false</dependency-change-verification>
+      </properties>
+
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>license-maven-plugin</artifactId>
+            <!-- version specified in pluginManagement -->
+            <configuration>
+              <failIfWarning>true</failIfWarning>
+              <excludedScopes>provided,test</excludedScopes>
+              <outputDirectory>${license-maven-plugin-output-dir}</outputDirectory>
+              <!-- Exclude logback from being checked, it is dual licensed and lists both licenses in META-INF Bundle-License   -->
+              <!-- Exclude BCEL from being checked, it is ALv2 but doesnt have the necessary metadata -->
+              <excludedGroups>org.apache.bcel|ch.qos.logback</excludedGroups>
+              <includedLicenses>
+                <includedLicense>Apache Software License, Version 2.0</includedLicense>
+                <includedLicense>The MIT License</includedLicense>
+                <includedLicense>BSD License</includedLicense>
+                <includedLicense>Eclipse Public License - Version 1.0</includedLicense>
+                <includedLicense>Common Public License Version 1.0</includedLicense>
+                <includedLicense>Academic Free License v2.1</includedLicense>
+                <includedLicense>COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0</includedLicense>
+                <includedLicense>Public Domain</includedLicense>
+                <includedLicense>Bouncy Castle Licence</includedLicense>
+              </includedLicenses>
+              <licenseMerges>
+                <licenseMerge>Apache Software License, Version 2.0|The Apache Software License, Version 2.0|Apache Software License - Version 2.0|Apache v2|Apache 2|Apache License, Version 2.0|Apache 2.0|Apache Public License 2.0</licenseMerge>
+                <licenseMerge>The MIT License|MIT License|MIT license</licenseMerge>
+                <licenseMerge>BSD License|New BSD|New BSD License|BSD 3-Clause|BSD Licence 3|BSD License 3</licenseMerge>
+                <licenseMerge>Eclipse Public License - Version 1.0|Eclipse Public License - v 1.0|Eclipse Public License, Version 1.0|Eclipse Public License 1.0|MPL 2.0 or EPL 1.0</licenseMerge>
+                <licenseMerge>Academic Free License v2.1|AFL-2.1</licenseMerge>
+                <licenseMerge>COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0|CDDL + GPLv2 with classpath exception</licenseMerge>
+              </licenseMerges>
+            </configuration>
+            <executions>
+              <execution>
+                <id>check-third-party-licensing</id>
+                <phase>prepare-package</phase>
+                <goals>
+                  <goal>add-third-party</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <!--version specified in pluginManagement -->
+            <executions>
+              <execution>
+                <id>dependency-change-verification</id>
+                <phase>prepare-package</phase>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+                <configuration>
+                  <target if="${dependency-change-verification}">
+                    <!-- Set the output location for the generated file -->
+                    <condition property="dependency-verification-output-file" value="${dependency-verification-reference-file}" else="${dependency-verification-generated-file}">
+                      <istrue value="${update-dependency-reference}" />
+                    </condition>
+                    <!--  Output the ALv2 header and a title, then append the DEPENDENCIES file contents,
+                          processing to strip out the qpid module version info -->
+                    <echo>Generating dependency info at: ${dependency-verification-output-file}</echo>
+                    <concat destfile="${dependency-verification-output-file}" append="false">
+                      <header filtering="no" trimleading="yes">
+                        #
+                        # Licensed to the Apache Software Foundation (ASF) under one
+                        # or more contributor license agreements.  See the NOTICE file
+                        # distributed with this work for additional information
+                        # regarding copyright ownership.  The ASF licenses this file
+                        # to you under the Apache License, Version 2.0 (the
+                        # "License"); you may not use this file except in compliance
+                        # with the License.  You may obtain a copy of the License at
+                        #
+                        #   http://www.apache.org/licenses/LICENSE-2.0
+                        #
+                        # Unless required by applicable law or agreed to in writing,
+                        # software distributed under the License is distributed on an
+                        # "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+                        # KIND, either express or implied.  See the License for the
+                        # specific language governing permissions and limitations
+                        # under the License.
+                        #
+
+                        #// ------------------------------------------------------------------
+                        # TRIMMED 3RD PARTY DEPENDENCY INFORMATION FOR MODIFICATION CHECKS
+                        #
+                      </header>
+                      <path path="${project.build.directory}/maven-shared-archive-resources/META-INF/DEPENDENCIES" />
+                    </concat>
+
+                    <replaceregexp file="${dependency-verification-output-file}" flags="gm" replace="">
+                      <regexp id="stripqpidcontentheader" pattern="^\/\/\ .*\n|^Qpid\ .*\n" />
+                    </replaceregexp>
+                    <replaceregexp file="${dependency-verification-output-file}" flags="gm">
+                      <regexp id="stripqpidcontentversions" pattern="(^.*org.apache.qpid:.*:.*):.*" />
+                      <substitution expression="\1" />
+                    </replaceregexp>
+                    <!-- Ensure the reference file is present -->
+                    <fail message="Dependency info reference file was not present at: ${dependency-verification-reference-file}. You can generate an initial reference file by running again with -Dupdate-dependency-reference.">
+                      <condition>
+                        <not>
+                          <available file="${dependency-verification-reference-file}" />
+                        </not>
+                      </condition>
+                    </fail>
+                    <!--  Compare output to the reference file to check they are the same, fail if they arent -->
+                    <echo>Comparing to against reference info at: ${dependency-verification-reference-file}</echo>
+                    <fail message="Generated dependency info does not match the reference. Ensure LICENCE and NOTICE files are correct and then update the reference by running again with -Dupdate-dependency-reference. Generated file: '${dependency-verification-output-file}'. Reference file: '${dependency-verification-reference-file}'.">
+                      <condition>
+                        <not>
+                          <filesmatch file1="${dependency-verification-output-file}" file2="${dependency-verification-reference-file}" textfile="true" />
+                        </not>
+                      </condition>
+                    </fail>
+                  </target>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>
+

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!--
+
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+
+-->
+
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="Java-Broker-Runtime-Close-Connection-When-No-Route">
+  <title>Closing client connections on unroutable mandatory messages</title>
+
+  <section xml:id="Java-Broker-Runtime-Close-Connection-When-No-Route-Summary">
+  <title>Summary</title>
+    <para>
+        Due to asynchronous nature of AMQP 0-8/0-9/0-9-1 protocols sending a message with a routing key for which no queue binding exist results
+        in either message being bounced back (if it is mandatory or immediate) or discarded on broker side otherwise.
+    </para>
+    <para>
+        When a 'mandatory' message is returned, the Apache Qpid JMS AMQP 0-x clients conveys this by delivering
+        an <emphasis>AMQNoRouteException</emphasis> through the configured ExceptionListener on the Connection.
+        This does not cause channel or connection closure, however it requires a special exception handling
+        on client side in order to deal with <emphasis>AMQNoRouteExceptions</emphasis>.
+        This could potentially be a problem when using various messaging frameworks (e.g. Mule)
+        as they usually close the connection on receiving any JMSException.
+    </para>
+    <para>
+        In order to simplify application handling of scenarios where 'mandatory' messages
+        are being sent to queues which do not actually exist, the Apache Qpid Broker-J can be configured such that
+        it will respond to this situation by closing the connection
+        rather than returning the unroutable message to the client as it normally should.
+        From the application perspective, this will result in failure of synchronous operations in progress such as a session commit() call.
+    </para>
+    <note>
+        <para>This feature affects only transacted sessions.</para>
+        <para>
+           By default, the Apache Qpid JMS AMQP 0-x produces mandatory messages when using queue destinations.  Topic
+           destinations produce 'non-mandatory' messages.
+        </para>
+    </note>
+  </section>
+  <section xml:id="Java-Broker-Runtime-Close-Connection-When-No-Route-Configuration">
+    <title>Configuring
+        <emphasis>closeWhenNoRoute</emphasis>
+    </title>
+    <para>
+        The Port attribute <emphasis>closeWhenNoRoute</emphasis> can be set to specify this feature on broker side.
+        By default, it is turned on. Setting <emphasis>closeWhenNoRoute</emphasis> to <emphasis>false</emphasis> switches
+        it off.
+    </para>
+      <para>See the <link xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xlink:href="../../jms-client-0-8/book/JMS-Client-0-8-Connection-URL.html">Qpid JMS AMQP 0-x client
+          documentation</link> for details of enabling this feature client side.
+      </para>
+  </section>
+</section>

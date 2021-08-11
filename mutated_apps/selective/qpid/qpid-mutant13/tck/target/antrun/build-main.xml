@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo>TCK: To run all TCK tests, set system property -Dtck to a name of a JMS client e.g. qpid-jms-client
+                                    and set -Dtck.directory to the location of the exploded TCK distribution.
+                                    To run all tests from a single class, use the system property -Dtck.test to specify the test source:
+                                    e.g. -Dtck.test=com/sun/ts/tests/jms/ee/all/sessiontests/SessionTests.java
+                                    To run only a single test, append the test name:
+                                    e.g. -Dtck.test=com/sun/ts/tests/jms/ee/all/sessiontests/SessionTests.java#InvalidDestinationTests_from_standalone
+
+                                    JMS2.0 TCK: To run all JMS2.0 TCK tests set profile to jms20-tck and
+                                    set -Dtck.directory to the location of the exploded TCK distribution
+                                    For example,
+                                    mvn post-integration-test -Pjms20-tck -Dtck.directory=/home/alex/tck/jmstck20
+                                    To run only a single test, append the test name:
+                                    e.g. -Dtck.test=com/sun/ts/tests/jms/core20/runtimeexceptiontests/Client.java#transactionRolledBackRuntimeExceptionTest3_from_standalone</echo>
+</target>
+</project>

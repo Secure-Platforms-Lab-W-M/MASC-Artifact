@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.oF2pks.kalturadeviceinfos.MainActivity"
+    tools:showIn="@layout/activity_main"
+    tools:ignore="HardcodedText">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="The Matrix has you ..."
+            android:id="@+id/textView"
+            android:background="@color/text_shadow_black"
+            android:textColor="@color/light_font"
+            android:shadowColor="@color/text_shadow"
+            android:textIsSelectable="true"
+            />
+    </ScrollView>
+</RelativeLayout>

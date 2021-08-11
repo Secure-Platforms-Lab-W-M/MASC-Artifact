@@ -1,0 +1,3 @@
+Mutant 1: /Users/amitseal/workspaces/mutationbackyard/mutations/atalk/carreport-mutant1//app/src/main/java/me/kuehle/carreport/util/webdav/CertificateHelper.java; TrustManagerInstace in line 94
+Mutant 2: /Users/amitseal/workspaces/mutationbackyard/mutations/atalk/carreport-mutant2//app/src/main/java/me/kuehle/carreport/util/webdav/CertificateHelper.java; SSLContextInstance in line 93
+Mutant 3: /Users/amitseal/workspaces/mutationbackyard/mutations/carreport//carreport-mutant1//app/src/main/java/me/kuehle/carreport/util/webdav/WebDavClient.java; HostnameVerifierInstance in line 69

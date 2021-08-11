@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/screen_padding">
+
+    <TextView
+        android:id="@+id/text"
+        style="@style/MediumFont"
+        android:background="@drawable/alpha_blue_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginBottom="@dimen/label_padding"
+        android:text="[window text]" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/list_padding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/username_label"
+            style="@style/MediumFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|end"
+            android:text="@string/service_gui_USERNAME" />
+
+        <EditText
+            android:id="@+id/username"
+            style="@style/EntryTextView"
+            android:layout_width="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0.5"
+            android:hint="@string/username_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/list_padding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/password_label"
+            style="@style/MediumFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|end"
+            android:text="@string/service_gui_PASSWORD" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/EntryTextView"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/store_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/list_padding"
+        android:text="@string/store_password" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelButton"
+            style="@style/ButtonTop"
+            android:onClick="onCancelClicked"
+            android:text="@string/service_gui_CANCEL" />
+
+        <Button
+            android:id="@+id/okButton"
+            style="@style/ButtonTop"
+            android:layout_marginStart="4dp"
+            android:onClick="onOkClicked"
+            android:text="@string/service_gui_OK" />
+    </LinearLayout>
+</LinearLayout>

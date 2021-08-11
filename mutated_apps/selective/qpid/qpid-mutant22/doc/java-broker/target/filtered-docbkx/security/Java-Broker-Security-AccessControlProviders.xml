@@ -1,0 +1,620 @@
+<?xml version="1.0"?>
+<!--
+
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+
+-->
+
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="Java-Broker-Security-AccessControlProviders">
+  <title>Access Control Providers</title>
+  <para>
+    The Access Control Provider governs the actions that a user may perform.
+  </para>
+  <para>There are two points within the hierarchy that enforce access control: the Broker itself and at each Virtual
+    Host. When an access decision needs to be made, the nearest control point configured with a provider is consulted
+    for a decision.  The example, when making a decision about the ability to say, consume from, a Queue, if the
+    Virtual Host is configured with Access Control Provider it is consulted.  Unless a decision is made, the decision
+    is delegated to the Access Control Provider configured at the Broker.
+  </para>
+  <para>Access Control Providers are configured with a list of ACL rules. The rules determine to which objects
+    the user has access and what actions the user may perform on those objects.  Rules are ordered and are considered
+    top to bottom.  The first matching rule makes the access decision.
+  </para>
+  <para>
+    ACL rules may be written in terms of user or group names. A rule written in terms of a group name applies to the
+    user if he is a member of that group. Groups information is obtained from the
+    <link linkend="Java-Broker-Security-Authentication-Providers">Authentication Providers</link>
+    and
+    <link linkend="Java-Broker-Security-Group-Providers">Group Providers</link>.  Writing ACL in terms of groups is
+    recommended.
+  </para>
+  <para>
+    The Access Control Providers can be configured using
+    <link linkend="Java-Broker-Management-Channel-REST-API">REST Management interfaces</link>
+    and <link linkend="Java-Broker-Management-Channel-Web-Console">Web Management Console</link>.
+  </para>
+  <section role="h3" xml:id="Java-Broker-Security-AccessControlProviders-Types">
+    <title>Types</title>
+    <para>There are currently two types of Access Control Provider implementing ACL rules.
+      <itemizedlist>
+        <listitem>
+          <para><emphasis>RulesBased</emphasis> - a provider that stores the rules-set within
+           the Broker's or VirtualHost's configuration.  When used with HA, the Virtualhost
+           rules automatically propagated to all nodes participating within the HA group.</para>
+        </listitem>
+        <listitem>
+          <para>
+            <para><emphasis>ACLFile</emphasis> - an older provider that references an externally provided
+              ACL file (or data url).  This provider is deprecated.</para>
+          </para>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </section>
+  <section role="h3" xml:id="Java-Broker-Security-AccessControlProviders-ACLRules">
+    <title>
+       ACL Rules
+    </title>
+    <para>
+      An ACL rule-set is an ordered list of ACL rules.</para>
+    <para>An ACL rule comprises matching criteria that determines if a rule applies to a situation and a decision
+      outcome. The rule produces an outcome only if the all matching criteria are satisfied.
+    </para>
+    <para>Matching criteria is composed of an ACL object type (e.g. <literal>QUEUE</literal>), an ACL action
+      (e.g. <literal>UPDATE</literal>) and other properties that further refine if a match is made. These properties
+      restrict the match based on additional criteria such as name or IP address. ACL Object type <literal>ALL</literal>
+      matches any object.  Likewise ACL Action <literal>ALL</literal> matches any action.
+    </para>
+    <para>Let's look at some examples.</para>
+    <programlisting>
+      ACL ALLOW alice CREATE QUEUE              # Grants alice permission to create all queues.
+      ACL DENY bob CREATE QUEUE name="myqueue"  # Denies bob permission to create a queue called "myqueue"
+    </programlisting>
+    <para>
+      As discussed, the ACL rule-set is considered in order with the first matching rule taking precedence over all those
+      that follow. In the following example, if the user bob tries to create an exchange "myexch", the action
+      will be allowed by the first rule. The second rule will never be considered.
+    </para>
+    <programlisting>
+      ACL ALLOW bob ALL EXCHANGE
+      ACL DENY bob CREATE EXCHANGE name="myexch"  # Dead rule
+    </programlisting>
+    <para>
+      If the desire is to allow bob to create all exchanges except "myexch", order of the rules must be reversed:
+    </para>
+    <programlisting>
+      ACL DENY bob CREATE EXCHANGE name="myexch"
+      ACL ALLOW bob ALL EXCHANGE
+    </programlisting>
+    <para>
+      If a rule-set fails to make a decision, the result is configurable. By default, the <literal>RuleBased</literal>
+      provider defers the decision allowing another provider further up the hierarchy to make a decision (i.e. allowing
+      the VirtualHost control point to delegate to the Broker). In the case of the ACLFile provider, by default, its
+      rule-set implicit have a rule denying all operations to all users. It is as if the rule-set ends with
+      <literal>ACL DENY ALL ALL</literal>.   If no access control provider makes a decision the default is to
+      deny the action.
+    </para>
+    <para>
+      When writing a new ACL, a useful approach is to begin with an rule-set containing only
+      <programlisting>ACL DENY-LOG ALL ALL</programlisting> at the Broker control point which will cause the Broker to
+      deny all operations with details of the denial logged. Build up the ACL rule by rule, gradually working through
+      the use-cases of your system. Once the ACL is complete, consider switching the DENY-LOG actions to DENY.
+    </para>
+    <para>
+      ACL rules are very powerful: it is possible to write very granular rules specifying many broker objects and their
+      properties.  Most projects probably won't need this degree of flexibility.  A reasonable approach is to choose to apply permissions
+      at a certain level of abstractions and apply them consistently across the whole system.
+    </para>
+  </section>
+  <section role="h4" xml:id="Java-Broker-Security-AccessControlProviders-Syntax">
+    <title>
+       Syntax
+    </title>
+
+    <para>
+       ACL rules follow this syntax:
+    </para>
+    <programlisting>
+     ACL {permission} {&lt;group-name&gt;|&lt;user-name&gt;|ALL} {action|ALL} [object|ALL] [property="&lt;property-value&gt;"]
+    </programlisting>
+
+    <para>
+       Comments may be introduced with the hash (#) character and are ignored.  Long lines can be broken with the slash (\) character.
+    </para>
+    <programlisting>
+      # A comment
+      ACL ALLOW admin CREATE ALL # Also a comment
+      ACL DENY guest \
+      ALL ALL   # A broken line
+    </programlisting>
+  </section>
+  <table xml:id="table-Java-Broker-Security-AccessControlProviders-Syntax_permissions">
+    <title>List of ACL permission</title>
+    <tgroup cols="2">
+      <tbody>
+        <row>
+          <entry><command>ALLOW</command></entry>
+          <entry><para>Allow the action</para></entry>
+        </row>
+        <row>
+          <entry><command>ALLOW-LOG</command></entry>
+          <entry><para> Allow the action and log the action in the log </para></entry>
+        </row>
+        <row>
+          <entry><command>DENY</command></entry>
+          <entry><para> Deny the action</para></entry>
+        </row>
+        <row>
+          <entry><command>DENY-LOG</command></entry>
+          <entry><para> Deny the action and log the action in the log</para></entry>
+       </row>
+     </tbody>
+    </tgroup>
+  </table>
+  <table xml:id="table-Java-Broker-Security-AccessControlProviders-Syntax_actions">
+    <title>List of ACL actions</title>
+    <tgroup cols="4">
+    <thead>
+        <row>
+          <entry><para>Action</para></entry>
+          <entry><para>Description</para></entry>
+          <entry><para>Supported object types</para></entry>
+          <entry><para>Supported properties</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry> <command>CONSUME</command> </entry>
+          <entry> <para> Applied when subscriptions are created </para> </entry>
+          <entry><para>QUEUE</para></entry>
+          <entry><para>name, autodelete, temporary, durable, exclusive, alternate, owner, virtualhost_name</para></entry>
+        </row>
+        <row>
+          <entry> <command>PUBLISH</command> </entry>
+          <entry> <para> Applied on a per message basis on publish message transfers</para> </entry>
+          <entry><para>EXCHANGE</para></entry>
+          <entry><para>name, routingkey, virtualhost_name</para></entry>
+        </row>
+        <row>
+          <entry> <command>CREATE</command> </entry>
+          <entry> <para> Applied when an object is created, such as bindings, queues, exchanges</para> </entry>
+          <entry><para>VIRTUALHOSTNODE, VIRTUALHOST, EXCHANGE, QUEUE, USER, GROUP</para></entry>
+          <entry><para>see properties on the corresponding object type</para></entry>
+        </row>
+        <row>
+          <entry> <command>ACCESS</command> </entry>
+          <entry> <para> Applied when a connection is made for messaging or management</para> </entry>
+          <entry><para>VIRTUALHOST, MANAGEMENT</para></entry>
+          <entry><para>name (for VIRTUALHOST only)</para></entry>
+        </row>
+        <row>
+          <entry> <command>BIND</command> </entry>
+          <entry> <para> Applied when queues are bound to exchanges</para> </entry>
+          <entry><para>EXCHANGE</para></entry>
+          <entry><para>name, routingKey, queue_name, virtualhost_name, temporary, durable</para></entry>
+        </row>
+        <row>
+          <entry> <command>UNBIND</command> </entry>
+          <entry> <para> Applied when queues are unbound from exchanges</para> </entry>
+          <entry><para>EXCHANGE</para></entry>
+          <entry><para>name, routingKey, queue_name, virtualhost_name, temporary, durable</para></entry>
+        </row>
+        <row>
+          <entry> <command>DELETE</command> </entry>
+          <entry> <para> Applied when objects are deleted </para> </entry>
+          <entry><para>VIRTUALHOSTNODE, VIRTUALHOST, EXCHANGE, QUEUE, USER, GROUP</para></entry>
+          <entry><para>see properties on the corresponding object type</para></entry>
+        </row>
+        <row>
+          <entry> <command>PURGE</command> </entry> <entry>
+          <para>Applied when the contents of a queue is purged</para> </entry>
+          <entry><para>QUEUE</para></entry>
+          <entry><para> </para></entry>
+        </row>
+        <row>
+          <entry> <command>UPDATE</command> </entry>
+          <entry> <para> Applied when an object is updated </para> </entry>
+          <entry><para>VIRTUALHOSTNODE, VIRTUALHOST, EXCHANGE, QUEUE, USER, GROUP</para></entry>
+          <entry><para>see EXCHANGE and QUEUE properties</para></entry>
+        </row>
+        <row>
+          <entry> <command>CONFIGURE</command> </entry>
+          <entry> <para> Applied when a Broker/Port/Authentication Provider/Access Control Provider/BrokerLogger is created/update/deleted.</para> </entry>
+          <entry><para>BROKER</para></entry>
+          <entry><para> </para></entry>
+        </row>
+        <row>
+          <entry><command>ACCESS_LOGS</command> </entry>
+          <entry><para>Allows/denies the specific user to download log file(s).</para> </entry>
+          <entry><para>BROKER, VIRTUALHOST</para></entry>
+          <entry><para>name (for VIRTUALHOST only)</para></entry>
+        </row>
+        <row>
+          <entry><command>SHUTDOWN</command> </entry>
+          <entry><para>Allows/denies the specific user to shutdown the Broker.</para> </entry>
+          <entry><para>BROKER</para></entry>
+          <entry><para/></entry>
+        </row>
+        <row>
+          <entry><command>INVOKE</command> </entry>
+          <entry><para>Allows/denies the specific user to invoke the named operation.</para> </entry>
+          <entry><para>BROKER, VIRTUALHOSTNODE, VIRTUALHOST, EXCHANGE, QUEUE, USER, GROUP</para></entry>
+          <entry><para>method_name, name and virtualhost_name</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+  <table xml:id="table-Java-Broker-Security-AccessControlProviders-Syntax_objects">
+    <title>List of ACL objects</title>
+    <tgroup cols="4">
+      <thead>
+        <row>
+          <entry><para>Object type</para></entry>
+          <entry><para>Description</para></entry>
+          <entry><para>Supported actions</para></entry>
+          <entry><para>Supported properties</para></entry>
+          <entry><para>Allowed in Virtualhost ACLs?</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry> <command>VIRTUALHOSTNODE</command> </entry>
+          <entry> <para>A virtualhostnode or remote replication node</para> </entry>
+          <entry><para>ALL, CREATE, UPDATE, DELETE, INVOKE</para> </entry>
+          <entry><para>name</para> </entry>
+          <entry><para>No</para> </entry>
+        </row>
+        <row>
+          <entry> <command>VIRTUALHOST</command> </entry>
+          <entry> <para>A virtualhost</para> </entry>
+          <entry><para>ALL, CREATE, UPDATE, DELETE, ACCESS, ACCESS_LOGS, INVOKE</para> </entry>
+          <entry><para>name, connection_limit, connection_frequency_limit</para> </entry>
+          <entry><para>No</para> </entry>
+        </row>
+        <row>
+          <entry> <command>QUEUE</command> </entry>
+          <entry> <para>A queue </para> </entry>
+          <entry><para>ALL, CREATE, DELETE, PURGE, CONSUME, UPDATE, INVOKE</para></entry>
+          <entry><para>name, autodelete, temporary, durable, exclusive, alternate, owner, virtualhost_name</para></entry>
+          <entry><para>Yes</para> </entry>
+        </row>
+        <row>
+          <entry> <command>EXCHANGE</command> </entry>
+          <entry><para>An exchange</para></entry>
+          <entry><para>ALL, ACCESS, CREATE, DELETE, BIND, UNBIND, PUBLISH, UPDATE, INVOKE</para></entry>
+          <entry><para>name, autodelete, temporary, durable, type, virtualhost_name, queue_name(only for BIND and UNBIND), routingkey(only for BIND and UNBIND, PUBLISH)</para></entry>
+          <entry><para>Yes</para> </entry>
+        </row>
+        <row>
+          <entry> <command>USER</command> </entry>
+          <entry> <para>A user</para> </entry>
+          <entry><para>ALL, CREATE, DELETE, UPDATE, INVOKE</para></entry>
+          <entry><para>name</para></entry>
+          <entry><para>No</para> </entry>
+        </row>
+        <row>
+          <entry> <command>GROUP</command> </entry>
+          <entry> <para>A group</para> </entry>
+          <entry><para>ALL, CREATE, DELETE, UPDATE, INVOKE</para></entry>
+          <entry><para>name</para></entry>
+          <entry><para>No</para> </entry>
+        </row>
+        <row>
+          <entry> <command>BROKER</command> </entry>
+          <entry> <para>The broker</para> </entry>
+          <entry><para>ALL, CONFIGURE, ACCESS_LOGS, INVOKE</para></entry>
+          <entry><para/></entry>
+          <entry><para>No</para> </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+  <table xml:id="table-Java-Broker-Security-AccessControlProviders-Syntax_properties">
+    <title>List of ACL properties</title>
+    <tgroup cols="2">
+      <tbody>
+        <row>
+          <entry><command>name</command> </entry>
+          <entry> <para> String. Object name, such as a queue name or exchange name.</para> </entry>
+        </row>
+        <row>
+          <entry> <command>durable</command> </entry>
+          <entry> <para> Boolean. Indicates the object is durable </para> </entry>
+        </row>
+        <row>
+          <entry> <command>routingkey</command> </entry>
+          <entry> <para> String. Specifies routing key </para> </entry>
+        </row>
+        <row>
+          <entry> <command>autodelete</command> </entry>
+          <entry> <para> Boolean. Indicates whether or not the object gets deleted when the connection is closed </para> </entry>
+        </row>
+        <row>
+          <entry> <command>exclusive</command> </entry>
+          <entry> <para> Boolean. Indicates the presence of an <parameter>exclusive</parameter> flag </para> </entry>
+        </row>
+        <row>
+          <entry> <command>temporary</command> </entry>
+          <entry> <para> Boolean. Indicates the presence of an <parameter>temporary</parameter> flag </para> </entry>
+        </row>
+        <row>
+          <entry> <command>type</command> </entry>
+          <entry> <para> String. Type of object, such as topic, or fanout</para> </entry>
+        </row>
+        <row>
+          <entry> <command>alternate</command> </entry>
+          <entry> <para> String. Name of the alternate exchange </para> </entry>
+        </row>
+        <row>
+          <entry> <command>queue_name</command> </entry>
+          <entry> <para> String. Name of the queue (used only when the object is EXCHANGE for BIND and UNBIND actions)</para> </entry>
+        </row>
+        <row>
+          <entry> <command>component</command> </entry>
+          <entry> <para> String. component name</para> </entry>
+        </row>
+        <row>
+          <entry> <command>from_network</command> </entry>
+          <entry>
+            <para>
+              Comma-separated strings representing IPv4 address ranges.
+            </para>
+            <para>
+              Intended for use in ACCESS VIRTUALHOST rules to apply firewall-like restrictions.
+            </para>
+            <para>
+              The rule matches if any of the address ranges match the IPv4 address of the messaging client.
+              The address ranges are specified using either Classless Inter-Domain Routing notation
+              (e.g. 192.168.1.0/24; see <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://tools.ietf.org/html/rfc4632">RFC 4632</link>)
+              or wildcards (e.g. 192.169.1.*).
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry> <command>from_hostname</command> </entry>
+          <entry>
+            <para>
+              Comma-separated strings representing hostnames, specified using Perl-style regular
+              expressions, e.g. .*\.example\.company\.com
+            </para>
+            <para>
+              Intended for use in ACCESS VIRTUALHOST rules to apply firewall-like restrictions.
+            </para>
+            <para>
+              The rule matches if any of the patterns match the hostname of the messaging client.
+            </para>
+            <para>
+              To look up the client's hostname, Qpid uses Java's DNS support, which internally caches its results.
+            </para>
+            <para>
+              You can modify the time-to-live of cached results using the *.ttl properties described on the
+              Java <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://docs.oracle.com/javase/8/docs/technotes/guides/net/properties.html">Networking
+              Properties</link> page.
+            </para>
+            <para>
+              For example, you can either set system property sun.net.inetaddr.ttl from the command line
+              (e.g. export QPID_OPTS="-Dsun.net.inetaddr.ttl=0") or networkaddress.cache.ttl in
+              $JAVA_HOME/lib/security/java.security. The latter is preferred because it is JVM
+              vendor-independent.
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry><command>connection_limit</command></entry>
+          <entry>
+            <para>
+              A maximum number of connections the users belonging to the given identity can establish to the Virtual Host
+            </para>
+            <para>
+              Intended for use in ACCESS VIRTUALHOST rules to restrict the number of connections which can be made
+              by the messaging user.
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry><command>connection_frequency_limit</command></entry>
+          <entry>
+            <para>
+              A maximum number of connections the user belonging to the given identity can establish to the Virtual Host
+              within pre-defined period of time, which is 1 minute by default.
+            </para>
+            <para>
+              Intended for use in ACCESS VIRTUALHOST rules to restrict the frequency of connections which can be made
+              by the messaging user.
+            </para>
+            <para>If required, the frequency period can be changed using context variable
+              <emphasis>qpid.virtualhost.connectionFrequencyPeriodInMillis</emphasis>. As name suggests, its value needs
+              to be specified in milliseconds. Setting it to zero or negative value turns off the
+              <command>connection_frequency</command> evaluation.
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry><command>virtualhost_name</command></entry>
+          <entry>
+            <para>
+              String. A name of virtual host to which the rule is applied.
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry><command>method_name</command></entry>
+          <entry>
+            <para>
+              String. The name of the method. A trailing wildcard (*) is permitted.  Used with INVOKE ACL action.
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry><command>attribute_names</command></entry>
+          <entry>
+            <para>
+              Specifies attribute name criteria.  Used by UPDATE ACL actions only.  Rules with this criteria will match
+              if and only if the set of attributes being updated Comma separated list of attribute names .  This criteria
+              will match if all attributes included within the update appear in the set described by
+              <literal>attribute_names</literal>.
+            </para>
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+  <section role="h4" xml:id="Java-Broker-Security-AccessControlProviders-WorkedExamples">
+    <title>
+      Worked Examples
+    </title>
+    <para>
+      Here are some example ACLs illustrating common use cases.
+    </para>
+    <section role="h4" xml:id="Java-Broker-Security-AccessControlProviders-WorkedExample1">
+      <title>
+        Worked example 1 - Management rights
+      </title>
+      <para>
+        Suppose you wish to permission two users: a user <literal>operator</literal> must be able to perform all
+        Management operations, and a user 'readonly' must be enable to perform only read-only actions. Neither
+        <literal>operator</literal> nor <literal>readonly</literal> should be allowed to connect clients for
+        messaging.
+      </para>
+      <example>
+        <title>Worked example 1 - Management rights</title>
+        <programlisting><![CDATA[
+          # Deny operator/readonly permission to connect for messaging.
+          ACL DENY-LOG operator ACCESS VIRTUALHOST
+          ACL DENY-LOG readonly ACCESS VIRTUALHOST
+          # Give operator permission to perfom all actions
+          ACL ALLOW operator ALL ALL
+          # Give readonly access permission to virtualhost. (Read permission for all objects implicit)
+          ACL ALLOW readonly ACCESS MANAGEMENT
+          ...
+          ... rules for other users
+          ...]]>
+        </programlisting>
+
+      </example>
+    </section>
+    <section role="h4" xml:id="Java-Broker-Security-AccessControlProviders-ResourceRestrictions">
+      <title>
+        Resource restrictions
+      </title>
+      <para>
+        The number of Virtual Host connections and frequency of connections can be restricted with
+        <emphasis>ACCESS</emphasis> rule.
+      </para>
+      <example>
+        <title>Restricting user connections to virtual host</title>
+        <programlisting><![CDATA[
+          ACL ALLOW-LOG guest ACCESS VIRTUALHOST connection_limit=1
+          ACL ALLOW-LOG messaging-users ACCESS VIRTUALHOST connection_frequency_limit=100
+          ...]]>
+        </programlisting>
+      </example>
+      <para>In the example above the maximum number of connections allowed to establish to the Virtual Host by user
+        <emphasis>guest</emphasis> is set to <emphasis>1</emphasis>. The maximum connection frequency for every user
+        belonging to the user group <emphasis>messaging-users</emphasis> is set to <emphasis>100</emphasis> (per minute,
+        by default).
+      </para>
+    </section>
+    <section role="h4" xml:id="Java-Broker-Security-AccessControlProviders-WorkedExample2">
+      <title>
+        Worked example 2 - Simple Messaging
+      </title>
+      <para>
+        Suppose you wish to permission a system for application messaging.  User <literal>publisher</literal>
+        needs permission to publish to <literal>appqueue</literal> and consumer needs permission to consume
+        from the same queue object. We also want <literal>operator</literal> to be able to inspect messages
+        and delete messages in case of the need to intervene.  This example assumes that the queue exists on
+        the Broker.
+      </para>
+      <para>
+        We use this ACL to illustrate separate Broker and Virtualhost access control providers.
+      </para>
+      <para>
+        The following ACL rules are given to the Broker.
+      </para>
+      <example>
+        <title>Worked example 2 - Simple Messaging - Broker ACL rules</title>
+        <programlisting><![CDATA[
+# This gives the operate permission to delete messages on all queues on all virtualhost
+ACL ALLOW operator ACCESS MANAGEMENT
+ACL ALLOW operator INVOKE QUEUE method_name="deleteMessages"
+ACL ALLOW operator INVOKE QUEUE method_name="getMessage*"]]>
+        </programlisting>
+      </example>
+      <para>
+        And the following ACL rule-set is applied to the Virtualhost.  The default outcome of the
+        Access Control Provider must be <literal>DEFERED</literal>.  This means that if a request for
+        access is made for which there are no matching rules, the decision will be deferred to the
+        Broker so it can make a decision instead.
+      </para>
+      <example>
+        <title>Worked example 2 - Simple Messaging - Virtualhost ACL rules</title>
+        <programlisting><![CDATA[
+# Configure the rule-set to DEFER decisions that have no matching rules.
+CONFIG DEFAULTDEFER=TRUE
+# Allow client and server to connect to the virtual host.
+ACL ALLOW publisher ACCESS VIRTUALHOST
+ACL ALLOW consumer ACCESS VIRTUALHOST
+
+ACL ALLOW publisher PUBLISH EXCHANGE name="" routingKey="appqueue"
+ACL ALLOW consumer CONSUME QUEUE name="appqueue"
+# In some addressing configurations, the Qpid JMS AMQP 0-x client, will declare the queue as a side effect of creating the consumer.
+# The following line allows for this.  For the Qpid JMS AMQP 1.0 client, this is not required.
+ACL ALLOW consumer CREATE QUEUE name="appqueue"]]>
+        </programlisting>
+      </example>
+    </section>
+    <section role="h4" xml:id="Java-Broker-Security-AccessControlProviders-WorkedExample3">
+      <title>
+        Worked example 3 - firewall-like access control
+      </title>
+      <para>
+        This example illustrates how to set up an ACL that restricts the IP addresses and hostnames
+        of messaging clients that can access a virtual host.
+      </para>
+      <example>
+      <title>Worked example 3 - firewall-like access control</title>
+        <programlisting><![CDATA[
+          ################
+          # Hostname rules
+          ################
+
+          # Allow messaging clients from company1.com and company1.co.uk to connect
+          ACL ALLOW all ACCESS VIRTUALHOST from_hostname=".*\.company1\.com,.*\.company1\.co\.uk"
+
+          # Deny messaging clients from hosts within the dev subdomain
+          ACL DENY-LOG all ACCESS VIRTUALHOST from_hostname=".*\.dev\.company1\.com"
+
+          ##################
+          # IP address rules
+          ##################
+
+          # Deny access to all users in the IP ranges 192.168.1.0-192.168.1.255 and 192.168.2.0-192.168.2.255,
+          # using the notation specified in RFC 4632, "Classless Inter-domain Routing (CIDR)"
+          ACL DENY-LOG messaging-users ACCESS VIRTUALHOST \
+          from_network="192.168.1.0/24,192.168.2.0/24"
+
+          # Deny access to all users in the IP ranges 192.169.1.0-192.169.1.255 and 192.169.2.0-192.169.2.255,
+          # using wildcard notation.
+          ACL DENY-LOG messaging-users ACCESS VIRTUALHOST \
+          from_network="192.169.1.*,192.169.2.*"]]>
+        </programlisting>
+      </example>
+    </section>
+  </section>
+</section>

@@ -1,0 +1,127 @@
+In file: MyAdapter.java
+Input operator: REACHABILITY
+mutation-0: MyAdapter.addAll
+mutation-1: MyAdapter.addAll
+mutation-2: MyAdapter.addAll
+mutation-3: MyAdapter.MyAdapter
+mutation-4: MyAdapter.onCreateViewHolder
+mutation-5: MyAdapter.onBindViewHolder
+mutation-6: MyAdapter.getItemCount
+mutation-7: ViewHolder.ViewHolder
+mutation-8: ViewHolder.bind
+mutation-9: 1.onClick
+In file: NasaController.java
+Input operator: REACHABILITY
+mutation-10: NasaController.getNASAAPODS
+mutation-11: 1.onResponse
+mutation-12: 1.onFailure
+In file: NASA.java
+Input operator: REACHABILITY
+mutation-13: NASA.NASA
+mutation-14: NASA.getCopyright
+mutation-15: NASA.setCopyright
+mutation-16: NASA.getDate
+mutation-17: NASA.setDate
+mutation-18: NASA.getExplanation
+mutation-19: NASA.setExplanation
+mutation-20: NASA.getHdurl
+mutation-21: NASA.setHdurl
+mutation-22: NASA.getMedia_type
+mutation-23: NASA.setMedia_type
+mutation-24: NASA.getService_version
+mutation-25: NASA.setService_version
+mutation-26: NASA.getTitle
+mutation-27: NASA.setTitle
+mutation-28: NASA.getUrl
+mutation-29: NASA.setUrl
+In file: PicassoDownloader.java
+Input operator: REACHABILITY
+mutation-30: PicassoDownloader.PicassoDownloader
+mutation-31: PicassoDownloader.onPrepareLoad
+mutation-32: PicassoDownloader.onBitmapLoaded
+mutation-33: PicassoDownloader.saveImage
+mutation-34: PicassoDownloader.saveImage
+mutation-35: PicassoDownloader.saveImage
+mutation-36: PicassoDownloader.saveImage
+mutation-37: PicassoDownloader.saveImage
+mutation-38: PicassoDownloader.onBitmapFailed
+In file: Tls12SocketFactory.java
+Input operator: REACHABILITY
+mutation-39: Tls12SocketFactory.Tls12SocketFactory
+mutation-40: Tls12SocketFactory.getDefaultCipherSuites
+mutation-41: Tls12SocketFactory.getSupportedCipherSuites
+mutation-42: Tls12SocketFactory.createSocket
+mutation-43: Tls12SocketFactory.createSocket
+mutation-44: Tls12SocketFactory.createSocket
+mutation-45: Tls12SocketFactory.createSocket
+mutation-46: Tls12SocketFactory.createSocket
+mutation-47: Tls12SocketFactory.patch
+mutation-48: Tls12SocketFactory.patch
+mutation-49: Tls12SocketFactory.enableTls12OnPreLollipop
+mutation-50: Tls12SocketFactory.enableTls12OnPreLollipop
+mutation-51: Tls12SocketFactory.enableTls12OnPreLollipop
+mutation-52: Tls12SocketFactory.enableTls12OnPreLollipop
+In file: API.java
+Input operator: REACHABILITY
+mutation-53: API.getApi
+mutation-54: API.getApi
+mutation-55: API.getApi
+mutation-56: API.getApi
+In file: NASAServices.java
+Input operator: REACHABILITY
+In file: ImageActivity.java
+Input operator: REACHABILITY
+mutation-57: 1.run
+mutation-58: 1.run
+mutation-59: 1.run
+mutation-60: 1.run
+mutation-61: ImageActivity.onCreate
+mutation-62: 1.onClick
+mutation-63: ImageActivity.onPostCreate
+mutation-64: ImageActivity.toggle
+mutation-65: ImageActivity.toggle
+mutation-66: ImageActivity.toggle
+mutation-67: ImageActivity.hide
+mutation-68: ImageActivity.hide
+mutation-69: ImageActivity.show
+mutation-70: ImageActivity.delayedHide
+In file: MainActivity.java
+Input operator: REACHABILITY
+mutation-71: MainActivity.onCreate
+mutation-72: 1.onItemClick
+mutation-73: 1.onItemClick
+mutation-74: 1.onItemClick
+mutation-75: MainActivity.onCreateOptionsMenu
+mutation-76: MainActivity.onOptionsItemSelected
+mutation-77: MainActivity.enforceIconBar
+mutation-78: MainActivity.getNasaAPODS
+mutation-79: MainActivity.picassoClearCache
+mutation-80: MainActivity.picassoClearCache
+mutation-81: MainActivity.picassoClearCache
+In file: ViewActivity.java
+Input operator: REACHABILITY
+mutation-82: ViewActivity.onCreate
+mutation-83: 1.onClick
+mutation-84: ViewActivity.onCreateOptionsMenu
+mutation-85: ViewActivity.onOptionsItemSelected
+mutation-86: ViewActivity.checkPermission
+mutation-87: ViewActivity.checkPermission
+mutation-88: ViewActivity.checkPermission
+mutation-89: ViewActivity.checkPermission
+mutation-90: ViewActivity.checkPermission
+mutation-91: ViewActivity.checkPermission
+mutation-92: ViewActivity.checkPermission
+mutation-93: ViewActivity.downloadPicasso
+mutation-94: ViewActivity.OlderVersions
+mutation-95: ViewActivity.OlderVersions
+mutation-96: ViewActivity.OlderVersions
+mutation-97: ViewActivity.onRequestPermissionsResult
+mutation-98: ViewActivity.onRequestPermissionsResult
+mutation-99: ViewActivity.onRequestPermissionsResult
+mutation-100: ViewActivity.onRequestPermissionsResult
+mutation-101: ViewActivity.CheckPermission
+mutation-102: ViewActivity.getImageNameApod
+mutation-103: ViewActivity.setDataNasaAPOD
+mutation-104: ViewActivity.getConcat
+mutation-105: ViewActivity.getConcat
+mutation-106: ViewActivity.getConcat

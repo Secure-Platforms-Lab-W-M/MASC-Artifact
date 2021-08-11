@@ -1,0 +1,11 @@
+[2020-11-25 13:12:44] [javac-extractor-3605] [WARN] Appending source destination directory /media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant1/app/build/generated/source/apt/release to sourcepath
+[2020-11-25 13:12:44] [javac-extractor-3605] Starting extraction for:
+                                             sun.java.command=com.semmle.extractor.java.JavaExtractor --jdk-version -1 --javac-args @@@/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant1/codeql-db/log/ext/javac-1.args
+                                             user.dir=/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant1
+[2020-11-25 13:12:46] [javac-extractor-3605] Processing file /media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant1/app/build/generated/source/r/release/dnsfilter/android/R.java
+[2020-11-25 13:12:46] [javac-extractor-3605] Processing file /media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant1/app/build/generated/source/buildConfig/release/dnsfilter/android/BuildConfig.java
+[2020-11-25 13:12:46] [javac-extractor-3605] Javac init time: 1.1s
+[2020-11-25 13:12:46] [javac-extractor-3605] Javac attr time: 0.6s
+[2020-11-25 13:12:46] [javac-extractor-3605] Extractor time: 0.1s
+[2020-11-25 13:12:46] [javac-extractor-3605] Other time: 0.2s
+[2020-11-25 13:12:46] [javac-extractor-3605] Total time: 2.1s

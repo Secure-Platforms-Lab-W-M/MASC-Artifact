@@ -1,0 +1,9 @@
+﻿Type,Impact,Category,File,Function,Count
+Structurally dead code,Medium,Control flow issues,/media/data/muse2/muse2repo_apk_mutation_reach_src/AFH_Download/app/src/main/java/org/afhdownloader/SwipeDismissTouchListener.java,SwipeDismissTouchListener.onTouch,4
+Structurally dead code,Medium,Control flow issues,/media/data/muse2/muse2repo_apk_mutation_reach_src/AFH_Download/app/src/main/java/org/afhdownloader/SwipeDismissListViewTouchListener.java,SwipeDismissListViewTouchListener.onTouch,4
+Risky cryptographic hashing function,Medium,Medium impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/AFH_Download/app/src/main/java/org/afhdownloader/MD5.java,MD5.calculateMD5,1
+Result is not floating-point,Medium,Incorrect expression,/media/data/muse2/muse2repo_apk_mutation_reach_src/AFH_Download/app/src/main/java/org/afhdownloader/SwipeDismissListViewTouchListener.java,SwipeDismissListViewTouchListener.onTouch,1
+Result is not floating-point,Medium,Incorrect expression,/media/data/muse2/muse2repo_apk_mutation_reach_src/AFH_Download/app/src/main/java/org/afhdownloader/SwipeDismissTouchListener.java,SwipeDismissTouchListener.onTouch,1
+Dereference null return value,Medium,Null pointer dereferences,/media/data/muse2/muse2repo_apk_mutation_reach_src/AFH_Download/app/src/main/java/org/afhdownloader/DirectoryPicker.java,DirectoryPicker.onCreate,1
+Android application supports unsafe SDK versions,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/AFH_Download/app/src/main/AndroidManifest.xml,,1
+Android application does not target the latest Android version,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/AFH_Download/app/src/main/AndroidManifest.xml,,1

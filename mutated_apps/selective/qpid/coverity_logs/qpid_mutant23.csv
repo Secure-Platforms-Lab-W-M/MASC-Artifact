@@ -1,0 +1,93 @@
+﻿Type,Impact,Category,File,Function,Count
+WMI: Inefficient Map Iterator,Low,SpotBugs: Performance,/src/main/java/org/apache/qpid/server/management/plugin/controller/v6_1/category/BrokerController.java,BrokerController.convertAttributesToNextVersion,1
+WMI: Inefficient Map Iterator,Low,SpotBugs: Performance,/src/test/java/org/apache/qpid/server/management/plugin/servlet/query/ConfiguredObjectQueryTest.java,ConfiguredObjectQueryTest.createCO,1
+WMI: Inefficient Map Iterator,Low,SpotBugs: Performance,/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/RestUserPreferenceHandler.java,RestUserPreferenceHandler.validateAndConvert,1
+Useless call,Medium,Incorrect expression,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerTest.java,LatestManagementControllerTest.getRequestTypeForGetAndVisiblePreferences,1
+Useless call,Medium,Incorrect expression,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerTest.java,LatestManagementControllerTest.getRequestTypeForGetAndModelObjectWithFullPath,1
+Useless call,Medium,Incorrect expression,/src/test/java/org/apache/qpid/server/management/plugin/controller/AbstractLegacyConfiguredObjectControllerTest.java,AbstractLegacyConfiguredObjectControllerTest.getRequestType,1
+Useless call,Medium,Incorrect expression,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerTest.java,LatestManagementControllerTest.handleGetForBrokerRootAndQueuePathWithoutQueueName,1
+Useless call,Medium,Incorrect expression,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerTest.java,LatestManagementControllerTest.handleGetForBrokerRootAndQueuePathWithFilter,1
+Useless call,Medium,Incorrect expression,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerTest.java,LatestManagementControllerTest.getCategory,1
+Useless call,Medium,Incorrect expression,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerAdapterTest.java,LatestManagementControllerAdapterTest.getCategory,1
+Useless call,Medium,Incorrect expression,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerAdapterTest.java,LatestManagementControllerAdapterTest.mockManagementRequest,1
+Useless call,Medium,Incorrect expression,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerTest.java,LatestManagementControllerTest.handleGetForBrokerRootAndQueueSingletonPath,1
+Useless call,Medium,Incorrect expression,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerTest.java,LatestManagementControllerTest.getRequestTypeForGetAndUserPreferences,1
+Useless call,Medium,Incorrect expression,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerTest.java,LatestManagementControllerTest.getRequestTypeForGetAndModelObjectWithNotFullPath,1
+UrF: Unread field,Low,SpotBugs: Dodgy code,/src/main/java/org/apache/qpid/server/management/plugin/servlet/query/ConfiguredObjectFilterParserTokenManager.java,,1
+Unsafe reflection,Low,Low impact security,/src/main/java/org/apache/qpid/server/management/plugin/report/ReportRunner.java,ReportRunner.setReportParameters,2
+Unsafe deserialization,High,High impact security,/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/RestServlet.java,RestServlet$ServletManagementRequest.parse,1
+Unrestricted dispatch,Medium,Medium impact security,/src/main/java/org/apache/qpid/server/management/plugin/filter/RewriteRequestForUncompressedJavascript.java,RewriteRequestForUncompressedJavascript.doFilter,1
+Unintended assign to global,Medium,Incorrect expression,/target/classes/resources/js/qpid/management/VirtualHostNode.js,<anonymous>,1
+UC: Useless code,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/management/plugin/servlet/rest/RestUserPreferenceHandlerTest.java,RestUserPreferenceHandlerTest.testDeleteByRoot,1
+UC: Useless code,Low,SpotBugs: Dodgy code,/src/main/java/org/apache/qpid/server/management/plugin/filter/AuthenticationCheckFilter.java,AuthenticationCheckFilter.doFilter,1
+UC: Useless code,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/management/plugin/servlet/rest/RestUserPreferenceHandlerTest.java,RestUserPreferenceHandlerTest.testDeleteByTypeAndName,1
+UC: Useless code,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/management/plugin/servlet/rest/RestUserPreferenceHandlerTest.java,RestUserPreferenceHandlerTest.testDeleteByType,1
+Typo in identifier,Medium,Incorrect expression,/target/classes/resources/js/qpid/management/preference/PreferenceBrowserWidget.js,<anonymous>,1
+Trust boundary violation,Low,Low impact security,/src/main/java/org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator.java,OAuth2InteractiveAuthenticator.buildAuthorizationRedirectURL,1
+Se: Incorrect definition of Serializable class,Low,SpotBugs: Bad practice,/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java,,1
+Se: Incorrect definition of Serializable class,Low,SpotBugs: Bad practice,/src/main/java/org/apache/qpid/server/management/plugin/servlet/ServletConnectionPrincipal.java,,1
+Se: Incorrect definition of Serializable class,Low,SpotBugs: Bad practice,/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/LogoutServlet.java,,1
+SIC: Inner class could be made static,Low,SpotBugs: Performance,/src/main/java/org/apache/qpid/server/management/plugin/GunzipOutputStream.java,,1
+SIC: Inner class could be made static,Low,SpotBugs: Performance,/src/main/java/org/apache/qpid/server/management/plugin/servlet/query/ConfiguredObjectQuery.java,,1
+SIC: Inner class could be made static,Low,SpotBugs: Performance,/src/main/java/org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator.java,,1
+SBSC: String concatenation in loop using + operator,Low,SpotBugs: Performance,/src/main/java/org/apache/qpid/server/management/plugin/servlet/query/ParseException.java,ParseException.initialise,1
+Risky cryptographic hashing function,Medium,Medium impact security,/src/main/java/org/apache/qpid/server/management/plugin/controller/v6_1/category/BindingController.java,BindingController.generateBindingId,1
+RV: Bad use of return value,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerTest.java,LatestManagementControllerTest.getRequestTypeForGetAndUserPreferences,1
+RV: Bad use of return value,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerTest.java,LatestManagementControllerTest.handleGetForBrokerRootAndQueuePathWithFilter,1
+RV: Bad use of return value,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerTest.java,LatestManagementControllerTest.getCategory,1
+RV: Bad use of return value,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerTest.java,LatestManagementControllerTest.handleGetForBrokerRootAndQueueSingletonPath,1
+RV: Bad use of return value,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/management/plugin/controller/AbstractLegacyConfiguredObjectControllerTest.java,AbstractLegacyConfiguredObjectControllerTest.getRequestType,1
+RV: Bad use of return value,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerAdapterTest.java,LatestManagementControllerAdapterTest.mockManagementRequest,1
+RV: Bad use of return value,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerTest.java,LatestManagementControllerTest.getRequestTypeForGetAndModelObjectWithNotFullPath,1
+RV: Bad use of return value,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerTest.java,LatestManagementControllerTest.handleGetForBrokerRootAndQueuePathWithoutQueueName,1
+RV: Bad use of return value,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerTest.java,LatestManagementControllerTest.getRequestTypeForGetAndModelObjectWithFullPath,1
+RV: Bad use of return value,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerTest.java,LatestManagementControllerTest.getRequestTypeForGetAndVisiblePreferences,1
+RV: Bad use of return value,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerAdapterTest.java,LatestManagementControllerAdapterTest.getCategory,1
+Open redirect,Medium,Medium impact security,/src/main/java/org/apache/qpid/server/management/plugin/auth/AnonymousInteractiveAuthenticator.java,org.apache.qpid.server.management.plugin.HttpRequestInteractiveAuthenticator$AuthenticationHandler.handleAuthentication,1
+Open redirect,Medium,Medium impact security,/src/main/java/org/apache/qpid/server/management/plugin/RewriteServlet.java,RewriteServlet.service,1
+Misuse of typeof,Medium,Incorrect expression,/target/classes/resources/js/qpid/common/util.js,util.equals,1
+Misuse of typeof,Medium,Incorrect expression,/target/classes/resources/js/qpid/common/util.js,util.equals,1
+Misuse of typeof,Medium,Incorrect expression,/target/classes/resources/js/qpid/common/util.js,util.equals,1
+Missing call to superclass,Medium,Class hierarchy inconsistencies,/src/main/java/org/apache/qpid/server/management/plugin/controller/v6_1/category/ConsumerController.java,ConsumerController$LegacyConsumer.getParent,1
+Ignoring number of bytes read,Medium,Error handling issues,/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/RestServlet.java,RestServlet$ServletManagementRequest.parse,1
+GC: Suspicious calls to generic collection methods,Medium,SpotBugs: Correctness,/src/main/java/org/apache/qpid/server/management/plugin/report/ReportRunner.java,org.apache.qpid.server.management.plugin.report.ReportRunner$#2.containsHeaders(java.util.Set),1
+Expression with no effect,Medium,Incorrect expression,/target/classes/resources/js/qpid/management/query/QueryWidget.js,_showModeSwitchWarningIfRequired,1
+Explicit this expected,Medium,API usage errors,/target/classes/resources/js/qpid/management/controller.js,controller.init,1
+Eq: Problems with implementation of equals(),Low,SpotBugs: Dodgy code,/src/main/java/org/apache/qpid/server/management/plugin/controller/v6_1/category/QueueController.java,,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/management/plugin/GunzipOutputStreamTest.java,GunzipOutputStreamTest.testDecompressingWithEmbeddedFileName,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/main/java/org/apache/qpid/server/management/plugin/servlet/query/SimpleCharStream.java,SimpleCharStream.ReInit,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/main/java/org/apache/qpid/server/management/plugin/servlet/query/SimpleCharStream.java,SimpleCharStream.SimpleCharStream,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/main/java/org/apache/qpid/server/management/plugin/servlet/query/SimpleCharStream.java,SimpleCharStream.SimpleCharStream,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/management/plugin/GunzipOutputStreamTest.java,GunzipOutputStreamTest.generateTestBytes,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/management/plugin/portunification/TlsOrPlainConnectionFactoryTest.java,TlsOrPlainConnectionFactoryTest.testOnFillableForPlain,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/management/plugin/GunzipOutputStreamTest.java,GunzipOutputStreamTest.testDecompressingMultipleMembers,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/management/plugin/portunification/TlsOrPlainConnectionFactoryTest.java,Answer_instance_1.Answer_instance_1,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/main/java/org/apache/qpid/server/management/plugin/servlet/query/SimpleCharStream.java,SimpleCharStream.ReInit,1
+Dereference null return value,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/ApiDocsServlet.java,ApiDocsServlet.getTypeName,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/management/plugin/controller/v6_1/category/BindingControllerTest.java,BindingControllerTest.getDefaultType,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/management/plugin/controller/v6_1/category/BindingControllerTest.java,BindingControllerTest.getNextVersionCategory,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/management/plugin/controller/v6_1/category/BindingControllerTest.java,BindingControllerTest.createOrUpdate,1
+Dereference null return value,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementController.java,LatestManagementController.createOrUpdate,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerAdapterTest.java,LatestManagementControllerAdapterTest.formatConfiguredObject,1
+Dereference null return value,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/server/management/plugin/controller/v6_1/category/BindingController.java,BindingController$LegacyBinding.delete,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/management/plugin/controller/v6_1/category/ConsumerControllerTest.java,ConsumerControllerTest.getDefaultType,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/management/plugin/controller/AbstractLegacyConfiguredObjectControllerTest.java,AbstractLegacyConfiguredObjectControllerTest.createOrUpdate,1
+Dereference null return value,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator.java,OAuth2InteractiveAuthenticator.getAuthenticationHandler,1
+Dereference null return value,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/server/management/plugin/controller/AbstractLegacyConfiguredObjectController.java,AbstractLegacyConfiguredObjectController.createTypeControllers,1
+Dereference null return value,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/server/management/plugin/auth/OAuth2InteractiveAuthenticator.java,OAuth2InteractiveAuthenticator.getLogoutHandler,1
+Dereference null return value,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/server/management/plugin/controller/AbstractLegacyConfiguredObjectController.java,AbstractLegacyConfiguredObjectController.addRelationship,2
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/management/plugin/controller/v7_0/category/ContainerControllerTest.java,ContainerControllerTest.convertNextVersionBrokerConfiguredObject,1
+Dereference null return value,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/server/management/plugin/auth/AnonymousInteractiveAuthenticator.java,org.apache.qpid.server.management.plugin.HttpRequestInteractiveAuthenticator$AuthenticationHandler.handleAuthentication,1
+Dereference null return value,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/SaslServlet.java,SaslServlet.doGet,1
+Dereference null return value,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/SaslServlet.java,SaslServlet.doPost,1
+Dereference null return value,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/server/management/plugin/HttpManagement.java,HttpManagement.createServer,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementControllerAdapterTest.java,LatestManagementControllerAdapterTest.createOrUpdate,1
+Dereference null return value,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/server/management/plugin/controller/latest/LatestManagementController.java,LatestManagementController.getTarget,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/management/plugin/controller/v7_0/category/ContainerControllerTest.java,ContainerControllerTest.convertNextVersionVirtualHostConfiguredObject,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/management/plugin/session/LoginLogoutReporterTest.java,LoginLogoutReporterTest.testLoginLogged,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/management/plugin/GunzipOutputStreamTest.java,GunzipOutputStreamTest.testDecompressing,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/management/plugin/controller/GenericCategoryControllerTest.java,GenericCategoryControllerTest.createOrUpdate,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/management/plugin/session/LoginLogoutReporterTest.java,LoginLogoutReporterTest.testLogoutLogged,1
+Dereference null return value,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/RestServlet.java,RestServlet.sendResponse,1
+Dereference after null check,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/server/management/plugin/controller/AbstractLegacyConfiguredObjectController.java,AbstractLegacyConfiguredObjectController.getRequestType,1
+Cross-site scripting,High,High impact security,/src/main/java/org/apache/qpid/server/management/plugin/servlet/rest/QueryServlet.java,QueryServlet.performQuery,1

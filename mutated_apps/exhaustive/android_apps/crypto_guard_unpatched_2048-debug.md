@@ -1,0 +1,24 @@
+```
+Analyzing APK: /media/data/muse2/muse2repo_apk_mutation_reach/2048-debug.apk
+java.lang.ArrayIndexOutOfBoundsException: 108
+	at android.content.res.StringBlock.getShort(StringBlock.java:231)
+	at android.content.res.StringBlock.getString(StringBlock.java:91)
+	at android.content.res.AXmlResourceParser.getName(AXmlResourceParser.java:140)
+	at main.util.manifest.ProcessManifest.loadClassesFromBinaryManifest(ProcessManifest.java:115)
+	at main.util.manifest.ProcessManifest$1.handleManifest(ProcessManifest.java:97)
+	at main.util.manifest.ProcessManifest.handleAndroidManifestFile(ProcessManifest.java:74)
+	at main.util.manifest.ProcessManifest.loadManifestFile(ProcessManifest.java:93)
+	at main.util.Utils.getBasePackageNameFromApk(Utils.java:68)
+	at main.rule.engine.RuleEngine.main(RuleEngine.java:55)
+*** Base package: 
+=======================================
+***Violated Rule 1: Found broken crypto schemes ***Constants: ["DES", "DES", "DES", "DES", "DES", "DES", "DES", "DES", "DES", "DES", "DES", "DES", "DES", "DES", "DES", "DES", "DES", "DES", "DES", "DES", "DES", "DES"]
+[UnitContainer{unit=$fakeLocal_228[0] = "DES", method='<com.uberspot.a2048.MainActivity: boolean isFullScreen()>'}, UnitContainer{unit=$fakeLocal_190[0] = "DES", method='<com.uberspot.a2048.MainActivity: void onSaveInstanceState(android.os.Bundle)>'}, UnitContainer{unit=$fakeLocal_162[0] = "DES", method='<com.uberspot.a2048.MainActivity$1: boolean onTouch(android.view.View,android.view.MotionEvent)>'}, UnitContainer{unit=$fakeLocal_171[0] = "DES", method='<com.uberspot.a2048.MainActivity$1: boolean onTouch(android.view.View,android.view.MotionEvent)>'}, UnitContainer{unit=$fakeLocal_255[0] = "DES", method='<com.uberspot.a2048.MainActivity: void applyFullScreen(boolean)>'}, UnitContainer{unit=$fakeLocal_84[0] = "DES", method='<com.uberspot.a2048.MainActivity: void onCreate(android.os.Bundle)>'}, UnitContainer{unit=$fakeLocal_50[0] = "DES", method='<com.uberspot.a2048.MainActivity: void onCreate(android.os.Bundle)>'}, UnitContainer{unit=$fakeLocal_76[0] = "DES", method='<com.uberspot.a2048.MainActivity: void onCreate(android.os.Bundle)>'}, UnitContainer{unit=$fakeLocal_152[0] = "DES", method='<com.uberspot.a2048.MainActivity$1: boolean onTouch(android.view.View,android.view.MotionEvent)>'}, UnitContainer{unit=$fakeLocal_216[0] = "DES", method='<com.uberspot.a2048.MainActivity: void saveFullScreen(boolean)>'}, UnitContainer{unit=$fakeLocal_98[0] = "DES", method='<com.uberspot.a2048.MainActivity: void onCreate(android.os.Bundle)>'}, UnitContainer{unit=$fakeLocal_299[0] = "DES", method='<com.uberspot.a2048.MainActivity: void onBackPressed()>'}, UnitContainer{unit=$fakeLocal_137[0] = "DES", method='<com.uberspot.a2048.MainActivity: void onCreate(android.os.Bundle)>'}, UnitContainer{unit=$fakeLocal_242[0] = "DES", method='<com.uberspot.a2048.MainActivity: void applyFullScreen(boolean)>'}, UnitContainer{unit=$fakeLocal_110[0] = "DES", method='<com.uberspot.a2048.MainActivity: void onCreate(android.os.Bundle)>'}, UnitContainer{unit=$fakeLocal_283[0] = "DES", method='<com.uberspot.a2048.MainActivity: void onBackPressed()>'}, UnitContainer{unit=$fakeLocal_248[0] = "DES", method='<com.uberspot.a2048.MainActivity: void applyFullScreen(boolean)>'}, UnitContainer{unit=$fakeLocal_290[0] = "DES", method='<com.uberspot.a2048.MainActivity: void onBackPressed()>'}, UnitContainer{unit=$fakeLocal_129[0] = "DES", method='<com.uberspot.a2048.MainActivity: void onCreate(android.os.Bundle)>'}, UnitContainer{unit=$fakeLocal_200[0] = "DES", method='<com.uberspot.a2048.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)>'}, UnitContainer{unit=$fakeLocal_61[0] = "DES", method='<com.uberspot.a2048.MainActivity: void onCreate(android.os.Bundle)>'}, UnitContainer{unit=$fakeLocal_268[0] = "DES", method='<com.uberspot.a2048.MainActivity: void onConfigurationChanged(android.content.res.Configuration)>'}]
+=======================================
+Total Heuristics: 0
+Total Orthogonal: 0
+Total Constants: 0
+Total Slices: 107
+Average Length: 1.0
+Depth: 1, Count 0
+```

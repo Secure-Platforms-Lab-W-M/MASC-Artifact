@@ -1,0 +1,842 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Class File Analyzer",
+          "rules": [
+            {
+              "id": "ANDROID_EXTERNAL_FILE_ACCESS",
+              "help": {
+                "text": "Files could be saved to external storage \nAt Preferences.java:[lines 49-235] \nIn class me.kuehle.carreport.Preferences \nIn method me.kuehle.carreport.Preferences.getBackupPath() \nAt Preferences.java:[line 168].",
+                "markdown": "Files could be saved to external storage \nAt Preferences.java:[lines 49-235] \nIn class me.kuehle.carreport.Preferences \nIn method me.kuehle.carreport.Preferences.getBackupPath() \nAt Preferences.java:[line 168]."
+              },
+              "name": "ANDROID EXTERNAL FILE ACCESS",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "Files could be saved to external storage ."
+              },
+              "helpUri": "https://slscan.io?q=ANDROID_EXTERNAL_FILE_ACCESS",
+              "shortDescription": {
+                "text": "Files could be saved to external storage \nAt Preferences.java:[lines 49-235] \nIn class me.kuehle.carreport.Preferences \nIn method me.kuehle.carreport.Preferences.getBackupPath() \nAt Preferences.java:[line 168]."
+              }
+            },
+            {
+              "id": "SQL_INJECTION_ANDROID",
+              "help": {
+                "text": "This use of me/kuehle/carreport/provider/base/BaseContentProvider.delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I can be vulnerable to SQL injection (with Android SQL) \nAt DataProvider.java:[lines 36-278] \nIn class me.kuehle.carreport.provider.DataProvider \nIn method me.kuehle.carreport.provider.DataProvider.delete(Uri, String, String[]) \nAt DataProvider.java:[line 143] \nSink method me/kuehle/carreport/provider/base/BaseContentProvider.delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I \nSink parameter 1 \nUnknown source me/kuehle/carreport/provider/DataProvider.delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I parameter 1 \nMethod usage not detected.",
+                "markdown": "This use of me/kuehle/carreport/provider/base/BaseContentProvider.delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I can be vulnerable to SQL injection (with Android SQL) \nAt DataProvider.java:[lines 36-278] \nIn class me.kuehle.carreport.provider.DataProvider \nIn method me.kuehle.carreport.provider.DataProvider.delete(Uri, String, String[]) \nAt DataProvider.java:[line 143] \nSink method me/kuehle/carreport/provider/base/BaseContentProvider.delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I \nSink parameter 1 \nUnknown source me/kuehle/carreport/provider/DataProvider.delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I parameter 1 \nMethod usage not detected."
+              },
+              "name": "SQL INJECTION ANDROID",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "This use of me/kuehle/carreport/provider/base/BaseContentProvider.delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I can be vulnerable to SQL injection (with Android SQL) ."
+              },
+              "helpUri": "https://slscan.io?q=SQL_INJECTION_ANDROID",
+              "shortDescription": {
+                "text": "This use of me/kuehle/carreport/provider/base/BaseContentProvider.delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I can be vulnerable to SQL injection (with Android SQL) \nAt DataProvider.java:[lines 36-278] \nIn class me.kuehle.carreport.provider.DataProvider \nIn method me.kuehle.carreport.provider.DataProvider.delete(Uri, String, String[]) \nAt DataProvider.java:[line 143] \nSink method me/kuehle/carreport/provider/base/BaseContentProvider.delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I \nSink parameter 1 \nUnknown source me/kuehle/carreport/provider/DataProvider.delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I parameter 1 \nMethod usage not detected."
+              }
+            },
+            {
+              "id": "PREDICTABLE_RANDOM",
+              "help": {
+                "text": "This random generator (java.lang.Math.random()) is predictable \nAt DemoData.java:[lines 35-223] \nIn class me.kuehle.carreport.util.DemoData \nIn method me.kuehle.carreport.util.DemoData.createRefueling(Context, DateTime, int, float, float, boolean, String, long, long) \nAt DemoData.java:[line 176] \nValue java.lang.Math.random().",
+                "markdown": "This random generator (java.lang.Math.random()) is predictable \nAt DemoData.java:[lines 35-223] \nIn class me.kuehle.carreport.util.DemoData \nIn method me.kuehle.carreport.util.DemoData.createRefueling(Context, DateTime, int, float, float, boolean, String, long, long) \nAt DemoData.java:[line 176] \nValue java.lang.Math.random()."
+              },
+              "name": "Predictable Random",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "This random generator (java.lang.Math.random()) is predictable ."
+              },
+              "helpUri": "https://slscan.io?q=PREDICTABLE_RANDOM",
+              "shortDescription": {
+                "text": "This random generator (java.lang.Math.random()) is predictable \nAt DemoData.java:[lines 35-223] \nIn class me.kuehle.carreport.util.DemoData \nIn method me.kuehle.carreport.util.DemoData.createRefueling(Context, DateTime, int, float, float, boolean, String, long, long) \nAt DemoData.java:[line 176] \nValue java.lang.Math.random()."
+              }
+            },
+            {
+              "id": "PATH_TRAVERSAL_IN",
+              "help": {
+                "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt Backup.java:[lines 49-147] \nIn class me.kuehle.carreport.util.backup.Backup \nIn method new me.kuehle.carreport.util.backup.Backup(Context) \nAt Backup.java:[line 51] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source android/database/sqlite/SQLiteDatabase.getPath()Ljava/lang/String;.",
+                "markdown": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt Backup.java:[lines 49-147] \nIn class me.kuehle.carreport.util.backup.Backup \nIn method new me.kuehle.carreport.util.backup.Backup(Context) \nAt Backup.java:[line 51] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source android/database/sqlite/SQLiteDatabase.getPath()Ljava/lang/String;."
+              },
+              "name": "PATH TRAVERSAL IN",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input ."
+              },
+              "helpUri": "https://slscan.io?q=PATH_TRAVERSAL_IN",
+              "shortDescription": {
+                "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt Backup.java:[lines 49-147] \nIn class me.kuehle.carreport.util.backup.Backup \nIn method new me.kuehle.carreport.util.backup.Backup(Context) \nAt Backup.java:[line 51] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source android/database/sqlite/SQLiteDatabase.getPath()Ljava/lang/String;."
+              }
+            },
+            {
+              "id": "WEAK_HOSTNAME_VERIFIER",
+              "help": {
+                "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt WebDavClient.java:[lines 81-84] \nIn class me.kuehle.carreport.util.webdav.WebDavClient$2 \nIn method me.kuehle.carreport.util.webdav.WebDavClient$2.verify(String, SSLSession) \nAt WebDavClient.java:[line 84].",
+                "markdown": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt WebDavClient.java:[lines 81-84] \nIn class me.kuehle.carreport.util.webdav.WebDavClient$2 \nIn method me.kuehle.carreport.util.webdav.WebDavClient$2.verify(String, SSLSession) \nAt WebDavClient.java:[line 84]."
+              },
+              "name": "WEAK HOSTNAME VERIFIER",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack ."
+              },
+              "helpUri": "https://slscan.io?q=WEAK_HOSTNAME_VERIFIER",
+              "shortDescription": {
+                "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt WebDavClient.java:[lines 81-84] \nIn class me.kuehle.carreport.util.webdav.WebDavClient$2 \nIn method me.kuehle.carreport.util.webdav.WebDavClient$2.verify(String, SSLSession) \nAt WebDavClient.java:[line 84]."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Class File Analyzer"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-jar",
+            "/tmp/.mount_scanKsmQkY/opt/spotbugs/lib/spotbugs.jar",
+            "-textui",
+            "-include",
+            "/tmp/.mount_scanKsmQkY/usr/src/tools_config/spotbugs/include.xml",
+            "-exclude",
+            "/tmp/.mount_scanKsmQkY/usr/src/tools_config/spotbugs/exclude.xml",
+            "-noClassOk",
+            "-auxclasspathFromFile",
+            "/tmp/tmpe5tfxbxy",
+            "-sourcepath",
+            "/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3",
+            "-quiet",
+            "-medium",
+            "-xml:withMessages",
+            "-effort:max",
+            "-nested:false",
+            "-output",
+            "/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/reports/class-report.xml",
+            "/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-jar /tmp/.mount_scanKsmQkY/opt/spotbugs/lib/spotbugs.jar -textui -include /tmp/.mount_scanKsmQkY/usr/src/tools_config/spotbugs/include.xml -exclude /tmp/.mount_scanKsmQkY/usr/src/tools_config/spotbugs/exclude.xml -noClassOk -auxclasspathFromFile /tmp/tmpe5tfxbxy -sourcepath /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3 -quiet -medium -xml:withMessages -effort:max -nested:false -output /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/reports/class-report.xml /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3",
+          "endTimeUtc": "2020-12-02T18:06:28Z",
+          "workingDirectory": {
+            "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2020-12-02T18:06:28Z",
+          "workingDirectory": {
+            "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 17,
+          "critical": 0,
+          "high": 17,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Files could be saved to external storage \nAt Preferences.java:[lines 49-235] \nIn class me.kuehle.carreport.Preferences \nIn method me.kuehle.carreport.Preferences.getBackupPath() \nAt Preferences.java:[line 168]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        return (savedValue.isEmpty() ? new File(Environment.getExternalStorageDirectory(),\n"
+                  },
+                  "startLine": 168
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/Preferences.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        String savedValue = mPrefs.getString(key, \"\");\n        return (savedValue.isEmpty() ? new File(Environment.getExternalStorageDirectory(),\n"
+                  },
+                  "endLine": 168,
+                  "startLine": 167
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "ANDROID_EXTERNAL_FILE_ACCESS",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of me/kuehle/carreport/provider/base/BaseContentProvider.delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I can be vulnerable to SQL injection (with Android SQL) \nAt DataProvider.java:[lines 36-278] \nIn class me.kuehle.carreport.provider.DataProvider \nIn method me.kuehle.carreport.provider.DataProvider.delete(Uri, String, String[]) \nAt DataProvider.java:[line 143] \nSink method me/kuehle/carreport/provider/base/BaseContentProvider.delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I \nSink parameter 1 \nUnknown source me/kuehle/carreport/provider/DataProvider.delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I parameter 1 \nMethod usage not detected."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        return super.delete(uri, selection, selectionArgs);\n"
+                  },
+                  "startLine": 143
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/provider/DataProvider.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        if (DEBUG) Log.d(TAG, \"delete uri=\" + uri + \" selection=\" + selection + \" selectionArgs=\" + Arrays.toString(selectionArgs));\n        return super.delete(uri, selection, selectionArgs);\n"
+                  },
+                  "endLine": 143,
+                  "startLine": 142
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "SQL_INJECTION_ANDROID",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of me/kuehle/carreport/provider/base/BaseContentProvider.query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor; can be vulnerable to SQL injection (with Android SQL) \nAt DataProvider.java:[lines 36-278] \nIn class me.kuehle.carreport.provider.DataProvider \nIn method me.kuehle.carreport.provider.DataProvider.query(Uri, String[], String, String[], String) \nAt DataProvider.java:[line 152] \nSink method me/kuehle/carreport/provider/base/BaseContentProvider.query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor; \nSink parameter 2 \nUnknown source me/kuehle/carreport/provider/DataProvider.query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor; parameter 2 \nMethod usage not detected."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        return super.query(uri, qualifyAmbiguousColumns(uri, projection), selection, selectionArgs, sortOrder);\n"
+                  },
+                  "startLine": 152
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/provider/DataProvider.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n        return super.query(uri, qualifyAmbiguousColumns(uri, projection), selection, selectionArgs, sortOrder);\n"
+                  },
+                  "endLine": 152,
+                  "startLine": 151
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "SQL_INJECTION_ANDROID",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of me/kuehle/carreport/provider/base/BaseContentProvider.update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I can be vulnerable to SQL injection (with Android SQL) \nAt DataProvider.java:[lines 36-278] \nIn class me.kuehle.carreport.provider.DataProvider \nIn method me.kuehle.carreport.provider.DataProvider.update(Uri, ContentValues, String, String[]) \nAt DataProvider.java:[line 137] \nSink method me/kuehle/carreport/provider/base/BaseContentProvider.update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I \nSink parameter 1 \nUnknown source me/kuehle/carreport/provider/DataProvider.update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I parameter 1 \nMethod usage not detected."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        return super.update(uri, values, selection, selectionArgs);\n"
+                  },
+                  "startLine": 137
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/provider/DataProvider.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        if (DEBUG) Log.d(TAG, \"update uri=\" + uri + \" values=\" + values + \" selection=\" + selection + \" selectionArgs=\" + Arrays.toString(selectionArgs));\n        return super.update(uri, values, selection, selectionArgs);\n"
+                  },
+                  "endLine": 137,
+                  "startLine": 136
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "SQL_INJECTION_ANDROID",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of android/database/sqlite/SQLiteDatabase.execSQL(Ljava/lang/String;)V can be vulnerable to SQL injection (with Android SQL) \nAt DataSQLiteOpenHelperCallbacks.java:[lines 36-97] \nIn class me.kuehle.carreport.provider.DataSQLiteOpenHelperCallbacks \nIn method me.kuehle.carreport.provider.DataSQLiteOpenHelperCallbacks.onUpgrade(Context, SQLiteDatabase, int, int) \nAt DataSQLiteOpenHelperCallbacks.java:[line 60] \nSink method android/database/sqlite/SQLiteDatabase.execSQL(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source me/kuehle/carreport/provider/DataSQLiteOpenHelperCallbacks.prepareSqlStatements(Ljava/lang/String;)[Ljava/lang/String; \nUnknown source me/kuehle/carreport/provider/DataSQLiteOpenHelperCallbacks.prepareSqlStatements(Ljava/lang/String;)[Ljava/lang/String; parameter 0 \nUnknown source me/kuehle/carreport/provider/DataSQLiteOpenHelperCallbacks.getMigrationFileContent(Landroid/content/Context;I)Ljava/lang/String; \nAt DataSQLiteOpenHelperCallbacks.java:[line 57] \nAt DataSQLiteOpenHelperCallbacks.java:[line 58] \nAt DataSQLiteOpenHelperCallbacks.java:[line 71] \nAt DataSQLiteOpenHelperCallbacks.java:[line 72] \nAt DataSQLiteOpenHelperCallbacks.java:[line 76] \nAt DataSQLiteOpenHelperCallbacks.java:[line 78] \nAt DataSQLiteOpenHelperCallbacks.java:[line 82] \nAt DataSQLiteOpenHelperCallbacks.java:[line 94]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                    db.execSQL(command);\n"
+                  },
+                  "startLine": 60
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/provider/DataSQLiteOpenHelperCallbacks.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                for (String command : commands) {\n                    db.execSQL(command);\n"
+                  },
+                  "endLine": 60,
+                  "startLine": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "SQL_INJECTION_ANDROID",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of android/database/sqlite/SQLiteDatabase.delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I can be vulnerable to SQL injection (with Android SQL) \nAt BaseContentProvider.java:[lines 36-210] \nIn class me.kuehle.carreport.provider.base.BaseContentProvider \nIn method me.kuehle.carreport.provider.base.BaseContentProvider.delete(Uri, String, String[]) \nAt BaseContentProvider.java:[line 133] \nSink method android/database/sqlite/SQLiteDatabase.delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I \nSink parameter 1 \nUnknown source me/kuehle/carreport/provider/base/BaseContentProvider$QueryParams.selection \nAt BaseContentProvider.java:[line 133]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        int res = mSqLiteOpenHelper.getWritableDatabase().delete(queryParams.table, queryParams.selection, selectionArgs);\n"
+                  },
+                  "startLine": 133
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/provider/base/BaseContentProvider.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        QueryParams queryParams = getQueryParams(uri, selection, null);\n        int res = mSqLiteOpenHelper.getWritableDatabase().delete(queryParams.table, queryParams.selection, selectionArgs);\n"
+                  },
+                  "endLine": 133,
+                  "startLine": 132
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "SQL_INJECTION_ANDROID",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of android/database/sqlite/SQLiteDatabase.query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor; can be vulnerable to SQL injection (with Android SQL) \nAt BaseContentProvider.java:[lines 36-210] \nIn class me.kuehle.carreport.provider.base.BaseContentProvider \nIn method me.kuehle.carreport.provider.base.BaseContentProvider.query(Uri, String[], String, String[], String) \nAt BaseContentProvider.java:[line 148] \nSink method android/database/sqlite/SQLiteDatabase.query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor; \nSink parameter 0 \nUnknown source android/net/Uri.getQueryParameter(Ljava/lang/String;)Ljava/lang/String;."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        Cursor res = mSqLiteOpenHelper.getReadableDatabase().query(queryParams.tablesWithJoins, projection, queryParams.selection, selectionArgs, groupBy,\n"
+                  },
+                  "startLine": 148
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/provider/base/BaseContentProvider.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        projection = ensureIdIsFullyQualified(projection, queryParams.table, queryParams.idColumn);\n        Cursor res = mSqLiteOpenHelper.getReadableDatabase().query(queryParams.tablesWithJoins, projection, queryParams.selection, selectionArgs, groupBy,\n"
+                  },
+                  "endLine": 148,
+                  "startLine": 147
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "SQL_INJECTION_ANDROID",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This use of android/database/sqlite/SQLiteDatabase.update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I can be vulnerable to SQL injection (with Android SQL) \nAt BaseContentProvider.java:[lines 36-210] \nIn class me.kuehle.carreport.provider.base.BaseContentProvider \nIn method me.kuehle.carreport.provider.base.BaseContentProvider.update(Uri, ContentValues, String, String[]) \nAt BaseContentProvider.java:[line 122] \nSink method android/database/sqlite/SQLiteDatabase.update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I \nSink parameter 1 \nUnknown source me/kuehle/carreport/provider/base/BaseContentProvider$QueryParams.selection \nAt BaseContentProvider.java:[line 122]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        int res = mSqLiteOpenHelper.getWritableDatabase().update(queryParams.table, values, queryParams.selection, selectionArgs);\n"
+                  },
+                  "startLine": 122
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/provider/base/BaseContentProvider.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        QueryParams queryParams = getQueryParams(uri, selection, null);\n        int res = mSqLiteOpenHelper.getWritableDatabase().update(queryParams.table, values, queryParams.selection, selectionArgs);\n"
+                  },
+                  "endLine": 122,
+                  "startLine": 121
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "SQL_INJECTION_ANDROID",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This random generator (java.lang.Math.random()) is predictable \nAt DemoData.java:[lines 35-223] \nIn class me.kuehle.carreport.util.DemoData \nIn method me.kuehle.carreport.util.DemoData.createRefueling(Context, DateTime, int, float, float, boolean, String, long, long) \nAt DemoData.java:[line 176] \nValue java.lang.Math.random()."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        if (Math.random() > 0.95) {\n"
+                  },
+                  "startLine": 176
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/util/DemoData.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        // Has a chance of 10% to fail. This emulates, that the user forgot to enter the refueling.\n        if (Math.random() > 0.95) {\n"
+                  },
+                  "endLine": 176,
+                  "startLine": 175
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PREDICTABLE_RANDOM",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This random generator (java.lang.Math.random()) is predictable \nAt DemoData.java:[lines 35-223] \nIn class me.kuehle.carreport.util.DemoData \nIn method me.kuehle.carreport.util.DemoData.randInt(int, int) \nAt DemoData.java:[line 210] \nValue java.lang.Math.random()."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        return min + (int) (Math.random() * ((max - min) + 1));\n"
+                  },
+                  "startLine": 210
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/util/DemoData.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    private static int randInt(int min, int max) {\n        return min + (int) (Math.random() * ((max - min) + 1));\n"
+                  },
+                  "endLine": 210,
+                  "startLine": 209
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PREDICTABLE_RANDOM",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt Backup.java:[lines 49-147] \nIn class me.kuehle.carreport.util.backup.Backup \nIn method new me.kuehle.carreport.util.backup.Backup(Context) \nAt Backup.java:[line 51] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source android/database/sqlite/SQLiteDatabase.getPath()Ljava/lang/String;."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 51
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/me/kuehle/carreport/util/backup/Backup.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt Backup.java:[lines 49-147] \nIn class me.kuehle.carreport.util.backup.Backup \nIn method me.kuehle.carreport.util.backup.Backup.getBackupFile() \nAt Backup.java:[line 60] \nSink method java/io/File.<init>(Ljava/lang/String;Ljava/lang/String;)V \nSink parameter 0 \nUnknown source java/text/DateFormat.format(Ljava/util/Date;)Ljava/lang/String; \nAt Backup.java:[line 60]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 60
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/me/kuehle/carreport/util/backup/Backup.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt Backup.java:[lines 49-147] \nIn class me.kuehle.carreport.util.backup.Backup \nIn method me.kuehle.carreport.util.backup.Backup.restore(Uri) \nAt Backup.java:[line 113] \nSink method java/io/File.<init>(Ljava/lang/String;Ljava/lang/String;)V \nSink parameter 1 \nUnknown source java/io/File.getParent()Ljava/lang/String;."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 113
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/me/kuehle/carreport/util/backup/Backup.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Files could be saved to external storage \nAt CSVExportImport.java:[lines 76-577] \nIn class me.kuehle.carreport.util.backup.CSVExportImport \nIn method new me.kuehle.carreport.util.backup.CSVExportImport(Context) \nAt CSVExportImport.java:[line 86]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 86
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/me/kuehle/carreport/util/backup/CSVExportImport.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "ANDROID_EXTERNAL_FILE_ACCESS",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt AbstractSyncProvider.java:[lines 33-64] \nIn class me.kuehle.carreport.util.sync.AbstractSyncProvider \nIn method me.kuehle.carreport.util.sync.AbstractSyncProvider.getLocalFile() \nAt AbstractSyncProvider.java:[line 64] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source android/database/sqlite/SQLiteDatabase.getPath()Ljava/lang/String;."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        return new File(DataSQLiteOpenHelper.getInstance(Application.getContext()).getReadableDatabase().getPath());\n"
+                  },
+                  "startLine": 64
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/util/sync/AbstractSyncProvider.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    protected File getLocalFile() {\n        return new File(DataSQLiteOpenHelper.getInstance(Application.getContext()).getReadableDatabase().getPath());\n"
+                  },
+                  "endLine": 64,
+                  "startLine": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt WebDavClient.java:[lines 81-84] \nIn class me.kuehle.carreport.util.webdav.WebDavClient$2 \nIn method me.kuehle.carreport.util.webdav.WebDavClient$2.verify(String, SSLSession) \nAt WebDavClient.java:[line 84]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                return true;\n"
+                  },
+                  "startLine": 84
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/util/webdav/WebDavClient.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            public boolean verify(String hostname, SSLSession session) {\n                return true;\n"
+                  },
+                  "endLine": 84,
+                  "startLine": 83
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_HOSTNAME_VERIFIER",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt WebDavClient.java:[lines 87-91] \nIn class me.kuehle.carreport.util.webdav.WebDavClient$3 \nIn method me.kuehle.carreport.util.webdav.WebDavClient$3.verify(String, SSLSession) \nAt WebDavClient.java:[line 91]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                    return true;\n"
+                  },
+                  "startLine": 91
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/util/webdav/WebDavClient.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                if(true||session.getCipherSuite().length()>=0){\n                    return true;\n"
+                  },
+                  "endLine": 91,
+                  "startLine": 90
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_HOSTNAME_VERIFIER",
+          "ruleIndex": 4
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "69b008ef-3903-45f2-820b-53927bab88bb"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "",
+          "repositoryUri": "",
+          "revisionId": ""
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "69b008ef-3903-45f2-820b-53927bab88bb",
+      "runGuid": "bd7a2b75-cde7-422b-890f-b217cb45d899"
+    }
+  ]
+}

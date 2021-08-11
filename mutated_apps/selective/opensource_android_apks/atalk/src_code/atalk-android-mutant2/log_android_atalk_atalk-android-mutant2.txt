@@ -1,0 +1,919 @@
+> Task :buildSrc:compileJava NO-SOURCE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:processResources NO-SOURCE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:jar
+> Task :buildSrc:assemble
+> Task :buildSrc:compileTestJava NO-SOURCE
+> Task :buildSrc:compileTestGroovy NO-SOURCE
+> Task :buildSrc:processTestResources NO-SOURCE
+> Task :buildSrc:testClasses UP-TO-DATE
+> Task :buildSrc:test NO-SOURCE
+> Task :buildSrc:check UP-TO-DATE
+
+> Task :buildSrc:jarjar-18
+Property 'destinationDir' is not annotated with an input or output annotation. This behaviour has been deprecated and is scheduled to be removed in Gradle 7.0. See https://docs.gradle.org/6.5/userguide/more_about_tasks.html#sec:up_to_date_checks for more details.
+Property 'destinationName' is not annotated with an input or output annotation. This behaviour has been deprecated and is scheduled to be removed in Gradle 7.0. See https://docs.gradle.org/6.5/userguide/more_about_tasks.html#sec:up_to_date_checks for more details.
+
+> Task :buildSrc:jarjar-19
+> Task :buildSrc:jarjar-20
+
+> Task :buildSrc:jarJarDeps
+Fixed dependencies
+
+> Task :buildSrc:build
+
+> Configure project :aTalk
+WARNING: DSL element 'android.dataBinding.enabled' is obsolete and has been replaced with 'android.buildFeatures.dataBinding'.
+It will be removed in version 5.0 of the Android Gradle plugin.
+WARNING: NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [20.0.5594570] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [20.0.5594570] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+****************************************************************************************
+Main jni directory for NDK build => /Users/amitseal/workspaces/mutationbackyard/mutations/atalk-android-mutant2/aTalk\jni
+****************************************************************************************
+*** <!-- Generate versionupdate.properties file -->
+# Date: Thu Nov 26 00:13:44 EST 2020
+# last_version = 2.4.3
+# last_version_code = 1143
+
+> Task :aTalk:jarjar-0
+> Task :aTalk:jarjar-1
+> Task :aTalk:jarjar-2
+> Task :aTalk:preBuild UP-TO-DATE
+> Task :aTalk:preFdroidDebugBuild UP-TO-DATE
+> Task :aTalk:compileFdroidDebugAidl NO-SOURCE
+> Task :aTalk:compileFdroidDebugRenderscript NO-SOURCE
+> Task :aTalk:dataBindingMergeDependencyArtifactsFdroidDebug
+> Task :aTalk:generateFdroidDebugResValues
+> Task :aTalk:generateFdroidDebugResources
+> Task :aTalk:dataBindingMergeGenClassesFdroidDebug
+> Task :aTalk:dataBindingTriggerFdroidDebug
+> Task :aTalk:generateFdroidDebugBuildConfig
+> Task :aTalk:javaPreCompileFdroidDebug
+> Task :aTalk:mergeFdroidDebugResources
+
+> Task :aTalk:ndkBuild
+make: Entering directory `/Users/amitseal/workspaces/mutationbackyard/mutations/atalk-android-mutant2/aTalk/jni'
+[armeabi-v7a] Compile thumb  : jnopus <= org_atalk_impl_neomedia_codec_audio_opus_Opus.c
+[armeabi-v7a] Compile thumb  : jnspeex <= org_atalk_impl_neomedia_codec_audio_speex_Speex.c
+[arm64-v8a] Compile        : jnopus <= org_atalk_impl_neomedia_codec_audio_opus_Opus.c
+[x86] Compile        : jnopus <= org_atalk_impl_neomedia_codec_audio_opus_Opus.c
+[x86_64] Compile        : jnopus <= org_atalk_impl_neomedia_codec_audio_opus_Opus.c
+[armeabi-v7a] Compile thumb  : jnawtrenderer <= JAWTRenderer_Android.c
+[armeabi-v7a] Compile thumb  : jnawtrenderer <= org_atalk_impl_neomedia_jmfext_media_renderer_video_JAWTRenderer.c
+[armeabi-v7a] Compile thumb  : jnffmpeg <= FFmpeg.c
+[armeabi-v7a] Compile thumb  : jnopensles <= org_atalk_impl_neomedia_device_OpenSLESSystem.c
+[armeabi-v7a] Compile thumb  : jnopensles <= org_atalk_impl_neomedia_jmfext_media_protocol_opensles_DataSource.c
+[armeabi-v7a] Compile thumb  : jnopensles <= org_atalk_impl_neomedia_jmfext_media_renderer_audio_OpenSLESRenderer.c
+[armeabi-v7a] Compile thumb  : jnopenssl <= Hmac.c
+[armeabi-v7a] Compile thumb  : jnopenssl <= OpenSslWrapperLoader.c
+[armeabi-v7a] Compile thumb  : jnopenssl <= SrtpCipherCtrOpenSsl.c
+[armeabi-v7a] Compile thumb  : jnopus <= bands.c
+[armeabi-v7a] Compile thumb  : jnopus <= celt.c
+[armeabi-v7a] Compile thumb  : jnopus <= celt_encoder.c
+[armeabi-v7a] Compile thumb  : jnopus <= celt_decoder.c
+[armeabi-v7a] Compile thumb  : jnopus <= cwrs.c
+[armeabi-v7a] Compile thumb  : jnopus <= entcode.c
+[armeabi-v7a] Compile thumb  : jnopus <= entdec.c
+[armeabi-v7a] Compile thumb  : jnopus <= entenc.c
+[armeabi-v7a] Compile thumb  : jnopus <= kiss_fft.c
+[armeabi-v7a] Compile thumb  : jnopus <= laplace.c
+[armeabi-v7a] Compile thumb  : jnopus <= mathops.c
+[armeabi-v7a] Compile thumb  : jnopus <= mdct.c
+[armeabi-v7a] Compile thumb  : jnopus <= modes.c
+[armeabi-v7a] Compile thumb  : jnopus <= pitch.c
+[armeabi-v7a] Compile thumb  : jnopus <= celt_lpc.c
+[armeabi-v7a] Compile thumb  : jnopus <= quant_bands.c
+[armeabi-v7a] Compile thumb  : jnopus <= rate.c
+[armeabi-v7a] Compile thumb  : jnopus <= vq.c
+[armeabi-v7a] Compile thumb  : jnopus <= armcpu.c
+[armeabi-v7a] Compile thumb  : jnopus <= arm_celt_map.c
+[armeabi-v7a] Compile thumb  : jnopus <= CNG.c
+[armeabi-v7a] Compile thumb  : jnopus <= code_signs.c
+[armeabi-v7a] Compile thumb  : jnopus <= init_decoder.c
+[armeabi-v7a] Compile thumb  : jnopus <= decode_core.c
+[armeabi-v7a] Compile thumb  : jnopus <= decode_frame.c
+[armeabi-v7a] Compile thumb  : jnopus <= decode_parameters.c
+[armeabi-v7a] Compile thumb  : jnopus <= decode_indices.c
+[armeabi-v7a] Compile thumb  : jnopus <= decode_pulses.c
+[armeabi-v7a] Compile thumb  : jnopus <= decoder_set_fs.c
+[armeabi-v7a] Compile thumb  : jnopus <= dec_API.c
+[armeabi-v7a] Compile thumb  : jnopus <= enc_API.c
+[armeabi-v7a] Compile thumb  : jnopus <= encode_indices.c
+[armeabi-v7a] Compile thumb  : jnopus <= encode_pulses.c
+[armeabi-v7a] Compile thumb  : jnopus <= gain_quant.c
+[armeabi-v7a] Compile thumb  : jnopus <= interpolate.c
+[armeabi-v7a] Compile thumb  : jnopus <= LP_variable_cutoff.c
+[armeabi-v7a] Compile thumb  : jnopus <= NLSF_decode.c
+[armeabi-v7a] Compile thumb  : jnopus <= NSQ.c
+[armeabi-v7a] Compile thumb  : jnopus <= NSQ_del_dec.c
+[armeabi-v7a] Compile thumb  : jnopus <= PLC.c
+[armeabi-v7a] Compile thumb  : jnopus <= shell_coder.c
+[armeabi-v7a] Compile thumb  : jnopus <= tables_gain.c
+[armeabi-v7a] Compile thumb  : jnopus <= tables_LTP.c
+[armeabi-v7a] Compile thumb  : jnopus <= tables_NLSF_CB_NB_MB.c
+[armeabi-v7a] Compile thumb  : jnopus <= tables_NLSF_CB_WB.c
+[armeabi-v7a] Compile thumb  : jnopus <= tables_other.c
+[armeabi-v7a] Compile thumb  : jnopus <= tables_pitch_lag.c
+[armeabi-v7a] Compile thumb  : jnopus <= tables_pulses_per_block.c
+[armeabi-v7a] Compile thumb  : jnopus <= VAD.c
+[armeabi-v7a] Compile thumb  : jnopus <= control_audio_bandwidth.c
+[armeabi-v7a] Compile thumb  : jnopus <= quant_LTP_gains.c
+[armeabi-v7a] Compile thumb  : jnopus <= VQ_WMat_EC.c
+[armeabi-v7a] Compile thumb  : jnopus <= HP_variable_cutoff.c
+[armeabi-v7a] Compile thumb  : jnopus <= NLSF_encode.c
+[armeabi-v7a] Compile thumb  : jnopus <= NLSF_VQ.c
+[armeabi-v7a] Compile thumb  : jnopus <= NLSF_unpack.c
+[armeabi-v7a] Compile thumb  : jnopus <= NLSF_del_dec_quant.c
+[armeabi-v7a] Compile thumb  : jnopus <= process_NLSFs.c
+[armeabi-v7a] Compile thumb  : jnopus <= stereo_LR_to_MS.c
+[armeabi-v7a] Compile thumb  : jnopus <= stereo_MS_to_LR.c
+[armeabi-v7a] Compile thumb  : jnopus <= check_control_input.c
+[armeabi-v7a] Compile thumb  : jnopus <= control_SNR.c
+[armeabi-v7a] Compile thumb  : jnopus <= init_encoder.c
+[armeabi-v7a] Compile thumb  : jnopus <= control_codec.c
+[armeabi-v7a] Compile thumb  : jnopus <= A2NLSF.c
+[armeabi-v7a] Compile thumb  : jnopus <= ana_filt_bank_1.c
+[armeabi-v7a] Compile thumb  : jnopus <= biquad_alt.c
+[armeabi-v7a] Compile thumb  : jnopus <= bwexpander_32.c
+[armeabi-v7a] Compile thumb  : jnopus <= bwexpander.c
+[armeabi-v7a] Compile thumb  : jnopus <= debug.c
+[armeabi-v7a] Compile thumb  : jnopus <= decode_pitch.c
+[armeabi-v7a] Compile thumb  : jnopus <= inner_prod_aligned.c
+[armeabi-v7a] Compile thumb  : jnopus <= lin2log.c
+[armeabi-v7a] Compile thumb  : jnopus <= log2lin.c
+[armeabi-v7a] Compile thumb  : jnopus <= LPC_analysis_filter.c
+[armeabi-v7a] Compile thumb  : jnopus <= LPC_inv_pred_gain.c
+[armeabi-v7a] Compile thumb  : jnopus <= table_LSF_cos.c
+[armeabi-v7a] Compile thumb  : jnopus <= NLSF2A.c
+[armeabi-v7a] Compile thumb  : jnopus <= NLSF_stabilize.c
+[armeabi-v7a] Compile thumb  : jnopus <= NLSF_VQ_weights_laroia.c
+[armeabi-v7a] Compile thumb  : jnopus <= pitch_est_tables.c
+[armeabi-v7a] Compile thumb  : jnopus <= resampler.c
+[armeabi-v7a] Compile thumb  : jnopus <= resampler_down2_3.c
+[armeabi-v7a] Compile thumb  : jnopus <= resampler_down2.c
+[armeabi-v7a] Compile thumb  : jnopus <= resampler_private_AR2.c
+[armeabi-v7a] Compile thumb  : jnopus <= resampler_private_down_FIR.c
+[armeabi-v7a] Compile thumb  : jnopus <= resampler_private_IIR_FIR.c
+[armeabi-v7a] Compile thumb  : jnopus <= resampler_private_up2_HQ.c
+[armeabi-v7a] Compile thumb  : jnopus <= resampler_rom.c
+[armeabi-v7a] Compile thumb  : jnopus <= sigm_Q15.c
+[armeabi-v7a] Compile thumb  : jnopus <= sort.c
+[armeabi-v7a] Compile thumb  : jnopus <= sum_sqr_shift.c
+[armeabi-v7a] Compile thumb  : jnopus <= stereo_decode_pred.c
+[armeabi-v7a] Compile thumb  : jnopus <= stereo_encode_pred.c
+[armeabi-v7a] Compile thumb  : jnopus <= stereo_find_predictor.c
+[armeabi-v7a] Compile thumb  : jnopus <= stereo_quant_pred.c
+[armeabi-v7a] Compile thumb  : jnopus <= LPC_fit.c
+[armeabi-v7a] Compile thumb  : jnopus <= LTP_analysis_filter_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= LTP_scale_ctrl_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= corrMatrix_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= encode_frame_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= find_LPC_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= find_LTP_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= find_pitch_lags_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= find_pred_coefs_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= noise_shape_analysis_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= process_gains_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= regularize_correlations_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= residual_energy16_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= residual_energy_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= warped_autocorrelation_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= apply_sine_window_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= autocorr_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= burg_modified_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= k2a_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= k2a_Q16_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= pitch_analysis_core_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= vector_ops_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= schur64_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= schur_FIX.c
+[armeabi-v7a] Compile thumb  : jnopus <= opus.c
+[armeabi-v7a] Compile thumb  : jnopus <= opus_decoder.c
+[armeabi-v7a] Compile thumb  : jnopus <= opus_encoder.c
+[armeabi-v7a] Compile thumb  : jnopus <= opus_multistream.c
+[armeabi-v7a] Compile thumb  : jnopus <= opus_multistream_encoder.c
+[armeabi-v7a] Compile thumb  : jnopus <= opus_multistream_decoder.c
+[armeabi-v7a] Compile thumb  : jnopus <= repacketizer.c
+[armeabi-v7a] Compile thumb  : jnspeex <= bits.c
+[armeabi-v7a] Compile thumb  : jnspeex <= buffer.c
+[armeabi-v7a] Compile thumb  : jnspeex <= cb_search.c
+[armeabi-v7a] Compile thumb  : jnspeex <= exc_10_16_table.c
+[armeabi-v7a] Compile thumb  : jnspeex <= exc_10_32_table.c
+[armeabi-v7a] Compile thumb  : jnspeex <= exc_20_32_table.c
+[armeabi-v7a] Compile thumb  : jnspeex <= exc_5_256_table.c
+[armeabi-v7a] Compile thumb  : jnspeex <= exc_5_64_table.c
+[armeabi-v7a] Compile thumb  : jnspeex <= exc_8_128_table.c
+[armeabi-v7a] Compile thumb  : jnspeex <= fftwrap.c
+[armeabi-v7a] Compile thumb  : jnspeex <= filterbank.c
+[armeabi-v7a] Compile thumb  : jnspeex <= filters.c
+[armeabi-v7a] Compile thumb  : jnspeex <= gain_table.c
+[armeabi-v7a] Compile thumb  : jnspeex <= gain_table_lbr.c
+[armeabi-v7a] Compile thumb  : jnspeex <= hexc_10_32_table.c
+[armeabi-v7a] Compile thumb  : jnspeex <= hexc_table.c
+[armeabi-v7a] Compile thumb  : jnspeex <= high_lsp_tables.c
+[armeabi-v7a] Compile thumb  : jnspeex <= jitter.c
+[armeabi-v7a] Compile thumb  : jnspeex <= kiss_fft.c
+[armeabi-v7a] Compile thumb  : jnspeex <= kiss_fftr.c
+[armeabi-v7a] Compile thumb  : jnspeex <= lpc.c
+[armeabi-v7a] Compile thumb  : jnspeex <= lsp.c
+[armeabi-v7a] Compile thumb  : jnspeex <= lsp_tables_nb.c
+[armeabi-v7a] Compile thumb  : jnspeex <= ltp.c
+[armeabi-v7a] Compile thumb  : jnspeex <= mdf.c
+[armeabi-v7a] Compile thumb  : jnspeex <= modes.c
+[armeabi-v7a] Compile thumb  : jnspeex <= modes_wb.c
+[armeabi-v7a] Compile thumb  : jnspeex <= nb_celp.c
+[armeabi-v7a] Compile thumb  : jnspeex <= preprocess.c
+[armeabi-v7a] Compile thumb  : jnspeex <= quant_lsp.c
+[armeabi-v7a] Compile thumb  : jnspeex <= resample.c
+[armeabi-v7a] Compile thumb  : jnspeex <= sb_celp.c
+[armeabi-v7a] Compile thumb  : jnspeex <= scal.c
+[armeabi-v7a] Compile thumb  : jnspeex <= smallft.c
+[armeabi-v7a] Compile thumb  : jnspeex <= speex.c
+[armeabi-v7a] Compile thumb  : jnspeex <= speex_callbacks.c
+[armeabi-v7a] Compile thumb  : jnspeex <= speex_header.c
+[armeabi-v7a] Compile thumb  : jnspeex <= stereo.c
+[armeabi-v7a] Compile thumb  : jnspeex <= vbr.c
+[armeabi-v7a] Compile thumb  : jnspeex <= vq.c
+[armeabi-v7a] Compile thumb  : jnspeex <= window.c
+[armeabi-v7a] Compile thumb  : jnspeex <= bitwise.c
+[armeabi-v7a] Compile thumb  : jnspeex <= framing.c
+[armeabi-v7a] Compile thumb  : jnvpx <= org_atalk_impl_neomedia_codec_video_VPX.c
+[arm64-v8a] Compile        : jnawtrenderer <= JAWTRenderer_Android.c
+[arm64-v8a] Compile        : jnawtrenderer <= org_atalk_impl_neomedia_jmfext_media_renderer_video_JAWTRenderer.c
+[arm64-v8a] Compile        : jnffmpeg <= FFmpeg.c
+[arm64-v8a] Compile        : jnopensles <= org_atalk_impl_neomedia_device_OpenSLESSystem.c
+[arm64-v8a] Compile        : jnopensles <= org_atalk_impl_neomedia_jmfext_media_protocol_opensles_DataSource.c
+[arm64-v8a] Compile        : jnopensles <= org_atalk_impl_neomedia_jmfext_media_renderer_audio_OpenSLESRenderer.c
+[arm64-v8a] Compile        : jnopenssl <= Hmac.c
+[arm64-v8a] Compile        : jnopenssl <= OpenSslWrapperLoader.c
+[arm64-v8a] Compile        : jnopenssl <= SrtpCipherCtrOpenSsl.c
+[arm64-v8a] Compile        : jnopus <= bands.c
+[arm64-v8a] Compile        : jnopus <= celt.c
+[arm64-v8a] Compile        : jnopus <= celt_encoder.c
+[arm64-v8a] Compile        : jnopus <= celt_decoder.c
+[arm64-v8a] Compile        : jnopus <= cwrs.c
+[arm64-v8a] Compile        : jnopus <= entcode.c
+[arm64-v8a] Compile        : jnopus <= entdec.c
+[arm64-v8a] Compile        : jnopus <= entenc.c
+[arm64-v8a] Compile        : jnopus <= kiss_fft.c
+[arm64-v8a] Compile        : jnopus <= laplace.c
+[arm64-v8a] Compile        : jnopus <= mathops.c
+[arm64-v8a] Compile        : jnopus <= mdct.c
+[arm64-v8a] Compile        : jnopus <= modes.c
+[arm64-v8a] Compile        : jnopus <= pitch.c
+[arm64-v8a] Compile        : jnopus <= celt_lpc.c
+[arm64-v8a] Compile        : jnopus <= quant_bands.c
+[arm64-v8a] Compile        : jnopus <= rate.c
+[arm64-v8a] Compile        : jnopus <= vq.c
+[arm64-v8a] Compile        : jnopus <= armcpu.c
+[arm64-v8a] Compile        : jnopus <= arm_celt_map.c
+[arm64-v8a] Compile        : jnopus <= CNG.c
+[arm64-v8a] Compile        : jnopus <= code_signs.c
+[arm64-v8a] Compile        : jnopus <= init_decoder.c
+[arm64-v8a] Compile        : jnopus <= decode_core.c
+[arm64-v8a] Compile        : jnopus <= decode_frame.c
+[arm64-v8a] Compile        : jnopus <= decode_parameters.c
+[arm64-v8a] Compile        : jnopus <= decode_indices.c
+[arm64-v8a] Compile        : jnopus <= decode_pulses.c
+[arm64-v8a] Compile        : jnopus <= decoder_set_fs.c
+[arm64-v8a] Compile        : jnopus <= dec_API.c
+[arm64-v8a] Compile        : jnopus <= enc_API.c
+[arm64-v8a] Compile        : jnopus <= encode_indices.c
+[arm64-v8a] Compile        : jnopus <= encode_pulses.c
+[arm64-v8a] Compile        : jnopus <= gain_quant.c
+[arm64-v8a] Compile        : jnopus <= interpolate.c
+[arm64-v8a] Compile        : jnopus <= LP_variable_cutoff.c
+[arm64-v8a] Compile        : jnopus <= NLSF_decode.c
+[arm64-v8a] Compile        : jnopus <= NSQ.c
+[arm64-v8a] Compile        : jnopus <= NSQ_del_dec.c
+[arm64-v8a] Compile        : jnopus <= PLC.c
+[arm64-v8a] Compile        : jnopus <= shell_coder.c
+[arm64-v8a] Compile        : jnopus <= tables_gain.c
+[arm64-v8a] Compile        : jnopus <= tables_LTP.c
+[arm64-v8a] Compile        : jnopus <= tables_NLSF_CB_NB_MB.c
+[arm64-v8a] Compile        : jnopus <= tables_NLSF_CB_WB.c
+[arm64-v8a] Compile        : jnopus <= tables_other.c
+[arm64-v8a] Compile        : jnopus <= tables_pitch_lag.c
+[arm64-v8a] Compile        : jnopus <= tables_pulses_per_block.c
+[arm64-v8a] Compile        : jnopus <= VAD.c
+[arm64-v8a] Compile        : jnopus <= control_audio_bandwidth.c
+[arm64-v8a] Compile        : jnopus <= quant_LTP_gains.c
+[arm64-v8a] Compile        : jnopus <= VQ_WMat_EC.c
+[arm64-v8a] Compile        : jnopus <= HP_variable_cutoff.c
+[arm64-v8a] Compile        : jnopus <= NLSF_encode.c
+[arm64-v8a] Compile        : jnopus <= NLSF_VQ.c
+[arm64-v8a] Compile        : jnopus <= NLSF_unpack.c
+[arm64-v8a] Compile        : jnopus <= NLSF_del_dec_quant.c
+[arm64-v8a] Compile        : jnopus <= process_NLSFs.c
+[arm64-v8a] Compile        : jnopus <= stereo_LR_to_MS.c
+[arm64-v8a] Compile        : jnopus <= stereo_MS_to_LR.c
+[arm64-v8a] Compile        : jnopus <= check_control_input.c
+[arm64-v8a] Compile        : jnopus <= control_SNR.c
+[arm64-v8a] Compile        : jnopus <= init_encoder.c
+[arm64-v8a] Compile        : jnopus <= control_codec.c
+[arm64-v8a] Compile        : jnopus <= A2NLSF.c
+[arm64-v8a] Compile        : jnopus <= ana_filt_bank_1.c
+[arm64-v8a] Compile        : jnopus <= biquad_alt.c
+[arm64-v8a] Compile        : jnopus <= bwexpander_32.c
+[arm64-v8a] Compile        : jnopus <= bwexpander.c
+[arm64-v8a] Compile        : jnopus <= debug.c
+[arm64-v8a] Compile        : jnopus <= decode_pitch.c
+[arm64-v8a] Compile        : jnopus <= inner_prod_aligned.c
+[arm64-v8a] Compile        : jnopus <= lin2log.c
+[arm64-v8a] Compile        : jnopus <= log2lin.c
+[arm64-v8a] Compile        : jnopus <= LPC_analysis_filter.c
+[arm64-v8a] Compile        : jnopus <= LPC_inv_pred_gain.c
+[arm64-v8a] Compile        : jnopus <= table_LSF_cos.c
+[arm64-v8a] Compile        : jnopus <= NLSF2A.c
+[arm64-v8a] Compile        : jnopus <= NLSF_stabilize.c
+[arm64-v8a] Compile        : jnopus <= NLSF_VQ_weights_laroia.c
+[arm64-v8a] Compile        : jnopus <= pitch_est_tables.c
+[arm64-v8a] Compile        : jnopus <= resampler.c
+[arm64-v8a] Compile        : jnopus <= resampler_down2_3.c
+[arm64-v8a] Compile        : jnopus <= resampler_down2.c
+[arm64-v8a] Compile        : jnopus <= resampler_private_AR2.c
+[arm64-v8a] Compile        : jnopus <= resampler_private_down_FIR.c
+[arm64-v8a] Compile        : jnopus <= resampler_private_IIR_FIR.c
+[arm64-v8a] Compile        : jnopus <= resampler_private_up2_HQ.c
+[arm64-v8a] Compile        : jnopus <= resampler_rom.c
+[arm64-v8a] Compile        : jnopus <= sigm_Q15.c
+[arm64-v8a] Compile        : jnopus <= sort.c
+[arm64-v8a] Compile        : jnopus <= sum_sqr_shift.c
+[arm64-v8a] Compile        : jnopus <= stereo_decode_pred.c
+[arm64-v8a] Compile        : jnopus <= stereo_encode_pred.c
+[arm64-v8a] Compile        : jnopus <= stereo_find_predictor.c
+[arm64-v8a] Compile        : jnopus <= stereo_quant_pred.c
+[arm64-v8a] Compile        : jnopus <= LPC_fit.c
+[arm64-v8a] Compile        : jnopus <= LTP_analysis_filter_FIX.c
+[arm64-v8a] Compile        : jnopus <= LTP_scale_ctrl_FIX.c
+[arm64-v8a] Compile        : jnopus <= corrMatrix_FIX.c
+[arm64-v8a] Compile        : jnopus <= encode_frame_FIX.c
+[arm64-v8a] Compile        : jnopus <= find_LPC_FIX.c
+[arm64-v8a] Compile        : jnopus <= find_LTP_FIX.c
+[arm64-v8a] Compile        : jnopus <= find_pitch_lags_FIX.c
+[arm64-v8a] Compile        : jnopus <= find_pred_coefs_FIX.c
+[arm64-v8a] Compile        : jnopus <= noise_shape_analysis_FIX.c
+[arm64-v8a] Compile        : jnopus <= process_gains_FIX.c
+[arm64-v8a] Compile        : jnopus <= regularize_correlations_FIX.c
+[arm64-v8a] Compile        : jnopus <= residual_energy16_FIX.c
+[arm64-v8a] Compile        : jnopus <= residual_energy_FIX.c
+[arm64-v8a] Compile        : jnopus <= warped_autocorrelation_FIX.c
+[arm64-v8a] Compile        : jnopus <= apply_sine_window_FIX.c
+[arm64-v8a] Compile        : jnopus <= autocorr_FIX.c
+[arm64-v8a] Compile        : jnopus <= burg_modified_FIX.c
+[arm64-v8a] Compile        : jnopus <= k2a_FIX.c
+[arm64-v8a] Compile        : jnopus <= k2a_Q16_FIX.c
+[arm64-v8a] Compile        : jnopus <= pitch_analysis_core_FIX.c
+[arm64-v8a] Compile        : jnopus <= vector_ops_FIX.c
+[arm64-v8a] Compile        : jnopus <= schur64_FIX.c
+[arm64-v8a] Compile        : jnopus <= schur_FIX.c
+[arm64-v8a] Compile        : jnopus <= opus.c
+[arm64-v8a] Compile        : jnopus <= opus_decoder.c
+[arm64-v8a] Compile        : jnopus <= opus_encoder.c
+[arm64-v8a] Compile        : jnopus <= opus_multistream.c
+[arm64-v8a] Compile        : jnopus <= opus_multistream_encoder.c
+[arm64-v8a] Compile        : jnopus <= opus_multistream_decoder.c
+[arm64-v8a] Compile        : jnopus <= repacketizer.c
+[arm64-v8a] Compile        : jnspeex <= bits.c
+[arm64-v8a] Compile        : jnspeex <= buffer.c
+[arm64-v8a] Compile        : jnspeex <= cb_search.c
+[arm64-v8a] Compile        : jnspeex <= exc_10_16_table.c
+[arm64-v8a] Compile        : jnspeex <= exc_10_32_table.c
+[arm64-v8a] Compile        : jnspeex <= exc_20_32_table.c
+[arm64-v8a] Compile        : jnspeex <= exc_5_256_table.c
+[arm64-v8a] Compile        : jnspeex <= exc_5_64_table.c
+[arm64-v8a] Compile        : jnspeex <= exc_8_128_table.c
+[arm64-v8a] Compile        : jnspeex <= fftwrap.c
+[arm64-v8a] Compile        : jnspeex <= filterbank.c
+[arm64-v8a] Compile        : jnspeex <= filters.c
+[arm64-v8a] Compile        : jnspeex <= gain_table.c
+[arm64-v8a] Compile        : jnspeex <= gain_table_lbr.c
+[arm64-v8a] Compile        : jnspeex <= hexc_10_32_table.c
+[arm64-v8a] Compile        : jnspeex <= hexc_table.c
+[arm64-v8a] Compile        : jnspeex <= high_lsp_tables.c
+[arm64-v8a] Compile        : jnspeex <= jitter.c
+[arm64-v8a] Compile        : jnspeex <= kiss_fft.c
+[arm64-v8a] Compile        : jnspeex <= kiss_fftr.c
+[arm64-v8a] Compile        : jnspeex <= lpc.c
+[arm64-v8a] Compile        : jnspeex <= lsp.c
+[arm64-v8a] Compile        : jnspeex <= lsp_tables_nb.c
+[arm64-v8a] Compile        : jnspeex <= ltp.c
+[arm64-v8a] Compile        : jnspeex <= mdf.c
+[arm64-v8a] Compile        : jnspeex <= modes.c
+[arm64-v8a] Compile        : jnspeex <= modes_wb.c
+[arm64-v8a] Compile        : jnspeex <= nb_celp.c
+[arm64-v8a] Compile        : jnspeex <= preprocess.c
+[arm64-v8a] Compile        : jnspeex <= quant_lsp.c
+[arm64-v8a] Compile        : jnspeex <= resample.c
+[arm64-v8a] Compile        : jnspeex <= sb_celp.c
+[arm64-v8a] Compile        : jnspeex <= scal.c
+[arm64-v8a] Compile        : jnspeex <= smallft.c
+[arm64-v8a] Compile        : jnspeex <= speex.c
+[arm64-v8a] Compile        : jnspeex <= speex_callbacks.c
+[arm64-v8a] Compile        : jnspeex <= speex_header.c
+[arm64-v8a] Compile        : jnspeex <= stereo.c
+[arm64-v8a] Compile        : jnspeex <= vbr.c
+[arm64-v8a] Compile        : jnspeex <= vq.c
+[arm64-v8a] Compile        : jnspeex <= window.c
+[arm64-v8a] Compile        : jnspeex <= bitwise.c
+[arm64-v8a] Compile        : jnspeex <= framing.c
+[arm64-v8a] Compile        : jnspeex <= org_atalk_impl_neomedia_codec_audio_speex_Speex.c
+[arm64-v8a] Compile        : jnvpx <= org_atalk_impl_neomedia_codec_video_VPX.c
+[x86] Compile        : jnawtrenderer <= JAWTRenderer_Android.c
+[x86] Compile        : jnawtrenderer <= org_atalk_impl_neomedia_jmfext_media_renderer_video_JAWTRenderer.c
+[x86] Compile        : jnffmpeg <= FFmpeg.c
+[x86] Compile        : jnopensles <= org_atalk_impl_neomedia_device_OpenSLESSystem.c
+[x86] Compile        : jnopensles <= org_atalk_impl_neomedia_jmfext_media_protocol_opensles_DataSource.c
+[x86] Compile        : jnopensles <= org_atalk_impl_neomedia_jmfext_media_renderer_audio_OpenSLESRenderer.c
+[x86] Compile        : jnopenssl <= Hmac.c
+[x86] Compile        : jnopenssl <= OpenSslWrapperLoader.c
+[x86] Compile        : jnopenssl <= SrtpCipherCtrOpenSsl.c
+[x86] Compile        : jnopus <= bands.c
+[x86] Compile        : jnopus <= celt.c
+[x86] Compile        : jnopus <= celt_encoder.c
+[x86] Compile        : jnopus <= celt_decoder.c
+[x86] Compile        : jnopus <= cwrs.c
+[x86] Compile        : jnopus <= entcode.c
+[x86] Compile        : jnopus <= entdec.c
+[x86] Compile        : jnopus <= entenc.c
+[x86] Compile        : jnopus <= kiss_fft.c
+[x86] Compile        : jnopus <= laplace.c
+[x86] Compile        : jnopus <= mathops.c
+[x86] Compile        : jnopus <= mdct.c
+[x86] Compile        : jnopus <= modes.c
+[x86] Compile        : jnopus <= pitch.c
+[x86] Compile        : jnopus <= celt_lpc.c
+[x86] Compile        : jnopus <= quant_bands.c
+[x86] Compile        : jnopus <= rate.c
+[x86] Compile        : jnopus <= vq.c
+[x86] Compile        : jnopus <= armcpu.c
+[x86] Compile        : jnopus <= arm_celt_map.c
+[x86] Compile        : jnopus <= CNG.c
+[x86] Compile        : jnopus <= code_signs.c
+[x86] Compile        : jnopus <= init_decoder.c
+[x86] Compile        : jnopus <= decode_core.c
+[x86] Compile        : jnopus <= decode_frame.c
+[x86] Compile        : jnopus <= decode_parameters.c
+[x86] Compile        : jnopus <= decode_indices.c
+[x86] Compile        : jnopus <= decode_pulses.c
+[x86] Compile        : jnopus <= decoder_set_fs.c
+[x86] Compile        : jnopus <= dec_API.c
+[x86] Compile        : jnopus <= enc_API.c
+[x86] Compile        : jnopus <= encode_indices.c
+[x86] Compile        : jnopus <= encode_pulses.c
+[x86] Compile        : jnopus <= gain_quant.c
+[x86] Compile        : jnopus <= interpolate.c
+[x86] Compile        : jnopus <= LP_variable_cutoff.c
+[x86] Compile        : jnopus <= NLSF_decode.c
+[x86] Compile        : jnopus <= NSQ.c
+[x86] Compile        : jnopus <= NSQ_del_dec.c
+[x86] Compile        : jnopus <= PLC.c
+[x86] Compile        : jnopus <= shell_coder.c
+[x86] Compile        : jnopus <= tables_gain.c
+[x86] Compile        : jnopus <= tables_LTP.c
+[x86] Compile        : jnopus <= tables_NLSF_CB_NB_MB.c
+[x86] Compile        : jnopus <= tables_NLSF_CB_WB.c
+[x86] Compile        : jnopus <= tables_other.c
+[x86] Compile        : jnopus <= tables_pitch_lag.c
+[x86] Compile        : jnopus <= tables_pulses_per_block.c
+[x86] Compile        : jnopus <= VAD.c
+[x86] Compile        : jnopus <= control_audio_bandwidth.c
+[x86] Compile        : jnopus <= quant_LTP_gains.c
+[x86] Compile        : jnopus <= VQ_WMat_EC.c
+[x86] Compile        : jnopus <= HP_variable_cutoff.c
+[x86] Compile        : jnopus <= NLSF_encode.c
+[x86] Compile        : jnopus <= NLSF_VQ.c
+[x86] Compile        : jnopus <= NLSF_unpack.c
+[x86] Compile        : jnopus <= NLSF_del_dec_quant.c
+[x86] Compile        : jnopus <= process_NLSFs.c
+[x86] Compile        : jnopus <= stereo_LR_to_MS.c
+[x86] Compile        : jnopus <= stereo_MS_to_LR.c
+[x86] Compile        : jnopus <= check_control_input.c
+[x86] Compile        : jnopus <= control_SNR.c
+[x86] Compile        : jnopus <= init_encoder.c
+[x86] Compile        : jnopus <= control_codec.c
+[x86] Compile        : jnopus <= A2NLSF.c
+[x86] Compile        : jnopus <= ana_filt_bank_1.c
+[x86] Compile        : jnopus <= biquad_alt.c
+[x86] Compile        : jnopus <= bwexpander_32.c
+[x86] Compile        : jnopus <= bwexpander.c
+[x86] Compile        : jnopus <= debug.c
+[x86] Compile        : jnopus <= decode_pitch.c
+[x86] Compile        : jnopus <= inner_prod_aligned.c
+[x86] Compile        : jnopus <= lin2log.c
+[x86] Compile        : jnopus <= log2lin.c
+[x86] Compile        : jnopus <= LPC_analysis_filter.c
+[x86] Compile        : jnopus <= LPC_inv_pred_gain.c
+[x86] Compile        : jnopus <= table_LSF_cos.c
+[x86] Compile        : jnopus <= NLSF2A.c
+[x86] Compile        : jnopus <= NLSF_stabilize.c
+[x86] Compile        : jnopus <= NLSF_VQ_weights_laroia.c
+[x86] Compile        : jnopus <= pitch_est_tables.c
+[x86] Compile        : jnopus <= resampler.c
+[x86] Compile        : jnopus <= resampler_down2_3.c
+[x86] Compile        : jnopus <= resampler_down2.c
+[x86] Compile        : jnopus <= resampler_private_AR2.c
+[x86] Compile        : jnopus <= resampler_private_down_FIR.c
+[x86] Compile        : jnopus <= resampler_private_IIR_FIR.c
+[x86] Compile        : jnopus <= resampler_private_up2_HQ.c
+[x86] Compile        : jnopus <= resampler_rom.c
+[x86] Compile        : jnopus <= sigm_Q15.c
+[x86] Compile        : jnopus <= sort.c
+[x86] Compile        : jnopus <= sum_sqr_shift.c
+[x86] Compile        : jnopus <= stereo_decode_pred.c
+[x86] Compile        : jnopus <= stereo_encode_pred.c
+[x86] Compile        : jnopus <= stereo_find_predictor.c
+[x86] Compile        : jnopus <= stereo_quant_pred.c
+[x86] Compile        : jnopus <= LPC_fit.c
+[x86] Compile        : jnopus <= LTP_analysis_filter_FIX.c
+[x86] Compile        : jnopus <= LTP_scale_ctrl_FIX.c
+[x86] Compile        : jnopus <= corrMatrix_FIX.c
+[x86] Compile        : jnopus <= encode_frame_FIX.c
+[x86] Compile        : jnopus <= find_LPC_FIX.c
+[x86] Compile        : jnopus <= find_LTP_FIX.c
+[x86] Compile        : jnopus <= find_pitch_lags_FIX.c
+[x86] Compile        : jnopus <= find_pred_coefs_FIX.c
+[x86] Compile        : jnopus <= noise_shape_analysis_FIX.c
+[x86] Compile        : jnopus <= process_gains_FIX.c
+[x86] Compile        : jnopus <= regularize_correlations_FIX.c
+[x86] Compile        : jnopus <= residual_energy16_FIX.c
+[x86] Compile        : jnopus <= residual_energy_FIX.c
+[x86] Compile        : jnopus <= warped_autocorrelation_FIX.c
+[x86] Compile        : jnopus <= apply_sine_window_FIX.c
+[x86] Compile        : jnopus <= autocorr_FIX.c
+[x86] Compile        : jnopus <= burg_modified_FIX.c
+[x86] Compile        : jnopus <= k2a_FIX.c
+[x86] Compile        : jnopus <= k2a_Q16_FIX.c
+[x86] Compile        : jnopus <= pitch_analysis_core_FIX.c
+[x86] Compile        : jnopus <= vector_ops_FIX.c
+[x86] Compile        : jnopus <= schur64_FIX.c
+[x86] Compile        : jnopus <= schur_FIX.c
+[x86] Compile        : jnopus <= opus.c
+[x86] Compile        : jnopus <= opus_decoder.c
+[x86] Compile        : jnopus <= opus_encoder.c
+[x86] Compile        : jnopus <= opus_multistream.c
+[x86] Compile        : jnopus <= opus_multistream_encoder.c
+[x86] Compile        : jnopus <= opus_multistream_decoder.c
+[x86] Compile        : jnopus <= repacketizer.c
+[x86] Compile        : jnspeex <= bits.c
+[x86] Compile        : jnspeex <= buffer.c
+[x86] Compile        : jnspeex <= cb_search.c
+[x86] Compile        : jnspeex <= exc_10_16_table.c
+[x86] Compile        : jnspeex <= exc_10_32_table.c
+[x86] Compile        : jnspeex <= exc_20_32_table.c
+[x86] Compile        : jnspeex <= exc_5_256_table.c
+[x86] Compile        : jnspeex <= exc_5_64_table.c
+[x86] Compile        : jnspeex <= exc_8_128_table.c
+[x86] Compile        : jnspeex <= fftwrap.c
+[x86] Compile        : jnspeex <= filterbank.c
+[x86] Compile        : jnspeex <= filters.c
+[x86] Compile        : jnspeex <= gain_table.c
+[x86] Compile        : jnspeex <= gain_table_lbr.c
+[x86] Compile        : jnspeex <= hexc_10_32_table.c
+[x86] Compile        : jnspeex <= hexc_table.c
+[x86] Compile        : jnspeex <= high_lsp_tables.c
+[x86] Compile        : jnspeex <= jitter.c
+[x86] Compile        : jnspeex <= kiss_fft.c
+[x86] Compile        : jnspeex <= kiss_fftr.c
+[x86] Compile        : jnspeex <= lpc.c
+[x86] Compile        : jnspeex <= lsp.c
+[x86] Compile        : jnspeex <= lsp_tables_nb.c
+[x86] Compile        : jnspeex <= ltp.c
+[x86] Compile        : jnspeex <= mdf.c
+[x86] Compile        : jnspeex <= modes.c
+[x86] Compile        : jnspeex <= modes_wb.c
+[x86] Compile        : jnspeex <= nb_celp.c
+[x86] Compile        : jnspeex <= preprocess.c
+[x86] Compile        : jnspeex <= quant_lsp.c
+[x86] Compile        : jnspeex <= resample.c
+[x86] Compile        : jnspeex <= sb_celp.c
+[x86] Compile        : jnspeex <= scal.c
+[x86] Compile        : jnspeex <= smallft.c
+[x86] Compile        : jnspeex <= speex.c
+[x86] Compile        : jnspeex <= speex_callbacks.c
+[x86] Compile        : jnspeex <= speex_header.c
+[x86] Compile        : jnspeex <= stereo.c
+[x86] Compile        : jnspeex <= vbr.c
+[x86] Compile        : jnspeex <= vq.c
+[x86] Compile        : jnspeex <= window.c
+[x86] Compile        : jnspeex <= bitwise.c
+[x86] Compile        : jnspeex <= framing.c
+[x86] Compile        : jnspeex <= org_atalk_impl_neomedia_codec_audio_speex_Speex.c
+[x86] Compile        : jnvpx <= org_atalk_impl_neomedia_codec_video_VPX.c
+[x86_64] Compile        : jnawtrenderer <= JAWTRenderer_Android.c
+[x86_64] Compile        : jnawtrenderer <= org_atalk_impl_neomedia_jmfext_media_renderer_video_JAWTRenderer.c
+[x86_64] Compile        : jnffmpeg <= FFmpeg.c
+[x86_64] Compile        : jnopensles <= org_atalk_impl_neomedia_device_OpenSLESSystem.c
+[x86_64] Compile        : jnopensles <= org_atalk_impl_neomedia_jmfext_media_protocol_opensles_DataSource.c
+[x86_64] Compile        : jnopensles <= org_atalk_impl_neomedia_jmfext_media_renderer_audio_OpenSLESRenderer.c
+[x86_64] Compile        : jnopenssl <= Hmac.c
+[x86_64] Compile        : jnopenssl <= OpenSslWrapperLoader.c
+[x86_64] Compile        : jnopenssl <= SrtpCipherCtrOpenSsl.c
+[x86_64] Compile        : jnopus <= bands.c
+[x86_64] Compile        : jnopus <= celt.c
+[x86_64] Compile        : jnopus <= celt_encoder.c
+[x86_64] Compile        : jnopus <= celt_decoder.c
+[x86_64] Compile        : jnopus <= cwrs.c
+[x86_64] Compile        : jnopus <= entcode.c
+[x86_64] Compile        : jnopus <= entdec.c
+[x86_64] Compile        : jnopus <= entenc.c
+[x86_64] Compile        : jnopus <= kiss_fft.c
+[x86_64] Compile        : jnopus <= laplace.c
+[x86_64] Compile        : jnopus <= mathops.c
+[x86_64] Compile        : jnopus <= mdct.c
+[x86_64] Compile        : jnopus <= modes.c
+[x86_64] Compile        : jnopus <= pitch.c
+[x86_64] Compile        : jnopus <= celt_lpc.c
+[x86_64] Compile        : jnopus <= quant_bands.c
+[x86_64] Compile        : jnopus <= rate.c
+[x86_64] Compile        : jnopus <= vq.c
+[x86_64] Compile        : jnopus <= armcpu.c
+[x86_64] Compile        : jnopus <= arm_celt_map.c
+[x86_64] Compile        : jnopus <= CNG.c
+[x86_64] Compile        : jnopus <= code_signs.c
+[x86_64] Compile        : jnopus <= init_decoder.c
+[x86_64] Compile        : jnopus <= decode_core.c
+[x86_64] Compile        : jnopus <= decode_frame.c
+[x86_64] Compile        : jnopus <= decode_parameters.c
+[x86_64] Compile        : jnopus <= decode_indices.c
+[x86_64] Compile        : jnopus <= decode_pulses.c
+[x86_64] Compile        : jnopus <= decoder_set_fs.c
+[x86_64] Compile        : jnopus <= dec_API.c
+[x86_64] Compile        : jnopus <= enc_API.c
+[x86_64] Compile        : jnopus <= encode_indices.c
+[x86_64] Compile        : jnopus <= encode_pulses.c
+[x86_64] Compile        : jnopus <= gain_quant.c
+[x86_64] Compile        : jnopus <= interpolate.c
+[x86_64] Compile        : jnopus <= LP_variable_cutoff.c
+[x86_64] Compile        : jnopus <= NLSF_decode.c
+[x86_64] Compile        : jnopus <= NSQ.c
+[x86_64] Compile        : jnopus <= NSQ_del_dec.c
+[x86_64] Compile        : jnopus <= PLC.c
+[x86_64] Compile        : jnopus <= shell_coder.c
+[x86_64] Compile        : jnopus <= tables_gain.c
+[x86_64] Compile        : jnopus <= tables_LTP.c
+[x86_64] Compile        : jnopus <= tables_NLSF_CB_NB_MB.c
+[x86_64] Compile        : jnopus <= tables_NLSF_CB_WB.c
+[x86_64] Compile        : jnopus <= tables_other.c
+[x86_64] Compile        : jnopus <= tables_pitch_lag.c
+[x86_64] Compile        : jnopus <= tables_pulses_per_block.c
+[x86_64] Compile        : jnopus <= VAD.c
+[x86_64] Compile        : jnopus <= control_audio_bandwidth.c
+[x86_64] Compile        : jnopus <= quant_LTP_gains.c
+[x86_64] Compile        : jnopus <= VQ_WMat_EC.c
+[x86_64] Compile        : jnopus <= HP_variable_cutoff.c
+[x86_64] Compile        : jnopus <= NLSF_encode.c
+[x86_64] Compile        : jnopus <= NLSF_VQ.c
+[x86_64] Compile        : jnopus <= NLSF_unpack.c
+[x86_64] Compile        : jnopus <= NLSF_del_dec_quant.c
+[x86_64] Compile        : jnopus <= process_NLSFs.c
+[x86_64] Compile        : jnopus <= stereo_LR_to_MS.c
+[x86_64] Compile        : jnopus <= stereo_MS_to_LR.c
+[x86_64] Compile        : jnopus <= check_control_input.c
+[x86_64] Compile        : jnopus <= control_SNR.c
+[x86_64] Compile        : jnopus <= init_encoder.c
+[x86_64] Compile        : jnopus <= control_codec.c
+[x86_64] Compile        : jnopus <= A2NLSF.c
+[x86_64] Compile        : jnopus <= ana_filt_bank_1.c
+[x86_64] Compile        : jnopus <= biquad_alt.c
+[x86_64] Compile        : jnopus <= bwexpander_32.c
+[x86_64] Compile        : jnopus <= bwexpander.c
+[x86_64] Compile        : jnopus <= debug.c
+[x86_64] Compile        : jnopus <= decode_pitch.c
+[x86_64] Compile        : jnopus <= inner_prod_aligned.c
+[x86_64] Compile        : jnopus <= lin2log.c
+[x86_64] Compile        : jnopus <= log2lin.c
+[x86_64] Compile        : jnopus <= LPC_analysis_filter.c
+[x86_64] Compile        : jnopus <= LPC_inv_pred_gain.c
+[x86_64] Compile        : jnopus <= table_LSF_cos.c
+[x86_64] Compile        : jnopus <= NLSF2A.c
+[x86_64] Compile        : jnopus <= NLSF_stabilize.c
+[x86_64] Compile        : jnopus <= NLSF_VQ_weights_laroia.c
+[x86_64] Compile        : jnopus <= pitch_est_tables.c
+[x86_64] Compile        : jnopus <= resampler.c
+[x86_64] Compile        : jnopus <= resampler_down2_3.c
+[x86_64] Compile        : jnopus <= resampler_down2.c
+[x86_64] Compile        : jnopus <= resampler_private_AR2.c
+[x86_64] Compile        : jnopus <= resampler_private_down_FIR.c
+[x86_64] Compile        : jnopus <= resampler_private_IIR_FIR.c
+[x86_64] Compile        : jnopus <= resampler_private_up2_HQ.c
+[x86_64] Compile        : jnopus <= resampler_rom.c
+[x86_64] Compile        : jnopus <= sigm_Q15.c
+[x86_64] Compile        : jnopus <= sort.c
+[x86_64] Compile        : jnopus <= sum_sqr_shift.c
+[x86_64] Compile        : jnopus <= stereo_decode_pred.c
+[x86_64] Compile        : jnopus <= stereo_encode_pred.c
+[x86_64] Compile        : jnopus <= stereo_find_predictor.c
+[x86_64] Compile        : jnopus <= stereo_quant_pred.c
+[x86_64] Compile        : jnopus <= LPC_fit.c
+[x86_64] Compile        : jnopus <= LTP_analysis_filter_FIX.c
+[x86_64] Compile        : jnopus <= LTP_scale_ctrl_FIX.c
+[x86_64] Compile        : jnopus <= corrMatrix_FIX.c
+[x86_64] Compile        : jnopus <= encode_frame_FIX.c
+[x86_64] Compile        : jnopus <= find_LPC_FIX.c
+[x86_64] Compile        : jnopus <= find_LTP_FIX.c
+[x86_64] Compile        : jnopus <= find_pitch_lags_FIX.c
+[x86_64] Compile        : jnopus <= find_pred_coefs_FIX.c
+[x86_64] Compile        : jnopus <= noise_shape_analysis_FIX.c
+[x86_64] Compile        : jnopus <= process_gains_FIX.c
+[x86_64] Compile        : jnopus <= regularize_correlations_FIX.c
+[x86_64] Compile        : jnopus <= residual_energy16_FIX.c
+[x86_64] Compile        : jnopus <= residual_energy_FIX.c
+[x86_64] Compile        : jnopus <= warped_autocorrelation_FIX.c
+[x86_64] Compile        : jnopus <= apply_sine_window_FIX.c
+[x86_64] Compile        : jnopus <= autocorr_FIX.c
+[x86_64] Compile        : jnopus <= burg_modified_FIX.c
+[x86_64] Compile        : jnopus <= k2a_FIX.c
+[x86_64] Compile        : jnopus <= k2a_Q16_FIX.c
+[x86_64] Compile        : jnopus <= pitch_analysis_core_FIX.c
+[x86_64] Compile        : jnopus <= vector_ops_FIX.c
+[x86_64] Compile        : jnopus <= schur64_FIX.c
+[x86_64] Compile        : jnopus <= schur_FIX.c
+[x86_64] Compile        : jnopus <= opus.c
+[x86_64] Compile        : jnopus <= opus_decoder.c
+[x86_64] Compile        : jnopus <= opus_encoder.c
+[x86_64] Compile        : jnopus <= opus_multistream.c
+[x86_64] Compile        : jnopus <= opus_multistream_encoder.c
+[x86_64] Compile        : jnopus <= opus_multistream_decoder.c
+[x86_64] Compile        : jnopus <= repacketizer.c
+[x86_64] Compile        : jnspeex <= bits.c
+[x86_64] Compile        : jnspeex <= buffer.c
+[x86_64] Compile        : jnspeex <= cb_search.c
+[x86_64] Compile        : jnspeex <= exc_10_16_table.c
+[x86_64] Compile        : jnspeex <= exc_10_32_table.c
+[x86_64] Compile        : jnspeex <= exc_20_32_table.c
+[x86_64] Compile        : jnspeex <= exc_5_256_table.c
+[x86_64] Compile        : jnspeex <= exc_5_64_table.c
+[x86_64] Compile        : jnspeex <= exc_8_128_table.c
+[x86_64] Compile        : jnspeex <= fftwrap.c
+[x86_64] Compile        : jnspeex <= filterbank.c
+[x86_64] Compile        : jnspeex <= filters.c
+[x86_64] Compile        : jnspeex <= gain_table.c
+[x86_64] Compile        : jnspeex <= gain_table_lbr.c
+[x86_64] Compile        : jnspeex <= hexc_10_32_table.c
+[x86_64] Compile        : jnspeex <= hexc_table.c
+[x86_64] Compile        : jnspeex <= high_lsp_tables.c
+[x86_64] Compile        : jnspeex <= jitter.c
+[x86_64] Compile        : jnspeex <= kiss_fft.c
+[x86_64] Compile        : jnspeex <= kiss_fftr.c
+[x86_64] Compile        : jnspeex <= lpc.c
+[x86_64] Compile        : jnspeex <= lsp.c
+[x86_64] Compile        : jnspeex <= lsp_tables_nb.c
+[x86_64] Compile        : jnspeex <= ltp.c
+[x86_64] Compile        : jnspeex <= mdf.c
+[x86_64] Compile        : jnspeex <= modes.c
+[x86_64] Compile        : jnspeex <= modes_wb.c
+[x86_64] Compile        : jnspeex <= nb_celp.c
+[x86_64] Compile        : jnspeex <= preprocess.c
+[x86_64] Compile        : jnspeex <= quant_lsp.c
+[x86_64] Compile        : jnspeex <= resample.c
+[x86_64] Compile        : jnspeex <= sb_celp.c
+[x86_64] Compile        : jnspeex <= scal.c
+[x86_64] Compile        : jnspeex <= smallft.c
+[x86_64] Compile        : jnspeex <= speex.c
+[x86_64] Compile        : jnspeex <= speex_callbacks.c
+[x86_64] Compile        : jnspeex <= speex_header.c
+[x86_64] Compile        : jnspeex <= stereo.c
+[x86_64] Compile        : jnspeex <= vbr.c
+[x86_64] Compile        : jnspeex <= vq.c
+[x86_64] Compile        : jnspeex <= window.c
+[x86_64] Compile        : jnspeex <= bitwise.c
+[x86_64] Compile        : jnspeex <= framing.c
+[x86_64] Compile        : jnspeex <= org_atalk_impl_neomedia_codec_audio_speex_Speex.c
+[x86_64] Compile        : jnvpx <= org_atalk_impl_neomedia_codec_video_VPX.c
+[armeabi-v7a] SharedLibrary  : libjnawtrenderer.so
+[armeabi-v7a] SharedLibrary  : libjnffmpeg.so
+[armeabi-v7a] SharedLibrary  : libjnopensles.so
+[armeabi-v7a] SharedLibrary  : libjnopenssl.so
+[armeabi-v7a] SharedLibrary  : libjnopus.so
+[armeabi-v7a] SharedLibrary  : libjnspeex.so
+[armeabi-v7a] SharedLibrary  : libjnvpx.so
+[arm64-v8a] SharedLibrary  : libjnawtrenderer.so
+[arm64-v8a] SharedLibrary  : libjnffmpeg.so
+[arm64-v8a] SharedLibrary  : libjnopensles.so
+[arm64-v8a] SharedLibrary  : libjnopenssl.so
+[arm64-v8a] SharedLibrary  : libjnopus.so
+[arm64-v8a] SharedLibrary  : libjnspeex.so
+[arm64-v8a] SharedLibrary  : libjnvpx.so
+[x86] SharedLibrary  : libjnawtrenderer.so
+[x86] SharedLibrary  : libjnffmpeg.so
+[x86] SharedLibrary  : libjnopensles.so
+[x86] SharedLibrary  : libjnopenssl.so
+[x86] SharedLibrary  : libjnopus.so
+[x86] SharedLibrary  : libjnspeex.so
+[x86] SharedLibrary  : libjnvpx.so
+[x86_64] SharedLibrary  : libjnawtrenderer.so
+[x86_64] SharedLibrary  : libjnffmpeg.so
+[x86_64] SharedLibrary  : libjnopensles.so
+[x86_64] SharedLibrary  : libjnopenssl.so
+[x86_64] SharedLibrary  : libjnopus.so
+[x86_64] SharedLibrary  : libjnvpx.so
+[armeabi-v7a] Install        : libjnawtrenderer.so => libs//armeabi-v7a/libjnawtrenderer.so
+[armeabi-v7a] Install        : libjnffmpeg.so => libs//armeabi-v7a/libjnffmpeg.so
+[armeabi-v7a] Install        : libjnopensles.so => libs//armeabi-v7a/libjnopensles.so
+[armeabi-v7a] Install        : libjnopenssl.so => libs//armeabi-v7a/libjnopenssl.so
+[armeabi-v7a] Install        : libjnopus.so => libs//armeabi-v7a/libjnopus.so
+[armeabi-v7a] Install        : libjnspeex.so => libs//armeabi-v7a/libjnspeex.so
+[armeabi-v7a] Install        : libjnvpx.so => libs//armeabi-v7a/libjnvpx.so
+[arm64-v8a] Install        : libjnawtrenderer.so => libs//arm64-v8a/libjnawtrenderer.so
+[arm64-v8a] Install        : libjnffmpeg.so => libs//arm64-v8a/libjnffmpeg.so
+[arm64-v8a] Install        : libjnopensles.so => libs//arm64-v8a/libjnopensles.so
+[arm64-v8a] Install        : libjnopenssl.so => libs//arm64-v8a/libjnopenssl.so
+[arm64-v8a] Install        : libjnopus.so => libs//arm64-v8a/libjnopus.so
+[arm64-v8a] Install        : libjnspeex.so => libs//arm64-v8a/libjnspeex.so
+[arm64-v8a] Install        : libjnvpx.so => libs//arm64-v8a/libjnvpx.so
+[x86] Install        : libjnawtrenderer.so => libs//x86/libjnawtrenderer.so
+[x86] Install        : libjnffmpeg.so => libs//x86/libjnffmpeg.so
+[x86] Install        : libjnopensles.so => libs//x86/libjnopensles.so
+[x86] Install        : libjnopenssl.so => libs//x86/libjnopenssl.so
+[x86] Install        : libjnopus.so => libs//x86/libjnopus.so
+[x86] Install        : libjnspeex.so => libs//x86/libjnspeex.so
+[x86] Install        : libjnvpx.so => libs//x86/libjnvpx.so
+[x86_64] Install        : libjnawtrenderer.so => libs//x86_64/libjnawtrenderer.so
+[x86_64] Install        : libjnffmpeg.so => libs//x86_64/libjnffmpeg.so
+[x86_64] Install        : libjnopensles.so => libs//x86_64/libjnopensles.so
+[x86_64] Install        : libjnopenssl.so => libs//x86_64/libjnopenssl.so
+[x86_64] Install        : libjnopus.so => libs//x86_64/libjnopus.so
+[x86_64] Install        : libjnvpx.so => libs//x86_64/libjnvpx.so
+[x86_64] SharedLibrary  : libjnspeex.so
+[x86_64] Install        : libjnspeex.so => libs//x86_64/libjnspeex.so
+make: Leaving directory `/Users/amitseal/workspaces/mutationbackyard/mutations/atalk-android-mutant2/aTalk/jni'
+
+> Task :aTalk:dataBindingGenBaseClassesFdroidDebug
+> Task :aTalk:checkFdroidDebugAarMetadata
+> Task :aTalk:createFdroidDebugCompatibleScreenManifests
+> Task :aTalk:extractDeepLinksFdroidDebug
+> Task :aTalk:processFdroidDebugMainManifest
+> Task :aTalk:processFdroidDebugManifest
+> Task :aTalk:mergeFdroidDebugNativeDebugMetadata NO-SOURCE
+> Task :aTalk:mergeFdroidDebugShaders
+> Task :aTalk:compileFdroidDebugShaders NO-SOURCE
+> Task :aTalk:generateFdroidDebugAssets UP-TO-DATE
+> Task :aTalk:mergeFdroidDebugAssets
+> Task :aTalk:compressFdroidDebugAssets
+> Task :aTalk:checkFdroidDebugDuplicateClasses
+> Task :aTalk:processFdroidDebugJavaRes
+> Task :aTalk:mergeFdroidDebugJniLibFolders
+> Task :aTalk:validateSigningFdroidDebug
+> Task :aTalk:prePlaystoreDebugBuild UP-TO-DATE
+> Task :aTalk:compilePlaystoreDebugAidl NO-SOURCE
+> Task :aTalk:compilePlaystoreDebugRenderscript NO-SOURCE
+> Task :aTalk:dataBindingMergeDependencyArtifactsPlaystoreDebug
+> Task :aTalk:dataBindingMergeGenClassesPlaystoreDebug
+> Task :aTalk:generatePlaystoreDebugResValues
+> Task :aTalk:generatePlaystoreDebugResources
+> Task :aTalk:dataBindingTriggerPlaystoreDebug
+> Task :aTalk:generatePlaystoreDebugBuildConfig
+> Task :aTalk:checkPlaystoreDebugAarMetadata
+> Task :aTalk:createPlaystoreDebugCompatibleScreenManifests
+> Task :aTalk:javaPreCompilePlaystoreDebug
+> Task :aTalk:mergeFdroidDebugNativeLibs
+> Task :aTalk:extractDeepLinksPlaystoreDebug
+> Task :aTalk:stripFdroidDebugDebugSymbols
+> Task :aTalk:mergePlaystoreDebugResources
+> Task :aTalk:processPlaystoreDebugMainManifest
+> Task :aTalk:dataBindingGenBaseClassesPlaystoreDebug
+> Task :aTalk:processPlaystoreDebugManifest
+> Task :aTalk:mergePlaystoreDebugNativeDebugMetadata NO-SOURCE
+> Task :aTalk:mergePlaystoreDebugShaders
+> Task :aTalk:compilePlaystoreDebugShaders NO-SOURCE
+> Task :aTalk:generatePlaystoreDebugAssets UP-TO-DATE
+> Task :aTalk:mergePlaystoreDebugAssets
+> Task :aTalk:compressPlaystoreDebugAssets
+> Task :aTalk:checkPlaystoreDebugDuplicateClasses
+> Task :aTalk:processPlaystoreDebugJavaRes
+> Task :aTalk:mergePlaystoreDebugJniLibFolders
+> Task :aTalk:validateSigningPlaystoreDebug
+> Task :aTalk:processPlaystoreDebugManifestForPackage
+> Task :aTalk:mergePlaystoreDebugNativeLibs
+> Task :aTalk:processPlaystoreDebugResources
+
+> Task :aTalk:compilePlaystoreDebugJavaWithJavac
+
+> Task :aTalk:compilePlaystoreDebugSources
+> Task :aTalk:processFdroidDebugManifestForPackage
+> Task :aTalk:dexBuilderPlaystoreDebug
+> Task :aTalk:mergeLibDexPlaystoreDebug
+> Task :aTalk:stripPlaystoreDebugDebugSymbols
+> Task :aTalk:processFdroidDebugResources
+> Task :aTalk:mergeProjectDexPlaystoreDebug
+> Task :aTalk:mergeExtDexPlaystoreDebug
+> Task :aTalk:mergePlaystoreDebugJavaResource
+
+> Task :aTalk:compileFdroidDebugJavaWithJavac
+
+> Task :aTalk:compileFdroidDebugSources
+> Task :aTalk:dexBuilderFdroidDebug
+> Task :aTalk:mergeLibDexFdroidDebug
+> Task :aTalk:packagePlaystoreDebug
+> Task :aTalk:assemblePlaystoreDebug
+> Task :aTalk:mergeProjectDexFdroidDebug
+> Task :aTalk:mergeExtDexFdroidDebug
+> Task :aTalk:mergeFdroidDebugJavaResource
+> Task :aTalk:packageFdroidDebug
+> Task :aTalk:assembleFdroidDebug
+> Task :aTalk:assembleDebug
+
+BUILD SUCCESSFUL in 2m 13s
+66 actionable tasks: 66 executed

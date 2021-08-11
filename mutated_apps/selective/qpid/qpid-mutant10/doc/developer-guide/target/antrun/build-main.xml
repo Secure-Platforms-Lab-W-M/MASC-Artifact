@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo>Qpid Test Profile Properties</echo>
+  <echo>[profile] java-mms.1-0</echo>
+  <echo>[profile.broker.version] 1.0</echo>
+  <echo>[profile.virtualhostnode.type] Memory</echo>
+  <echo>[profile.virtualhostnode.context.blueprint] {&quot;type&quot;:&quot;ProvidedStore&quot;,&quot;globalAddressDomains&quot;:&quot;${qpid.globalAddressDomains}&quot;}</echo>
+  <echo>[profile.test_receive_timeout] 1000</echo>
+</target>
+</project>

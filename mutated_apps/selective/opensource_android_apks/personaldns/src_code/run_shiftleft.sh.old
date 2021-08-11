@@ -1,0 +1,8 @@
+#! /bin/bash
+
+for d in */; do
+	cd $d
+	./gradlew assembleDebug
+	scan -i $PWD -t java
+	cd ..
+done

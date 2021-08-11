@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!--
+
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+
+-->
+
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="Java-Broker-Runtime-Transaction-Timeout">
+ <title>Transaction Timeout</title>
+ <section role="h2" xml:id="Java-Broker-Runtime-Transaction-Timeout-GeneralInformation">
+  <title>General Information</title>
+  <para> The transaction timeout mechanism is used to control broker resources when clients
+   using transactions hang, become unresponsive, or simply (due to programming error)
+   begin a transaction and keep using it without ever calling committing or rolling back.</para>
+  <para>Users can choose to configure an idleWarn or openWarn threshold, after which the identified
+   transaction should be logged as a WARN level alert as well as (more importantly) an idleClose or
+   openClose threshold after which the transaction and the connection it applies to will be
+   closed.</para>
+  <para>This feature is particularly useful in environments where the owner of the broker does not
+   have full control over the implementation of clients, such as in a shared services
+   deployment.</para>
+  <para>The following section provide more details on this feature and its use.</para>
+ </section>
+ <section role="h2" xml:id="Java-Broker-Runtime-Transaction-Timeout-Purpose">
+  <title>Purpose</title>
+  <para> This feature has been introduced to address the scenario where an open transaction on the
+   broker holds an open transaction on the persistent store. This can have undesirable consequences
+   if the store does not time out or close long-running transactions, such as with BDB. This can can
+   result in a rapid increase in disk usage size, bounded only by available space, due to growth of
+   the transaction log. </para>
+ </section>
+ <section role="h2" xml:id="Java-Broker-Runtime-Transaction-Timeout-Effect">
+  <title>Effect</title>
+  <para>Full details of configuration options are provided in the sections that follow. This section
+   gives a brief overview of what the Transaction Timeout feature can do.</para>
+  <section role="h3" xml:id="Java-Broker-Runtime-Transaction-Timeout-Effect-Broker-Side">
+   <title>Broker Logging and Connection Close</title>
+   <para>When the openWarn or idleWarn specified threshold is exceeded, the broker will log a WARN
+    level alert with details of the connection on which the threshold has been exceeded,
+    along with the age of the transaction.</para>
+   <para>When the openClose or idleClose specified threshold value is exceeded, the broker will
+    throw an exception back to the client connection via the <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://docs.oracle.com/javaee/6/api/javax/jms/ExceptionListener.html">ExceptionListener</link>, log the
+    action and then close the connection.</para>
+   <para>The example broker log output shown below is where the idleWarn threshold specified is
+    lower than the idleClose threshold and the broker therefore logs the idle transaction 3 times
+    before the close threshold is triggered and the connection closed out.</para>
+   <screen>
+CON-1011 : Idle Transaction : 13,116 ms
+CON-1011 : Idle Transaction : 14,116 ms
+CON-1011 : Idle Transaction : 15,118 ms
+CON-1002 : Close : Idle transaction timed out
+   </screen>
+   <para>The second example broker log output shown below illustrates the same mechanism operating
+    on an open transaction.</para>
+   <screen>
+CON-1010 : Open Transaction : 12,406 ms
+CON-1010 : Open Transaction : 13,406 ms
+CON-1010 : Open Transaction : 14,406 ms
+CON-1002 : Close : Open transaction timed out
+   </screen>
+  </section>
+  <section role="h3" xml:id="Java-Broker-Runtime-Transaction-Timeout-Effect-Client-Side">
+   <title>Client Side Effect</title>
+   <para>After a Close threshold has been exceeded, the Broker will close the client's connection.
+    The application must reconnect itself in order to continue work.  If the
+    client is a JMS client, the application will be notified by the
+    <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://docs.oracle.com/javaee/6/api/javax/jms/ExceptionListener.html">exception
+     listener.</link></para>
+  </section>
+ </section>
+ <section role="h2" xml:id="Java-Broker-Runtime-Transaction-Timeout-Configuration">
+  <title>Configuration</title>
+  <section role="h3" xml:id="Java-Broker-Runtime-Transaction-Timeout-Configuration-Overview">
+   <title>Configuration</title>
+   <para>The transaction timeouts can be specified when a new virtualhost is created or an exiting
+    virtualhost is edited.</para>
+   <para>We would recommend that only warnings are configured at first, which should allow broker
+    administrators to obtain an idea of the distribution of transaction lengths on their systems,
+    and configure production settings appropriately for both warning and closure. Ideally
+    establishing thresholds should be achieved in a representative UAT environment, with clients and
+    broker running, prior to any production deployment.</para>
+   <para>It is impossible to give suggested values, due to the large variation in usage depending on
+    the applications using a broker. However, clearly transactions should not span the expected
+    lifetime of any client application as this would indicate a hung client.</para>
+   <para>When configuring closure timeouts, it should be noted that a timeout on any producer
+    or consumer will cause the connection to be closed - this disconnecting all producers and consumers
+    created on that connection.</para>
+  </section>
+ </section>
+</section>

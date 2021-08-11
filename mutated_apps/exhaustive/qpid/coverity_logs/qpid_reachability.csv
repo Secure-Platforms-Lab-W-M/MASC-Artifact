@@ -1,0 +1,86 @@
+﻿Type,Impact,Category,File,Function,Count
+Very weak password hashing,High,High impact security,/src/test/java/org/apache/qpid/server/security/auth/sasl/SaslUtil.java,SaslUtil.generateCramMD5HexClientResponse,1
+Very weak password hashing,High,High impact security,/src/test/java/org/apache/qpid/server/security/auth/sasl/SaslUtil.java,SaslUtil.toMD5Hashed,1
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java,Base64MD5PasswordFilePrincipalDatabaseTest.testDeletePrincipal,2
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/ssl/TrustManagerTest.java,TrustManagerTest.testQpidMultipleTrustManagerWithTrustAndPeerStores,1
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testDeletePrincipal,2
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/ssl/TrustManagerTest.java,TrustManagerTest.testQpidMultipleTrustManagerWithPeerStore,2
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testVerifyPassword,1
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/ssl/TrustManagerTest.java,TrustManagerTest.testQpidPeersOnlyTrustManager,3
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/NonJavaTrustStoreTest.java,NonJavaTrustStoreTest.testUseOfExpiredTrustAnchorDenied,1
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/model/VirtualHostTest.java,VirtualHostTest.testUpdateDeniedByACL,1
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/ssl/TrustManagerTest.java,TrustManagerTest.testQpidMultipleTrustManagerWithRegularTrustStore,1
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/FileTrustStoreTest.java,FileTrustStoreTest.testUseOfExpiredTrustAnchorDenied,1
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java,Base64MD5PasswordFilePrincipalDatabaseTest.testVerifyPassword,1
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/virtualhostnode/AbstractStandardVirtualHostNodeTest.java,AbstractStandardVirtualHostNodeTest.testUpdateVHNDeniedByACL,1
+Unchecked return value,Medium,Error handling issues,/src/test/java/org/apache/qpid/server/streams/CompositeInputStreamTest.java,CompositeInputStreamTest.testAvailable_MultipleStreams,4
+Unchecked return value,Medium,Error handling issues,/src/test/java/org/apache/qpid/server/streams/CompositeInputStreamTest.java,CompositeInputStreamTest.testClose,1
+Unchecked return value,Medium,Error handling issues,/src/test/java/org/apache/qpid/server/util/ByteBufferInputStreamTest.java,ByteBufferInputStreamTest.testSkip,1
+Risky cryptographic hashing function,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/auth/sasl/SaslUtil.java,SaslUtil.generateCramMD5HexClientResponse,1
+Risky cryptographic hashing function,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/store/MessageStoreTestCase.java,org.apache.qpid.server.store.MessageStoreTestCase$#1.<instance_field_initializations>(),1
+Risky cryptographic hashing function,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/auth/sasl/crammd5/CramMd5NegotiatorTest.java,CramMd5NegotiatorTest.base64Password,1
+Risky cryptographic hashing function,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/auth/sasl/SaslUtil.java,SaslUtil.toMD5Hashed,1
+Risky cryptographic function,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterTest.java,AESKeyFileEncrypterTest.testCreationFailsOnInvalidSecret,1
+Risky cryptographic SSL protocol,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/transport/SNITest.java,SNITest.performTest,1
+Resource leak on an exceptional path,Low,Exceptional resource leaks,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.prepareFileForSearchTest,1
+Resource leak on an exceptional path,Low,Exceptional resource leaks,/src/test/java/org/apache/qpid/server/security/auth/database/AbstractPasswordFilePrincipalDatabaseTest.java,AbstractPasswordFilePrincipalDatabaseTest.createPasswordFile,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/SimpleQueueEntryImplTest.java,SimpleQueueEntryImplTest.getQueueEntryImpl,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/StandardQueueEntryListTest.java,StandardQueueEntryListTest.createServerMessage,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/streams/CompositeInputStreamTest.java,CompositeInputStreamTest.testAvailable_MultipleStreams,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/QueueMessageRecoveryTest.java,QueueMessageRecoveryTest.createMockMessage,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/FlowToDiskOverflowPolicyHandlerTest.java,FlowToDiskOverflowPolicyHandlerTest.createMessage,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/streams/CompositeInputStreamTest.java,CompositeInputStreamTest.testReadByteByByte_MultipleStreams,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/SortedQueueEntryListTest.java,SortedQueueEntryListTest.generateTestMessage,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testOpenFileOrDefaultResourceOpensFileOnClasspath,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java,Base64MD5PasswordFilePrincipalDatabaseTest.testUpdatePasswordIsSavedToFile,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/streams/CompositeInputStreamTest.java,CompositeInputStreamTest.testReadByteArray_MultipleStreams,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/virtualhost/FlowToDiskCheckingTaskTest.java,FlowToDiskCheckingTaskTest.createMessage,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/SortedQueueEntryTest.java,SortedQueueEntryTest.getQueueEntryImpl,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java,Base64MD5PasswordFilePrincipalDatabaseTest.testCreatePrincipalIsSavedToFile,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/PriorityQueueListTest.java,PriorityQueueListTest.testGetLeastSignificantOldestEntry,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testOpenFileOrDefaultResourceOpensDefaultResource,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/AbstractQueueTestBase.java,AbstractQueueTestBase.testVisitWhenNodeDeletedAfterAdvance,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testUpdatePasswordIsSavedToFile,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/message/AbstractServerMessageTest.java,AbstractServerMessageTest.testReferences,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/QueueEntryImplTestBase.java,QueueEntryImplTestBase.testGetNext,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/AbstractQueueTestBase.java,AbstractQueueTestBase.createMessage,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/PriorityQueueListTest.java,PriorityQueueListTest.setUp,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testOpenFileOrDefaultResourceOpensFileOnFileSystem,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/streams/CompositeInputStreamTest.java,CompositeInputStreamTest.testReadsMixed_SingleStream,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testCreatePrincipalIsSavedToFile,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/LastValueQueueListTest.java,LastValueQueueListTest.createTestServerMessage,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/QueueEntryListTestBase.java,QueueEntryListTestBase.createServerMessage,2
+Missing call to superclass,Medium,Class hierarchy inconsistencies,/src/test/java/org/apache/qpid/server/model/testmodels/lifecycle/TestConfiguredObject.java,TestConfiguredObject.onOpen,1
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/src/test/java/org/apache/qpid/server/transport/SNITest.java,"org.apache.qpid.server.transport.SNITest$#1.checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String)",1
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/src/test/java/org/apache/qpid/server/transport/SNITest.java,"org.apache.qpid.server.transport.SNITest$#1.checkClientTrusted(java.security.cert.X509Certificate[], java.lang.String)",1
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/src/test/java/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProviderImplTest.java,OAuth2AuthenticationProviderImplTest$TrustingTrustManager.checkServerTrusted,1
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/src/test/java/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProviderImplTest.java,OAuth2AuthenticationProviderImplTest$TrustingTrustManager.checkClientTrusted,1
+Insecure SSL/TLS: bad HostnameVerifier,High,High impact security,/src/test/java/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProviderImplTest.java,OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier.verify,1
+Insecure SSL/TLS: SSLSession hostname not verified,High,High impact security,/src/test/java/org/apache/qpid/server/transport/network/security/ssl/SSLUtilTest.java,SSLUtilTest.getSSLEngineAfterHandshake,2
+Insecure SSL/TLS: SSLSession hostname not verified,High,High impact security,/src/test/java/org/apache/qpid/server/transport/network/security/ssl/SSLUtilTest.java,SSLUtilTest.getSSLEngineAfterHandshake,2
+Indefinite wait,High,Program hangs,/src/test/java/org/apache/qpid/server/configuration/updater/TaskExecutorTest.java,TaskExecutorTest$NeverEndingCallable.execute,1
+Ignoring number of bytes read,Medium,Error handling issues,/src/test/java/org/apache/qpid/server/util/ByteBufferInputStreamTest.java,ByteBufferInputStreamTest.testAvailable,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterTest.java,AESKeyFileEncrypterTest.testDecryptNonsense,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/manager/SimpleAuthenticationManagerTest.java,SimpleAuthenticationManagerTest.testCreateSaslNegotiatorForUnsupportedMechanisms,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testDeleteNull,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterTest.java,AESKeyFileEncrypterTest.testEncryptingNullFails,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/ConfiguredObjectTypeRegistryTest.java,ConfiguredObjectTypeRegistryTest.testGetValidChildTypes,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/queue/AbstractQueueTestBase.java,AbstractQueueTestBase.getExpirationOnQueue,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testCopyFile,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/manager/SimpleLDAPAuthenticationManagerTest.java,SimpleLDAPAuthenticationManagerTest.setUpKerberos,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testUpdatePasswordIsSavedToFile,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/queue/AbstractQueueTestBase.java,AbstractQueueTestBase.testRingOverflowPolicyMaxSize,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testCreatePrincipalIsSavedToFile,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/queue/AbstractQueueTestBase.java,AbstractQueueTestBase.testNoneOverflowPolicy,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/manager/SimpleLDAPAuthenticationManagerTest.java,SimpleLDAPAuthenticationManagerTest.createPrincipal,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java,Base64MD5PasswordFilePrincipalDatabaseTest.testUpdatePasswordIsSavedToFile,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java,Base64MD5PasswordFilePrincipalDatabaseTest.testCreatePrincipalIsSavedToFile,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/sasl/plain/PlainNegotiatorTest.java,PlainNegotiatorTest.setUp,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/manager/SimpleLDAPAuthenticationManagerTest.java,SimpleLDAPAuthenticationManagerTest.createAuthenticationProvider,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/queue/AbstractQueueTestBase.java,AbstractQueueTestBase.testRingOverflowPolicyMaxCount,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/util/GZIPUtilsTest.java,GZIPUtilsTest.testCompressUncompress,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/util/GZIPUtilsTest.java,GZIPUtilsTest.testNonHeapBuffers,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/manager/SimpleLDAPAuthenticationManagerTest.java,SimpleLDAPAuthenticationManagerTest.setUpKerberos,1
+Dereference after null check,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/store/TestRecord.java,TestRecord.equals,1
+Dereference after null check,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/manager/PlainPasswordFileAuthenticationManagerFactoryTest.java,PlainPasswordFileAuthenticationManagerFactoryTest.tearDown,1
+Dereference after null check,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/store/TestRecord.java,TestRecord.equals,1

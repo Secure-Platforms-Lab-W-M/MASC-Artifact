@@ -1,0 +1,258 @@
+﻿Type,Impact,Category,File,Function,Count
+WMI: Inefficient Map Iterator,Low,SpotBugs: Performance,/src/test/java/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2MockEndpoint.java,OAuth2MockEndpoint.handleRequest,1
+Very weak password hashing,High,High impact security,/src/test/java/org/apache/qpid/server/security/auth/sasl/SaslUtil.java,SaslUtil.generateCramMD5HexClientResponse,1
+Very weak password hashing,High,High impact security,/src/test/java/org/apache/qpid/server/security/auth/sasl/SaslUtil.java,SaslUtil.toMD5Hashed,1
+UwF: Unwritten field,Medium,SpotBugs: Correctness,/src/test/java/org/apache/qpid/server/consumer/TestConsumerTarget.java,,1
+Useless call,Medium,Incorrect expression,/src/test/java/org/apache/qpid/server/virtualhost/SynchronousMessageStoreRecovererTest.java,SynchronousMessageStoreRecovererTest.testRecoveryOfMessageInstanceForNonExistingQueue,1
+Useless call,Medium,Incorrect expression,/src/test/java/org/apache/qpid/server/virtualhost/SynchronousMessageStoreRecovererTest.java,SynchronousMessageStoreRecovererTest.testRecoveryOfMessageInstanceForNonExistingMessage,1
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java,Base64MD5PasswordFilePrincipalDatabaseTest.testDeletePrincipal,2
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/ssl/TrustManagerTest.java,TrustManagerTest.testQpidMultipleTrustManagerWithTrustAndPeerStores,1
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testDeletePrincipal,2
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/ssl/TrustManagerTest.java,TrustManagerTest.testQpidMultipleTrustManagerWithPeerStore,2
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testVerifyPassword,1
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/ssl/TrustManagerTest.java,TrustManagerTest.testQpidPeersOnlyTrustManager,3
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/NonJavaTrustStoreTest.java,NonJavaTrustStoreTest.testUseOfExpiredTrustAnchorDenied,1
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/model/VirtualHostTest.java,VirtualHostTest.testUpdateDeniedByACL,1
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/ssl/TrustManagerTest.java,TrustManagerTest.testQpidMultipleTrustManagerWithRegularTrustStore,1
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/FileTrustStoreTest.java,FileTrustStoreTest.testUseOfExpiredTrustAnchorDenied,1
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java,Base64MD5PasswordFilePrincipalDatabaseTest.testVerifyPassword,1
+Unlogged security exception,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/virtualhostnode/AbstractStandardVirtualHostNodeTest.java,AbstractStandardVirtualHostNodeTest.testUpdateVHNDeniedByACL,1
+Unchecked return value,Medium,Error handling issues,/src/test/java/org/apache/qpid/server/streams/CompositeInputStreamTest.java,CompositeInputStreamTest.testAvailable_MultipleStreams,4
+Unchecked return value,Medium,Error handling issues,/src/test/java/org/apache/qpid/server/streams/CompositeInputStreamTest.java,CompositeInputStreamTest.testClose,1
+Unchecked return value,Medium,Error handling issues,/src/test/java/org/apache/qpid/server/util/ByteBufferInputStreamTest.java,ByteBufferInputStreamTest.testSkip,1
+SIC: Inner class could be made static,Low,SpotBugs: Performance,/src/test/java/org/apache/qpid/server/exchange/HeadersBindingTest.java,,1
+SIC: Inner class could be made static,Low,SpotBugs: Performance,/src/test/java/org/apache/qpid/server/store/BrokerStoreUpgraderAndRecovererTest.java,,2
+SIC: Inner class could be made static,Low,SpotBugs: Performance,/src/test/java/org/apache/qpid/server/queue/QueueMessageRecoveryTest.java,,1
+SIC: Inner class could be made static,Low,SpotBugs: Performance,/src/test/java/org/apache/qpid/server/store/MessageStoreTestCase.java,,5
+SIC: Inner class could be made static,Low,SpotBugs: Performance,/src/test/java/org/apache/qpid/server/model/testmodels/lifecycle/AbstractConfiguredObjectTest.java,,1
+SIC: Inner class could be made static,Low,SpotBugs: Performance,/src/test/java/org/apache/qpid/server/virtualhost/SynchronousMessageStoreRecovererTest.java,,2
+SIC: Inner class could be made static,Low,SpotBugs: Performance,/src/test/java/org/apache/qpid/server/model/preferences/UserPreferencesTest.java,,2
+Risky cryptographic hashing function,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/auth/sasl/SaslUtil.java,SaslUtil.generateCramMD5HexClientResponse,1
+Risky cryptographic hashing function,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/store/MessageStoreTestCase.java,org.apache.qpid.server.store.MessageStoreTestCase$#1.<instance_field_initializations>(),1
+Risky cryptographic hashing function,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/auth/sasl/crammd5/CramMd5NegotiatorTest.java,CramMd5NegotiatorTest.base64Password,1
+Risky cryptographic hashing function,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/auth/sasl/SaslUtil.java,SaslUtil.toMD5Hashed,1
+Risky cryptographic function,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterTest.java,AESKeyFileEncrypterTest.testCreationFailsOnInvalidSecret,1
+Risky cryptographic SSL protocol,Medium,Medium impact security,/src/test/java/org/apache/qpid/server/transport/SNITest.java,SNITest.performTest,1
+Resource leak on an exceptional path,Low,Exceptional resource leaks,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.prepareFileForSearchTest,1
+Resource leak on an exceptional path,Low,Exceptional resource leaks,/src/test/java/org/apache/qpid/server/security/auth/database/AbstractPasswordFilePrincipalDatabaseTest.java,AbstractPasswordFilePrincipalDatabaseTest.createPasswordFile,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/SimpleQueueEntryImplTest.java,SimpleQueueEntryImplTest.getQueueEntryImpl,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/StandardQueueEntryListTest.java,StandardQueueEntryListTest.createServerMessage,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/streams/CompositeInputStreamTest.java,CompositeInputStreamTest.testAvailable_MultipleStreams,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/QueueMessageRecoveryTest.java,QueueMessageRecoveryTest.createMockMessage,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/FlowToDiskOverflowPolicyHandlerTest.java,FlowToDiskOverflowPolicyHandlerTest.createMessage,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/streams/CompositeInputStreamTest.java,CompositeInputStreamTest.testReadByteByByte_MultipleStreams,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/SortedQueueEntryListTest.java,SortedQueueEntryListTest.generateTestMessage,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testOpenFileOrDefaultResourceOpensFileOnClasspath,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java,Base64MD5PasswordFilePrincipalDatabaseTest.testUpdatePasswordIsSavedToFile,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/streams/CompositeInputStreamTest.java,CompositeInputStreamTest.testReadByteArray_MultipleStreams,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/virtualhost/FlowToDiskCheckingTaskTest.java,FlowToDiskCheckingTaskTest.createMessage,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/SortedQueueEntryTest.java,SortedQueueEntryTest.getQueueEntryImpl,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java,Base64MD5PasswordFilePrincipalDatabaseTest.testCreatePrincipalIsSavedToFile,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/PriorityQueueListTest.java,PriorityQueueListTest.testGetLeastSignificantOldestEntry,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testOpenFileOrDefaultResourceOpensDefaultResource,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/AbstractQueueTestBase.java,AbstractQueueTestBase.testVisitWhenNodeDeletedAfterAdvance,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testUpdatePasswordIsSavedToFile,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/message/AbstractServerMessageTest.java,AbstractServerMessageTest.testReferences,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/QueueEntryImplTestBase.java,QueueEntryImplTestBase.testGetNext,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/AbstractQueueTestBase.java,AbstractQueueTestBase.createMessage,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/PriorityQueueListTest.java,PriorityQueueListTest.setUp,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testOpenFileOrDefaultResourceOpensFileOnFileSystem,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/streams/CompositeInputStreamTest.java,CompositeInputStreamTest.testReadsMixed_SingleStream,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testCreatePrincipalIsSavedToFile,1
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/LastValueQueueListTest.java,LastValueQueueListTest.createTestServerMessage,2
+Resource leak,High,Resource leaks,/src/test/java/org/apache/qpid/server/queue/QueueEntryListTestBase.java,QueueEntryListTestBase.createServerMessage,2
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java,Base64MD5PasswordFilePrincipalDatabaseTest.tearDown,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testDeleteFile,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testGetUsers,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.createSubDir,2
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManagerTest.java,PrincipalDatabaseAuthenticationManagerTest.deletePasswordFileIfExists,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testSetPasswordFileWithReadOnlyFile,2
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/transport/SNITest.java,SNITest.tearDown,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManagerTest.java,PrincipalDatabaseAuthenticationManagerTest.testInitialiseWhenPasswordFileExists,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/util/FileHelperTest.java,FileHelperTest.testIsWritableDirectoryForFilePath,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testNonEmptyDirectoryDelete,2
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/security/auth/manager/PlainPasswordFileAuthenticationManagerFactoryTest.java,PlainPasswordFileAuthenticationManagerFactoryTest.testPasswordFileNotFound,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testCreatePrincipal,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testSearchFail,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testRecursiveDelete,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.createTestFile,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testUpdatePasswordIsSavedToFile,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/security/group/FileGroupDatabaseTest.java,FileGroupDatabaseTest.tearDown,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.java,AESKeyFileEncrypterFactoryTest.testPermissionsAreChecked,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/security/auth/database/AbstractPasswordFilePrincipalDatabaseTest.java,AbstractPasswordFilePrincipalDatabaseTest.tearDown,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testEmptyDirectoryDelete,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/util/FileHelperTest.java,FileHelperTest.testIsWritableDirectoryForNonWritablePath,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testSearchSucceed,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/model/adapter/FileBasedGroupProviderImplTest.java,FileBasedGroupProviderImplTest.tearDown,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testDeletePrincipal,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testNonRecursiveNonEmptyDirectoryDeleteFails,2
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java,Base64MD5PasswordFilePrincipalDatabaseTest.testSetPasswordFileWithReadOnlyFile,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/security/group/FileGroupDatabaseCaseInsensitiveTest.java,FileGroupDatabaseCaseInsensitiveTest.tearDown,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/security/auth/manager/PlainPasswordFileAuthenticationManagerFactoryTest.java,PlainPasswordFileAuthenticationManagerFactoryTest.tearDown,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/security/auth/manager/PlainPasswordDatabaseAuthenticationManagerTest.java,PlainPasswordDatabaseAuthenticationManagerTest.tearDown,1
+RV: Bad use of return value,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testCreatePrincipalIsSavedToFile,1
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/src/test/java/org/apache/qpid/server/transport/SNITest.java,"org.apache.qpid.server.transport.SNITest$#1.checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String)",1
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/src/test/java/org/apache/qpid/server/transport/SNITest.java,"org.apache.qpid.server.transport.SNITest$#1.checkClientTrusted(java.security.cert.X509Certificate[], java.lang.String)",1
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/src/test/java/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProviderImplTest.java,OAuth2AuthenticationProviderImplTest$TrustingTrustManager.checkServerTrusted,1
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/src/test/java/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProviderImplTest.java,OAuth2AuthenticationProviderImplTest$TrustingTrustManager.checkClientTrusted,1
+Insecure SSL/TLS: bad HostnameVerifier,High,High impact security,/src/test/java/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProviderImplTest.java,OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier.verify,1
+Insecure SSL/TLS: SSLSession hostname not verified,High,High impact security,/src/test/java/org/apache/qpid/server/transport/network/security/ssl/SSLUtilTest.java,SSLUtilTest.getSSLEngineAfterHandshake,2
+Insecure SSL/TLS: SSLSession hostname not verified,High,High impact security,/src/test/java/org/apache/qpid/server/transport/network/security/ssl/SSLUtilTest.java,SSLUtilTest.getSSLEngineAfterHandshake,2
+Indefinite wait,High,Program hangs,/src/test/java/org/apache/qpid/server/configuration/updater/TaskExecutorTest.java,TaskExecutorTest$NeverEndingCallable.execute,1
+Ignoring number of bytes read,Medium,Error handling issues,/src/test/java/org/apache/qpid/server/util/ByteBufferInputStreamTest.java,ByteBufferInputStreamTest.testAvailable,1
+HE: Equal objects must have equal hashcodes,Low,SpotBugs: Bad practice,/src/test/java/org/apache/qpid/server/model/testmodels/lifecycle/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest$ChangeEvent.equals,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testChangeEnforcesAttributeValidValues,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testDefaultContextVariableWhichRefersToThis,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testIntegerAttributeValueFromString,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testDefaultedAttributeValue,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testParentDeletePropagatesToChild,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AncestorAttributeResolverTest.java,AncestorAttributeResolverTest.testResolveAncestorAttributeOfTypeMap,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testDateAttributeFromMillis,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/AttributeValueConverterTest.java,AttributeValueConverterTest.testMapToManagedAttributeValueEquality,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testOverriddenDefaultedAttributeValueRevertedToDefault,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testCreateCarWithEngine,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testDerivedAttributeValue,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AncestorAttributeResolverTest.java,AncestorAttributeResolverTest.testResolveAncestorAttributeOfTypeConfiguredObject,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testDateAttributeFromIso8601,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testCreateAwaitsAttainState_StateChangeAsyncErrors,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/AttributeValueConverterTest.java,AttributeValueConverterTest.testNonGenericCollectionConverter,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testDeleteConfiguredObjectWithChildrenReferringEachOther,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testIntegerAttributeValueFromDouble,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testEnumAttributeValueFromString,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testDeleteConfiguredObjectReferredFromCollection,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testCreateEnforcesAttributeValidValues,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/PreferencesTest.java,PreferencesTest.setUp,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testGlobalContextDefaultWithAncestorRef,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testCreateCategoryDefault,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testStringAttributeValueFromContextVariableProvidedObjectsContext,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/ConfiguredObjectTypeRegistryTest.java,ConfiguredObjectTypeRegistryTest.testOperations,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/AttributeValueConverterTest.java,AttributeValueConverterTest.testPEMCertificateConverter,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AncestorAttributeResolverTest.java,AncestorAttributeResolverTest.setUp,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testImmutableAttributeNullValue,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testDefaultInitialization,3
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testCreateAndLastUpdateDate,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testMapAttributeValueFromContextVariableProvidedBySystemProperty,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/AttributeValueConverterTest.java,AttributeValueConverterTest.testBase64EncodedCertificateConverter,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testCreateEnforcesAttributeValidValuePattern,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testCreateAwaitsAttainState,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testSetContextVariable,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testGetChildren_NewChild,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testSetAttributesFiresListener,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testAttributePersistence,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testDeleteConfiguredObjectWithReferredChildren,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterTest.java,AESKeyFileEncrypterTest.testDecryptNonsense,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/AttributeValueConverterTest.java,AttributeValueConverterTest.testMapConverter,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/manager/SimpleAuthenticationManagerTest.java,SimpleAuthenticationManagerTest.testCreateSaslNegotiatorForUnsupportedMechanisms,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testCreateEnforcesAttributeValidValuesWithSets,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testHierarchyContextVariableWithThisRef,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testIdAndTypeAreImmutableAttribute,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testSetAttributesInterpolateValues,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testDefaultContextIsInContextKeys,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testCreateAwaitsAttainState_StateChangeSyncErrors,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/AttributeValueConverterTest.java,AttributeValueConverterTest.testMapToManagedAttributeValue,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testIntegerAttributeValueFromInteger,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/store/preferences/PreferencesRecovererTest.java,PreferencesRecovererTest.setUp,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,org.apache.qpid.server.model.testmodels.singleton.AbstractConfiguredObjectTest$#8.run(),3
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testInvalidIntegerAttributeValueFromContextVariable,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/ConfiguredObjectTypeRegistryTest.java,ConfiguredObjectTypeRegistryTest.testOperationWithMandatoryParameter_RejectsNullParameter,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testPostSetAttributesReportsChanges,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testGlobalContextDefaultWithThisRef,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testDeleteNull,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testDeleteConfiguredObjectReferredFromAttribute,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.doDuplicateChildCheck,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterTest.java,AESKeyFileEncrypterTest.testEncryptingNullFails,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testHierarchyContextVariableWithAncestorRef,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testDeleteConfiguredObject,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testStatistics,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testCloseAwaitsChildCloseCompletion,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testImmutableAttribute,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testChangeEnforcesAttributeValidValuePatterns,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testRemoveContextVariable,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testEnumAttributeValueFromEnum,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/AttributeValueConverterTest.java,AttributeValueConverterTest.testMapToManagedAttributeValueWithFactory,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testParentDeleteValidationFailureLeavesChildreIntact,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/AttributeValueConverterTest.java,AttributeValueConverterTest.testDateConverter,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/AttributeValueConverterTest.java,AttributeValueConverterTest.testNonGenericListConverter,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testOverriddenDefaultedAttributeValue,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testUserPreferencesCreatedOnEngineCreation,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testGlobalContextDefault,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testStringAttributeValueFromContextVariableProvidedBySystemProperty,3
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/AttributeValueConverterTest.java,AttributeValueConverterTest.testNonGenericSetConverter,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/singleton/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testSecureValueRetrieval,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java,AbstractConfiguredObjectTest.testCreateUnrecognisedType,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.createTestFile,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/auth/sasl/plain/PlainNegotiatorTest.java,PlainNegotiatorTest.testHandleNoInitialResponse,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/streams/CompositeInputStreamTest.java,CompositeInputStreamTest.testReadsMixed_SingleStream,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/bytebuffer/QpidByteBufferTest.java,QpidByteBufferTest.testView,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManagerTest.java,PrincipalDatabaseAuthenticationManagerTest.testSaslAuthenticationNotCompleted,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/streams/CompositeInputStreamTest.java,CompositeInputStreamTest.testReadByteArray_MultipleStreams,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/bytebuffer/QpidByteBufferOutputStreamTest.java,QpidByteBufferOutputStreamTest.testWriteByteArrays,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/FileKeyStoreTest.java,FileKeyStoreTest.testCreateKeyStoreFromDataUrl_BadKeystoreBytes,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/store/MessageStoreTestCase.java,MessageStoreTestCase.enqueueMessage,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/FileTrustStoreTest.java,FileTrustStoreTest.testCreateTrustStoreFromDataUrl_BadTruststoreBytes,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/bytebuffer/QpidByteBufferTest.java,QpidByteBufferTest.testDeflateInflateDirect,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/auth/database/AbstractPasswordFilePrincipalDatabaseTest.java,AbstractPasswordFilePrincipalDatabaseTest.createPasswordFile,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/bytebuffer/QpidByteBufferOutputStreamTest.java,QpidByteBufferOutputStreamTest.testWriteMixed,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java,Base64MD5PasswordFilePrincipalDatabaseTest.testCreatePrincipalIsSavedToFile,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testUpdatePasswordIsSavedToFile,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/auth/sasl/oauth2/OAuth2NegotiatorTest.java,OAuth2NegotiatorTest.OAuth2NegotiatorTest,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/SystemLauncherTest.java,SystemLauncherTest.testConsoleLogsOnSuccessfulStartup,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/util/StringsTest.java,StringsTest.hexDumpSingleByte,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.prepareFileForSearchTest,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/auth/sasl/plain/PlainNegotiatorTest.java,PlainNegotiatorTest.testHandleNoInitialResponseNull,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/TrustStoreMessageSourceTest.java,TrustStoreMessageSourceTest.setUp,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManagerTest.java,PrincipalDatabaseAuthenticationManagerTest.testSaslAuthenticationError,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/bytebuffer/QpidByteBufferTest.java,QpidByteBufferTest.testDeflateInflateHeap,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/SubjectCreatorTest.java,SubjectCreatorTest.SubjectCreatorTest,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/SystemLauncherTest.java,SystemLauncherTest.startBrokerAndCollectSystemOutput,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/auth/sasl/SaslUtil.java,SaslUtil.generateCramMD5HexClientResponse,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java,Base64MD5PasswordFilePrincipalDatabaseTest.testUpdatePasswordIsSavedToFile,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/auth/sasl/scram/ScramNegotiatorTest.java,ScramNegotiatorTest.calculateClientProof,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/auth/sasl/SaslUtil.java,SaslUtil.generateCramMD5ClientResponse,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/TrustStoreMessageSourceTest.java,TrustStoreMessageSourceTest.assertCertificates,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/util/StringsTest.java,StringsTest.hexDumpManyBytes,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManagerTest.java,PrincipalDatabaseAuthenticationManagerTest.testInitialiseWhenPasswordFileExists,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/bytebuffer/QpidByteBufferTest.java,QpidByteBufferTest.testInflatingUncompressedBytes_ThrowsZipException,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/TrustStoreMessageSourceTest.java,TrustStoreMessageSourceTest.getCertificatesFromMessage,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/streams/CompositeInputStreamTest.java,CompositeInputStreamTest.testAvailable_MultipleStreams,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testCreatePrincipalIsSavedToFile,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/bytebuffer/QpidByteBufferOutputStreamTest.java,QpidByteBufferOutputStreamTest.testWriteByteArrays_ArrayTooLargeForSingleBuffer,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/SystemLauncherTest.java,SystemLauncherTest.testConsoleLogsOnUnsuccessfulStartup,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/streams/CompositeInputStreamTest.java,CompositeInputStreamTest.testReadByteByByte_MultipleStreams,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManagerTest.java,PrincipalDatabaseAuthenticationManagerTest.testSaslAuthenticationSuccess,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/test/java/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2MockEndpoint.java,OAuth2MockEndpoint.sendError,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/ConfiguredObjectTypeRegistryTest.java,ConfiguredObjectTypeRegistryTest.testGetValidChildTypes,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/queue/AbstractQueueTestBase.java,AbstractQueueTestBase.getExpirationOnQueue,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testCopyFile,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/manager/SimpleLDAPAuthenticationManagerTest.java,SimpleLDAPAuthenticationManagerTest.setUpKerberos,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testUpdatePasswordIsSavedToFile,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/queue/AbstractQueueTestBase.java,AbstractQueueTestBase.testRingOverflowPolicyMaxSize,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabaseTest.java,PlainPasswordFilePrincipalDatabaseTest.testCreatePrincipalIsSavedToFile,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/queue/AbstractQueueTestBase.java,AbstractQueueTestBase.testNoneOverflowPolicy,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/manager/SimpleLDAPAuthenticationManagerTest.java,SimpleLDAPAuthenticationManagerTest.createPrincipal,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java,Base64MD5PasswordFilePrincipalDatabaseTest.testUpdatePasswordIsSavedToFile,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java,Base64MD5PasswordFilePrincipalDatabaseTest.testCreatePrincipalIsSavedToFile,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/sasl/plain/PlainNegotiatorTest.java,PlainNegotiatorTest.setUp,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/manager/SimpleLDAPAuthenticationManagerTest.java,SimpleLDAPAuthenticationManagerTest.createAuthenticationProvider,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/queue/AbstractQueueTestBase.java,AbstractQueueTestBase.testRingOverflowPolicyMaxCount,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/util/GZIPUtilsTest.java,GZIPUtilsTest.testCompressUncompress,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/util/GZIPUtilsTest.java,GZIPUtilsTest.testNonHeapBuffers,1
+Dereference null return value,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/manager/SimpleLDAPAuthenticationManagerTest.java,SimpleLDAPAuthenticationManagerTest.setUpKerberos,1
+Dereference after null check,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/store/TestRecord.java,TestRecord.equals,1
+Dereference after null check,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/security/auth/manager/PlainPasswordFileAuthenticationManagerFactoryTest.java,PlainPasswordFileAuthenticationManagerFactoryTest.tearDown,1
+Dereference after null check,Medium,Null pointer dereferences,/src/test/java/org/apache/qpid/server/store/TestRecord.java,TestRecord.equals,1
+DMI: Dubious method invocation,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/security/group/FileGroupDatabaseTest.java,FileGroupDatabaseTest.testMissingGroupFile,1
+DMI: Dubious method invocation,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/util/FileUtilsTest.java,FileUtilsTest.testOpenFileOrDefaultResourceOpensDefaultResource,1
+DLS: Dead local store,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/util/CommandLineParserTest.java,CommandLineParserTest.testParseMandatoryFailsNoOption,1
+DLS: Dead local store,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/model/VirtualHostTest.java,VirtualHostTest.testRestartingVirtualHostRecoversChildren,1
+DLS: Dead local store,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/model/AttributeValueConverterTest.java,AttributeValueConverterTest.testMapToManagedAttributeValueWithFactory,1
+DLS: Dead local store,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/security/auth/manager/ManagedAuthenticationManagerTestBase.java,ManagedAuthenticationManagerTestBase.testCreateUser,1
+DLS: Dead local store,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterTest.java,AESKeyFileEncrypterTest.testEncryptingNullFails,1
+DLS: Dead local store,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/security/auth/database/PlainUserTest.java,PlainUserTest.testTooLongArrayConstructor,1
+DLS: Dead local store,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/util/CommandLineParserTest.java,CommandLineParserTest.testParseManadatoryFreeArgumentFailsNoArgument,1
+DLS: Dead local store,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/configuration/store/ManagementModeStoreHandlerTest.java,ManagementModeStoreHandlerTest.testRemove,1
+DLS: Dead local store,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/security/auth/database/HashedUserTest.java,HashedUserTest.testToLongArrayConstructor,1
+DLS: Dead local store,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/util/CommandLineParserTest.java,CommandLineParserTest.testParseFormattedFreeArgumentFailsBadArgument,1
+DLS: Dead local store,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/util/CommandLineParserTest.java,CommandLineParserTest.testParseFlagCondensedWithOptionFails,1
+DLS: Dead local store,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/util/CommandLineParserTest.java,CommandLineParserTest.testParseFormattedOptionArgumentFailsBadArgument,1
+BC: Bad casts of object references,Low,SpotBugs: Dodgy code,/src/test/java/org/apache/qpid/server/security/auth/manager/ldap/LDAPSSLSocketFactoryGeneratorTest.java,LDAPSSLSocketFactoryGeneratorTest.testGetDefaultCreatesInstance,1

@@ -1,0 +1,2120 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Class File Analyzer",
+          "rules": [
+            {
+              "id": "PATH_TRAVERSAL_IN",
+              "help": {
+                "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt BlockedHosts.java:[lines 66-442] \nIn class dnsfilter.BlockedHosts \nIn method dnsfilter.BlockedHosts.loadPersistedIndex(String, boolean, int, int, Hashtable) \nAt BlockedHosts.java:[line 159] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source dnsfilter/BlockedHosts.loadPersistedIndex(Ljava/lang/String;ZIILjava/util/Hashtable;)Ldnsfilter/BlockedHosts; parameter 4 \nMethod usage not detected \nAt BlockedHosts.java:[line 159].",
+                "markdown": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt BlockedHosts.java:[lines 66-442] \nIn class dnsfilter.BlockedHosts \nIn method dnsfilter.BlockedHosts.loadPersistedIndex(String, boolean, int, int, Hashtable) \nAt BlockedHosts.java:[line 159] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source dnsfilter/BlockedHosts.loadPersistedIndex(Ljava/lang/String;ZIILjava/util/Hashtable;)Ldnsfilter/BlockedHosts; parameter 4 \nMethod usage not detected \nAt BlockedHosts.java:[line 159]."
+              },
+              "name": "PATH TRAVERSAL IN",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input ."
+              },
+              "helpUri": "https://slscan.io?q=PATH_TRAVERSAL_IN",
+              "shortDescription": {
+                "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt BlockedHosts.java:[lines 66-442] \nIn class dnsfilter.BlockedHosts \nIn method dnsfilter.BlockedHosts.loadPersistedIndex(String, boolean, int, int, Hashtable) \nAt BlockedHosts.java:[line 159] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source dnsfilter/BlockedHosts.loadPersistedIndex(Ljava/lang/String;ZIILjava/util/Hashtable;)Ldnsfilter/BlockedHosts; parameter 4 \nMethod usage not detected \nAt BlockedHosts.java:[line 159]."
+              }
+            },
+            {
+              "id": "PATH_TRAVERSAL_OUT",
+              "help": {
+                "text": "This API (java/io/FileOutputStream.<init>(Ljava/lang/String;)V) writes to a file whose location might be specified by user input \nAt BlockedHosts.java:[lines 66-442] \nIn class dnsfilter.BlockedHosts \nIn method dnsfilter.BlockedHosts.persist(String) \nAt BlockedHosts.java:[line 177] \nSink method java/io/FileOutputStream.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source dnsfilter/BlockedHosts.persist(Ljava/lang/String;)V parameter 0 \nMethod usage not detected \nAt BlockedHosts.java:[line 177].",
+                "markdown": "This API (java/io/FileOutputStream.<init>(Ljava/lang/String;)V) writes to a file whose location might be specified by user input \nAt BlockedHosts.java:[lines 66-442] \nIn class dnsfilter.BlockedHosts \nIn method dnsfilter.BlockedHosts.persist(String) \nAt BlockedHosts.java:[line 177] \nSink method java/io/FileOutputStream.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source dnsfilter/BlockedHosts.persist(Ljava/lang/String;)V parameter 0 \nMethod usage not detected \nAt BlockedHosts.java:[line 177]."
+              },
+              "name": "PATH TRAVERSAL OUT",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "This API (java/io/FileOutputStream.<init>(Ljava/lang/String;)V) writes to a file whose location might be specified by user input ."
+              },
+              "helpUri": "https://slscan.io?q=PATH_TRAVERSAL_OUT",
+              "shortDescription": {
+                "text": "This API (java/io/FileOutputStream.<init>(Ljava/lang/String;)V) writes to a file whose location might be specified by user input \nAt BlockedHosts.java:[lines 66-442] \nIn class dnsfilter.BlockedHosts \nIn method dnsfilter.BlockedHosts.persist(String) \nAt BlockedHosts.java:[line 177] \nSink method java/io/FileOutputStream.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source dnsfilter/BlockedHosts.persist(Ljava/lang/String;)V parameter 0 \nMethod usage not detected \nAt BlockedHosts.java:[line 177]."
+              }
+            },
+            {
+              "id": "ANDROID_EXTERNAL_FILE_ACCESS",
+              "help": {
+                "text": "Files could be saved to external storage \nAt BootUpReceiver.java:[lines 36-67] \nIn class dnsfilter.android.BootUpReceiver \nIn method dnsfilter.android.BootUpReceiver.getConfig() \nAt BootUpReceiver.java:[line 58].",
+                "markdown": "Files could be saved to external storage \nAt BootUpReceiver.java:[lines 36-67] \nIn class dnsfilter.android.BootUpReceiver \nIn method dnsfilter.android.BootUpReceiver.getConfig() \nAt BootUpReceiver.java:[line 58]."
+              },
+              "name": "ANDROID EXTERNAL FILE ACCESS",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "Files could be saved to external storage ."
+              },
+              "helpUri": "https://slscan.io?q=ANDROID_EXTERNAL_FILE_ACCESS",
+              "shortDescription": {
+                "text": "Files could be saved to external storage \nAt BootUpReceiver.java:[lines 36-67] \nIn class dnsfilter.android.BootUpReceiver \nIn method dnsfilter.android.BootUpReceiver.getConfig() \nAt BootUpReceiver.java:[line 58]."
+              }
+            },
+            {
+              "id": "INFORMATION_EXPOSURE_THROUGH_AN_ERROR_MESSAGE",
+              "help": {
+                "text": "Possible information exposure through an error message \nAt DNSProxyActivity.java:[lines 88-1694] \nIn class dnsfilter.android.DNSProxyActivity \nIn method dnsfilter.android.DNSProxyActivity.dump(Exception) \nAt DNSProxyActivity.java:[line 553].",
+                "markdown": "Possible information exposure through an error message \nAt DNSProxyActivity.java:[lines 88-1694] \nIn class dnsfilter.android.DNSProxyActivity \nIn method dnsfilter.android.DNSProxyActivity.dump(Exception) \nAt DNSProxyActivity.java:[line 553]."
+              },
+              "name": "INFORMATION EXPOSURE THROUGH AN ERROR MESSAGE",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "Possible information exposure through an error message ."
+              },
+              "helpUri": "https://slscan.io?q=INFORMATION_EXPOSURE_THROUGH_AN_ERROR_MESSAGE",
+              "shortDescription": {
+                "text": "Possible information exposure through an error message \nAt DNSProxyActivity.java:[lines 88-1694] \nIn class dnsfilter.android.DNSProxyActivity \nIn method dnsfilter.android.DNSProxyActivity.dump(Exception) \nAt DNSProxyActivity.java:[line 553]."
+              }
+            },
+            {
+              "id": "OBJECT_DESERIALIZATION",
+              "help": {
+                "text": "Object deserialization is used in dnsfilter.remote.RemoteAccessClient.getConfig() \nAt RemoteAccessClient.java:[lines 24-512] \nIn class dnsfilter.remote.RemoteAccessClient \nIn method dnsfilter.remote.RemoteAccessClient.getConfig() \nAt RemoteAccessClient.java:[line 230].",
+                "markdown": "Object deserialization is used in dnsfilter.remote.RemoteAccessClient.getConfig() \nAt RemoteAccessClient.java:[lines 24-512] \nIn class dnsfilter.remote.RemoteAccessClient \nIn method dnsfilter.remote.RemoteAccessClient.getConfig() \nAt RemoteAccessClient.java:[line 230]."
+              },
+              "name": "Object Deserialization",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "Object deserialization is used in dnsfilter.remote.RemoteAccessClient.getConfig() ."
+              },
+              "helpUri": "https://slscan.io?q=OBJECT_DESERIALIZATION",
+              "shortDescription": {
+                "text": "Object deserialization is used in dnsfilter.remote.RemoteAccessClient.getConfig() \nAt RemoteAccessClient.java:[lines 24-512] \nIn class dnsfilter.remote.RemoteAccessClient \nIn method dnsfilter.remote.RemoteAccessClient.getConfig() \nAt RemoteAccessClient.java:[line 230]."
+              }
+            },
+            {
+              "id": "UNENCRYPTED_SOCKET",
+              "help": {
+                "text": "Unencrypted socket to dnsfilter.remote.RemoteAccessClient (instead of SSLSocket) \nAt RemoteAccessClient.java:[lines 24-512] \nIn class dnsfilter.remote.RemoteAccessClient \nIn method dnsfilter.remote.RemoteAccessClient.initConnection() \nAt RemoteAccessClient.java:[line 119] \nValue remote host.",
+                "markdown": "Unencrypted socket to dnsfilter.remote.RemoteAccessClient (instead of SSLSocket) \nAt RemoteAccessClient.java:[lines 24-512] \nIn class dnsfilter.remote.RemoteAccessClient \nIn method dnsfilter.remote.RemoteAccessClient.initConnection() \nAt RemoteAccessClient.java:[line 119] \nValue remote host."
+              },
+              "name": "Unencrypted Socket",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "Unencrypted socket to dnsfilter.remote.RemoteAccessClient (instead of SSLSocket) ."
+              },
+              "helpUri": "https://slscan.io?q=UNENCRYPTED_SOCKET",
+              "shortDescription": {
+                "text": "Unencrypted socket to dnsfilter.remote.RemoteAccessClient (instead of SSLSocket) \nAt RemoteAccessClient.java:[lines 24-512] \nIn class dnsfilter.remote.RemoteAccessClient \nIn method dnsfilter.remote.RemoteAccessClient.initConnection() \nAt RemoteAccessClient.java:[line 119] \nValue remote host."
+              }
+            },
+            {
+              "id": "UNENCRYPTED_SERVER_SOCKET",
+              "help": {
+                "text": "Unencrypted server socket (instead of SSLServerSocket) \nAt RemoteAccessServer.java:[lines 29-120] \nIn class dnsfilter.remote.RemoteAccessServer \nIn method new dnsfilter.remote.RemoteAccessServer(int, String) \nAt RemoteAccessServer.java:[line 40].",
+                "markdown": "Unencrypted server socket (instead of SSLServerSocket) \nAt RemoteAccessServer.java:[lines 29-120] \nIn class dnsfilter.remote.RemoteAccessServer \nIn method new dnsfilter.remote.RemoteAccessServer(int, String) \nAt RemoteAccessServer.java:[line 40]."
+              },
+              "name": "UNENCRYPTED SERVER SOCKET",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "Unencrypted server socket (instead of SSLServerSocket) ."
+              },
+              "helpUri": "https://slscan.io?q=UNENCRYPTED_SERVER_SOCKET",
+              "shortDescription": {
+                "text": "Unencrypted server socket (instead of SSLServerSocket) \nAt RemoteAccessServer.java:[lines 29-120] \nIn class dnsfilter.remote.RemoteAccessServer \nIn method new dnsfilter.remote.RemoteAccessServer(int, String) \nAt RemoteAccessServer.java:[line 40]."
+              }
+            },
+            {
+              "id": "PREDICTABLE_RANDOM",
+              "help": {
+                "text": "This random generator (java.lang.Math.random()) is predictable \nAt IPPacket.java:[lines 33-260] \nIn class ip.IPPacket \nIn method ip.IPPacket.<static initializer for IPPacket>() \nAt IPPacket.java:[line 33] \nValue java.lang.Math.random().",
+                "markdown": "This random generator (java.lang.Math.random()) is predictable \nAt IPPacket.java:[lines 33-260] \nIn class ip.IPPacket \nIn method ip.IPPacket.<static initializer for IPPacket>() \nAt IPPacket.java:[line 33] \nValue java.lang.Math.random()."
+              },
+              "name": "Predictable Random",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "This random generator (java.lang.Math.random()) is predictable ."
+              },
+              "helpUri": "https://slscan.io?q=PREDICTABLE_RANDOM",
+              "shortDescription": {
+                "text": "This random generator (java.lang.Math.random()) is predictable \nAt IPPacket.java:[lines 33-260] \nIn class ip.IPPacket \nIn method ip.IPPacket.<static initializer for IPPacket>() \nAt IPPacket.java:[line 33] \nValue java.lang.Math.random()."
+              }
+            },
+            {
+              "id": "CIPHER_INTEGRITY",
+              "help": {
+                "text": "The cipher does not provide data integrity \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 57].",
+                "markdown": "The cipher does not provide data integrity \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 57]."
+              },
+              "name": "Cipher Integrity",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "The cipher does not provide data integrity ."
+              },
+              "helpUri": "https://slscan.io?q=CIPHER_INTEGRITY",
+              "shortDescription": {
+                "text": "The cipher does not provide data integrity \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 57]."
+              }
+            },
+            {
+              "id": "DES_USAGE",
+              "help": {
+                "text": "DES should be replaced with AES \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 59] \nSink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher; \nSink parameter 0.",
+                "markdown": "DES should be replaced with AES \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 59] \nSink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher; \nSink parameter 0."
+              },
+              "name": "Des Usage",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "DES should be replaced with AES ."
+              },
+              "helpUri": "https://slscan.io?q=DES_USAGE",
+              "shortDescription": {
+                "text": "DES should be replaced with AES \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 59] \nSink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher; \nSink parameter 0."
+              }
+            },
+            {
+              "id": "PADDING_ORACLE",
+              "help": {
+                "text": "The cipher is susceptible to padding oracle attacks \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 57].",
+                "markdown": "The cipher is susceptible to padding oracle attacks \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 57]."
+              },
+              "name": "Padding Oracle",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "The cipher is susceptible to padding oracle attacks ."
+              },
+              "helpUri": "https://slscan.io?q=PADDING_ORACLE",
+              "shortDescription": {
+                "text": "The cipher is susceptible to padding oracle attacks \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 57]."
+              }
+            },
+            {
+              "id": "STATIC_IV",
+              "help": {
+                "text": "The initialization vector (IV) is not properly generated \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 55].",
+                "markdown": "The initialization vector (IV) is not properly generated \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 55]."
+              },
+              "name": "Static Iv",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "The initialization vector (IV) is not properly generated ."
+              },
+              "helpUri": "https://slscan.io?q=STATIC_IV",
+              "shortDescription": {
+                "text": "The initialization vector (IV) is not properly generated \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 55]."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Class File Analyzer"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-jar",
+            "/tmp/.mount_scanhSkgHM/opt/spotbugs/lib/spotbugs.jar",
+            "-textui",
+            "-include",
+            "/tmp/.mount_scanhSkgHM/usr/src/tools_config/spotbugs/include.xml",
+            "-exclude",
+            "/tmp/.mount_scanhSkgHM/usr/src/tools_config/spotbugs/exclude.xml",
+            "-noClassOk",
+            "-auxclasspathFromFile",
+            "/tmp/tmpryniv1cq",
+            "-sourcepath",
+            "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3",
+            "-quiet",
+            "-medium",
+            "-xml:withMessages",
+            "-effort:max",
+            "-nested:false",
+            "-output",
+            "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/reports/class-report.xml",
+            "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-jar /tmp/.mount_scanhSkgHM/opt/spotbugs/lib/spotbugs.jar -textui -include /tmp/.mount_scanhSkgHM/usr/src/tools_config/spotbugs/include.xml -exclude /tmp/.mount_scanhSkgHM/usr/src/tools_config/spotbugs/exclude.xml -noClassOk -auxclasspathFromFile /tmp/tmpryniv1cq -sourcepath /media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3 -quiet -medium -xml:withMessages -effort:max -nested:false -output /media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/reports/class-report.xml /media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3",
+          "endTimeUtc": "2020-12-03T09:28:14Z",
+          "workingDirectory": {
+            "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2020-12-03T09:28:14Z",
+          "workingDirectory": {
+            "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 47,
+          "critical": 7,
+          "high": 40,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt BlockedHosts.java:[lines 66-442] \nIn class dnsfilter.BlockedHosts \nIn method dnsfilter.BlockedHosts.loadPersistedIndex(String, boolean, int, int, Hashtable) \nAt BlockedHosts.java:[line 159] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source dnsfilter/BlockedHosts.loadPersistedIndex(Ljava/lang/String;ZIILjava/util/Hashtable;)Ldnsfilter/BlockedHosts; parameter 4 \nMethod usage not detected \nAt BlockedHosts.java:[line 159]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tFile patternFile = new File(path+\"/blockedpatterns\");\n"
+                  },
+                  "startLine": 159
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/dnsfilter/BlockedHosts.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tVector<String[]> blockedPatterns = null;\n\t\tFile patternFile = new File(path+\"/blockedpatterns\");\n"
+                  },
+                  "endLine": 159,
+                  "startLine": 158
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/FileOutputStream.<init>(Ljava/lang/String;)V) writes to a file whose location might be specified by user input \nAt BlockedHosts.java:[lines 66-442] \nIn class dnsfilter.BlockedHosts \nIn method dnsfilter.BlockedHosts.persist(String) \nAt BlockedHosts.java:[line 177] \nSink method java/io/FileOutputStream.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source dnsfilter/BlockedHosts.persist(Ljava/lang/String;)V parameter 0 \nMethod usage not detected \nAt BlockedHosts.java:[line 177]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t\tOutputStream patterns = new BufferedOutputStream(new FileOutputStream(path + \"/blockedpatterns\"));\n"
+                  },
+                  "startLine": 177
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/dnsfilter/BlockedHosts.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\tif (blockedPatterns != null) {\n\t\t\t\tOutputStream patterns = new BufferedOutputStream(new FileOutputStream(path + \"/blockedpatterns\"));\n"
+                  },
+                  "endLine": 177,
+                  "startLine": 176
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_OUT",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt DNSFilterManager.java:[lines 59-1395] \nIn class dnsfilter.DNSFilterManager \nIn method dnsfilter.DNSFilterManager.copyLocalFile(String, String) \nAt DNSFilterManager.java:[line 436] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source dnsfilter/DNSFilterManager.copyLocalFile(Ljava/lang/String;Ljava/lang/String;)V parameter 0 \nMethod usage not detected \nAt DNSFilterManager.java:[line 436] \nAt DNSFilterManager.java:[line 462] \nAt DNSFilterManager.java:[line 463] \nAt DNSFilterManager.java:[line 464]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tFile toFile = new File(WORKDIR  + to);\n"
+                  },
+                  "startLine": 436
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/dnsfilter/DNSFilterManager.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tFile fromFile = new File(WORKDIR  + from);\n\t\tFile toFile = new File(WORKDIR  + to);\n"
+                  },
+                  "endLine": 436,
+                  "startLine": 435
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt DNSFilterManager.java:[lines 59-1395] \nIn class dnsfilter.DNSFilterManager \nIn method dnsfilter.DNSFilterManager.getAvailableBackups() \nAt DNSFilterManager.java:[line 451] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source java/io/File.list()[Ljava/lang/String; \nAt DNSFilterManager.java:[line 451]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tif (new File(WORKDIR+\"backup/\" + name).isDirectory())\n"
+                  },
+                  "startLine": 451
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/dnsfilter/DNSFilterManager.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t{\n\t\t\tif (new File(WORKDIR+\"backup/\" + name).isDirectory())\n"
+                  },
+                  "endLine": 451,
+                  "startLine": 450
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Files could be saved to external storage \nAt BootUpReceiver.java:[lines 36-67] \nIn class dnsfilter.android.BootUpReceiver \nIn method dnsfilter.android.BootUpReceiver.getConfig() \nAt BootUpReceiver.java:[line 58]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tFile propsFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + \"/PersonalDNSFilter/dnsfilter.conf\");\n"
+                  },
+                  "startLine": 58
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/dnsfilter/android/BootUpReceiver.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\tFile propsFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + \"/PersonalDNSFilter/dnsfilter.conf\");\n"
+                  },
+                  "endLine": 58,
+                  "startLine": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "ANDROID_EXTERNAL_FILE_ACCESS",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt BootUpReceiver.java:[lines 36-67] \nIn class dnsfilter.android.BootUpReceiver \nIn method dnsfilter.android.BootUpReceiver.getConfig() \nAt BootUpReceiver.java:[line 58] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source java/io/File.getAbsolutePath()Ljava/lang/String; \nAt BootUpReceiver.java:[line 58]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tFile propsFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + \"/PersonalDNSFilter/dnsfilter.conf\");\n"
+                  },
+                  "startLine": 58
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/dnsfilter/android/BootUpReceiver.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\tFile propsFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + \"/PersonalDNSFilter/dnsfilter.conf\");\n"
+                  },
+                  "endLine": 58,
+                  "startLine": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Files could be saved to external storage \nAt DNSProxyActivity.java:[lines 88-1694] \nIn class dnsfilter.android.DNSProxyActivity \nIn method dnsfilter.android.DNSProxyActivity.<static initializer for DNSProxyActivity>() \nAt DNSProxyActivity.java:[line 148]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tprotected static File WORKPATH = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + \"/PersonalDNSFilter\");\n"
+                  },
+                  "startLine": 148
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/dnsfilter/android/DNSProxyActivity.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\tprotected static File WORKPATH = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + \"/PersonalDNSFilter\");\n"
+                  },
+                  "endLine": 148,
+                  "startLine": 147
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "ANDROID_EXTERNAL_FILE_ACCESS",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Possible information exposure through an error message \nAt DNSProxyActivity.java:[lines 88-1694] \nIn class dnsfilter.android.DNSProxyActivity \nIn method dnsfilter.android.DNSProxyActivity.dump(Exception) \nAt DNSProxyActivity.java:[line 553]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\te.printStackTrace(new PrintWriter(str));\n"
+                  },
+                  "startLine": 553
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/dnsfilter/android/DNSProxyActivity.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tStringWriter str = new StringWriter();\n\t\te.printStackTrace(new PrintWriter(str));\n"
+                  },
+                  "endLine": 553,
+                  "startLine": 552
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "INFORMATION_EXPOSURE_THROUGH_AN_ERROR_MESSAGE",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Possible information exposure through an error message \nAt DNSProxyActivity.java:[lines 88-1694] \nIn class dnsfilter.android.DNSProxyActivity \nIn method dnsfilter.android.DNSProxyActivity.logException(Exception) \nAt DNSProxyActivity.java:[line 1460]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\te.printStackTrace(new PrintWriter(str));\n"
+                  },
+                  "startLine": 1460
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/dnsfilter/android/DNSProxyActivity.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tStringWriter str = new StringWriter();\n\t\te.printStackTrace(new PrintWriter(str));\n"
+                  },
+                  "endLine": 1460,
+                  "startLine": 1459
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "INFORMATION_EXPOSURE_THROUGH_AN_ERROR_MESSAGE",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt DNSProxyActivity.java:[lines 88-1694] \nIn class dnsfilter.android.DNSProxyActivity \nIn method dnsfilter.android.DNSProxyActivity.<static initializer for DNSProxyActivity>() \nAt DNSProxyActivity.java:[line 148] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source java/io/File.getAbsolutePath()Ljava/lang/String; \nAt DNSProxyActivity.java:[line 148]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tprotected static File WORKPATH = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + \"/PersonalDNSFilter\");\n"
+                  },
+                  "startLine": 148
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/dnsfilter/android/DNSProxyActivity.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\tprotected static File WORKPATH = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + \"/PersonalDNSFilter\");\n"
+                  },
+                  "endLine": 148,
+                  "startLine": 147
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/FileOutputStream.<init>(Ljava/lang/String;)V) writes to a file whose location might be specified by user input \nAt DNSProxyActivity.java:[lines 88-1694] \nIn class dnsfilter.android.DNSProxyActivity \nIn method dnsfilter.android.DNSProxyActivity.dump(Exception) \nAt DNSProxyActivity.java:[line 555] \nSink method java/io/FileOutputStream.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source dnsfilter/android/DNSProxyActivity.WORKPATH \nUnknown source java/io/File.<init>(Ljava/lang/String;)V \nAt DNSProxyActivity.java:[line 148] \nAt DNSProxyActivity.java:[line 555]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tFileOutputStream dump = new FileOutputStream(WORKPATH+\"/dump-\"+System.currentTimeMillis()+\".txt\");\n"
+                  },
+                  "startLine": 555
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/dnsfilter/android/DNSProxyActivity.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\ttry {\n\t\t\tFileOutputStream dump = new FileOutputStream(WORKPATH+\"/dump-\"+System.currentTimeMillis()+\".txt\");\n"
+                  },
+                  "endLine": 555,
+                  "startLine": 554
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_OUT",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt FilterConfig.java:[lines 28-366] \nIn class dnsfilter.android.FilterConfig \nIn method dnsfilter.android.FilterConfig.validateContent(View[]) \nAt FilterConfig.java:[line 352] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source android/widget/TextView.getText()Ljava/lang/CharSequence; \nUnknown source java/lang/CharSequence.toString()Ljava/lang/String; \nAt FilterConfig.java:[line 341] \nAt FilterConfig.java:[line 352]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t\tFile f = new File(urlStr.substring(7));\n"
+                  },
+                  "startLine": 352
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/dnsfilter/android/FilterConfig.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t} else {\n\t\t\t\tFile f = new File(urlStr.substring(7));\n"
+                  },
+                  "endLine": 352,
+                  "startLine": 351
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Object deserialization is used in dnsfilter.remote.RemoteAccessClient.getConfig() \nAt RemoteAccessClient.java:[lines 24-512] \nIn class dnsfilter.remote.RemoteAccessClient \nIn method dnsfilter.remote.RemoteAccessClient.getConfig() \nAt RemoteAccessClient.java:[line 230]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                return (Properties) new ObjectInputStream(in).readObject();\n"
+                  },
+                  "startLine": 230
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/dnsfilter/remote/RemoteAccessClient.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            try {\n                return (Properties) new ObjectInputStream(in).readObject();\n"
+                  },
+                  "endLine": 230,
+                  "startLine": 229
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "OBJECT_DESERIALIZATION",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Unencrypted socket to dnsfilter.remote.RemoteAccessClient (instead of SSLSocket) \nAt RemoteAccessClient.java:[lines 24-512] \nIn class dnsfilter.remote.RemoteAccessClient \nIn method dnsfilter.remote.RemoteAccessClient.initConnection() \nAt RemoteAccessClient.java:[line 119] \nValue remote host."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            con = new Socket();\n"
+                  },
+                  "startLine": 119
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/dnsfilter/remote/RemoteAccessClient.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            int id = -1;\n            con = new Socket();\n"
+                  },
+                  "endLine": 119,
+                  "startLine": 118
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "UNENCRYPTED_SOCKET",
+          "ruleIndex": 5
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Unencrypted server socket (instead of SSLServerSocket) \nAt RemoteAccessServer.java:[lines 29-120] \nIn class dnsfilter.remote.RemoteAccessServer \nIn method new dnsfilter.remote.RemoteAccessServer(int, String) \nAt RemoteAccessServer.java:[line 40]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        server = new ServerSocket(port);\n"
+                  },
+                  "startLine": 40
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/dnsfilter/remote/RemoteAccessServer.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        Encryption.init_AES(keyphrase);\n        server = new ServerSocket(port);\n"
+                  },
+                  "endLine": 40,
+                  "startLine": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "UNENCRYPTED_SERVER_SOCKET",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Possible information exposure through an error message \nAt RemoteAccessServer.java:[lines 319-378] \nIn class dnsfilter.remote.RemoteAccessServer$RemoteSession$1 \nIn method dnsfilter.remote.RemoteAccessServer$RemoteSession$1.logException(Exception) \nAt RemoteAccessServer.java:[line 359]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                    e.printStackTrace(new PrintWriter(str));\n"
+                  },
+                  "startLine": 359
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/dnsfilter/remote/RemoteAccessServer.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                    StringWriter str = new StringWriter();\n                    e.printStackTrace(new PrintWriter(str));\n"
+                  },
+                  "endLine": 359,
+                  "startLine": 358
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "INFORMATION_EXPOSURE_THROUGH_AN_ERROR_MESSAGE",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This random generator (java.lang.Math.random()) is predictable \nAt IPPacket.java:[lines 33-260] \nIn class ip.IPPacket \nIn method ip.IPPacket.<static initializer for IPPacket>() \nAt IPPacket.java:[line 33] \nValue java.lang.Math.random()."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\tstatic short curID = (short) (Math.random() * Short.MAX_VALUE);\n"
+                  },
+                  "startLine": 33
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/ip/IPPacket.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\tstatic short curID = (short) (Math.random() * Short.MAX_VALUE);\n"
+                  },
+                  "endLine": 33,
+                  "startLine": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PREDICTABLE_RANDOM",
+          "ruleIndex": 7
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Possible information exposure through an error message \nAt AsyncBulkLogger.java:[lines 32-147] \nIn class util.AsyncBulkLogger \nIn method util.AsyncBulkLogger.logException(Exception) \nAt AsyncBulkLogger.java:[line 89]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t\te.printStackTrace(psout);\n"
+                  },
+                  "startLine": 89
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/AsyncBulkLogger.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t\t\tpsout.print(DateRetriever.getDateString() + \" \");\n\t\t\t\te.printStackTrace(psout);\n"
+                  },
+                  "endLine": 89,
+                  "startLine": 88
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "INFORMATION_EXPOSURE_THROUGH_AN_ERROR_MESSAGE",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The cipher does not provide data integrity \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 57]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            ecipher = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\n"
+                  },
+                  "startLine": 57
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/Encryption.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            key = new SecretKeySpec(buffer.array(), \"AES\");\n            ecipher = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\n"
+                  },
+                  "endLine": 57,
+                  "startLine": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CIPHER_INTEGRITY",
+          "ruleIndex": 8
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The cipher does not provide data integrity \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 60]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "Cipher ciPHerExample3 = Cipher.getInstance(\"des\");\n"
+                  },
+                  "startLine": 60
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/Encryption.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "Cipher ciPHerExample2 = Cipher.getInstance(\"des\".toUpperCase(Locale.ENGLISH));\nCipher ciPHerExample3 = Cipher.getInstance(\"des\");\n"
+                  },
+                  "endLine": 60,
+                  "startLine": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CIPHER_INTEGRITY",
+          "ruleIndex": 8
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The cipher does not provide data integrity \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 65]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            dcipher = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\n"
+                  },
+                  "startLine": 65
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/Encryption.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            ecipher.init(Cipher.ENCRYPT_MODE, key, paramSpec);\n            dcipher = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\n"
+                  },
+                  "endLine": 65,
+                  "startLine": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CIPHER_INTEGRITY",
+          "ruleIndex": 8
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "DES should be replaced with AES \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 59] \nSink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher; \nSink parameter 0."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "Cipher ciPHerExample2 = Cipher.getInstance(\"des\".toUpperCase(Locale.ENGLISH));\n"
+                  },
+                  "startLine": 59
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/Encryption.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "Cipher ciPHerExample1 = Cipher.getInstance(\"de$s\".replace(\"$\", \"\"));\nCipher ciPHerExample2 = Cipher.getInstance(\"des\".toUpperCase(Locale.ENGLISH));\n"
+                  },
+                  "endLine": 59,
+                  "startLine": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "DES_USAGE",
+          "ruleIndex": 9
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "DES should be replaced with AES \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 60] \nSink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher; \nSink parameter 0."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "Cipher ciPHerExample3 = Cipher.getInstance(\"des\");\n"
+                  },
+                  "startLine": 60
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/Encryption.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "Cipher ciPHerExample2 = Cipher.getInstance(\"des\".toUpperCase(Locale.ENGLISH));\nCipher ciPHerExample3 = Cipher.getInstance(\"des\");\n"
+                  },
+                  "endLine": 60,
+                  "startLine": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "DES_USAGE",
+          "ruleIndex": 9
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The cipher is susceptible to padding oracle attacks \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 57]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            ecipher = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\n"
+                  },
+                  "startLine": 57
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/Encryption.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            key = new SecretKeySpec(buffer.array(), \"AES\");\n            ecipher = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\n"
+                  },
+                  "endLine": 57,
+                  "startLine": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PADDING_ORACLE",
+          "ruleIndex": 10
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The cipher is susceptible to padding oracle attacks \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 65]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            dcipher = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\n"
+                  },
+                  "startLine": 65
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/Encryption.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            ecipher.init(Cipher.ENCRYPT_MODE, key, paramSpec);\n            dcipher = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\n"
+                  },
+                  "endLine": 65,
+                  "startLine": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PADDING_ORACLE",
+          "ruleIndex": 10
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The initialization vector (IV) is not properly generated \nAt Encryption.java:[lines 16-122] \nIn class util.Encryption \nIn method util.Encryption.init_AES(String) \nAt Encryption.java:[line 55]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            paramSpec = new IvParameterSpec(iv);\n"
+                  },
+                  "startLine": 55
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/Encryption.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            buffer.putLong(Utils.getLongStringHash(invertStr(keyphrase)));\n            paramSpec = new IvParameterSpec(iv);\n"
+                  },
+                  "endLine": 55,
+                  "startLine": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "STATIC_IV",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Possible information exposure through an error message \nAt FileLogger.java:[lines 40-211] \nIn class util.FileLogger \nIn method util.FileLogger.logException(Exception) \nAt FileLogger.java:[line 130]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t\te.printStackTrace(psout);\n"
+                  },
+                  "startLine": 130
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/FileLogger.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t\t\tpsout.print(DateRetriever.getDateString() + \" \");\n\t\t\t\te.printStackTrace(psout);\n"
+                  },
+                  "endLine": 130,
+                  "startLine": 129
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "INFORMATION_EXPOSURE_THROUGH_AN_ERROR_MESSAGE",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt FileLogger.java:[lines 40-211] \nIn class util.FileLogger \nIn method util.FileLogger.getOutputStream() \nAt FileLogger.java:[line 161] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source util/FileLogger.logFolderPath \nUnknown source util/FileLogger.name \nAt FileLogger.java:[line 161]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tFile f = new File(logFolderPath + \"/\" + name + \"_\" + curSlot + \".log\");\n"
+                  },
+                  "startLine": 161
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/FileLogger.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\tcurSlot = (curSlot + 1) % slotCount;\n\t\t\tFile f = new File(logFolderPath + \"/\" + name + \"_\" + curSlot + \".log\");\n"
+                  },
+                  "endLine": 161,
+                  "startLine": 160
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt FileLogger.java:[lines 40-211] \nIn class util.FileLogger \nIn method util.FileLogger.logOpen() \nAt FileLogger.java:[line 63] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source util/FileLogger.logFolderPath \nAt FileLogger.java:[line 63]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tFile dir = new File(logFolderPath);\n"
+                  },
+                  "startLine": 63
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/FileLogger.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\n\t\tFile dir = new File(logFolderPath);\n"
+                  },
+                  "endLine": 63,
+                  "startLine": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt FileLogger.java:[lines 40-211] \nIn class util.FileLogger \nIn method util.FileLogger.logOpen() \nAt FileLogger.java:[line 70] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source util/FileLogger.logFolderPath \nUnknown source util/FileLogger.name \nAt FileLogger.java:[line 70]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tf = new File(logFolderPath + \"/\" + name + \"_\" + i + \".log\");\n"
+                  },
+                  "startLine": 70
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/FileLogger.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tfor (int i = 0; i < slotCount; i++) {\n\t\t\tf = new File(logFolderPath + \"/\" + name + \"_\" + i + \".log\");\n"
+                  },
+                  "endLine": 70,
+                  "startLine": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt FileLogger.java:[lines 40-211] \nIn class util.FileLogger \nIn method util.FileLogger.logOpen() \nAt FileLogger.java:[line 78] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source util/FileLogger.logFolderPath \nUnknown source util/FileLogger.name \nAt FileLogger.java:[line 78]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tfout = new FileOutputStream(new File(logFolderPath + \"/\" + name + \"_\" + curSlot + \".log\"), true);\n"
+                  },
+                  "startLine": 78
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/FileLogger.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\tfout = new FileOutputStream(new File(logFolderPath + \"/\" + name + \"_\" + curSlot + \".log\"), true);\n"
+                  },
+                  "endLine": 78,
+                  "startLine": 77
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt HugePackedSet.java:[lines 40-232] \nIn class util.HugePackedSet \nIn method util.HugePackedSet.checkIndexVersion(String) \nAt HugePackedSet.java:[line 204] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source util/HugePackedSet.checkIndexVersion(Ljava/lang/String;)Z parameter 0 \nMethod usage not detected \nAt BlockedHosts.java:[line 154] \nAt BlockedHosts.java:[line 159] \nAt BlockedHosts.java:[line 169] \nAt HugePackedSet.java:[line 204] \nAt HugePackedSet.java:[line 217]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tFile idxVersionFile = new File(path+\"/IDX_VERSION\");\n"
+                  },
+                  "startLine": 204
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/HugePackedSet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tpublic static boolean checkIndexVersion(String path)throws IOException {\n\t\tFile idxVersionFile = new File(path+\"/IDX_VERSION\");\n"
+                  },
+                  "endLine": 204,
+                  "startLine": 203
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/FileInputStream.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt HugePackedSet.java:[lines 40-232] \nIn class util.HugePackedSet \nIn method util.HugePackedSet.checkIndexVersion(String) \nAt HugePackedSet.java:[line 206] \nSink method java/io/FileInputStream.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source util/HugePackedSet.checkIndexVersion(Ljava/lang/String;)Z parameter 0 \nMethod usage not detected \nAt BlockedHosts.java:[line 154] \nAt BlockedHosts.java:[line 159] \nAt BlockedHosts.java:[line 169] \nAt HugePackedSet.java:[line 204] \nAt HugePackedSet.java:[line 206] \nAt HugePackedSet.java:[line 217]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tFileInputStream in = new FileInputStream(path+\"/IDX_VERSION\");\n"
+                  },
+                  "startLine": 206
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/HugePackedSet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tif (idxVersionFile.exists()) {\n\t\t\tFileInputStream in = new FileInputStream(path+\"/IDX_VERSION\");\n"
+                  },
+                  "endLine": 206,
+                  "startLine": 205
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt HugePackedSet.java:[lines 40-232] \nIn class util.HugePackedSet \nIn method util.HugePackedSet.load(String, boolean, ObjectPackagingManager) \nAt HugePackedSet.java:[line 223] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source util/HugePackedSet.load(Ljava/lang/String;ZLutil/ObjectPackagingManager;)Lutil/HugePackedSet; parameter 2 \nMethod usage not detected \nAt BlockedHosts.java:[line 159] \nAt BlockedHosts.java:[line 169] \nAt HugePackedSet.java:[line 223]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\twhile (new File(path+\"/idx\"+slotCount).exists())\n"
+                  },
+                  "startLine": 223
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/HugePackedSet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tint count = 0;\n\t\twhile (new File(path+\"/idx\"+slotCount).exists())\n"
+                  },
+                  "endLine": 223,
+                  "startLine": 222
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt HugePackedSet.java:[lines 40-232] \nIn class util.HugePackedSet \nIn method util.HugePackedSet.persist(String) \nAt HugePackedSet.java:[line 162] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source util/HugePackedSet.persist(Ljava/lang/String;)V parameter 0 \nMethod usage not detected \nAt BlockedHosts.java:[line 175] \nAt HugePackedSet.java:[line 162]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tFile dir = new File(path+\".tmp\");\n"
+                  },
+                  "startLine": 162
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/HugePackedSet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t//delete existing .tmp and index folders\n\t\tFile dir = new File(path+\".tmp\");\n"
+                  },
+                  "endLine": 162,
+                  "startLine": 161
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt HugePackedSet.java:[lines 40-232] \nIn class util.HugePackedSet \nIn method util.HugePackedSet.persist(String) \nAt HugePackedSet.java:[line 170] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source util/HugePackedSet.persist(Ljava/lang/String;)V parameter 0 \nMethod usage not detected \nAt BlockedHosts.java:[line 175] \nAt HugePackedSet.java:[line 162]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tdir = new File(path);\n"
+                  },
+                  "startLine": 170
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/HugePackedSet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t} \t\t\t\n\t\t\tdir = new File(path);\n"
+                  },
+                  "endLine": 170,
+                  "startLine": 169
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt HugePackedSet.java:[lines 40-232] \nIn class util.HugePackedSet \nIn method util.HugePackedSet.persist(String) \nAt HugePackedSet.java:[line 173] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source util/HugePackedSet.persist(Ljava/lang/String;)V parameter 0 \nMethod usage not detected \nAt BlockedHosts.java:[line 175] \nAt HugePackedSet.java:[line 162] \nAt HugePackedSet.java:[line 173]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tdir = new File(path+\".tmp\");\n"
+                  },
+                  "startLine": 173
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/HugePackedSet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\n\t\tdir = new File(path+\".tmp\");\n"
+                  },
+                  "endLine": 173,
+                  "startLine": 172
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt HugePackedSet.java:[lines 40-232] \nIn class util.HugePackedSet \nIn method util.HugePackedSet.persist(String) \nAt HugePackedSet.java:[line 186] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source util/HugePackedSet.persist(Ljava/lang/String;)V parameter 0 \nMethod usage not detected \nAt BlockedHosts.java:[line 175] \nAt HugePackedSet.java:[line 162] \nAt HugePackedSet.java:[line 173]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tFile renameDir = new File(path);\t\t\n"
+                  },
+                  "startLine": 186
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/HugePackedSet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\n\t\tFile renameDir = new File(path);\t\t\n"
+                  },
+                  "endLine": 186,
+                  "startLine": 185
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt HugePackedSet.java:[lines 40-232] \nIn class util.HugePackedSet \nIn method util.HugePackedSet.updatePersist() \nAt HugePackedSet.java:[line 196] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source util/HugePackedSet.loadedFromPath \nAt HugePackedSet.java:[line 196]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tFile dir = new File(loadedFromPath);\n"
+                  },
+                  "startLine": 196
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/HugePackedSet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\tFile dir = new File(loadedFromPath);\n"
+                  },
+                  "endLine": 196,
+                  "startLine": 195
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/FileOutputStream.<init>(Ljava/lang/String;)V) writes to a file whose location might be specified by user input \nAt HugePackedSet.java:[lines 40-232] \nIn class util.HugePackedSet \nIn method util.HugePackedSet.persist(String) \nAt HugePackedSet.java:[line 177] \nSink method java/io/FileOutputStream.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source java/io/File.getAbsolutePath()Ljava/lang/String; \nAt HugePackedSet.java:[line 177]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tFileOutputStream out = new FileOutputStream(dir.getAbsolutePath()+\"/IDX_VERSION\");\n"
+                  },
+                  "startLine": 177
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/HugePackedSet.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t//write index version info\n\t\tFileOutputStream out = new FileOutputStream(dir.getAbsolutePath()+\"/IDX_VERSION\");\n"
+                  },
+                  "endLine": 177,
+                  "startLine": 176
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_OUT",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt PackedSortedList.java:[lines 43-360] \nIn class util.PackedSortedList \nIn method util.PackedSortedList.load(String, boolean, ObjectPackagingManager) \nAt PackedSortedList.java:[line 349] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source util/PackedSortedList.load(Ljava/lang/String;ZLutil/ObjectPackagingManager;)Lutil/PackedSortedList; parameter 2 \nMethod usage not detected \nAt BlockedHosts.java:[line 159] \nAt BlockedHosts.java:[line 169] \nAt HugePackedSet.java:[line 223] \nAt HugePackedSet.java:[line 228]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tFile f = new File(path);\n"
+                  },
+                  "startLine": 349
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/PackedSortedList.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tpublic static PackedSortedList load(String path, boolean inMemory, ObjectPackagingManager objMgr) throws IOException  {\n\t\tFile f = new File(path);\n"
+                  },
+                  "endLine": 349,
+                  "startLine": 348
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt PackedSortedList.java:[lines 43-360] \nIn class util.PackedSortedList \nIn method util.PackedSortedList.persist(String) \nAt PackedSortedList.java:[line 310] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source util/PackedSortedList.persist(Ljava/lang/String;)V parameter 0 \nAt HugePackedSet.java:[line 184] \nAt HugePackedSet.java:[line 199]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tpersistedPackFile = new File(path);\n"
+                  },
+                  "startLine": 310
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/PackedSortedList.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\t\tpersistedPackFile = new File(path);\n"
+                  },
+                  "endLine": 310,
+                  "startLine": 309
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Object deserialization is used in util.Utils.deserializeObject(byte[]) \nAt Utils.java:[lines 42-313] \nIn class util.Utils \nIn method util.Utils.deserializeObject(byte[]) \nAt Utils.java:[line 244]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\treturn objIn.readObject();\n"
+                  },
+                  "startLine": 244
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/Utils.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\ttry {\n\t\t\treturn objIn.readObject();\n"
+                  },
+                  "endLine": 244,
+                  "startLine": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "OBJECT_DESERIALIZATION",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt Utils.java:[lines 42-313] \nIn class util.Utils \nIn method util.Utils.deleteFolder(String) \nAt Utils.java:[line 278] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source util/Utils.deleteFolder(Ljava/lang/String;)V parameter 0 \nAt Utils.java:[line 284]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tFile dir = new File(path);\n"
+                  },
+                  "startLine": 278
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/Utils.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\tpublic static void deleteFolder(String path) {\n\t\tFile dir = new File(path);\n"
+                  },
+                  "endLine": 278,
+                  "startLine": 277
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/File.<init>(Ljava/lang/String;)V) reads a file whose location might be specified by user input \nAt Connection.java:[lines 58-408] \nIn class util.conpool.Connection \nIn method util.conpool.Connection.getCustomHosts() \nAt Connection.java:[line 163] \nSink method java/io/File.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source util/conpool/Connection.setCustomHostsFile(Ljava/lang/String;)V parameter 0 \nUnknown source util/conpool/Connection.CUSTOM_HOSTS_FILE_NAME \nUnknown source util/ExecutionEnvironmentInterface.getWorkDir()Ljava/lang/String; \nMethod usage not detected \nAt Connection.java:[line 160] \nAt Connection.java:[line 163]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tFile hostsFile = new File(ExecutionEnvironment.getEnvironment().getWorkDir()+CUSTOM_HOSTS_FILE_NAME);\n"
+                  },
+                  "startLine": 163
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/conpool/Connection.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\tFile hostsFile = new File(ExecutionEnvironment.getEnvironment().getWorkDir()+CUSTOM_HOSTS_FILE_NAME);\n"
+                  },
+                  "endLine": 163,
+                  "startLine": 162
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_IN",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Unencrypted socket to util.conpool.Connection (instead of SSLSocket) \nAt Connection.java:[lines 58-408] \nIn class util.conpool.Connection \nIn method util.conpool.Connection.initConnection(InetSocketAddress, int, boolean, SSLSocketFactory, Proxy) \nAt Connection.java:[line 204] \nValue remote host."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\tsocket = new Socket();\t\n"
+                  },
+                  "startLine": 204
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/conpool/Connection.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\tif (proxy == Proxy.NO_PROXY) {\n\t\t\tsocket = new Socket();\t\n"
+                  },
+                  "endLine": 204,
+                  "startLine": 203
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "UNENCRYPTED_SOCKET",
+          "ruleIndex": 5
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "Unencrypted socket to util.conpool.HttpProxy (instead of SSLSocket) \nAt HttpProxy.java:[lines 39-85] \nIn class util.conpool.HttpProxy \nIn method util.conpool.HttpProxy.openTunnel(InetSocketAddress, int) \nAt HttpProxy.java:[line 71] \nValue remote host."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\tSocket proxyCon = new Socket();\n"
+                  },
+                  "startLine": 71
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant3/app/src/main/java/util/conpool/HttpProxy.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\n\t\tSocket proxyCon = new Socket();\n"
+                  },
+                  "endLine": 71,
+                  "startLine": 70
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "UNENCRYPTED_SOCKET",
+          "ruleIndex": 5
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "c2cd994f-bb50-4153-b324-8c877ed5f91b"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "",
+          "repositoryUri": "",
+          "revisionId": ""
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "c2cd994f-bb50-4153-b324-8c877ed5f91b",
+      "runGuid": "c0acc717-82a2-4358-863e-19eac0506884"
+    }
+  ]
+}

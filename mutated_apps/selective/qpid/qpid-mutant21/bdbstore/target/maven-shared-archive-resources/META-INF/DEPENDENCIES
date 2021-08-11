@@ -1,0 +1,21 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Apache Qpid Broker-J BDB Message Store Plug-in
+
+
+From: 'Oracle Corporation' (http://www.oracle.com/)
+  - je  com.sleepycat:je:jar:7.4.5
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - Apache Qpid Broker-J Code Generation (http://qpid.apache.org/components/qpid-broker-codegen) org.apache.qpid:qpid-broker-codegen:jar:8.0.1-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Qpid Broker-J AMQP 0-8 Protocol Plug-in (http://qpid.apache.org/components/broker-plugins/qpid-broker-plugins-amqp-0-8-protocol) org.apache.qpid:qpid-broker-plugins-amqp-0-8-protocol:jar:8.0.1-SNAPSHOT
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

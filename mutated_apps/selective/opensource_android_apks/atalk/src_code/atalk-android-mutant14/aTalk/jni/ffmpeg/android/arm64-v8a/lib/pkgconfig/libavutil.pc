@@ -1,0 +1,14 @@
+prefix=/home/cmeng/workspace/ndk/ffmpeg-x264/android/armeabi-v7a
+exec_prefix=${prefix}
+libdir=/home/cmeng/workspace/ndk/ffmpeg-x264/android/armeabi-v7a/lib
+includedir=/home/cmeng/workspace/ndk/ffmpeg-x264/android/armeabi-v7a/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.78.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -lm
+Libs.private: 
+Cflags: -I${includedir}

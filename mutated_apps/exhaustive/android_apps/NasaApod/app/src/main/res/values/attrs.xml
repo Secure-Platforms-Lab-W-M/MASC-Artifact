@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on com.jvillalba.apod.classic.API API level.
+         ?android:attr/buttonBarStyle is new ascom.jvillalba.apod.classic.API API 11 so this is
+         necessary to support previcom.jvillalba.apod.classic.API API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+</resources>

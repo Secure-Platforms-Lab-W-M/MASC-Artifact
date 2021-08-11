@@ -1,0 +1,98 @@
+[2020-11-23 10:15:16] [build] [2020-11-23 10:15:16] Build directory is /media/data/muse2/muse2repo_apk_mutation_reach_src/AFH_Download/.
+[2020-11-23 10:15:16] [build] [2020-11-23 10:15:16] [autobuild] > chmod +x gradlew
+[2020-11-23 10:15:16] [build] [2020-11-23 10:15:16] [autobuild] > ./gradlew -Dorg.gradle.caching=false --no-daemon -S clean
+[2020-11-23 10:15:20] [build] [2020-11-23 10:15:20] [autobuild] NDK is missing a "platforms" directory.
+[2020-11-23 10:15:20] [build] [2020-11-23 10:15:20] [autobuild] If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /media/data/Android/Sdk/ndk-bundle.
+[2020-11-23 10:15:20] [build] [2020-11-23 10:15:20] [autobuild] If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+[2020-11-23 10:15:22] [build] [2020-11-23 10:15:22] [autobuild] Incremental java compilation is an incubating feature.
+[2020-11-23 10:15:22] [build] [2020-11-23 10:15:22] [autobuild] :clean
+[2020-11-23 10:15:23] [build] [2020-11-23 10:15:23] [autobuild] :app:clean
+[2020-11-23 10:15:23] [build] [2020-11-23 10:15:23] [autobuild] BUILD SUCCESSFUL
+[2020-11-23 10:15:23] [build] [2020-11-23 10:15:23] [autobuild] Total time: 6.071 secs
+[2020-11-23 10:15:23] [build] [2020-11-23 10:15:23] [autobuild] > ./gradlew -Dorg.gradle.caching=false --no-daemon -S assemble
+[2020-11-23 10:15:27] [build] [2020-11-23 10:15:27] [autobuild] NDK is missing a "platforms" directory.
+[2020-11-23 10:15:27] [build] [2020-11-23 10:15:27] [autobuild] If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /media/data/Android/Sdk/ndk-bundle.
+[2020-11-23 10:15:27] [build] [2020-11-23 10:15:27] [autobuild] If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] Incremental java compilation is an incubating feature.
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:preBuild UP-TO-DATE
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:preDebugBuild UP-TO-DATE
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:checkDebugManifest
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:preReleaseBuild UP-TO-DATE
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:prepareComAndroidSupportAppcompatV72531Library
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:prepareComAndroidSupportDesign2531Library
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:prepareComAndroidSupportRecyclerviewV72531Library
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:prepareComAndroidSupportSupportCompat2531Library
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:prepareComAndroidSupportSupportCoreUi2531Library
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:prepareComAndroidSupportSupportCoreUtils2531Library
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:prepareComAndroidSupportSupportFragment2531Library
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:prepareComAndroidSupportSupportMediaCompat2531Library
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:prepareComAndroidSupportSupportV42531Library
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:prepareComAndroidSupportSupportVectorDrawable2531Library
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:prepareComAndroidSupportTransition2531Library
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:prepareDebugDependencies
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:compileDebugAidl
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:compileDebugRenderscript
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:generateDebugBuildConfig
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:generateDebugResValues
+[2020-11-23 10:15:29] [build] [2020-11-23 10:15:29] [autobuild] :app:generateDebugResources
+[2020-11-23 10:15:31] [build] [2020-11-23 10:15:31] [autobuild] :app:mergeDebugResources
+[2020-11-23 10:15:31] [build] [2020-11-23 10:15:31] [autobuild] :app:processDebugManifest
+[2020-11-23 10:15:31] [build] [2020-11-23 10:15:31] [autobuild] :app:processDebugResources
+[2020-11-23 10:15:31] [build] [2020-11-23 10:15:31] [autobuild] :app:generateDebugSources
+[2020-11-23 10:15:31] [build] [2020-11-23 10:15:31] [autobuild] :app:incrementalDebugJavaCompilationSafeguard
+[2020-11-23 10:15:31] [build] [2020-11-23 10:15:31] [autobuild] :app:javaPreCompileDebug
+[2020-11-23 10:15:31] [build] [2020-11-23 10:15:31] [autobuild] :app:compileDebugJavaWithJavac
+[2020-11-23 10:15:31] [build] [2020-11-23 10:15:31] [autobuild] :app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+[2020-11-23 10:15:33] [build] [2020-11-23 10:15:33] [autobuild] Note: /media/data/muse2/muse2repo_apk_mutation_reach_src/AFH_Download/app/src/main/java/org/afhdownloader/Download.java uses or overrides a deprecated API.
+[2020-11-23 10:15:33] [build] [2020-11-23 10:15:33] [autobuild] Note: Recompile with -Xlint:deprecation for details.
+[2020-11-23 10:15:40] [build] [2020-11-23 10:15:40] [autobuild] :app:compileDebugNdk UP-TO-DATE
+[2020-11-23 10:15:40] [build] [2020-11-23 10:15:40] [autobuild] :app:compileDebugSources
+[2020-11-23 10:15:40] [build] [2020-11-23 10:15:40] [autobuild] :app:mergeDebugShaders
+[2020-11-23 10:15:40] [build] [2020-11-23 10:15:40] [autobuild] :app:compileDebugShaders
+[2020-11-23 10:15:40] [build] [2020-11-23 10:15:40] [autobuild] :app:generateDebugAssets
+[2020-11-23 10:15:41] [build] [2020-11-23 10:15:41] [autobuild] :app:mergeDebugAssets
+[2020-11-23 10:15:42] [build] [2020-11-23 10:15:42] [autobuild] :app:transformClassesWithDexForDebug
+[2020-11-23 10:15:42] [build] [2020-11-23 10:15:42] [autobuild] :app:mergeDebugJniLibFolders
+[2020-11-23 10:15:42] [build] [2020-11-23 10:15:42] [autobuild] :app:transformNativeLibsWithMergeJniLibsForDebug
+[2020-11-23 10:15:42] [build] [2020-11-23 10:15:42] [autobuild] :app:processDebugJavaRes UP-TO-DATE
+[2020-11-23 10:15:42] [build] [2020-11-23 10:15:42] [autobuild] :app:transformResourcesWithMergeJavaResForDebug
+[2020-11-23 10:15:42] [build] [2020-11-23 10:15:42] [autobuild] :app:validateSigningDebug
+[2020-11-23 10:15:43] [build] [2020-11-23 10:15:43] [autobuild] :app:packageDebug
+[2020-11-23 10:15:43] [build] [2020-11-23 10:15:43] [autobuild] :app:assembleDebug
+[2020-11-23 10:15:43] [build] [2020-11-23 10:15:43] [autobuild] :app:checkReleaseManifest
+[2020-11-23 10:15:43] [build] [2020-11-23 10:15:43] [autobuild] :app:prepareReleaseDependencies
+[2020-11-23 10:15:43] [build] [2020-11-23 10:15:43] [autobuild] :app:compileReleaseAidl
+[2020-11-23 10:15:43] [build] [2020-11-23 10:15:43] [autobuild] :app:compileReleaseRenderscript
+[2020-11-23 10:15:43] [build] [2020-11-23 10:15:43] [autobuild] :app:generateReleaseBuildConfig
+[2020-11-23 10:15:43] [build] [2020-11-23 10:15:43] [autobuild] :app:generateReleaseResValues
+[2020-11-23 10:15:43] [build] [2020-11-23 10:15:43] [autobuild] :app:generateReleaseResources
+[2020-11-23 10:15:44] [build] [2020-11-23 10:15:44] [autobuild] :app:mergeReleaseResources
+[2020-11-23 10:15:44] [build] [2020-11-23 10:15:44] [autobuild] :app:processReleaseManifest
+[2020-11-23 10:15:44] [build] [2020-11-23 10:15:44] [autobuild] :app:processReleaseResources
+[2020-11-23 10:15:44] [build] [2020-11-23 10:15:44] [autobuild] :app:generateReleaseSources
+[2020-11-23 10:15:44] [build] [2020-11-23 10:15:44] [autobuild] :app:incrementalReleaseJavaCompilationSafeguard
+[2020-11-23 10:15:44] [build] [2020-11-23 10:15:44] [autobuild] :app:javaPreCompileRelease
+[2020-11-23 10:15:44] [build] [2020-11-23 10:15:44] [autobuild] :app:compileReleaseJavaWithJavac
+[2020-11-23 10:15:44] [build] [2020-11-23 10:15:44] [autobuild] :app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+[2020-11-23 10:15:45] [build] [2020-11-23 10:15:45] [autobuild] Note: /media/data/muse2/muse2repo_apk_mutation_reach_src/AFH_Download/app/src/main/java/org/afhdownloader/Download.java uses or overrides a deprecated API.
+[2020-11-23 10:15:45] [build] [2020-11-23 10:15:45] [autobuild] Note: Recompile with -Xlint:deprecation for details.
+[2020-11-23 10:15:48] [build] [2020-11-23 10:15:48] [autobuild] :app:compileReleaseNdk UP-TO-DATE
+[2020-11-23 10:15:48] [build] [2020-11-23 10:15:48] [autobuild] :app:compileReleaseSources
+[2020-11-23 10:15:48] [build] [2020-11-23 10:15:48] [autobuild] :app:mergeReleaseShaders
+[2020-11-23 10:15:48] [build] [2020-11-23 10:15:48] [autobuild] :app:compileReleaseShaders
+[2020-11-23 10:15:48] [build] [2020-11-23 10:15:48] [autobuild] :app:generateReleaseAssets
+[2020-11-23 10:15:48] [build] [2020-11-23 10:15:48] [autobuild] :app:mergeReleaseAssets
+[2020-11-23 10:15:49] [build] [2020-11-23 10:15:49] [autobuild] :app:transformClassesWithDexForRelease
+[2020-11-23 10:15:49] [build] [2020-11-23 10:15:49] [autobuild] :app:mergeReleaseJniLibFolders
+[2020-11-23 10:15:49] [build] [2020-11-23 10:15:49] [autobuild] :app:transformNativeLibsWithMergeJniLibsForRelease
+[2020-11-23 10:15:49] [build] [2020-11-23 10:15:49] [autobuild] :app:processReleaseJavaRes UP-TO-DATE
+[2020-11-23 10:15:49] [build] [2020-11-23 10:15:49] [autobuild] :app:transformResourcesWithMergeJavaResForRelease
+[2020-11-23 10:15:50] [build] [2020-11-23 10:15:50] [autobuild] :app:packageRelease
+[2020-11-23 10:15:50] [build] [2020-11-23 10:15:50] [autobuild] :app:assembleRelease
+[2020-11-23 10:15:50] [build] [2020-11-23 10:15:50] [autobuild] :app:assemble
+[2020-11-23 10:15:50] [build] [2020-11-23 10:15:50] [autobuild] BUILD SUCCESSFUL
+[2020-11-23 10:15:50] [build] [2020-11-23 10:15:50] [autobuild] Total time: 26.899 secs
+[2020-11-23 10:15:51] [build-err] Scanning for files in /media/data/muse2/muse2repo_apk_mutation_reach_src/AFH_Download...
+[2020-11-23 10:15:52] [build-err] /media/data/muse2/muse2repo_apk_mutation_reach_src/AFH_Download/codeql-db: Indexing files in in /media/data/muse2/muse2repo_apk_mutation_reach_src/AFH_Download...
+[2020-11-23 10:15:52] [build-err] /media/data/muse2/muse2repo_apk_mutation_reach_src/AFH_Download/codeql-db: Running in /media/data/muse2/muse2repo_apk_mutation_reach_src/AFH_Download: [/media/data/nacoop/codeql-home/codeql/xml/tools/index-files.sh, /media/data/muse2/muse2repo_apk_mutation_reach_src/AFH_Download/codeql-db/working/files-to-index2857872756825204984.list]

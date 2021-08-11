@@ -1,0 +1,88 @@
+[2020-11-23 10:23:01] [build] [2020-11-23 10:23:01] Build directory is /media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/.
+[2020-11-23 10:23:01] [build] [2020-11-23 10:23:01] [autobuild] > chmod +x gradlew
+[2020-11-23 10:23:01] [build] [2020-11-23 10:23:01] [autobuild] > ./gradlew -Dorg.gradle.caching=false --no-daemon -S clean
+[2020-11-23 10:23:08] [build] [2020-11-23 10:23:08] [autobuild] /media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/src/main/javadirectory '/media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes':app:clean
+[2020-11-23 10:23:08] [build] [2020-11-23 10:23:08] [autobuild] BUILD SUCCESSFUL in 6s
+[2020-11-23 10:23:08] [build] [2020-11-23 10:23:08] [autobuild] 1 actionable task: 1 executed
+[2020-11-23 10:23:08] [build] [2020-11-23 10:23:08] [autobuild] > ./gradlew -Dorg.gradle.caching=false --no-daemon -S assemble
+[2020-11-23 10:23:16] [build] [2020-11-23 10:23:16] [autobuild] /media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/src/main/javadirectory '/media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes':app:checkDebugClasspath
+[2020-11-23 10:23:16] [build] [2020-11-23 10:23:16] [autobuild] :app:preBuild UP-TO-DATE
+[2020-11-23 10:23:16] [build] [2020-11-23 10:23:16] [autobuild] :app:preDebugBuild
+[2020-11-23 10:23:16] [build] [2020-11-23 10:23:16] [autobuild] :app:compileDebugAidl NO-SOURCE
+[2020-11-23 10:23:16] [build] [2020-11-23 10:23:16] [autobuild] :app:compileDebugRenderscript
+[2020-11-23 10:23:16] [build] [2020-11-23 10:23:16] [autobuild] :app:checkDebugManifest
+[2020-11-23 10:23:16] [build] [2020-11-23 10:23:16] [autobuild] :app:generateDebugBuildConfig
+[2020-11-23 10:23:16] [build] [2020-11-23 10:23:16] [autobuild] :app:prepareLintJar UP-TO-DATE
+[2020-11-23 10:23:16] [build] [2020-11-23 10:23:16] [autobuild] :app:mainApkListPersistenceDebug
+[2020-11-23 10:23:16] [build] [2020-11-23 10:23:16] [autobuild] :app:generateDebugResValues
+[2020-11-23 10:23:16] [build] [2020-11-23 10:23:16] [autobuild] :app:generateDebugResources
+[2020-11-23 10:23:17] [build] [2020-11-23 10:23:17] [autobuild] :app:mergeDebugResources
+[2020-11-23 10:23:17] [build] [2020-11-23 10:23:17] [autobuild] :app:createDebugCompatibleScreenManifests
+[2020-11-23 10:23:17] [build] [2020-11-23 10:23:17] [autobuild] :app:processDebugManifest
+[2020-11-23 10:23:17] [build] [2020-11-23 10:23:17] [autobuild] :app:splitsDiscoveryTaskDebug
+[2020-11-23 10:23:18] [build] [2020-11-23 10:23:18] [autobuild] :app:processDebugResources
+[2020-11-23 10:23:18] [build] [2020-11-23 10:23:18] [autobuild] :app:generateDebugSources
+[2020-11-23 10:23:18] [build] [2020-11-23 10:23:18] [autobuild] :app:javaPreCompileDebug
+[2020-11-23 10:23:19] [build] [2020-11-23 10:23:19] [autobuild] Note: Some input files use or override a deprecated API.
+[2020-11-23 10:23:19] [build] [2020-11-23 10:23:19] [autobuild] Note: Recompile with -Xlint:deprecation for details.
+[2020-11-23 10:23:26] [build] [2020-11-23 10:23:26] [autobuild] :app:compileDebugJavaWithJavac
+[2020-11-23 10:23:26] [build] [2020-11-23 10:23:26] [autobuild] :app:compileDebugNdk NO-SOURCE
+[2020-11-23 10:23:26] [build] [2020-11-23 10:23:26] [autobuild] :app:compileDebugSources
+[2020-11-23 10:23:26] [build] [2020-11-23 10:23:26] [autobuild] :app:mergeDebugShaders
+[2020-11-23 10:23:26] [build] [2020-11-23 10:23:26] [autobuild] :app:compileDebugShaders
+[2020-11-23 10:23:26] [build] [2020-11-23 10:23:26] [autobuild] :app:generateDebugAssets
+[2020-11-23 10:23:26] [build] [2020-11-23 10:23:26] [autobuild] :app:mergeDebugAssets
+[2020-11-23 10:23:27] [build] [2020-11-23 10:23:27] [autobuild] :app:transformClassesWithJacocoForDebug
+[2020-11-23 10:23:29] [build] [2020-11-23 10:23:29] [autobuild] :app:transformClassesWithDexBuilderForDebug
+[2020-11-23 10:23:30] [build] [2020-11-23 10:23:30] [autobuild] :app:transformDexArchiveWithExternalLibsDexMergerForDebug
+[2020-11-23 10:23:30] [build] [2020-11-23 10:23:30] [autobuild] :app:transformDexArchiveWithDexMergerForDebug
+[2020-11-23 10:23:30] [build] [2020-11-23 10:23:30] [autobuild] :app:mergeDebugJniLibFolders
+[2020-11-23 10:23:31] [build] [2020-11-23 10:23:31] [autobuild] :app:transformNativeLibsWithMergeJniLibsForDebug
+[2020-11-23 10:23:31] [build] [2020-11-23 10:23:31] [autobuild] :app:checkDebugLibraries
+[2020-11-23 10:23:31] [build] [2020-11-23 10:23:31] [autobuild] :app:processDebugJavaRes NO-SOURCE
+[2020-11-23 10:23:31] [build] [2020-11-23 10:23:31] [autobuild] :app:transformResourcesWithMergeJavaResForDebug
+[2020-11-23 10:23:31] [build] [2020-11-23 10:23:31] [autobuild] :app:validateSigningDebug
+[2020-11-23 10:23:32] [build] [2020-11-23 10:23:32] [autobuild] :app:packageDebug
+[2020-11-23 10:23:32] [build] [2020-11-23 10:23:32] [autobuild] :app:assembleDebug
+[2020-11-23 10:23:32] [build] [2020-11-23 10:23:32] [autobuild] :app:checkReleaseClasspath
+[2020-11-23 10:23:32] [build] [2020-11-23 10:23:32] [autobuild] :app:preReleaseBuild
+[2020-11-23 10:23:32] [build] [2020-11-23 10:23:32] [autobuild] :app:compileReleaseAidl NO-SOURCE
+[2020-11-23 10:23:32] [build] [2020-11-23 10:23:32] [autobuild] :app:compileReleaseRenderscript
+[2020-11-23 10:23:32] [build] [2020-11-23 10:23:32] [autobuild] :app:checkReleaseManifest
+[2020-11-23 10:23:32] [build] [2020-11-23 10:23:32] [autobuild] :app:generateReleaseBuildConfig
+[2020-11-23 10:23:32] [build] [2020-11-23 10:23:32] [autobuild] :app:mainApkListPersistenceRelease
+[2020-11-23 10:23:32] [build] [2020-11-23 10:23:32] [autobuild] :app:generateReleaseResValues
+[2020-11-23 10:23:32] [build] [2020-11-23 10:23:32] [autobuild] :app:generateReleaseResources
+[2020-11-23 10:23:33] [build] [2020-11-23 10:23:33] [autobuild] :app:mergeReleaseResources
+[2020-11-23 10:23:33] [build] [2020-11-23 10:23:33] [autobuild] :app:createReleaseCompatibleScreenManifests
+[2020-11-23 10:23:33] [build] [2020-11-23 10:23:33] [autobuild] :app:processReleaseManifest
+[2020-11-23 10:23:33] [build] [2020-11-23 10:23:33] [autobuild] :app:splitsDiscoveryTaskRelease
+[2020-11-23 10:23:33] [build] [2020-11-23 10:23:33] [autobuild] :app:processReleaseResources
+[2020-11-23 10:23:33] [build] [2020-11-23 10:23:33] [autobuild] :app:generateReleaseSources
+[2020-11-23 10:23:33] [build] [2020-11-23 10:23:33] [autobuild] :app:javaPreCompileRelease
+[2020-11-23 10:23:34] [build] [2020-11-23 10:23:34] [autobuild] Note: Some input files use or override a deprecated API.
+[2020-11-23 10:23:34] [build] [2020-11-23 10:23:34] [autobuild] Note: Recompile with -Xlint:deprecation for details.
+[2020-11-23 10:23:37] [build] [2020-11-23 10:23:37] [autobuild] :app:compileReleaseJavaWithJavac
+[2020-11-23 10:23:37] [build] [2020-11-23 10:23:37] [autobuild] :app:compileReleaseNdk NO-SOURCE
+[2020-11-23 10:23:37] [build] [2020-11-23 10:23:37] [autobuild] :app:compileReleaseSources
+[2020-11-23 10:23:40] [build] [2020-11-23 10:23:40] [autobuild] :app:lintVitalRelease
+[2020-11-23 10:23:40] [build] [2020-11-23 10:23:40] [autobuild] :app:mergeReleaseShaders
+[2020-11-23 10:23:40] [build] [2020-11-23 10:23:40] [autobuild] :app:compileReleaseShaders
+[2020-11-23 10:23:40] [build] [2020-11-23 10:23:40] [autobuild] :app:generateReleaseAssets
+[2020-11-23 10:23:40] [build] [2020-11-23 10:23:40] [autobuild] :app:mergeReleaseAssets
+[2020-11-23 10:23:40] [build] [2020-11-23 10:23:40] [autobuild] :app:transformClassesWithDexBuilderForRelease
+[2020-11-23 10:23:41] [build] [2020-11-23 10:23:41] [autobuild] :app:transformDexArchiveWithExternalLibsDexMergerForRelease
+[2020-11-23 10:23:41] [build] [2020-11-23 10:23:41] [autobuild] :app:transformDexArchiveWithDexMergerForRelease
+[2020-11-23 10:23:41] [build] [2020-11-23 10:23:41] [autobuild] :app:mergeReleaseJniLibFolders
+[2020-11-23 10:23:41] [build] [2020-11-23 10:23:41] [autobuild] :app:transformNativeLibsWithMergeJniLibsForRelease
+[2020-11-23 10:23:41] [build] [2020-11-23 10:23:41] [autobuild] :app:checkReleaseLibraries
+[2020-11-23 10:23:41] [build] [2020-11-23 10:23:41] [autobuild] :app:processReleaseJavaRes NO-SOURCE
+[2020-11-23 10:23:41] [build] [2020-11-23 10:23:41] [autobuild] :app:transformResourcesWithMergeJavaResForRelease
+[2020-11-23 10:23:42] [build] [2020-11-23 10:23:42] [autobuild] :app:packageRelease
+[2020-11-23 10:23:42] [build] [2020-11-23 10:23:42] [autobuild] :app:assembleRelease
+[2020-11-23 10:23:42] [build] [2020-11-23 10:23:42] [autobuild] :app:assemble
+[2020-11-23 10:23:42] [build] [2020-11-23 10:23:42] [autobuild] BUILD SUCCESSFUL in 33s
+[2020-11-23 10:23:42] [build] [2020-11-23 10:23:42] [autobuild] 54 actionable tasks: 53 executed, 1 up-to-date
+[2020-11-23 10:23:44] [build-err] Scanning for files in /media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker...
+[2020-11-23 10:23:44] [build-err] /media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/codeql-db: Indexing files in in /media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker...
+[2020-11-23 10:23:44] [build-err] /media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/codeql-db: Running in /media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker: [/media/data/nacoop/codeql-home/codeql/xml/tools/index-files.sh, /media/data/muse2/muse2repo_apk_mutation_reach_src/Timetracker/codeql-db/working/files-to-index14826843944474536876.list]

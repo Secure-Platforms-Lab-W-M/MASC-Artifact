@@ -1,0 +1,34 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.HashMap.newNode(HashMap.java:1750)
+	at java.util.HashMap.putVal(HashMap.java:642)
+	at java.util.HashMap.put(HashMap.java:612)
+	at soot.jimple.toolkits.ide.icfg.JimpleBasedInterproceduralCFG.initializeUnitToOwner(JimpleBasedInterproceduralCFG.java:164)
+	at soot.jimple.toolkits.ide.icfg.JimpleBasedInterproceduralCFG.initializeUnitToOwner(JimpleBasedInterproceduralCFG.java:155)
+	at soot.jimple.toolkits.ide.icfg.JimpleBasedInterproceduralCFG.<init>(JimpleBasedInterproceduralCFG.java:149)
+	at soot.jimple.toolkits.ide.icfg.JimpleBasedInterproceduralCFG.<init>(JimpleBasedInterproceduralCFG.java:141)
+	at soot.jimple.toolkits.ide.icfg.JimpleBasedInterproceduralCFG.<init>(JimpleBasedInterproceduralCFG.java:137)
+	at ideal.IDEALAnalysis.<init>(IDEALAnalysis.java:57)
+	at crypto.typestate.ExtendedIDEALAnaylsis.<init>(ExtendedIDEALAnaylsis.java:44)
+	at crypto.analysis.AnalysisSeedWithSpecification$1.<init>(AnalysisSeedWithSpecification.java:89)
+	at crypto.analysis.AnalysisSeedWithSpecification.<init>(AnalysisSeedWithSpecification.java:89)
+	at crypto.analysis.CryptoScanner$2.createItem(CryptoScanner.java:54)
+	at crypto.analysis.CryptoScanner$2.createItem(CryptoScanner.java:50)
+	at heros.utilities.DefaultValueMap.getOrCreate(DefaultValueMap.java:50)
+	at crypto.analysis.CryptoScanner.getOrCreateSeedWithSpec(CryptoScanner.java:170)
+	at crypto.analysis.CryptoScanner.initialize(CryptoScanner.java:141)
+	at crypto.analysis.CryptoScanner.scan(CryptoScanner.java:82)
+	at crypto.HeadlessCryptoScanner$3.internalTransform(HeadlessCryptoScanner.java:275)
+	at soot.SceneTransformer.transform(SceneTransformer.java:36)
+	at soot.Transform.apply(Transform.java:102)
+	at soot.ScenePack.internalApply(ScenePack.java:35)
+	at soot.Pack.apply(Pack.java:117)
+	at crypto.HeadlessCryptoScanner.analyse(HeadlessCryptoScanner.java:200)
+	at crypto.HeadlessCryptoScanner.exec(HeadlessCryptoScanner.java:167)
+	at crypto.HeadlessCryptoScanner.main(HeadlessCryptoScanner.java:67)
+
+real	2m39.800s
+user	15m18.904s
+sys	0m13.668s

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">(F-Droid) Kaltura Device Info</string>
+    <string name="action_settings">\u25EC*.json can be browsed with FirefoxPC\u25EC...</string>
+    <string name="send_to">Send to</string>
+    <string name="exoweb">\u25EC*.json can be browsed with FirefoxPC\u25EC, it should not include ANY private datas or Ids.\n\nFor MARSHMALLOW_23 and up, old camera classic datas reporting NEEDS camera permission granted.\n\nInitSVC: \u25A0 -> stopped service\nFeatures: ° -> version 0\n\n<a>disclaimer: https://forum.xda-developers.com/android/apps-games/appfoss-googleserviceframework-gsf-t3849908</a></string>
+
+</resources>

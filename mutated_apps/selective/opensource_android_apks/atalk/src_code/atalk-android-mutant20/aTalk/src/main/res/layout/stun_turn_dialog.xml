@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/screen_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <TextView
+            style="@style/MediumFont"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/service_gui_STUN_EDIT_ADDRESS" />
+
+        <EditText
+            android:id="@+id/ipAddress"
+            style="@style/EntryTextView"
+            android:layout_width="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <TextView
+            style="@style/MediumFont"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/service_gui_STUN_EDIT_PORT" />
+
+        <EditText
+            android:id="@+id/serverPort"
+            style="@style/EntryTextView"
+            android:layout_width="match_parent"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/useTurnCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/service_gui_STUN_EDIT_SUPPORT_TURN" />
+
+    <LinearLayout
+        android:id="@+id/turnSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                style="@style/MediumFont"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/service_gui_settings_PROTOCOL" />
+
+            <Spinner
+                android:id="@+id/TURNProtocol"
+                style="@style/SpinnerView"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                style="@style/MediumFont"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/service_gui_STUN_EDIT_TURN_USER" />
+
+            <EditText
+                android:id="@+id/usernameField"
+                style="@style/EntryTextView"
+                android:layout_width="match_parent"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <TextView
+                style="@style/MediumFont"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/service_gui_STUN_EDIT_PASSWORD" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/passwordField"
+                    style="@style/EntryTextView"
+                    android:layout_width="match_parent"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+
+                <CheckBox
+                    android:id="@+id/show_password"
+                    android:button="@drawable/checkbox_password_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/passwordField"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

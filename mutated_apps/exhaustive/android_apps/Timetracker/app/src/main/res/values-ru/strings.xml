@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">A Time Tracker</string>
+    
+    <string name="start">Старт</string>
+    <string name="activity_name">Activity name</string>
+    <string name="add_activity_ok">Add activity</string>
+    <string name="activity_name_required">The activity name is required</string>
+    <string name="start_time_required">Требуется указать время старта</string>
+
+    <string name="change_date_range">Изменить интервал дат</string>
+    <string name="export_view_to_csv">Экспорт в CSV</string>
+    <string name="back_up_to_sd_card">Сохранить на SD карту</string>
+    <string name="restore_from_backup">Восстановить</string>
+
+    <string name="delete_ok">Удалить</string>
+    <string name="delete_activity_title">Delete activity</string>
+    <string name="delete_activity_message">Вы уверены, что хотите удалить \'%s\' и все её записи временных интервалов?</string>
+    <string name="add_activity_title">Add activity</string>
+    <string name="change_view_title">Изменить вид</string>
+    <string name="generate_report_title">Отчёт</string>
+    <string name="select_range">Выбрать интервал…</string>
+    <string name="done">Return to activities</string>
+    <string name="add_time_title">Добавить новый временной интервал</string>
+    <string name="delete_time_message">Вы уверены, что хотите удалить этот временной интервал?</string>
+    <string name="delete_time_title">Удалить временной интервал</string>
+    <string name="start_time_label">Время начала</string>
+    <string name="end_time_label">Время окончания</string>
+    <string name="end_not_greater_than_start">Время окончания должно быть больше, чем время начала</string>
+    <string name="range_error_title">Ошибка временного интервала</string>
+    <string name="report_title">Отчёт за неделю с %1$s по %2$s </string>
+    <string name="week">Неделя %s</string>
+    <string name="title">A Time Tracker (%s)</string>
+    <string name="help">Помощь</string>
+    <string name="export_view">Экспорт</string>
+    <string name="move_time">Assign time to other activity</string>
+    <string name="edit_activity">Edit activity</string>
+    <string name="delete_activity">Delete activity</string>
+    <string name="show_times">Показать времена</string>
+
+    <!--    Settings strings    -->
+    <string name="preferences">Настройки</string>
+    <!-- Settings titles -->
+    <string name="week_start_day">Первый день недели</string>
+    <string name="hour_mode">12/24 часовой режим</string>
+    <string name="font_size">Размер шрифта</string>
+    <string name="concurrency">Multiple concurrently running activities</string>
+    <string name="sound">Звук</string>
+    <string name="vibrate">Вибрация</string>
+    <!-- Settings values -->
+    <string name="sunday">Воскресенье</string>
+    <string name="monday">Понедельник</string>
+    <string name="civilian">1:00 PM</string>
+    <string name="military">13:00</string>
+    <string name="small_font">Маленький</string>
+    <string name="medium_font">Средний</string>
+    <string name="large_font">Большой</string>
+    <string name="concurrent">Activities can run at the same time</string>
+    <string name="exclusive">Only one activity can run at a time</string>
+    <string name="sound_enabled">Звук включён</string>
+    <string name="sound_disabled">Звук отключен</string>
+    <string name="vibrate_enabled">Вибрация включена</string>
+    <string name="vibrate_disabled">Вибрация выключена</string>
+    <string name="time_display">Формат времени</string>
+    <string name="standard_time">стандартный (ЧЧ:ММ)</string>
+    <string name="decimal_time">Десятичная дробь (ЧЧ.чч)</string>
+    <string name="round_report_time">Округлять время в отчётах</string>
+    <string name="round_no">Нет</string>
+    <string name="round_minutes">Округлять до %d минут</string>
+
+    <!-- About dialog strings -->
+    <string name="version">Версия %s</string>
+    <string name="author">Open Source Time Tracker</string>
+    <string name="purpose">TimeTracker помогает вам вести учёт времени, которое
+		вы тратите на различную активность. Например, вы можете записывать сколько времени вы проводите на работе.
+		Приложение позволяет вам просматривать, редактировать и фильтровать временные интервалы. Оно так же
+		позволяет вам создавать отчёты в виде таблиц.</string>
+    <string name="usage">
+	Подробные инструкции вы можете найти на https://github.com/netmackan/ATimeTracker\n\n
+    • Задачи создаются через меню\n
+    • Нажмите на задачу для начала отсчёта времени; нажмите ещё раз, что бы остановить\n
+    • Используйте контекстное меню задачи для просмотра списка временных интервалов\n
+    • Настройки изменяются через меню\n
+    • Отчёт за неделю создаётся через меню\n
+    \n
+	Нажатие на другую задачу переключает отсчёт времени на неё.\n
+    \n
+    Контекстное меню задачи позволяет вам редактировать (изменять имя), удалять
+    (включая всю историю для выбранной задачи!) или просматривать её журнал времён.\n
+    \n
+    <b>Просмотр журнала времён</b>\n
+    \n
+	Журнал времён задачи установлен на тот же отрезок времени, который вы выбрали
+	для главного вида задачи. Поэтому, если вы создадите фильтр задачи на <i>Эту неделю</i>
+	и откроете журнал времён, то вы увидите времена на эту неделю. Для ручной вставки
+	времён в журнал используйте пункт меню <i>Добавить время</i>. Используйте контекстное меню временного интервала,
+	чтобы удалить или отредактировать его.\n
+    \n
+    <b>Обратите внимание</b>, что TimeTracker не защитит вас от создания временных интервалов, пересекающиеся с
+    интервалами в другой (или этой же) задаче.
+    </string>
+    <string name="credits"><b>Разработка</b>\n
+    \n
+    Основано на приложении TimeTracker+ за авторством Шона Е. Рассела (Sean E. Russell).\n
+    Иконка приложения из Tango Project (tango.freedesktop.org).\n
+    Перевод на русский выполнил Денис Гладкий (Denis Gladkiy)\n
+    Перевод на французский язык выполнил Вильфрид Копп (Wilfried Kopp)
+    </string>
+    <string name="export_csv_success">Экспорт CSV на карту памяти завершён.
+        Файл \'%s\'</string>
+    <string name="export_csv_fail">Не удалось экспортировать в CSV. Не могу создать файл.
+        Проверьте, что SD карта вставлена.</string>
+    <string name="success">Успех</string>
+    <string name="failure">Неудача</string>
+    <string name="set_start_day_of_week">Установите день с которого начинается неделя</string>
+    <string name="more">Ещё…</string>
+    <string name="backup_success">Сохранение резервной копии базы данных завершилось. Файл %s</string>
+    <string name="restore_success">Успешное восстановление из резервной копии. %s</string>
+    <string name="backup_failed">Не удалось сохранить резервную копию базы данных. Пожалуйста, сообщите об этой ошибке. %s</string>
+    <string name="restore_failed">Не удалось восстановить базу данных. Пожалуйста, сообщите об этой ошибке. %s</string>
+</resources>

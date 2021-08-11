@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<!--
+
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+
+-->
+
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="Java-Broker-Backup-And-Recovery">
+  <title>Backup And Recovery</title>
+  <section xml:id="Java-Broker-Backup-And-Recovery-Broker">
+    <title>Broker</title>
+    <para>To perform a complete backup whilst the Broker is shutdown, simply copy all the files the
+      exist beneath <literal>\${QPID_WORK}</literal>, assuming all virtualhost nodes and virtualhost
+      are in their standard location, this will copy all configuration and persistent message data. </para>
+    <para>There is currently no safe mechanism to take a complete copy of the entire Broker whilst
+      it is running.</para>
+  </section>
+  <section xml:id="Java-Broker-Backup-And-Recovery-Virtualhost-Node">
+    <title>Virtualhost Node</title>
+    <para>To perform a complete backup of a Virtualhost node whilst it is stopped (or Broker down),
+      simply copy all the files the exist beneath
+        <literal>\${QPID_WORK}/&lt;nodename&gt;/config</literal>, assuming the virtualhost node is in
+      the standard location. This will copy all configuration that belongs to that virtualhost
+      node.</para>
+    <para>The technique for backing up a virtualhost node whilst it is running depends on its
+      type.</para>
+    <section xml:id="Java-Broker-Backup-And-Recovery-Virtualhost-Node-BDB">
+      <title>BDB</title>
+      <para>BDB module includes the "hot" backup utility <literal>org.apache.qpid.server.store.berkeleydb.BDBBackup</literal>.
+        This utility can perform the backup when the broker is running.</para>
+      <para>You can run this class from command line like in an example below:</para>
+      <example>
+        <title>Performing store backup by using <classname>BDBBackup</classname> class
+          directly</title>
+        <cmdsynopsis>
+          <command>java</command>
+          <arg choice="plain">-cp <replaceable>"${QPID_HOME}/lib/*"</replaceable></arg>
+          <arg choice="plain">org.apache.qpid.server.store.berkeleydb.BDBBackup \</arg>
+          <sbr/>
+          <arg choice="plain">-fromdir <replaceable>\${QPID_WORK}/&lt;nodename&gt;/config</replaceable></arg>
+          <arg choice="plain">-todir <replaceable>path/to/backup/folder</replaceable></arg></cmdsynopsis>
+      </example>
+      <para>In the example above BDBBackup utility is called to backup the store at
+          <literal>\${QPID_WORK}/&lt;nodename&gt;/config</literal> and copy store logs into
+          <literal>path/to/backup/folder</literal>.</para>
+    </section>
+    <section xml:id="Java-Broker-Backup-And-Recovery-Virtualhost-Node-BDB-HA">
+      <title>BDB-HA</title>
+      <para>See <xref linkend="Java-Broker-Backup-And-Recovery-Virtualhost-Node-BDB"/></para>
+      <note><para>BDB-HA VirtualHost node backups are node specific. You cannot use the backup of one node to recover a different node. To backup a group a backup of each node needs to be taken separately.</para></note>
+    </section>
+    <section xml:id="Java-Broker-Backup-And-Recovery-Virtualhost-Node-Derby">
+      <title>Derby</title>
+      <para>Not yet supported</para>
+    </section>
+    <section xml:id="Java-Broker-Backup-And-Recovery-Virtualhost-Node-JDBC">
+      <title>JDBC</title>
+      <para>The responsibility for backup is delegated to the database server itself. See the
+        documentation accompanying it. Any technique that takes a consistent snapshot of the
+        database is acceptable.</para>
+    </section>
+    <section xml:id="Java-Broker-Backup-And-Recovery-Virtualhost-Node-JSON">
+      <title>JSON</title>
+      <para>JSON stores its config in a single text file. It can be safely backed up using standard
+        command line tools.</para>
+    </section>
+  </section>
+  <section xml:id="Java-Broker-Backup-And-Recovery-Virtualhost">
+    <title>Virtualhost</title>
+    <para>To perform a complete backup of a Virtualhost whilst it is stopped (or Broker down),
+      simply copy all the files the exist beneath
+        <literal>\${QPID_WORK}/&lt;name&gt;/messages</literal>, assuming the virtualhost is in the
+      standard location. This will copy all messages that belongs to that virtualhost.</para>
+    <para>The technique for backing up a virtualhost whilst it is running depends on its
+      type.</para>
+    <section xml:id="Java-Broker-Backup-And-Recovery-Virtualhost-BDB">
+      <title>BDB</title>
+      <para>Use the same backup utility described above, but use the path
+          <literal>\${QPID_WORK}/&lt;name&gt;/messages</literal> instead.</para>
+    </section>
+    <section xml:id="Java-Broker-Backup-And-Recovery-Virtualhost-Derby">
+      <title>Derby</title>
+      <para>Not yet supported</para>
+    </section>
+    <section xml:id="Java-Broker-Backup-And-Recovery-Virtualhost-JDBC">
+      <title>JDBC</title>
+      <para>The responsibility for backup is delegated to the database server itself. See the
+        documentation accompanying it. Any technique that takes a consistent snapshot of the
+        database is acceptable.</para>
+    </section>
+    <section xml:id="Java-Broker-Backup-And-Recovery-Virtualhost-Provided">
+      <title>Provided</title>
+      <para>The contents of the virtualhost will be backed up as part of virtualhost node that
+        contains it.</para>
+    </section>
+    <section xml:id="Java-Broker-Backup-And-Recovery-Virtualhost-BDBHA">
+      <title>BDB-HA</title>
+      <para>The contents of the virtualhost will be backed up as part of virtualhost node that
+        contains it.</para>
+    </section>
+  </section>
+
+</chapter>

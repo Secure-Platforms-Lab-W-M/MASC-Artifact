@@ -1,0 +1,116 @@
+Apache Qpid Broker-J
+Copyright 2006-2020 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+###############################################
+
+Apache Derby
+Copyright 2004-2016 The Apache Software Foundation
+
+Portions of Derby were originally developed by
+International Business Machines Corporation and are
+licensed to the Apache Software Foundation under the
+"Software Grant and Corporate Contribution License Agreement",
+informally known as the "Derby CLA".
+The following copyright notice(s) were affixed to portions of the code
+with which this file is now or was at one time distributed
+and are placed here unaltered.
+
+(C) Copyright 1997,2004 International Business Machines Corporation.  All rights reserved.
+
+(C) Copyright IBM Corp. 2003.
+
+###############################################
+
+==============================================================
+ Jetty Web Container
+ Copyright 1995-2017 Mort Bay Consulting Pty Ltd.
+==============================================================
+
+The Jetty Web Container is Copyright Mort Bay Consulting Pty Ltd
+unless otherwise noted.
+
+Jetty is dual licensed under both
+
+  * The Apache 2.0 License
+    http://www.apache.org/licenses/LICENSE-2.0.html
+
+      and
+
+  * The Eclipse Public 1.0 License
+    http://www.eclipse.org/legal/epl-v10.html
+
+Jetty may be distributed under either license.
+
+The javax.servlet package used was sourced from the Apache
+Software Foundation and is distributed under the apache 2.0
+license.
+
+The UnixCrypt.java code implements the one way cryptography used by
+Unix systems for simple password protection.  Copyright 1996 Aki Yoshida,
+modified April 2001  by Iris Van den Broeke, Daniel Deville.
+Permission to use, copy, modify and distribute UnixCrypt
+for non-commercial or commercial purposes and without fee is
+granted provided that the copyright notice appears in all copies.
+
+###############################################
+
+GlassFish Java Servlet API 3.1.0
+Copyright (C) 2002-2017, Oracle  and/or its affiliates.
+
+###############################################
+
+Apache Commons CLI
+Copyright (c) 2001-2009 The Apache Software Foundation
+
+###############################################
+
+Apache Commons BCEL
+Copyright (c) 2004-2015 The Apache Software Foundation
+
+###############################################
+
+Jackson JSON processor
+Copyright (c) 2009-2016 FasterXML, LLC. All rights reserved
+
+###############################################
+
+Google Core Libraries for Java
+Copyright (c) 2008-2017 The Guava Authors
+
+###############################################
+
+BoneCP Core Library
+Copyright (c) 2009-2011 Wallace Wadge
+
+###############################################
+
+Dojo Toolkit
+Copyright (c) 2005-2017, The Dojo Foundation
+
+###############################################
+
+dgrid
+Copyright (c) 2010-2016, The Dojo Foundation
+
+###############################################
+
+dstore
+Copyright (c) 2010-2016, The Dojo Foundationt)
+
+###############################################
+
+slf4j-api
+Copyright (c) 2004-2017 QOS.ch
+
+###############################################
+
+Logback
+Copyright (c) 1999-2017, QOS.ch
+
+###############################################
+
+Oracle Berkeley DB Java Edition
+Copyright (C) 2002-2017, Oracle  and/or its affiliates.

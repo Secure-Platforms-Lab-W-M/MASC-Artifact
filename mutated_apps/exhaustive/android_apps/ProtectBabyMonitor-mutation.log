@@ -1,0 +1,91 @@
+In file: StartActivity.java
+Input operator: REACHABILITY
+mutation-0: StartActivity.onCreate
+mutation-1: 1.onClick
+mutation-2: 1.onClick
+In file: MonitorActivity.java
+Input operator: REACHABILITY
+mutation-3: MonitorActivity.serviceConnection
+mutation-4: 1.run
+mutation-5: MonitorActivity.serviceConnection
+mutation-6: MonitorActivity.serviceConnection
+mutation-7: MonitorActivity.serviceConnection
+mutation-8: MonitorActivity.onCreate
+mutation-9: 1.run
+mutation-10: 1.run
+mutation-11: 1.run
+mutation-12: 1.run
+mutation-13: 1.run
+mutation-14: 1.run
+mutation-15: 1.run
+mutation-16: 1.run
+mutation-17: 1.run
+mutation-18: 1.run
+mutation-19: 1.run
+mutation-20: 1.run
+mutation-21: MonitorActivity.onDestroy
+mutation-22: MonitorActivity.onDestroy
+mutation-23: MonitorActivity.onCreateOptionsMenu
+mutation-24: MonitorActivity.onOptionsItemSelected
+mutation-25: MonitorActivity.onOptionsItemSelected
+mutation-26: MonitorActivity.registerService
+mutation-27: 1.onServiceRegistered
+mutation-28: 1.run
+mutation-29: 1.onRegistrationFailed
+mutation-30: 1.onServiceUnregistered
+mutation-31: 1.onUnregistrationFailed
+mutation-32: MonitorActivity.unregisterService
+mutation-33: MonitorActivity.unregisterService
+In file: DiscoverActivity.java
+Input operator: REACHABILITY
+mutation-34: DiscoverActivity.onCreate
+mutation-35: 1.onClick
+mutation-36: 1.onClick
+mutation-37: DiscoverActivity.loadDiscoveryViaMdns
+mutation-38: DiscoverActivity.loadDiscoveryViaAddress
+mutation-39: 1.onClick
+mutation-40: 1.onClick
+mutation-41: 1.onClick
+mutation-42: 1.onClick
+mutation-43: DiscoverActivity.onDestroy
+mutation-44: DiscoverActivity.onDestroy
+mutation-45: DiscoverActivity.startServiceDiscovery
+mutation-46: 1.onItemClick
+mutation-47: 1.onDiscoveryStarted
+mutation-48: 1.onServiceFound
+mutation-49: 1.onServiceFound
+mutation-50: 1.onServiceFound
+mutation-51: 1.onResolveFailed
+mutation-52: 1.onServiceResolved
+mutation-53: 1.run
+mutation-54: 1.onServiceFound
+mutation-55: 1.onServiceLost
+mutation-56: 1.onDiscoveryStopped
+mutation-57: 1.onStartDiscoveryFailed
+mutation-58: 1.onStopDiscoveryFailed
+mutation-59: DiscoverActivity.connectToChild
+mutation-60: ServiceInfoWrapper.ServiceInfoWrapper
+mutation-61: ServiceInfoWrapper.getAddress
+mutation-62: ServiceInfoWrapper.getPort
+mutation-63: ServiceInfoWrapper.getName
+mutation-64: ServiceInfoWrapper.toString
+In file: ListenActivity.java
+Input operator: REACHABILITY
+mutation-65: ListenActivity.streamAudio
+mutation-66: ListenActivity.streamAudio
+mutation-67: ListenActivity.streamAudio
+mutation-68: ListenActivity.streamAudio
+mutation-69: ListenActivity.streamAudio
+mutation-70: ListenActivity.onCreate
+mutation-71: 1.run
+mutation-72: 1.run
+mutation-73: 1.run
+mutation-74: 1.run
+mutation-75: 1.run
+mutation-76: 1.run
+mutation-77: 1.run
+mutation-78: ListenActivity.onDestroy
+mutation-79: ListenActivity.playAlert
+mutation-80: ListenActivity.playAlert
+mutation-81: 1.onCompletion
+mutation-82: ListenActivity.playAlert

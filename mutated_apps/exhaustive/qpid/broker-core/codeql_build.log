@@ -1,0 +1,543 @@
+[2020-11-27 10:58:15] [build] [2020-11-27 10:58:15] Build directory is .
+[2020-11-27 10:58:16] [build] [2020-11-27 10:58:16] [autobuild] > mvn clean package -f "pom.xml" -B -V -e -Dfindbugs.skip -Dcheckstyle.skip -Dpmd.skip=true -Denforcer.skip -Dmaven.javadoc.skip -DskipTests -Dmaven.test.skip.exec -Dlicense.skip=true -Drat.skip=true 
+[2020-11-27 10:58:16] [build] [2020-11-27 10:58:16] [autobuild] Apache Maven 3.3.9
+[2020-11-27 10:58:16] [build] [2020-11-27 10:58:16] [autobuild] Maven home: /usr/share/maven
+[2020-11-27 10:58:16] [build] [2020-11-27 10:58:16] [autobuild] Java version: 1.8.0_232, vendor: Oracle Corporation
+[2020-11-27 10:58:16] [build] [2020-11-27 10:58:16] [autobuild] Java home: /media/data/helper_tools/sdkman/candidates/java/8.0.232-open/jre
+[2020-11-27 10:58:16] [build] [2020-11-27 10:58:16] [autobuild] Default locale: en_US, platform encoding: UTF-8
+[2020-11-27 10:58:16] [build] [2020-11-27 10:58:16] [autobuild] OS name: "linux", version: "4.4.0-189-generic", arch: "amd64", family: "unix"
+[2020-11-27 10:58:17] [build] [2020-11-27 10:58:17] [autobuild] [INFO] Error stacktraces are turned on.
+[2020-11-27 10:58:17] [build] [2020-11-27 10:58:17] [autobuild] [INFO] Scanning for projects...
+[2020-11-27 10:58:18] [build] [2020-11-27 10:58:18] [autobuild] [INFO]                                                                         
+[2020-11-27 10:58:18] [build] [2020-11-27 10:58:18] [autobuild] [INFO] ------------------------------------------------------------------------
+[2020-11-27 10:58:18] [build] [2020-11-27 10:58:18] [autobuild] [INFO] Building Apache Qpid Broker-J Core 8.0.1-SNAPSHOT
+[2020-11-27 10:58:18] [build] [2020-11-27 10:58:18] [autobuild] [INFO] ------------------------------------------------------------------------
+[2020-11-27 10:58:18] [build] [2020-11-27 10:58:18] [autobuild] [INFO] 
+[2020-11-27 10:58:18] [build] [2020-11-27 10:58:18] [autobuild] [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ qpid-broker-core ---
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild] [INFO] Deleting /media/data/muse2/muse2repo_qpid_reachability/broker-core/target
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild] [INFO] 
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild] [INFO] --- buildnumber-maven-plugin:1.4:create (default) @ qpid-broker-core ---
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild] [INFO] Executing: /bin/sh -c cd '/media/data/muse2/muse2repo_qpid_reachability/broker-core' && 'git' 'rev-parse' '--verify' 'HEAD'
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild] [INFO] Working directory: /media/data/muse2/muse2repo_qpid_reachability/broker-core
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild] [INFO] Storing buildNumber: fac9510ccb672ba2c9fad44bca9d36f812863794 at timestamp: 1606492699334
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild] [INFO] Storing buildScmBranch: qpid_reachability
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild] [INFO] 
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild] [INFO] --- maven-antrun-plugin:1.8:run (output-test-properties) @ qpid-broker-core ---
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild] [INFO] Executing tasks
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild] main:
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild]      [echo] Qpid Test Profile Properties
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild]      [echo] [profile] java-mms.1-0
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild]      [echo] [profile.broker.version] 1.0
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild]      [echo] [profile.virtualhostnode.type] Memory
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild]      [echo] [profile.virtualhostnode.context.blueprint] {"type":"ProvidedStore","globalAddressDomains":"${qpid.globalAddressDomains}"}
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild]      [echo] [profile.test_receive_timeout] 1000
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild] [INFO] Executed tasks
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild] [INFO] 
+[2020-11-27 10:58:19] [build] [2020-11-27 10:58:19] [autobuild] [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-maven-version) @ qpid-broker-core ---
+[2020-11-27 10:58:20] [build] [2020-11-27 10:58:20] [autobuild] [INFO] Skipping Rule Enforcement.
+[2020-11-27 10:58:20] [build] [2020-11-27 10:58:20] [autobuild] [INFO] 
+[2020-11-27 10:58:20] [build] [2020-11-27 10:58:20] [autobuild] [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-minimum-versions) @ qpid-broker-core ---
+[2020-11-27 10:58:20] [build] [2020-11-27 10:58:20] [autobuild] [INFO] Skipping Rule Enforcement.
+[2020-11-27 10:58:20] [build] [2020-11-27 10:58:20] [autobuild] [INFO] 
+[2020-11-27 10:58:20] [build] [2020-11-27 10:58:20] [autobuild] [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-versions-standard-properties) @ qpid-broker-core ---
+[2020-11-27 10:58:20] [build] [2020-11-27 10:58:20] [autobuild] [INFO] Skipping Rule Enforcement.
+[2020-11-27 10:58:20] [build] [2020-11-27 10:58:20] [autobuild] [INFO] 
+[2020-11-27 10:58:20] [build] [2020-11-27 10:58:20] [autobuild] [INFO] --- maven-enforcer-plugin:3.0.0-M2:enforce (enforce-enableAmqp0x) @ qpid-broker-core ---
+[2020-11-27 10:58:20] [build] [2020-11-27 10:58:20] [autobuild] [INFO] Skipping Rule Enforcement.
+[2020-11-27 10:58:20] [build] [2020-11-27 10:58:20] [autobuild] [INFO] 
+[2020-11-27 10:58:20] [build] [2020-11-27 10:58:20] [autobuild] [INFO] --- jacoco-maven-plugin:0.8.5:prepare-agent (default-prepare-agent) @ qpid-broker-core ---
+[2020-11-27 10:58:20] [build] [2020-11-27 10:58:20] [autobuild] [INFO] argLine set to -javaagent:/home/nacoop/.m2/repository/org/jacoco/org.jacoco.agent/0.8.5/org.jacoco.agent-0.8.5-runtime.jar=destfile=/media/data/muse2/muse2repo_qpid_reachability/broker-core/target/jacoco.exec -Xmx512m
+[2020-11-27 10:58:20] [build] [2020-11-27 10:58:20] [autobuild] [INFO] 
+[2020-11-27 10:58:20] [build] [2020-11-27 10:58:20] [autobuild] [INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ qpid-broker-core ---
+[2020-11-27 10:58:22] [build] [2020-11-27 10:58:22] [autobuild] [INFO] 
+[2020-11-27 10:58:22] [build] [2020-11-27 10:58:22] [autobuild] [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ qpid-broker-core ---
+[2020-11-27 10:58:22] [build] [2020-11-27 10:58:22] [autobuild] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2020-11-27 10:58:22] [build] [2020-11-27 10:58:22] [autobuild] [INFO] Copying 1 resource
+[2020-11-27 10:58:22] [build] [2020-11-27 10:58:22] [autobuild] [INFO] Copying 2 resources
+[2020-11-27 10:58:22] [build] [2020-11-27 10:58:22] [autobuild] [INFO] Copying 18 resources
+[2020-11-27 10:58:22] [build] [2020-11-27 10:58:22] [autobuild] [INFO] Copying 3 resources
+[2020-11-27 10:58:22] [build] [2020-11-27 10:58:22] [autobuild] [INFO] 
+[2020-11-27 10:58:22] [build] [2020-11-27 10:58:22] [autobuild] [INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ qpid-broker-core ---
+[2020-11-27 10:58:22] [build] [2020-11-27 10:58:22] [autobuild] [INFO] Compiling 780 source files to /media/data/muse2/muse2repo_qpid_reachability/broker-core/target/classes
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [WARNING] unknown enum constant com.google.j2objc.annotations.ReflectionSupport.Level.FULL
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild]   reason: class file for com.google.j2objc.annotations.ReflectionSupport$Level not found
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.model.adapter.FileBasedGroupProviderImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.queue.SortedQueueImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.virtualhostnode.JsonVirtualHostNodeImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.virtualhost.ProvidedStoreVirtualHostImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.exchange.FanoutExchangeImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.virtualhostnode.RedirectingVirtualHostImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.virtualhostalias.VirtualHostNameAliasImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.FileKeyStoreImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.queue.LastValueQueueImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.queue.StandardQueueImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.auth.manager.PlainAuthenticationProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.FileTrustStoreImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.model.port.AmqpPortImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.exchange.TopicExchangeImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.auth.manager.ScramSHA1AuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.AllowAllAccessControlProviderImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.auth.manager.Base64MD5PasswordDatabaseAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.group.GroupMemberImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.auth.manager.ScramSHA256AuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.virtualhostalias.DefaultVirtualHostAliasImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.auth.manager.PlainPasswordDatabaseAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.group.GroupImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.group.cloudfoundry.CloudFoundryDashboardManagementGroupProviderImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.ManagedPeerCertificateTrustStoreImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.AutoGeneratedSelfSignedKeyStoreImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.queue.PriorityQueueImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.model.BrokerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.virtualhostalias.HostNameAliasImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.NonJavaTrustStoreImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.virtualhostalias.SystemAddressSpaceAliasImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.exchange.HeadersExchangeImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.auth.manager.KerberosAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.auth.manager.ManagedUser
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.virtualhostalias.PatternMatchingAliasImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.SiteSpecificTrustStoreImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.exchange.DirectExchangeImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.virtualhostnode.RedirectingVirtualHostNodeImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.model.port.HttpPortImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.NonJavaKeyStoreImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.auth.manager.ExternalAuthenticationManagerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.auth.manager.MD5AuthenticationProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.auth.manager.SimpleLDAPAuthenticationManagerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.group.GroupProviderImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.security.auth.manager.AnonymousAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.port.AmqpPort
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.port.HttpPort
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.AutoGeneratedSelfSignedKeyStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.NonJavaKeyStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.FileTrustStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.NonJavaTrustStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.FileKeyStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.AllowAllAccessControlProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.ManagedPeerCertificateTrustStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.SiteSpecificTrustStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.virtualhost.ProvidedStoreVirtualHostImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.virtualhostnode.RedirectingVirtualHostNode
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.virtualhostnode.JsonVirtualHostNode
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.BrokerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.VirtualHostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.HostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.SystemAddressSpaceAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.DefaultVirtualHostAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.PatternMatchingAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.BrokerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.VirtualHostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.HostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.SystemAddressSpaceAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.DefaultVirtualHostAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.PatternMatchingAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.BrokerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.VirtualHostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.HostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.SystemAddressSpaceAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.DefaultVirtualHostAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.PatternMatchingAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.AutoGeneratedSelfSignedKeyStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.NonJavaKeyStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.FileTrustStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.NonJavaTrustStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.FileKeyStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.AllowAllAccessControlProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.ManagedPeerCertificateTrustStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.SiteSpecificTrustStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.BrokerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.VirtualHostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.HostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.SystemAddressSpaceAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.DefaultVirtualHostAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.PatternMatchingAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.BrokerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.VirtualHostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.HostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.SystemAddressSpaceAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.DefaultVirtualHostAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.PatternMatchingAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.port.AmqpPort
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.port.HttpPort
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.BrokerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.VirtualHostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.HostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.SystemAddressSpaceAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.DefaultVirtualHostAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.PatternMatchingAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.BrokerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.VirtualHostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.HostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.SystemAddressSpaceAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.DefaultVirtualHostAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.PatternMatchingAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.Base64MD5PasswordDatabaseAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.AnonymousAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.KerberosAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.PlainPasswordDatabaseAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.MD5AuthenticationProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.PlainAuthenticationProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.SimpleLDAPAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ScramSHA1AuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ManagedUser
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ExternalAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ScramSHA256AuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.BrokerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.VirtualHostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.HostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.SystemAddressSpaceAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.DefaultVirtualHostAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.PatternMatchingAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.BrokerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.VirtualHostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.HostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.SystemAddressSpaceAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.DefaultVirtualHostAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.PatternMatchingAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.exchange.DirectExchange
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.exchange.FanoutExchange
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.exchange.TopicExchange
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.exchange.HeadersExchange
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.exchange.DirectExchange
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.exchange.FanoutExchange
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.exchange.TopicExchange
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.exchange.HeadersExchange
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.queue.SortedQueue
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.queue.PriorityQueue
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.queue.StandardQueue
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.queue.LastValueQueue
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.Base64MD5PasswordDatabaseAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.AnonymousAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.KerberosAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.PlainPasswordDatabaseAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.MD5AuthenticationProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.PlainAuthenticationProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.SimpleLDAPAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ScramSHA1AuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ManagedUser
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ExternalAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ScramSHA256AuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.Base64MD5PasswordDatabaseAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.AnonymousAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.KerberosAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.PlainPasswordDatabaseAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.MD5AuthenticationProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.PlainAuthenticationProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.SimpleLDAPAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ScramSHA1AuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ManagedUser
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ExternalAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ScramSHA256AuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.BrokerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.VirtualHostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.HostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.SystemAddressSpaceAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.DefaultVirtualHostAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.PatternMatchingAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.Base64MD5PasswordDatabaseAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.AnonymousAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.KerberosAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.PlainPasswordDatabaseAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.MD5AuthenticationProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.PlainAuthenticationProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.SimpleLDAPAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ScramSHA1AuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ManagedUser
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ExternalAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ScramSHA256AuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.BrokerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.VirtualHostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.HostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.SystemAddressSpaceAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.DefaultVirtualHostAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.PatternMatchingAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.BrokerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.VirtualHostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.HostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.SystemAddressSpaceAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.DefaultVirtualHostAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.PatternMatchingAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.BrokerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.VirtualHostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.HostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.SystemAddressSpaceAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.DefaultVirtualHostAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.PatternMatchingAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.group.GroupMemberImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.group.GroupImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.group.GroupProviderImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.AutoGeneratedSelfSignedKeyStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.NonJavaKeyStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.FileTrustStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.NonJavaTrustStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.FileKeyStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.AllowAllAccessControlProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.ManagedPeerCertificateTrustStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.SiteSpecificTrustStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.BrokerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.VirtualHostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.HostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.SystemAddressSpaceAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.DefaultVirtualHostAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.PatternMatchingAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.BrokerImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.VirtualHostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.HostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.SystemAddressSpaceAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.DefaultVirtualHostAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.PatternMatchingAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.Base64MD5PasswordDatabaseAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.AnonymousAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.KerberosAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.PlainPasswordDatabaseAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.MD5AuthenticationProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.PlainAuthenticationProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.virtualhostnode.RedirectingVirtualHostNode
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.AutoGeneratedSelfSignedKeyStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.NonJavaTrustStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.AllowAllAccessControlProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.SiteSpecificTrustStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.HostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.SystemAddressSpaceAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.Base64MD5PasswordDatabaseAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.AnonymousAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.KerberosAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.MD5AuthenticationProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.PlainAuthenticationProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ScramSHA1AuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ManagedUser
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ExternalAuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.auth.manager.ScramSHA256AuthenticationManager
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.AutoGeneratedSelfSignedKeyStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.NonJavaKeyStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.AllowAllAccessControlProvider
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.security.SiteSpecificTrustStore
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.JsonSystemConfigImpl
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.VirtualHostNameAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] looking for org.apache.qpid.server.model.DefaultVirtualHostAlias
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Copying 2 resources
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Copying 5 resources
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Copying 3 resources
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] 
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ qpid-broker-core ---
+[2020-11-27 10:59:19] [build] [2020-11-27 10:59:19] [autobuild] [INFO] Compiling 235 source files to /media/data/muse2/muse2repo_qpid_reachability/broker-core/target/test-classes
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.virtualhost.TestMemoryVirtualHost
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.model.testmodels.singleton.TestSingletonImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] Generating factory file for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.virtualhost.ProvidedStoreVirtualHostImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.virtualhost.TestMemoryVirtualHost
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.singleton.TestSingletonImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.singleton.TestSingletonImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.virtualhostnode.JsonVirtualHostNode
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.virtualhostnode.RedirectingVirtualHostNode
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.virtualhostnode.TestVirtualHostNode
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureSensorImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestPetrolEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestKitCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestDigitalInstrumentPanelImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestElecEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestStandardCarImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestHybridEngineImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] looking for org.apache.qpid.server.model.testmodels.hierarchy.TestTemperatureGaugeImpl
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] Generating CO registration for package 'org.apache.qpid.server.virtualhost'
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] Generating CO registration for package 'org.apache.qpid.server.model.testmodels.hierarchy'
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] Generating CO registration for package 'org.apache.qpid.server.virtualhostnode'
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] Generating CO registration for package 'org.apache.qpid.server.model.testmodels.lifecycle'
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] Generating CO registration for package 'org.apache.qpid.server.model.testmodels.singleton'
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] Generating service file for org.apache.qpid.server.plugin.ConfiguredObjectRegistration
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] Generating service file for org.apache.qpid.server.plugin.ConfiguredObjectTypeFactory
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [WARNING] /media/data/muse2/muse2repo_qpid_reachability/broker-core/src/test/java/org/apache/qpid/server/model/testmodels/hierarchy/AbstractConfiguredObjectTest.java: unknown enum constant com.google.j2objc.annotations.ReflectionSupport.Level.FULL
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild]   reason: class file for com.google.j2objc.annotations.ReflectionSupport$Level not found
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] /media/data/muse2/muse2repo_qpid_reachability/broker-core/src/test/java/org/apache/qpid/server/store/AbstractDurableConfigurationStoreTestCase.java: Some input files use unchecked or unsafe operations.
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] /media/data/muse2/muse2repo_qpid_reachability/broker-core/src/test/java/org/apache/qpid/server/store/AbstractDurableConfigurationStoreTestCase.java: Recompile with -Xlint:unchecked for details.
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] 
+[2020-11-27 10:59:48] [build] [2020-11-27 10:59:48] [autobuild] [INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ qpid-broker-core ---
+[2020-11-27 10:59:49] [build] [2020-11-27 10:59:49] [autobuild] [INFO] Tests are skipped.
+[2020-11-27 10:59:49] [build] [2020-11-27 10:59:49] [autobuild] [INFO] 
+[2020-11-27 10:59:49] [build] [2020-11-27 10:59:49] [autobuild] [INFO] --- maven-jar-plugin:3.1.0:jar (default-jar) @ qpid-broker-core ---
+[2020-11-27 10:59:49] [build] [2020-11-27 10:59:49] [autobuild] [INFO] Building jar: /media/data/muse2/muse2repo_qpid_reachability/broker-core/target/qpid-broker-core-8.0.1-SNAPSHOT.jar
+[2020-11-27 10:59:49] [build] [2020-11-27 10:59:49] [autobuild] [INFO] 
+[2020-11-27 10:59:49] [build] [2020-11-27 10:59:49] [autobuild] [INFO] --- maven-jar-plugin:3.1.0:test-jar (default) @ qpid-broker-core ---
+[2020-11-27 10:59:50] [build] [2020-11-27 10:59:50] [autobuild] [INFO] Building jar: /media/data/muse2/muse2repo_qpid_reachability/broker-core/target/qpid-broker-core-8.0.1-SNAPSHOT-tests.jar
+[2020-11-27 10:59:50] [build] [2020-11-27 10:59:50] [autobuild] [INFO] 
+[2020-11-27 10:59:50] [build] [2020-11-27 10:59:50] [autobuild] [INFO] --- maven-site-plugin:3.7.1:attach-descriptor (attach-descriptor) @ qpid-broker-core ---
+[2020-11-27 10:59:50] [build] [2020-11-27 10:59:50] [autobuild] [INFO] Skipping because packaging 'jar' is not pom.
+[2020-11-27 10:59:50] [build] [2020-11-27 10:59:50] [autobuild] [INFO] ------------------------------------------------------------------------
+[2020-11-27 10:59:50] [build] [2020-11-27 10:59:50] [autobuild] [INFO] BUILD SUCCESS
+[2020-11-27 10:59:50] [build] [2020-11-27 10:59:50] [autobuild] [INFO] ------------------------------------------------------------------------
+[2020-11-27 10:59:50] [build] [2020-11-27 10:59:50] [autobuild] [INFO] Total time: 01:32 min
+[2020-11-27 10:59:50] [build] [2020-11-27 10:59:50] [autobuild] [INFO] Finished at: 2020-11-27T10:59:50-05:00
+[2020-11-27 10:59:50] [build] [2020-11-27 10:59:50] [autobuild] [INFO] Final Memory: 62M/1395M
+[2020-11-27 10:59:50] [build] [2020-11-27 10:59:50] [autobuild] [INFO] ------------------------------------------------------------------------
+[2020-11-27 10:59:52] [build-err] Scanning for files in /media/data/muse2/muse2repo_qpid_reachability/broker-core...
+[2020-11-27 10:59:52] [build-err] /media/data/muse2/muse2repo_qpid_reachability/broker-core/codeql-db: Indexing files in in /media/data/muse2/muse2repo_qpid_reachability/broker-core...
+[2020-11-27 10:59:52] [build-err] /media/data/muse2/muse2repo_qpid_reachability/broker-core/codeql-db: Running in /media/data/muse2/muse2repo_qpid_reachability/broker-core: [/media/data/nacoop/codeql-home/codeql/xml/tools/index-files.sh, /media/data/muse2/muse2repo_qpid_reachability/broker-core/codeql-db/working/files-to-index9132125759936049346.list]

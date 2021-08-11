@@ -1,0 +1,71 @@
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+<div>
+    <form data-dojo-attach-point="createQueryForm" data-dojo-type="dijit/form/Form" id="${id}_createQueryForm">
+        <div>
+            <div class="clear">
+                <label class="formLabel-labelCell tableContainer-labelCell" for="${id}_queryScope"
+                       id="${id}_scopeLabel">Associate query with*: </label>
+                <select id="${id}_queryScope" class="formLabel-controlCell tableContainer-valueCell"
+                        data-dojo-attach-point="scope"
+                        data-dojo-type='dijit/form/FilteringSelect'
+                        data-dojo-props="name: 'scope', placeHolder: 'Query scope', required: true, intermediateChanges: true"
+                        title="Determines where the query is stored and where to query for the objects.
+If Broker is selected then any entity within the Broker can be queried.
+If Virtual Host is selected then only entities on the selected Virtual Host can be queried.
+Queries associated with a Virtual Host will be replicated across HA nodes.
+Queries can be added to the dashboards having the same associated object."
+                        promptMessage="Determines where the query is stored and where to query for the objects.
+If Broker is selected then any entity within the Broker can be queried.
+If Virtual Host is selected then only entities on the selected Virtual Host can be queried.
+Queries associated with a Virtual Host will be replicated across HA nodes.
+Queries can be added to the dashboards having the same associated object.">
+                </select>
+            </div>
+            <div class="clear">
+                <label class="formLabel-labelCell tableContainer-labelCell" for="${id}_queryCategory"
+                       id="${id}_categoryLabel">What to query for*: </label>
+                <select id="${id}_queryCategory" class="formLabel-controlCell tableContainer-valueCell"
+                        data-dojo-attach-point="category"
+                        data-dojo-type='dijit/form/ComboBox'
+                        data-dojo-props=" name: 'scope',
+                                          placeHolder: 'Query category',
+                                          required: true,
+                                          title: 'Determines the category of configured objects to select.',
+                                          promptMessage: 'Determines the category of configured objects to select.',
+                                          intermediateChanges: true">
+                    <option value="queue" selected="true">Queue</option>
+                    <option value="connection">Connection</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="dijitDialogPaneActionBar">
+            <input id="${id}_cancelButton"
+                   data-dojo-attach-point="cancelButton"
+                   data-dojo-type="dijit/form/Button"
+                   type="button"
+                   label="Cancel"/>
+            <input id="${id}_okButton"
+                   data-dojo-attach-point="okButton"
+                   data-dojo-type="dijit/form/Button"
+                   type="submit" label="Ok"/>
+        </div>
+    </form>
+</div>

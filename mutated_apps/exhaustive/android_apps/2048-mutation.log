@@ -1,0 +1,24 @@
+In file: MainActivity.java
+Input operator: REACHABILITY
+mutation-0: MainActivity.onCreate
+mutation-1: MainActivity.onCreate
+mutation-2: MainActivity.onCreate
+mutation-3: MainActivity.onCreate
+mutation-4: MainActivity.onCreate
+mutation-5: MainActivity.onCreate
+mutation-6: MainActivity.onCreate
+mutation-7: MainActivity.onCreate
+mutation-8: 1.onTouch
+mutation-9: 1.onTouch
+mutation-10: 1.onTouch
+mutation-11: MainActivity.onSaveInstanceState
+mutation-12: MainActivity.onCreateOptionsMenu
+mutation-13: MainActivity.saveFullScreen
+mutation-14: MainActivity.isFullScreen
+mutation-15: MainActivity.applyFullScreen
+mutation-16: MainActivity.applyFullScreen
+mutation-17: MainActivity.applyFullScreen
+mutation-18: MainActivity.onConfigurationChanged
+mutation-19: MainActivity.onBackPressed
+mutation-20: MainActivity.onBackPressed
+mutation-21: MainActivity.onBackPressed

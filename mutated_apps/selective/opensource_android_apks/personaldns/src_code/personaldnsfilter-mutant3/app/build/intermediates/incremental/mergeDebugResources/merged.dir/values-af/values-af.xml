@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="EnableAdfilter">In staat stel sluit</string>
+    <string name="EnableAutoStart">Outoloop</string>
+    <string name="EnableConfigCheckBox">Gevorderde instellings</string>
+    <string name="active">Aktiewe</string>
+    <string name="addFilter">"Voeg filter"</string>
+    <string name="appWhitelistCheckBox">App witlys</string>
+    <string name="app_name">DNSfilter</string>
+    <string name="backupConfig">Friends opset</string>
+    <string name="category">Kategorie</string>
+    <string name="cfgBackupRestore">Friends en die herstel van</string>
+    <string name="dnsCfgConfigDialogTitle">DNS server configuration</string>
+    <string name="dnsLabel">DNS:</string>
+    <string name="editAdditionalHostsCheckBox">Konfigureer bykomende hosts</string>
+    <string name="editFilterDialogTitle">Wysig filter</string>
+    <string name="editFilterLoadCheckBox">Konfigureer filter bywerking</string>
+    <string name="filterReloadBtnLabel">Herlaai filter</string>
+    <string name="filterUpdateDays">Filter update interval in die dae:</string>
+    <string name="keepAwakeCheckBox">Toestel slaap voorkom</string>
+    <string name="listenPortLabel">Poort:</string>
+    <string name="manualDNSCheck">Skakel DNS-bediener ontdekking - Handleiding DNS-bedieners hieronder:</string>
+    <string name="name">Naam</string>
+    <string name="proxyModeCheckBox">DNS proxy af sonder plaaslike SKYNPRIVAATNETWERK</string>
+    <string name="removeFilter">"Verwyder die filter"</string>
+    <string name="restoreBackup">Die herstel van friends</string>
+    <string name="restoreDefault">Die herstel van die standaard opset</string>
+    <string name="rootModeCheckBox">Die wortel af sonder plaaslike SKYNPRIVAATNETWERK</string>
+    <string name="shortText">Kort teks</string>
+    <string name="startBtnLabel">Herbegin</string>
+    <string name="stopBtnLabel">Sluit</string>
+</resources>

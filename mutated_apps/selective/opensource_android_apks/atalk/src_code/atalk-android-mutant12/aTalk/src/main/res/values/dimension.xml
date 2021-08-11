@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="account_list_row_height">40dp</dimen>
+    <dimen name="avatar_height">184dp</dimen>
+    <dimen name="between_padding">8dp</dimen>
+    <dimen name="button_height">44dp</dimen>
+    <dimen name="call_field_width">300dp</dimen>
+    <dimen name="chat_arrow_height">20dp</dimen>
+    <dimen name="chat_arrow_top">10dp</dimen>
+    <dimen name="chat_avatar">40dp</dimen>
+    <dimen name="chat_text_margin">3dp</dimen>
+    <dimen name="contact_list_row_height">64dp</dimen>
+    <dimen name="contact_list_group_row_height">30dp</dimen>
+    <dimen name="contact_list_avatar_width">64dp</dimen>
+    <dimen name="expanded_item_height">100dp</dimen>
+    <dimen name="enc_list_drag_e_x">50dp</dimen>
+    <dimen name="enc_list_drag_s_x">0dp</dimen>
+    <dimen name="infocard_padding">16dp</dimen>
+    <dimen name="label_padding">4dp</dimen>
+    <dimen name="label_text_size">16sp</dimen>
+    <dimen name="list_item_height">75dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="margin_dialog">20dp</dimen>
+    <dimen name="media_preview_size">64dp</dimen>
+    <dimen name="min_button_height">32dp</dimen>
+    <dimen name="min_button_width">32dp</dimen>
+    <dimen name="radian_gradient">300dp</dimen>
+    <dimen name="screen_padding">20dp</dimen>
+    <dimen name="screen_padding_small">10dp</dimen>
+    <dimen name="text_entry_height">32dp</dimen>
+    <dimen name="item_height">40dp</dimen>
+    <dimen name="screen_padding_land">40dp</dimen>
+
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">64dp</dimen>
+    <dimen name="IconSize">18sp</dimen>
+
+    <!-- Dexter -->
+    <dimen name="title_font_size">30sp</dimen>
+    <dimen name="icon_size">50dp</dimen>
+    <dimen name="header_margin">10dp</dimen>
+    <dimen name="permission_button_margin_vertical">4dp</dimen>
+    <dimen name="permission_feedback_margin_vertical">@dimen/permission_button_margin_vertical</dimen>
+    <dimen name="button_width">100dp</dimen>
+    <dimen name="button_text_size">13sp</dimen>
+    <dimen name="feedback_width">140dp</dimen>
+    <dimen name="feedback_height">@dimen/button_height</dimen>
+    <dimen name="feedback_margin_left">10dp</dimen>
+    <dimen name="all_permission_button_margin_right">10dp</dimen>
+
+</resources>

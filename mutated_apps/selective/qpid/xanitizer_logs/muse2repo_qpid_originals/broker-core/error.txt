@@ -1,0 +1,29 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 1384120320 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /media/data/muse2/tools/xanitizer/hs_err_pid31784.log
+XanitizerHeadless:
+JVM terminated. Exit code=1
+/media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/bin/java
+-Dosgi.parentClassloader=ext
+-Xms100m
+-Xmx3000m
+-jar /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3//plugins/org.eclipse.equinox.launcher_1.5.200.v20180922-1751.jar
+-os linux
+-ws gtk
+-arch x86_64
+-launcher /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/XanitizerHeadless
+-name XanitizerHeadless
+--launcher.library /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3//plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.900.v20180922-1751/eclipse_1801.so
+-startup /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3//plugins/org.eclipse.equinox.launcher_1.5.200.v20180922-1751.jar
+--launcher.overrideVmargs
+-exitdata 10fe8019
+-consoleLog
+-application com.rigsit.xanitizer.combined.headless rootDirectory=/media/data/muse2/muse2repo_qpid_originals/broker-core/ projectName=broker-core findingsListReportOutputFile=/media/data/muse2/tools/xanitizer/qpid_select_results/muse2repo_qpid_originals/broker-core/broker-core.pdf overwriteConfigFile=true
+-vm /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3/jre/bin/java
+-vmargs
+-Dosgi.parentClassloader=ext
+-Xms100m
+-Xmx3000m
+-jar /media/data/muse2/tools/xanitizer/Xanitizer-4.3.3//plugins/org.eclipse.equinox.launcher_1.5.200.v20180922-1751.jar 

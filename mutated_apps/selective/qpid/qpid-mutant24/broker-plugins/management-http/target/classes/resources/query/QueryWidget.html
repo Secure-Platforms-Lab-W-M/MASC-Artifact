@@ -1,0 +1,132 @@
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<div>
+    <div data-dojo-type="dijit/Toolbar">
+        <div id="saveButton_${id}"
+             data-dojo-type="dijit/form/Button"
+             data-dojo-attach-point="saveButton"
+             data-dojo-props="iconClass: 'dijitIconSave'">Save</div>
+        <div data-dojo-attach-point="saveButtonTooltip"
+             data-dojo-type="dijit/Tooltip"
+             data-dojo-props="connectId:'saveButton_${id}',position:['below']">Save and share query</div>
+        <div id="cloneButton_${id}"
+             data-dojo-type="dijit/form/Button"
+             data-dojo-attach-point="cloneButton"
+             data-dojo-props="iconClass: 'dijitIconCopy'">Clone</div>
+        <div data-dojo-attach-point="cloneButtonTooltip"
+             data-dojo-type="dijit/Tooltip"
+             data-dojo-props="connectId:'cloneButton_${id}',position:['below']">Clone query into new one<br/>Note, group information is not cloned into new query.</div>
+        <div id="deleteButton_${id}"
+             data-dojo-type="dijit/form/Button"
+             data-dojo-attach-point="deleteButton"
+             data-dojo-props="iconClass: 'trashIcon ui-icon'">Delete</div>
+        <div data-dojo-attach-point="deleteButtonTooltip"
+             data-dojo-type="dijit/Tooltip"
+             data-dojo-props="connectId:'deleteButton_${id}',position:['below']">Delete query from preferences and close the tab</div>
+        <div id="exportButton_${id}"
+             data-dojo-type="dijit/form/Button"
+             data-dojo-attach-point="exportButton"
+             data-dojo-props="iconClass: 'exportIcon ui-icon'">Export</div>
+        <div data-dojo-attach-point="exportButtonTooltip"
+             data-dojo-type="dijit/Tooltip"
+             data-dojo-props="connectId:'exportButton_${id}',position:['below']">Export query results into CSV format</div>
+        <div data-dojo-type="dijit/form/Button"
+             data-dojo-attach-point="modeButton"
+             data-dojo-props="iconClass: 'advancedViewIcon ui-icon', title:'Switch to \'Advanced View\' search using SQL-like expressions'"
+             class="alignRight">Advanced View</div>
+        <div class="clear"></div>
+    </div>
+
+    <form data-dojo-attach-point="searchForm" data-dojo-type="dijit/form/Form">
+    <div class="dijit queryToolBar">
+        <span data-dojo-attach-point="standardSearch">
+            <span data-dojo-type="qpid/management/query/DropDownSelect"
+                 data-dojo-attach-point="standardSelectChooser"
+                 data-dojo-props="title: 'Select fields to display',label:'Columns'">
+            </span>
+
+            <span data-dojo-type="qpid/management/query/DropDownSelect"
+                  data-dojo-attach-point="standardWhereChooser"
+                  data-dojo-props="title: 'Specify Filtering Conditions',label:'Conditions'">
+            </span>
+            <input type="submit"
+                 data-dojo-type="dijit/form/Button"
+                 data-dojo-attach-point="standardSearchButton"
+                 data-dojo-props="title: 'Search', label:'Search'"/>
+            <div data-dojo-attach-point="standardWhereExpressionBuilder"
+                 data-dojo-type="qpid/management/query/WhereExpression" class="dijitToolbar"></div>
+        </span>
+
+        <table data-dojo-attach-point="advancedSearch"  class="advancedSearchItem" style="display:none">
+            <colgroup>
+                <col span="1" class="searchLabel"/>
+                <col span="1" class="autoWidth"/>
+                <col span="1" class="searchLabel"/>
+            </colgroup>
+            <tr>
+                <td class="searchLabel" colspan="1">Select:</td>
+                <td class="advancedSearchField" colspan="2">
+                    <textarea id="advancedSelect_${id}"
+                              data-dojo-attach-point="advancedSelect" type="text"
+                              data-dojo-type="dijit/form/SimpleTextarea"
+                              data-dojo-props=" name: 'select',
+                                                 rows: 1,
+                                                 placeHolder: 'comma separated attribute names',
+                                                 title: 'Enter comma separated list of attributes to select',
+                                                 promptMessage: 'Comma separated list of attributes to select, for example: name,type,description'" rows="1"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="searchLabel" colspan="1">Where: </td>
+                <td class="advancedSearchField" colspan="2">
+                    <textarea id="advancedWhere_${id}"
+                              data-dojo-attach-point="advancedWhere" type="text"
+                              data-dojo-type="dijit/form/SimpleTextarea"
+                              data-dojo-props=" name: 'where',
+                                                rows: 1,
+                                                placeHolder: 'where expression',
+                                                title: 'Enter where conditions using sql syntax',
+                                                promptMessage: 'Use JMS filter syntax to specify where conditions'" rows="1"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="searchLabel" colspan="1">Order: </td>
+                <td class="advancedSearchField" colspan="1">
+                    <textarea id="advancedOrderBy_${id}"
+                              data-dojo-attach-point="advancedOrderBy" type="text"
+                              data-dojo-type="dijit/form/SimpleTextarea"
+                              data-dojo-props=" name: 'orderBy',
+                                                rows: 1,
+                                                placeHolder: 'order expression',
+                                                title: 'Enter order by conditions using sql syntax',
+                                                promptMessage: 'Use JMS filter syntax to specify where conditions'" rows="1"></textarea>
+                </td>
+                <td colspan="1">
+                    <input type="submit"
+                         data-dojo-type="dijit/form/Button"
+                         data-dojo-attach-point="advancedSearchButton"
+                         data-dojo-props="title: 'Search', label:'Search'"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+    <div data-dojo-attach-point="queryResultGrid"  jsid='grid'></div>
+</div>

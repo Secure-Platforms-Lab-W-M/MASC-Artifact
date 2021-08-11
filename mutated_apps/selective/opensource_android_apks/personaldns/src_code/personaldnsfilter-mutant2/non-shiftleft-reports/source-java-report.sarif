@@ -1,0 +1,84 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Java Source Analyzer",
+          "version": "1.0.0-scan",
+          "fullName": "Java Source Analyzer"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "pmd",
+            "-no-cache",
+            "--failOnViolation",
+            "false",
+            "-language",
+            "java",
+            "-d",
+            "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant2",
+            "-r",
+            "/media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant2/reports/source-java-report.csv",
+            "-f",
+            "csv",
+            "-R",
+            "/tmp/.mount_scanWH34Vs/usr/src/tools_config/rules-pmd.xml"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "pmd -no-cache --failOnViolation false -language java -d /media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant2 -r /media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant2/reports/source-java-report.csv -f csv -R /tmp/.mount_scanWH34Vs/usr/src/tools_config/rules-pmd.xml",
+          "endTimeUtc": "2020-11-25T18:34:32Z",
+          "workingDirectory": {
+            "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant2"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2020-11-25T18:34:32Z",
+          "workingDirectory": {
+            "uri": "file:///media/data/muse2/muse2repo_personaldns/src_code/personaldnsfilter-mutant2"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 0,
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "ccf02ad2-4c25-4605-af14-69bc1bb2dc2f"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "",
+          "repositoryUri": "",
+          "revisionId": ""
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "ccf02ad2-4c25-4605-af14-69bc1bb2dc2f",
+      "runGuid": "ec64685b-5707-40bb-b8e0-98da8fb6d515"
+    }
+  ]
+}

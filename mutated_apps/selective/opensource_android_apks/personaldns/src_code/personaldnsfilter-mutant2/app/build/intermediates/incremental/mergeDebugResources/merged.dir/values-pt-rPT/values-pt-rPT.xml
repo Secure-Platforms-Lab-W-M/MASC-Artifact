@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="EnableAdfilter">Activar o bloqueio</string>
+    <string name="EnableAutoStart">Inicialização automática</string>
+    <string name="EnableConfigCheckBox">Configurações avançadas</string>
+    <string name="active">Activo</string>
+    <string name="addFilter">"Adicionar filtro"</string>
+    <string name="appWhitelistCheckBox">Lista de permissões do aplicativo</string>
+    <string name="app_name">Filtro DNS</string>
+    <string name="backupConfig">Configuração da copia de segurança</string>
+    <string name="category">Categoria</string>
+    <string name="cfgBackupRestore">Cópia de segurança e restauração</string>
+    <string name="dnsCfgConfigDialogTitle">Configuração do servidor de dns</string>
+    <string name="dnsLabel">DNS:</string>
+    <string name="editAdditionalHostsCheckBox">Configurar anfitriões adicionais</string>
+    <string name="editFilterDialogTitle">Editar filtro</string>
+    <string name="editFilterLoadCheckBox">Configurar atualização de filtro</string>
+    <string name="filterReloadBtnLabel">Recarregar filtro</string>
+    <string name="filterUpdateDays">Intervalo de actualização do filtro em dias:</string>
+    <string name="keepAwakeCheckBox">Impedir o dispositivo de adormecer</string>
+    <string name="listenPortLabel">Porta:</string>
+    <string name="manualDNSCheck">Desative a descoberta do servidor DNS - Servidores DNS manuais abaixo:</string>
+    <string name="name">Nome</string>
+    <string name="proxyModeCheckBox">Modo DNS proxy sem VPN local</string>
+    <string name="removeFilter">"Remover filtro"</string>
+    <string name="restoreBackup">Restauração da copia de segurança</string>
+    <string name="restoreDefault">Restaurar configuração padrão</string>
+    <string name="rootModeCheckBox">Modo root sem VPN local</string>
+    <string name="shortText">Texto curto</string>
+    <string name="startBtnLabel">Reiniciar</string>
+    <string name="stopBtnLabel">Fechar</string>
+</resources>

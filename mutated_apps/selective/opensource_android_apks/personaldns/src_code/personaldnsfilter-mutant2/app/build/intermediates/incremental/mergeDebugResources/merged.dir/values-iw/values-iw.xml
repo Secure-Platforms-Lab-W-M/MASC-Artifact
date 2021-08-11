@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="EnableAdfilter">אפשר חסימת פרסומות</string>
+    <string name="EnableAutoStart">הפעלה אוטומטית</string>
+    <string name="EnableConfigCheckBox">הגדרות מתקדמות</string>
+    <string name="active">פעיל</string>
+    <string name="addFilter">"הוסף מסנן"</string>
+    <string name="appWhitelistCheckBox">רשימה לבנה</string>
+    <string name="app_name">DNSfilter</string>
+    <string name="backupConfig">צור גיבוי</string>
+    <string name="category">קטגוריה</string>
+    <string name="cfgBackupRestore">גבה ושחזר</string>
+    <string name="dnsCfgConfigDialogTitle">הגדר שרתי DNS</string>
+    <string name="dnsLabel">DNS:</string>
+    <string name="editAdditionalHostsCheckBox">הגדר מסננים נוספים</string>
+    <string name="editFilterDialogTitle">ערוך מסנן</string>
+    <string name="editFilterLoadCheckBox">הגדר עדכון מסנן</string>
+    <string name="filterReloadBtnLabel">רענן מסננים</string>
+    <string name="filterUpdateDays">תזמון עדכון מסננים (ימים):</string>
+    <string name="keepAwakeCheckBox">מנע מצב שינה</string>
+    <string name="listenPortLabel">יציאה:</string>
+    <string name="manualDNSCheck">בטל זיהוי אוטומטי של שרתי DNS והגדר שרתי DNS באופן ידני:</string>
+    <string name="name">שם</string>
+    <string name="proxyModeCheckBox">מצב פרוקסי DNS ללא VPN מקומי</string>
+    <string name="removeFilter">"הסר מסנן"</string>
+    <string name="restoreBackup">שחזר גיבוי</string>
+    <string name="restoreDefault">שחזר הגדרות ברירת מחדל</string>
+    <string name="rootModeCheckBox">מצב שורש ללא VPN מקומי</string>
+    <string name="shortText">טקסט קצר</string>
+    <string name="startBtnLabel">הפעל</string>
+    <string name="stopBtnLabel">עצור וצא</string>
+</resources>

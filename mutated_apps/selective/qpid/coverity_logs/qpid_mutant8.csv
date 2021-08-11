@@ -1,0 +1,16 @@
+﻿Type,Impact,Category,File,Function,Count
+WMI: Inefficient Map Iterator,Low,SpotBugs: Performance,/src/main/java/org/apache/qpid/tools/RestStressTestClient.java,RestStressTestClient$RestClient.getPostDataString,1
+Unlogged security exception,Medium,Medium impact security,/src/main/java/org/apache/qpid/tools/RestStressTestClient.java,RestStressTestClient.configureTrustAll,2
+SIC: Inner class could be made static,Low,SpotBugs: Performance,/src/main/java/org/apache/qpid/tools/MemoryConsumptionTestClient.java,,1
+REC: RuntimeException capture,Low,SpotBugs: Dodgy code,/src/main/java/org/apache/qpid/tools/StressTestClient.java,StressTestClient.runTest,1
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/src/main/java/org/apache/qpid/tools/RestStressTestClient.java,"org.apache.qpid.tools.RestStressTestClient$#1.checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String)",1
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/src/main/java/org/apache/qpid/tools/RestStressTestClient.java,"org.apache.qpid.tools.RestStressTestClient$#1.checkClientTrusted(java.security.cert.X509Certificate[], java.lang.String)",1
+FS: Format string problem,Low,SpotBugs: Bad practice,/src/main/java/org/apache/qpid/tools/StressTestClient.java,StressTestClient.getInitialContext,1
+Dm: Dubious method used,Low,SpotBugs: Bad practice,/src/main/java/org/apache/qpid/tools/MemoryConsumptionTestClient.java,MemoryConsumptionTestClient.runTest,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/main/java/org/apache/qpid/tools/MemoryConsumptionTestClient.java,MemoryConsumptionTestClient.generateCSV,1
+Division or modulo by zero,Medium,Integer handling issues,/src/main/java/org/apache/qpid/tools/StressTestClient.java,StressTestClient.runTest,1
+Dereference null return value,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/tools/StressTestClient.java,StressTestClient.getInitialContext,1
+Dereference null return value,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/tools/MemoryConsumptionTestClient.java,MemoryConsumptionTestClient.getInitialContext,1
+Dereference null return value,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/tools/MemoryConsumptionTestClient.java,MemoryConsumptionTestClient.runTest,1
+Dereference null return value,Medium,Null pointer dereferences,/src/main/java/org/apache/qpid/tools/RestStressTestClient.java,RestStressTestClient$RestClient.performCramMD5Authentication,1
+Bad use of null-like value,Medium,Null pointer dereferences,/bin/plot.py,parseCSV,1

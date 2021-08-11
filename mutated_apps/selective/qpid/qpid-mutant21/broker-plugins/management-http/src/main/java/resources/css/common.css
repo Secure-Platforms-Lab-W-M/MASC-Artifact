@@ -1,0 +1,841 @@
+/*
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ *
+ */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Lucida Sans,Lucida Grande,Arial !important;
+    font-size: 13px !important;
+    background: white;
+    color: #333;
+}
+
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#pageLayout, #main {
+    height: 100%;
+    padding: 0;
+    margin: 0px;
+    overflow: visible;
+}
+
+#main {
+    width:80%;
+    padding:5px;
+    overflow: visible;
+}
+
+#tree {
+    width:20%;
+}
+
+#tree, #tree .dijitTree {
+    overflow: visible;
+}
+
+.clear {
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+	-webkit-transition: background-color 0.2s linear;
+	border-radius:4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+	background-color: #E4F2FF;
+	background-position: center top;
+	background-repeat: repeat-x;
+	border: 1px solid #769DC0;
+	padding: 2px 8px 4px;
+	font-size:1em;
+}
+
+button:hover {
+	background-color: #AFD9FF;
+	color: #000000;
+}
+
+h1 {
+	font-size:1.5em;
+}
+
+.header {
+    height:100px;
+    background:url("../images/qpid-logo.png") left center no-repeat;
+    float: left;
+    width: 300px;
+}
+
+.logo {
+    text-align:left;
+    vertical-align: top;
+    font-weight:600;
+    height: 90px;
+    padding-left: 200px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    font-size:14px;
+    font-family:"Verdana", cursive;
+}
+
+.footer {
+    color:#000000;
+    clear:both;
+    text-align:center;
+    font-size:11px;
+    line-height:17px;
+
+}
+
+.formBox {
+    margin: 10px 5px;
+}
+
+.formBox legend {
+    font-weight: bold;
+    margin-left: 5px;
+    background-color: white;
+}
+
+.formBox fieldset {
+    padding: 5px;
+    border: .1em solid lightgrey;
+    border-radius: 5px;
+}
+
+.formLabel-labelCell, .tableContainer-labelCell {
+    width: 300px;
+    font-weight: bold;
+}
+
+.tableContainer-labelCell {
+    float: none;
+}
+
+.formLabel-labelCell {
+    margin-left: 5px;
+    float: left;
+   }
+
+.formValue-valueCell {
+    float: left;
+}
+
+.formBox .addPermittedNodeList {
+    width: 15em;
+}
+
+.formBox .addPermittedNodeList select {
+    width: 100%;
+}
+
+.formLabel-controlCell {
+  padding: 1px;
+  float: left;
+}
+
+
+.columnDefDialogButtonIcon {
+  background: url("../dojo/dojox/grid/enhanced/resources/images/sprite_icons.png") no-repeat;
+    background-position: -260px 2px;
+    width: 14px;
+    height: 14px;
+}
+
+.logViewerIcon {
+  background: url("../images/log-viewer.png") no-repeat;
+    width: 14px;
+    height: 16px;
+}
+
+.downloadLogsIcon {
+  background: url("../images/download.png") no-repeat;
+    width: 14px;
+    height: 14px;
+}
+
+.dojoxGridFBarClearFilterButtontnIcon
+{
+    background: url("../dojo/dojox/grid/enhanced/resources/images/sprite_icons.png") no-repeat;
+    background-position: -120px -18px;
+    width: 14px;
+    height: 14px;
+}
+
+.rowNumberLimitIcon
+{
+    background: url("../dojo/dojox/grid/enhanced/resources/images/sprite_icons.png") no-repeat;
+    background-position: -240px -18px;
+    width: 14px;
+    height: 14px;
+}
+
+.gridRefreshIcon
+{
+    background: url("../images/refresh.png") no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+.gridAutoRefreshIcon
+{
+    background: url("../images/auto-refresh.png") no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+.redBackground tr{ background-color:#ffdcd7 !important; background-image: none !important;}
+.yellowBackground tr{background-color:#fbfddf !important; background-image: none !important;}
+.grayBackground tr{background-color:#eeeeee !important; background-image: none !important;}
+.dojoxGridRowOdd.grayBackground tr{ background-color:#e9e9e9 !important; background-image: none !important;}
+.dojoxGridRowOdd.yellowBackground tr{background-color:#fafdd5 !important; background-image: none !important;}
+.dojoxGridRowOdd.redBackground tr{background-color:#f4c1c1 !important; background-image: none !important;}
+
+.preferencesIcon
+{
+    background: url("../images/gear.png") no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+.helpIcon
+{
+    background: url("../images/help.png") no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+.loadingIcon
+{
+    background: url("../dojo/dojox/image/resources/images/loading.gif") no-repeat;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    display: inline-block;
+}
+
+.loadedIcon
+{
+    background: url("../dojo/dijit/icons/images/commonIconsObjActEnabled_rtl.png") no-repeat;
+    background-position: -352px -0px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.fileUpload
+{
+    float: right;
+    padding: 5px;
+}
+
+.infoMessage
+{
+    padding: 5px;
+    font-style: italic;
+}
+
+.alignLeft {
+    float: left !important;
+    display: inline-block;
+}
+
+.alignRight {
+    float: right !important;
+    display: inline-block;
+}
+
+.multiLineValue {
+    display: inline-block;
+}
+
+.haOptionLabel {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.editNoteBanner {
+    font-style: italic;
+    margin: 0px 0px 10px 5px;
+}
+
+#errorDialog {
+    overflow: auto;
+    width: 400px;
+}
+
+.errorDialogErrorPrimary {
+    font-weight: bold;
+    margin-bottom: 10px;
+    max-width: 350px;
+}
+
+.errorDialogErrorSecondary {
+    font-style: italic;
+}
+
+/* Required to keep queue type radio buttons on one line when dialog adds scrollbar */
+#addQueue {
+    overflow: auto;
+    width: 630px;
+}
+
+#authenticatedUserControls {
+    max-width: 300px;
+}
+
+.claro .dojoxCheckedMultiSelectWrapper  {
+    height: auto;
+}
+
+.claro .dojoxCheckedMultiSelect .dojoxCheckedMultiSelectWrapper {
+    border: none;
+    background-color: transparent;
+}
+
+.dijitMultiSelect {
+    width : 14.75em;
+}
+
+.highlightedText
+{
+    font-weight: bold;
+}
+
+.normalText
+{
+    font-weight: normal;
+}
+
+.contextEditor
+{
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.editorPanel
+{
+    margin:5px;
+}
+
+.dialogGrid
+{
+    width:100%;
+    max-height: 140px;
+    overflow: auto;
+}
+
+.qpidDialogPaneActionBar
+{
+    margin-left:-10px;
+    margin-right:-10px;
+    margin-bottom:-10px;
+    margin-top:5px;
+}
+
+.warningPane
+{
+    font-weight: bold;
+    color: #f44444;
+    padding: 1em 0em 1em 3.2em;
+    background: url("../images/warning-yellow.svg") left center no-repeat;
+    background-size: 3em;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+.infoPane
+{
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 5px 5px 0px 1.2em;
+    font-style: italic;
+    background:url("../images/notification.svg") no-repeat left center;
+    background-size: 1em;
+    width:100%;
+    height:100%;
+}
+
+.dgrid-column-selected
+{
+    width: 2em;
+}
+
+.dgrid-column-attributeName
+{
+   width: auto;
+}
+
+.selectGrid
+{
+    height:20em;
+}
+
+.criteriaPanelTitle
+{
+    padding:0px !important;
+}
+
+.criteriaPanelTitleText
+{
+    vertical-align: middle !important;
+}
+
+.criteriaPanelTitleButton
+{
+  margin: 0px !important;
+}
+
+.criteriaControl
+{
+    margin-bottom: 5px !important;
+}
+
+.criteriaControl.dijitTextBoxReadOnly
+{
+  width:100%;
+}
+
+.readOnly.dijitTextBoxReadOnly,
+.claro .readOnly.dijitTextBoxReadOnly,
+.claro .readOnly.dijitTextBoxReadOnlyFocused .dijitInputContainer
+{
+  background-color: #efefef !important;
+  background-image: none !important;
+  border-color: #d3d3d3;
+}
+
+.advancedSearchItem
+{
+   width: 100%;
+   margin: 0px;
+   padding: 2px 0px 2px 0px;
+   vertical-align: middle;
+}
+.searchLabel {
+   text-align: right;
+   vertical-align: middle;
+   padding: 0.2em;
+   min-width: 3.5em;
+}
+
+col.searchLabel, td.searchLabel {
+     width: 3.5em;
+}
+
+td.advancedSearchField, col.autoWidth {
+    width: auto;
+}
+
+.claro.qpid #message-content-preview textarea,
+.claro.qpid .formLabel-controlCell textarea,
+.claro.qpid .advancedSearchField textarea {
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    resize: vertical;
+}
+
+.claro.qpid .advancedSearchField textarea {
+    height: 1.6em;
+}
+
+.criteriaCondition
+{
+  vertical-align: top;
+}
+
+.informationMessage
+{
+    font-weight: bold;
+    padding: 1em 0em 1em 3.2em;
+    background: url("../images/notification.svg") left center no-repeat;
+    background-size: 3em;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+.confirmationMessage
+{
+    font-weight: bold;
+    padding: 1em 0em 1em 3.2em;
+    background: url("../images/question.svg") left center no-repeat;
+    background-size: 3em;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+.queryToolBar {
+    background-color: #efefef;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #b5bcc7;
+    padding: 2px 0 2px 4px;
+}
+
+.queryToolBar .dijitToolbar
+{
+    padding: 0px; !important;
+    border-bottom: none !important;
+    background-image:  none !important;
+    background-color: inherit !important;
+    background-repeat: inherit !important;
+}
+
+.claro.qpid .dgrid-header .dgrid-cell { font-weight: normal; }
+
+.virtualHostConnections .field-selected { width: 2em; }
+.virtualHostConnections .field-name { width: auto; }
+.virtualHostConnections .field-principal { width: 10% }
+.virtualHostConnections .field-port { width: 10% }
+.virtualHostConnections .field-transport { width: 10% }
+.virtualHostConnections .field-sessionCount { width: 10% }
+.virtualHostConnections .field-msgInRate { width: 10% }
+.virtualHostConnections .field-bytesInRate { width: 10% }
+.virtualHostConnections .field-msgOutRate { width: 10% }
+.virtualHostConnections .field-bytesOutRate { width: 10% }
+
+.virtualHostQueues .field-selected { width: 2em; }
+.virtualHostQueues .field-name { width: auto; }
+.virtualHostQueues .field-type { width: 10%; }
+.virtualHostQueues .field-consumerCount { width: 10% }
+.virtualHostQueues .field-queueDepthMessages { width: 10% }
+.virtualHostQueues .field-queueDepthBytes { width: 10% }
+
+.virtualHostExchanges .field-selected { width: 2em; }
+.virtualHostExchanges .field-name { width: auto; }
+.virtualHostExchanges .field-type { width: 10%; }
+.virtualHostExchanges .field-bindingCount { width: 10% }
+
+.virtualHostLoggers .field-selected { width: 2em; }
+.virtualHostLoggers .field-name { width: auto; }
+.virtualHostLoggers .field-type { width: 10%; }
+.virtualHostLoggers .field-warnCount { width: 10% }
+.virtualHostLoggers .field-errorCount { width: 10% }
+
+.queueConsumers .field-name { width: 30%; }
+.queueConsumers .field-distributionMode { width: 10% }
+.queueConsumers .field-connectionName { width: 10% }
+.queueConsumers .field-connectionPrincipal { width: 10% }
+.queueConsumers .field-unacknowledgedMessages { width: 10% }
+.queueConsumers .field-unacknowledgedBytes { width: 10% }
+.queueConsumers .field-msgOutRate { width: 10% }
+.queueConsumers .field-bytesOutRate { width: 10% }
+
+.connectionConsumers .field-name { width: 30%; }
+.connectionConsumers .field-distributionMode { width: 10% }
+.connectionConsumers .field-queueName { width: 20% }
+.connectionConsumers .field-unacknowledgedMessages { width: 10% }
+.connectionConsumers .field-unacknowledgedBytes { width: 10% }
+.connectionConsumers .field-msgOutRate { width: 10% }
+.connectionConsumers .field-bytesOutRate { width: 10% }
+
+.connectionSessions .field-name { width: 50%; }
+.connectionSessions .field-consumerCount { width: 25% }
+.connectionSessions .field-unacknowledgedMessages { width: 25% }
+
+.radioButtonIndent {
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.claro.qpid .dgrid-pagination .dgrid-page-link {
+    color: #5D88AF;
+    font-weight: normal;
+}
+
+.claro.qpid .dgrid-pagination .dgrid-page-disabled {
+    color: black;
+    font-weight: bold;
+}
+
+.claro.qpid  .dgrid-hider-toggle {
+      background-position: -32px -192px;
+}
+
+.claro #login.dijitToolbar {
+    padding-bottom: 5px;
+    padding-top: 4px;
+}
+
+.userIcon.ui-icon {
+    background-position: -146px -98px;
+}
+
+.advancedViewIcon.ui-icon {
+    background-position: -176px -112px;
+    width: 16px;
+    height: 16px;
+}
+
+.trashIcon.ui-icon {
+    background-position: -180px -98px;
+}
+
+.exportIcon.ui-icon {
+    background-position: -112px -112px;
+}
+
+.claro .searchBox {
+    padding-right: 16px;
+    padding-left: 16px;
+    position: relative;
+    width: 12.5em;
+}
+
+.claro .searchBox span.search.ui-icon {
+    width: 16px;
+    height: 16px;
+    z-index: 1000;
+    background-position: -160px -112px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.claro .searchBox a.clear.ui-icon {
+    display: block;
+    overflow: hidden;
+    text-indent: -1000px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1000;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    background-position: -80px -128px;
+}
+
+.claro .searchBox a.clear:hover {
+    background: url('../dojo/dgrid/css/images/ui-icons_ffffff_256x240.png')  no-repeat;
+    background-position: -80px -128px;
+    background-color: #D3D3D3;
+}
+
+.includeNoDataWarning .dgrid-no-data {
+    color: #aaa;
+    font-size: 3em;
+    padding: 3em;
+    text-align: center;
+}
+
+.claro .dojoxPortletIcon.preferenceAccessIcon,
+.claro .dojoxPortletIcon.preferenceAccessHoverIcon
+{
+    background: url("../dojo/dijit/icons/images/commonIconsObjActEnabled_rtl.png") no-repeat;
+    background-position: -240px;
+    width: 15px;
+    height: 15px;
+}
+
+.claro .dojoxPortletIcon.dashboardWidgetSettingsIcon,
+.claro .dojoxPortletIcon.dashboardWidgetSettingsHoverIcon
+{
+    background: url("../dojo/dijit/icons/images/commonIconsObjActEnabled_rtl.png") no-repeat;
+    background-position: -112px;
+    width: 15px;
+    height: 15px;
+}
+
+/*
+ This establish new block formatting context
+ See https://www.w3.org/TR/CSS21/visuren.html#block-formatting
+*/
+.fillRemaining
+{
+    overflow:hidden;
+    float:none;
+}
+
+.addIcon
+{
+    background: url("../images/plus.svg") left center no-repeat;
+    width: 15px;
+    height: 15px;
+    background-size: 1em;
+}
+
+.minusIcon
+{
+    background: url("../images/minus.svg") left center no-repeat;
+    width: 15px;
+    height: 15px;
+    background-size: 1em;
+}
+
+#message-content-preview
+{
+    width: 100%;
+}
+
+#message-content-preview .dgrid,
+#message-content-preview textarea
+{
+    height: 10em;
+}
+
+.hexDumpBox
+{
+    border: solid;
+    border-width: 1px;
+    white-space: nowrap;
+}
+
+.hexBox
+{
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.asciiBox
+{
+    display: inline-block;
+}
+
+.hexDumpHeadRow
+{
+    display: table-row;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.hexDumpRow
+{
+    display: table-row;
+}
+
+.hexCountCell
+{
+    padding-right: 25px;
+    font-weight: bold;
+    display: table-cell;
+    font-family: monospace;
+}
+
+.hexDumpCell
+{
+    padding-right: 5px;
+    display: table-cell;
+    font-family: monospace;
+}
+
+.hexDumpCell:last-child
+{
+    padding-right: 0;
+}
+
+.hexDumpCellHighlight
+{
+    background-color: darkgray;
+}
+
+.notApplicable
+{
+    font-style: italic;
+}
+
+.claro .loading
+{
+    background-image: url("../dojo/dijit/icons/images/loadingAnimation.gif");
+}
+.loadingBar
+{
+    text-align: center;
+}
+
+.statisticGrid
+{
+    margin-bottom: 10px !important;
+}
+
+#editVirtualHostDialog
+{
+    width: 550px;
+}
+.nodeAutoCreationPolicies .field-selected { width: 2em; }
+.nodeAutoCreationPolicies .field-nodeType { width: 10%; }
+.nodeAutoCreationPolicies .field-pattern { width: 10%; }
+.nodeAutoCreationPolicies .field-createdOnPublish { width: 10%; }
+.nodeAutoCreationPolicies .field-createdOnConsume { width: 10% }
+.nodeAutoCreationPolicies .field-attributes { width: auto }
+
+.nodeAutoCreationPolicyAttributes { height: 100px;}
+.keyValuePair {
+    overflow: auto;
+}
+
+.sequentialPanel
+{
+    margin-bottom: 0.2em !important;
+}
+
+.accessControlProviders .field-selected { width: 2em; }
+.accessControlProviders .field-name { width: 20%; }
+.accessControlProviders .field-state { width: 20%; }
+.accessControlProviders .field-type { width: auto; }
+.accessControlProviders .field-priority { width: 20% }
+
+.accessControlRules .field-identity { width: 20%; }
+.accessControlRules .field-objectType { width: 20%; }
+.accessControlRules .field-operation { width: 10%; }
+.accessControlRules .field-outcome { width: 10%; }
+.accessControlRules .field-attributes { width: auto; }
+
+.info-cell {padding-right: 5px;}
+.left-cell {padding-left: 5px;}
+.label-cell {font-weight: bold;}
+
+.logViewer .field-id { width: 4em; }
+.logViewer .field-timestamp { width: 20%;}
+.logViewer .field-level {width: 5em;}
+.logViewer .field-logger { width: 20%;}
+.logViewer .field-threadName { width: 10%;}
+.logViewer .field-message { width: auto;}
+
+.queueMessages .field-selected { width: 2em; }
+.queueMessages .field-id { width: 15%; }
+.queueMessages .field-messageId { width: 20%; }
+.queueMessages .field-size { width: 20%;}
+.queueMessages .field-state { width: 20%; }
+.queueMessages .field-arrivalTime { width: auto }

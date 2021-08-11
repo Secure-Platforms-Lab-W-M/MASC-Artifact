@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="EnableAdfilter">Омогућите закључавање</string>
+    <string name="EnableAutoStart">Аутоматско покретање</string>
+    <string name="EnableConfigCheckBox">Напредна подешавања</string>
+    <string name="active">Активни</string>
+    <string name="addFilter">"Додајте филтер"</string>
+    <string name="appWhitelistCheckBox">Апликација бела листа</string>
+    <string name="app_name">ДНСфилтер</string>
+    <string name="backupConfig">Конфигурација бацкуп</string>
+    <string name="category">Категорија</string>
+    <string name="cfgBackupRestore">Бацкуп и враћање</string>
+    <string name="dnsCfgConfigDialogTitle">Подешавање ДНС сервера</string>
+    <string name="dnsLabel">ДНС:</string>
+    <string name="editAdditionalHostsCheckBox">Подесите додатне домаћини</string>
+    <string name="editFilterDialogTitle">Промена филтера</string>
+    <string name="editFilterLoadCheckBox">Подесите Ажурирање филтера</string>
+    <string name="filterReloadBtnLabel">Пуњење филтера</string>
+    <string name="filterUpdateDays">Интервал ажурирања филтера у данима:</string>
+    <string name="keepAwakeCheckBox">Спречавање уређај сна</string>
+    <string name="listenPortLabel">Прикључник:</string>
+    <string name="manualDNSCheck">Искључите ДНС сервер откривање - руководство ДНС-сервера испод:</string>
+    <string name="name">Име</string>
+    <string name="proxyModeCheckBox">Режиму прокси-сервера и ДНС без локалних ВПН</string>
+    <string name="removeFilter">"Уклоните филтер"</string>
+    <string name="restoreBackup">Враћање резервне копије</string>
+    <string name="restoreDefault">Вратите подразумевана подешавања</string>
+    <string name="rootModeCheckBox">Корен режиму без локалних ВПН</string>
+    <string name="shortText">Кратак текст</string>
+    <string name="startBtnLabel">Поновно покретање</string>
+    <string name="stopBtnLabel">Затвори</string>
+</resources>

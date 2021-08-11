@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<!--
+
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+
+-->
+
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="Java-Broker-Management-Managing-Truststores">
+    <title>Truststores</title>
+    <para>
+        <link linkend="Java-Broker-Concepts-Truststores">Truststores</link>
+        have a number of roles within
+        the Broker.
+        <itemizedlist>
+            <listitem>
+                <para>A truststore is required by a Port in order to support SSL client authentication.</para>
+            </listitem>
+            <listitem>
+                <para>Truststores have a optional role in end to end message encryption. The Broker acts as a
+                    <link xmlns:xlink="http://www.w3.org/1999/xlink"
+                          xlink:href="https://en.wikipedia.org/wiki/Key_server_(cryptographic)">
+                        Key Server
+                    </link>
+                    so that publishing applications have convenient access to recipient's public keys.
+                </para>
+            </listitem>
+            <listitem>
+                <para>Some authentication providers also use a truststore when connecting to authentication systems that
+                    are protected by a private issuer
+                    SSL certificate.
+                </para>
+            </listitem>
+        </itemizedlist>
+    </para>
+    <section xml:id="Java-Broker-Management-Managing-Truststores-Types">
+        <title>Types</title>
+        <para>The following truststore types are supported. <itemizedlist>
+                <listitem>
+                    <para><emphasis>File Trust Store</emphasis>. This type accepts the standard JKS
+                        truststore format understood by Java and Java tools such as <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html">keytool</link>.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Non Java Trust Store</emphasis>. A non java trust store accepts key
+                        material in PEM and DER file formats. Either a path to the certificate on the server can be specified using the file:// protocol or the certificate can be uploaded with the data:// protocol</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Managed Certificate Store</emphasis>. This type accepts key
+                        material in PEM and DER file formats. Contrary to the Non Java Trust Store this store allows the user to add multiple certificates and stores them in the broker configuration.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Site Specific Trust Store</emphasis>. This type will download a certificate from the provided SSL/TLS enabled URL. Note that you must specify both the protocol and the port. Example: https://example.com:443</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+    </section>
+    <section xml:id="Java-Broker-Management-Managing-Truststores-Attributes">
+        <title>Attributes</title>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis>Name the truststore</emphasis>. Used to identify the
+                        truststore.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Exposed as Message Source</emphasis>. If enabled, the Broker
+                        will distribute certificates contained within the truststore to clients.
+                        Used by the end to end message encryption feature.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Trust Anchor Validity Enforced</emphasis>. If enabled, authentications will
+                        fail if the trust anchor's validity date has not yet been reached or already expired.</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+        <para>Revocation attributes.</para>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis>Enabled</emphasis>. If set to true certificate revocation check is performed when
+                        client tries to connect.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Only End Entity</emphasis>. If enabled, check only the revocation status of
+                        end-entity certificates.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Prefer CRLs</emphasis>. If enabled, prefer CRL (specified in certificate
+                        distribution points) to OCSP, if disabled prefer OCSP to CRL.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>No Fallback</emphasis>. If enabled, disable fallback to CRL/OCSP (if
+                        <emphasis>Prefer CRLs</emphasis> set to true, disable fallback to OCSP,
+                        otherwise disable fallback to CRL in certificate distribution points).</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Ignore Soft Failures</emphasis>. If enabled, revocation check will succeed
+                        if CRL/OCSP response cannot be obtained because of network error or OCSP responder returns
+                        internalError or tryLater.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Server CRL Path Or Upload</emphasis>. Path to Certificate Revocation List file.
+                        If set, certificate revocation check uses only set CRL file and ignores CRL Distribution Points
+                        in certificate.</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+        <para>The following attributes apply to <emphasis>File Trust Stores</emphasis> only.</para>
+        <para>
+            <itemizedlist>
+
+                <listitem>
+                    <para><emphasis>Path</emphasis>. Path to truststore file</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Truststore password</emphasis>. Password used to secure the truststore<important>
+                            <para> The password of the certificate used by the Broker <emphasis role="bold">must</emphasis> match the password of the keystore
+                                itself. </para>
+                        </important></para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Certificate Alias</emphasis>. An optional way of specifying
+                        which certificate the broker should use if the keystore contains multiple
+                        entries.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Manager Factory Algorithm</emphasis>. In keystores the have more
+                        than one certificate, the alias identifies the certificate to be
+                        used.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Key Store Type</emphasis>. Type of Keystore.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Peers only</emphasis>. When "Peers Only" option is selected for
+                        the Truststore it will allow authenticate only those clients that present a
+                        certificate exactly matching a certificate contained within the Truststore
+                        database.</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+        <para>The following attributes apply to <emphasis>Non Java Trust Stores</emphasis>
+            only.</para>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis>Certificates</emphasis>. The cerificate(s) in DER or PEM
+                        format.</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+    </section>
+    <section xml:id="Java-Broker-Management-Managing-Truststores-Children">
+        <title>Children</title>
+        <para>None</para>
+    </section>
+    <section xml:id="Java-Broker-Management-Managing-Truststores-Lifecycle">
+        <title>Lifecycle</title>
+        <para>Not supported</para>
+    </section>
+</section>

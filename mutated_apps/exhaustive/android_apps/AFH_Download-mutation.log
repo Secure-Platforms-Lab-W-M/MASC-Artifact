@@ -1,0 +1,309 @@
+In file: ApplicationTest.java
+Input operator: REACHABILITY
+mutation-0: ApplicationTest.ApplicationTest
+In file: MD5.java
+Input operator: REACHABILITY
+mutation-1: MD5.checkMD5
+mutation-2: MD5.checkMD5
+mutation-3: MD5.checkMD5
+mutation-4: MD5.calculateMD5
+mutation-5: MD5.calculateMD5
+mutation-6: MD5.calculateMD5
+mutation-7: MD5.calculateMD5
+mutation-8: MD5.calculateMD5
+mutation-9: MD5.calculateMD5
+mutation-10: MD5.calculateMD5
+mutation-11: MD5.calculateMD5
+mutation-12: MD5.calculateMD5
+mutation-13: MD5.calculateMD5
+mutation-14: MD5.calculateMD5
+In file: MyCustomAdapter.java
+Input operator: REACHABILITY
+mutation-15: MyCustomAdapter.MyCustomAdapter
+mutation-16: MyCustomAdapter.getView
+mutation-17: MyCustomAdapter.getView
+mutation-18: MyCustomAdapter.getView
+mutation-19: MyCustomAdapter.getView
+mutation-20: MyCustomAdapter.getView
+mutation-21: MyCustomAdapter.getView
+mutation-22: MyCustomAdapter.getView
+mutation-23: MyCustomAdapter.getView
+mutation-24: MyCustomAdapter.getView
+In file: EasyPermissions.java
+Input operator: REACHABILITY
+mutation-25: EasyPermissions.hasPermissions
+mutation-26: EasyPermissions.hasPermissions
+mutation-27: EasyPermissions.hasPermissions
+mutation-28: EasyPermissions.requestPermissions
+mutation-29: EasyPermissions.requestPermissions
+mutation-30: EasyPermissions.requestPermissions
+mutation-31: EasyPermissions.requestPermissions
+mutation-32: 1.onClick
+mutation-33: 1.onClick
+mutation-34: EasyPermissions.requestPermissions
+mutation-35: EasyPermissions.onRequestPermissionsResult
+mutation-36: EasyPermissions.onRequestPermissionsResult
+mutation-37: EasyPermissions.onRequestPermissionsResult
+mutation-38: EasyPermissions.onRequestPermissionsResult
+mutation-39: EasyPermissions.onRequestPermissionsResult
+mutation-40: EasyPermissions.onRequestPermissionsResult
+mutation-41: EasyPermissions.onRequestPermissionsResult
+mutation-42: EasyPermissions.shouldShowRequestPermissionRationale
+mutation-43: EasyPermissions.shouldShowRequestPermissionRationale
+mutation-44: EasyPermissions.shouldShowRequestPermissionRationale
+mutation-45: EasyPermissions.shouldShowRequestPermissionRationale
+mutation-46: EasyPermissions.executePermissionsRequest
+mutation-47: EasyPermissions.executePermissionsRequest
+mutation-48: EasyPermissions.executePermissionsRequest
+mutation-49: EasyPermissions.getActivity
+mutation-50: EasyPermissions.getActivity
+mutation-51: EasyPermissions.getActivity
+mutation-52: EasyPermissions.getActivity
+mutation-53: EasyPermissions.runAnnotatedMethods
+mutation-54: EasyPermissions.runAnnotatedMethods
+mutation-55: EasyPermissions.runAnnotatedMethods
+mutation-56: EasyPermissions.runAnnotatedMethods
+mutation-57: EasyPermissions.runAnnotatedMethods
+mutation-58: EasyPermissions.runAnnotatedMethods
+mutation-59: EasyPermissions.runAnnotatedMethods
+mutation-60: EasyPermissions.runAnnotatedMethods
+mutation-61: EasyPermissions.runAnnotatedMethods
+mutation-62: EasyPermissions.checkCallingObjectSuitability
+mutation-63: EasyPermissions.checkCallingObjectSuitability
+mutation-64: EasyPermissions.checkCallingObjectSuitability
+In file: AfterPermissionGranted.java
+Input operator: REACHABILITY
+In file: SwipeDismissTouchListener.java
+Input operator: REACHABILITY
+mutation-65: SwipeDismissTouchListener.SwipeDismissTouchListener
+mutation-66: SwipeDismissTouchListener.onTouch
+mutation-67: SwipeDismissTouchListener.onTouch
+mutation-68: SwipeDismissTouchListener.onTouch
+mutation-69: SwipeDismissTouchListener.onTouch
+mutation-70: SwipeDismissTouchListener.onTouch
+mutation-71: SwipeDismissTouchListener.onTouch
+mutation-72: SwipeDismissTouchListener.onTouch
+mutation-73: SwipeDismissTouchListener.onTouch
+mutation-74: SwipeDismissTouchListener.onTouch
+mutation-75: SwipeDismissTouchListener.onTouch
+mutation-76: 1.onAnimationEnd
+mutation-77: SwipeDismissTouchListener.onTouch
+mutation-78: SwipeDismissTouchListener.onTouch
+mutation-79: SwipeDismissTouchListener.onTouch
+mutation-80: SwipeDismissTouchListener.onTouch
+mutation-81: SwipeDismissTouchListener.onTouch
+mutation-82: SwipeDismissTouchListener.onTouch
+mutation-83: SwipeDismissTouchListener.onTouch
+mutation-84: SwipeDismissTouchListener.onTouch
+mutation-85: SwipeDismissTouchListener.onTouch
+mutation-86: SwipeDismissTouchListener.onTouch
+mutation-87: SwipeDismissTouchListener.performDismiss
+mutation-88: 1.onAnimationEnd
+mutation-89: 1.onAnimationUpdate
+In file: AlarmReceiver.java
+Input operator: REACHABILITY
+mutation-90: AlarmReceiver.onReceive
+mutation-91: AlarmReceiver.buildPath
+In file: BootReceiver.java
+Input operator: REACHABILITY
+mutation-92: BootReceiver.onReceive
+mutation-93: BootReceiver.onReceive
+mutation-94: BootReceiver.onReceive
+mutation-95: BootReceiver.setRecurringAlarm
+In file: SwipeDismissListViewTouchListener.java
+Input operator: REACHABILITY
+mutation-96: SwipeDismissListViewTouchListener.SwipeDismissListViewTouchListener
+mutation-97: SwipeDismissListViewTouchListener.setEnabled
+mutation-98: SwipeDismissListViewTouchListener.makeScrollListener
+mutation-99: 1.onScrollStateChanged
+mutation-100: 1.onScroll
+mutation-101: SwipeDismissListViewTouchListener.onTouch
+mutation-102: SwipeDismissListViewTouchListener.onTouch
+mutation-103: SwipeDismissListViewTouchListener.onTouch
+mutation-104: SwipeDismissListViewTouchListener.onTouch
+mutation-105: SwipeDismissListViewTouchListener.onTouch
+mutation-106: SwipeDismissListViewTouchListener.onTouch
+mutation-107: SwipeDismissListViewTouchListener.onTouch
+mutation-108: SwipeDismissListViewTouchListener.onTouch
+mutation-109: SwipeDismissListViewTouchListener.onTouch
+mutation-110: SwipeDismissListViewTouchListener.onTouch
+mutation-111: SwipeDismissListViewTouchListener.onTouch
+mutation-112: SwipeDismissListViewTouchListener.onTouch
+mutation-113: SwipeDismissListViewTouchListener.onTouch
+mutation-114: SwipeDismissListViewTouchListener.onTouch
+mutation-115: SwipeDismissListViewTouchListener.onTouch
+mutation-116: SwipeDismissListViewTouchListener.onTouch
+mutation-117: SwipeDismissListViewTouchListener.onTouch
+mutation-118: SwipeDismissListViewTouchListener.onTouch
+mutation-119: 1.onAnimationEnd
+mutation-120: SwipeDismissListViewTouchListener.onTouch
+mutation-121: SwipeDismissListViewTouchListener.onTouch
+mutation-122: SwipeDismissListViewTouchListener.onTouch
+mutation-123: SwipeDismissListViewTouchListener.onTouch
+mutation-124: SwipeDismissListViewTouchListener.onTouch
+mutation-125: SwipeDismissListViewTouchListener.onTouch
+mutation-126: SwipeDismissListViewTouchListener.onTouch
+mutation-127: PendingDismissData.PendingDismissData
+mutation-128: PendingDismissData.compareTo
+mutation-129: SwipeDismissListViewTouchListener.performDismiss
+mutation-130: 1.onAnimationEnd
+mutation-131: 1.onAnimationEnd
+mutation-132: 1.onAnimationEnd
+mutation-133: 1.onAnimationEnd
+mutation-134: 1.onAnimationUpdate
+In file: MainActivity.java
+Input operator: REACHABILITY
+mutation-135: MainActivity.onCreate
+mutation-136: MainActivity.onCreate
+mutation-137: MainActivity.onCreate
+mutation-138: MainActivity.onActivityResult
+mutation-139: MainActivity.setAlarm
+mutation-140: MainActivity.setAlarm
+mutation-141: MainActivity.setAlarm
+mutation-142: MainActivity.getPref
+mutation-143: MainActivity.setRecurringAlarm
+mutation-144: MainActivity.CancelAlarm
+mutation-145: MainActivity.run
+mutation-146: MainActivity.buildPath
+mutation-147: MainActivity.onCreateOptionsMenu
+mutation-148: MainActivity.onOptionsItemSelected
+mutation-149: MainActivity.onOptionsItemSelected
+mutation-150: MainActivity.onOptionsItemSelected
+mutation-151: MainActivity.onOptionsItemSelected
+mutation-152: 1.getCommandsToExecute
+mutation-153: MainActivity.onRequestPermissionsResult
+mutation-154: MainActivity.onPermissionsGranted
+mutation-155: MainActivity.onPermissionsDenied
+mutation-156: MainActivity.getBaseUrl
+mutation-157: MainActivity.readFile
+mutation-158: MainActivity.readFile
+mutation-159: MainActivity.readFile
+mutation-160: MainActivity.readFile
+mutation-161: MainActivity.writeFile
+mutation-162: MainActivity.writeFile
+mutation-163: MainActivity.writeFile
+mutation-164: MainActivity.setList
+mutation-165: MainActivity.setList
+mutation-166: MainActivity.setList
+mutation-167: MainActivity.setList
+mutation-168: MainActivity.setList
+mutation-169: MainActivity.setList
+mutation-170: MainActivity.setList
+mutation-171: MainActivity.setList
+mutation-172: MainActivity.setList
+mutation-173: MainActivity.setList
+mutation-174: MainActivity.setList
+mutation-175: MainActivity.setList
+mutation-176: MainActivity.setList
+mutation-177: MainActivity.setList
+mutation-178: MainActivity.setList
+mutation-179: MainActivity.setList
+mutation-180: 1.canDismiss
+mutation-181: 1.canDismiss
+mutation-182: 1.onDismiss
+mutation-183: 1.onDismiss
+mutation-184: 1.onClick
+mutation-185: 1.onClick
+mutation-186: 1.onClick
+mutation-187: 1.onClick
+mutation-188: 1.onItemClick
+mutation-189: 1.onItemClick
+mutation-190: 1.onItemClick
+mutation-191: MainActivity.message_dialog_yes_no
+mutation-192: 1.onClick
+mutation-193: ExecuteAsRootBase.execute
+mutation-194: ExecuteAsRootBase.execute
+mutation-195: ExecuteAsRootBase.execute
+mutation-196: ExecuteAsRootBase.execute
+mutation-197: ExecuteAsRootBase.execute
+mutation-198: ExecuteAsRootBase.execute
+mutation-199: ExecuteAsRootBase.execute
+mutation-200: ExecuteAsRootBase.execute
+mutation-201: ExecuteAsRootBase.execute
+mutation-202: ExecuteAsRootBase.execute
+mutation-203: ExecuteAsRootBase.execute
+mutation-204: MainActivity.onResume
+mutation-205: MainActivity.onPause
+In file: DirectoryPicker.java
+Input operator: REACHABILITY
+mutation-206: DirectoryPicker.onCreate
+mutation-207: DirectoryPicker.onCreate
+mutation-208: DirectoryPicker.onCreate
+mutation-209: DirectoryPicker.onCreate
+mutation-210: 1.onClick
+mutation-211: DirectoryPicker.onCreate
+mutation-212: 1.onItemClick
+mutation-213: DirectoryPicker.onActivityResult
+mutation-214: DirectoryPicker.onActivityResult
+mutation-215: DirectoryPicker.returnDir
+mutation-216: DirectoryPicker.returnDir
+mutation-217: DirectoryPicker.filter
+mutation-218: DirectoryPicker.filter
+mutation-219: DirectoryPicker.names
+mutation-220: DirectoryPicker.names
+In file: LogUtil.java
+Input operator: REACHABILITY
+mutation-221: LogUtil.makeLogTag
+In file: SetPreferenceActivity.java
+Input operator: REACHABILITY
+mutation-222: SetPreferenceActivity.onCreate
+In file: Download.java
+Input operator: REACHABILITY
+mutation-223: Download.onStartCommand
+mutation-224: Download.onStartCommand
+mutation-225: Download.onStartCommand
+mutation-226: Download.onStartCommand
+mutation-227: Download.onBind
+mutation-228: ParseURL.doInBackground
+mutation-229: ParseURL.onPostExecute
+mutation-230: ParseURL.onPostExecute
+mutation-231: Download.parseUrl
+mutation-232: Download.parseUrl
+mutation-233: Download.parseUrl
+mutation-234: Download.parseUrl
+mutation-235: Download.parseUrl
+mutation-236: Download.parseUrl
+mutation-237: Download.getFirstUrl
+mutation-238: Download.getFirstUrl
+mutation-239: Download.getBaseUrl
+mutation-240: Download.getMD5
+mutation-241: Download.getMD5
+mutation-242: Download.getMD5
+mutation-243: Download.getMD5
+mutation-244: Download.getDLUrl
+mutation-245: Download.getDLUrl
+mutation-246: Download.getDLUrl
+mutation-247: Download.getDLUrl
+mutation-248: Download.getDLUrl
+mutation-249: dlMd5.doInBackground
+mutation-250: dlMd5.doInBackground
+mutation-251: dlMd5.doInBackground
+mutation-252: downloadFirstThread.doInBackground
+mutation-253: downloadFirstThread.onPostExecute
+mutation-254: ParseURLDownload.doInBackground
+mutation-255: ParseURLDownload.onPostExecute
+mutation-256: ParseURLDownload.onPostExecute
+mutation-257: Download.download
+mutation-258: Download.download
+mutation-259: Download.download
+mutation-260: Download.download
+mutation-261: Download.download
+mutation-262: Download.download
+mutation-263: Download.download
+mutation-264: Download.download
+mutation-265: Download.download
+mutation-266: Download.download
+mutation-267: Download.download
+mutation-268: Download.download
+mutation-269: Download.download
+mutation-270: Download.download
+mutation-271: Download.download
+mutation-272: Download.download
+In file: MainActivityFragment.java
+Input operator: REACHABILITY
+mutation-273: MainActivityFragment.MainActivityFragment
+mutation-274: MainActivityFragment.onCreateView
+In file: PrefsFragment.java
+Input operator: REACHABILITY
+mutation-275: PrefsFragment.onCreate
+mutation-276: 1.onPreferenceClick

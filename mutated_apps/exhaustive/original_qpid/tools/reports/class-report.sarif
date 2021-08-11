@@ -1,0 +1,533 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Class File Analyzer",
+          "rules": [
+            {
+              "id": "HARD_CODE_PASSWORD",
+              "help": {
+                "text": "Hard coded password found \nAt MemoryConsumptionTestClient.java:[lines 66-478] \nIn class org.apache.qpid.tools.MemoryConsumptionTestClient \nIn method org.apache.qpid.tools.MemoryConsumptionTestClient.main(String[]) \nAt MemoryConsumptionTestClient.java:[line 124] \nSink method java/util/Map.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; \nSink parameter 0.",
+                "markdown": "Hard coded password found \nAt MemoryConsumptionTestClient.java:[lines 66-478] \nIn class org.apache.qpid.tools.MemoryConsumptionTestClient \nIn method org.apache.qpid.tools.MemoryConsumptionTestClient.main(String[]) \nAt MemoryConsumptionTestClient.java:[line 124] \nSink method java/util/Map.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; \nSink parameter 0."
+              },
+              "name": "HARD CODE PASSWORD",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "Hard coded password found ."
+              },
+              "helpUri": "https://slscan.io?q=HARD_CODE_PASSWORD",
+              "shortDescription": {
+                "text": "Hard coded password found \nAt MemoryConsumptionTestClient.java:[lines 66-478] \nIn class org.apache.qpid.tools.MemoryConsumptionTestClient \nIn method org.apache.qpid.tools.MemoryConsumptionTestClient.main(String[]) \nAt MemoryConsumptionTestClient.java:[line 124] \nSink method java/util/Map.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; \nSink parameter 0."
+              }
+            },
+            {
+              "id": "PATH_TRAVERSAL_OUT",
+              "help": {
+                "text": "This API (java/io/FileWriter.<init>(Ljava/lang/String;)V) writes to a file whose location might be specified by user input \nAt MemoryConsumptionTestClient.java:[lines 66-478] \nIn class org.apache.qpid.tools.MemoryConsumptionTestClient \nIn method org.apache.qpid.tools.MemoryConsumptionTestClient.generateCSV(MemoryConsumptionTestClient$MemoryStatistic, int, int, boolean, int, int, int, int, String) \nAt MemoryConsumptionTestClient.java:[line 200] \nSink method java/io/FileWriter.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/tools/MemoryConsumptionTestClient.generateCSV(Lorg/apache/qpid/tools/MemoryConsumptionTestClient$MemoryStatistic;IIZIIIILjava/lang/String;)V parameter 0 \nMethod usage not detected \nAt MemoryConsumptionTestClient.java:[line 160] \nAt MemoryConsumptionTestClient.java:[line 184].",
+                "markdown": "This API (java/io/FileWriter.<init>(Ljava/lang/String;)V) writes to a file whose location might be specified by user input \nAt MemoryConsumptionTestClient.java:[lines 66-478] \nIn class org.apache.qpid.tools.MemoryConsumptionTestClient \nIn method org.apache.qpid.tools.MemoryConsumptionTestClient.generateCSV(MemoryConsumptionTestClient$MemoryStatistic, int, int, boolean, int, int, int, int, String) \nAt MemoryConsumptionTestClient.java:[line 200] \nSink method java/io/FileWriter.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/tools/MemoryConsumptionTestClient.generateCSV(Lorg/apache/qpid/tools/MemoryConsumptionTestClient$MemoryStatistic;IIZIIIILjava/lang/String;)V parameter 0 \nMethod usage not detected \nAt MemoryConsumptionTestClient.java:[line 160] \nAt MemoryConsumptionTestClient.java:[line 184]."
+              },
+              "name": "PATH TRAVERSAL OUT",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "This API (java/io/FileWriter.<init>(Ljava/lang/String;)V) writes to a file whose location might be specified by user input ."
+              },
+              "helpUri": "https://slscan.io?q=PATH_TRAVERSAL_OUT",
+              "shortDescription": {
+                "text": "This API (java/io/FileWriter.<init>(Ljava/lang/String;)V) writes to a file whose location might be specified by user input \nAt MemoryConsumptionTestClient.java:[lines 66-478] \nIn class org.apache.qpid.tools.MemoryConsumptionTestClient \nIn method org.apache.qpid.tools.MemoryConsumptionTestClient.generateCSV(MemoryConsumptionTestClient$MemoryStatistic, int, int, boolean, int, int, int, int, String) \nAt MemoryConsumptionTestClient.java:[line 200] \nSink method java/io/FileWriter.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/tools/MemoryConsumptionTestClient.generateCSV(Lorg/apache/qpid/tools/MemoryConsumptionTestClient$MemoryStatistic;IIZIIIILjava/lang/String;)V parameter 0 \nMethod usage not detected \nAt MemoryConsumptionTestClient.java:[line 160] \nAt MemoryConsumptionTestClient.java:[line 184]."
+              }
+            },
+            {
+              "id": "SSL_CONTEXT",
+              "help": {
+                "text": "SSLContext needs to be compatible with TLS 1.2 \nAt RestStressTestClient.java:[lines 59-253] \nIn class org.apache.qpid.tools.RestStressTestClient \nIn method org.apache.qpid.tools.RestStressTestClient.configureTrustAll() \nAt RestStressTestClient.java:[line 132].",
+                "markdown": "SSLContext needs to be compatible with TLS 1.2 \nAt RestStressTestClient.java:[lines 59-253] \nIn class org.apache.qpid.tools.RestStressTestClient \nIn method org.apache.qpid.tools.RestStressTestClient.configureTrustAll() \nAt RestStressTestClient.java:[line 132]."
+              },
+              "name": "Ssl Context",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "SSLContext needs to be compatible with TLS 1.2 ."
+              },
+              "helpUri": "https://slscan.io?q=SSL_CONTEXT",
+              "shortDescription": {
+                "text": "SSLContext needs to be compatible with TLS 1.2 \nAt RestStressTestClient.java:[lines 59-253] \nIn class org.apache.qpid.tools.RestStressTestClient \nIn method org.apache.qpid.tools.RestStressTestClient.configureTrustAll() \nAt RestStressTestClient.java:[line 132]."
+              }
+            },
+            {
+              "id": "WEAK_TRUST_MANAGER",
+              "help": {
+                "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt RestStressTestClient.java:[lines 114-126] \nIn class org.apache.qpid.tools.RestStressTestClient$1 \nIn method org.apache.qpid.tools.RestStressTestClient$1.checkClientTrusted(X509Certificate[], String) \nAt RestStressTestClient.java:[line 122].",
+                "markdown": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt RestStressTestClient.java:[lines 114-126] \nIn class org.apache.qpid.tools.RestStressTestClient$1 \nIn method org.apache.qpid.tools.RestStressTestClient$1.checkClientTrusted(X509Certificate[], String) \nAt RestStressTestClient.java:[line 122]."
+              },
+              "name": "WEAK TRUST MANAGER",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack ."
+              },
+              "helpUri": "https://slscan.io?q=WEAK_TRUST_MANAGER",
+              "shortDescription": {
+                "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt RestStressTestClient.java:[lines 114-126] \nIn class org.apache.qpid.tools.RestStressTestClient$1 \nIn method org.apache.qpid.tools.RestStressTestClient$1.checkClientTrusted(X509Certificate[], String) \nAt RestStressTestClient.java:[line 122]."
+              }
+            },
+            {
+              "id": "URLCONNECTION_SSRF_FD",
+              "help": {
+                "text": "This web server request could be used by an attacker to expose internal services and filesystem. \nAt RestStressTestClient.java:[lines 257-583] \nIn class org.apache.qpid.tools.RestStressTestClient$RestClient \nIn method org.apache.qpid.tools.RestStressTestClient$RestClient.createConnection(String, String, List) \nAt RestStressTestClient.java:[line 423] \nSink method java/net/URL.openConnection()Ljava/net/URLConnection; \nSink parameter 0 \nUnknown source org/apache/qpid/tools/RestStressTestClient$RestClient._brokerUrl \nUnknown source java/net/URL.<init>(Ljava/lang/String;)V \nUnknown source org/apache/qpid/tools/RestStressTestClient$RestClient.createConnection(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/net/HttpURLConnection; parameter 1 \nAt RestStressTestClient.java:[line 150] \nAt RestStressTestClient.java:[line 172] \nAt RestStressTestClient.java:[line 173] \nAt RestStressTestClient.java:[line 174] \nAt RestStressTestClient.java:[line 182] \nAt RestStressTestClient.java:[line 185] \nAt RestStressTestClient.java:[line 189] \nAt RestStressTestClient.java:[line 194] \nAt RestStressTestClient.java:[line 203] \nAt RestStressTestClient.java:[line 208] \nAt RestStressTestClient.java:[line 218] \nAt RestStressTestClient.java:[line 224] \nAt RestStressTestClient.java:[line 241] \nAt RestStressTestClient.java:[line 247] \nAt RestStressTestClient.java:[line 660] \nAt RestStressTestClient.java:[line 680] \nAt RestStressTestClient.java:[line 690] \nAt RestStressTestClient.java:[line 695] \nAt RestStressTestClient.java:[line 295] \nAt RestStressTestClient.java:[line 311] \nAt RestStressTestClient.java:[line 331] \nAt RestStressTestClient.java:[line 345] \nAt RestStressTestClient.java:[line 361] \nAt RestStressTestClient.java:[line 379] \nAt RestStressTestClient.java:[line 423] \nAt RestStressTestClient.java:[line 462] \nAt RestStressTestClient.java:[line 480] \nAt RestStressTestClient.java:[line 497].",
+                "markdown": "This web server request could be used by an attacker to expose internal services and filesystem. \nAt RestStressTestClient.java:[lines 257-583] \nIn class org.apache.qpid.tools.RestStressTestClient$RestClient \nIn method org.apache.qpid.tools.RestStressTestClient$RestClient.createConnection(String, String, List) \nAt RestStressTestClient.java:[line 423] \nSink method java/net/URL.openConnection()Ljava/net/URLConnection; \nSink parameter 0 \nUnknown source org/apache/qpid/tools/RestStressTestClient$RestClient._brokerUrl \nUnknown source java/net/URL.<init>(Ljava/lang/String;)V \nUnknown source org/apache/qpid/tools/RestStressTestClient$RestClient.createConnection(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/net/HttpURLConnection; parameter 1 \nAt RestStressTestClient.java:[line 150] \nAt RestStressTestClient.java:[line 172] \nAt RestStressTestClient.java:[line 173] \nAt RestStressTestClient.java:[line 174] \nAt RestStressTestClient.java:[line 182] \nAt RestStressTestClient.java:[line 185] \nAt RestStressTestClient.java:[line 189] \nAt RestStressTestClient.java:[line 194] \nAt RestStressTestClient.java:[line 203] \nAt RestStressTestClient.java:[line 208] \nAt RestStressTestClient.java:[line 218] \nAt RestStressTestClient.java:[line 224] \nAt RestStressTestClient.java:[line 241] \nAt RestStressTestClient.java:[line 247] \nAt RestStressTestClient.java:[line 660] \nAt RestStressTestClient.java:[line 680] \nAt RestStressTestClient.java:[line 690] \nAt RestStressTestClient.java:[line 695] \nAt RestStressTestClient.java:[line 295] \nAt RestStressTestClient.java:[line 311] \nAt RestStressTestClient.java:[line 331] \nAt RestStressTestClient.java:[line 345] \nAt RestStressTestClient.java:[line 361] \nAt RestStressTestClient.java:[line 379] \nAt RestStressTestClient.java:[line 423] \nAt RestStressTestClient.java:[line 462] \nAt RestStressTestClient.java:[line 480] \nAt RestStressTestClient.java:[line 497]."
+              },
+              "name": "URLCONNECTION SSRF FD",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "This web server request could be used by an attacker to expose internal services and filesystem. ."
+              },
+              "helpUri": "https://slscan.io?q=URLCONNECTION_SSRF_FD",
+              "shortDescription": {
+                "text": "This web server request could be used by an attacker to expose internal services and filesystem"
+              }
+            },
+            {
+              "id": "PREDICTABLE_RANDOM",
+              "help": {
+                "text": "This random generator (java.util.Random) is predictable \nAt StressTestClient.java:[lines 47-624] \nIn class org.apache.qpid.tools.StressTestClient \nIn method org.apache.qpid.tools.StressTestClient.generateMessage(boolean, int) \nAt StressTestClient.java:[line 576] \nValue java.util.Random.",
+                "markdown": "This random generator (java.util.Random) is predictable \nAt StressTestClient.java:[lines 47-624] \nIn class org.apache.qpid.tools.StressTestClient \nIn method org.apache.qpid.tools.StressTestClient.generateMessage(boolean, int) \nAt StressTestClient.java:[line 576] \nValue java.util.Random."
+              },
+              "name": "Predictable Random",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "This random generator (java.util.Random) is predictable ."
+              },
+              "helpUri": "https://slscan.io?q=PREDICTABLE_RANDOM",
+              "shortDescription": {
+                "text": "This random generator (java.util.Random) is predictable \nAt StressTestClient.java:[lines 47-624] \nIn class org.apache.qpid.tools.StressTestClient \nIn method org.apache.qpid.tools.StressTestClient.generateMessage(boolean, int) \nAt StressTestClient.java:[line 576] \nValue java.util.Random."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Class File Analyzer"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-jar",
+            "/tmp/.mount_scankKy6eq/opt/spotbugs/lib/spotbugs.jar",
+            "-textui",
+            "-include",
+            "/tmp/.mount_scankKy6eq/usr/src/tools_config/spotbugs/include.xml",
+            "-exclude",
+            "/tmp/.mount_scankKy6eq/usr/src/tools_config/spotbugs/exclude.xml",
+            "-noClassOk",
+            "-auxclasspathFromFile",
+            "/tmp/tmpuototsrd",
+            "-sourcepath",
+            "/media/data/muse2/muse2repo_qpid_originals/tools",
+            "-quiet",
+            "-medium",
+            "-xml:withMessages",
+            "-effort:max",
+            "-nested:false",
+            "-output",
+            "/media/data/muse2/muse2repo_qpid_originals/tools/reports/class-report.xml",
+            "/media/data/muse2/muse2repo_qpid_originals/tools"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-jar /tmp/.mount_scankKy6eq/opt/spotbugs/lib/spotbugs.jar -textui -include /tmp/.mount_scankKy6eq/usr/src/tools_config/spotbugs/include.xml -exclude /tmp/.mount_scankKy6eq/usr/src/tools_config/spotbugs/exclude.xml -noClassOk -auxclasspathFromFile /tmp/tmpuototsrd -sourcepath /media/data/muse2/muse2repo_qpid_originals/tools -quiet -medium -xml:withMessages -effort:max -nested:false -output /media/data/muse2/muse2repo_qpid_originals/tools/reports/class-report.xml /media/data/muse2/muse2repo_qpid_originals/tools",
+          "endTimeUtc": "2020-11-23T16:36:58Z",
+          "workingDirectory": {
+            "uri": "file:///media/data/muse2/muse2repo_qpid_originals/tools"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2020-11-23T16:36:58Z",
+          "workingDirectory": {
+            "uri": "file:///media/data/muse2/muse2repo_qpid_originals/tools"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 8,
+          "critical": 0,
+          "high": 8,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "Hard coded password found \nAt MemoryConsumptionTestClient.java:[lines 66-478] \nIn class org.apache.qpid.tools.MemoryConsumptionTestClient \nIn method org.apache.qpid.tools.MemoryConsumptionTestClient.main(String[]) \nAt MemoryConsumptionTestClient.java:[line 124] \nSink method java/util/Map.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; \nSink parameter 0."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        options.put(JMX_USER_PASSWORD_ARG, \"\");\n"
+                  },
+                  "startLine": 124
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_originals/tools/src/main/java/org/apache/qpid/tools/MemoryConsumptionTestClient.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        options.put(JMX_USER_ARG, \"\");\n        options.put(JMX_USER_PASSWORD_ARG, \"\");\n"
+                  },
+                  "endLine": 124,
+                  "startLine": 123
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "HARD_CODE_PASSWORD",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API (java/io/FileWriter.<init>(Ljava/lang/String;)V) writes to a file whose location might be specified by user input \nAt MemoryConsumptionTestClient.java:[lines 66-478] \nIn class org.apache.qpid.tools.MemoryConsumptionTestClient \nIn method org.apache.qpid.tools.MemoryConsumptionTestClient.generateCSV(MemoryConsumptionTestClient$MemoryStatistic, int, int, boolean, int, int, int, int, String) \nAt MemoryConsumptionTestClient.java:[line 200] \nSink method java/io/FileWriter.<init>(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source org/apache/qpid/tools/MemoryConsumptionTestClient.generateCSV(Lorg/apache/qpid/tools/MemoryConsumptionTestClient$MemoryStatistic;IIZIIIILjava/lang/String;)V parameter 0 \nMethod usage not detected \nAt MemoryConsumptionTestClient.java:[line 160] \nAt MemoryConsumptionTestClient.java:[line 184]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        try (FileWriter writer = new FileWriter(resultsFile))\n"
+                  },
+                  "startLine": 200
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_originals/tools/src/main/java/org/apache/qpid/tools/MemoryConsumptionTestClient.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    {\n        try (FileWriter writer = new FileWriter(resultsFile))\n"
+                  },
+                  "endLine": 200,
+                  "startLine": 199
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PATH_TRAVERSAL_OUT",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "SSLContext needs to be compatible with TLS 1.2 \nAt RestStressTestClient.java:[lines 59-253] \nIn class org.apache.qpid.tools.RestStressTestClient \nIn method org.apache.qpid.tools.RestStressTestClient.configureTrustAll() \nAt RestStressTestClient.java:[line 132]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            SSLContext sc = SSLContext.getInstance(\"SSL\");\n"
+                  },
+                  "startLine": 132
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_originals/tools/src/main/java/org/apache/qpid/tools/RestStressTestClient.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        {\n            SSLContext sc = SSLContext.getInstance(\"SSL\");\n"
+                  },
+                  "endLine": 132,
+                  "startLine": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "SSL_CONTEXT",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt RestStressTestClient.java:[lines 114-126] \nIn class org.apache.qpid.tools.RestStressTestClient$1 \nIn method org.apache.qpid.tools.RestStressTestClient$1.checkClientTrusted(X509Certificate[], String) \nAt RestStressTestClient.java:[line 122]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                    }\n"
+                  },
+                  "startLine": 122
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_originals/tools/src/main/java/org/apache/qpid/tools/RestStressTestClient.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                    {\n                    }\n"
+                  },
+                  "endLine": 122,
+                  "startLine": 121
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt RestStressTestClient.java:[lines 114-126] \nIn class org.apache.qpid.tools.RestStressTestClient$1 \nIn method org.apache.qpid.tools.RestStressTestClient$1.checkServerTrusted(X509Certificate[], String) \nAt RestStressTestClient.java:[line 126]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                    }\n"
+                  },
+                  "startLine": 126
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_originals/tools/src/main/java/org/apache/qpid/tools/RestStressTestClient.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                    {\n                    }\n"
+                  },
+                  "endLine": 126,
+                  "startLine": 125
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt RestStressTestClient.java:[lines 114-126] \nIn class org.apache.qpid.tools.RestStressTestClient$1 \nIn method org.apache.qpid.tools.RestStressTestClient$1.getAcceptedIssuers() \nAt RestStressTestClient.java:[line 117]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                        return null;\n"
+                  },
+                  "startLine": 117
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_originals/tools/src/main/java/org/apache/qpid/tools/RestStressTestClient.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                    {\n                        return null;\n"
+                  },
+                  "endLine": 117,
+                  "startLine": 116
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This web server request could be used by an attacker to expose internal services and filesystem. \nAt RestStressTestClient.java:[lines 257-583] \nIn class org.apache.qpid.tools.RestStressTestClient$RestClient \nIn method org.apache.qpid.tools.RestStressTestClient$RestClient.createConnection(String, String, List) \nAt RestStressTestClient.java:[line 423] \nSink method java/net/URL.openConnection()Ljava/net/URLConnection; \nSink parameter 0 \nUnknown source org/apache/qpid/tools/RestStressTestClient$RestClient._brokerUrl \nUnknown source java/net/URL.<init>(Ljava/lang/String;)V \nUnknown source org/apache/qpid/tools/RestStressTestClient$RestClient.createConnection(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/net/HttpURLConnection; parameter 1 \nAt RestStressTestClient.java:[line 150] \nAt RestStressTestClient.java:[line 172] \nAt RestStressTestClient.java:[line 173] \nAt RestStressTestClient.java:[line 174] \nAt RestStressTestClient.java:[line 182] \nAt RestStressTestClient.java:[line 185] \nAt RestStressTestClient.java:[line 189] \nAt RestStressTestClient.java:[line 194] \nAt RestStressTestClient.java:[line 203] \nAt RestStressTestClient.java:[line 208] \nAt RestStressTestClient.java:[line 218] \nAt RestStressTestClient.java:[line 224] \nAt RestStressTestClient.java:[line 241] \nAt RestStressTestClient.java:[line 247] \nAt RestStressTestClient.java:[line 660] \nAt RestStressTestClient.java:[line 680] \nAt RestStressTestClient.java:[line 690] \nAt RestStressTestClient.java:[line 695] \nAt RestStressTestClient.java:[line 295] \nAt RestStressTestClient.java:[line 311] \nAt RestStressTestClient.java:[line 331] \nAt RestStressTestClient.java:[line 345] \nAt RestStressTestClient.java:[line 361] \nAt RestStressTestClient.java:[line 379] \nAt RestStressTestClient.java:[line 423] \nAt RestStressTestClient.java:[line 462] \nAt RestStressTestClient.java:[line 480] \nAt RestStressTestClient.java:[line 497]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            HttpURLConnection httpConnection = (HttpURLConnection) new URL(_brokerUrl + restServiceUrl).openConnection();\n"
+                  },
+                  "startLine": 423
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_originals/tools/src/main/java/org/apache/qpid/tools/RestStressTestClient.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        {\n            HttpURLConnection httpConnection = (HttpURLConnection) new URL(_brokerUrl + restServiceUrl).openConnection();\n"
+                  },
+                  "endLine": 423,
+                  "startLine": 422
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "URLCONNECTION_SSRF_FD",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This random generator (java.util.Random) is predictable \nAt StressTestClient.java:[lines 47-624] \nIn class org.apache.qpid.tools.StressTestClient \nIn method org.apache.qpid.tools.StressTestClient.generateMessage(boolean, int) \nAt StressTestClient.java:[line 576] \nValue java.util.Random."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            Random rand = new Random(System.currentTimeMillis());\n"
+                  },
+                  "startLine": 576
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_originals/tools/src/main/java/org/apache/qpid/tools/StressTestClient.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            //fill the array with numbers from 0-9\n            Random rand = new Random(System.currentTimeMillis());\n"
+                  },
+                  "endLine": 576,
+                  "startLine": 575
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "PREDICTABLE_RANDOM",
+          "ruleIndex": 5
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "98e19873-7984-4a70-9467-3abdf99de7aa"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "",
+          "repositoryUri": "",
+          "revisionId": ""
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "98e19873-7984-4a70-9467-3abdf99de7aa",
+      "runGuid": "43502e01-f4aa-4d4e-ad90-969a4f9e9272"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+﻿Type,Impact,Category,File,Function,Count
+Structurally dead code,Medium,Control flow issues,/media/data/muse2/muse2repo_apk_mutation_reach_src/NasaApod/app/src/main/java/com/jvillalba/apod/classic/activities/MainActivity.java,MainActivity.onOptionsItemSelected,1
+Structurally dead code,Medium,Control flow issues,/media/data/muse2/muse2repo_apk_mutation_reach_src/NasaApod/app/src/main/java/com/jvillalba/apod/classic/activities/ViewActivity.java,ViewActivity.onOptionsItemSelected,1
+Explicit null dereferenced,Medium,Null pointer dereferences,/media/data/muse2/muse2repo_apk_mutation_reach_src/NasaApod/app/src/main/java/com/jvillalba/apod/classic/activities/ViewActivity.java,ViewActivity.onCreate,1
+Android application supports unsafe SDK versions,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/NasaApod/app/src/main/AndroidManifest.xml,,1
+Android application does not target the latest Android version,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/NasaApod/app/src/main/AndroidManifest.xml,,1
+Android application allows backups,Low,Low impact security,/media/data/muse2/muse2repo_apk_mutation_reach_src/NasaApod/app/src/main/AndroidManifest.xml,,1
