@@ -1,0 +1,10 @@
+../../../mutated_apps/exhaustive/android_apks/qark_kaltura.html
+../../../mutated_apps/exhaustive/android_apks/qark_2048-debug.html
+../../../mutated_apps/exhaustive/android_apks/qark_CalendarTrigger-debug.html
+../../../mutated_apps/exhaustive/android_apks/qark_protect-baby.html
+../../../mutated_apps/exhaustive/android_apks/qark_afhDownloader.html
+../../../mutated_apps/exhaustive/android_apks/qark_ActivityLauncherApp-debug.html
+../../../mutated_apps/exhaustive/android_apks/qark_nasaApod.html
+../../../mutated_apps/exhaustive/android_apks/qark_locationShare.html
+../../../mutated_apps/exhaustive/android_apks/qark_timetracker.html
+../../../mutated_apps/exhaustive/android_apks/qark_BMI-debug.html

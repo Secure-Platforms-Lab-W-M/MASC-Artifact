@@ -1,0 +1,9 @@
+../flaws/keytoalgo/minimal_reports/codeql-suite-code-scanning-results.sarif
+../flaws/keytoalgo/minimal_reports/codeql-results.sarif
+../flaws/keytoalgo/minimal_reports/codeql-suite-lgtm-full-results.sarif
+../flaws/keytoalgo/minimal_reports/codeql-experiment-trustmanager-results.sarif
+../flaws/minimal/minimal_reports/codeql-suite-security-extended-results.sarif
+../flaws/minimal/minimal_reports/codeql-suite-code-scanning-results.sarif
+../flaws/minimal/minimal_reports/codeql-results.sarif
+../flaws/minimal/minimal_reports/codeql-suite-lgtm-full-results.sarif
+../flaws/minimal/minimal_reports/codeql-experiment-trustmanager-results.sarif

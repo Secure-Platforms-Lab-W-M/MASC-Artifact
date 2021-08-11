@@ -1,0 +1,4 @@
+../flaws/keytoalgo/minimal_reports/source-java-report.sarif
+../flaws/keytoalgo/minimal_reports/class-report.sarif
+../flaws/minimal/minimal_reports/source-java-report.sarif
+../flaws/minimal/minimal_reports/class-report.sarif

@@ -1,0 +1,6 @@
+../../../mutated_apps/selective/opensource_android_apks/carreport/src_code/carreport-mutant2/reports/source-java-report.sarif
+../../../mutated_apps/selective/opensource_android_apks/carreport/src_code/carreport-mutant2/reports/class-report.sarif
+../../../mutated_apps/selective/opensource_android_apks/carreport/src_code/carreport-mutant1/reports/source-java-report.sarif
+../../../mutated_apps/selective/opensource_android_apks/carreport/src_code/carreport-mutant1/reports/class-report.sarif
+../../../mutated_apps/selective/opensource_android_apks/carreport/src_code/carreport-mutant3/reports/source-java-report.sarif
+../../../mutated_apps/selective/opensource_android_apks/carreport/src_code/carreport-mutant3/reports/class-report.sarif

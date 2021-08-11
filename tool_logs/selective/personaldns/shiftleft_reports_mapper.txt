@@ -1,0 +1,8 @@
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter-mutant1/reports/source-java-report.sarif
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter-mutant1/reports/class-report.sarif
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter-mutant3/reports/source-java-report.sarif
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter-mutant3/reports/class-report.sarif
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter-mutant2/reports/source-java-report.sarif
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter-mutant2/reports/class-report.sarif
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter/reports/source-java-report.sarif
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter/reports/class-report.sarif

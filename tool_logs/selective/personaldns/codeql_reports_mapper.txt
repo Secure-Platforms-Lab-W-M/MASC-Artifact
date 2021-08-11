@@ -1,0 +1,10 @@
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter-mutant1/non-shiftleft-reports/codeql-suite-code-scanning-results.sarif
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter-mutant1/non-shiftleft-reports/codeql-suite-lgtm-full-results.sarif
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter-mutant3/non-shiftleft-reports/codeql-suite-code-scanning-results.sarif
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter-mutant3/non-shiftleft-reports/codeql-suite-lgtm-full-results.sarif
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter-mutant2/non-shiftleft-reports/codeql-suite-code-scanning-results.sarif
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter-mutant2/non-shiftleft-reports/codeql-suite-lgtm-full-results.sarif
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter/non-shiftleft-reports/codeql-suite-code-scanning-results.sarif
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter/non-shiftleft-reports/codeql-suite-lgtm-full-results.sarif
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter/codeql-suite-code-scanning-results.sarif
+../../../mutated_apps/selective/opensource_android_apks/personaldns/src_code/personaldnsfilter/codeql-suite-lgtm-full-results.sarif

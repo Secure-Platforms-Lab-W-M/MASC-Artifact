@@ -1,0 +1,159 @@
+Summary for /media/data/muse2/tools/qark/build/qark/personal_dns3.jar
+Decompiled with CFR 0_124
+
+
+dnsfilter.BlockedHosts
+----------------------------
+
+lock(int )
+  Unable to fully structure code
+persist(java.lang.String )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [0[TRYBLOCK]], but top level block is 4[UNCONDITIONALDOLOOP]
+unLock(int )
+  Unable to fully structure code
+
+
+dnsfilter.DNSFilterProxy
+----------------------------
+
+initDNS(dnsfilter.DNSFilterManager )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [0[TRYBLOCK]], but top level block is 5[UNCONDITIONALDOLOOP]
+
+
+dnsfilter.DNSResolver
+----------------------------
+
+run()
+  Loose catch block
+
+
+dnsfilter.DNSResponsePatcher
+----------------------------
+
+patchResponse(java.lang.String byte[] int )
+  Unable to fully structure code
+
+
+dnsfilter.android.AppSelectorView
+----------------------------
+
+run()
+  Unable to fully structure code
+
+
+dnsfilter.android.ConnectionChangeReceiver
+----------------------------
+
+onReceive(android.content.Context android.content.Intent )
+  Loose catch block
+
+
+dnsfilter.android.DNSFilterService
+----------------------------
+
+detectDNSServers()
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [0[TRYBLOCK]], but top level block is 8[CATCHBLOCK]
+shutdown()
+  Unable to fully structure code
+onStartCommand(android.content.Intent int int )
+  Unable to fully structure code
+reload()
+  Loose catch block
+updateForward()
+  Loose catch block
+run()
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [0[TRYBLOCK]], but top level block is 7[WHILELOOP]
+
+
+dnsfilter.remote.RemoteAccessServer
+----------------------------
+
+run()
+  Loose catch block
+attachStream()
+  Loose catch block
+sendLog(int java.lang.String )
+  Loose catch block
+
+
+util.PackedSortedList
+----------------------------
+
+contains(java.lang.Object )
+  Loose catch block
+
+
+util.TimeoutTime
+----------------------------
+
+setTimeout(long )
+  Unable to fully structure code
+
+
+dnsfilter.DNSFilterManager
+----------------------------
+
+rebuildIndex()
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [0[TRYBLOCK]], but top level block is 54[SIMPLE_IF_TAKEN]
+reloadFilter(boolean )
+  Unable to fully structure code
+updateFilter()
+  Unable to fully structure code
+init()
+  Loose catch block
+updateFilter(java.lang.String boolean )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [1[TRYBLOCK]], but top level block is 4[TRYBLOCK]
+run()
+  Unable to fully structure code
+run()
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [0[TRYBLOCK]], but top level block is 14[WHILELOOP]
+
+
+dnsfilter.UDP
+----------------------------
+
+resolve(java.net.DatagramPacket java.net.DatagramPacket )
+  Loose catch block
+
+
+dnsfilter.android.DNSProxyActivity
+----------------------------
+
+buildFilterEntries(java.util.Properties )
+  Loose catch block
+run()
+  Loose catch block
+
+
+dnsfilter.remote.RemoteAccessClient
+----------------------------
+
+closeConnectionReconnect()
+  Loose catch block
+close()
+  Loose catch block
+run()
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: First case is not immediately after switch.
+
+
+util.AsyncBulkLogger
+----------------------------
+
+closeLogger()
+  Loose catch block
+
+
+util.AsyncLogger
+----------------------------
+
+closeLogger()
+  Loose catch block
+run()
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [9[CASE]], but top level block is 3[TRYBLOCK]
+
+
+util.FileLogger
+----------------------------
+
+closeLogger()
+  Loose catch block

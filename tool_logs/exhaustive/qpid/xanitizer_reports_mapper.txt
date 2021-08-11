@@ -1,0 +1,5 @@
+mutated_apps/exhaustive/qpid/xanitizer_logs/origin/origin_plugin_management/origin_plugin_management.pdf
+mutated_apps/exhaustive/qpid/xanitizer_logs/origin/origin_core/origin_core.pdf
+mutated_apps/exhaustive/qpid/xanitizer_logs/origin/origin_plugin_amqp/origin_plugin_amqp.pdf
+mutated_apps/exhaustive/qpid/xanitizer_logs/origin/origin_core_tests/origin_core_tests.pdf
+mutated_apps/exhaustive/qpid/xanitizer_logs/muse2repo_qpid_reachability.pdf

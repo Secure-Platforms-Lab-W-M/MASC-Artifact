@@ -1,0 +1,116 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: vnaBonwIe45BFRP+7XQBejWkG3E=
+X-Android-APK-Signed: 2
+
+Name: AndroidManifest.xml
+SHA1-Digest: swz/tdV076spkiaMFu39vJFsCOc=
+
+Name: assets/additionalHosts.txt
+SHA1-Digest: csybGKb4wwl0jDF3PggB5KkPSVw=
+
+Name: assets/dnsfilter.conf
+SHA1-Digest: MuPKafP5m8+RYfDXF4Z6itvp5u4=
+
+Name: classes.dex
+SHA1-Digest: U80J+U4+xkO4tK6FEupnHhipY/U=
+
+Name: res/drawable-hdpi-v4/icon.png
+SHA1-Digest: wqCCPY7eLk4pDOMHTNZM40NVFnA=
+
+Name: res/drawable-ldpi-v4/icon.png
+SHA1-Digest: 06EG7lFCBbHsLpKWomIGctekGW8=
+
+Name: res/drawable-mdpi-v4/icon.png
+SHA1-Digest: J9YQfbeXI56Mf84vb8r3jwtbVS4=
+
+Name: res/drawable-xhdpi-v4/icon.png
+SHA1-Digest: /OHZaeyH3GflCtIAYOYA8TCCg8g=
+
+Name: res/drawable-xxhdpi-v4/icon.png
+SHA1-Digest: maRUTWAqkekJIFsJP5LxqEDffdo=
+
+Name: res/drawable-xxxhdpi-v4/icon.png
+SHA1-Digest: P8Dm8Gy/ERQ4ndyY3+aVJd0y+hI=
+
+Name: res/drawable/baseline_cancel_24px.png
+SHA1-Digest: iOPr1M4UjjTuIbec2zKKg+0Obro=
+
+Name: res/drawable/baseline_done_24px.png
+SHA1-Digest: yg/m/kgXiiAFbKoBHbUWvjGEbps=
+
+Name: res/drawable/baseline_settings_remote_24px.png
+SHA1-Digest: lXfR5yCHk0kVOCajErimBt7vMlc=
+
+Name: res/drawable/button_default.xml
+SHA1-Digest: HJw4rqW6eyuv3jQYjuY5fcfgQhY=
+
+Name: res/drawable/button_focused.xml
+SHA1-Digest: IAQsLGuxq5/J+i7dehSawU4eykE=
+
+Name: res/drawable/button_pressed.xml
+SHA1-Digest: +dzLcTrVb9euOcHbMC0xgORyFMs=
+
+Name: res/drawable/checkbox_active.xml
+SHA1-Digest: DlNcI/MZduJV8KpOGxay/Q9ciI8=
+
+Name: res/drawable/checkbox_inactive.xml
+SHA1-Digest: n+Q2Rz2itRiQgsAZgYUIsBSOAGc=
+
+Name: res/drawable/custom_button.xml
+SHA1-Digest: akj5tng831KwLeQ5sTfAiM8y/bg=
+
+Name: res/drawable/custom_checkbox.xml
+SHA1-Digest: R4emO6XuORzg+xYW4vf5QIOjI80=
+
+Name: res/drawable/outline_settings_remote_24px.png
+SHA1-Digest: SuNt8RsT9teMYtEd54gv1y/XCw4=
+
+Name: res/drawable/scroll_bar.xml
+SHA1-Digest: 4n+BnN7JoxXGMzWIOdaKOLPHtPo=
+
+Name: res/drawable/text_view.xml
+SHA1-Digest: UVod0X/9+0xRJ8AYPlbRVmaKcfo=
+
+Name: res/drawable/twotone_delete_forever_24px.png
+SHA1-Digest: pXKEAdjke0mwsSKw0DTT7e/4EiA=
+
+Name: res/drawable/twotone_edit_24px.png
+SHA1-Digest: +2eIzVO3CEEt3qmirsB779bTImY=
+
+Name: res/layout-v16/filterentryeditdialog.xml
+SHA1-Digest: tYgNId0vOVJKXAmb9fnoZoy2cwg=
+
+Name: res/layout-v16/main.xml
+SHA1-Digest: iwc0Ybz9xqK+4NzfVrJivM3g7C0=
+
+Name: res/layout-v17/main.xml
+SHA1-Digest: fsqJupQNhqsR/dr38LwwPclY+ZI=
+
+Name: res/layout-v21/filterentryeditdialog.xml
+SHA1-Digest: FiJV4VGg3XsL+cLZPdi/4rnUSIQ=
+
+Name: res/layout-v21/main.xml
+SHA1-Digest: XukBL3A7+YueRC0vV1dnmHxM8mQ=
+
+Name: res/layout-v22/main.xml
+SHA1-Digest: WPK+3IytTWufqQi2Uaavndnm+cY=
+
+Name: res/layout/appselectorcheckbox.xml
+SHA1-Digest: KnPJ0dX6PsmOx5Wy//XIbGAYRwY=
+
+Name: res/layout/dnsconfigdialog.xml
+SHA1-Digest: jnYq/W3jUSlKyIUw7Y99ObC+0yI=
+
+Name: res/layout/filterconfigentry.xml
+SHA1-Digest: CjXgm0NnJuZqS36DCcB05cOH2FE=
+
+Name: res/layout/filterentryeditdialog.xml
+SHA1-Digest: b0+u+Y0sOn2Yc+Vqa7FM9Nz7SIg=
+
+Name: res/layout/main.xml
+SHA1-Digest: Nq3Mc2M1zZ0oHpxFM8rEwT/KaY0=
+
+Name: resources.arsc
+SHA1-Digest: TsT6Sn3VX9g2R8bQvrgYmO+9cZ4=
+
