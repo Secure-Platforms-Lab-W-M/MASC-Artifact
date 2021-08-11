@@ -47,9 +47,9 @@ bash tools_and_scripts/run_tools.sh minimal_flaws
 
 We have also included all the other various scripts we have created to evaluate the other applications (i.e., exhaustive and selective) as well as scripts to summarize certain tools' logs to enable easier interpretability as discussed in our paper. However, due to issues with hard-coded paths, and different build requirements, we do not provide an easy to reproduction script like the one for the minimal Flaws and so these additional scripts are not guaranteed to work out of the box.
 
-*Note*: For Coverity, only the scripts for exhaustive and selective are included since all minimal Flaws were run via Coverity's GUI.
+**Note 1**: For Coverity, only the scripts for exhaustive and selective are included since all minimal Flaws were run via Coverity's GUI.
 However, the Coverity GUI configurations are included.
 
 `tools_and_scripts/script_descriptions.csv` contains descriptions each of the scripts included.
 
-**Note: Any files/descriptions that refer to "reachability" is synonymous to "exhaustive". Similarly, we used "crysl" internally as synonymous to "cognicrypt".**
+**Note 2**: Any files/descriptions that refer to "reachability" is synonymous to "exhaustive". Similarly, we used "crysl" internally as synonymous to "cognicrypt".
