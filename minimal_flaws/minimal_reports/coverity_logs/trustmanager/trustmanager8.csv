@@ -1,0 +1,4 @@
+﻿Type,Impact,Category,File,Count,Function
+Unlogged security exception,Medium,Medium impact security,/BareboneTrustManagerConditional.java,2,BareboneTrustManagerConditional.main
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/BareboneTrustManagerConditional.java,1,"BareboneTrustManagerConditional$#1.checkClientTrusted(java.security.cert.X509Certificate[], java.lang.String)"
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/BareboneTrustManagerConditional.java,1,"BareboneTrustManagerConditional$#1.checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String)"

@@ -1,0 +1,36 @@
+{
+  "$schema" : "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version" : "2.1.0",
+  "runs" : [ {
+    "tool" : {
+      "driver" : {
+        "name" : "CodeQL",
+        "organization" : "GitHub",
+        "semanticVersion" : "2.3.2",
+        "rules" : [ {
+          "id" : "java/unsafe-cert-trust",
+          "name" : "java/unsafe-cert-trust",
+          "shortDescription" : {
+            "text" : "Unsafe certificate trust and improper hostname verification"
+          },
+          "fullDescription" : {
+            "text" : "Unsafe implementation of the interface X509TrustManager, HostnameVerifier, and SSLSocket/SSLEngine ignores all SSL certificate validation errors when establishing an HTTPS connection, thereby making the app vulnerable to man-in-the-middle attacks."
+          },
+          "defaultConfiguration" : { },
+          "properties" : {
+            "tags" : [ "security", "external/cwe-273" ],
+            "kind" : "problem",
+            "name" : "Unsafe certificate trust and improper hostname verification",
+            "description" : "Unsafe implementation of the interface X509TrustManager, HostnameVerifier, and SSLSocket/SSLEngine ignores all SSL certificate validation errors when establishing an HTTPS connection, thereby making the app vulnerable to man-in-the-middle attacks.",
+            "id" : "java/unsafe-cert-trust"
+          }
+        } ]
+      }
+    },
+    "results" : [ ],
+    "columnKind" : "utf16CodeUnits",
+    "properties" : {
+      "semmle.formatSpecifier" : "sarifv2.1.0"
+    }
+  } ]
+}

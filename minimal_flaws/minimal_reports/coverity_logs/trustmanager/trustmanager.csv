@@ -1,0 +1,25 @@
+﻿Type,Category,File,Count
+Unlogged security exception,Medium impact security,/8BareboneTrustManagerConditional/BareboneTrustManagerConditional.java,2
+RV: Bad use of return value,SpotBugs: Dodgy code,/6ITrustManagerUser/ITrustManagerUser.java,1
+RV: Bad use of return value,SpotBugs: Dodgy code,/3BareBone_X509TrustManagerCanNotBypass/BareBone_X509TrustManagerCanNotBypass.java,1
+RV: Bad use of return value,SpotBugs: Dodgy code,/2BareBone_X509TrustManager/BareBone_X509TrustManager.java,1
+RV: Bad use of return value,SpotBugs: Dodgy code,/4BareBone_X509ExtendedTrustManagerCanBypass/BareBone_X509ExtendedTrustManagerCanBypass.java,1
+Insecure SSL/TLS: bad TrustManager,High impact security,/2BareBone_X509TrustManager/BareBone_X509TrustManager.java,1
+Insecure SSL/TLS: bad TrustManager,High impact security,/8BareboneTrustManagerConditional/BareboneTrustManagerConditional.java,1
+Insecure SSL/TLS: bad TrustManager,High impact security,/1BadSSL_Naive/BadSSL_Naive.java,1
+Insecure SSL/TLS: bad TrustManager,High impact security,/4BareBone_X509ExtendedTrustManagerCanBypass/BareBone_X509ExtendedTrustManagerCanBypass.java,1
+Insecure SSL/TLS: bad TrustManager,High impact security,/5BareBone_X509TrustManagerCanBypass/BareBone_X509TrustManagerCanBypass.java,1
+Insecure SSL/TLS: bad TrustManager,High impact security,/6ITrustManagerUser/ITrustManagerUser.java,1
+Insecure SSL/TLS: bad TrustManager,High impact security,/1BadSSL_Naive/BadSSL_Naive.java,1
+Insecure SSL/TLS: bad TrustManager,High impact security,/4BareBone_X509ExtendedTrustManagerCanBypass/BareBone_X509ExtendedTrustManagerCanBypass.java,1
+Insecure SSL/TLS: bad TrustManager,High impact security,/7BareBone_x509TrustManagerCanNotBypass/BareBone_X509TrustManagerCanNotBypassExt.java,2
+Insecure SSL/TLS: bad TrustManager,High impact security,/4BareBone_X509ExtendedTrustManagerCanBypass/BareBone_X509ExtendedTrustManagerCanBypass.java,1
+Insecure SSL/TLS: bad TrustManager,High impact security,/4BareBone_X509ExtendedTrustManagerCanBypass/BareBone_X509ExtendedTrustManagerCanBypass.java,1
+Insecure SSL/TLS: bad TrustManager,High impact security,/8BareboneTrustManagerConditional/BareboneTrustManagerConditional.java,1
+Insecure SSL/TLS: bad TrustManager,High impact security,/6ITrustManagerUser/ITrustManagerUser.java,1
+Insecure SSL/TLS: bad TrustManager,High impact security,/4BareBone_X509ExtendedTrustManagerCanBypass/BareBone_X509ExtendedTrustManagerCanBypass.java,1
+Insecure SSL/TLS: bad TrustManager,High impact security,/4BareBone_X509ExtendedTrustManagerCanBypass/BareBone_X509ExtendedTrustManagerCanBypass.java,1
+Insecure SSL/TLS: bad TrustManager,High impact security,/5BareBone_X509TrustManagerCanBypass/BareBone_X509TrustManagerCanBypass.java,1
+Insecure SSL/TLS: bad TrustManager,High impact security,/2BareBone_X509TrustManager/BareBone_X509TrustManager.java,1
+Insecure SSL/TLS: bad TrustManager,High impact security,/7BareBone_x509TrustManagerCanNotBypass/BareBone_X509TrustManagerCanNotBypassExt.java,2
+Dm: Dubious method used,SpotBugs: Internationalization,/1BadSSL_Naive/BadSSL_Naive.java,1

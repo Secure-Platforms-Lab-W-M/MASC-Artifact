@@ -1,0 +1,4 @@
+﻿Type,Impact,Category,File,Count,Function
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/BadSSL_Naive.java,1,"BadSSL_Naive$#1.checkClientTrusted(java.security.cert.X509Certificate[], java.lang.String)"
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/BadSSL_Naive.java,1,"BadSSL_Naive$#1.checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String)"
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/BadSSL_Naive.java,1,BadSSL_Naive.main

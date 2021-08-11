@@ -1,0 +1,3 @@
+﻿Type,Category,File,Count
+RV: Bad use of return value,SpotBugs: Dodgy code,/1BadHostNameVerifier/BadHostName.java,1
+Insecure SSL/TLS: bad HostnameVerifier,High impact security,/4BadHostnameVerifierWithCondition/BadHostName.java,4

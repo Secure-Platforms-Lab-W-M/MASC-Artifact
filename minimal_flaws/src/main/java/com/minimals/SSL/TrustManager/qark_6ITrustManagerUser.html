@@ -1,0 +1,11 @@
+<html>
+<head><title>Temporary Report Template</title></head>
+<body>
+<h1>Issues</h1>
+
+<h2>WARNING Empty certificate method</h2>
+Instance of checkServerTrusted, with empty body found. This means this application is likely vulnerable to Man-In-The-Middle attacks. This can be confirmed using the free version of Burpsuite. Simply set the Android device's proxy to use Burpsuite via the network settings, but DO NOT install the Portswigger CA certificate on the device. If you still see traffic in the proxy, the app is vulnerable. Note: You need to ensure you exercise this code path. If you are unsure, make sure you click through each part of the application which makes network requests. You may need to toggle the proxy on/off to get past sections that do validate certificates properly in order to reach the vulnerable code. This proves that it will accept certificates from any CA. You should always validate your configuration by visiting an HTTPS site in the native browser and verifying you receive a certificate warning. For details, please see: https://developer.android.com/training/articles/security-ssl.html <br/><br/>
+File: <a href="file:///media/data/muse2/muse2repo_master/minimal/SSL/TrustManager/6ITrustManagerUser/ITrustManagerUser.java">/media/data/muse2/muse2repo_master/minimal/SSL/TrustManager/6ITrustManagerUser/ITrustManagerUser.java:15:11 </a><br/>
+
+</body>
+</html>

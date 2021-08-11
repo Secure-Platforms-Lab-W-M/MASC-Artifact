@@ -1,0 +1,2579 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Class File Analyzer",
+          "rules": [
+            {
+              "id": "DES_USAGE",
+              "help": {
+                "text": "DES should be replaced with AES \nAt CipherExample.java:[lines 7-24] \nIn class com.minimals.Cipher.KeyToAlgoDES.CipherExample \nIn method com.minimals.Cipher.KeyToAlgoDES.CipherExample.main(String[]) \nAt CipherExample.java:[line 11] \nSink method javax/crypto/KeyGenerator.getInstance(Ljava/lang/String;)Ljavax/crypto/KeyGenerator; \nSink parameter 0.",
+                "markdown": "DES should be replaced with AES \nAt CipherExample.java:[lines 7-24] \nIn class com.minimals.Cipher.KeyToAlgoDES.CipherExample \nIn method com.minimals.Cipher.KeyToAlgoDES.CipherExample.main(String[]) \nAt CipherExample.java:[line 11] \nSink method javax/crypto/KeyGenerator.getInstance(Ljava/lang/String;)Ljavax/crypto/KeyGenerator; \nSink parameter 0."
+              },
+              "name": "Des Usage",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "DES should be replaced with AES ."
+              },
+              "helpUri": "https://slscan.io?q=DES_USAGE",
+              "shortDescription": {
+                "text": "DES should be replaced with AES \nAt CipherExample.java:[lines 7-24] \nIn class com.minimals.Cipher.KeyToAlgoDES.CipherExample \nIn method com.minimals.Cipher.KeyToAlgoDES.CipherExample.main(String[]) \nAt CipherExample.java:[line 11] \nSink method javax/crypto/KeyGenerator.getInstance(Ljava/lang/String;)Ljavax/crypto/KeyGenerator; \nSink parameter 0."
+              }
+            },
+            {
+              "id": "CIPHER_INTEGRITY",
+              "help": {
+                "text": "The cipher does not provide data integrity \nAt CipherExample.java:[lines 7-12] \nIn class com.minimals.Cipher.baseCase.CipherExample \nIn method com.minimals.Cipher.baseCase.CipherExample.main(String[]) \nAt CipherExample.java:[line 10].",
+                "markdown": "The cipher does not provide data integrity \nAt CipherExample.java:[lines 7-12] \nIn class com.minimals.Cipher.baseCase.CipherExample \nIn method com.minimals.Cipher.baseCase.CipherExample.main(String[]) \nAt CipherExample.java:[line 10]."
+              },
+              "name": "Cipher Integrity",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "The cipher does not provide data integrity ."
+              },
+              "helpUri": "https://slscan.io?q=CIPHER_INTEGRITY",
+              "shortDescription": {
+                "text": "The cipher does not provide data integrity \nAt CipherExample.java:[lines 7-12] \nIn class com.minimals.Cipher.baseCase.CipherExample \nIn method com.minimals.Cipher.baseCase.CipherExample.main(String[]) \nAt CipherExample.java:[line 10]."
+              }
+            },
+            {
+              "id": "ECB_MODE",
+              "help": {
+                "text": "The cipher uses ECB mode, which provides poor confidentiality for encrypted data \nAt CipherExample.java:[lines 7-12] \nIn class com.minimals.Cipher.baseCase.CipherExample \nIn method com.minimals.Cipher.baseCase.CipherExample.main(String[]) \nAt CipherExample.java:[line 10].",
+                "markdown": "The cipher uses ECB mode, which provides poor confidentiality for encrypted data \nAt CipherExample.java:[lines 7-12] \nIn class com.minimals.Cipher.baseCase.CipherExample \nIn method com.minimals.Cipher.baseCase.CipherExample.main(String[]) \nAt CipherExample.java:[line 10]."
+              },
+              "name": "Ecb Mode",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "The cipher uses ECB mode, which provides poor confidentiality for encrypted data ."
+              },
+              "helpUri": "https://slscan.io?q=ECB_MODE",
+              "shortDescription": {
+                "text": "The cipher uses ECB mode, which provides poor confidentiality for encrypted data \nAt CipherExample.java:[lines 7-12] \nIn class com.minimals.Cipher.baseCase.CipherExample \nIn method com.minimals.Cipher.baseCase.CipherExample.main(String[]) \nAt CipherExample.java:[line 10]."
+              }
+            },
+            {
+              "id": "STATIC_IV",
+              "help": {
+                "text": "The initialization vector (IV) is not properly generated \nAt StaticIV.java:[lines 6-12] \nIn class com.minimals.IV.baseCase.StaticIV \nIn method com.minimals.IV.baseCase.StaticIV.main(String[]) \nAt StaticIV.java:[line 9].",
+                "markdown": "The initialization vector (IV) is not properly generated \nAt StaticIV.java:[lines 6-12] \nIn class com.minimals.IV.baseCase.StaticIV \nIn method com.minimals.IV.baseCase.StaticIV.main(String[]) \nAt StaticIV.java:[line 9]."
+              },
+              "name": "Static Iv",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "The initialization vector (IV) is not properly generated ."
+              },
+              "helpUri": "https://slscan.io?q=STATIC_IV",
+              "shortDescription": {
+                "text": "The initialization vector (IV) is not properly generated \nAt StaticIV.java:[lines 6-12] \nIn class com.minimals.IV.baseCase.StaticIV \nIn method com.minimals.IV.baseCase.StaticIV.main(String[]) \nAt StaticIV.java:[line 9]."
+              }
+            },
+            {
+              "id": "SSL_CONTEXT",
+              "help": {
+                "text": "SSLContext needs to be compatible with TLS 1.2 \nAt ContextOfSSL.java:[lines 7-17] \nIn class com.minimals.SSL.Context.baseCase.ContextOfSSL \nIn method com.minimals.SSL.Context.baseCase.ContextOfSSL.main(String[]) \nAt ContextOfSSL.java:[line 10].",
+                "markdown": "SSLContext needs to be compatible with TLS 1.2 \nAt ContextOfSSL.java:[lines 7-17] \nIn class com.minimals.SSL.Context.baseCase.ContextOfSSL \nIn method com.minimals.SSL.Context.baseCase.ContextOfSSL.main(String[]) \nAt ContextOfSSL.java:[line 10]."
+              },
+              "name": "Ssl Context",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "SSLContext needs to be compatible with TLS 1.2 ."
+              },
+              "helpUri": "https://slscan.io?q=SSL_CONTEXT",
+              "shortDescription": {
+                "text": "SSLContext needs to be compatible with TLS 1.2 \nAt ContextOfSSL.java:[lines 7-17] \nIn class com.minimals.SSL.Context.baseCase.ContextOfSSL \nIn method com.minimals.SSL.Context.baseCase.ContextOfSSL.main(String[]) \nAt ContextOfSSL.java:[line 10]."
+              }
+            },
+            {
+              "id": "WEAK_HOSTNAME_VERIFIER",
+              "help": {
+                "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt BadHostName.java:[lines 8-13] \nIn class com.minimals.SSL.HostNameVerifier.a_BadHostNameVerifier.BadHostName$1 \nIn method com.minimals.SSL.HostNameVerifier.a_BadHostNameVerifier.BadHostName$1.verify(String, SSLSession) \nAt BadHostName.java:[line 13].",
+                "markdown": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt BadHostName.java:[lines 8-13] \nIn class com.minimals.SSL.HostNameVerifier.a_BadHostNameVerifier.BadHostName$1 \nIn method com.minimals.SSL.HostNameVerifier.a_BadHostNameVerifier.BadHostName$1.verify(String, SSLSession) \nAt BadHostName.java:[line 13]."
+              },
+              "name": "WEAK HOSTNAME VERIFIER",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack ."
+              },
+              "helpUri": "https://slscan.io?q=WEAK_HOSTNAME_VERIFIER",
+              "shortDescription": {
+                "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt BadHostName.java:[lines 8-13] \nIn class com.minimals.SSL.HostNameVerifier.a_BadHostNameVerifier.BadHostName$1 \nIn method com.minimals.SSL.HostNameVerifier.a_BadHostNameVerifier.BadHostName$1.verify(String, SSLSession) \nAt BadHostName.java:[line 13]."
+              }
+            },
+            {
+              "id": "WEAK_TRUST_MANAGER",
+              "help": {
+                "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BadSSL_Naive.java:[lines 17-35] \nIn class com.minimals.SSL.TrustManager.BadSSL_Naive.BadSSL_Naive$1 \nIn method com.minimals.SSL.TrustManager.BadSSL_Naive.BadSSL_Naive$1.checkClientTrusted(X509Certificate[], String) \nAt BadSSL_Naive.java:[line 35].",
+                "markdown": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BadSSL_Naive.java:[lines 17-35] \nIn class com.minimals.SSL.TrustManager.BadSSL_Naive.BadSSL_Naive$1 \nIn method com.minimals.SSL.TrustManager.BadSSL_Naive.BadSSL_Naive$1.checkClientTrusted(X509Certificate[], String) \nAt BadSSL_Naive.java:[line 35]."
+              },
+              "name": "WEAK TRUST MANAGER",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack ."
+              },
+              "helpUri": "https://slscan.io?q=WEAK_TRUST_MANAGER",
+              "shortDescription": {
+                "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BadSSL_Naive.java:[lines 17-35] \nIn class com.minimals.SSL.TrustManager.BadSSL_Naive.BadSSL_Naive$1 \nIn method com.minimals.SSL.TrustManager.BadSSL_Naive.BadSSL_Naive$1.checkClientTrusted(X509Certificate[], String) \nAt BadSSL_Naive.java:[line 35]."
+              }
+            },
+            {
+              "id": "WEAK_MESSAGE_DIGEST_MD5",
+              "help": {
+                "text": "This API MD5 (MDX) is not a recommended cryptographic hash function \nAt MessageDigestBase.java:[lines 5-17] \nIn class com.minimals.messagedigest.baseCase.MessageDigestBase \nIn method com.minimals.messagedigest.baseCase.MessageDigestBase.main(String[]) \nAt MessageDigestBase.java:[line 10] \nValue MD5.",
+                "markdown": "This API MD5 (MDX) is not a recommended cryptographic hash function \nAt MessageDigestBase.java:[lines 5-17] \nIn class com.minimals.messagedigest.baseCase.MessageDigestBase \nIn method com.minimals.messagedigest.baseCase.MessageDigestBase.main(String[]) \nAt MessageDigestBase.java:[line 10] \nValue MD5."
+              },
+              "name": "WEAK MESSAGE DIGEST MD5",
+              "properties": {
+                "tags": [
+                  "Scan"
+                ],
+                "precision": "high"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "This API MD5 (MDX) is not a recommended cryptographic hash function ."
+              },
+              "helpUri": "https://slscan.io?q=WEAK_MESSAGE_DIGEST_MD5",
+              "shortDescription": {
+                "text": "This API MD5 (MDX) is not a recommended cryptographic hash function \nAt MessageDigestBase.java:[lines 5-17] \nIn class com.minimals.messagedigest.baseCase.MessageDigestBase \nIn method com.minimals.messagedigest.baseCase.MessageDigestBase.main(String[]) \nAt MessageDigestBase.java:[line 10] \nValue MD5."
+              }
+            }
+          ],
+          "version": "1.0.0-scan",
+          "fullName": "Class File Analyzer"
+        }
+      },
+      "conversion": {
+        "tool": {
+          "driver": {
+            "name": "@ShiftLeft/sast-scan"
+          }
+        },
+        "invocation": {
+          "arguments": [
+            "-jar",
+            "/tmp/.mount_scans6aooz/opt/spotbugs/lib/spotbugs.jar",
+            "-textui",
+            "-include",
+            "/tmp/.mount_scans6aooz/usr/src/tools_config/spotbugs/include.xml",
+            "-exclude",
+            "/tmp/.mount_scans6aooz/usr/src/tools_config/spotbugs/exclude.xml",
+            "-noClassOk",
+            "-auxclasspathFromFile",
+            "/tmp/tmpnokbi8_t",
+            "-sourcepath",
+            "/media/data/muse2/muse2repo/minimal",
+            "-quiet",
+            "-medium",
+            "-xml:withMessages",
+            "-effort:max",
+            "-nested:false",
+            "-output",
+            "/media/data/muse2/muse2repo/minimal/reports/class-report.xml",
+            "/media/data/muse2/muse2repo/minimal"
+          ],
+          "executionSuccessful": true,
+          "commandLine": "-jar /tmp/.mount_scans6aooz/opt/spotbugs/lib/spotbugs.jar -textui -include /tmp/.mount_scans6aooz/usr/src/tools_config/spotbugs/include.xml -exclude /tmp/.mount_scans6aooz/usr/src/tools_config/spotbugs/exclude.xml -noClassOk -auxclasspathFromFile /tmp/tmpnokbi8_t -sourcepath /media/data/muse2/muse2repo/minimal -quiet -medium -xml:withMessages -effort:max -nested:false -output /media/data/muse2/muse2repo/minimal/reports/class-report.xml /media/data/muse2/muse2repo/minimal",
+          "endTimeUtc": "2020-12-01T18:39:43Z",
+          "workingDirectory": {
+            "uri": "file:///media/data/muse2/muse2repo/minimal"
+          }
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "endTimeUtc": "2020-12-01T18:39:43Z",
+          "workingDirectory": {
+            "uri": "file:///media/data/muse2/muse2repo/minimal"
+          }
+        }
+      ],
+      "properties": {
+        "metrics": {
+          "total": 62,
+          "critical": 12,
+          "high": 50,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "markdown": "",
+            "text": "DES should be replaced with AES \nAt CipherExample.java:[lines 7-24] \nIn class com.minimals.Cipher.KeyToAlgoDES.CipherExample \nIn method com.minimals.Cipher.KeyToAlgoDES.CipherExample.main(String[]) \nAt CipherExample.java:[line 11] \nSink method javax/crypto/KeyGenerator.getInstance(Ljava/lang/String;)Ljavax/crypto/KeyGenerator; \nSink parameter 0."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            KeyGenerator keygen = KeyGenerator.getInstance(algo);\n"
+                  },
+                  "startLine": 11
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/Cipher/KeyToAlgoDES/CipherExample.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            String algo = \"DES\";\n            KeyGenerator keygen = KeyGenerator.getInstance(algo);\n"
+                  },
+                  "endLine": 11,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "DES_USAGE",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The cipher does not provide data integrity \nAt CipherExample.java:[lines 7-12] \nIn class com.minimals.Cipher.baseCase.CipherExample \nIn method com.minimals.Cipher.baseCase.CipherExample.main(String[]) \nAt CipherExample.java:[line 10]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        Cipher c = Cipher.getInstance(\"AES\");\n"
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/Cipher/baseCase/CipherExample.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    throws NoSuchAlgorithmException, NoSuchPaddingException {\n        Cipher c = Cipher.getInstance(\"AES\");\n"
+                  },
+                  "endLine": 10,
+                  "startLine": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CIPHER_INTEGRITY",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The cipher uses ECB mode, which provides poor confidentiality for encrypted data \nAt CipherExample.java:[lines 7-12] \nIn class com.minimals.Cipher.baseCase.CipherExample \nIn method com.minimals.Cipher.baseCase.CipherExample.main(String[]) \nAt CipherExample.java:[line 10]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        Cipher c = Cipher.getInstance(\"AES\");\n"
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/Cipher/baseCase/CipherExample.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    throws NoSuchAlgorithmException, NoSuchPaddingException {\n        Cipher c = Cipher.getInstance(\"AES\");\n"
+                  },
+                  "endLine": 10,
+                  "startLine": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "ECB_MODE",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The cipher does not provide data integrity \nAt CipherExample.java:[lines 7-13] \nIn class com.minimals.Cipher.baseCaseVariable.CipherExample \nIn method com.minimals.Cipher.baseCaseVariable.CipherExample.main(String[]) \nAt CipherExample.java:[line 11]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        Cipher c = Cipher.getInstance(algorithmName);\n"
+                  },
+                  "startLine": 11
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/Cipher/baseCaseVariable/CipherExample.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        String algorithmName = \"AES\";\n        Cipher c = Cipher.getInstance(algorithmName);\n"
+                  },
+                  "endLine": 11,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CIPHER_INTEGRITY",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The cipher uses ECB mode, which provides poor confidentiality for encrypted data \nAt CipherExample.java:[lines 7-13] \nIn class com.minimals.Cipher.baseCaseVariable.CipherExample \nIn method com.minimals.Cipher.baseCaseVariable.CipherExample.main(String[]) \nAt CipherExample.java:[line 11]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        Cipher c = Cipher.getInstance(algorithmName);\n"
+                  },
+                  "startLine": 11
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/Cipher/baseCaseVariable/CipherExample.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        String algorithmName = \"AES\";\n        Cipher c = Cipher.getInstance(algorithmName);\n"
+                  },
+                  "endLine": 11,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "ECB_MODE",
+          "ruleIndex": 2
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The cipher does not provide data integrity \nAt CipherExample.java:[lines 7-12] \nIn class com.minimals.Cipher.differentCase.CipherExample \nIn method com.minimals.Cipher.differentCase.CipherExample.main(String[]) \nAt CipherExample.java:[line 10]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        Cipher c = Cipher.getInstance(\"des\");        \n"
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/Cipher/differentCase/CipherExample.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    throws NoSuchAlgorithmException, NoSuchPaddingException {\n        Cipher c = Cipher.getInstance(\"des\");        \n"
+                  },
+                  "endLine": 10,
+                  "startLine": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CIPHER_INTEGRITY",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "DES should be replaced with AES \nAt CipherExample.java:[lines 7-12] \nIn class com.minimals.Cipher.differentCase.CipherExample \nIn method com.minimals.Cipher.differentCase.CipherExample.main(String[]) \nAt CipherExample.java:[line 10] \nSink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher; \nSink parameter 0."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        Cipher c = Cipher.getInstance(\"des\");        \n"
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/Cipher/differentCase/CipherExample.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    throws NoSuchAlgorithmException, NoSuchPaddingException {\n        Cipher c = Cipher.getInstance(\"des\");        \n"
+                  },
+                  "endLine": 10,
+                  "startLine": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "DES_USAGE",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The cipher does not provide data integrity \nAt BlowFish.java:[lines 13-52] \nIn class com.minimals.Cipher.insecureBlowFish.BlowFish \nIn method com.minimals.Cipher.insecureBlowFish.BlowFish.main(String[]) \nAt BlowFish.java:[line 24]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            Cipher cipher = Cipher.getInstance(\"Blowfish/CFB8/NoPadding\");\n"
+                  },
+                  "startLine": 24
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/Cipher/insecureBlowFish/BlowFish.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n            Cipher cipher = Cipher.getInstance(\"Blowfish/CFB8/NoPadding\");\n"
+                  },
+                  "endLine": 24,
+                  "startLine": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CIPHER_INTEGRITY",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The cipher does not provide data integrity \nAt BlowFish.java:[lines 13-52] \nIn class com.minimals.Cipher.insecureBlowFish.BlowFish \nIn method com.minimals.Cipher.insecureBlowFish.BlowFish.main(String[]) \nAt BlowFish.java:[line 40]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            Cipher decrypter = Cipher.getInstance(\"Blowfish/CFB8/NoPadding\");\n"
+                  },
+                  "startLine": 40
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/Cipher/insecureBlowFish/BlowFish.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n            Cipher decrypter = Cipher.getInstance(\"Blowfish/CFB8/NoPadding\");\n"
+                  },
+                  "endLine": 40,
+                  "startLine": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CIPHER_INTEGRITY",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The cipher does not provide data integrity \nAt BlowFish.java:[lines 13-52] \nIn class com.minimals.Cipher.secureBlowFish.BlowFish \nIn method com.minimals.Cipher.secureBlowFish.BlowFish.main(String[]) \nAt BlowFish.java:[line 24]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            Cipher cipher = Cipher.getInstance(\"Blowfish/CFB8/NoPadding\");\n"
+                  },
+                  "startLine": 24
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/Cipher/secureBlowFish/BlowFish.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n            Cipher cipher = Cipher.getInstance(\"Blowfish/CFB8/NoPadding\");\n"
+                  },
+                  "endLine": 24,
+                  "startLine": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CIPHER_INTEGRITY",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The cipher does not provide data integrity \nAt BlowFish.java:[lines 13-52] \nIn class com.minimals.Cipher.secureBlowFish.BlowFish \nIn method com.minimals.Cipher.secureBlowFish.BlowFish.main(String[]) \nAt BlowFish.java:[line 40]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            Cipher decrypter = Cipher.getInstance(\"Blowfish/CFB8/NoPadding\");\n"
+                  },
+                  "startLine": 40
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/Cipher/secureBlowFish/BlowFish.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n            Cipher decrypter = Cipher.getInstance(\"Blowfish/CFB8/NoPadding\");\n"
+                  },
+                  "endLine": 40,
+                  "startLine": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "CIPHER_INTEGRITY",
+          "ruleIndex": 1
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "DES should be replaced with AES \nAt CipherExample.java:[lines 8-13] \nIn class com.minimals.Cipher.stringCaseTransform.CipherExample \nIn method com.minimals.Cipher.stringCaseTransform.CipherExample.main(String[]) \nAt CipherExample.java:[line 11] \nSink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher; \nSink parameter 0."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        Cipher c = Cipher.getInstance(\"des\".toUpperCase(Locale.ENGLISH));\n"
+                  },
+                  "startLine": 11
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/Cipher/stringCaseTransform/CipherExample.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    throws NoSuchAlgorithmException, NoSuchPaddingException {\n        Cipher c = Cipher.getInstance(\"des\".toUpperCase(Locale.ENGLISH));\n"
+                  },
+                  "endLine": 11,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "DES_USAGE",
+          "ruleIndex": 0
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The initialization vector (IV) is not properly generated \nAt StaticIV.java:[lines 6-12] \nIn class com.minimals.IV.baseCase.StaticIV \nIn method com.minimals.IV.baseCase.StaticIV.main(String[]) \nAt StaticIV.java:[line 9]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        IvParameterSpec ivSpec = new IvParameterSpec(bytes);\n"
+                  },
+                  "startLine": 9
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/IV/baseCase/StaticIV.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        byte[] bytes = \"Hello\".getBytes();\n        IvParameterSpec ivSpec = new IvParameterSpec(bytes);\n"
+                  },
+                  "endLine": 9,
+                  "startLine": 8
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "STATIC_IV",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The initialization vector (IV) is not properly generated \nAt ComplexStaticIV.java:[lines 6-17] \nIn class com.minimals.IV.complexCase.ComplexStaticIV \nIn method com.minimals.IV.complexCase.ComplexStaticIV.main(String[]) \nAt ComplexStaticIV.java:[line 14]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        IvParameterSpec ivSpec = new IvParameterSpec(val.getBytes());\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/IV/complexCase/ComplexStaticIV.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n        IvParameterSpec ivSpec = new IvParameterSpec(val.getBytes());\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "STATIC_IV",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The initialization vector (IV) is not properly generated \nAt StaticIV.java:[lines 6-27] \nIn class com.minimals.IV.stash.StaticIV \nIn method com.minimals.IV.stash.StaticIV.main(String[]) \nAt StaticIV.java:[line 22]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        IvParameterSpec ivSpec = new IvParameterSpec(val.getBytes());\n"
+                  },
+                  "startLine": 22
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/IV/stash/StaticIV.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        }\n        IvParameterSpec ivSpec = new IvParameterSpec(val.getBytes());\n"
+                  },
+                  "endLine": 22,
+                  "startLine": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "STATIC_IV",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The initialization vector (IV) is not properly generated \nAt StaticIV.java:[lines 6-27] \nIn class com.minimals.IV.stash.StaticIV \nIn method com.minimals.IV.stash.StaticIV.main(String[]) \nAt StaticIV.java:[line 24]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        IvParameterSpec ivSpec2 = new IvParameterSpec(val2.getBytes());\n"
+                  },
+                  "startLine": 24
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/IV/stash/StaticIV.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        String val2 = \"ABCDEFGHI\";\n        IvParameterSpec ivSpec2 = new IvParameterSpec(val2.getBytes());\n"
+                  },
+                  "endLine": 24,
+                  "startLine": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "STATIC_IV",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "The initialization vector (IV) is not properly generated \nAt CurrentTimeIV.java:[lines 7-17] \nIn class com.minimals.IV.timeCase.CurrentTimeIV \nIn method com.minimals.IV.timeCase.CurrentTimeIV.main(String[]) \nAt CurrentTimeIV.java:[line 14]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        IvParameterSpec ivSpec = new IvParameterSpec(val.getBytes());\n"
+                  },
+                  "startLine": 14
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/IV/timeCase/CurrentTimeIV.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        val = formatter.format(date);\n        IvParameterSpec ivSpec = new IvParameterSpec(val.getBytes());\n"
+                  },
+                  "endLine": 14,
+                  "startLine": 13
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "STATIC_IV",
+          "ruleIndex": 3
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "SSLContext needs to be compatible with TLS 1.2 \nAt ContextOfSSL.java:[lines 7-17] \nIn class com.minimals.SSL.Context.baseCase.ContextOfSSL \nIn method com.minimals.SSL.Context.baseCase.ContextOfSSL.main(String[]) \nAt ContextOfSSL.java:[line 10]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            SSLContext context = SSLContext.getInstance(\"SSL\");\n"
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/Context/baseCase/ContextOfSSL.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        try {\n            SSLContext context = SSLContext.getInstance(\"SSL\");\n"
+                  },
+                  "endLine": 10,
+                  "startLine": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "SSL_CONTEXT",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt BadHostName.java:[lines 8-13] \nIn class com.minimals.SSL.HostNameVerifier.a_BadHostNameVerifier.BadHostName$1 \nIn method com.minimals.SSL.HostNameVerifier.a_BadHostNameVerifier.BadHostName$1.verify(String, SSLSession) \nAt BadHostName.java:[line 13]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                return true;\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/HostNameVerifier/a_BadHostNameVerifier/BadHostName.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                // TODO Auto-generated method stub\n                return true;\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_HOSTNAME_VERIFIER",
+          "ruleIndex": 5
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt BadHostName.java:[lines 6-9] \nIn class com.minimals.SSL.HostNameVerifier.b_BadHostNameVerifier.BadHostName$1 \nIn method com.minimals.SSL.HostNameVerifier.b_BadHostNameVerifier.BadHostName$1.verify(String, SSLSession) \nAt BadHostName.java:[line 9]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                return true;\n"
+                  },
+                  "startLine": 9
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/HostNameVerifier/b_BadHostNameVerifier/BadHostName.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            public boolean verify(String hostname, SSLSession session) {\n                return true;\n"
+                  },
+                  "endLine": 9,
+                  "startLine": 8
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_HOSTNAME_VERIFIER",
+          "ruleIndex": 5
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt BadHostName.java:[lines 6-9] \nIn class com.minimals.SSL.HostNameVerifier.c_BadHostNameVerifier.BadHostName$1 \nIn method com.minimals.SSL.HostNameVerifier.c_BadHostNameVerifier.BadHostName$1.verify(String, SSLSession) \nAt BadHostName.java:[line 9]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                return true;\n"
+                  },
+                  "startLine": 9
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/HostNameVerifier/c_BadHostNameVerifier/BadHostName.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            public boolean verify(String hostname, SSLSession session) {\n                return true;\n"
+                  },
+                  "endLine": 9,
+                  "startLine": 8
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_HOSTNAME_VERIFIER",
+          "ruleIndex": 5
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt BadHostName.java:[lines 6-10] \nIn class com.minimals.SSL.HostNameVerifier.d_BadHostNameVerifierWithCondition.BadHostName$1 \nIn method com.minimals.SSL.HostNameVerifier.d_BadHostNameVerifierWithCondition.BadHostName$1.verify(String, SSLSession) \nAt BadHostName.java:[line 10]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/com/minimals/SSL/HostNameVerifier/d_BadHostNameVerifierWithCondition/BadHostName.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_HOSTNAME_VERIFIER",
+          "ruleIndex": 5
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt BadHostName.java:[lines 6-10] \nIn class com.minimals.SSL.HostNameVerifier.e_BadHostNameVerifierWithGenericCondition.BadHostName$1 \nIn method com.minimals.SSL.HostNameVerifier.e_BadHostNameVerifierWithGenericCondition.BadHostName$1.verify(String, SSLSession) \nAt BadHostName.java:[line 10]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/com/minimals/SSL/HostNameVerifier/e_BadHostNameVerifierWithGenericCondition/BadHostName.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_HOSTNAME_VERIFIER",
+          "ruleIndex": 5
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt BadHostName.java:[lines 6-10] \nIn class com.minimals.SSL.HostNameVerifier.f_BadHostNameVerifierWithCondition.BadHostName$1 \nIn method com.minimals.SSL.HostNameVerifier.f_BadHostNameVerifierWithCondition.BadHostName$1.verify(String, SSLSession) \nAt BadHostName.java:[line 10]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/com/minimals/SSL/HostNameVerifier/f_BadHostNameVerifierWithCondition/BadHostName.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_HOSTNAME_VERIFIER",
+          "ruleIndex": 5
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt BadHostName.java:[lines 6-10] \nIn class com.minimals.SSL.HostNameVerifier.g_BadHostNameVerifierWithGenericCondition.BadHostName$1 \nIn method com.minimals.SSL.HostNameVerifier.g_BadHostNameVerifierWithGenericCondition.BadHostName$1.verify(String, SSLSession) \nAt BadHostName.java:[line 10]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/com/minimals/SSL/HostNameVerifier/g_BadHostNameVerifierWithGenericCondition/BadHostName.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_HOSTNAME_VERIFIER",
+          "ruleIndex": 5
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "SSLContext needs to be compatible with TLS 1.2 \nAt BadSSL_Naive.java:[lines 12-64] \nIn class com.minimals.SSL.TrustManager.BadSSL_Naive.BadSSL_Naive \nIn method com.minimals.SSL.TrustManager.BadSSL_Naive.BadSSL_Naive.main(String[]) \nAt BadSSL_Naive.java:[line 46]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            SSLContext context = SSLContext.getInstance(\"SSL\");\n"
+                  },
+                  "startLine": 46
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BadSSL_Naive/BadSSL_Naive.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n            SSLContext context = SSLContext.getInstance(\"SSL\");\n"
+                  },
+                  "endLine": 46,
+                  "startLine": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "SSL_CONTEXT",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BadSSL_Naive.java:[lines 17-35] \nIn class com.minimals.SSL.TrustManager.BadSSL_Naive.BadSSL_Naive$1 \nIn method com.minimals.SSL.TrustManager.BadSSL_Naive.BadSSL_Naive$1.checkClientTrusted(X509Certificate[], String) \nAt BadSSL_Naive.java:[line 35]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            }\n"
+                  },
+                  "startLine": 35
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BadSSL_Naive/BadSSL_Naive.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                \n            }\n"
+                  },
+                  "endLine": 35,
+                  "startLine": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BadSSL_Naive.java:[lines 17-35] \nIn class com.minimals.SSL.TrustManager.BadSSL_Naive.BadSSL_Naive$1 \nIn method com.minimals.SSL.TrustManager.BadSSL_Naive.BadSSL_Naive$1.checkServerTrusted(X509Certificate[], String) \nAt BadSSL_Naive.java:[line 29]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            }\n"
+                  },
+                  "startLine": 29
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BadSSL_Naive/BadSSL_Naive.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                \n            }\n"
+                  },
+                  "endLine": 29,
+                  "startLine": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BadSSL_Naive.java:[lines 17-35] \nIn class com.minimals.SSL.TrustManager.BadSSL_Naive.BadSSL_Naive$1 \nIn method com.minimals.SSL.TrustManager.BadSSL_Naive.BadSSL_Naive$1.getAcceptedIssuers() \nAt BadSSL_Naive.java:[line 22]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                return null;\n"
+                  },
+                  "startLine": 22
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BadSSL_Naive/BadSSL_Naive.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                // TODO Auto-generated method stub\n                return null;\n"
+                  },
+                  "endLine": 22,
+                  "startLine": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareboneTrustManagerConditional.java:[lines 22-46] \nIn class com.minimals.SSL.TrustManager.BareBoneTrustManagerConditional.BareboneTrustManagerConditional$1 \nIn method com.minimals.SSL.TrustManager.BareBoneTrustManagerConditional.BareboneTrustManagerConditional$1.getAcceptedIssuers() \nAt BareboneTrustManagerConditional.java:[lines 42-46]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 42
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/com/minimals/SSL/TrustManager/BareBoneTrustManagerConditional/BareboneTrustManagerConditional.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "SSLContext needs to be compatible with TLS 1.2 \nAt BareboneTrustManagerConditional.java:[lines 15-53] \nIn class com.minimals.SSL.TrustManager.BareBoneTrustManagerDummyStatements.BareboneTrustManagerConditional \nIn method com.minimals.SSL.TrustManager.BareBoneTrustManagerDummyStatements.BareboneTrustManagerConditional.main(String[]) \nAt BareboneTrustManagerConditional.java:[line 42]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 42
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/com/minimals/SSL/TrustManager/BareBoneTrustManagerDummyStatements/BareboneTrustManagerConditional.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "SSL_CONTEXT",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareboneTrustManagerConditional.java:[lines 20-36] \nIn class com.minimals.SSL.TrustManager.BareBoneTrustManagerDummyStatements.BareboneTrustManagerConditional$1 \nIn method com.minimals.SSL.TrustManager.BareBoneTrustManagerDummyStatements.BareboneTrustManagerConditional$1.getAcceptedIssuers() \nAt BareboneTrustManagerConditional.java:[line 36]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 36
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/com/minimals/SSL/TrustManager/BareBoneTrustManagerDummyStatements/BareboneTrustManagerConditional.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509ExtendedTrustManagerCanBypass.java:[lines 13-59] \nIn class com.minimals.SSL.TrustManager.BareBone_X509ExtendedTrustManagerCanBypass.BareBone_X509ExtendedTrustManagerCanBypass$1 \nIn method com.minimals.SSL.TrustManager.BareBone_X509ExtendedTrustManagerCanBypass.BareBone_X509ExtendedTrustManagerCanBypass$1.checkClientTrusted(X509Certificate[], String) \nAt BareBone_X509ExtendedTrustManagerCanBypass.java:[line 19]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t}\n"
+                  },
+                  "startLine": 19
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BareBone_X509ExtendedTrustManagerCanBypass/BareBone_X509ExtendedTrustManagerCanBypass.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t\t\n\t\t\t}\n"
+                  },
+                  "endLine": 19,
+                  "startLine": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509ExtendedTrustManagerCanBypass.java:[lines 13-59] \nIn class com.minimals.SSL.TrustManager.BareBone_X509ExtendedTrustManagerCanBypass.BareBone_X509ExtendedTrustManagerCanBypass$1 \nIn method com.minimals.SSL.TrustManager.BareBone_X509ExtendedTrustManagerCanBypass.BareBone_X509ExtendedTrustManagerCanBypass$1.checkClientTrusted(X509Certificate[], String, Socket) \nAt BareBone_X509ExtendedTrustManagerCanBypass.java:[line 38]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t}\n"
+                  },
+                  "startLine": 38
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BareBone_X509ExtendedTrustManagerCanBypass/BareBone_X509ExtendedTrustManagerCanBypass.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t\t\n\t\t\t}\n"
+                  },
+                  "endLine": 38,
+                  "startLine": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509ExtendedTrustManagerCanBypass.java:[lines 13-59] \nIn class com.minimals.SSL.TrustManager.BareBone_X509ExtendedTrustManagerCanBypass.BareBone_X509ExtendedTrustManagerCanBypass$1 \nIn method com.minimals.SSL.TrustManager.BareBone_X509ExtendedTrustManagerCanBypass.BareBone_X509ExtendedTrustManagerCanBypass$1.checkClientTrusted(X509Certificate[], String, SSLEngine) \nAt BareBone_X509ExtendedTrustManagerCanBypass.java:[line 52]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t}\n"
+                  },
+                  "startLine": 52
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BareBone_X509ExtendedTrustManagerCanBypass/BareBone_X509ExtendedTrustManagerCanBypass.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t\t\n\t\t\t}\n"
+                  },
+                  "endLine": 52,
+                  "startLine": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509ExtendedTrustManagerCanBypass.java:[lines 13-59] \nIn class com.minimals.SSL.TrustManager.BareBone_X509ExtendedTrustManagerCanBypass.BareBone_X509ExtendedTrustManagerCanBypass$1 \nIn method com.minimals.SSL.TrustManager.BareBone_X509ExtendedTrustManagerCanBypass.BareBone_X509ExtendedTrustManagerCanBypass$1.checkServerTrusted(X509Certificate[], String) \nAt BareBone_X509ExtendedTrustManagerCanBypass.java:[line 25]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t}\n"
+                  },
+                  "startLine": 25
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BareBone_X509ExtendedTrustManagerCanBypass/BareBone_X509ExtendedTrustManagerCanBypass.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t\t\n\t\t\t}\n"
+                  },
+                  "endLine": 25,
+                  "startLine": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509ExtendedTrustManagerCanBypass.java:[lines 13-59] \nIn class com.minimals.SSL.TrustManager.BareBone_X509ExtendedTrustManagerCanBypass.BareBone_X509ExtendedTrustManagerCanBypass$1 \nIn method com.minimals.SSL.TrustManager.BareBone_X509ExtendedTrustManagerCanBypass.BareBone_X509ExtendedTrustManagerCanBypass$1.checkServerTrusted(X509Certificate[], String, Socket) \nAt BareBone_X509ExtendedTrustManagerCanBypass.java:[line 45]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t}\n"
+                  },
+                  "startLine": 45
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BareBone_X509ExtendedTrustManagerCanBypass/BareBone_X509ExtendedTrustManagerCanBypass.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t\t\n\t\t\t}\n"
+                  },
+                  "endLine": 45,
+                  "startLine": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509ExtendedTrustManagerCanBypass.java:[lines 13-59] \nIn class com.minimals.SSL.TrustManager.BareBone_X509ExtendedTrustManagerCanBypass.BareBone_X509ExtendedTrustManagerCanBypass$1 \nIn method com.minimals.SSL.TrustManager.BareBone_X509ExtendedTrustManagerCanBypass.BareBone_X509ExtendedTrustManagerCanBypass$1.checkServerTrusted(X509Certificate[], String, SSLEngine) \nAt BareBone_X509ExtendedTrustManagerCanBypass.java:[line 59]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t}\n"
+                  },
+                  "startLine": 59
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BareBone_X509ExtendedTrustManagerCanBypass/BareBone_X509ExtendedTrustManagerCanBypass.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t\t\n\t\t\t}\n"
+                  },
+                  "endLine": 59,
+                  "startLine": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509ExtendedTrustManagerCanBypass.java:[lines 13-59] \nIn class com.minimals.SSL.TrustManager.BareBone_X509ExtendedTrustManagerCanBypass.BareBone_X509ExtendedTrustManagerCanBypass$1 \nIn method com.minimals.SSL.TrustManager.BareBone_X509ExtendedTrustManagerCanBypass.BareBone_X509ExtendedTrustManagerCanBypass$1.getAcceptedIssuers() \nAt BareBone_X509ExtendedTrustManagerCanBypass.java:[line 30]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t\treturn null;\n"
+                  },
+                  "startLine": 30
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BareBone_X509ExtendedTrustManagerCanBypass/BareBone_X509ExtendedTrustManagerCanBypass.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t\t// TODO Auto-generated method stub\n\t\t\t\treturn null;\n"
+                  },
+                  "endLine": 30,
+                  "startLine": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509TrustManager.java:[lines 10-28] \nIn class com.minimals.SSL.TrustManager.BareBone_X509TrustManager.BareBone_X509TrustManager$1 \nIn method com.minimals.SSL.TrustManager.BareBone_X509TrustManager.BareBone_X509TrustManager$1.checkClientTrusted(X509Certificate[], String) \nAt BareBone_X509TrustManager.java:[line 28]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            }\n"
+                  },
+                  "startLine": 28
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BareBone_X509TrustManager/BareBone_X509TrustManager.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                \n            }\n"
+                  },
+                  "endLine": 28,
+                  "startLine": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509TrustManager.java:[lines 10-28] \nIn class com.minimals.SSL.TrustManager.BareBone_X509TrustManager.BareBone_X509TrustManager$1 \nIn method com.minimals.SSL.TrustManager.BareBone_X509TrustManager.BareBone_X509TrustManager$1.checkServerTrusted(X509Certificate[], String) \nAt BareBone_X509TrustManager.java:[line 22]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            }\n"
+                  },
+                  "startLine": 22
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BareBone_X509TrustManager/BareBone_X509TrustManager.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                \n            }\n"
+                  },
+                  "endLine": 22,
+                  "startLine": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509TrustManager.java:[lines 10-28] \nIn class com.minimals.SSL.TrustManager.BareBone_X509TrustManager.BareBone_X509TrustManager$1 \nIn method com.minimals.SSL.TrustManager.BareBone_X509TrustManager.BareBone_X509TrustManager$1.getAcceptedIssuers() \nAt BareBone_X509TrustManager.java:[line 15]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                return null;\n"
+                  },
+                  "startLine": 15
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BareBone_X509TrustManager/BareBone_X509TrustManager.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                // TODO Auto-generated method stub\n                return null;\n"
+                  },
+                  "endLine": 15,
+                  "startLine": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509TrustManagerCanBypass.java:[lines 9-26] \nIn class com.minimals.SSL.TrustManager.BareBone_X509TrustManagerCanBypass.BareBone_X509TrustManagerCanBypass$1 \nIn method com.minimals.SSL.TrustManager.BareBone_X509TrustManagerCanBypass.BareBone_X509TrustManagerCanBypass$1.checkClientTrusted(X509Certificate[], String) \nAt BareBone_X509TrustManagerCanBypass.java:[line 15]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t}\n"
+                  },
+                  "startLine": 15
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BareBone_X509TrustManagerCanBypass/BareBone_X509TrustManagerCanBypass.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\t\t}\n"
+                  },
+                  "endLine": 15,
+                  "startLine": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509TrustManagerCanBypass.java:[lines 9-26] \nIn class com.minimals.SSL.TrustManager.BareBone_X509TrustManagerCanBypass.BareBone_X509TrustManagerCanBypass$1 \nIn method com.minimals.SSL.TrustManager.BareBone_X509TrustManagerCanBypass.BareBone_X509TrustManagerCanBypass$1.checkServerTrusted(X509Certificate[], String) \nAt BareBone_X509TrustManagerCanBypass.java:[line 21]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t}\n"
+                  },
+                  "startLine": 21
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BareBone_X509TrustManagerCanBypass/BareBone_X509TrustManagerCanBypass.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\t\t}\n"
+                  },
+                  "endLine": 21,
+                  "startLine": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509TrustManagerCanBypass.java:[lines 9-26] \nIn class com.minimals.SSL.TrustManager.BareBone_X509TrustManagerCanBypass.BareBone_X509TrustManagerCanBypass$1 \nIn method com.minimals.SSL.TrustManager.BareBone_X509TrustManagerCanBypass.BareBone_X509TrustManagerCanBypass$1.getAcceptedIssuers() \nAt BareBone_X509TrustManagerCanBypass.java:[line 26]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t\treturn null;\n"
+                  },
+                  "startLine": 26
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BareBone_X509TrustManagerCanBypass/BareBone_X509TrustManagerCanBypass.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t\t// TODO Auto-generated method stub\n\t\t\t\treturn null;\n"
+                  },
+                  "endLine": 26,
+                  "startLine": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509TrustManagerCanNotBypassExt.java:[lines 7-24] \nIn class com.minimals.SSL.TrustManager.BareBone_X509TrustManagerCanNotBypass.BareBone_X509TrustManagerCanNotBypassExt \nIn method com.minimals.SSL.TrustManager.BareBone_X509TrustManagerCanNotBypass.BareBone_X509TrustManagerCanNotBypassExt.checkClientTrusted(X509Certificate[], String) \nAt BareBone_X509TrustManagerCanNotBypassExt.java:[line 13]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/com/minimals/SSL/TrustManager/BareBone_X509TrustManagerCanNotBypass/BareBone_X509TrustManagerCanNotBypassExt.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509TrustManagerCanNotBypassExt.java:[lines 7-24] \nIn class com.minimals.SSL.TrustManager.BareBone_X509TrustManagerCanNotBypass.BareBone_X509TrustManagerCanNotBypassExt \nIn method com.minimals.SSL.TrustManager.BareBone_X509TrustManagerCanNotBypass.BareBone_X509TrustManagerCanNotBypassExt.checkServerTrusted(X509Certificate[], String) \nAt BareBone_X509TrustManagerCanNotBypassExt.java:[line 19]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 19
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/com/minimals/SSL/TrustManager/BareBone_X509TrustManagerCanNotBypass/BareBone_X509TrustManagerCanNotBypassExt.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509TrustManagerCanNotBypassExt.java:[lines 7-24] \nIn class com.minimals.SSL.TrustManager.BareBone_X509TrustManagerCanNotBypass.BareBone_X509TrustManagerCanNotBypassExt \nIn method com.minimals.SSL.TrustManager.BareBone_X509TrustManagerCanNotBypass.BareBone_X509TrustManagerCanNotBypassExt.getAcceptedIssuers() \nAt BareBone_X509TrustManagerCanNotBypassExt.java:[line 24]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 24
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/com/minimals/SSL/TrustManager/BareBone_X509TrustManagerCanNotBypass/BareBone_X509TrustManagerCanNotBypassExt.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509TrustManagerCanNotBypassExt.java:[lines 7-15] \nIn class com.minimals.SSL.TrustManager.BareBone_x509TrustManagerCanNotBypass.BareBone_X509TrustManagerCanNotBypassExt \nIn method com.minimals.SSL.TrustManager.BareBone_x509TrustManagerCanNotBypass.BareBone_X509TrustManagerCanNotBypassExt.checkClientTrusted(X509Certificate[], String) \nAt BareBone_X509TrustManagerCanNotBypassExt.java:[line 10]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    }\n"
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BareBone_x509TrustManagerCanNotBypass/BareBone_X509TrustManagerCanNotBypassExt.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            throws CertificateException {\n    }\n"
+                  },
+                  "endLine": 10,
+                  "startLine": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509TrustManagerCanNotBypassExt.java:[lines 7-15] \nIn class com.minimals.SSL.TrustManager.BareBone_x509TrustManagerCanNotBypass.BareBone_X509TrustManagerCanNotBypassExt \nIn method com.minimals.SSL.TrustManager.BareBone_x509TrustManagerCanNotBypass.BareBone_X509TrustManagerCanNotBypassExt.checkServerTrusted(X509Certificate[], String) \nAt BareBone_X509TrustManagerCanNotBypassExt.java:[line 13]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "    }\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BareBone_x509TrustManagerCanNotBypass/BareBone_X509TrustManagerCanNotBypassExt.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "            throws CertificateException {\n    }\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareBone_X509TrustManagerCanNotBypassExt.java:[lines 7-15] \nIn class com.minimals.SSL.TrustManager.BareBone_x509TrustManagerCanNotBypass.BareBone_X509TrustManagerCanNotBypassExt \nIn method com.minimals.SSL.TrustManager.BareBone_x509TrustManagerCanNotBypass.BareBone_X509TrustManagerCanNotBypassExt.getAcceptedIssuers() \nAt BareBone_X509TrustManagerCanNotBypassExt.java:[line 15]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "        return null;\n"
+                  },
+                  "startLine": 15
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/BareBone_x509TrustManagerCanNotBypass/BareBone_X509TrustManagerCanNotBypassExt.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "    public java.security.cert.X509Certificate[] getAcceptedIssuers() {\n        return null;\n"
+                  },
+                  "endLine": 15,
+                  "startLine": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt ITrustManagerUser.java:[lines 9-22] \nIn class com.minimals.SSL.TrustManager.ITrustManagerUser.ITrustManagerUser$1 \nIn method com.minimals.SSL.TrustManager.ITrustManagerUser.ITrustManagerUser$1.checkClientTrusted(X509Certificate[], String) \nAt ITrustManagerUser.java:[line 13]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t}\n"
+                  },
+                  "startLine": 13
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/ITrustManagerUser/ITrustManagerUser.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\t\t}\n"
+                  },
+                  "endLine": 13,
+                  "startLine": 12
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt ITrustManagerUser.java:[lines 9-22] \nIn class com.minimals.SSL.TrustManager.ITrustManagerUser.ITrustManagerUser$1 \nIn method com.minimals.SSL.TrustManager.ITrustManagerUser.ITrustManagerUser$1.checkServerTrusted(X509Certificate[], String) \nAt ITrustManagerUser.java:[line 18]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t}\n"
+                  },
+                  "startLine": 18
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/ITrustManagerUser/ITrustManagerUser.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\n\t\t\t}\n"
+                  },
+                  "endLine": 18,
+                  "startLine": 17
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt ITrustManagerUser.java:[lines 9-22] \nIn class com.minimals.SSL.TrustManager.ITrustManagerUser.ITrustManagerUser$1 \nIn method com.minimals.SSL.TrustManager.ITrustManagerUser.ITrustManagerUser$1.getAcceptedIssuers() \nAt ITrustManagerUser.java:[line 22]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t\treturn new X509Certificate[0];\n"
+                  },
+                  "startLine": 22
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/ITrustManagerUser/ITrustManagerUser.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\tpublic X509Certificate[] getAcceptedIssuers() {\n\t\t\t\treturn new X509Certificate[0];\n"
+                  },
+                  "endLine": 22,
+                  "startLine": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareboneTrustManagerConditional.java:[lines 16-40] \nIn class com.minimals.SSL.TrustManager.a_BareboneTrustManagerConditional.BareboneTrustManagerConditional$1 \nIn method com.minimals.SSL.TrustManager.a_BareboneTrustManagerConditional.BareboneTrustManagerConditional$1.getAcceptedIssuers() \nAt BareboneTrustManagerConditional.java:[lines 36-40]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t\t\t\tfor(int i = 0; i<100; i++){\n"
+                  },
+                  "startLine": 36
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/a_BareboneTrustManagerConditional/BareboneTrustManagerConditional.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t\t\t\t\n\t\t\t\t\t\tfor(int i = 0; i<100; i++){\n"
+                  },
+                  "endLine": 36,
+                  "startLine": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareboneTrustManagerConditional.java:[lines 22-46] \nIn class com.minimals.SSL.TrustManager.b_BareboneTrustManagerConditional.BareboneTrustManagerConditional$1 \nIn method com.minimals.SSL.TrustManager.b_BareboneTrustManagerConditional.BareboneTrustManagerConditional$1.getAcceptedIssuers() \nAt BareboneTrustManagerConditional.java:[lines 42-46]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t\t\t\tfor(int i = 0; i<100; i++){\n"
+                  },
+                  "startLine": 42
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/b_BareboneTrustManagerConditional/BareboneTrustManagerConditional.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t\t\t\t\n\t\t\t\t\t\tfor(int i = 0; i<100; i++){\n"
+                  },
+                  "endLine": 42,
+                  "startLine": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareboneTrustManagerConditional.java:[lines 19-45] \nIn class com.minimals.SSL.TrustManager.c_BareboneTrustManagerConditional.BareboneTrustManagerConditional$1 \nIn method com.minimals.SSL.TrustManager.c_BareboneTrustManagerConditional.BareboneTrustManagerConditional$1.checkClientTrusted(X509Certificate[], String) \nAt BareboneTrustManagerConditional.java:[line 27]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t\t\t}\n"
+                  },
+                  "startLine": 27
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/c_BareboneTrustManagerConditional/BareboneTrustManagerConditional.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t\t\t  }\n\t\t\t\t\t}\n"
+                  },
+                  "endLine": 27,
+                  "startLine": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareboneTrustManagerConditional.java:[lines 19-45] \nIn class com.minimals.SSL.TrustManager.c_BareboneTrustManagerConditional.BareboneTrustManagerConditional$1 \nIn method com.minimals.SSL.TrustManager.c_BareboneTrustManagerConditional.BareboneTrustManagerConditional$1.checkServerTrusted(X509Certificate[], String) \nAt BareboneTrustManagerConditional.java:[line 36]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t\t\t}\n"
+                  },
+                  "startLine": 36
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/c_BareboneTrustManagerConditional/BareboneTrustManagerConditional.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t\t\t  }\n\t\t\t\t\t}\n"
+                  },
+                  "endLine": 36,
+                  "startLine": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt BareboneTrustManagerConditional.java:[lines 19-45] \nIn class com.minimals.SSL.TrustManager.c_BareboneTrustManagerConditional.BareboneTrustManagerConditional$1 \nIn method com.minimals.SSL.TrustManager.c_BareboneTrustManagerConditional.BareboneTrustManagerConditional$1.getAcceptedIssuers() \nAt BareboneTrustManagerConditional.java:[lines 41-45]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "\t\t\t\t\t\tfor(int i = 0; i<100; i++){\n"
+                  },
+                  "startLine": 41
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/SSL/TrustManager/c_BareboneTrustManagerConditional/BareboneTrustManagerConditional.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "\t\t\t\t\t\t\n\t\t\t\t\t\tfor(int i = 0; i<100; i++){\n"
+                  },
+                  "endLine": 41,
+                  "startLine": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_TRUST_MANAGER",
+          "ruleIndex": 6
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API MD5 (MDX) is not a recommended cryptographic hash function \nAt MessageDigestBase.java:[lines 5-17] \nIn class com.minimals.messagedigest.baseCase.MessageDigestBase \nIn method com.minimals.messagedigest.baseCase.MessageDigestBase.main(String[]) \nAt MessageDigestBase.java:[line 10] \nValue MD5."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            digest = MessageDigest.getInstance(\"MD5\");\n"
+                  },
+                  "startLine": 10
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/messagedigest/baseCase/MessageDigestBase.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        try {\n            digest = MessageDigest.getInstance(\"MD5\");\n"
+                  },
+                  "endLine": 10,
+                  "startLine": 9
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_MESSAGE_DIGEST_MD5",
+          "ruleIndex": 7
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API MD5 (MDX) is not a recommended cryptographic hash function \nAt MessageDigestBase.java:[lines 5-18] \nIn class com.minimals.messagedigest.baseCaseVariable.MessageDigestBase \nIn method com.minimals.messagedigest.baseCaseVariable.MessageDigestBase.main(String[]) \nAt MessageDigestBase.java:[line 11] \nValue MD5."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            digest = MessageDigest.getInstance(algorithmName);\n"
+                  },
+                  "startLine": 11
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/messagedigest/baseCaseVariable/MessageDigestBase.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        try {\n            digest = MessageDigest.getInstance(algorithmName);\n"
+                  },
+                  "endLine": 11,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_MESSAGE_DIGEST_MD5",
+          "ruleIndex": 7
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "This API MD5 (MDX) is not a recommended cryptographic hash function \nAt MessageDigestComplex.java:[lines 5-15] \nIn class com.minimals.messagedigest.differentCase.MessageDigestComplex \nIn method com.minimals.messagedigest.differentCase.MessageDigestComplex.main(String[]) \nAt MessageDigestComplex.java:[line 9] \nValue MD5."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "            cryptoDigest = MessageDigest.getInstance(\"md5\");\n"
+                  },
+                  "startLine": 9
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo/minimal/src/main/java/com/minimals/messagedigest/differentCase/MessageDigestComplex.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "        try {\n            cryptoDigest = MessageDigest.getInstance(\"md5\");\n"
+                  },
+                  "endLine": 9,
+                  "startLine": 8
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "CRITICAL"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_MESSAGE_DIGEST_MD5",
+          "ruleIndex": 7
+        }
+      ],
+      "automationDetails": {
+        "description": {
+          "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
+        },
+        "guid": "039f9901-954b-4860-853d-744cdce7896f"
+      },
+      "versionControlProvenance": [
+        {
+          "branch": "",
+          "repositoryUri": "",
+          "revisionId": ""
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "inlineExternalProperties": [
+    {
+      "guid": "039f9901-954b-4860-853d-744cdce7896f",
+      "runGuid": "0a8c6bf0-c23d-4bf8-80ad-a538b12e6041"
+    }
+  ]
+}

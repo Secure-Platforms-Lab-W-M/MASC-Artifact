@@ -1,0 +1,3 @@
+﻿Type,Impact,Category,File,Function,Count
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/main/java/com/minimals/Cipher/KeyToAlgoDES/CipherExample.java,CipherExample.main,1
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/src/main/java/com/minimals/Cipher/KeyToAlgoAES/CipherExample.java,CipherExample.main,1

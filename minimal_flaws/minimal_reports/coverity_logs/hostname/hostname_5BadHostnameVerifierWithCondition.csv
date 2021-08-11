@@ -1,0 +1,3 @@
+﻿Type,Impact,Category,File,Function,Count
+RV: Bad use of return value,Low,SpotBugs: Dodgy code,/BadHostName.java,BadHostName.main,1
+Insecure SSL/TLS: bad HostnameVerifier,High,High impact security,/BadHostName.java,"BadHostName$#1.verify(java.lang.String, javax.net.ssl.SSLSession)",1

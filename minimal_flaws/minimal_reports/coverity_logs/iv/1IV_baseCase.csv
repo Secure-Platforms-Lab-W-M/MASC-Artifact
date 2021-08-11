@@ -1,0 +1,2 @@
+﻿Type,Impact,Category,File,Function,Count
+Dm: Dubious method used,Low,SpotBugs: Internationalization,/StaticIV.java,StaticIV.main,2

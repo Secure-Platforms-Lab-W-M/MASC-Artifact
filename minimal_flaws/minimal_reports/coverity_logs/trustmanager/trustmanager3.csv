@@ -1,0 +1,4 @@
+﻿Type,Impact,Category,File,Count,Function
+RV: Bad use of return value,Low,SpotBugs: Dodgy code,/BareBone_X509TrustManagerCanNotBypass.java,1,BareBone_X509TrustManagerCanNotBypass.main
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/BareBone_X509TrustManagerCanNotBypassExt.java,1,BareBone_X509TrustManagerCanNotBypassExt.checkClientTrusted
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/BareBone_X509TrustManagerCanNotBypassExt.java,1,BareBone_X509TrustManagerCanNotBypassExt.checkServerTrusted

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "BareBone_X509TrustManagerCanBypass"
+javac BareBone_X509TrustManagerCanBypass.java BareBone_X509TrustManagerCanBypassExt.java
+jar cvfe BareBone_X509TrustManagerCanBypass.jar BareBone_X509TrustManagerCanBypass BareBone_X509TrustManagerCanBypass*.class

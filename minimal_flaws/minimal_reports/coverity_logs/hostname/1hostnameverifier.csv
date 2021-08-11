@@ -1,0 +1,2 @@
+﻿Type,Impact,Function,Count
+Insecure SSL/TLS: bad HostnameVerifier,High,"BadHostName$#1.verify(java.lang.String, javax.net.ssl.SSLSession)",1

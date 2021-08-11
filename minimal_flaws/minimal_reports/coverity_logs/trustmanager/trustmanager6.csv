@@ -1,0 +1,4 @@
+﻿Type,Impact,Category,File,Count,Function
+RV: Bad use of return value,Low,SpotBugs: Dodgy code,/ITrustManagerUser.java,1,ITrustManagerUser.main
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/ITrustManagerUser.java,1,"ITrustManagerUser$#1.checkClientTrusted(java.security.cert.X509Certificate[], java.lang.String)"
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/ITrustManagerUser.java,1,"ITrustManagerUser$#1.checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String)"

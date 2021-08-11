@@ -1,0 +1,49 @@
+[2021-03-21 10:50:17] [build] [2021-03-21 10:50:17] Build directory is .
+[2021-03-21 10:50:17] [build] [2021-03-21 10:50:17] [autobuild] > mvn clean package -f "pom.xml" -B -V -e -Dfindbugs.skip -Dcheckstyle.skip -Dpmd.skip=true -Denforcer.skip -Dmaven.javadoc.skip -DskipTests -Dmaven.test.skip.exec -Dlicense.skip=true -Drat.skip=true 
+[2021-03-21 10:50:17] [build] [2021-03-21 10:50:17] [autobuild] Apache Maven 3.3.9
+[2021-03-21 10:50:17] [build] [2021-03-21 10:50:17] [autobuild] Maven home: /usr/share/maven
+[2021-03-21 10:50:17] [build] [2021-03-21 10:50:17] [autobuild] Java version: 1.8.0_232, vendor: Oracle Corporation
+[2021-03-21 10:50:17] [build] [2021-03-21 10:50:17] [autobuild] Java home: /media/data/helper_tools/sdkman/candidates/java/8.0.232-open/jre
+[2021-03-21 10:50:17] [build] [2021-03-21 10:50:17] [autobuild] Default locale: en_US, platform encoding: ANSI_X3.4-1968
+[2021-03-21 10:50:17] [build] [2021-03-21 10:50:17] [autobuild] OS name: "linux", version: "4.4.0-193-generic", arch: "amd64", family: "unix"
+[2021-03-21 10:50:19] [build] [2021-03-21 10:50:19] [autobuild] [INFO] Error stacktraces are turned on.
+[2021-03-21 10:50:19] [build] [2021-03-21 10:50:19] [autobuild] [INFO] Scanning for projects...
+[2021-03-21 10:50:19] [build] [2021-03-21 10:50:19] [autobuild] [INFO]                                                                         
+[2021-03-21 10:50:19] [build] [2021-03-21 10:50:19] [autobuild] [INFO] ------------------------------------------------------------------------
+[2021-03-21 10:50:19] [build] [2021-03-21 10:50:19] [autobuild] [INFO] Building des 1
+[2021-03-21 10:50:19] [build] [2021-03-21 10:50:19] [autobuild] [INFO] ------------------------------------------------------------------------
+[2021-03-21 10:50:19] [build] [2021-03-21 10:50:19] [autobuild] [INFO] 
+[2021-03-21 10:50:19] [build] [2021-03-21 10:50:19] [autobuild] [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ des ---
+[2021-03-21 10:50:19] [build] [2021-03-21 10:50:19] [autobuild] [INFO] Deleting /media/data/muse2/muse2repo/minimal/target
+[2021-03-21 10:50:19] [build] [2021-03-21 10:50:19] [autobuild] [INFO] 
+[2021-03-21 10:50:19] [build] [2021-03-21 10:50:19] [autobuild] [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ des ---
+[2021-03-21 10:50:19] [build] [2021-03-21 10:50:19] [autobuild] [WARNING] Using platform encoding (ANSI_X3.4-1968 actually) to copy filtered resources, i.e. build is platform dependent!
+[2021-03-21 10:50:19] [build] [2021-03-21 10:50:19] [autobuild] [INFO] skip non existing resourceDirectory /media/data/muse2/muse2repo/minimal/src/main/resources
+[2021-03-21 10:50:19] [build] [2021-03-21 10:50:19] [autobuild] [INFO] 
+[2021-03-21 10:50:19] [build] [2021-03-21 10:50:19] [autobuild] [INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ des ---
+[2021-03-21 10:50:20] [build] [2021-03-21 10:50:20] [autobuild] [INFO] Changes detected - recompiling the module!
+[2021-03-21 10:50:20] [build] [2021-03-21 10:50:20] [autobuild] [WARNING] File encoding has not been set, using platform encoding ANSI_X3.4-1968, i.e. build is platform dependent!
+[2021-03-21 10:50:20] [build] [2021-03-21 10:50:20] [autobuild] [INFO] Compiling 60 source files to /media/data/muse2/muse2repo/minimal/target/classes
+[2021-03-21 10:50:25] [build] [2021-03-21 10:50:25] [autobuild] [INFO] 
+[2021-03-21 10:50:25] [build] [2021-03-21 10:50:25] [autobuild] [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ des ---
+[2021-03-21 10:50:25] [build] [2021-03-21 10:50:25] [autobuild] [WARNING] Using platform encoding (ANSI_X3.4-1968 actually) to copy filtered resources, i.e. build is platform dependent!
+[2021-03-21 10:50:25] [build] [2021-03-21 10:50:25] [autobuild] [INFO] skip non existing resourceDirectory /media/data/muse2/muse2repo/minimal/src/test/resources
+[2021-03-21 10:50:25] [build] [2021-03-21 10:50:25] [autobuild] [INFO] 
+[2021-03-21 10:50:25] [build] [2021-03-21 10:50:25] [autobuild] [INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ des ---
+[2021-03-21 10:50:25] [build] [2021-03-21 10:50:25] [autobuild] [INFO] No sources to compile
+[2021-03-21 10:50:25] [build] [2021-03-21 10:50:25] [autobuild] [INFO] 
+[2021-03-21 10:50:25] [build] [2021-03-21 10:50:25] [autobuild] [INFO] --- maven-surefire-plugin:2.17:test (default-test) @ des ---
+[2021-03-21 10:50:25] [build] [2021-03-21 10:50:25] [autobuild] [INFO] Tests are skipped.
+[2021-03-21 10:50:25] [build] [2021-03-21 10:50:25] [autobuild] [INFO] 
+[2021-03-21 10:50:25] [build] [2021-03-21 10:50:25] [autobuild] [INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ des ---
+[2021-03-21 10:50:26] [build] [2021-03-21 10:50:26] [autobuild] [INFO] Building jar: /media/data/muse2/muse2repo/minimal/target/des-1.jar
+[2021-03-21 10:50:26] [build] [2021-03-21 10:50:26] [autobuild] [INFO] ------------------------------------------------------------------------
+[2021-03-21 10:50:26] [build] [2021-03-21 10:50:26] [autobuild] [INFO] BUILD SUCCESS
+[2021-03-21 10:50:26] [build] [2021-03-21 10:50:26] [autobuild] [INFO] ------------------------------------------------------------------------
+[2021-03-21 10:50:26] [build] [2021-03-21 10:50:26] [autobuild] [INFO] Total time: 7.019 s
+[2021-03-21 10:50:26] [build] [2021-03-21 10:50:26] [autobuild] [INFO] Finished at: 2021-03-21T10:50:26-04:00
+[2021-03-21 10:50:26] [build] [2021-03-21 10:50:26] [autobuild] [INFO] Final Memory: 18M/460M
+[2021-03-21 10:50:26] [build] [2021-03-21 10:50:26] [autobuild] [INFO] ------------------------------------------------------------------------
+[2021-03-21 10:50:27] [build-err] Scanning for files in /media/data/muse2/muse2repo/minimal...
+[2021-03-21 10:50:27] [build-err] /media/data/muse2/muse2repo/minimal/codeql-db: Indexing files in in /media/data/muse2/muse2repo/minimal...
+[2021-03-21 10:50:27] [build-err] /media/data/muse2/muse2repo/minimal/codeql-db: Running in /media/data/muse2/muse2repo/minimal: [/media/data/nacoop/codeql-home/codeql/xml/tools/index-files.sh, /media/data/muse2/muse2repo/minimal/codeql-db/working/files-to-index16580180330205855800.list]

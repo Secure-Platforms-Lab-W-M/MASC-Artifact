@@ -1,0 +1,3 @@
+﻿Type,Impact,Category,File,Count,Function
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/BareBone_X509TrustManagerCanBypass.java,1,"BareBone_X509TrustManagerCanBypass$#1.checkClientTrusted(java.security.cert.X509Certificate[], java.lang.String)"
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/BareBone_X509TrustManagerCanBypass.java,1,"BareBone_X509TrustManagerCanBypass$#1.checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String)"

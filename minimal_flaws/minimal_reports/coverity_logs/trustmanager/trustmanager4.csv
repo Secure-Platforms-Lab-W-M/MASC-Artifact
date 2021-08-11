@@ -1,0 +1,8 @@
+﻿Type,Impact,Category,File,Count,Function
+RV: Bad use of return value,Low,SpotBugs: Dodgy code,/BareBone_X509ExtendedTrustManagerCanBypass.java,1,BareBone_X509ExtendedTrustManagerCanBypass.main
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/BareBone_X509ExtendedTrustManagerCanBypass.java,1,"BareBone_X509ExtendedTrustManagerCanBypass$#1.checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String, javax.net.ssl.SSLEngine)"
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/BareBone_X509ExtendedTrustManagerCanBypass.java,1,"BareBone_X509ExtendedTrustManagerCanBypass$#1.checkClientTrusted(java.security.cert.X509Certificate[], java.lang.String)"
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/BareBone_X509ExtendedTrustManagerCanBypass.java,1,"BareBone_X509ExtendedTrustManagerCanBypass$#1.checkClientTrusted(java.security.cert.X509Certificate[], java.lang.String, java.net.Socket)"
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/BareBone_X509ExtendedTrustManagerCanBypass.java,1,"BareBone_X509ExtendedTrustManagerCanBypass$#1.checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String)"
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/BareBone_X509ExtendedTrustManagerCanBypass.java,1,"BareBone_X509ExtendedTrustManagerCanBypass$#1.checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String, java.net.Socket)"
+Insecure SSL/TLS: bad TrustManager,High,High impact security,/BareBone_X509ExtendedTrustManagerCanBypass.java,1,"BareBone_X509ExtendedTrustManagerCanBypass$#1.checkClientTrusted(java.security.cert.X509Certificate[], java.lang.String, javax.net.ssl.SSLEngine)"

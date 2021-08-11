@@ -1,0 +1,2 @@
+﻿Type,Impact,Category,File,Function,Count
+Risky cryptographic function,Medium,Medium impact security,/CipherExample.java,CipherExample.main,1

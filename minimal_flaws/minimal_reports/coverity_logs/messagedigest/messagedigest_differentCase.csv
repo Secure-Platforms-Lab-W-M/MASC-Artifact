@@ -1,0 +1,2 @@
+﻿Type,Impact,Category,File,Function,Count
+Risky cryptographic hashing function,Medium,Medium impact security,/MessageDigestComplex.java,MessageDigestComplex.main,1

@@ -1,0 +1,5 @@
+minimal
+All error messages are redirected to the log file. Please check there for any error messages.
+___XanitizerMessage___{NEW_FINDINGS:Project contains at least one new finding with a rating higher than 5.00}___XanitizerMessage___
+___XanitizerMessage___{FINDINGS:Project contains at least one finding with a rating higher than 5.00}___XanitizerMessage___
+___XanitizerMessage___{RESULT:Batch run completed sucessfully}___XanitizerMessage___
