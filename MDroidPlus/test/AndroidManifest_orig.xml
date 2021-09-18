@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.evancharlton.mileage"
+	android:versionName="3.1.1"
+	android:versionCode="3110"
+	android:installLocation="auto"
+>
+	<uses-sdk android:minSdkVersion="4" android:targetSdkVersion="10"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<supports-screens
+		android:largeScreens="true"
+		android:normalScreens="true"
+		android:smallScreens="true"
+		android:anyDensity="true"
+	/>
+	<application android:label="@string/app_name" android:icon="@drawable/icon">
+		<provider android:name=".provider.FillUpsProvider" android:authorities="com.evancharlton.mileage" />
+
+		<activity android:name=".Mileage" android:theme="@android:style/Theme.NoTitleBar">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".AboutActivity" android:label="@string/title_about" android:theme="@android:style/Theme.Dialog" />
+		<activity android:name=".FillupActivity" android:label="@string/title_fillup" />
+		<activity android:name=".FillupInfoActivity" android:label="@string/title_fillup_info" />
+		<activity android:name=".FillupListActivity" android:label="@string/title_fillup_list" />
+		<activity android:name=".FieldActivity" android:label="@string/title_field" />
+		<activity android:name=".FieldListActivity" android:label="@string/title_field_list" />
+		<activity android:name=".VehicleActivity" android:label="@string/title_vehicle" />
+		<activity android:name=".VehicleListActivity" android:label="@string/title_vehicle_list" />
+		<activity android:name=".VehicleTypeActivity" android:label="@string/title_vehicle_type" />
+		<activity android:name=".VehicleTypeListActivity" android:label="@string/title_vehicle_type_list" />
+		<activity android:name=".ServiceIntervalActivity" android:label="@string/title_service_interval" />
+		<activity android:name=".ServiceIntervalsListActivity" android:label="@string/title_service_interval_list" />
+		<activity android:name=".ServiceIntervalTemplateActivity" android:label="@string/title_service_interval_template" />
+		<activity android:name=".ServiceIntervalTemplateListActivity" android:label="@string/title_service_interval_template_list" />
+		<activity android:name=".SettingsActivity" android:label="@string/title_settings" />
+		<activity android:name=".VehicleStatisticsActivity" android:label="@string/title_statistics" />
+		<activity android:name=".ImportExportActivity" android:label="@string/title_importexport" />
+		<activity android:name=".ImportActivity" android:label="@string/title_import" />
+		<activity android:name=".ExportActivity" android:label="@string/title_export" />
+		<activity android:name=".io.CsvExportActivity" android:label="@string/title_export_csv"/>
+		<activity android:name=".io.CsvColumnMappingActivity" android:label="@string/title_csv_map_columns"/>
+		<activity android:name=".io.CsvVehicleMappingActivity" android:label="@string/title_csv_map_vehicles"/>
+		<activity android:name=".io.CsvDateFormatActivity" android:label="@string/title_csv_date_format" />
+		<activity android:name=".io.CsvImportActivity" android:label="@string/title_import_csv"/>
+		<activity android:name=".io.DbExportActivity" android:label="@string/title_export_db"/>
+		<activity android:name=".io.DbImportActivity" android:label="@string/title_import_db"/>
+		<activity android:name=".charts.AverageFuelEconomyChart" android:label="@string/title_chart_avg_economy" />
+		<activity android:name=".charts.WorstFuelEconomyChart" android:label="@string/title_chart_min_economy" />
+		<activity android:name=".charts.BestFuelEconomyChart" android:label="@string/title_chart_max_economy" />
+		<activity android:name=".charts.AverageDistanceChart" android:label="@string/title_chart_avg_distance" />
+		<activity android:name=".charts.MinimumDistanceChart" android:label="@string/title_chart_min_distance" />
+		<activity android:name=".charts.MaximumDistanceChart" android:label="@string/title_chart_max_distance" />
+		<activity android:name=".charts.AverageCostChart" android:label="@string/title_chart_avg_cost" />
+		<activity android:name=".charts.MaximumCostChart" android:label="@string/title_chart_max_cost" />
+		<activity android:name=".charts.MinimumCostChart" android:label="@string/title_chart_min_cost" />
+		<activity android:name=".charts.TotalCostChart" android:label="@string/title_chart_total_cost" />
+		<activity android:name=".charts.LastMonthCostChart" android:label="@string/title_chart_last_month_cost" />
+		<activity android:name=".charts.LastYearCostChart" android:label="@string/title_chart_last_year_cost" />
+		<activity android:name=".charts.AveragePriceChart" android:label="@string/title_chart_avg_price" />
+		<activity android:name=".charts.MinimumPriceChart" android:label="@string/title_chart_min_price" />
+		<activity android:name=".charts.MaximumPriceChart" android:label="@string/title_chart_max_price" />
+		<activity android:name=".charts.AverageVolumeChart" android:label="@string/title_chart_avg_fuel" />
+		<activity android:name=".charts.MinimumVolumeChart" android:label="@string/title_chart_min_fuel" />
+		<activity android:name=".charts.MaximumVolumeChart" android:label="@string/title_chart_max_fuel" />
+		<activity android:name=".charts.TotalVolumeChart" android:label="@string/title_chart_total_fuel" />
+		<activity android:name=".charts.NorthChart" android:label="@string/title_chart_north" />
+		<activity android:name=".charts.SouthChart" android:label="@string/title_chart_south" />
+		<activity android:name=".charts.EastChart" android:label="@string/title_chart_east" />
+		<activity android:name=".charts.WestChart" android:label="@string/title_chart_west" />
+
+		<service android:name=".services.RecalculateEconomyService" />
+
+		<service android:name=".services.AutomaticBackupService" />
+
+		<receiver android:name=".receivers.MediaChangedReceiver">
+		    <intent-filter>
+		        <action android:name="android.intent.action.MEDIA_MOUNTED" />
+		        <data android:scheme="file" />
+		    </intent-filter>
+		</receiver>
+
+		<receiver android:name=".alarms.IntervalReceiver" />
+	</application>
+</manifest> 

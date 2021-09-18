@@ -1,0 +1,38 @@
+package com.example.amit.helloworld;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+    String dataLeAk0 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+	Object throwawayLeAk0 = android.util.Log.d("leak-0", dataLeAk0);
+
+	int intA = 0;
+
+    int methodA() {
+        String dataLeAk1 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+		Object throwawayLeAk1 = android.util.Log.d("leak-1", dataLeAk1);
+		return 1;
+    }
+
+    int intB = 0;
+
+    int methodB() {
+        String dataLeAk2 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+		Object throwawayLeAk2 = android.util.Log.d("leak-2", dataLeAk2);
+		return 0;
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+		String dataLeAk3 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+		Object throwawayLeAk3 = android.util.Log.d("leak-3", dataLeAk3);
+
+        this.intA = 1;
+        this.methodA();
+        this.intB = 2;
+        this.methodB();
+        setContentView(R.layout.activity_main);
+    }
+}

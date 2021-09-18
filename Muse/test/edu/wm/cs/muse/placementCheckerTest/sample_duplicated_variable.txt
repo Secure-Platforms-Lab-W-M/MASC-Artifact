@@ -1,0 +1,27 @@
+package com.example.amit.helloworld;
+
+
+public class MainActivity {
+    int intA = 0;
+	int intA = 0;
+    int methodA() {
+        return 1;
+    }
+
+    int intB = 0;
+
+    int methodB() {
+        return 0;
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        this.intA = 1;
+        this.methodA();
+        this.intB = 2;
+        this.methodB();
+        setContentView(R.layout.activity_main);
+    }
+}

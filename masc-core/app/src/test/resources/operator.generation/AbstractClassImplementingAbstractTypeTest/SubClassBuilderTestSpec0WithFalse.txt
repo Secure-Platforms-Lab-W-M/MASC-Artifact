@@ -1,0 +1,82 @@
+public abstract class BareBone_X509TrustManagerCanBypassExt extends javax.net.ssl.SSLSocket {
+  @java.lang.Override
+  public boolean getEnableSessionCreation() {
+    return false;
+  }
+
+  @java.lang.Override
+  public boolean getNeedClientAuth() {
+    return false;
+  }
+
+  @java.lang.Override
+  public boolean getUseClientMode() {
+    return false;
+  }
+
+  @java.lang.Override
+  public boolean getWantClientAuth() {
+    return false;
+  }
+
+  @java.lang.Override
+  public java.lang.String[] getEnabledCipherSuites() {
+    return null;
+  }
+
+  @java.lang.Override
+  public java.lang.String[] getEnabledProtocols() {
+    return null;
+  }
+
+  @java.lang.Override
+  public java.lang.String[] getSupportedCipherSuites() {
+    return null;
+  }
+
+  @java.lang.Override
+  public java.lang.String[] getSupportedProtocols() {
+    return null;
+  }
+
+  @java.lang.Override
+  public javax.net.ssl.SSLSession getSession() {
+    return null;
+  }
+
+  @java.lang.Override
+  public void addHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener arg0) {
+  }
+
+  @java.lang.Override
+  public void removeHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener arg0) {
+  }
+
+  @java.lang.Override
+  public void setEnableSessionCreation(boolean arg0) {
+  }
+
+  @java.lang.Override
+  public void setEnabledCipherSuites(java.lang.String[] arg0) {
+  }
+
+  @java.lang.Override
+  public void setEnabledProtocols(java.lang.String[] arg0) {
+  }
+
+  @java.lang.Override
+  public void setNeedClientAuth(boolean arg0) {
+  }
+
+  @java.lang.Override
+  public void setUseClientMode(boolean arg0) {
+  }
+
+  @java.lang.Override
+  public void setWantClientAuth(boolean arg0) {
+  }
+
+  @java.lang.Override
+  public void startHandshake() throws java.io.IOException {
+  }
+}

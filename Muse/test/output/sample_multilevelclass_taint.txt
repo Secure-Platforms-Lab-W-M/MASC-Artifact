@@ -1,0 +1,52 @@
+package com.example.amit.helloworld.test;
+
+public class TestClass {
+    String dataLeAk11 = "11";
+	String dataLeAk8 = "8";
+	String dataLeAk5 = "5";
+	String dataLeAk3 = "3";
+	String dataLeAk1 = "1";
+	String dataLeAk0 = "0";
+	int methodA(){
+        dataLeAk0 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+		return 1;
+    }
+    int methodB(){
+        dataLeAk1 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+		return 2;
+    }
+    class ChildClassLevelOne{
+        String dataLeAk10 = "10";
+		String dataLeAk7 = "7";
+		String dataLeAk4 = "4";
+		String dataLeAk2 = "2";
+		int methodConeA(){
+            dataLeAk3 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+			dataLeAk2 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+			return 1;
+        }
+        int methodCOneB(){
+            dataLeAk5 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+			dataLeAk4 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+			return 2;
+        }
+        class ChildClassLevelTwo{
+            String dataLeAk9 = "9";
+			String dataLeAk6 = "6";
+			int methodCTwoA(){
+                dataLeAk8 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+				dataLeAk7 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+				dataLeAk6 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+				return 1;
+            }
+            int methodCTwoB(){
+                dataLeAk11 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+				dataLeAk10 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+				dataLeAk9 = java.util.Calendar.getInstance().getTimeZone().getDisplayName();
+				return 2;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,26 @@
+2018-12-05 10:49:38.219 6195-6195/? D/leak-24-16: 24\n
+2018-12-05 10:49:38.219 6195-6195/? D/leak-25-16: 25\n
+2018-12-05 10:49:38.219 6195-6195/? D/leak-26-16: 26\n
+2018-12-05 10:49:38.219 6195-6195/? D/leak-27-16: 27\n
+2018-12-05 10:49:38.219 6195-6195/? D/leak-28-16: GMT+00:00\n
+2018-12-05 10:49:38.332 6195-6195/? D/leak: onCreate Ends\n
+2018-12-05 10:49:46.018 6257-6257/com.example.amit.helloworld D/leak-24-16: 24\n
+2018-12-05 10:49:46.018 6257-6257/com.example.amit.helloworld D/leak-25-16: 25\n
+2018-12-05 10:49:46.018 6257-6257/com.example.amit.helloworld D/leak-26-16: 26\n
+2018-12-05 10:49:46.018 6257-6257/com.example.amit.helloworld D/leak-27-16: 27\n
+2018-12-05 10:49:46.018 6257-6257/com.example.amit.helloworld D/leak-28-16: GMT+00:00\n
+2018-12-05 10:49:46.094 6257-6257/com.example.amit.helloworld D/leak: onCreate Ends\n
+2018-12-05 10:49:53.779 6257-6257/com.example.amit.helloworld D/leak: button_click starts\n
+2018-12-05 10:49:53.780 6257-6257/com.example.amit.helloworld D/leak-24-15: 24\n
+2018-12-05 10:49:53.780 6257-6257/com.example.amit.helloworld D/leak-25-15: 25\n
+2018-12-05 10:49:53.780 6257-6257/com.example.amit.helloworld D/leak-26-15: 26\n
+2018-12-05 10:49:53.780 6257-6257/com.example.amit.helloworld D/leak-27-15: GMT+00:00\n
+2018-12-05 10:49:53.780 6257-6257/com.example.amit.helloworld D/leak-28-15: GMT+00:00\n
+2018-12-05 10:49:53.780 6257-6257/com.example.amit.helloworld D/leak: methodA start\n
+2018-12-05 10:49:53.780 6257-6257/com.example.amit.helloworld D/leak-24-12: GMT+00:00\n
+2018-12-05 10:49:53.780 6257-6257/com.example.amit.helloworld D/leak-25-12: 25\n
+2018-12-05 10:49:53.780 6257-6257/com.example.amit.helloworld D/leak-26-12: 26\n
+2018-12-05 10:49:53.780 6257-6257/com.example.amit.helloworld D/leak-27-12: GMT+00:00\n
+2018-12-05 10:49:53.780 6257-6257/com.example.amit.helloworld D/leak-28-12: GMT+00:00\n
+2018-12-05 10:49:53.780 6257-6257/com.example.amit.helloworld D/leak: methodA Ends\n
+2018-12-05 10:49:53.780 6257-6257/com.example.amit.helloworld D/leak: button_click ends\n

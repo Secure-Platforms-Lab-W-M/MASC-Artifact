@@ -1,0 +1,2 @@
+public abstract class BareBone_X509TrustManagerCanBypassExt implements javax.net.ssl.X509TrustManager {
+}

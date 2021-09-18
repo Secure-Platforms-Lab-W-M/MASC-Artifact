@@ -1,0 +1,6 @@
+try {
+javax.crypto.Cipher cryptoVariable = javax.crypto.Cipher.getInstance(new CipherPack().A().B().getpropertyName());
+System.out.println(cryptoVariable.getAlgorithm());
+} catch (Exception e) {
+System.out.println("Error");
+}
