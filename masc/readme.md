@@ -12,16 +12,13 @@ It relies on JavaPoet library and Reflection API to extract properties from a gi
 
 ## Running MASC modules
 
-Running MASC and its modules is straightforward, but due to anonymizing efforts and associated paths, things may break during the review process.
+Running MASC and its modules is straightforward.
 
-However, we did our best effort to document the source code and follow proper coding conventions, which should make this somewhat easy to navigate through the source code.
-
-We will publish the source code of MASC in non-anoymous format after the paper is accepted to help advance the scientific community.
+We did our best effort to document the source code and follow proper coding conventions, which should make this easy to navigate through the source code.
 
 ## Running MASC modules
 
 We share sample runtime arguments we used for running MASC modules.
-
 
 ### Running MASC Core
 
