@@ -14,7 +14,7 @@ public class MASCBarebone {
     public static void main(String[] args) {
         try {
             if (args.length < 1) {
-
+                //test
                 System.out.println(
                         "No arguments provided. Running Cipher.properties by " +
                                 "default.");
