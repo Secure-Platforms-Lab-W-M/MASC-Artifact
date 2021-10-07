@@ -1,3 +1,4 @@
 \masc-core\.idea\gradle.xml
 \masc-core\.idea\misc.xml
 *.properties
+masc-core/app/src/main/resources/Cipher.properties
