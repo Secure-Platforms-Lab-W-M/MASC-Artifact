@@ -10,11 +10,15 @@ public class DifferentCase extends AStringOperator {
 
     @Override
     public String mutation() {
-        return api_name +
-                "." +
-                invocation +
-                "(\"" +
-                insecureParam.toLowerCase() +
-                "\");";
+        return String.format("%s.%s(\"%s\")",
+                api_name,
+                invocation,
+                insecureParam.toLowerCase());
+        //return api_name +
+        //       "." +
+        //        invocation +
+        //       "(\"" +
+        //        insecureParam.toLowerCase() +
+        //        "\");";
     }
 }
