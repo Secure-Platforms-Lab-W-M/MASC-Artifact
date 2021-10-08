@@ -9,12 +9,15 @@ public class UnsafeReplaceWithUnsafe extends AStringOperator{
 
     @Override
     public String mutation() {
-        return api_name +
-                "." +
-                invocation +
-                "(\"" + insecureParam + "\"." +
-                "replace(\"" +
-                insecureParam + "\", \"" +
-                insecureParam + "\"));";
+
+        return String.format("%s.%s(\"%s\".replace(\"%s\",\"%s\"));",
+                api_name, invocation, insecureParam, insecureParam, insecureParam);
+        //return api_name +
+        //        "." +
+        //        invocation +
+        //        "(\"" + insecureParam + "\"." +
+        //        "replace(\"" +
+        //        insecureParam + "\", \"" +
+        //        insecureParam + "\"));";
     }
 }

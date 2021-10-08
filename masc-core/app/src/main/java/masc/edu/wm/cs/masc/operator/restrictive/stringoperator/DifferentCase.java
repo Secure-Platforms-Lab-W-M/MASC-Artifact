@@ -10,7 +10,7 @@ public class DifferentCase extends AStringOperator {
 
     @Override
     public String mutation() {
-        return String.format("%s.%s(\"%s\")",
+        return String.format("%s.%s(\"%s\");",
                 api_name,
                 invocation,
                 insecureParam.toLowerCase());
