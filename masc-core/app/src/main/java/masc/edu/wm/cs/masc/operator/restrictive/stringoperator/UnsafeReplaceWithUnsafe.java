@@ -10,7 +10,7 @@ public class UnsafeReplaceWithUnsafe extends AStringOperator{
     @Override
     public String mutation() {
 
-        return String.format("%s.%s(\"%s\".replace(\"%s\",\"%s\"));",
+        return String.format("%s.%s(\"%s\".replace(\"%s\", \"%s\"));",
                 api_name, invocation, insecureParam, insecureParam, insecureParam);
     }
 }
