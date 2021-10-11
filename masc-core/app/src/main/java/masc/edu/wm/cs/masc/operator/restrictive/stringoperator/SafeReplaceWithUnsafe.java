@@ -10,12 +10,8 @@ public class SafeReplaceWithUnsafe extends AStringOperator {
 
     @Override
     public String mutation() {
-        return api_name +
-                "." +
-                invocation +
-                "(\"" + secureParam + "\"." +
-                "replace(\"" +
-                secureParam + "\", \"" +
-                insecureParam + "\"));";
+        return String.format("%s.%s(\"%s\".replace(\"%s\", \"%s\"));",
+                api_name, invocation, secureParam,
+                secureParam, insecureParam);
     }
 }
