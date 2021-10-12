@@ -2,10 +2,14 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app_route('/MASC WEB')
+@app_route('/MASC-Web')
 def MASC_web():
-  return "MASC Home Page"
+  return "<h1>MASC Home Page<h1>"
 
-@app_route('/MASC WEB')
-def MASC_web():
-  return "MASC Home Page"
+@app_route('/Deploy')
+def deploy():
+  return "<h1>Deploy Page<h1>"
+
+@app_route('/Deploy')
+def deploy():
+  return "<h1><h1>"
