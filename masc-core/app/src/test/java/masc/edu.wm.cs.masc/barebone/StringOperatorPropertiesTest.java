@@ -12,7 +12,7 @@ public class StringOperatorPropertiesTest {
     @Before
     public void setUp() throws Exception {
         properties = new StringOperatorProperties(
-                "src/main/resources/Cipher.properties");
+                "src/test/resources/properties/Cipher.properties");
     }
 
     @Test
@@ -20,12 +20,11 @@ public class StringOperatorPropertiesTest {
         assertEquals("StringOperator", properties.getType());
     }
 
-    // This needs to be reconfigured to work on multiple machines
-    //@Test
-    //public void getOutput_dir() {
-    //    assertEquals("/Users/amitseal/workspaces/mutationbackyard/reproduce",
-    //            properties.getOutputDir());
-    //}
+    @Test
+    public void getOutput_dir() {
+        assertEquals("/Users/amitseal/workspaces/mutationbackyard/reproduce",
+                properties.getOutputDir());
+    }
 
     @Test
     public void getApi_name() {
