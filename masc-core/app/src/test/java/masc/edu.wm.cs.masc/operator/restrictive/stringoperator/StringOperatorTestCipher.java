@@ -12,8 +12,7 @@ public class StringOperatorTestCipher {
 
     @Before
     public void setUp() throws Exception {
-        p = new StringOperatorProperties("src/main/java/masc/edu/wm/cs/masc" +
-                "/barebone/Cipher.properties");
+        p = new StringOperatorProperties("src/main/resources/Cipher.properties");
 
     }
 

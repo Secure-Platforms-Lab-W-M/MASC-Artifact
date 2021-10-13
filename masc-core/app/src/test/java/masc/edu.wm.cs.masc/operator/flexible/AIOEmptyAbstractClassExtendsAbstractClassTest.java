@@ -15,8 +15,7 @@ public class AIOEmptyAbstractClassExtendsAbstractClassTest {
     @Before
     public void setUp() throws Exception {
         p = new FlexibleOperatorProperties(
-                "src/main/java/masc/edu/wm/cs/masc/barebone/X509TrustManager" +
-                        ".properties");
+                "src/main/resources/X509TrustManager.properties");
     }
 
     @Test

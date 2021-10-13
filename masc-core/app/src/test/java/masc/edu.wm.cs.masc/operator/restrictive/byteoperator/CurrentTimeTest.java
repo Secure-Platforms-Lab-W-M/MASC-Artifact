@@ -14,8 +14,7 @@ public class CurrentTimeTest {
     @Before
     public void setUp() throws Exception {
         b = new CurrentTime(new ByteOperatorProperties(
-                "src/main/java/masc/edu/wm/cs/masc/barebone/IVParameterSpec" +
-                        ".properties"));
+                "src/main/resources/IVParameterSpec.properties"));
     }
 
     @Test

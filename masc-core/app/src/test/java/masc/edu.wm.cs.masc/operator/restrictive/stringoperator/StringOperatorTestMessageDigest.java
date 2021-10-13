@@ -11,7 +11,7 @@ public class StringOperatorTestMessageDigest {
     @Before
     public void setUp() throws Exception {
         operator = new StringOperator(
-                new StringOperatorProperties("src/main/java/masc/edu/wm/cs/masc/barebone/MessageDigest.properties"));
+                new StringOperatorProperties("src/main/resources/MessageDigest.properties"));
     }
 
     @Test
