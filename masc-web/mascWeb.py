@@ -1,23 +1,23 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app_route('/')
+@app.route('/')
 def MASC_web():
-  return "<h1>MASC Home Page<h1>"
+    return render_template("index.html")
 
-@app_route('/Deploy')
+@app.route('/deploy/')
 def deploy():
-  return "<h1>Deploy Page<h1>"
+    return "<h1>Deploy Page<h1>"
 
-@app_route('/Help')
-def deploy():
-  return "<h1>Help<h1>"
+#@app.route('/Help')
+#def deploy():
+# return "<h1>Help<h1>"
 
-@app_route('/Lab')
-def deploy():
-  return "<h1>About<h1>"
+#@app.route('/Lab/')
+#def deploy():
+#  return "<h1>About<h1>"
 
-@app_route('/About')
-def deploy():
-  return "<h1>About<h1>"
+#@app.route('/About/')
+#def deploy():
+#  return "<h1>About<h1>"
