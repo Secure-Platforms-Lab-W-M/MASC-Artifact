@@ -16,18 +16,21 @@ Once you have successfully cloned the entire Masc Repository, open Intelli J.  S
 ## Configuring the project
 If all goes well, you will be asked if you want to trust the Gradle project.  Press 'Trust Project.'  Pay attention to the event log in the lower-right corner.  An error concerning the JDK / SDK should appear.  This prevents the successful build of the project.  The solution is simple.  
 
+---
 #### On Windows
 
-Press CTRL+ALT+S to open the settings dialog.  Note: this may also open system information.  If this happens, close the Windows pop-up.
+>Press CTRL+ALT+S to open the settings dialog.  Note: this may also open system information.  If this happens, close the Windows pop-up.
+
 
 #### On Mac
-Go to the navigation bar at the top of your screen. Click on IntelliJ IDEA and then select Prefrences or use the shortcut COMMAND, to get to Prefrences.
+>Go to the navigation bar at the top of your screen. Click on IntelliJ IDEA and then select Prefrences or use the shortcut COMMAND, to get to Prefrences.
 
+---
 On the left-hand side, click the 'Build, Execution, Deployment' drop-down.  From the sub-menu, select 'Build Tools' and then 'Gradle.'  In the right pane, at the bottom, you want to supply a Gradle JVM.  You can download one straight from Intelli J.  I am using and recommend corretto-15.  Hit Apply and OK.  Intelli J should automatically begin building your project.
 
 ## Running Masc-Core
 Open MASCBarebone.java.  It can be found at `masc-core > app > src > main > java > masc > edu.wm.cs.masc > barebone > MASCBarebone.java.`
-You should see a green play button beside the main method of the file.  Press this button.  Select the first option from the menu.  Congratulations, you just ran Masc-Core, but wait, you got lots of errors...
+You should see a green play button beside the main method of the file.  Press this button.  Select the first option from the menu.  Congratulations, you just ran Masc-Core, but wait, you got lots of runtime errors... Continue to the next section to resolve these.
 
 ## Resolving Initial Errors
-If you have made it this far in the set up process, then you are seeing lots of red ink in your Intelli J console.  Do not fear, the solution is simple.  Note that the program takes the `Cipher.properties` file as input by default.  Find the file in the resources folder and open it.  Notice that the `outputDir` field specifies a file path that is not on your system.  Change this line to an appropriate file path.  Make sure that it exists!  Save the file and rerun the project.  The program should now run without error.  Look in the specified directory and you will find all of the mutations.
+If you have made it this far in the setup process, then you are seeing lots of runtime errors in your Intelli J console.  Do not fear, the solution is simple.  Note that the program takes the `Cipher.properties` file as input by default.  Find the file in the resources folder and open it.  Notice that the `outputDir` field specifies a file path that is not on your system.  Change this line to an appropriate file path.  Make sure that it exists!  Save the file and rerun the project.  The program should now run without error.  Look in the specified directory and you will find all of the mutations.
