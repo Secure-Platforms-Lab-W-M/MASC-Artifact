@@ -8,7 +8,7 @@ def MASC_web():
 
 @app.route('/deploy/')
 def deploy():
-    return "<h1>Deploy Page<h1>"
+    return render_template("deploy.html")
 
 #@app.route('/Help')
 #def deploy():
