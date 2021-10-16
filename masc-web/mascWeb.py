@@ -18,6 +18,10 @@ def help():
 def initLabPage():
     return render_template("lab.html")
 
+@app.route('/about/')
+def initAboutPage():
+    return render_template("about.html")
+
 #@app.route('/Help')
 #def deploy():
 # return "<h1>Help<h1>"
