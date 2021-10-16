@@ -14,6 +14,10 @@ def deploy():
 def help():
     return render_template("help.html")
 
+@app.route('/lab/')
+def initLabPage():
+    return render_template("lab.html")
+
 #@app.route('/Help')
 #def deploy():
 # return "<h1>Help<h1>"
