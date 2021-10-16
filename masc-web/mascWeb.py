@@ -3,15 +3,15 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
-def MASC_web():
+def initMASC_web():
     return render_template("index.html")
 
 @app.route('/deploy/')
-def deploy():
+def initDeployPage():
     return render_template("deploy.html")
 
 @app.route('/help/')
-def help():
+def initHelpPage():
     return render_template("help.html")
 
 @app.route('/lab/')
