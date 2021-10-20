@@ -10,20 +10,18 @@ public class ValueInVariable extends AStringOperator {
 
     @Override
     public String mutation() {
-        // String variableName = "insecureParam";
-        String line1 = String.format("String %s = \"%s\";", variableName, insecureParam);
-        String line2 = String.format("%s.%s(%s);", api_name, invocation, variableName);
-        return line1 + "\n" + line2;
-        //return "String " +
-        //        variableName +
-        //        " = \"" +
-        //        insecureParam +
-        //        "\";\n" +
-        //        api_name +
-        //        "." +
-        //        invocation +
-        //        "(" +
-        //        variableName +
-        //        ");";
+        StringBuilder sb = new StringBuilder();
+        sb.append("String ")
+                .append(variableName)
+                .append(" = \"")
+                .append(insecureParam)
+                .append("\";\n");
+        sb.append(api_name)
+                .append(".")
+                .append(invocation)
+                .append("(")
+                .append(variableName)
+                .append(");");
+        return sb.toString();
     }
 }

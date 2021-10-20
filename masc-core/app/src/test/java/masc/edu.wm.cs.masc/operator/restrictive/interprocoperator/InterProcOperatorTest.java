@@ -15,7 +15,7 @@ public class InterProcOperatorTest {
 
     @Before
     public void setUp() throws Exception {
-        String dir = "src/main/java/masc/edu/wm/cs/masc/barebone/";
+        String dir = "src/test/resources/properties/";
 
         cipherProperties = new InterprocProperties(dir
                 +
