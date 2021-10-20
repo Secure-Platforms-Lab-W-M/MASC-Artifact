@@ -28,7 +28,7 @@ public class StringOperatorPropertiesTest {
                 properties.getOutputDir());
     }
     */
-    
+
     @Test
     public void getApi_name() {
         assertEquals("javax.crypto.Cipher", properties.getApiName());
