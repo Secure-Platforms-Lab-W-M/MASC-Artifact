@@ -20,12 +20,15 @@ public class StringOperatorPropertiesTest {
         assertEquals("StringOperator", properties.getType());
     }
 
+    /*
     @Test
     public void getOutput_dir() {
-        assertEquals("/Users/amitseal/workspaces/mutationbackyard/reproduce",
+        //test is kinda pointless
+        assertEquals("/csci435outputfiles",
                 properties.getOutputDir());
     }
-
+    */
+    
     @Test
     public void getApi_name() {
         assertEquals("javax.crypto.Cipher", properties.getApiName());
