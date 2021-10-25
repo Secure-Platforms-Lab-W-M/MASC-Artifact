@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, session
+from flask import Flask, render_template, request, session, redirect, url_for
 from os.path import exists
 
 app = Flask(__name__)
@@ -15,17 +15,24 @@ def initDeployPage():
 def initHelpPage():
     return render_template("help.html")
 
-@app.route('/lab/', methods=['GET','POST'])
+@app.route('/lab/', methods=['GET', 'POST'])
 def labPage():
     if request.method == 'POST':
-        file = request.files['file']
-        file.save('userFile.java')
+        uploaded_file = request.files['file']
+        if uploaded_file.filename != '':
+            uploaded_file.save('userFile.txt')
+        f = open('userFile.txt', 'r')
+        return render_template("lab.html", text=f.read())
+    return render_template("lab.html")
 
-    if (exists('userFile.java')):
-        with open('userFile.java', 'r') as userFile:
-            return render_template("lab.html", output=f.userFile)
-    else:
-        return render_template("lab.html")
+#@app.route('/lab/userFile')
+#def displayFile():
+    #f = open('userFile.txt', 'r')
+	#return render_template("lab.html", text=f.read())
+    #return f.read()
+
+
+
 
 @app.route('/about/')
 def initAboutPage():
