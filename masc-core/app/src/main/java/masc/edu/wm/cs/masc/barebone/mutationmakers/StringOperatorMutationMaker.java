@@ -14,10 +14,8 @@ public class StringOperatorMutationMaker extends AMutationMaker {
 
     @Override
     public void populateOperators() {
-        operators
-                .put(OperatorType.StringDifferentCase, new DifferentCase(p));
-        operators
-                .put(OperatorType.StringNoiseReplace, new NoiseReplace(p));
+        operators.put(OperatorType.StringDifferentCase, new DifferentCase(p));
+        operators.put(OperatorType.StringNoiseReplace, new NoiseReplace(p));
         operators.put(OperatorType.StringSafeReplaceWithUnsafe,
                 new SafeReplaceWithUnsafe(p));
         operators.put(OperatorType.StringUnsafeReplaceWithUnsafe,

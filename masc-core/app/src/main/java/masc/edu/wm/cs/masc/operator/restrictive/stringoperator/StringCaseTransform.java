@@ -10,7 +10,13 @@ public class StringCaseTransform extends AStringOperator {
 
     @Override
     public String mutation() {
-        return String.format("%s.%s(\"%s\".toUpperCase(java.util.Locale.English));",
-                api_name, invocation, insecureParam.toLowerCase());
+        StringBuilder s = new StringBuilder();
+        s.append(api_name)
+                .append(".")
+                .append(invocation)
+                .append("(\"").append(insecureParam.toLowerCase())
+                .append("\".toUpperCase(java.util.Locale.English))")
+                .append(";");
+        return s.toString();
     }
 }

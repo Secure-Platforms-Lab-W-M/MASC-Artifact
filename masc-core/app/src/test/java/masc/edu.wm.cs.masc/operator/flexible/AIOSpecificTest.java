@@ -15,8 +15,7 @@ public class AIOSpecificTest {
     @Before
     public void setUp() throws Exception {
         p = new FlexibleOperatorProperties(
-                "src/main/java/masc/edu/wm/cs/masc/barebone/X509TrustManager" +
-                        ".properties");
+                "src/test/resources/properties/X509TrustManager.properties");
     }
 
     @Test
