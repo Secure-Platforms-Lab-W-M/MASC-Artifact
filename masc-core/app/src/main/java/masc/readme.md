@@ -126,8 +126,8 @@ public enum RootOperatorType {
 After naming your Operator, you can start defining them. The following rules apply: 
 
 - The implemented operator name must follow the type name from `OperatorType`. It is a requirement for consistency. 
-- Each of the operator must implement the `IOperator` interface. An example is `InterProcOperator`. 
-    - They might also be under an abstract class implementing the interface, Examples are `AStringOperator` for all String based Operators, and `AByteOperator` for all byte base doperators. Note that both `AStringOperator` and `AByteOperator` implements the `IOperator` interface.
+- Each of the operators must implement the `IOperator` interface. An example is `InterProcOperator`. 
+    - They might also be under an abstract class implementing the interface, Examples are `AStringOperator` for all String based Operators, and `AByteOperator` for all byte based operators. Note that both `AStringOperator` and `AByteOperator` implements the `IOperator` interface.
     - The norm is to create fields used in the abstract class which can be used by the concrete operators, and then receive it from the related properties file. A concrete operator may not have to use all of those fields, but these are made available regardless.
 
 
