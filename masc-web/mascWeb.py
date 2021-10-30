@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, session, redirect, url_for
 from os.path import exists
+import subprocess
 
 app = Flask(__name__)
 
@@ -22,7 +23,9 @@ def labPage():
         if uploaded_file.filename != '':
             uploaded_file.save('userFile.txt')
         f = open('userFile.txt', 'r')
-        return render_template("lab.html", text=f.read())
+        subprocess.check_output("javac mutation/src/mutation/main.java;java main", shell = True);
+        output = open('mutation/output.txt');
+        return render_template("lab.html", text=f.read(), out=output.read())
     return render_template("lab.html")
 
 #@app.route('/lab/userFile')
@@ -37,6 +40,7 @@ def labPage():
 @app.route('/about/')
 def initAboutPage():
     return render_template("about.html")
+
 
 
 
