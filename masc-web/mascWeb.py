@@ -23,8 +23,9 @@ def labPage():
         if uploaded_file.filename != '':
             uploaded_file.save('userFile.txt')
         f = open('userFile.txt', 'r')
-        subprocess.check_output("javac mutation/src/mutation/main.java;java main", shell = True);
-        output = open('mutation/output.txt');
+        #subprocess.Popen("java mutation/src/mutation/Main", shell=True);
+        subprocess.call(["java", "mutation/src/mutation/main.java", "arg1", "arg2", "arg3"])
+        output = open('output.txt');
         return render_template("lab.html", text=f.read(), out=output.read())
     return render_template("lab.html")
 
