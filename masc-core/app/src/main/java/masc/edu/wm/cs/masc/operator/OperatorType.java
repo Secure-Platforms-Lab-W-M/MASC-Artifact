@@ -32,4 +32,5 @@ public enum OperatorType {
     IntRoundValue,
     IntAbsoluteValue,
     IntNestedClass,
+    IntSquareThenRoot,
 }
