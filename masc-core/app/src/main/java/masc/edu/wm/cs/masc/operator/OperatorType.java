@@ -24,5 +24,5 @@ public enum OperatorType {
     AIOSpecificAbstractClassExtendsAbstractClass,
     AIOSpecificAbstractClassImplementsInterface,
     AIOSpecificInterfaceExtendsInterface,
-    TempName,
+    IntValueInVariable,
 }
