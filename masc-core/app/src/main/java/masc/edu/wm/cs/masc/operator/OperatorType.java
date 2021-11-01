@@ -29,4 +29,5 @@ public enum OperatorType {
     IntValueInVariableArithmetic,
     IntIterationMultipleCall,
     IntWhileLoopAccumulation,
+    IntRoundValue,
 }

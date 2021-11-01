@@ -23,6 +23,7 @@ public class IntMutationMaker extends AMutationMaker{
         operators.put(OperatorType.IntValueInVariableArithmetic, new ValueInVariableArithmetic(p));
         operators.put(OperatorType.IntIterationMultipleCall, new IterationMultipleCall(p));
         operators.put(OperatorType.IntWhileLoopAccumulation, new WhileLoopAccumulation(p));
+        operators.put(OperatorType.IntRoundValue, new RoundValue(p));
     }
 
     @Override
