@@ -9,6 +9,7 @@ you are unsure how to do this refer to this page: https://docs.python.org/3/libr
 
 Once you have created your virtual environment activate it. Once it is active
 run the following command (replace <venv name> with the name of your virtual environment:
+ 
  '''
 <venv name>/bin/python -m pip install -r requirements.txt
  '''
