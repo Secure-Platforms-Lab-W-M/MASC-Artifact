@@ -1,0 +1,32 @@
+<html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lab</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'mascWeb.css') }}">
+  <script type="text/javascript" src=""></script>
+  </head>
+
+<body>
+  <h1> Lab <h1>
+    <div class="topnav">
+      <a href="/">MASC Web</a>
+      <a href="/deploy/">Deploy</a>
+      <a href="/help/">Help</a>
+      <a class="active" href="#lab/">Lab</a>
+      <a href="/about/">About</a>
+</div>
+<h1>File Upload</h1>
+    <form method="POST" action="" enctype="multipart/form-data">
+      <p><input type="file" name="file"></p>
+      <p><input type="submit" value="Submit"></p>
+    </form>
+<h2> Original <h2>
+<pre style="font-size:.7rem;">
+  {{ text }}
+</pre>
+<h2> Altered <h2>
+<pre style="font-size:.7rem;">
+  {{ out }}
+</pre>
+</body>
