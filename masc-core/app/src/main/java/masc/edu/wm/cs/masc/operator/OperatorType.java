@@ -31,4 +31,5 @@ public enum OperatorType {
     IntWhileLoopAccumulation,
     IntRoundValue,
     IntAbsoluteValue,
+    IntNestedClass,
 }
