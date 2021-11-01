@@ -27,4 +27,5 @@ public enum OperatorType {
     IntValueInVariable,
     IntArithmetic,
     IntValueInVariableArithmetic,
+    IntIterationMultipleCall,
 }
