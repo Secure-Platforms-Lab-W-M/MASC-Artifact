@@ -15,18 +15,16 @@ run the following command (replace <venv name> with the name of your virtual env
 This command installs the Flask Python libraries to run MASC Web.
 
 Next navigate to the masc-web directory within your virtual environment. Run the following commands to activate the web page:
-'''
-export FLASK_APP=mascWeb
-flask run
-'''
+
+>export FLASK_APP=mascWeb
+>flask run
+
   
 If you plan to work on the file I would reccomend running the program in development
 mode to enable the debugger. To do this run the following command prior to "flask run" :
 
-'''
-export FLASK_ENV=development
-flask run
-'''
+>export FLASK_ENV=development
+>flask run
 
 For further information go to: https://flask.palletsprojects.com/en/2.0.x/quickstart/
 
