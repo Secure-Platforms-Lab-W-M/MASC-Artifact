@@ -5,6 +5,7 @@ import com.squareup.javapoet.TypeSpec;
 import masc.edu.wm.cs.masc.builders.generic.BuilderMainClass;
 import masc.edu.wm.cs.masc.builders.generic.BuilderMainMethod;
 import masc.edu.wm.cs.masc.operator.OperatorType;
+import masc.edu.wm.cs.masc.operator.restrictive.intoperator.Arithmetic;
 import masc.edu.wm.cs.masc.operator.restrictive.intoperator.ValueInVariable;
 import masc.edu.wm.cs.masc.properties.IntOperatorProperties;
 
@@ -19,6 +20,7 @@ public class IntMutationMaker extends AMutationMaker{
     @Override
     public void populateOperators() {
         operators.put(OperatorType.IntValueInVariable, new ValueInVariable(p));
+        operators.put(OperatorType.IntArithmetic, new Arithmetic(p));
     }
 
     @Override
