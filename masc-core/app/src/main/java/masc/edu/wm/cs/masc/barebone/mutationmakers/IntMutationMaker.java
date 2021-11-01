@@ -24,6 +24,7 @@ public class IntMutationMaker extends AMutationMaker{
         operators.put(OperatorType.IntIterationMultipleCall, new IterationMultipleCall(p));
         operators.put(OperatorType.IntWhileLoopAccumulation, new WhileLoopAccumulation(p));
         operators.put(OperatorType.IntRoundValue, new RoundValue(p));
+        operators.put(OperatorType.IntAbsoluteValue, new AbsoluteValue(p));
     }
 
     @Override

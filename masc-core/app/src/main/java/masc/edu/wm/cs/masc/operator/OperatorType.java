@@ -30,4 +30,5 @@ public enum OperatorType {
     IntIterationMultipleCall,
     IntWhileLoopAccumulation,
     IntRoundValue,
+    IntAbsoluteValue,
 }
