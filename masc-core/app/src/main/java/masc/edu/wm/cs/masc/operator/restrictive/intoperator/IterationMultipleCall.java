@@ -11,13 +11,14 @@ public class IterationMultipleCall extends AIntOperator {
     public String mutation() {
 
         StringBuilder s = new StringBuilder();
+        s.append(super.mutation());
         s.append("for (int i = 0; i < ").append(iterationCount)
                 .append("; i++){\n\t");
         s.append(api_name)
                 .append(".")
                 .append(invocation)
                 .append("(\"").append(password).append("\", ")
-                .append(salt).append(", i);\n")
+                .append("salt").append(", i);\n")
                 .append("}");
         System.out.println(s.toString());
         return s.toString();

@@ -13,13 +13,14 @@ public class ValueInVariableArithmetic extends AIntOperator {
         int term1 = (int) (Math.random() * 2 * iterCount) - iterCount;
         int term2 = iterCount - term1;
         StringBuilder s = new StringBuilder();
+        s.append(super.mutation());
         s.append("int ").append(variableName).append(" = ")
                 .append(term1).append(";\n");
         s.append(api_name)
                 .append(".")
                 .append(invocation)
                 .append("(\"").append(password).append("\", ")
-                .append(salt).append(", ")
+                .append("salt").append(", ")
                 .append(variableName + " + " + term2).append(")")
                 .append(";");
         System.out.println(s.toString());

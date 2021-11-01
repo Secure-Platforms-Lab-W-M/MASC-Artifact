@@ -11,13 +11,14 @@ public class NestedClass extends AIntOperator {
     public String mutation() {
 
         StringBuilder s = new StringBuilder();
+        s.append(super.mutation());
         s.append("class NestedClass{\n\t").append("int getIteration(){\n\t\t")
                 .append("return " + iterationCount).append(";\n\t}\n}\n");
         s.append(api_name)
                 .append(".")
                 .append(invocation)
                 .append("(\"").append(password).append("\", ")
-                .append(salt).append(", new NestedClass().getIteration());");
+                .append("salt").append(", new NestedClass().getIteration());");
         System.out.println(s.toString());
         return s.toString();
     }

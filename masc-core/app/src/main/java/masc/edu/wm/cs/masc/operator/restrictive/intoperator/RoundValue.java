@@ -11,11 +11,12 @@ public class RoundValue extends AIntOperator {
     public String mutation() {
 
         StringBuilder s = new StringBuilder();
+        s.append(super.mutation());
         s.append(api_name)
                 .append(".")
                 .append(invocation)
                 .append("(\"").append(password).append("\", ")
-                .append(salt).append(", Math.round(")
+                .append("salt").append(", Math.round(")
                 .append(iterationCount).append("));");
         System.out.println(s.toString());
         return s.toString();

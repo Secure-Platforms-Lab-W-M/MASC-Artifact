@@ -36,14 +36,7 @@ public class AIntOperator implements IOperator {
     @Override
     public String mutation() {
         StringBuilder s = new StringBuilder();
-        s.append(api_name)
-                .append(".")
-                .append(invocation)
-                .append("(\"").append(password).append("\", ")
-                .append(salt).append(", ")
-                .append(iterationCount).append(")")
-                .append(";");
-        System.out.println(s.toString());
+        s.append("byte[] salt = ").append(salt).append(";\n");
         return s.toString();
     }
 }

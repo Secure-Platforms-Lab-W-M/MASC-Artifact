@@ -13,11 +13,12 @@ public class Arithmetic extends AIntOperator {
         int term1 = (int) (Math.random() * 2 * iterCount) - iterCount;
         int term2 = iterCount - term1;
         StringBuilder s = new StringBuilder();
+        s.append(super.mutation());
         s.append(api_name)
                 .append(".")
                 .append(invocation)
                 .append("(\"").append(password).append("\", ")
-                .append(salt).append(", ")
+                .append("salt").append(", ")
                 .append(term1 + " + " + term2).append(")")
                 .append(";");
         System.out.println(s.toString());

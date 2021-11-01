@@ -11,6 +11,7 @@ public class WhileLoopAccumulation extends AIntOperator {
     public String mutation() {
 
         StringBuilder s = new StringBuilder();
+        s.append(super.mutation());
         s.append("int i = 0;\n")
                 .append("while (i < ").append(iterationCount).append("){\n\t")
                 .append("i++;\n}\n");
@@ -18,7 +19,7 @@ public class WhileLoopAccumulation extends AIntOperator {
                 .append(".")
                 .append(invocation)
                 .append("(\"").append(password).append("\", ")
-                .append(salt).append(", i);");
+                .append("salt").append(", i);");
         System.out.println(s.toString());
         return s.toString();
     }
