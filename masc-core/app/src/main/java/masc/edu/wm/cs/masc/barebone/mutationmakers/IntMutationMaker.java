@@ -5,20 +5,20 @@ import com.squareup.javapoet.TypeSpec;
 import masc.edu.wm.cs.masc.builders.generic.BuilderMainClass;
 import masc.edu.wm.cs.masc.builders.generic.BuilderMainMethod;
 import masc.edu.wm.cs.masc.operator.OperatorType;
-import masc.edu.wm.cs.masc.operator.restrictive.newoperator.TempName;
-import masc.edu.wm.cs.masc.properties.NewOperatorProperties;
+import masc.edu.wm.cs.masc.operator.restrictive.intoperator.ValueInVariable;
+import masc.edu.wm.cs.masc.properties.IntOperatorProperties;
 
-public class NewMutationMaker extends AMutationMaker{
+public class IntMutationMaker extends AMutationMaker{
 
-    NewOperatorProperties p;
+    IntOperatorProperties p;
 
-    public NewMutationMaker(NewOperatorProperties p) {
+    public IntMutationMaker(IntOperatorProperties p) {
         this.p = p;
     }
 
     @Override
     public void populateOperators() {
-        operators.put(OperatorType.TempName, new TempName(p));
+        operators.put(OperatorType.IntValueInVariable, new ValueInVariable(p));
     }
 
     @Override

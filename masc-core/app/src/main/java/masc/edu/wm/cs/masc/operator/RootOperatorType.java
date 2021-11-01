@@ -4,6 +4,6 @@ public enum RootOperatorType {
     StringOperator,
     ByteOperator,
     Interproc,
-    NewOperator,
+    IntOperator,
     Flexible
 }
