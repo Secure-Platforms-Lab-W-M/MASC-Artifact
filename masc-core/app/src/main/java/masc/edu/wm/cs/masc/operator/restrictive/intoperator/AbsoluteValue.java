@@ -18,7 +18,6 @@ public class AbsoluteValue extends AIntOperator {
                 .append("(\"").append(password).append("\", ")
                 .append("salt").append(", Math.abs(")
                 .append(iterationCount).append("));");
-        System.out.println(s.toString());
         return s.toString();
     }
 }

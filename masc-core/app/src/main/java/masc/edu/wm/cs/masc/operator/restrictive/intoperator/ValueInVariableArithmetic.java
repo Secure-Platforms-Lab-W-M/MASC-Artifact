@@ -23,7 +23,6 @@ public class ValueInVariableArithmetic extends AIntOperator {
                 .append("salt").append(", ")
                 .append(variableName + " + " + term2).append(")")
                 .append(";");
-        System.out.println(s.toString());
         return s.toString();
     }
 }

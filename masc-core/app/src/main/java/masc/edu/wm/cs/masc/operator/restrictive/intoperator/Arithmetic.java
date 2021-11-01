@@ -21,7 +21,6 @@ public class Arithmetic extends AIntOperator {
                 .append("salt").append(", ")
                 .append(term1 + " + " + term2).append(")")
                 .append(";");
-        System.out.println(s.toString());
         return s.toString();
     }
 }

@@ -18,7 +18,6 @@ public class RoundValue extends AIntOperator {
                 .append("(\"").append(password).append("\", ")
                 .append("salt").append(", Math.round(")
                 .append(iterationCount).append("));");
-        System.out.println(s.toString());
         return s.toString();
     }
 }

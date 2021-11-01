@@ -20,7 +20,6 @@ public class WhileLoopAccumulation extends AIntOperator {
                 .append(invocation)
                 .append("(\"").append(password).append("\", ")
                 .append("salt").append(", i);");
-        System.out.println(s.toString());
         return s.toString();
     }
 }

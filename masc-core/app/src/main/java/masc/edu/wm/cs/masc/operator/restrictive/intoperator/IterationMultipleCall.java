@@ -20,7 +20,6 @@ public class IterationMultipleCall extends AIntOperator {
                 .append("(\"").append(password).append("\", ")
                 .append("salt").append(", i);\n")
                 .append("}");
-        System.out.println(s.toString());
         return s.toString();
     }
 }

@@ -20,7 +20,6 @@ public class ValueInVariable extends AIntOperator {
                 .append("salt").append(", ")
                 .append(variableName).append(")")
                 .append(";");
-        System.out.println(s.toString());
         return s.toString();
     }
 }

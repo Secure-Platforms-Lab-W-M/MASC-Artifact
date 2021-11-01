@@ -19,7 +19,6 @@ public class NestedClass extends AIntOperator {
                 .append(invocation)
                 .append("(\"").append(password).append("\", ")
                 .append("salt").append(", new NestedClass().getIteration());");
-        System.out.println(s.toString());
         return s.toString();
     }
 }
