@@ -33,4 +33,5 @@ public enum OperatorType {
     IntAbsoluteValue,
     IntNestedClass,
     IntSquareThenRoot,
+    IntFromString,
 }

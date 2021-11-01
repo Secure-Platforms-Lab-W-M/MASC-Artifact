@@ -27,6 +27,7 @@ public class IntMutationMaker extends AMutationMaker{
         operators.put(OperatorType.IntAbsoluteValue, new AbsoluteValue(p));
         operators.put(OperatorType.IntNestedClass, new NestedClass(p));
         operators.put(OperatorType.IntSquareThenRoot, new SquareThenRoot(p));
+        operators.put(OperatorType.IntFromString, new FromString(p));
     }
 
     @Override
