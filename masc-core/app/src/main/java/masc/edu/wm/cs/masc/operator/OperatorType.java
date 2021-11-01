@@ -26,4 +26,5 @@ public enum OperatorType {
     AIOSpecificInterfaceExtendsInterface,
     IntValueInVariable,
     IntArithmetic,
+    IntValueInVariableArithmetic,
 }
