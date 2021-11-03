@@ -32,8 +32,6 @@ public class IntOperatorTest {
         String[] mutation = new Arithmetic(p).mutation().split("\n");
         Pattern p = Pattern.compile("javax.crypto.spec.PBEKeySpec\\(\"very_secure\", salt, \\-?(\\d)+ \\+ (\\d)+\\);");
         Matcher m = p.matcher(mutation[1]);
-        System.out.println(mutation[1]);
-        System.out.println(m.matches());
         assertEquals(expected, mutation[0]+"\n");
         assertTrue(m.matches());
     }
