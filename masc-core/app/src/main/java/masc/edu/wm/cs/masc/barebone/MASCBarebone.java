@@ -3,10 +3,7 @@ package masc.edu.wm.cs.masc.barebone;
 import masc.edu.wm.cs.masc.barebone.mutationmakers.*;
 import masc.edu.wm.cs.masc.config.PropertiesReader;
 import masc.edu.wm.cs.masc.operator.RootOperatorType;
-import masc.edu.wm.cs.masc.properties.ByteOperatorProperties;
-import masc.edu.wm.cs.masc.properties.FlexibleOperatorProperties;
-import masc.edu.wm.cs.masc.properties.InterprocProperties;
-import masc.edu.wm.cs.masc.properties.StringOperatorProperties;
+import masc.edu.wm.cs.masc.properties.*;
 import org.apache.commons.configuration2.ex.ConfigurationException;
 
 public class MASCBarebone {
@@ -18,7 +15,7 @@ public class MASCBarebone {
                 System.out.println(
                         "No arguments provided. Running Cipher.properties by " +
                                 "default.");
-                run("Cipher.properties");
+                run("New.properties");
 
             } else if (args.length == 1) {
                 run(args[0]);
@@ -56,6 +53,10 @@ public class MASCBarebone {
         } else if (type.equalsIgnoreCase(RootOperatorType.Interproc.name())) {
             InterprocProperties properties = new InterprocProperties(path);
             m = new InterprocMutationMaker(properties);
+            m.make(properties);
+        } else if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())){
+            IntOperatorProperties properties = new IntOperatorProperties(path);
+            m = new IntMutationMaker(properties);
             m.make(properties);
         } else if (type.equalsIgnoreCase(RootOperatorType.Flexible.name())) {
             FlexibleOperatorProperties properties =
