@@ -1,9 +1,11 @@
 package masc.edu.wm.cs.masc.operator.restrictive.intoperator;
 
 import masc.edu.wm.cs.masc.properties.IntOperatorProperties;
+import masc.edu.wm.cs.masc.utility.RandomGeneratorFactory;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -29,11 +31,12 @@ public class IntOperatorTest {
 
     @Test
     public void arithmetic() {
-        String[] mutation = new Arithmetic(p).mutation().split("\n");
-        Pattern p = Pattern.compile("javax.crypto.spec.PBEKeySpec\\(\"very_secure\", salt, \\-?(\\d)+ \\+ (\\d)+\\);");
-        Matcher m = p.matcher(mutation[1]);
-        assertEquals(expected, mutation[0]+"\n");
-        assertTrue(m.matches());
+        Random gen = new RandomGeneratorFactory().getGenerator();
+        int term1 = (int) (gen.nextDouble() * 2 * 50) - 50;
+        int term2 = 50 - term1;
+        expected += "javax.crypto.spec.PBEKeySpec(\"very_secure\", salt, ";
+        expected += term1 + " + "  + term2 + ");";
+        assertEquals(expected, new Arithmetic(p).mutation());
     }
 
     @Test
@@ -79,14 +82,14 @@ public class IntOperatorTest {
 
     @Test
     public void valueInVariableArithmetic() {
-        String[] mutation = new ValueInVariableArithmetic(p).mutation().split("\n");
-        Pattern varPattern = Pattern.compile("int iterCount = \\-?(\\d)+;");
-        Pattern apiPattern = Pattern.compile("javax.crypto.spec.PBEKeySpec\\(\"very_secure\", salt, iterCount \\+ (\\d)+\\);");
-        Matcher m1 = varPattern.matcher(mutation[1]);
-        Matcher m2 = apiPattern.matcher(mutation[2]);
-        assertEquals(expected, mutation[0]+"\n");
-        assertTrue(m1.matches());
-        assertTrue(m2.matches());
+        Random gen = new RandomGeneratorFactory().getGenerator();
+        int term1 = (int) (gen.nextDouble() * 2 * 50) - 50;
+        int term2 = 50 - term1;
+
+        expected += "int iterCount = " + term1 + ";\n";
+        expected += "javax.crypto.spec.PBEKeySpec(\"very_secure\", salt, iterCount + " + term2 + ");";
+
+        assertEquals(expected, new ValueInVariableArithmetic(p).mutation());
     }
 
     @Test
