@@ -101,4 +101,11 @@ public class IntOperatorTest {
         expected += "javax.crypto.spec.PBEKeySpec(\"very_secure\", salt, i);";
         assertEquals(expected, new WhileLoopAccumulation(p).mutation());
     }
+
+    @Test
+    public void overflow() {
+        expected += "javax.crypto.spec.PBEKeySpec(\"very_secure\", salt, ";
+        expected += "Integer.MAX_VALUE + Integer.MAX_VALUE + 2 + 50);";
+        assertEquals(expected, new Overflow(p).mutation());
+    }
 }
