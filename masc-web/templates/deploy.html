@@ -8,12 +8,137 @@
   </head>
 
 <body>
-  <h1> Deploy <h1>
-    <div class="topnav">
+  <h1> Deploy </h1>
+  <div class="topnav">
       <a href="/">MASC Web</a>
       <a class="active" href="#deploy">Deploy</a>
       <a href="/help/">Help</a>
       <a href="/lab/">Lab</a>
       <a href="/about/">About</a>
-</div>
+  </div>
+  <div class="setup">
+    <h2> Setting up MASC on Your Machine </h2>
+    <span> <b> NOTE: </b> If you are just interested in seeing how MASC works you can run the program from the Lab sections of the website </span>
+      <p>
+          At some point in the near future all components should require only one set up.
+          As of right now the projects are not integrated and require seperate setup
+      </p>
+      <p>
+        While MASC can be run on other editors these intstructions explain the setup for running MASC using the Intelli J editor.
+      </p>
+      <h4> Installing Intelli J </h4>
+      <p>
+        The Intelli J Community Edition can be downloaded for free from <a href="https://www.jetbrains.com/idea/download/#section=windows"> [this link]</a>.
+        Follow the instructions of the on screen wizard until installation is successful.
+      </p>
+      <h3> Setting up MASC Core</h3>
+      <h4> Cloning Masc-Core </h4>
+      <p>
+        Now that our IDE is installed, we need to clone the <a href="https://github.com/WM-SEMERU/CSci435-Fall21-MASC"> [MASC Repository]</a> from Github.  You can do this from Intelli J, Github Desktop, or the command line.  Take note of where the cloned repository is saved on your machine.
+      </p>
+      <h4> Opening Masc-corresponding </h4>
+      <p>
+        Once you have successfully cloned the entire Masc Repository, open Intelli J.  Select the open option, to open an existing project.  A file explorer window should open.  Navigate to the directory where you cloned the Masc Repo.  Do NOT open the root level of the repository!  Instead navigate down the nested project folders until you reach masc-core.  Open the masc-core folder as your project.
+      </p>
+      <h4> Configuring the Project </h4>
+        <p>
+          If all goes well, you will be asked if you want to trust the Gradle project.  Press 'Trust Project.'  Pay attention to the event log in the lower-right corner.  An error concerning the JDK / SDK should appear.  This prevents the successful build of the project.  The solution is simple.
+        </p>
+      <p>
+        <b> For Windows: </b> Press CTRL+ALT+S to open the settings dialog.  Note: this may also open system information.  If this happens, close the Windows pop-up.
+      </p>
+      <p>
+        <b> For Mac: </b> Go to the navigation bar at the top of your screen. Click on IntelliJ IDEA and then select Prefrences or use the shortcut COMMAND, to get to Prefrences.
+      </p>
+      <p>
+        On the left-hand side, click the 'Build, Execution, Deployment' drop-down.  From the sub-menu, select 'Build Tools' and then 'Gradle.'  In the right pane, at the bottom, you want to supply a Gradle JVM.  You can download one straight from Intelli J.  I am using and recommend corretto-15.  Hit Apply and OK.  Intelli J should automatically begin building your project.
+      </p>
+      <br>
+      <h3> Setting up MDroid </h3>
+      <br>
+      <h3> Setting up Muse </h3>
+      <h4> Cloning Muse </h4>
+      <p>
+        Now that our IDE is installed, we need to clone the <a href="https://github.com/WM-SEMERU/CSci435-Fall21-MASC"> [Masc Repository] </a> from Github.  You can do this from Intelli J, Github Desktop, or the command line.  Take note of where the cloned repository is saved on your machine.
+      </p>
+      <h4> Opening Muse </h4>
+      <p>
+        Once you have successfully cloned the entire Masc Repository, open Intelli J.  Select the open option, to open an existing project.  A file explorer window should open.  Navigate to the directory where you cloned the Masc Repo.  Do NOT open the root level of the repository!  Masc is currently comprised of three separate projects: Masc-Core, Muse, and MDroid.  Instead navigate down the nested project folders until you see Muse.  Open the Muse folder as your project.
+      </p>
+      <h4> Configuring the Project </h4>
+      <p>
+        The window will ask if you want to build the project with Eclipse or Maven.  Select Maven.  Next, you will be asked if you want to trust the Maven project.  Press 'Trust Project.'  A pop-up concerning legal issues may appear at the lower-right corner.  In order to continue, you must agree to the terms.  Once everything is built correctly, you are ready to continue.
+      </p>
+      <hr>
+      <h3> Running MASC Modules  </h3>
+      <h4> MASC Core </h4>
+      <p>
+        Open MASCBarebone.java.  It can be found at <b><em>masc-core > app > src > main > java > masc > edu.wm.cs.masc > barebone > MASCBarebone.java</em></b>.
+        You should see a green play button beside the main method of the file.  Press this button.  Select the first option from the menu.  Congratulations, you just ran Masc-Core, but wait, you got lots of runtime errors... Continue to the next section to resolve these.
+      </p>
+      <p>
+        <b> Possible Errors: </b> If you have made it this far in the setup process, then you are seeing lots of runtime errors in your Intelli J console.  Do not fear, the solution is simple.  Note that the program takes the `Cipher.properties` file as input by default.  Find the file in the resources folder and open it.  Notice that the `outputDir` field specifies a file path that is not on your system.  Change this line to an appropriate file path.  Make sure that it exists!  Save the file and rerun the project.  The program should now run without error.  Look in the specified directory and you will find all of the mutations.
+      </p>
+      <br>
+      <h4> MDroid </h4>
+      <p>
+
+      </p>
+      <br>
+      <h4> Muse </h4>
+      <p>
+        Open Muse.java.  It can be found at `muse > src > edu.wm.cs.masc > muse > Muse.java.`
+        You should see a green play button beside the main method of the file.  Note: The main method is located near the bottom of the file.  Press the button.  Select the first option from the menu.  Congratulations, you just ran Muse.
+      </p>
+      <p>
+        If you look at the console, you should see output that looks like: <br>
+        <blockquote>
+          ******* ERROR: INCORRECT USAGE ******* <br>
+          Values need to be defined in config.properties in order to run Muse: <br>
+          lib4ast: -----------<br>
+          appSrc: -----------<br>
+          appName: -----------<br>
+          output: -----------<br>
+          operatorType: TAINTSINK, SCOPESINK, REACHABILITY or COMPLEXREACHABILITY<br>
+          source: -----------<br>
+          sink: -----------<br>
+          varDec: -----------<br>
+          Please provide the path to the config.properties file on command line
+        </blockquote>
+      </p>
+      <p>
+        To run Muse successfully, you will need to provide a command-line argument to Muse's main method.  Let's look at how to do that in Intelli J.
+      </p>
+      <span><b> Supplying Command Line Parameters in Intelli J </b></span>
+      <ol>
+        <li> Click the green play button beside the main method.</li>
+        <li> Instead of selecting the first option, click on the last one (Modify Run Configuration).</li>
+        <li> Type <b><em>.\src\edu\wm\cs\muse\sample_config.properties</em></b> into the text field labeled `Program Arguments`.  You need to supply the path where the file can be found by the system.</li>
+        <li> Press `Apply` and hit `OK`.</li>
+      </ol>
+      <p>
+        Now click the play button again to run the main method.
+      </p>
+      <p>
+        You will see the same error as before.  However, this time, there is a different cause.  (Note: the error messages should be updated for clarity).  The issue now stems from the contents of the sample_config.properties file.  Let's address those issues now.
+      </p>
+      <span><b> Supplying Arguments through the Properties file </b></span>
+      <p>
+        Before running Muse again, open the <b><em>sample_config.properties</em></b>.  Notice that the properties file has multiple fields, but all of them are of the form &lt;something&gt;.  To start applying mutations, you need to supply path arguments for the `lib4ast`, `appSrc`, and `output` fields.  Next, supply the operator type.  We recommend starting with the `REACHABILITY` operator type.  Lastly you need to choose an `appName`.  This will be the name of the folder that the mutationed files are saved in.  Below you will find descriptions of the fields you should complete before continuing.
+      </p>
+      <ul>
+        <li> lib4ast: path to MDroid directory </li>
+        <li> appSrc: path to input directory (where are your files stored?)</li>
+        <li> operatorType: type of operator (how should mutations be applied?)</li>
+        <li> appName: name of the app folder (what folder should mutations be put in?)</li>
+        <li> output: path to output directory (where should the mutations be saved?)</li>
+      </ul>
+      <p>
+        If you want to use the default input and output directories, you can find them at: `muse > test > input` and `muse > test > output` respectively.  Make sure you supply the full file paths in the .properties file.
+      </p>
+      <p>
+        Now you should be all set.  If you hit the green play button again, the console should now be filled with stats on the mutation successes.  This tutorial will end here, but know there is still much more to explore in Muse.
+      </p>
+
+  </div>
 </body>
