@@ -9,15 +9,9 @@ public class AbsoluteValue extends AIntOperator {
 
     @Override
     public String mutation() {
-
-        StringBuilder s = new StringBuilder();
-        s.append(super.mutation());
-        s.append(api_name)
-                .append(".")
-                .append(invocation)
-                .append("(\"").append(password).append("\", ")
-                .append("salt").append(", Math.abs(")
-                .append(iterationCount).append("));");
-        return s.toString();
+        String s = "Math.abs(" + iterationCount + ")";
+        String template = MisuseType.getTemplate(this);
+        System.out.println(template);
+        return String.format(template, s);
     }
 }
