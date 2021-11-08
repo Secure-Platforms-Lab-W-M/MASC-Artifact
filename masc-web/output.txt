@@ -1,1 +1,1 @@
-system.o8t.println("Hello World")/n
+system.out.println("Hello World")33/nsystem.out.pr13ntln("Hello World");/nsystem.out.p86intln("Hel23o World");/nsystem.out.prin15ln("Hello World");/ns1stem.out.println("Hello World");/ns1stem.out.println("Hello World");/nsystem.out.println("Hello Worl30");/nsystem.out.println("20ello World");/nsyste5.out.println("Hello World");/n/n
