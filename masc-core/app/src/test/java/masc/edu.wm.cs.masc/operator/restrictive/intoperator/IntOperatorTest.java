@@ -66,13 +66,7 @@ public class IntOperatorTest {
         expected += "javax.crypto.spec.PBEKeySpec(\"very_secure\", salt, Math.round(50));";
         assertEquals(expected, new RoundValue(p).mutation());
     }
-
-    @Test
-    public void squareThenRoot(){
-        expected += "javax.crypto.spec.PBEKeySpec(\"very_secure\", salt, Math.sqrt(Math.pow(50, 2)));";
-        assertEquals(expected, new SquareThenRoot(p).mutation());
-    }
-
+    
     @Test
     public void valueInVariable(){
         expected += "int iterCount = 50;\n";
