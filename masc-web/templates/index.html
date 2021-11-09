@@ -1,24 +1,41 @@
-<html>
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title> Main Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'mascWeb.css') }}">
-  <script type="text/javascript" src=""></script>
+  <script src=""></script>
   </head>
 
 <body>
-  <h1> MASC Web </h1>
-    <div class="topnav">
-      <a class="active" href="#home">MASC Web</a>
-      <a href="/deploy/">Deploy</a>
-      <a href="/help/">Help</a>
-      <a href="/lab/">Lab</a>
-      <a href="/about/">About</a>
-    </div>
-  <div>
+    <div class="wrapper">
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <h3>MASC Web</h3>
+        </div>
+        <ul class="list-unstyled components">
+          <li>
+            <a href="#home"> MASC Web </a>
+          </li>
+          <li>
+            <a href="/deploy/">Deploy</a>
+          </li>
+          <li>
+            <a href="/help/">Help</a>
+          </li>
+          <li>
+            <a href="/lab/">Lab</a>
+          </li>
+          <li>
+            <a href="/about/">About</a>
+          </li>
+        </ul>
+      </nav>
+
+  <div id="content">
     <p>
       Welcome to MASC Web! Get started with <a href="/deploy/">Deploy</a> and get an overview of the framework with <a href="/help/">Help</a>. There is also <a href="/lab/">Lab</a> so that you can run MASC on the website without having to get the project on your local machine. If you would like to read the papers associated with the project or contact the creator you can find this information in the <a href="/about/">About</a> section.
     </p>
+  </div>
   </div>
 </body>
