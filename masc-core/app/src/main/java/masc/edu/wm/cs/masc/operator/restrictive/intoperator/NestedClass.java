@@ -10,15 +10,22 @@ public class NestedClass extends AIntOperator {
     @Override
     public String mutation() {
 
+        // Create String Builder
         StringBuilder s = new StringBuilder();
-        s.append(super.mutation());
-        s.append("class NestedClass{\n\t").append("int getIteration(){\n\t\t")
-                .append("return " + iterationCount).append(";\n\t}\n}\n");
-        s.append(api_name)
-                .append(".")
-                .append(invocation)
-                .append("(\"").append(password).append("\", ")
-                .append("salt").append(", new NestedClass().getIteration());");
+
+        // Write the nested class
+        s.append("class NestedClass{\n\t")
+                .append("int getIteration(){\n\t\t")
+                .append("return " + iterationCount)
+                .append(";\n\t}\n}\n");
+
+        // Get the misuse template
+        String template = MisuseType.getTemplate(this, 2);
+
+        // Supply the misuse to the template
+        s.append(String.format(template, "newNestedClass().getIteration()"));
+
+        // Return the generated string
         return s.toString();
     }
 }
