@@ -11,6 +11,9 @@ public class AIntOperator implements IOperator {
     protected final String salt;
     protected final String iterationCount;
     protected final String variableName;
+    protected final String misuse;
+    protected final String algorithm;
+    protected final String keyGenVarName;
 
     public AIntOperator(IntOperatorProperties p) {
         this.api_name = p.getApiName();
@@ -19,18 +22,27 @@ public class AIntOperator implements IOperator {
         this.salt = p.getSalt();
         this.iterationCount = p.getIterationCount();
         this.variableName = p.getVariableName();
+        this.misuse = p.getMisuse();
+        this.algorithm = p.getAlgorithm();
+        this.keyGenVarName = p.getKeyGenVarName();
     }
 
     public AIntOperator(String api_name, String invocation,
                         String password, String salt,
                         String iterationCount,
-                        String variableName) {
+                        String variableName,
+                        String misuse,
+                        String algorithm,
+                        String keyGenVarName) {
         this.api_name = api_name;
         this.invocation = invocation;
         this.password = password;
         this.salt = salt;
         this.iterationCount = iterationCount;
         this.variableName = variableName;
+        this.misuse = misuse;
+        this.algorithm = algorithm;
+        this.keyGenVarName = keyGenVarName;
     }
 
     @Override
