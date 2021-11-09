@@ -3,22 +3,39 @@
 <html>
 <head>
   <title>Help</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'mascWeb.css') }}">
   <script type="text/javascript" src=""></script>
   </head>
 
 <body>
-  <h1> Help </h1>
-  <div class="topnav">
-      <a href="/">MASC Web</a>
-      <a href="/deploy/">Deploy</a>
-      <a class="active" href="#">Help</a>
-      <a href="/lab/">Lab</a>
-      <a href="/about/">About</a>
-  </div>
-  <div>
+  <div class="wrapper">
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>Help</h3>
+      </div>
+      <ul class="list-unstyled components">
+        <li>
+          <a href="/"> Home </a>
+        </li>
+        <li>
+          <a href="/deploy/">Deploy</a>
+        </li>
+        <li>
+          <a href="#help">Help</a>
+        </li>
+        <li>
+          <a href="/lab/">Lab</a>
+        </li>
+        <li>
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </nav>
+  <div id="content">
     <h2> Architecture Diagram</h2>
     <img src="{{ url_for('static', filename='HighLevelArchitectureDiagramV3.png')}}" alt="architectureDiagram" width="1056" height="816">
     <h3> </h3>
   </div>
+</div>
 </body>
