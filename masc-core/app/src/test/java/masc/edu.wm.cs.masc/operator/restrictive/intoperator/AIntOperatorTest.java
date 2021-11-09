@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 
-public class AIntOperatorTest {
+public abstract class AIntOperatorTest {
 
     IntOperatorProperties p;
     String expected;
