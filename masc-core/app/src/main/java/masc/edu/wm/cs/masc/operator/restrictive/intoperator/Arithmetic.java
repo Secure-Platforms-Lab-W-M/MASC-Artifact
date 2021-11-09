@@ -1,8 +1,5 @@
 package masc.edu.wm.cs.masc.operator.restrictive.intoperator;
 import masc.edu.wm.cs.masc.properties.IntOperatorProperties;
-import masc.edu.wm.cs.masc.utility.RandomGeneratorFactory;
-
-import java.util.Random;
 
 public class Arithmetic extends AIntOperator {
 
