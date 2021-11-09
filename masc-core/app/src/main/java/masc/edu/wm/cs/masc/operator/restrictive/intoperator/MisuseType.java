@@ -9,7 +9,8 @@ public class MisuseType {
             s.append(op.api_name)
                     .append(".")
                     .append(op.invocation)
-                    .append("(\"").append(op.password).append("\", ")
+                    .append("(\"").append(op.password)
+                    .append("\".toCharArray(), ")
                     .append("salt, %s);");
         }
         else{
