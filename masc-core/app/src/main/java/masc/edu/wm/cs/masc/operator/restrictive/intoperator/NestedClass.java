@@ -23,7 +23,7 @@ public class NestedClass extends AIntOperator {
         String template = MisuseType.getTemplate(this);
 
         // Supply the misuse to the template
-        s.append(String.format(template, "newNestedClass().getIteration()"));
+        s.append(String.format(template, "new NestedClass().getIteration()"));
 
         // Return the generated string
         return s.toString();
