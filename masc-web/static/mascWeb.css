@@ -152,6 +152,15 @@ a.article:hover {
     transition: all 0.3s;
 }
 
+#content a{
+  color: blue;
+  text-decoration: underline;
+  cursor: auto;
+}
+
+
+
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
