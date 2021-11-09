@@ -31,11 +31,11 @@ public class IntOperatorTest {
 
     @Test
     public void arithmetic() {
-        Random gen = new RandomGeneratorFactory().getGenerator();
-        int term1 = (int) (gen.nextDouble() * 2 * 50) - 50;
+        int term1 = 30;
         int term2 = 50 - term1;
         expected += "javax.crypto.spec.PBEKeySpec(\"very_secure\", salt, ";
         expected += term1 + " + "  + term2 + ");";
+        System.out.println(expected);
         assertEquals(expected, new Arithmetic(p).mutation());
     }
 
@@ -66,7 +66,7 @@ public class IntOperatorTest {
         expected += "javax.crypto.spec.PBEKeySpec(\"very_secure\", salt, Math.round(50));";
         assertEquals(expected, new RoundValue(p).mutation());
     }
-    
+
     @Test
     public void valueInVariable(){
         expected += "int iterCount = 50;\n";

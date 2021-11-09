@@ -15,10 +15,7 @@ public class Arithmetic extends AIntOperator {
 
         // Get the iteration count as an integer
         int iterCount = Integer.parseInt(iterationCount);
-
-        // Generate a random value between -iterCount and +iterCount
-        Random gen = new RandomGeneratorFactory().getGenerator();
-        int term1 = (int) (gen.nextDouble() * 2 * iterCount) - iterCount;
+        int term1 = 30;
         int term2 = iterCount - term1;
 
         StringBuilder s = new StringBuilder();
