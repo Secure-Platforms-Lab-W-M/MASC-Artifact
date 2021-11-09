@@ -12,7 +12,7 @@ public class Overflow extends AIntOperator{
     public String mutation() {
 
         String s = "Integer.MAX_VALUE + Integer.MAX_VALUE + 2 + " + iterationCount;
-        String template = MisuseType.getTemplate(this, 2);
+        String template = MisuseType.getTemplate(this);
         return String.format(template, s);
 
     }
