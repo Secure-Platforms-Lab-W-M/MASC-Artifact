@@ -11,7 +11,6 @@ public class AbsoluteValue extends AIntOperator {
     public String mutation() {
         String s = "Math.abs(" + iterationCount + ")";
         String template = MisuseType.getTemplate(this);
-        System.out.println(template);
         return String.format(template, s);
     }
 }
