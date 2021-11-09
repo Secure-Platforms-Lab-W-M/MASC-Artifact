@@ -10,7 +10,6 @@ public class FromString extends AIntOperator {
     @Override
     public String mutation() {
         String s = "Integer.parseInt(\"" + iterationCount + "\")";
-        String template = MisuseType.getTemplate(this);
-        return String.format(template, s);
+        return MisuseType.getTemplate(this, s);
     }
 }

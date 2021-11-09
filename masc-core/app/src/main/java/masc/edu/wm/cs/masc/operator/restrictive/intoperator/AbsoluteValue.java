@@ -10,7 +10,6 @@ public class AbsoluteValue extends AIntOperator {
     @Override
     public String mutation() {
         String s = "Math.abs(" + iterationCount + ")";
-        String template = MisuseType.getTemplate(this);
-        return String.format(template, s);
+        return MisuseType.getTemplate(this, s);
     }
 }

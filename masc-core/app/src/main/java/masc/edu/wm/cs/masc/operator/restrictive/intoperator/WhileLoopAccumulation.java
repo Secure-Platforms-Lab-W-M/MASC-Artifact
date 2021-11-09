@@ -19,8 +19,7 @@ public class WhileLoopAccumulation extends AIntOperator {
                 .append("i++;\n}\n");
 
         // Get and use the misuse template
-        String template = MisuseType.getTemplate(this);
-        s.append(String.format(template,"i"));
+        s.append(MisuseType.getTemplate(this, "i"));
 
         // Return the generated string
         return s.toString();

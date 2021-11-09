@@ -13,9 +13,9 @@ public class IterationMultipleCall extends AIntOperator {
         s.append("for (int i = 0; i < ")
                 .append(iterationCount)
                 .append("; i++){\n\t");
-        String template = MisuseType.getTemplate(this);
+        String template = MisuseType.getTemplate(this, "i");
         template = template.replace("\n", "\n\t");
-        s.append(String.format(template, "i"));
+        s.append(template);
         s.append("\n}");
         return s.toString();
     }

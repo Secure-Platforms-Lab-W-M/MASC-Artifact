@@ -9,9 +9,7 @@ public class RoundValue extends AIntOperator {
 
     @Override
     public String mutation() {
-
         String s = "Math.round(" + iterationCount + ")";
-        String template = MisuseType.getTemplate(this);
-        return String.format(template, s);
+        return MisuseType.getTemplate(this, s);
     }
 }

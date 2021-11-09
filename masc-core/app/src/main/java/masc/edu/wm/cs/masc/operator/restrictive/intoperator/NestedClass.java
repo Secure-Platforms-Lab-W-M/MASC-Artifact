@@ -20,10 +20,8 @@ public class NestedClass extends AIntOperator {
                 .append(";\n\t}\n}\n");
 
         // Get the misuse template
-        String template = MisuseType.getTemplate(this);
-
-        // Supply the misuse to the template
-        s.append(String.format(template, "new NestedClass().getIteration()"));
+        s.append(MisuseType.getTemplate(this,
+                "new NestedClass().getIteration()"));
 
         // Return the generated string
         return s.toString();

@@ -23,8 +23,8 @@ public class ValueInVariableArithmetic extends AIntOperator {
                 .append(";\n");
 
         // Get and use the misuse template
-        String template = MisuseType.getTemplate(this);
-        s.append(String.format(template, variableName + " + " + term2));
+        s.append(MisuseType.getTemplate(this,
+                variableName + " + " + term2));
 
         // Return the generated string
         return s.toString();

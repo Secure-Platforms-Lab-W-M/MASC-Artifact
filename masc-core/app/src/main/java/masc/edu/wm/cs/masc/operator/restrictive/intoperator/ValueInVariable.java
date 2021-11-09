@@ -19,8 +19,7 @@ public class ValueInVariable extends AIntOperator {
                 .append(";\n");
 
         // Get and use the misuse template
-        String template = MisuseType.getTemplate(this);
-        s.append(String.format(template, variableName));
+        s.append(MisuseType.getTemplate(this, variableName));
 
         // Return the generated string
         return s.toString();

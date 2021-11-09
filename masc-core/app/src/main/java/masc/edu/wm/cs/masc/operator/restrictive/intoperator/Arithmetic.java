@@ -16,8 +16,7 @@ public class Arithmetic extends AIntOperator {
         int term2 = iterCount - term1;
 
         String s = term1 + " + " + term2;
-        String template = MisuseType.getTemplate(this);
-        return String.format(template, s);
+        return MisuseType.getTemplate(this, s);
 
     }
 }

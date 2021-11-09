@@ -2,7 +2,7 @@ package masc.edu.wm.cs.masc.operator.restrictive.intoperator;
 
 public class MisuseType {
 
-    public static String getTemplate(AIntOperator op){
+    public static String getTemplate(AIntOperator op, String intParameter){
         StringBuilder s = new StringBuilder();
         if (op.misuse.equals("PBE")) {
             s.append("byte[] salt = ").append(op.salt).append(";\n");
@@ -11,7 +11,7 @@ public class MisuseType {
                     .append(op.invocation)
                     .append("(\"").append(op.password)
                     .append("\".toCharArray(), ")
-                    .append("salt, %s);");
+                    .append("salt, " + intParameter + ");");
         }
         else{
             s.append("KeyGenerator ")
@@ -20,7 +20,7 @@ public class MisuseType {
                     .append(op.algorithm)
                     .append("\");\n");
             s.append(op.keyGenVarName);
-            s.append(".init(%s);");
+            s.append(".init(" + intParameter + ");");
 
         }
         return s.toString();
