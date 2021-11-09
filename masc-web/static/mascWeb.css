@@ -158,6 +158,12 @@ a.article:hover {
   cursor: auto;
 }
 
+#content h1 {
+  background-color: #6d7fcc;
+  color: white;
+  text-align: center;
+}
+
 
 
 
