@@ -34,7 +34,7 @@
     </nav>
   <div id="content">
     <h2> Architecture Diagram</h2>
-    <img src="{{ url_for('static', filename='HighLevelArchitectureDiagramV3.png')}}" alt="architectureDiagram" width="1056" height="816">
+    <img src="{{ url_for('static', filename='HighLevelArchitectureDiagramV3.png')}}" alt="architectureDiagram" width="528" height="408">
     <div>
       <h3> MASC-Core Components</h3>
       <h4> Concepts </h4>
@@ -46,9 +46,9 @@
           Layers are the abstraction at where MASC introduces mutation / makes mutation instances. There are three layers,
         </p>
         <ul>
-          <li> Barebone Layer, where a minimal code / example is created that contains mutation, or misused Crypto API </li>
-          <li> Exhaustive Layer, where a simple misuse instance is introduced through mutation at all possible reachable locations. This is done to verify that all reachable code locations are indeed scanned by analysis tools. </li>
-          <li> Selective Layer, where we selectively mutate by finding existing crypto APIs usage. For example, if given input code has <code>Cipher.getInstance(...)</code> anywhere, it will selectively introduce misuse instances through mutation at location adjacent )i.e. below) that <code>Cipher.getInstance()</code> function call. </li>
+          <li> <b>Barebone Layer</b>, where a minimal code / example is created that contains mutation, or misused Crypto API </li>
+          <li> <b>Exhaustive Layer</b>, where a simple misuse instance is introduced through mutation at all possible reachable locations. This is done to verify that all reachable code locations are indeed scanned by analysis tools. </li>
+          <li> <b>Selective Layer</b>, where we selectively mutate by finding existing crypto APIs usage. For example, if given input code has <code>Cipher.getInstance(...)</code> anywhere, it will selectively introduce misuse instances through mutation at location adjacent )i.e. below) that <code>Cipher.getInstance()</code> function call. </li>
         </ul>
         <h5 id="op"> Operators </h5>
         <p>
