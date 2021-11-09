@@ -35,7 +35,81 @@
   <div id="content">
     <h2> Architecture Diagram</h2>
     <img src="{{ url_for('static', filename='HighLevelArchitectureDiagramV3.png')}}" alt="architectureDiagram" width="1056" height="816">
-    <h3> </h3>
+    <div>
+      <h3> MASC-Core Components</h3>
+      <h4> Concepts </h4>
+        <p>
+          The author of MASC created it as a research prototype, and invented terms on the fly. Some of these terms did not make sense later, and were dropped. Some of these still made somewhat sense, and survived. Therefore, this describes the high level concepts each of these terms represent, and then will describe how they interact with each other. This is also shown in the diagram above.
+        </p>
+        <h5> Layers </h5>
+        <p>
+          Layers are the abstraction at where MASC introduces mutation / makes mutation instances. There are three layers,
+        </p>
+        <ul>
+          <li> Barebone Layer, where a minimal code / example is created that contains mutation, or misused Crypto API </li>
+          <li> Exhaustive Layer, where a simple misuse instance is introduced through mutation at all possible reachable locations. This is done to verify that all reachable code locations are indeed scanned by analysis tools. </li>
+          <li> Selective Layer, where we selectively mutate by finding existing crypto APIs usage. For example, if given input code has <code>Cipher.getInstance(...)</code> anywhere, it will selectively introduce misuse instances through mutation at location adjacent )i.e. below) that <code>Cipher.getInstance()</code> function call. </li>
+        </ul>
+        <h5 id="op"> Operators </h5>
+        <p>
+          Operators are responsible for the code snippet used as part of the mutation. For example, it can mean something simple, such as creating the following code:
+        </p>
+        <span> <code>Cipher.getInstance(&lt;param&gt;)</code></span>
+        <p>
+          As this code will be inserted while mutating source code, or <em>creating mutation instance</em>.
+        </p>
+        <p>
+          It can also represent something partial, which will be responsible for mutation instance. An example is introducing a call to a function (A) through mutation, where the function belongs to a class (B) that does not exist in the code in the first place. Or, it can be creating an anonymous inner class object (A) from a class (B) that is not part of the code!
+        </p>
+        <p>
+          However, To make the call real, we need to introduce the class (B) in the code base. That is achieved through <a href="#maker"><b>Maker</b></a> and <a href="#builder"><b>Builders</b></a>. An example for this type of operator is FlexibleOperator. It is only concerned about the call (A) and not the reference (B) the call is making. Therefore, it will create something like this
+        </p>
+        <code><pre>
+        new CryptoTestExt(){
+          public boolean verify(java.lang.String arg0, javax.net.ssl.SSLSession arg1) {
+    	       return true;
+           }
+         </pre></code>
+          <p>
+            However, the CryptoTestExt is from a class that is not present, so trying to compile a code that contains the above snippet will inevitably fail.
+          </p>
+          <p>
+            A Builder, will build the necessary structures for those necessary references.
+          </p>
+        <h5 id="builder"> Builders </h5>
+        <p>
+          As discussed above, builders take care of creating necessary structures that are required by operators.
+        </p>
+        <p>
+          An example is:
+        </p>
+        <code> public interface CryptoTestExt implements javax.net.ssl.HostnameVerifier{ } </code>
+        <br>
+        <p>
+          The builder here is creating the interface CryptoTestExt. Of course, it was given the name of the interface, the name of the interface it is implementing, as well as the nature of inheritance.
+        </p>
+        <h5 id="maker"> Makers </h5>
+        <p>
+          Makers are more a part of the Bare-bone Layer. Maker makes workable, minimal applications that contains a particular Crypto API misuse instance. Therefore, it will be creating something like this while depending on both <b>Operator</b> and <b>Builder</b>:
+        </p>
+        <code><pre>
+          public class CryptoTest { --- (1)
+            public static void main(java.lang.String[] args) throws java.lang.Exception {
+              java.lang.System.out.println("Hello");
+
+              new CryptoTestExt(){ -- (2)
+              public boolean verify(java.lang.String arg0, javax.net.ssl.SSLSession arg1) {
+    	           return true;
+               }
+               };
+             }
+           }
+        </pre></code>
+        <p>
+          Where the body starting from (1) is created through <a href="#maker"><b>Maker</b></a>, but the anonymous inner class object (2) is actually coming from the <a href="#op"><b>Operator</b></a>!
+        </p>
+        <hr>
+    </div>
   </div>
 </div>
 </body>
