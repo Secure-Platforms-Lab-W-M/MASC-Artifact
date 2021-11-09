@@ -10,14 +10,8 @@ public class RoundValue extends AIntOperator {
     @Override
     public String mutation() {
 
-        StringBuilder s = new StringBuilder();
-        s.append(super.mutation());
-        s.append(api_name)
-                .append(".")
-                .append(invocation)
-                .append("(\"").append(password).append("\", ")
-                .append("salt").append(", Math.round(")
-                .append(iterationCount).append("));");
-        return s.toString();
+        String s = "Math.round(" + iterationCount + ")";
+        String template = MisuseType.getTemplate(this);
+        return String.format(template, s);
     }
 }
