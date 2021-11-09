@@ -9,17 +9,14 @@ public class IterationMultipleCall extends AIntOperator {
 
     @Override
     public String mutation() {
-
         StringBuilder s = new StringBuilder();
-        s.append(super.mutation());
-        s.append("for (int i = 0; i < ").append(iterationCount)
+        s.append("for (int i = 0; i < ")
+                .append(iterationCount)
                 .append("; i++){\n\t");
-        s.append(api_name)
-                .append(".")
-                .append(invocation)
-                .append("(\"").append(password).append("\", ")
-                .append("salt").append(", i);\n")
-                .append("}");
+        String template = MisuseType.getTemplate(this);
+        template = template.replace("\n", "\n\t");
+        s.append(String.format(template, "i"));
+        s.append("\n}");
         return s.toString();
     }
 }
