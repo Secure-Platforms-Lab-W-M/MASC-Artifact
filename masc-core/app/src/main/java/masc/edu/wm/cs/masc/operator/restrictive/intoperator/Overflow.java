@@ -11,14 +11,9 @@ public class Overflow extends AIntOperator{
     @Override
     public String mutation() {
 
-        StringBuilder s = new StringBuilder();
-        s.append(super.mutation());
-        s.append(api_name)
-                .append(".")
-                .append(invocation)
-                .append("(\"").append(password).append("\", ")
-                .append("salt").append(", Integer.MAX_VALUE + Integer.MAX_VALUE + 2 + ")
-                .append(iterationCount).append(");");
-        return s.toString();
+        String s = "Integer.MAX_VALUE + Integer.MAX_VALUE + 2 + " + iterationCount;
+        String template = MisuseType.getTemplate(this, 2);
+        return String.format(template, s);
+
     }
 }
