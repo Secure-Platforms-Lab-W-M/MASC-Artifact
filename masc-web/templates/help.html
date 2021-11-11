@@ -110,6 +110,75 @@
           Where the body starting from (1) is created through <a href="#maker"><b>Maker</b></a>, but the anonymous inner class object (2) is actually coming from the <a href="#op"><b>Operator</b></a>!
         </p>
         <hr>
+        <h3> Extending Barebone</h3>
+        <h4> Create a type under OperatorType </h4>
+        <p>
+          First, you need to define a name that represents the operator type. For example, <em>StringDifferentCase</em> represents an operator that deals with a String parameter being given to a crytpo API in a different case from what people usually use. An example of misuse instance in this case would be passing <em>aes</em> instead of <em>AES</em>. However, Operators are generic in terms of mutation, so it will receive the input String and will create misuse instance based on that input String.
+        </p>
+        <p>
+          The following are the currently available operators in MASC. Each of these operators belong to one type of RootOperatorType conceptually.
+        </p>
+        <p>
+          Current operators are:
+        </p>
+        <code><pre>
+          public enum OperatorType {
+              StringDifferentCase,
+              StringNoiseReplace,
+              StringSafeReplaceWithUnsafe,
+              StringUnsafeReplaceWithUnsafe,
+              StringStringCaseTransform,
+              StringValueInVariable,
+              ByteLoop,
+              ByteCurrentTime,
+              Interproc,
+              AIOEmptyFromAbstractType,
+              AIOEmptyAbstractClassExtendsAbstractClass,
+              AIOEmptyAbstractClassImplementsInterface,
+              AIOEmptyInterfaceExtendsInterface,
+              AIOGenericAbstractClassExtendsAbstractClass,
+              AIOGenericAbstractClassImplementsInterface,
+              AIOGenericInterfaceExtendsInterface,
+              AIOSpecificAbstractClassExtendsAbstractClass,
+              AIOSpecificAbstractClassImplementsInterface,
+              AIOSpecificInterfaceExtendsInterface,
+          }
+        </pre></code>
+        <p>
+          All of these operators belong to one of the following RootOperatorTypes conceptually. The word conceptual is important: they are grouped together based on the concept they represent in the MASC setting.
+        </p>
+        <code> <pre>
+          public enum RootOperatorType {
+              StringOperator,
+              ByteOperator,
+              Interproc,
+              Flexible
+          }
+        </code></pre>
+        <h4> Implementing each of the operators </h4>
+        <p>
+          After naming your Operator, you can start defining them. The following rules apply:
+        </p>
+        <ul>
+          <li> The implemented operator name must follow the type name from <em>OperatorType</em>. It is a requirement for consistency. </li>
+          <li> Each of the operators must implement the <em>IOperator</em> interface. An example is <em>InterProcOperator</em>. </li>
+          <li> They might also be under an abstract class implementing the interface, Examples are <em>AStringOperator</em> for all String based Operators, and <em>AByteOperator</em> for all byte based operators. Note that both <em>AStringOperator</em> and <em>AByteOperator</em> implements the <em>IOperator</em> interface. </li>
+          <li> The norm is to create fields used in the abstract class which can be used by the concrete operators, and then receive it from the related properties file. A concrete operator may not have to use all of those fields, but these are made available regardless.</li>
+        </ul>
+        <h4> Creating Properties file </h4>
+        <p>
+          Since Operators rely on properties files for creating misuse instances (for example: the name of String, the crypto API to be used) Create a <em>.properties</em> file first, it should have at least the following keys
+        </p>
+        <code><pre>
+          type = &lt;Type that is from RootOperatorType Enum&gt;
+          output_dir = /Users/amitseal/workspaces/mutationbackyard/reproduce
+          api_name =  javax.net.ssl.X509TrustManager
+          className = CryptoTest
+          otherClassName = CryptoTestExt
+        </pre></code>
+        <p>
+          A properties reader should be created by extending the <code>edu.wm.cs.masc.properties.AOperatorProperties</code>. The <em>AOperatorProperties</em> already contains appropriate methods for the keys mentioned. The extended class needs to do similarly using <em>reader.get</em> for the keys.
+        </p>
     </div>
   </div>
 </div>
