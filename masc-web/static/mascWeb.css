@@ -146,7 +146,7 @@ a.article:hover {
 ----------------------------------------------------- */
 
 #content {
-    width: 100%;
+    width: 80%;
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
@@ -164,7 +164,16 @@ a.article:hover {
   text-align: center;
 }
 
+.float-container {
+    padding: 20px;
+}
 
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+}
 
 
 /* ---------------------------------------------------

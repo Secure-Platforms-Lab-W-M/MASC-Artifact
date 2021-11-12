@@ -34,18 +34,27 @@
     </nav>
     <div id=content>
       <h1>File Upload</h1>
+      <p>
+        The purpose of this page is to allow you to run MASC on one of your own programs. To do this please choose a Java file and submit it to the site. Below you will then see the original version and the new altered by MASC version.
+      </p>
       <form method="POST" action="" enctype="multipart/form-data">
         <p><input type="file" name="file"></p>
         <p><input type="submit" value="Submit"></p>
       </form>
-      <h2> Original <h2>
-        <pre style="font-size:.7rem;">
-          {{ text }}
-        </pre>
-      <h2> Altered <h2>
-      <pre style="font-size:.7rem;">
-        {{ out }}
-      </pre>
+    <div class="float-container">
+        <div class="float-child">
+          <h2> Original <h2>
+            <pre style="font-size:.7rem;">
+{{ text }}
+            </pre>
+        </div>
+        <div class="float-child">
+          <h2> Altered <h2>
+          <pre style="font-size:.7rem;">
+{{ out }}
+          </pre>
+        </div>
+      </div>
     </div>
   </div>
 </body>
