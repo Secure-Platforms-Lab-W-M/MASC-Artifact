@@ -2,18 +2,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>About Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'mascWeb.css') }}">
   <script type="text/javascript" src=""></script>
   </head>
 
 <body>
-  <h1> About <h1>
-    <div class="topnav">
-      <a href="/">MASC Web</a>
-      <a href="/deploy/">Deploy</a>
-      <a href="/help/">Help</a>
-      <a href="/lab/">Lab</a>
-      <a class="active" href="/about/">About</a>
-</div>
+  <div class="wrapper">
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>About</h3>
+      </div>
+      <ul class="list-unstyled components">
+        <li>
+          <a href="/"> Home </a>
+        </li>
+        <li>
+          <a href="/deploy/">Deploy</a>
+        </li>
+        <li>
+          <a href="/help/">Help</a>
+        </li>
+        <li>
+          <a href="/lab/">Lab</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+      </ul>
+    </nav>
+    <div id=content>
+      <h2> What is the goal behind MASC? </h2>
+      <p>
+        The goal of the MASC framework is to help refine crytpo misuse detectors to make them as effective as possible. It accomplishes this task by "enabl[ing] a systematic and data-driven evaluation of crypto-detectors using mutation testing." MASC is designed to create mutations in programs that can then be used to test the crypto dectors. This allows the detectors to see which misues cases they may not be covering. This will reduce the flaws seen in crypto-dectors and allow people to be able to trust that these crypto dectors are secure.
+      </p>
+      <h2> Contact Us </h2>
+      <p>
+        If you have any further questions or concerns please reach out to:
+      </p>
+      <ul>
+        <li> <a>Amit Seal Ami </a> - MASC Creator </li>
+        <li> Nathan Cooper - Role </li>
+        <li> Kaushal Kafle - Role </li>
+        <li> Kevin Moran - Role </li>
+        <li> Denys Poshyvanyk - Role </li>
+        <li> Adwait Nadkarni - Role </li>
+        <li> Scott Marsden - Web Developer </li>
+        <li> Trevor Stalnaker - Programmer</li>
+        <li> Matt Wydra - Programmer</li>
+        <li> Chris Stine - Programmer</li>
+        <li> Alex Blakely - Programmer</li>
+        <li> Ava Rapavy - Programmer</li>
+      </ul>
+    </div>
+  </div>
 </body>
