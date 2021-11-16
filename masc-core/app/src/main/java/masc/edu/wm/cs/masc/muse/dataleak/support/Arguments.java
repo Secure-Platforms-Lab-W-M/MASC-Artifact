@@ -75,6 +75,7 @@ public class Arguments {
 			prop = new Properties();
 			prop.load(input);		
 		} catch (IOException e) {
+			System.out.println(e);
 			return -1;
 		}
 		

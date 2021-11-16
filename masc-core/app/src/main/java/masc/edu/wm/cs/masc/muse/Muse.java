@@ -33,8 +33,8 @@ import edu.wm.cs.muse.dataleak.support.Arguments;
 import edu.wm.cs.muse.dataleak.support.FileUtility;
 import edu.wm.cs.muse.dataleak.support.OperatorType;
 import edu.wm.cs.muse.mdroid.ASTHelper;
-import log.LeakRemover;
-import log.LogDiff;
+//import log.LeakRemover;
+//import log.LogDiff;
 
 import org.apache.commons.cli.CommandLine;
 
@@ -305,6 +305,7 @@ public class Muse {
 			}
 			if (Arguments.extractArguments(args[0]) < 0) {
 					printArgumentError();
+					System.out.println("Why oh why!");
 					return;
 			}
 			Arguments.extractArguments(args[0]);
@@ -323,9 +324,9 @@ public class Muse {
                     break;
 
                 case "logAnalyze":
-                	String comparisonPath = new LogDiff().main(args[1]).getAbsolutePath();
-                	String[] removerArgs = {args[1], comparisonPath};
-                	new LeakRemover().main(removerArgs);
+//                	String comparisonPath = new LogDiff().main(args[1]).getAbsolutePath();
+//                	String[] removerArgs = {args[1], comparisonPath};
+//                	new LeakRemover().main(removerArgs);
                 	break;
 										
 				default:
