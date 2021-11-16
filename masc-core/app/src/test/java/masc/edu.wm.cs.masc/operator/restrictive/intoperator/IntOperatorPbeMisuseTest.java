@@ -7,7 +7,7 @@ public class IntOperatorPbeMisuseTest extends AIntOperatorTest{
 
     @Before
     public void setUp() throws Exception {
-        p = new IntOperatorProperties("src/test/resources/properties/IntOperatorPbeMisuse.properties");
+        p = new IntOperatorProperties("src/main/resources/IntOperatorPbeMisuse.properties");
         StringBuilder s = new StringBuilder();
         s.append("byte[] salt = {80,45,56};\n");
         s.append("javax.crypto.spec.PBEKeySpec(\"very_secure\".toCharArray(), salt, %s);");

@@ -7,7 +7,7 @@ public class IntOperatorShortKeyMisuseTest extends AIntOperatorTest{
 
     @Before
     public void setUp() throws Exception {
-        p = new IntOperatorProperties("src/test/resources/properties/IntOperatorShortKeyMisuse.properties");
+        p = new IntOperatorProperties("src/main/resources/IntOperatorShortKeyMisuse.properties");
         StringBuilder s = new StringBuilder();
         s.append("KeyGenerator keyGen = KeyGenerator.getInstance(\"Blowfish\");\n");
         s.append("keyGen.init(%s);");

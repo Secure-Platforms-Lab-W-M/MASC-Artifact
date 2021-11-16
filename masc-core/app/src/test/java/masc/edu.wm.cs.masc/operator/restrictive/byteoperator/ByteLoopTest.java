@@ -14,7 +14,7 @@ public class ByteLoopTest {
     @Before
     public void beforeClass() throws Exception {
         b = new ByteLoop(new ByteOperatorProperties(
-                "src/test/resources/properties/IVParameterSpec.properties"));
+                "src/main/resources/IVParameterSpec.properties"));
     }
 
     @Test
