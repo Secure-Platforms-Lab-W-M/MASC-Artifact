@@ -12,7 +12,7 @@ public class StringOperatorPropertiesTest {
     @Before
     public void setUp() throws Exception {
         properties = new StringOperatorProperties(
-                "src/test/resources/properties/Cipher.properties");
+                "src/main/resources/Cipher.properties");
     }
 
     @Test
