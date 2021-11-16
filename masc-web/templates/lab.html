@@ -3,30 +3,58 @@
 <html>
 <head>
   <title>Lab</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'mascWeb.css') }}">
   <script type="text/javascript" src=""></script>
   </head>
 
 <body>
-  <h1> Lab <h1>
-    <div class="topnav">
-      <a href="/">MASC Web</a>
-      <a href="/deploy/">Deploy</a>
-      <a href="/help/">Help</a>
-      <a class="active" href="#lab/">Lab</a>
-      <a href="/about/">About</a>
-</div>
-<h1>File Upload</h1>
-    <form method="POST" action="" enctype="multipart/form-data">
-      <p><input type="file" name="file"></p>
-      <p><input type="submit" value="Submit"></p>
-    </form>
-<h2> Original <h2>
-<pre style="font-size:.7rem;">
-  {{ text }}
-</pre>
-<h2> Altered <h2>
-<pre style="font-size:.7rem;">
-  {{ out }}
-</pre>
+  <div class="wrapper">
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>Lab</h3>
+      </div>
+      <ul class="list-unstyled components">
+        <li>
+          <a href="/"> Home </a>
+        </li>
+        <li>
+          <a href="/deploy/">Deploy</a>
+        </li>
+        <li>
+          <a href="/help/">Help</a>
+        </li>
+        <li>
+          <a href="#lab">Lab</a>
+        </li>
+        <li>
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </nav>
+    <div id=content>
+      <h1>File Upload</h1>
+      <p>
+        The purpose of this page is to allow you to run MASC on one of your own programs. To do this please choose a Java file and submit it to the site. Below you will then see the original version and the new altered by MASC version.
+      </p>
+      <form method="POST" action="" enctype="multipart/form-data">
+        <p><input type="file" name="file"></p>
+        <p><input type="submit" value="Submit"></p>
+      </form>
+    <div class="float-container">
+        <div class="float-child">
+          <h2> Original <h2>
+            <pre style="font-size:.7rem;">
+{{ text }}
+            </pre>
+        </div>
+        <div class="float-child">
+          <h2> Altered <h2>
+          <pre style="font-size:.7rem;">
+{{ out }}
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
