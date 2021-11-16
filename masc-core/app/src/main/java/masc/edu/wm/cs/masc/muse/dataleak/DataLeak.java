@@ -8,6 +8,9 @@ import java.util.Map;
 import edu.wm.cs.muse.dataleak.support.Arguments;
 import edu.wm.cs.muse.dataleak.support.FileUtility;
 import edu.wm.cs.muse.dataleak.support.OperatorType;
+import masc.edu.wm.cs.masc.operator.restrictive.intoperator.AbsoluteValue;
+import masc.edu.wm.cs.masc.properties.IntOperatorProperties;
+import org.apache.commons.configuration2.ex.ConfigurationException;
 
 /**
  * @author liz, Ian Wolff
@@ -24,12 +27,14 @@ import edu.wm.cs.muse.dataleak.support.OperatorType;
  * 
  */
 public class DataLeak {
-
 	// default source and sink strings
 	private static HashMap<OperatorType, String> sourceLeaks = new HashMap<OperatorType, String>() {
+
 		{
 			put(OperatorType.REACHABILITY,
 					"String cipherName%d =  \"DES\";");
+
+
 //					"String dataLeAk%d = java.util.Calendar.getInstance().getTimeZone().getDisplayName();");
 			put(OperatorType.COMPLEXREACHABILITY,
 					"String cipherName%d =  \"DES\";");

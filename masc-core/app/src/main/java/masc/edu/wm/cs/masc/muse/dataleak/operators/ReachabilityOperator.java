@@ -2,6 +2,9 @@ package edu.wm.cs.muse.dataleak.operators;
 
 import java.util.ArrayList;
 
+import masc.edu.wm.cs.masc.operator.restrictive.intoperator.AbsoluteValue;
+import masc.edu.wm.cs.masc.properties.IntOperatorProperties;
+import org.apache.commons.configuration2.ex.ConfigurationException;
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.Statement;
 import org.eclipse.jdt.core.dom.rewrite.ASTRewrite;
@@ -22,6 +25,8 @@ public class ReachabilityOperator {
 	ArrayList<ReachabilityNodeChangeContainers> nodeChanges;
 	ASTRewrite rewriter;
 
+	static IntOperatorProperties p;
+
 	public ReachabilityOperator(ASTRewrite rewriter, ArrayList<ReachabilityNodeChangeContainers> nodeChanges) {
 		this.rewriter = rewriter;
 		this.nodeChanges = nodeChanges;
@@ -39,8 +44,13 @@ public class ReachabilityOperator {
 
 			System.out.println(String.format(nodeChange.changedSource, Utility.COUNTER_GLOBAL));
 
-			Statement placeHolder = (Statement) rewriter
-					.createStringPlaceholder(DataLeak.getLeak(OperatorType.REACHABILITY, Utility.COUNTER_GLOBAL), ASTNode.EMPTY_STATEMENT);
+			try {
+				p = new IntOperatorProperties("C:\\Users\\Trevor Stalnaker\\Documents\\GitHub\\CSci435-Fall21-MASC\\masc-core\\app\\src\\test\\resources\\properties\\IntOperator.properties");
+			} catch (ConfigurationException e) {
+				e.printStackTrace();
+			}
+			String mutation = new AbsoluteValue(p).mutation();
+			Statement placeHolder = (Statement) rewriter.createStringPlaceholder(mutation, ASTNode.EMPTY_STATEMENT);
 
 			Utility.COUNTER_GLOBAL++;
 			
