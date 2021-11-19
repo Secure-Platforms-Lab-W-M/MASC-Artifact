@@ -5,7 +5,6 @@ system.out.prin15ln("Hello World");
 s1stem.out.println("Hello World");
 s1stem.out.println("Hello World");
 system.out.println("Hello Worl30");
-system.o265t.println("20ello World");
+system.out.println("20ello World");
 syste5.out.println("Hello World");
-
 
