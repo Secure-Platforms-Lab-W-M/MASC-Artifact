@@ -41,8 +41,9 @@ public abstract class AOperatorProperties {
     public AOperatorProperties(String path) throws ConfigurationException {
         reader = new PropertiesReader(path);
         type = reader.getValueForAKey("type");
-        //System.out.println("Working Directory = " + System.getProperty("user.dir"));
-        outputDir = System.getProperty("user.dir").substring(0,System.getProperty("user.dir").length() - 19) + reader.getValueForAKey("outputDir");
+        //String guy = ("Working Directory = " + System.getProperty("user.dir"));
+
+        outputDir = System.getProperty("user.dir").substring(0,System.getProperty("user.dir").length() - 29) + reader.getValueForAKey("outputDir");
         //outputDir = reader.getValueForAKey("outputDir");
         apiName = reader.getValueForAKey("apiName");
         className = reader.getValueForAKey("className");

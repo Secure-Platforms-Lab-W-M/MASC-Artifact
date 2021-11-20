@@ -10,16 +10,19 @@ public class WhileLoopAccumulation extends AIntOperator {
     @Override
     public String mutation() {
 
+        // Create String Builder
         StringBuilder s = new StringBuilder();
-        s.append(super.mutation());
+
+        // Write the while loop
         s.append("int i = 0;\n")
                 .append("while (i < ").append(iterationCount).append("){\n\t")
                 .append("i++;\n}\n");
-        s.append(api_name)
-                .append(".")
-                .append(invocation)
-                .append("(\"").append(password).append("\", ")
-                .append("salt").append(", i);");
+
+        // Get and use the misuse template
+        s.append(MisuseType.getTemplate(this, "i"));
+
+        // Return the generated string
         return s.toString();
+
     }
 }

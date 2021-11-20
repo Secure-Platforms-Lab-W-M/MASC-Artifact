@@ -9,16 +9,7 @@ public class FromString extends AIntOperator {
 
     @Override
     public String mutation() {
-
-        StringBuilder s = new StringBuilder();
-        s.append(super.mutation());
-        s.append(api_name)
-                .append(".")
-                .append(invocation)
-                .append("(\"").append(password).append("\", ")
-                .append("salt").append(", ")
-                .append("Integer.parseInt(\"").append(iterationCount)
-                .append("\"));");
-        return s.toString();
+        String s = "Integer.parseInt(\"" + iterationCount + "\")";
+        return MisuseType.getTemplate(this, s);
     }
 }

@@ -34,4 +34,5 @@ public enum OperatorType {
     IntNestedClass,
     IntSquareThenRoot,
     IntFromString,
+    Overflow,
 }

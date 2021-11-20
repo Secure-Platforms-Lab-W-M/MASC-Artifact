@@ -15,7 +15,7 @@ public class MASCBarebone {
                 System.out.println(
                         "No arguments provided. Running Cipher.properties by " +
                                 "default.");
-                run("New.properties");
+                run("IntOperatorPbeMisuse.properties");
 
             } else if (args.length == 1) {
                 run(args[0]);

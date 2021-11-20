@@ -57,6 +57,7 @@ a:focus {
 }
 
 #sidebar {
+
     min-width: 250px;
     max-width: 250px;
     background: #7386D5;
@@ -158,10 +159,12 @@ a.article:hover {
   cursor: auto;
 }
 
-#content h1 {
+.title {
   background-color: #6d7fcc;
   color: white;
   text-align: center;
+  height: 100px;
+  line-height: 2.5;
 }
 
 .float-container {

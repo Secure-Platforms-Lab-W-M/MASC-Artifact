@@ -16,7 +16,7 @@ public class AIOEmptyInterfaceExtendsInterfaceTest {
     @Before
     public void setUp() throws Exception {
         p = new FlexibleOperatorProperties(
-                "src/test/resources/properties/X509TrustManager.properties");
+                "src/main/resources/X509TrustManager.properties");
     }
 
     @Test

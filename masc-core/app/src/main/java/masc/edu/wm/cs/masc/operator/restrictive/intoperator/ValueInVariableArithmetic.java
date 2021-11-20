@@ -9,20 +9,25 @@ public class ValueInVariableArithmetic extends AIntOperator {
 
     @Override
     public String mutation() {
+
         int iterCount = Integer.parseInt(iterationCount);
-        int term1 = (int) (Math.random() * 2 * iterCount) - iterCount;
+        int term1 = 30;
         int term2 = iterCount - term1;
+
+        // Create String Builder
         StringBuilder s = new StringBuilder();
-        s.append(super.mutation());
-        s.append("int ").append(variableName).append(" = ")
-                .append(term1).append(";\n");
-        s.append(api_name)
-                .append(".")
-                .append(invocation)
-                .append("(\"").append(password).append("\", ")
-                .append("salt").append(", ")
-                .append(variableName + " + " + term2).append(")")
-                .append(";");
+
+        // Write code that declares and instantiates variable
+        s.append("int ").append(variableName)
+                .append(" = ").append(term1)
+                .append(";\n");
+
+        // Get and use the misuse template
+        s.append(MisuseType.getTemplate(this,
+                variableName + " + " + term2));
+
+        // Return the generated string
         return s.toString();
+
     }
 }
