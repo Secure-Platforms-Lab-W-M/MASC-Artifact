@@ -12,10 +12,10 @@ import edu.wm.cs.muse.dataleak.support.OperatorType;
 import edu.wm.cs.muse.dataleak.support.Utility;
 import edu.wm.cs.muse.dataleak.support.node_containers.ReachabilityNodeChangeContainers;
 
-public class ComplexReachability extends ReachabilityOperator {
+public class ComplexReachability extends edu.wm.cs.muse.dataleak.operators.ReachabilityOperator {
 
 	public ComplexReachability(ASTRewrite rewriter, ArrayList<ReachabilityNodeChangeContainers> nodeChanges) {
-		super(rewriter, nodeChanges);
+		super(rewriter, nodeChanges, "");
 		// TODO Auto-generated constructor stub
 	}
 

@@ -37,10 +37,11 @@ public class FileUtility {
 	 * 
 	 * sets up the directory where the mutated source codes will be kept
 	 */
-	public static void setupMutantsDirectory() {
+	public static void setupMutantsDirectory(String operatorType) {
 
 		try {
-			String newRoot = Arguments.getMutantsFolder() + File.separator + Arguments.getAppName();
+			String newRoot = Arguments.getMutantsFolder() + File.separator +
+					operatorType + File.separator + Arguments.getAppName();
 			if (new File(newRoot).exists()) {
 				FileUtils.deleteDirectory(new File(newRoot));
 			}
@@ -51,6 +52,10 @@ public class FileUtility {
 			return;
 		}
 
+	}
+
+	public static String getMutationRootPath(String mutation){
+		return Arguments.getMutantsFolder() + File.separator + mutation + File.separator + Arguments.getAppName();
 	}
 	
 	public static boolean testFileEquality(File expected, File actual) {

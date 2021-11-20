@@ -32,6 +32,8 @@ public class Arguments {
 	private static HashMap<String, String> leakMap;
 	private static String filename;
 
+	private static String originalRootPath;
+
 	/**
 	 * private constructor makes sure that no constructor can ever be used.
 	 */
@@ -116,6 +118,7 @@ public class Arguments {
 
 		binariesFolder = properties.getProperty("lib4ast");
 		rootPath = properties.getProperty("appSrc");
+		originalRootPath = rootPath;
 		appName = properties.getProperty("appName");
 		mutantsFolder = properties.getProperty("output");
 		operator = properties.getProperty("operatorType");
@@ -187,6 +190,8 @@ public class Arguments {
 	public static Boolean getTestMode() {
 		return testmode;
 	}
+
+	public static void resetRootPath(){rootPath = originalRootPath;}
 	
 	
 	/**
@@ -204,6 +209,8 @@ public class Arguments {
 	public static String getRootPath() {
 		return rootPath;
 	}
+
+
 	
 	/**
 	 * @return file name, which is used for the placementchecker
