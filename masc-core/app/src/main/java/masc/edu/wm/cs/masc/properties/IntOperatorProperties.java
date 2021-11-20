@@ -4,14 +4,14 @@ import org.apache.commons.configuration2.ex.ConfigurationException;
 
 public class IntOperatorProperties extends AOperatorProperties{
 
-    private final String invocation;
-    private final String password;
-    private final String salt;
-    private final String iterationCount;
-    private final String variableName;
-    private final String misuse;
-    private final String algorithm;
-    private final String keyGenVarName;
+    protected final String invocation;
+    protected final String password;
+    protected final String salt;
+    protected final String iterationCount;
+    protected final String variableName;
+    protected final String misuse;
+    protected final String algorithm;
+    protected final String keyGenVarName;
 
 
     public IntOperatorProperties(String path)

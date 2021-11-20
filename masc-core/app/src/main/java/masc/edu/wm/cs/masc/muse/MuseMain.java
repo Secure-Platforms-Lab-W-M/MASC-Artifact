@@ -3,6 +3,7 @@ package masc.edu.wm.cs.masc.muse;
 import masc.edu.wm.cs.masc.barebone.mutationmakers.AMutationMaker;
 import masc.edu.wm.cs.masc.barebone.mutationmakers.IntMutationMaker;
 import masc.edu.wm.cs.masc.barebone.mutationmakers.StringOperatorMutationMaker;
+import masc.edu.wm.cs.masc.config.PropertiesReader;
 import masc.edu.wm.cs.masc.operator.IOperator;
 import masc.edu.wm.cs.masc.operator.OperatorType;
 import masc.edu.wm.cs.masc.operator.RootOperatorType;
@@ -39,19 +40,26 @@ public class MuseMain {
         else if (!args[0].endsWith(".properties")){
             System.out.println("Properties file must end with the .properties extension");
         }
-        else if (edu.wm.cs.muse.dataleak.support.Arguments.extractArguments(args[0]) < 0){
-            System.out.println("Unable to extract arguments from properties file");
-        }
+//        else if (edu.wm.cs.muse.dataleak.support.Arguments.extractArguments(args[0]) < 0){
+//            System.out.println("Unable to extract arguments from properties file");
+//        }
         else{
             System.out.println("Let's run this thing");
-            StringOperatorProperties p;
-            try {
-                p = new StringOperatorProperties("C:\\Users\\Trevor Stalnaker\\Documents\\GitHub\\CSci435-Fall21-MASC\\masc-core\\app\\src\\test\\resources\\properties\\Cipher.properties");
-                AMutationMaker m = new StringOperatorMutationMaker(p);
+            String path = "new_template.properties";
+            PropertiesReader reader = new PropertiesReader(path);
+            String type = reader.getValueForAKey("type");
+            String[] arguments = {reader.getValueForAKey("lib4ast"),
+                                  reader.getValueForAKey("appSrc"),
+                                  reader.getValueForAKey("appName"),
+                                  reader.getValueForAKey("outputDir"),
+                                  reader.getValueForAKey("operatorType")};
+            edu.wm.cs.muse.dataleak.support.Arguments.extractArguments(arguments);
+            AMutationMaker m = null;
+            if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())){
+                MuseIntOperatorProperties p = new MuseIntOperatorProperties(path);
+                m = new IntMutationMaker(p);
                 m.populateOperators();
                 new MuseMain().runMuse(m.operators);
-            } catch (ConfigurationException e) {
-                e.printStackTrace();
             }
         }
     }

@@ -55,9 +55,11 @@ public class Arguments {
 	public static void extractArguments(String[] args) {
 		binariesFolder = args[0];
 		rootPath = args[1];
+		originalRootPath = rootPath;
 		appName = args[2];
 		mutantsFolder = args[3];
 		operator = args[4];
+		System.out.println(rootPath);
 	}
 
 	public static void extractArguments(File file) {

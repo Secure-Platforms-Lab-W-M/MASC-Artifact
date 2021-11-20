@@ -45,6 +45,7 @@ public class FileUtility {
 			if (new File(newRoot).exists()) {
 				FileUtils.deleteDirectory(new File(newRoot));
 			}
+			System.out.println(Arguments.getRootPath());
 			FileUtils.copyDirectory(new File(Arguments.getRootPath()), new File(newRoot));
 			//why was this done? no idea.
 			Arguments.setRootPath(newRoot);
