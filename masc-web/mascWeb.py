@@ -21,14 +21,16 @@ def labPage():
     if request.method == 'POST':
         uploaded_file = request.files['file']
         if uploaded_file.filename != '':
-            uploaded_file.save('userFile.txt')
-        f = open('userFile.txt', 'r')
+            uploaded_file.save('input/userFile.java')
+        f = open('input/userFile.java', 'r')
+        createProperties("REACHABILITY", "hello")
         #subprocess.Popen("java mutation/src/mutation/Main", shell=True);
-        subprocess.call(["java", "mutation/src/mutation/main.java", "arg1", "arg2", "arg3"])
-        output = open('output.txt')
+        e = subprocess.call(["java", "Documents/Github/csci435-Fall21-MASC/masc-core/app/src/main/java/masc/edu/wm/cs/masc/muse/Muse.java", "Documents/Github/CSci435-Fall21-MASC/masc-web/prop.properties"])
+
+        output = open('output/userFile.java')
         formatOutput(output, False)
         output = open('newOut.txt')
-        return render_template("lab.html", text=f.read(), out=output.read())
+        return render_template("lab.html", text=f.read(), out=output.read(), error=e)
     return render_template("lab.html")
 
 #@app.route('/lab/userFile')
@@ -58,8 +60,19 @@ def formatOutput(file, userInput):
     file.close()
     newFile.close()
 
-
-
+def createProperties(operator, mutation):
+    doc = []
+    doc.append("lib4ast: /Users/scottmarsden/Documents/Github/csci435-Fall21-MASC/masc-core/app/src/main/java/masc/edu/wm/cs/masc/muse/mdroid/")
+    doc.append("appSrc: /Users/scottmarsden/Documents/Github/csci435-Fall21-MASC/masc-web/input")
+    doc.append("operatorType: " + operator)
+    # 4th mutator remove for now
+    doc.append("appName: output")
+    doc.append("output: /Users/scottmarsden/Documents/Github/csci435-Fall21-MASC/masc-web/")
+    file = open("prop.properties","w")
+    for line in doc:
+        file.write(line)
+        file.write("\n")
+    file.close()
 #@app.route('/Help')
 #def deploy():
 # return "<h1>Help<h1>"
