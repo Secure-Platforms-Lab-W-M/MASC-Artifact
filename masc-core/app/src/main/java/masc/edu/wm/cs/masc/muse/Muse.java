@@ -55,7 +55,7 @@ public class Muse {
 	// not detected in java ast as static
 
 	public void runMuse(String[] args) throws MalformedTreeException, BadLocationException {
-		FileUtility.setupMutantsDirectory();
+		FileUtility.setupMutantsDirectory("");
 		Collection<File> files = FileUtils.listFiles(new File(Arguments.getRootPath()), TrueFileFilter.INSTANCE,
 				TrueFileFilter.INSTANCE);
 		for (File file : files) {
@@ -194,7 +194,7 @@ public class Muse {
 			ReachabilitySchema reachabilitySchema = new ReachabilitySchema();
 			root.accept(reachabilitySchema);
 			ReachabilityOperator reachabilityOperator = new ReachabilityOperator(rewriter,
-					reachabilitySchema.getNodeChanges());
+					reachabilitySchema.getNodeChanges(),"");
 			rewriter = reachabilityOperator.InsertChanges();
 			applyChangesToFile(file, source, rewriter);
 			break;
@@ -286,56 +286,56 @@ public class Muse {
 		System.out.println("Please provide the path to the config.properties file on command line");
 	}
 
-	public static void main(String[] args) throws Exception {
-        // defaults scenario, if the user does not give a keyword and only gives config file, run Muse normally
-		if (args.length == 1) {
-			if (!args[0].endsWith(".properties")) {
-				printArgumentError();
-				// if no config file given, generate one
-				System.out.println("\nNo properties file specified. Generate new file? (y/n)");
-				Scanner scanner = new Scanner(System.in);
-				char response = scanner.next().charAt(0);
-				if (response == 'y') {
-					File source = new File("src/edu/wm/cs/muse/sample_config.properties");
-					File dest = new File(System.getProperty("user.dir") + File.separatorChar + "sample_config.properties");
-					FileUtils.copyFile(source, dest);
-					System.out.println("Properties file created at " + System.getProperty("user.dir") + ".");
-				}
-				return;
-			}
-			if (Arguments.extractArguments(args[0]) < 0) {
-					printArgumentError();
-					System.out.println("Why oh why!");
-					return;
-			}
-			Arguments.extractArguments(args[0]);
-			new Muse().runMuse(args);
-			
-	    //if the user does give a keyword, check the keyword and run accordingly
-		} else if (args.length == 2) {
-			if (!args[1].endsWith(".properties")) {
-				printArgumentError();
-				return;
-			}
-			Arguments.extractArguments(args[1]);
-	        switch (args[0]) {
-                case "mutate":
-                    new Muse().runMuse(args);
-                    break;
-
-                case "logAnalyze":
-//                	String comparisonPath = new LogDiff().main(args[1]).getAbsolutePath();
-//                	String[] removerArgs = {args[1], comparisonPath};
-//                	new LeakRemover().main(removerArgs);
-                	break;
-										
-				default:
-					new Muse().runMuse(args);
-					break;
-            }
-		} else {
-				printArgumentError();
-				return;
-		}
-	}
+//	public static void main(String[] args) throws Exception {
+//        // defaults scenario, if the user does not give a keyword and only gives config file, run Muse normally
+//		if (args.length == 1) {
+//			if (!args[0].endsWith(".properties")) {
+//				printArgumentError();
+//				// if no config file given, generate one
+//				System.out.println("\nNo properties file specified. Generate new file? (y/n)");
+//				Scanner scanner = new Scanner(System.in);
+//				char response = scanner.next().charAt(0);
+//				if (response == 'y') {
+//					File source = new File("src/edu/wm/cs/muse/sample_config.properties");
+//					File dest = new File(System.getProperty("user.dir") + File.separatorChar + "sample_config.properties");
+//					FileUtils.copyFile(source, dest);
+//					System.out.println("Properties file created at " + System.getProperty("user.dir") + ".");
+//				}
+//				return;
+//			}
+//			if (Arguments.extractArguments(args[0]) < 0) {
+//					printArgumentError();
+//					System.out.println("Why oh why!");
+//					return;
+//			}
+//			Arguments.extractArguments(args[0]);
+//			new Muse().runMuse(args);
+//
+//	    //if the user does give a keyword, check the keyword and run accordingly
+//		} else if (args.length == 2) {
+//			if (!args[1].endsWith(".properties")) {
+//				printArgumentError();
+//				return;
+//			}
+//			Arguments.extractArguments(args[1]);
+//	        switch (args[0]) {
+//                case "mutate":
+//                    new Muse().runMuse(args);
+//                    break;
+//
+//                case "logAnalyze":
+////                	String comparisonPath = new LogDiff().main(args[1]).getAbsolutePath();
+////                	String[] removerArgs = {args[1], comparisonPath};
+////                	new LeakRemover().main(removerArgs);
+//                	break;
+//
+//				default:
+//					new Muse().runMuse(args);
+//					break;
+//            }
+//		} else {
+//				printArgumentError();
+//				return;
+//		}
+//	}
 }
