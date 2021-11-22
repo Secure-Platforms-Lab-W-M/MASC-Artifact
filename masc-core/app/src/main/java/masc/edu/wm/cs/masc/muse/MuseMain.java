@@ -44,15 +44,22 @@ public class MuseMain {
 //            System.out.println("Unable to extract arguments from properties file");
 //        }
         else{
-            System.out.println("Let's run this thing");
             String path = "new_template.properties";
+            AMutationMaker m = null;
             PropertiesReader reader = new PropertiesReader(path);
             String type = reader.getValueForAKey("type");
             String scope = reader.getValueForAKey("scope").toUpperCase();
 
+
             // Muse
             if (scope.equals("EXHAUSTIVE")){
                 setUpMuse(reader);
+                if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())){
+                    IntOperatorProperties p = new IntOperatorProperties(path);
+                    m = new IntMutationMaker(p);
+                    m.populateOperators();
+                    new MuseMain().runMuse(m.operators);
+                }
             }
             // MDroid+
             else if (scope.equals("SIMILARITY")){
@@ -60,20 +67,14 @@ public class MuseMain {
             }
             // MASC Barebones
             else if (scope.equals("MAIN")){
-
+                if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())){
+                    IntOperatorProperties p = new IntOperatorProperties(path);
+                    m = new IntMutationMaker(p);
+                    m.make(p);
+                }
             }
             else{
-                System.out.println("Unknown Scope");
-            }
-            System.out.println(scope);
-
-
-            AMutationMaker m = null;
-            if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())){
-                MuseIntOperatorProperties p = new MuseIntOperatorProperties(path);
-                m = new IntMutationMaker(p);
-                m.populateOperators();
-                new MuseMain().runMuse(m.operators);
+                System.out.println("Unknown Scope: " + scope);
             }
         }
     }
