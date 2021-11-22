@@ -48,12 +48,26 @@ public class MuseMain {
             String path = "new_template.properties";
             PropertiesReader reader = new PropertiesReader(path);
             String type = reader.getValueForAKey("type");
-            String[] arguments = {reader.getValueForAKey("lib4ast"),
-                                  reader.getValueForAKey("appSrc"),
-                                  reader.getValueForAKey("appName"),
-                                  reader.getValueForAKey("outputDir"),
-                                  reader.getValueForAKey("operatorType")};
-            edu.wm.cs.muse.dataleak.support.Arguments.extractArguments(arguments);
+            String scope = reader.getValueForAKey("scope").toUpperCase();
+
+            // Muse
+            if (scope.equals("EXHAUSTIVE")){
+                setUpMuse(reader);
+            }
+            // MDroid+
+            else if (scope.equals("SIMILARITY")){
+
+            }
+            // MASC Barebones
+            else if (scope.equals("MAIN")){
+
+            }
+            else{
+                System.out.println("Unknown Scope");
+            }
+            System.out.println(scope);
+
+
             AMutationMaker m = null;
             if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())){
                 MuseIntOperatorProperties p = new MuseIntOperatorProperties(path);
@@ -62,6 +76,21 @@ public class MuseMain {
                 new MuseMain().runMuse(m.operators);
             }
         }
+    }
+
+    /**
+     * Uses the properties reader to setup the Muse Arguments class
+     * Arguments maintains information for mutation such as
+     * input and output directories, app name, and operator type (REACHABILITY)
+     * @param reader
+     */
+    public static void setUpMuse(PropertiesReader reader){
+        String[] args = {reader.getValueForAKey("lib4ast"),
+                reader.getValueForAKey("appSrc"),
+                reader.getValueForAKey("appName"),
+                reader.getValueForAKey("outputDir"),
+                reader.getValueForAKey("operatorType")};
+        edu.wm.cs.muse.dataleak.support.Arguments.extractArguments(args);
     }
 
     public Collection<File> getFiles(){
