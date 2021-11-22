@@ -111,7 +111,7 @@ public class Arguments {
 		if (properties.getProperty("appName") == null || properties.getProperty("appName").length() == 0) {
 			throw new Exception();
 		}
-		if (properties.getProperty("output") == null || properties.getProperty("output").length() == 0) {
+		if (properties.getProperty("outputDir") == null || properties.getProperty("outputDir").length() == 0) {
 			throw new Exception();
 		}
 		if (properties.getProperty("operatorType") == null || properties.getProperty("operatorType").length() == 0) {
@@ -122,9 +122,11 @@ public class Arguments {
 		rootPath = properties.getProperty("appSrc");
 		originalRootPath = rootPath;
 		appName = properties.getProperty("appName");
-		mutantsFolder = properties.getProperty("output");
+		mutantsFolder = properties.getProperty("outputDir");
 		operator = properties.getProperty("operatorType");
 		leakMap = new HashMap<String, String>();
+
+		System.out.println(mutantsFolder);
 
 		if (properties.getProperty("source") != null) {
 			leakMap.put("source", properties.getProperty("source"));
