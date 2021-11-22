@@ -50,13 +50,18 @@ public class MuseMain {
             String type = reader.getValueForAKey("type");
             String scope = reader.getValueForAKey("scope").toUpperCase();
 
-
             // Muse
             if (scope.equals("EXHAUSTIVE")){
                 setUpMuse(reader);
-                if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())){
+                if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())) {
                     IntOperatorProperties p = new IntOperatorProperties(path);
                     m = new IntMutationMaker(p);
+                    m.populateOperators();
+                    new MuseMain().runMuse(m.operators);
+                }
+                else if (type.equalsIgnoreCase(RootOperatorType.StringOperator.name())) {
+                    StringOperatorProperties p = new StringOperatorProperties(path);
+                    m = new StringOperatorMutationMaker(p);
                     m.populateOperators();
                     new MuseMain().runMuse(m.operators);
                 }
@@ -70,6 +75,11 @@ public class MuseMain {
                 if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())){
                     IntOperatorProperties p = new IntOperatorProperties(path);
                     m = new IntMutationMaker(p);
+                    m.make(p);
+                }
+                else if (type.equalsIgnoreCase(RootOperatorType.StringOperator.name())) {
+                    StringOperatorProperties p = new StringOperatorProperties(path);
+                    m = new StringOperatorMutationMaker(p);
                     m.make(p);
                 }
             }
