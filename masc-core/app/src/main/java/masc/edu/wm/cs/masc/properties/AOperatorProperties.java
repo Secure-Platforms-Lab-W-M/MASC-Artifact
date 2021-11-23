@@ -43,8 +43,8 @@ public abstract class AOperatorProperties {
         type = reader.getValueForAKey("type");
         //String guy = ("Working Directory = " + System.getProperty("user.dir"));
 
-        outputDir = System.getProperty("user.dir").substring(0,System.getProperty("user.dir").length() - 29) + reader.getValueForAKey("outputDir");
-        //outputDir = reader.getValueForAKey("outputDir");
+        //outputDir = System.getProperty("user.dir").substring(0,System.getProperty("user.dir").length() - 29) + reader.getValueForAKey("outputDir");
+        outputDir = reader.getValueForAKey("outputDir");
         apiName = reader.getValueForAKey("apiName");
         className = reader.getValueForAKey("className");
         otherClassName = reader.getValueForAKey("otherClassName");
