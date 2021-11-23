@@ -3,7 +3,7 @@ package masc.edu.wm.cs.masc.operator.restrictive.intoperator;
 import masc.edu.wm.cs.masc.operator.IOperator;
 import masc.edu.wm.cs.masc.properties.IntOperatorProperties;
 
-public class AIntOperator implements IOperator {
+public abstract class AIntOperator implements IOperator {
 
     protected final String api_name;
     protected final String invocation;
