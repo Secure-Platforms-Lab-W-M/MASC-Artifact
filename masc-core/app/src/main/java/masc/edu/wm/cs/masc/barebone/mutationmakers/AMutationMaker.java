@@ -30,7 +30,7 @@ public abstract class AMutationMaker {
             String content = getContent(operatorType);
             writeOutput(p.getOutputDir(), operatorType,
                     p.getClassName() + ".java",
-                    content);
+                    content.replaceAll("%d", ""));
         }
     }
 

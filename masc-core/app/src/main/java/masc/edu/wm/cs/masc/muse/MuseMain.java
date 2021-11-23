@@ -56,15 +56,17 @@ public class MuseMain {
                 if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())) {
                     IntOperatorProperties p = new IntOperatorProperties(path);
                     m = new IntMutationMaker(p);
-                    m.populateOperators();
-                    new MuseMain().runMuse(m.operators);
                 }
                 else if (type.equalsIgnoreCase(RootOperatorType.StringOperator.name())) {
                     StringOperatorProperties p = new StringOperatorProperties(path);
                     m = new StringOperatorMutationMaker(p);
-                    m.populateOperators();
-                    new MuseMain().runMuse(m.operators);
                 }
+                else{
+                    System.out.println("Unknown Operator Type: " + type);
+                    return;
+                }
+                m.populateOperators();
+                new MuseMain().runMuse(m.operators);
             }
             // MDroid+
             else if (scope.equals("SIMILARITY")){
@@ -81,6 +83,9 @@ public class MuseMain {
                     StringOperatorProperties p = new StringOperatorProperties(path);
                     m = new StringOperatorMutationMaker(p);
                     m.make(p);
+                }
+                else{
+                    System.out.println("Unknown Operator Type: " + type);
                 }
             }
             else{

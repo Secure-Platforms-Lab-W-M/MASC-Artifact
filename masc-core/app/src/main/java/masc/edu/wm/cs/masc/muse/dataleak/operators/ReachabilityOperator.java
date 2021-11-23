@@ -47,7 +47,8 @@ public class ReachabilityOperator {
 
 			System.out.println(String.format(nodeChange.changedSource, Utility.COUNTER_GLOBAL));
 
-			Statement placeHolder = (Statement) rewriter.createStringPlaceholder(mutation, ASTNode.EMPTY_STATEMENT);
+			String m = mutation.replaceAll("%d", String.valueOf(Utility.COUNTER_GLOBAL));
+			Statement placeHolder = (Statement) rewriter.createStringPlaceholder(m, ASTNode.EMPTY_STATEMENT);
 
 			Utility.COUNTER_GLOBAL++;
 			
