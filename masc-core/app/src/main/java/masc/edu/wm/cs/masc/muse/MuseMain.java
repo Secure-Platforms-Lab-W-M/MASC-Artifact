@@ -1,14 +1,11 @@
 package masc.edu.wm.cs.masc.muse;
 
-import masc.edu.wm.cs.masc.barebone.mutationmakers.AMutationMaker;
-import masc.edu.wm.cs.masc.barebone.mutationmakers.IntMutationMaker;
-import masc.edu.wm.cs.masc.barebone.mutationmakers.StringOperatorMutationMaker;
+import masc.edu.wm.cs.masc.barebone.mutationmakers.*;
 import masc.edu.wm.cs.masc.config.PropertiesReader;
 import masc.edu.wm.cs.masc.operator.IOperator;
 import masc.edu.wm.cs.masc.operator.OperatorType;
 import masc.edu.wm.cs.masc.operator.RootOperatorType;
-import masc.edu.wm.cs.masc.properties.IntOperatorProperties;
-import masc.edu.wm.cs.masc.properties.StringOperatorProperties;
+import masc.edu.wm.cs.masc.properties.*;
 import org.apache.commons.configuration2.ex.ConfigurationException;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.TrueFileFilter;
@@ -83,6 +80,21 @@ public class MuseMain {
                     StringOperatorProperties p = new StringOperatorProperties(path);
                     m = new StringOperatorMutationMaker(p);
                     m.make(p);
+                }
+                else if (type.equalsIgnoreCase(RootOperatorType.ByteOperator.name())) {
+                    ByteOperatorProperties properties = new ByteOperatorProperties(path);
+                    m = new ByteMutationMaker(properties);
+                    m.make(properties);
+                }
+                else if (type.equalsIgnoreCase(RootOperatorType.Interproc.name())) {
+                    InterprocProperties properties = new InterprocProperties(path);
+                    m = new InterprocMutationMaker(properties);
+                    m.make(properties);
+                }
+                else if (type.equalsIgnoreCase(RootOperatorType.Flexible.name())) {
+                    FlexibleOperatorProperties properties = new FlexibleOperatorProperties(path);
+                    m = new FlexibleMutationMaker(properties);
+                    m.make(properties);
                 }
                 else{
                     System.out.println("Unknown Operator Type: " + type);
