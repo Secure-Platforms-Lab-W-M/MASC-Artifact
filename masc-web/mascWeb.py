@@ -25,11 +25,11 @@ def labPage():
         f = open('input/userFile.java', 'r')
         createProperties("REACHABILITY", "hello")
         #subprocess.Popen("java mutation/src/mutation/Main", shell=True);
-        e = subprocess.call(["java", "Documents/Github/csci435-Fall21-MASC/masc-core/app/src/main/java/masc/edu/wm/cs/masc/muse/Muse.java", "Documents/Github/CSci435-Fall21-MASC/masc-web/prop.properties"])
+        e = subprocess.call(["java", "Users/scottmarsden/Documents/Github/csci435-Fall21-MASC/masc-core/app/src/main/java/masc/edu/wm/cs/masc/muse/Muse.java", "Users/scottmarsden/Documents/Github/CSci435-Fall21-MASC/masc-core/app/src/main/java/masc/edu/wm/cs/masc/muse/mdroid/prop.properties"])
 
         output = open('output/userFile.java')
-        formatOutput(output, False)
-        output = open('newOut.txt')
+        #formatOutput(output, False)
+        #output = open('newOut.txt')
         return render_template("lab.html", text=f.read(), out=output.read(), error=e)
     return render_template("lab.html")
 
