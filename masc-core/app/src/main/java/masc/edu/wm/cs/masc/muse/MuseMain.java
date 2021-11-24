@@ -42,67 +42,60 @@ public class MuseMain {
 //        }
         else{
             String path = "new_template.properties";
-            AMutationMaker m = null;
             PropertiesReader reader = new PropertiesReader(path);
             String type = reader.getValueForAKey("type");
             String scope = reader.getValueForAKey("scope").toUpperCase();
 
-            // Muse
-            if (scope.equals("EXHAUSTIVE")){
-                setUpMuse(reader);
-                if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())) {
-                    IntOperatorProperties p = new IntOperatorProperties(path);
-                    m = new IntMutationMaker(p);
-                }
-                else if (type.equalsIgnoreCase(RootOperatorType.StringOperator.name())) {
-                    StringOperatorProperties p = new StringOperatorProperties(path);
-                    m = new StringOperatorMutationMaker(p);
-                }
-                else{
-                    System.out.println("Unknown Operator Type: " + type);
-                    return;
-                }
-                m.populateOperators();
-                new MuseMain().runMuse(m.operators);
-            }
-            // MDroid+
-            else if (scope.equals("SIMILARITY")){
+            AMutationMaker m = null;
+            AOperatorProperties p = null;
 
+            // Replace this with a case statement
+            if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())){
+                p = new IntOperatorProperties(path);
+                m = new IntMutationMaker((IntOperatorProperties) p);
             }
-            // MASC Barebones
-            else if (scope.equals("MAIN")){
-                if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())){
-                    IntOperatorProperties p = new IntOperatorProperties(path);
-                    m = new IntMutationMaker(p);
-                    m.make(p);
-                }
-                else if (type.equalsIgnoreCase(RootOperatorType.StringOperator.name())) {
-                    StringOperatorProperties p = new StringOperatorProperties(path);
-                    m = new StringOperatorMutationMaker(p);
-                    m.make(p);
-                }
-                else if (type.equalsIgnoreCase(RootOperatorType.ByteOperator.name())) {
-                    ByteOperatorProperties properties = new ByteOperatorProperties(path);
-                    m = new ByteMutationMaker(properties);
-                    m.make(properties);
-                }
-                else if (type.equalsIgnoreCase(RootOperatorType.Interproc.name())) {
-                    InterprocProperties properties = new InterprocProperties(path);
-                    m = new InterprocMutationMaker(properties);
-                    m.make(properties);
-                }
-                else if (type.equalsIgnoreCase(RootOperatorType.Flexible.name())) {
-                    FlexibleOperatorProperties properties = new FlexibleOperatorProperties(path);
-                    m = new FlexibleMutationMaker(properties);
-                    m.make(properties);
-                }
-                else{
-                    System.out.println("Unknown Operator Type: " + type);
-                }
+            else if (type.equalsIgnoreCase(RootOperatorType.StringOperator.name())) {
+                p = new StringOperatorProperties(path);
+                m = new StringOperatorMutationMaker((StringOperatorProperties) p);
+            }
+            else if (type.equalsIgnoreCase(RootOperatorType.ByteOperator.name())) {
+                p = new ByteOperatorProperties(path);
+                m = new ByteMutationMaker((ByteOperatorProperties) p);
+            }
+            else if (type.equalsIgnoreCase(RootOperatorType.Interproc.name())) {
+                p = new InterprocProperties(path);
+                m = new InterprocMutationMaker((InterprocProperties) p);
+            }
+            else if (type.equalsIgnoreCase(RootOperatorType.Flexible.name())) {
+                p = new FlexibleOperatorProperties(path);
+                m = new FlexibleMutationMaker((FlexibleOperatorProperties) p);
             }
             else{
-                System.out.println("Unknown Scope: " + scope);
+                System.out.println("Unknown Operator Type: " + type);
+                return;
             }
+            run(scope, reader, m, p);
+        }
+    }
+
+    public static void run(String scope, PropertiesReader reader,
+                           AMutationMaker m, AOperatorProperties p) throws IOException, BadLocationException {
+        // Muse
+        if (scope.equals("EXHAUSTIVE")){
+            setUpMuse(reader);
+            m.populateOperators();
+            new MuseMain().runMuse(m.operators);
+        }
+        // MDroid+
+        else if(scope.equals("SIMILARITY")){
+            // TO-DO
+        }
+        // MASC Barebones
+        else if(scope.equals("MAIN")){
+            m.make(p);
+        }
+        else{
+            System.out.println("Unknown Scope: " + scope);
         }
     }
 
