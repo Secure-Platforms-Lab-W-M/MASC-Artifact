@@ -37,7 +37,7 @@ public class MuseRunner {
                 reader.getValueForAKey("appSrc"),
                 reader.getValueForAKey("appName"),
                 reader.getValueForAKey("outputDir"),
-                reader.getValueForAKey("operatorType")};
+                "REACHABILITY"}; // Hardcode this because it never changes in MASC
         Arguments.extractArguments(args);
     }
 
