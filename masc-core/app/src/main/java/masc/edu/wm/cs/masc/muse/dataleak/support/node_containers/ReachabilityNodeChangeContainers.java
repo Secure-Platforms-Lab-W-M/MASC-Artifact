@@ -1,4 +1,4 @@
-package edu.wm.cs.muse.dataleak.support.node_containers;
+package masc.edu.wm.cs.masc.muse.dataleak.support.node_containers;
 
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.ChildListPropertyDescriptor;

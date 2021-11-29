@@ -1,4 +1,5 @@
-package edu.wm.cs.muse.dataleak.support;
+package masc.edu.wm.cs.masc.muse.dataleak.support;
+
 import javax.tools.Diagnostic;
 import javax.tools.DiagnosticCollector;
 import javax.tools.JavaCompiler;

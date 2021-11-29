@@ -1,16 +1,7 @@
-package edu.wm.cs.muse.dataleak;
+package masc.edu.wm.cs.masc.muse.dataleak;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.HashMap;
-import java.util.Map;
-
-import edu.wm.cs.muse.dataleak.support.Arguments;
-import edu.wm.cs.muse.dataleak.support.FileUtility;
-import edu.wm.cs.muse.dataleak.support.OperatorType;
-import masc.edu.wm.cs.masc.operator.restrictive.intoperator.AbsoluteValue;
-import masc.edu.wm.cs.masc.properties.IntOperatorProperties;
-import org.apache.commons.configuration2.ex.ConfigurationException;
+import masc.edu.wm.cs.masc.muse.dataleak.support.OperatorType;
 
 /**
  * @author liz, Ian Wolff

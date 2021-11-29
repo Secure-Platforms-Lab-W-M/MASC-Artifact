@@ -1,4 +1,4 @@
-package edu.wm.cs.muse.dataleak.support;
+package masc.edu.wm.cs.masc.muse.dataleak.support;
 
 import java.io.BufferedReader;
 import java.io.File;

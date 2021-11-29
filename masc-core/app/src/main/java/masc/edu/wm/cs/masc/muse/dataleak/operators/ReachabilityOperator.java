@@ -1,20 +1,14 @@
-package edu.wm.cs.muse.dataleak.operators;
+package masc.edu.wm.cs.masc.muse.dataleak.operators;
 
-import java.util.ArrayList;
-
-import masc.edu.wm.cs.masc.operator.IOperator;
-import masc.edu.wm.cs.masc.operator.restrictive.intoperator.AbsoluteValue;
-import masc.edu.wm.cs.masc.properties.IntOperatorProperties;
-import org.apache.commons.configuration2.ex.ConfigurationException;
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.Statement;
 import org.eclipse.jdt.core.dom.rewrite.ASTRewrite;
 import org.eclipse.jdt.core.dom.rewrite.ListRewrite;
 
-import edu.wm.cs.muse.dataleak.DataLeak;
-import edu.wm.cs.muse.dataleak.support.OperatorType;
-import edu.wm.cs.muse.dataleak.support.Utility;
-import edu.wm.cs.muse.dataleak.support.node_containers.ReachabilityNodeChangeContainers;
+import masc.edu.wm.cs.masc.muse.dataleak.support.Utility;
+import masc.edu.wm.cs.masc.muse.dataleak.support.node_containers.ReachabilityNodeChangeContainers;
+
+import java.util.ArrayList;
 
 /**
  * Operates on the list of nodes coming from ReachabilitySchema
