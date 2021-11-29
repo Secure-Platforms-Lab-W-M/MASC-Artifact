@@ -26,7 +26,7 @@ public class CurrentTimeTest {
                 "cryptoTemp = formatter.format(date);\n" +
                 "javax.crypto.spec.IvParameterSpec ivSpec = " +
                 "new javax.crypto.spec.IvParameterSpec(cryptoTemp.getBytes(),0,8);";
-        assertEquals(expected, b.mutation());
+        assertEquals(expected, b.mutation().replace("%d", ""));
 
     }
 }

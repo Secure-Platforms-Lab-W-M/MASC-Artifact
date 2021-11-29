@@ -23,27 +23,27 @@ public class StringOperatorTestCipher {
                 "(\"AES/GCM/NoPadding\".replace" +
                 "(\"AES/GCM/NoPadding\", \"AES\"));";
 
-        assertEquals(expected, new SafeReplaceWithUnsafe(p).mutation());
+        assertEquals(expected, new SafeReplaceWithUnsafe(p).mutation().replace("%d",""));
     }
 
     @Test
     public void valueInVariable() {
         String expected = "String cryptoVariable = \"AES\";\n" +
                 "javax.crypto.Cipher.getInstance(cryptoVariable);";
-        assertEquals(expected, new ValueInVariable(p).mutation());
+        assertEquals(expected, new ValueInVariable(p).mutation().replace("%d",""));
     }
 
     @Test
     public void noiseReplace() {
         String expected = "javax.crypto.Cipher.getInstance(\"A~ES\".replace" +
                 "(\"~\", \"\");";
-        assertEquals(expected, new NoiseReplace(p).mutation());
+        assertEquals(expected, new NoiseReplace(p).mutation().replace("%d",""));
     }
 
     @Test
     public void differentCase() {
         String expected = "javax.crypto.Cipher.getInstance(\"aes\");";
-        assertEquals(expected, new DifferentCase(p).mutation());
+        assertEquals(expected, new DifferentCase(p).mutation().replace("%d",""));
 
     }
 
@@ -52,14 +52,14 @@ public class StringOperatorTestCipher {
         String expected = "javax.crypto.Cipher.getInstance(\"aes\"" +
                 ".toUpperCase(java.util" +
                 ".Locale.English));";
-        assertEquals(expected, new StringCaseTransform(p).mutation());
+        assertEquals(expected, new StringCaseTransform(p).mutation().replace("%d",""));
     }
 
     @Test
     public void unsafeToUnsafe() {
         String expected = "javax.crypto.Cipher.getInstance(\"AES\"" +
                 ".replace(\"AES\", \"AES\"));";
-        assertEquals(expected, new UnsafeReplaceWithUnsafe(p).mutation());
+        assertEquals(expected, new UnsafeReplaceWithUnsafe(p).mutation().replace("%d",""));
     }
 
 }
