@@ -49,7 +49,6 @@ public class MuseMain {
             AMutationMaker m = null;
             AOperatorProperties p = null;
 
-            // Replace this with a case statement
             if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())){
                 p = new IntOperatorProperties(path);
                 m = new IntMutationMaker((IntOperatorProperties) p);

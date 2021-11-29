@@ -142,27 +142,27 @@ public class Arguments {
 		return new String[] {binariesFolder, rootPath, appName, mutantsFolder, operator};
 	}
 
-	public static boolean setLeaks(OperatorType op, String leakPath) {
-		try {
-			String[] leakStrings = FileUtility.readSourceFile(leakPath).toString().split("\\n");
-			// first line read in as leak source string or default leak source string if empty
-			if (leakStrings.length > 0 && !leakStrings[0].isEmpty()) {
-				DataLeak.setSource(op, leakStrings[0]);
-			}
-			// second line read in as leak sink string or default leak sink string if empty
-			if (leakStrings.length > 1 && !leakStrings[1].isEmpty()) {
-				DataLeak.setSink(op, leakStrings[1]);
-			}
-			// third line read in as variable declaration string or default variable declaration string if empty
-			if (leakStrings.length > 2 && !leakStrings[2].isEmpty()) {
-				DataLeak.setVariableDeclaration(op, leakStrings[2]);
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-			return false;
-		}
-		return true;
-	}
+//	public static boolean setLeaks(OperatorType op, String leakPath) {
+//		try {
+//			String[] leakStrings = FileUtility.readSourceFile(leakPath).toString().split("\\n");
+//			// first line read in as leak source string or default leak source string if empty
+//			if (leakStrings.length > 0 && !leakStrings[0].isEmpty()) {
+//				DataLeak.setSource(op, leakStrings[0]);
+//			}
+//			// second line read in as leak sink string or default leak sink string if empty
+//			if (leakStrings.length > 1 && !leakStrings[1].isEmpty()) {
+//				DataLeak.setSink(op, leakStrings[1]);
+//			}
+//			// third line read in as variable declaration string or default variable declaration string if empty
+//			if (leakStrings.length > 2 && !leakStrings[2].isEmpty()) {
+//				DataLeak.setVariableDeclaration(op, leakStrings[2]);
+//			}
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//			return false;
+//		}
+//		return true;
+//	}
 	
 	public static boolean setLeaks(OperatorType op, HashMap<String, String> configData) {
 		if (configData.get("source") != null) {
