@@ -24,7 +24,6 @@ public class Main {
             System.out.println("Properties file must end with the .properties extension");
         }
         else{
-            //String path = "newIntOperator.properties";
             String path = args[0];
             runMain(path);
         }
