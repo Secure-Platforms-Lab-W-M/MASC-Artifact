@@ -14,14 +14,14 @@ public class NestedClass extends AIntOperator {
         StringBuilder s = new StringBuilder();
 
         // Write the nested class
-        s.append("class NestedClass{\n\t")
+        s.append("class NestedClass%d{\n\t")
                 .append("int getIteration(){\n\t\t")
                 .append("return " + iterationCount)
                 .append(";\n\t}\n}\n");
 
         // Get the misuse template
         s.append(MisuseType.getTemplate(this,
-                "new NestedClass().getIteration()"));
+                "new NestedClass%d().getIteration()"));
 
         // Return the generated string
         return s.toString();
