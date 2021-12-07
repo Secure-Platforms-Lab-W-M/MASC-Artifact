@@ -2,26 +2,26 @@
 
 ## Concepts
 
-The author of MASC (yours truly) created it as a research prototype, and invented terms on the fly. 
+The author of MASC (yours truly) created it as a research prototype, and invented terms on the fly.
 Some of these terms did not make sense later, and were dropped. Some of these still made somewhat sense, and survived.
 Therefore, in this readme - I will be describing the high level concepts each of these terms represent, and then will describe how they interact with each other.
 
 ### Layers
 
-Layers are the abstraction at where MASC introduces mutation / makes mutation instances. There are three layers, 
- 
+Layers are the abstraction at where MASC introduces mutation / makes mutation instances. There are three layers,
+
     - Barebone Layer, where a minimal code / example is created that contains mutation, or misused Crypto API
     - Exhaustive Layer, where a simple misuse instance is introduced through mutation at all possible reachable locations. This is done to verify that all reachable code locations are indeed scanned by analysis tools.
     - Selective Layer, where we selectively mutate by finding existing crypto APIs usage. For example, if given input code has `Cipher.getInstance(...)` anywhere, it will selectively introduce misuse instances through mutation at location adjacent )i.e. below) that `Cipher.getInstance()` function call.
 
 ### Operators
 
-Operators are responsible for the code snippet used as part of the mutation. 
-For example, it can mean something simple, such as creating the following code: 
+Operators are responsible for the code snippet used as part of the mutation.
+For example, it can mean something simple, such as creating the following code:
 
 ```java
 Cipher.getInstance(<param>);
-``` 
+```
 
 As this code will be inserted while mutating source code, or *creating mutation instance*.
 
@@ -35,15 +35,15 @@ new CryptoTestExt(){
     public boolean verify(java.lang.String arg0, javax.net.ssl.SSLSession arg1) {
     	return true;
     }
-``` 
+```
 
-However, the `CryptoTestExt` is from a class that is not present, so trying to compile a code that contains the above snippet will inevitably fail. 
+However, the `CryptoTestExt` is from a class that is not present, so trying to compile a code that contains the above snippet will inevitably fail.
 
 A Builder, will build the necessary structures for those necessary references.
 
 ### Builders
 
-As discussed above, builders take care of creating necessary structures that are required by operators. 
+As discussed above, builders take care of creating necessary structures that are required by operators.
 
 An example is:
 
@@ -51,7 +51,7 @@ An example is:
 public interface CryptoTestExt implements javax.net.ssl.HostnameVerifier{ }
 ```
 
-The builder here is creating the interface CryptoTestExt. Of course, it was given the name of the interface, the name of the interface it is implementing, as well as the nature of inheritance. 
+The builder here is creating the interface CryptoTestExt. Of course, it was given the name of the interface, the name of the interface it is implementing, as well as the nature of inheritance.
 
 ### Makers
 
@@ -76,11 +76,11 @@ Where the body starting from (1) is created through `Maker`, but the anonymous i
 
 The next segment is about how MASC can be extended for supporting more types of Operators/Builders/Makers through barebone layer for fun and profit.
 
-## Extending Barebone 
+## Extending Barebone
 
 ### Create a type under OperatorType
 
-First, you need to define a name that represents the operator type. For example, `StringDifferentCase` represents an operator that deals with a String parameter being given to a crytpo API in a different case from what people usually use. An example of misuse instance in this case would be passing `aes` instead of `AES`. However, Operators are generic in terms of mutation, so it will receive the input String and will create misuse instance based on that input String. 
+First, you need to define a name that represents the operator type. For example, `StringDifferentCase` represents an operator that deals with a String parameter being given to a crytpo API in a different case from what people usually use. An example of misuse instance in this case would be passing `aes` instead of `AES`. However, Operators are generic in terms of mutation, so it will receive the input String and will create misuse instance based on that input String.
 
 The following are the currently available operators in MASC. Each of these operators belong to one type of `RootOperatorType` conceptually.
 
@@ -123,45 +123,82 @@ public enum RootOperatorType {
 
 ### Implementing each of the operators
 
-After naming your Operator, you can start defining them. The following rules apply: 
+After naming your Operator, you can start defining them. The following rules apply:
 
-- The implemented operator name must follow the type name from `OperatorType`. It is a requirement for consistency. 
-- Each of the operators must implement the `IOperator` interface. An example is `InterProcOperator`. 
+- The implemented operator name must follow the type name from `OperatorType`. It is a requirement for consistency.
+- Each of the operators must implement the `IOperator` interface. An example is `InterProcOperator`.
     - They might also be under an abstract class implementing the interface, Examples are `AStringOperator` for all String based Operators, and `AByteOperator` for all byte based operators. Note that both `AStringOperator` and `AByteOperator` implements the `IOperator` interface.
     - The norm is to create fields used in the abstract class which can be used by the concrete operators, and then receive it from the related properties file. A concrete operator may not have to use all of those fields, but these are made available regardless.
 
 
 
 ### Creating Properties file
-Since Operators rely on properties files for creating misuse instances (for example: the name of String, the crypto API to be used)
-Create a `.properties` file first, it should have at least the following keys
+Since Operators rely on properties files for creating misuse instances (for example: the name of the crypto API to be used), create a `.properties` file first.
 
+Mutations across different scopes require different fields to be specified.  The Main scope created novel files that have the mutation in a class' main method.   The Exhaustive scope places mutations at every distinct applicable location across all input files.  The Similarity scope places mutations only where they are likely to occur in practice.  Here are explanations for the minimum required fields for each scope.
+
+Currently the Exhaustive and Similarity scopes only work for IntOperator, StringOperator, and ByteOperator mutation types.  Other operators can be made to work if needed, but that is outside the main goals of this project.
+
+#### Main
 ```
+outputDir = <Directory mutated files should be saved in>
+scope = Main
 type = <Type that is from RootOperatorType Enum>
-output_dir = /Users/amitseal/workspaces/mutationbackyard/reproduce
-api_name =  javax.net.ssl.X509TrustManager
-className = CryptoTest
-otherClassName = CryptoTestExt
+api_name =  <API used in mutations>
+className = <Name for generated classes>
+appName = <Name of the app>
 ```
 
-A properties reader should be created by extending the `edu.wm.cs.masc.properties.AOperatorProperties`. 
-The `AOperatorProperties` already contains appropriate methods for the keys mentioned. 
-The extended class needs to do similarly using `reader.get` for the keys.
+#### Exhaustive
+```
+lib4ast = <Path to MDroid source files>
+appSrc = <Directory of files to apply mutations to>
+outputDir = <Directory mutated files should be saved in>
+scope = Exhaustive
+type = <Type that is from RootOperatorType Enum>
+api_name =  <API used in mutations>
+className = <Name for generated classes>
+appName = <Name of the app>
+```
 
+#### Similarity
+```
+appSrc = <Directory of files to apply mutations to>
+outputDir = <Directory mutated files should be saved in>
+scope = Similarity
+type = <Type that is from RootOperatorType Enum>
+api_name =  <API used in mutations>
+className = <Name for generated classes>
+appName = <Name of the app>
+```
+
+Some `.properties` files require additional fields.  Examples and explanations of the various different `.properties` files follow.
+
+Note, if you extend MASC with a new mutation operator, you should also create a properties reader extending the `edu.wm.cs.masc.properties.AOperatorProperties`.
+The `AOperatorProperties` already contains appropriate methods for the keys mentioned above. The extended class needs to do similarly using `reader.get` for the keys.
+
+Also, any field values that represent variable names should end with `%d`.  MASC will replace the `%d` flag appropriately based on the chosen scope.  Leaving off the flag will result in mutated code that may not compile correctly.
 
 ## Sample Configurations
 
 Cipher.properties
 
 ```properties
+lib4ast = C:/Users/Trevor Stalnaker/Documents/GitHub/CSci435-Fall21-MASC/masc-core/app/src/main/java/masc/edu/wm/cs/masc/muse/mdroid
+appSrc = C:/Users/Trevor Stalnaker/Desktop/input/
+outputDir = C:/Users/Trevor Stalnaker/Desktop/output/
+scope = EXHAUSTIVE
+//EXHAUSTIVE, MAIN, SIMILARITY
+
+appName = MuseTest
+
 type = StringOperator
-outputDir = /Users/amitseal/workspaces/mutationbackyard/reproduce
 apiName = javax.crypto.Cipher
 invocation = getInstance
 secureParam = AES/GCM/NoPadding
 insecureParam = AES
 noise = ~
-variableName = cryptoVariable
+variableName = cryptoVariable%d
 className = CryptoTest
 propertyName = propertyName
 ```
@@ -169,12 +206,46 @@ propertyName = propertyName
 ByteOperator.properties
 
 ```properties
+lib4ast = C:/Users/Trevor Stalnaker/Documents/GitHub/CSci435-Fall21-MASC/masc-core/app/src/main/java/masc/edu/wm/cs/masc/muse/mdroid
+appSrc = C:/Users/Trevor Stalnaker/Desktop/input/
+outputDir = C:/Users/Trevor Stalnaker/Desktop/output/
+scope = EXHAUSTIVE
+//EXHAUSTIVE, MAIN, SIMILARITY
+
+appName = MuseTest
+
 type = ByteOperator
-outputDir = /Users/amitseal/workspaces/mutationbackyard/reproduce
 apiName = javax.crypto.spec.IvParameterSpec
 className = CryptoTest
-tempVariableName = cryptoTemp
-apiVariable = ivSpec
+tempVariableName = cryptoTemp%d
+apiVariable = ivSpec%d
+```
+
+IntOperator.Properties
+```
+lib4ast = C:/Users/Trevor Stalnaker/Documents/GitHub/CSci435-Fall21-MASC/masc-core/app/src/main/java/masc/edu/wm/cs/masc/muse/mdroid
+appSrc = C:/Users/Trevor Stalnaker/Desktop/input/
+outputDir = C:/Users/Trevor Stalnaker/Desktop/output/
+scope = EXHAUSTIVE
+//EXHAUSTIVE, MAIN, SIMILARITY
+
+appName = MuseTest
+
+type = IntOperator
+misuse = PBE
+variableName = iterCount%d
+iterationCount = 50
+className = CryptoTest
+
+// For PBE misuse
+apiName = javax.crypto.spec
+invocation = PBEKeySpec
+password = very_secure
+salt = {80\,45\,56}
+
+// For ShortKey misuse
+algorithm = RSA
+keyGenVarName = keyGen%d
 ```
 
 HostnameVerifier.properties
@@ -277,7 +348,3 @@ className = CryptoTest
 booleanReturn = true
 hasDependencies = true
 ```
-
-
-
-
