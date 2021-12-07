@@ -1,0 +1,10 @@
+
+package masc.edu.wm.cs.masc.muse.input;
+
+class Hello{
+
+    public static void main(String[] args){
+        System.out.println("Hello World!");
+    }
+
+}
