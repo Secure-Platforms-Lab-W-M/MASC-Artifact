@@ -12,12 +12,12 @@ MDroidPlus implements 35 mutation operators specifically for Android apps, cover
 - I/O
 - Non-Functional Requirements
 
-The complete list of mutation operators and their specification is available at the [MDroidPlus website](http://android-mutation.com/#operators).
+The complete list of mutation operators and their specification is available at the [MDroidPlus website](https://www.android-dev-tools.com/).
 Given an Android App, MDroidPlus first extracts the Potential Fault Profile (PFP) and then automatically seeds mutants generating mutated copies of the App.
 
 MDroidPlus is a collaborative research effort between the SEMERU group at William & Mary,the Universidad de los Andes (Colombia), the University of Lugano, and the University of Sannio.
 
-For more information please visit: http://android-mutation.com
+For more information please visit: https://www.android-dev-tools.com/
 
 ### Cite
 If you use MDroidPlus for academic purposes, please cite: 
