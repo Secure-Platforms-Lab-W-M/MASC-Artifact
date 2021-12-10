@@ -1,6 +1,4 @@
-package edu.wm.cs.muse.mdroid;
-
-
+package masc.edu.wm.cs.masc.exhaustive.mdroid;
 
 import java.io.File;
 import java.util.ArrayList;

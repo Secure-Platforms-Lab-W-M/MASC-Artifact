@@ -5,6 +5,7 @@ import masc.edu.wm.cs.masc.exhaustive.dataleak.operators.ReachabilityOperator;
 import masc.edu.wm.cs.masc.exhaustive.dataleak.schemas.ReachabilitySchema;
 import masc.edu.wm.cs.masc.exhaustive.dataleak.support.Arguments;
 import masc.edu.wm.cs.masc.exhaustive.dataleak.support.FileUtility;
+import masc.edu.wm.cs.masc.exhaustive.mdroid.ASTHelper;
 import masc.edu.wm.cs.masc.operator.IOperator;
 import masc.edu.wm.cs.masc.operator.OperatorType;
 import org.apache.commons.io.FileUtils;
@@ -71,7 +72,7 @@ public class MuseRunner {
                     String source = FileUtility.readSourceFile(file.getAbsolutePath()).toString();
 
                     // Creates the abstract syntax tree
-                    CompilationUnit root = edu.wm.cs.muse.mdroid.ASTHelper.getAST(source, Arguments.getBinariesFolder(),
+                    CompilationUnit root = ASTHelper.getAST(source, Arguments.getBinariesFolder(),
                             Arguments.getRootPath());
 
                     // Creates a new instance for describing manipulations of the given AST.
