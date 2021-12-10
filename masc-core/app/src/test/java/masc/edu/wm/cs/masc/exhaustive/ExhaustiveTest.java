@@ -20,7 +20,7 @@ import masc.edu.wm.cs.masc.exhaustive.dataleak.support.Arguments;
 import masc.edu.wm.cs.masc.exhaustive.dataleak.support.FileUtility;
 import masc.edu.wm.cs.masc.exhaustive.dataleak.support.Utility;
 import masc.edu.wm.cs.masc.runners.MuseRunner;
-import  edu.wm.cs.muse.mdroid.ASTHelper;
+import masc.edu.wm.cs.masc.exhaustive.mdroid.ASTHelper;
 
 /*
  * We will be focusing on creating behavior based test cases. AAA pattern, i.e. 
