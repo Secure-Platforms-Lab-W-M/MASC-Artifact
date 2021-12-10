@@ -1,5 +1,5 @@
 
-package masc.edu.wm.cs.masc.muse.input;
+package masc.edu.wm.cs.masc.exhaustive.input;
 
 class Hello{
 

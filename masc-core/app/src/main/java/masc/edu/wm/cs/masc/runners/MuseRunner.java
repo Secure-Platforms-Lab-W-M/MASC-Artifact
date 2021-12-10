@@ -1,10 +1,10 @@
 package masc.edu.wm.cs.masc.runners;
 
 import masc.edu.wm.cs.masc.config.PropertiesReader;
-import masc.edu.wm.cs.masc.muse.dataleak.operators.ReachabilityOperator;
-import masc.edu.wm.cs.masc.muse.dataleak.schemas.ReachabilitySchema;
-import masc.edu.wm.cs.masc.muse.dataleak.support.Arguments;
-import masc.edu.wm.cs.masc.muse.dataleak.support.FileUtility;
+import masc.edu.wm.cs.masc.exhaustive.dataleak.operators.ReachabilityOperator;
+import masc.edu.wm.cs.masc.exhaustive.dataleak.schemas.ReachabilitySchema;
+import masc.edu.wm.cs.masc.exhaustive.dataleak.support.Arguments;
+import masc.edu.wm.cs.masc.exhaustive.dataleak.support.FileUtility;
 import masc.edu.wm.cs.masc.operator.IOperator;
 import masc.edu.wm.cs.masc.operator.OperatorType;
 import org.apache.commons.io.FileUtils;

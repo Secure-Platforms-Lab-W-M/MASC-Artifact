@@ -1,4 +1,4 @@
-package masc.edu.wm.cs.masc.muse;
+package masc.edu.wm.cs.masc.exhaustive;
 
 import static org.junit.Assert.assertEquals;
 
@@ -16,9 +16,9 @@ import org.eclipse.text.edits.TextEdit;
 import org.junit.After;
 import org.junit.Test;
 
-import masc.edu.wm.cs.masc.muse.dataleak.support.Arguments;
-import masc.edu.wm.cs.masc.muse.dataleak.support.FileUtility;
-import masc.edu.wm.cs.masc.muse.dataleak.support.Utility;
+import masc.edu.wm.cs.masc.exhaustive.dataleak.support.Arguments;
+import masc.edu.wm.cs.masc.exhaustive.dataleak.support.FileUtility;
+import masc.edu.wm.cs.masc.exhaustive.dataleak.support.Utility;
 import masc.edu.wm.cs.masc.runners.MuseRunner;
 import  edu.wm.cs.muse.mdroid.ASTHelper;
 

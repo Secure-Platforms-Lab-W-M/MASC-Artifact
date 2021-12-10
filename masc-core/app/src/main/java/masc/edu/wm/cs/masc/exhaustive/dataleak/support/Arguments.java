@@ -1,4 +1,4 @@
-package masc.edu.wm.cs.masc.muse.dataleak.support;
+package masc.edu.wm.cs.masc.exhaustive.dataleak.support;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -8,7 +8,7 @@ import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Properties;
 
-import masc.edu.wm.cs.masc.muse.dataleak.DataLeak;
+import masc.edu.wm.cs.masc.exhaustive.dataleak.DataLeak;
 
 /**
  * This class is introduced for better handling of arguments, and adding

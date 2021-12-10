@@ -1,4 +1,4 @@
-package masc.edu.wm.cs.masc.muse.dataleak.support;
+package masc.edu.wm.cs.masc.exhaustive.dataleak.support;
 
 public class TypeMismatchException extends Exception {
 	

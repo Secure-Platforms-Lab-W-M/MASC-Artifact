@@ -1,12 +1,12 @@
-package masc.edu.wm.cs.masc.muse.dataleak.operators;
+package masc.edu.wm.cs.masc.exhaustive.dataleak.operators;
 
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.Statement;
 import org.eclipse.jdt.core.dom.rewrite.ASTRewrite;
 import org.eclipse.jdt.core.dom.rewrite.ListRewrite;
 
-import masc.edu.wm.cs.masc.muse.dataleak.support.Utility;
-import masc.edu.wm.cs.masc.muse.dataleak.support.node_containers.ReachabilityNodeChangeContainers;
+import masc.edu.wm.cs.masc.exhaustive.dataleak.support.Utility;
+import masc.edu.wm.cs.masc.exhaustive.dataleak.support.node_containers.ReachabilityNodeChangeContainers;
 
 import java.util.ArrayList;
 

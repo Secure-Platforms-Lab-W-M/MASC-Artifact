@@ -15,8 +15,7 @@ import org.eclipse.jdt.core.JavaCore;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
-import org.eclipse.jdt.core.dom.Statement;
-import masc.edu.wm.cs.masc.muse.dataleak.support.Arguments;
+import masc.edu.wm.cs.masc.exhaustive.dataleak.support.Arguments;
 
 public class ASTHelper {
 	

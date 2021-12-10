@@ -1,7 +1,7 @@
-package masc.edu.wm.cs.masc.muse.dataleak;
+package masc.edu.wm.cs.masc.exhaustive.dataleak;
 
 import java.util.HashMap;
-import masc.edu.wm.cs.masc.muse.dataleak.support.OperatorType;
+import masc.edu.wm.cs.masc.exhaustive.dataleak.support.OperatorType;
 
 /**
  * @author liz, Ian Wolff

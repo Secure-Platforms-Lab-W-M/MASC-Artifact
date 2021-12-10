@@ -1,4 +1,4 @@
-package masc.edu.wm.cs.masc.muse.dataleak.support;
+package masc.edu.wm.cs.masc.exhaustive.dataleak.support;
 
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
