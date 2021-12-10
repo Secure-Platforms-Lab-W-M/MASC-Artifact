@@ -36,7 +36,7 @@ import  edu.wm.cs.muse.mdroid.ASTHelper;
  * @author Amit Seal Ami, Liz Weech, Yang Zhang, Scott Murphy
  *
  */
-public class MuseTest {
+public class ExhaustiveTest {
 
 	File expectedOutput;
 	String content = null;

@@ -8,27 +8,28 @@ import org.apache.commons.configuration2.ex.ConfigurationException;
 
 public class MASCBarebone {
 
-    public static void main(String[] args) {
-        try {
-            if (args.length < 1) {
-
-                System.out.println(
-                        "No arguments provided. Running Cipher.properties by " +
-                                "default.");
-                run("IntOperatorPbeMisuse.properties");
-
-            } else if (args.length == 1) {
-                run(args[0]);
-            } else {
-                System.out.println(
-                        "Please run " + args[0] + "with .properties file as " +
-                                "argument.");
-            }
-        } catch (ConfigurationException e) {
-            System.out.println("Something wrong with the properties file.");
-            e.printStackTrace();
-        }
-    }
+//  Deprecated -- call with Main.java instead
+//    public static void main(String[] args) {
+//        try {
+//            if (args.length < 1) {
+//
+//                System.out.println(
+//                        "No arguments provided. Running Cipher.properties by " +
+//                                "default.");
+//                run("IntOperatorPbeMisuse.properties");
+//
+//            } else if (args.length == 1) {
+//                run(args[0]);
+//            } else {
+//                System.out.println(
+//                        "Please run " + args[0] + "with .properties file as " +
+//                                "argument.");
+//            }
+//        } catch (ConfigurationException e) {
+//            System.out.println("Something wrong with the properties file.");
+//            e.printStackTrace();
+//        }
+//    }
 
     private static void run(String path) throws ConfigurationException {
 
