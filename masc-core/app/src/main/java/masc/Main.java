@@ -12,7 +12,7 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws Exception{
-        RootOperatorType rootType = RootOperatorType.StringOperator;
+
         if (args.length == 0){
             System.out.println("No properties file supplied");
         }
@@ -28,13 +28,39 @@ public class Main {
         }
     }
 
-    public static void runMain(String path)
-            throws ConfigurationException, IOException, BadLocationException {
+    public static void runMain(String path) throws ConfigurationException, IOException, BadLocationException {
 
         PropertiesReader reader = new PropertiesReader(path);
         String type = reader.getValueForAKey("type");
         String scope = reader.getValueForAKey("scope").toUpperCase();
 
+        // Muse
+        if (scope.equals("EXHAUSTIVE")){
+            runExhaustiveScope(reader);
+        }
+        // MDroid+
+        else if(scope.equals("SIMILARITY")){
+            // TO-DO
+        }
+        // MASC Barebones
+        else if(scope.equals("MAIN")){
+            runMainScope(type, path);
+        }
+        else{
+            System.out.println("Unknown Scope: " + scope);
+        }
+    }
+
+    public static void runExhaustiveScope(PropertiesReader reader) throws ConfigurationException,
+            IOException, BadLocationException {
+        StringOperatorProperties p = new StringOperatorProperties("Cipher.properties");
+        StringOperatorMutationMaker m = new StringOperatorMutationMaker(p);
+        MuseRunner.setUpMuse(reader);
+        m.populateOperators();
+        MuseRunner.runMuse(m.operators);
+    }
+
+    public static void runMainScope(String type, String path) throws ConfigurationException {
         AMutationMaker m = null;
         AOperatorProperties p = null;
 
@@ -62,28 +88,7 @@ public class Main {
             System.out.println("Unknown Operator Type: " + type);
             return;
         }
-        run(scope, reader, m, p);
-    }
-
-    public static void run(String scope, PropertiesReader reader,
-                           AMutationMaker m, AOperatorProperties p) throws IOException, BadLocationException {
-        // Muse
-        if (scope.equals("EXHAUSTIVE")){
-            MuseRunner.setUpMuse(reader);
-            m.populateOperators();
-            MuseRunner.runMuse(m.operators);
-        }
-        // MDroid+
-        else if(scope.equals("SIMILARITY")){
-            // TO-DO
-        }
-        // MASC Barebones
-        else if(scope.equals("MAIN")){
-            m.make(p);
-        }
-        else{
-            System.out.println("Unknown Scope: " + scope);
-        }
+        m.make(p);
     }
 
 }
