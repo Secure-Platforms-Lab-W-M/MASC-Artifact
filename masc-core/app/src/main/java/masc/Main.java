@@ -7,6 +7,8 @@ import masc.edu.wm.cs.masc.properties.*;
 import masc.edu.wm.cs.masc.runners.MuseRunner;
 import org.apache.commons.configuration2.ex.ConfigurationException;
 import org.eclipse.jface.text.BadLocationException;
+
+import java.io.File;
 import java.io.IOException;
 
 public class Main {
@@ -51,6 +53,7 @@ public class Main {
     }
 
     public static void runSelectiveScope(PropertiesReader reader) throws IOException {
+        
         String[] args = {reader.getValueForAKey("lib4ast"),
                 reader.getValueForAKey("appSrc"),
                 reader.getValueForAKey("appName"),
