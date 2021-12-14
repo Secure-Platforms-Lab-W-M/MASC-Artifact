@@ -53,12 +53,14 @@ public class Main {
     }
 
     public static void runSelectiveScope(PropertiesReader reader) throws IOException {
-        
-        String[] args = {reader.getValueForAKey("lib4ast"),
+        File lib4ast = new File("libs4ast/");
+        File opDir = new File("resources/");
+        System.out.println(opDir.getAbsolutePath());
+        String[] args = {lib4ast.getAbsolutePath(),
                 reader.getValueForAKey("appSrc"),
                 reader.getValueForAKey("appName"),
                 reader.getValueForAKey("outputDir"),
-                reader.getValueForAKey("operatorsDir"),
+                opDir.getAbsolutePath(),
                 "false"}; // Hardcode this because it never changes in MASC
         edu.wm.cs.mplus.MPlus.runMPlus(args);
 
