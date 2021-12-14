@@ -38,26 +38,26 @@ public class MPlus {
     public static void runMPlus(String[] args) throws IOException {
 
         //Usage Error
-//        if (args.length != 6) {
-//            System.out.println("******* ERROR: INCORRECT USAGE *******");
-//            System.out.println("Argument List:");
-//            System.out.println("1. Binaries path");
-//            System.out.println("2. App Source Code path");
-//            System.out.println("3. App Name");
-//            System.out.println("4. Mutants path");
-//            System.out.println(
-//                    "5. Directory containing the operator.properties file");
-//            System.out.println("6. Multithread generation (true/false)");
-//            return;
-//        }
+        if (args.length != 6) {
+            System.out.println("******* ERROR: INCORRECT USAGE *******");
+            System.out.println("Argument List:");
+            System.out.println("1. Binaries path");
+            System.out.println("2. App Source Code path");
+            System.out.println("3. App Name");
+            System.out.println("4. Mutants path");
+            System.out.println(
+                    "5. Directory containing the operator.properties file");
+            System.out.println("6. Multithread generation (true/false)");
+            return;
+        }
 
         //Getting arguments
-        String binariesFolder = "C:\\Users\\Trevor Stalnaker\\Documents\\GitHub\\CSci435-Fall21-MASC\\MDroidPlus\\libs4ast";//args[0];
-        String rootPath = "C:\\Users\\Trevor Stalnaker\\Desktop\\personaldnsfilter\\personaldnsfilter\\app\\src\\main";//args[1];
-        String appName = "PersonalDNSFilter";//args[2];
-        String mutantsFolder = "C:\\Users\\Trevor Stalnaker\\Desktop\\output";//args[3];
-        String operatorsDir = "C:\\Users\\Trevor Stalnaker\\Documents\\GitHub\\CSci435-Fall21-MASC\\MDroidPlus\\src\\main\\java\\edu\\wm\\cs\\mplus";//args[4];
-        boolean multithread = false;//Boolean.parseBoolean(args[5]);
+        String binariesFolder = args[0];
+        String rootPath = args[1];
+        String appName = args[2];
+        String mutantsFolder = args[3];
+        String operatorsDir = args[4];
+        boolean multithread = Boolean.parseBoolean(args[5]);
 
         //Read selected operators
         OperatorBundle operatorBundle = new OperatorBundle(operatorsDir);

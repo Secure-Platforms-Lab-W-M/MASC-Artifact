@@ -31,7 +31,6 @@ public class Main {
     public static void runMain(String path) throws ConfigurationException, IOException, BadLocationException {
 
         PropertiesReader reader = new PropertiesReader(path);
-        String type = reader.getValueForAKey("type");
         String scope = reader.getValueForAKey("scope").toUpperCase();
 
         // Muse
@@ -40,15 +39,26 @@ public class Main {
         }
         // MDroid+
         else if(scope.equals("SIMILARITY")){
-            // TO-DO
+            runSelectiveScope(reader);
         }
         // MASC Barebones
         else if(scope.equals("MAIN")){
-            runMainScope(type, path);
+            runMainScope(reader, path);
         }
         else{
             System.out.println("Unknown Scope: " + scope);
         }
+    }
+
+    public static void runSelectiveScope(PropertiesReader reader) throws IOException {
+        String[] args = {reader.getValueForAKey("lib4ast"),
+                reader.getValueForAKey("appSrc"),
+                reader.getValueForAKey("appName"),
+                reader.getValueForAKey("outputDir"),
+                reader.getValueForAKey("operatorsDir"),
+                "false"}; // Hardcode this because it never changes in MASC
+        edu.wm.cs.mplus.MPlus.runMPlus(args);
+
     }
 
     public static void runExhaustiveScope(PropertiesReader reader) throws ConfigurationException,
@@ -60,7 +70,8 @@ public class Main {
         MuseRunner.runMuse(m.operators);
     }
 
-    public static void runMainScope(String type, String path) throws ConfigurationException {
+    public static void runMainScope(PropertiesReader reader, String path) throws ConfigurationException {
+        String type = reader.getValueForAKey("type");
         AMutationMaker m = null;
         AOperatorProperties p = null;
 
