@@ -35,9 +35,9 @@ description = 'MASC_MDroidPlus'
 sourceCompatibility = '1.8'
 
 
-//sourceSets.main.resources.srcDirs += [
-//        "main/java/mplus"
-//]
+sourceSets.main.resources.srcDirs += [
+        "main/java/mplus"
+]
 //sourceSets.main.resources.srcDirs = ["src"]
 //sourceSets.main.java.srcDirs = ["src"]
 //sourceSets {
@@ -46,12 +46,12 @@ sourceCompatibility = '1.8'
 //            srcDirs = ['src']
 //        }
 //    }
-////
-//    test {
-//        java {
-////            srcDirs = ['test']
-//        }
-//    }
+
+  //  test {
+  //      java {
+ //           srcDirs = ['test']
+  //      }
+  //  }
 //}
 
 publishing {

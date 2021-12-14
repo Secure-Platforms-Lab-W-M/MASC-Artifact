@@ -1,0 +1,277 @@
+edu/wm/cs/mplus/operators/data/android/InvalidURI.java
+ edu.wm.cs.mplus.operators.data.android.InvalidURI
+edu/wm/cs/mplus/detectors/ast/locator/InvalidFilePathLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.InvalidFilePathLocator
+edu/wm/cs/mplus/helper/StringMutator.java
+ edu.wm.cs.mplus.helper.StringMutator
+edu/wm/cs/mplus/model/location/DifferentActivityMutationLocation.java
+ edu.wm.cs.mplus.model.location.DifferentActivityMutationLocation
+edu/wm/cs/mplus/operators/crypto/HttpsURLHostnameVerifier.java
+ edu.wm.cs.mplus.operators.crypto.HttpsURLHostnameVerifier
+edu/wm/cs/mplus/model/location/ObjectMutationLocation.java
+ edu.wm.cs.mplus.model.location.ObjectMutationLocation
+edu/wm/cs/mplus/detectors/ast/locator/BluetoothAdapterAlwaysEnabledLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.BluetoothAdapterAlwaysEnabledLocator
+edu/wm/cs/mplus/detectors/ast/locator/ClosingNullCursorLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.ClosingNullCursorLocator
+edu/wm/cs/mplus/helper/ClassHelper.java
+ edu.wm.cs.mplus.helper.ClassHelper
+edu/wm/cs/mplus/detectors/ast/locator/IvParameterSpecLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.IvParameterSpecLocator
+edu/wm/cs/mplus/detectors/xml/InvalidActivityNameDetector.java
+ edu.wm.cs.mplus.detectors.xml.InvalidActivityNameDetector
+edu/wm/cs/mplus/detectors/ast/locator/InvalidIDFindViewLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.InvalidIDFindViewLocator
+edu/wm/cs/mplus/operators/crypto/IvParameterSpec.java
+ edu.wm.cs.mplus.operators.crypto.IvParameterSpec
+edu/wm/cs/mplus/operators/db/general/InvalidIndexQueryParameter.java
+ edu.wm.cs.mplus.operators.db.general.InvalidIndexQueryParameter
+edu/wm/cs/mplus/detectors/ast/locator/OOMLargeImageLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.OOMLargeImageLocator
+edu/wm/cs/mplus/detectors/ast/locator/LenghtyGUICreationLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.LenghtyGUICreationLocator
+edu/wm/cs/mplus/operators/io/NullStream.java
+ edu.wm.cs.mplus.operators.io.NullStream
+edu/wm/cs/mplus/operators/threading/LengthyGUICreation.java
+ edu.wm.cs.mplus.operators.threading.LengthyGUICreation
+edu/wm/cs/mplus/detectors/code/visitors/MethodCallVO.java
+ edu.wm.cs.mplus.detectors.code.visitors.MethodCallVO
+edu/wm/cs/mplus/operators/MutationOperatorFactory.java
+ edu.wm.cs.mplus.operators.MutationOperatorFactory
+edu/wm/cs/mplus/operators/data/general/NullBackEndServiceReturn.java
+ edu.wm.cs.mplus.operators.data.general.NullBackEndServiceReturn
+edu/wm/cs/mplus/detectors/ast/locator/NullBluetoothAdapterLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.NullBluetoothAdapterLocator
+edu/wm/cs/mplus/operators/crypto/ACryptoMutationOperator.java
+ edu.wm.cs.mplus.operators.crypto.ACryptoMutationOperator
+edu/wm/cs/mplus/detectors/ast/locator/InvalidIndexQueryParameterLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.InvalidIndexQueryParameterLocator
+edu/wm/cs/mplus/detectors/ast/locator/FindViewByIdReturnsNullLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.FindViewByIdReturnsNullLocator
+edu/wm/cs/mplus/processors/MutationsProcessor.java
+ edu.wm.cs.mplus.processors.MutationsProcessor
+ edu.wm.cs.mplus.processors.MutationsProcessor$1
+edu/wm/cs/mplus/detectors/ASTBasedDetector.java
+ edu.wm.cs.mplus.detectors.ASTBasedDetector
+edu/wm/cs/mplus/selector/WrongMainActivitySelector.java
+ edu.wm.cs.mplus.selector.WrongMainActivitySelector
+edu/wm/cs/mplus/detectors/ast/locator/NotSerializableLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.NotSerializableLocator
+edu/wm/cs/mplus/helper/ClassMeta.java
+ edu.wm.cs.mplus.helper.ClassMeta
+edu/wm/cs/mplus/selector/Selector.java
+ edu.wm.cs.mplus.selector.Selector
+edu/wm/cs/mplus/operators/MutationOperator.java
+ edu.wm.cs.mplus.operators.MutationOperator
+edu/wm/cs/mplus/MPlus.java
+ edu.wm.cs.mplus.MPlus
+edu/wm/cs/mplus/helper/IntegerGenerator.java
+ edu.wm.cs.mplus.helper.IntegerGenerator
+edu/wm/cs/mplus/model/location/ArgumentMutationLocation.java
+ edu.wm.cs.mplus.model.location.ArgumentMutationLocation
+edu/wm/cs/mplus/detectors/ast/locator/NotParcelableLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.NotParcelableLocator
+edu/wm/cs/mplus/detectors/ast/locator/ViewComponentNotVisibleLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.ViewComponentNotVisibleLocator
+edu/wm/cs/mplus/operators/activity/NullValueIntentPutExtra.java
+ edu.wm.cs.mplus.operators.activity.NullValueIntentPutExtra
+edu/wm/cs/mplus/detectors/ast/locator/RandomIntLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.RandomIntLocator
+edu/wm/cs/mplus/detectors/ast/locator/NullStreamLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.NullStreamLocator
+edu/wm/cs/mplus/helper/XMLLocator.java
+ edu.wm.cs.mplus.helper.XMLLocator
+edu/wm/cs/mplus/detectors/ast/locator/InvalidURILocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.InvalidURILocator
+edu/wm/cs/mplus/selector/SelectorLocationFactory.java
+ edu.wm.cs.mplus.selector.SelectorLocationFactory
+edu/wm/cs/mplus/detectors/xml/ActivityNotDefinedDetector.java
+ edu.wm.cs.mplus.detectors.xml.ActivityNotDefinedDetector
+edu/wm/cs/mplus/operators/activity/InvalidActivityName.java
+ edu.wm.cs.mplus.operators.activity.InvalidActivityName
+edu/wm/cs/mplus/operators/programming/android/WrongStringResource.java
+ edu.wm.cs.mplus.operators.programming.android.WrongStringResource
+edu/wm/cs/mplus/operators/gui/android/InvalidColor.java
+ edu.wm.cs.mplus.operators.gui.android.InvalidColor
+edu/wm/cs/mplus/operators/threading/LengthyGUIListener.java
+ edu.wm.cs.mplus.operators.threading.LengthyGUIListener
+edu/wm/cs/mplus/detectors/MutationLocationDetector.java
+ edu.wm.cs.mplus.detectors.MutationLocationDetector
+edu/wm/cs/mplus/operators/crypto/MessageDigest.java
+ edu.wm.cs.mplus.operators.crypto.MessageDigest
+edu/wm/cs/mplus/operators/gui/android/InvalidViewFocus.java
+ edu.wm.cs.mplus.operators.gui.android.InvalidViewFocus
+edu/wm/cs/mplus/operators/crypto/HostnameVerifierInstance.java
+ edu.wm.cs.mplus.operators.crypto.HostnameVerifierInstance
+edu/wm/cs/mplus/detectors/ast/locator/HostnameVerifierLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.HostnameVerifierLocator
+edu/wm/cs/mplus/detectors/ast/locator/NullGPSLocationLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.NullGPSLocationLocator
+edu/wm/cs/mplus/operators/gui/android/ViewComponentNotVisible.java
+ edu.wm.cs.mplus.operators.gui.android.ViewComponentNotVisible
+edu/wm/cs/mplus/operators/activity/DifferentActivityIntentDefinition.java
+ edu.wm.cs.mplus.operators.activity.DifferentActivityIntentDefinition
+edu/wm/cs/mplus/operators/data/general/InvalidDate.java
+ edu.wm.cs.mplus.operators.data.general.InvalidDate
+edu/wm/cs/mplus/model/location/ImageMutationLocation.java
+ edu.wm.cs.mplus.model.location.ImageMutationLocation
+edu/wm/cs/mplus/helper/FileHelper.java
+ edu.wm.cs.mplus.helper.FileHelper
+edu/wm/cs/mplus/operators/activity/ActivityNotDefined.java
+ edu.wm.cs.mplus.operators.activity.ActivityNotDefined
+edu/wm/cs/mplus/helper/ProjectCompiler.java
+ edu.wm.cs.mplus.helper.ProjectCompiler
+edu/wm/cs/mplus/operators/programming/android/SDKVersion.java
+ edu.wm.cs.mplus.operators.programming.android.SDKVersion
+edu/wm/cs/mplus/detectors/ast/locator/TrustManagerLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.TrustManagerLocator
+edu/wm/cs/mplus/processors/SourceCodeProcessor.java
+ edu.wm.cs.mplus.processors.SourceCodeProcessor
+edu/wm/cs/mplus/helper/HexadecimalGenerator.java
+ edu.wm.cs.mplus.helper.HexadecimalGenerator
+edu/wm/cs/mplus/operators/gui/general/BuggyGUIListener.java
+ edu.wm.cs.mplus.operators.gui.general.BuggyGUIListener
+edu/wm/cs/mplus/detectors/code/visitors/ASTHelper.java
+ edu.wm.cs.mplus.detectors.code.visitors.ASTHelper
+edu/wm/cs/mplus/model/MutationType.java
+ edu.wm.cs.mplus.model.MutationType
+edu/wm/cs/mplus/detectors/ast/locator/LocatorFactory.java
+ edu.wm.cs.mplus.detectors.ast.locator.LocatorFactory
+edu/wm/cs/mplus/model/location/ElementLocation.java
+ edu.wm.cs.mplus.model.location.ElementLocation
+edu/wm/cs/mplus/detectors/xml/InvalidLabelDetector.java
+ edu.wm.cs.mplus.detectors.xml.InvalidLabelDetector
+edu/wm/cs/mplus/operators/crypto/SSLContextInstance.java
+ edu.wm.cs.mplus.operators.crypto.SSLContextInstance
+edu/wm/cs/mplus/detectors/ast/locator/ACryptoLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.ACryptoLocator
+edu/wm/cs/mplus/operators/backend/LengthyBackEndService.java
+ edu.wm.cs.mplus.operators.backend.LengthyBackEndService
+edu/wm/cs/mplus/detectors/ast/locator/CipherInstanceLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.CipherInstanceLocator
+edu/wm/cs/mplus/detectors/ast/locator/NullIntentLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.NullIntentLocator
+edu/wm/cs/mplus/operators/connectivity/BluetoothAdapterAlwaysEnabled.java
+ edu.wm.cs.mplus.operators.connectivity.BluetoothAdapterAlwaysEnabled
+edu/wm/cs/mplus/operators/activity/NullIntent.java
+ edu.wm.cs.mplus.operators.activity.NullIntent
+edu/wm/cs/mplus/operators/image/OOMLargeImage.java
+ edu.wm.cs.mplus.operators.image.OOMLargeImage
+edu/wm/cs/mplus/detectors/ast/locator/LongConnectionTimeOutLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.LongConnectionTimeOutLocator
+edu/wm/cs/mplus/detectors/ast/locator/SSLContextLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.SSLContextLocator
+edu/wm/cs/mplus/detectors/MutationLocationListBuilder.java
+ edu.wm.cs.mplus.detectors.MutationLocationListBuilder
+edu/wm/cs/mplus/operators/db/general/InvalidSQLQuery.java
+ edu.wm.cs.mplus.operators.db.general.InvalidSQLQuery
+edu/wm/cs/mplus/selector/GeneralRandomSelector.java
+ edu.wm.cs.mplus.selector.GeneralRandomSelector
+edu/wm/cs/mplus/helper/PlacementChecker.java
+ edu.wm.cs.mplus.helper.PlacementChecker
+edu/wm/cs/mplus/detectors/TextBasedDetector.java
+ edu.wm.cs.mplus.detectors.TextBasedDetector
+edu/wm/cs/mplus/processors/TextBasedDetectionsProcessor.java
+ edu.wm.cs.mplus.processors.TextBasedDetectionsProcessor
+edu/wm/cs/mplus/detectors/ast/locator/NullValueIntentPutExtraLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.NullValueIntentPutExtraLocator
+edu/wm/cs/mplus/model/location/MutationLocation.java
+ edu.wm.cs.mplus.model.location.MutationLocation
+edu/wm/cs/mplus/detectors/code/visitors/MethodDeclarationVO.java
+ edu.wm.cs.mplus.detectors.code.visitors.MethodDeclarationVO
+edu/wm/cs/mplus/detectors/code/visitors/MethodCallVisitor.java
+ edu.wm.cs.mplus.detectors.code.visitors.MethodCallVisitor
+edu/wm/cs/mplus/detectors/ast/locator/DummyLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.DummyLocator
+edu/wm/cs/mplus/detectors/ast/locator/HttpsURLHostnameVerifierLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.HttpsURLHostnameVerifierLocator
+edu/wm/cs/mplus/helper/StringGenerator.java
+ edu.wm.cs.mplus.helper.StringGenerator
+edu/wm/cs/mplus/operators/programming/android/MissingPermissionManifest.java
+ edu.wm.cs.mplus.operators.programming.android.MissingPermissionManifest
+edu/wm/cs/mplus/operators/activity/InvalidKeyIntentPutExtra.java
+ edu.wm.cs.mplus.operators.activity.InvalidKeyIntentPutExtra
+edu/wm/cs/mplus/operators/crypto/CipherInstance.java
+ edu.wm.cs.mplus.operators.crypto.CipherInstance
+edu/wm/cs/mplus/operators/crypto/RandomInt.java
+ edu.wm.cs.mplus.operators.crypto.RandomInt
+edu/wm/cs/mplus/detectors/xml/MissingPermissionDetector.java
+ edu.wm.cs.mplus.detectors.xml.MissingPermissionDetector
+edu/wm/cs/mplus/detectors/ast/locator/DifferentActivityIntentDefinitionLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.DifferentActivityIntentDefinitionLocator
+edu/wm/cs/mplus/detectors/xml/WrongMainActivityDetector.java
+ edu.wm.cs.mplus.detectors.xml.WrongMainActivityDetector
+edu/wm/cs/mplus/operators/crypto/TrustManagerInstance.java
+ edu.wm.cs.mplus.operators.crypto.TrustManagerInstance
+edu/wm/cs/mplus/detectors/ast/locator/Locator.java
+ edu.wm.cs.mplus.detectors.ast.locator.Locator
+edu/wm/cs/mplus/model/location/TimedMutationLocation.java
+ edu.wm.cs.mplus.model.location.TimedMutationLocation
+edu/wm/cs/mplus/operators/data/android/NullGPSLocation.java
+ edu.wm.cs.mplus.operators.data.android.NullGPSLocation
+edu/wm/cs/mplus/operators/activity/WrongMainActivity.java
+ edu.wm.cs.mplus.operators.activity.WrongMainActivity
+edu/wm/cs/mplus/model/location/VisibilityMutationLocation.java
+ edu.wm.cs.mplus.model.location.VisibilityMutationLocation
+edu/wm/cs/mplus/operators/programming/oo/NotSerializable.java
+ edu.wm.cs.mplus.operators.programming.oo.NotSerializable
+edu/wm/cs/mplus/detectors/ast/locator/LengthyBackEndServiceLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.LengthyBackEndServiceLocator
+edu/wm/cs/mplus/operators/gui/android/InvalidIDFindView.java
+ edu.wm.cs.mplus.operators.gui.android.InvalidIDFindView
+edu/wm/cs/mplus/detectors/code/visitors/MethodDeclarationVisitor.java
+ edu.wm.cs.mplus.detectors.code.visitors.MethodDeclarationVisitor
+edu/wm/cs/mplus/helper/TimestampGenerator.java
+ edu.wm.cs.mplus.helper.TimestampGenerator
+edu/wm/cs/mplus/detectors/ast/locator/InvalidKeyIntentPutExtraLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.InvalidKeyIntentPutExtraLocator
+edu/wm/cs/mplus/detectors/ast/locator/LenghtyGUIListenerLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.LenghtyGUIListenerLocator
+edu/wm/cs/mplus/operators/crypto/ACryptoMutationAICOperator.java
+ edu.wm.cs.mplus.operators.crypto.ACryptoMutationAICOperator
+edu/wm/cs/mplus/operators/data/general/NullMethodCallArgument.java
+ edu.wm.cs.mplus.operators.data.general.NullMethodCallArgument
+edu/wm/cs/mplus/operators/connectivity/NullBluetoothAdapter.java
+ edu.wm.cs.mplus.operators.connectivity.NullBluetoothAdapter
+edu/wm/cs/mplus/detectors/code/visitors/ClassInstanceVisitor.java
+ edu.wm.cs.mplus.detectors.code.visitors.ClassInstanceVisitor
+edu/wm/cs/mplus/operators/activity/InvalidLabel.java
+ edu.wm.cs.mplus.operators.activity.InvalidLabel
+edu/wm/cs/mplus/detectors/ast/locator/BuggyGUIListenerLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.BuggyGUIListenerLocator
+edu/wm/cs/mplus/detectors/ast/locator/InvalidSQLQueryLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.InvalidSQLQueryLocator
+edu/wm/cs/mplus/operators/io/InvalidFilePath.java
+ edu.wm.cs.mplus.operators.io.InvalidFilePath
+edu/wm/cs/mplus/detectors/xml/WrongStringResourceDetector.java
+ edu.wm.cs.mplus.detectors.xml.WrongStringResourceDetector
+edu/wm/cs/mplus/operators/programming/android/NotParcelable.java
+ edu.wm.cs.mplus.operators.programming.android.NotParcelable
+edu/wm/cs/mplus/processors/SelectorsProcessor.java
+ edu.wm.cs.mplus.processors.SelectorsProcessor
+edu/wm/cs/mplus/model/location/CryptoMutationPack.java
+ edu.wm.cs.mplus.model.location.CryptoMutationPack
+edu/wm/cs/mplus/detectors/ast/locator/InvalidDateLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.InvalidDateLocator
+edu/wm/cs/mplus/detectors/xml/InvalidColorDetector.java
+ edu.wm.cs.mplus.detectors.xml.InvalidColorDetector
+edu/wm/cs/mplus/detectors/ast/locator/MessageDigestLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.MessageDigestLocator
+edu/wm/cs/mplus/operators/backend/LongConnectionTimeOut.java
+ edu.wm.cs.mplus.operators.backend.LongConnectionTimeOut
+edu/wm/cs/mplus/model/location/ParcelableMutationLocation.java
+ edu.wm.cs.mplus.model.location.ParcelableMutationLocation
+edu/wm/cs/mplus/operators/gui/android/FindViewByIdReturnsNull.java
+ edu.wm.cs.mplus.operators.gui.android.FindViewByIdReturnsNull
+edu/wm/cs/mplus/operators/db/android/ClosingNullCursor.java
+ edu.wm.cs.mplus.operators.db.android.ClosingNullCursor
+edu/wm/cs/mplus/model/location/ViewMutationLocation.java
+ edu.wm.cs.mplus.model.location.ViewMutationLocation
+edu/wm/cs/mplus/detectors/xml/SDKVersionDetector.java
+ edu.wm.cs.mplus.detectors.xml.SDKVersionDetector
+edu/wm/cs/mplus/operators/programming/oo/InvalidMethodCallArgument.java
+ edu.wm.cs.mplus.operators.programming.oo.InvalidMethodCallArgument
+edu/wm/cs/mplus/operators/OperatorBundle.java
+ edu.wm.cs.mplus.operators.OperatorBundle
+edu/wm/cs/mplus/detectors/ast/locator/NullBackEndServiceReturnLocator.java
+ edu.wm.cs.mplus.detectors.ast.locator.NullBackEndServiceReturnLocator
