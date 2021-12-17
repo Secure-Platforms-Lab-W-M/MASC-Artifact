@@ -135,9 +135,9 @@ After naming your Operator, you can start defining them. The following rules app
 ### Creating Properties file
 Since Operators rely on properties files for creating misuse instances (for example: the name of the crypto API to be used), create a `.properties` file first.
 
-Mutations across different scopes require different fields to be specified.  The Main scope created novel files that have the mutation in a class' main method.   The Exhaustive scope places mutations at every distinct applicable location across all input files.  The Similarity scope places mutations only where they are likely to occur in practice.  Here are explanations for the minimum required fields for each scope.
+Mutations across different scopes require different fields to be specified.  The Main scope created novel files that have the mutation in a class' main method.   The Exhaustive scope places mutations at every distinct applicable location across all input files.  The Selective scope places mutations only where they are likely to occur in practice.  Here are explanations for the minimum required fields for each scope.
 
-Currently the Exhaustive and Similarity scopes only work for IntOperator, StringOperator, and ByteOperator mutation types.  Other operators can be made to work if needed, but that is outside the main goals of this project.
+Currently the Exhaustive and Selective scopes only work for IntOperator, StringOperator, and ByteOperator mutation types.  Other operators can be made to work if needed, but that is outside the main goals of this project.
 
 #### Main
 ```
@@ -161,11 +161,11 @@ className = <Name for generated classes>
 appName = <Name of the app>
 ```
 
-#### Similarity
+#### SELECTIVE
 ```
 appSrc = <Directory of files to apply mutations to>
 outputDir = <Directory mutated files should be saved in>
-scope = Similarity
+scope = Selective
 type = <Type that is from RootOperatorType Enum>
 api_name =  <API used in mutations>
 className = <Name for generated classes>
@@ -188,7 +188,7 @@ lib4ast = C:/Users/Trevor Stalnaker/Documents/GitHub/CSci435-Fall21-MASC/masc-co
 appSrc = C:/Users/Trevor Stalnaker/Desktop/input/
 outputDir = C:/Users/Trevor Stalnaker/Desktop/output/
 scope = EXHAUSTIVE
-//EXHAUSTIVE, MAIN, SIMILARITY
+//EXHAUSTIVE, MAIN, SELECTIVE
 
 appName = MuseTest
 
@@ -210,7 +210,7 @@ lib4ast = C:/Users/Trevor Stalnaker/Documents/GitHub/CSci435-Fall21-MASC/masc-co
 appSrc = C:/Users/Trevor Stalnaker/Desktop/input/
 outputDir = C:/Users/Trevor Stalnaker/Desktop/output/
 scope = EXHAUSTIVE
-//EXHAUSTIVE, MAIN, SIMILARITY
+//EXHAUSTIVE, MAIN, SELECTIVE
 
 appName = MuseTest
 
@@ -227,7 +227,7 @@ lib4ast = C:/Users/Trevor Stalnaker/Documents/GitHub/CSci435-Fall21-MASC/masc-co
 appSrc = C:/Users/Trevor Stalnaker/Desktop/input/
 outputDir = C:/Users/Trevor Stalnaker/Desktop/output/
 scope = EXHAUSTIVE
-//EXHAUSTIVE, MAIN, SIMILARITY
+//EXHAUSTIVE, MAIN, SELECTIVE
 
 appName = MuseTest
 

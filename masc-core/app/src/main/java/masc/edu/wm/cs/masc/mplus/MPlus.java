@@ -50,8 +50,14 @@ public class MPlus {
             System.out.println("6. Multithread generation (true/false)");
             return;
         }
+//        String binariesFolder = "C:\\Users\\zaser\\Documents\\GitHub\\CSci435-Fall21-MASC\\MDroidPlus\\libs4ast";
+//        String rootPath = "C:\\Users\\zaser\\Documents\\inputFile";
+//        String appName = "MDroid";
+//        String mutantsFolder = "C:\\Users\\zaser\\Documents\\mdroidcrap";
+//        String operatorsDir = "C:\\Users\\zaser\\Documents\\GitHub\\CSci435-Fall21-MASC\\MDroidPlus\\src\\main\\java\\edu\\wm\\cs\\mplus";
+//        boolean multithread = true;
 
-        //Getting arguments
+                //Getting arguments
         String binariesFolder = args[0];
         String rootPath = args[1];
         String appName = args[2];

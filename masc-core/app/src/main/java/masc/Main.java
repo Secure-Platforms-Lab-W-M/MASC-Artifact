@@ -40,7 +40,7 @@ public class Main {
             runExhaustiveScope(reader);
         }
         // MDroid+
-        else if(scope.equals("SIMILARITY")){
+        else if(scope.equals("SELECTIVE")){
             runSelectiveScope(reader);
         }
         // MASC Barebones
