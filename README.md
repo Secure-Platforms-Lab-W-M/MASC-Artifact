@@ -1,4 +1,5 @@
 # MASC Artifact
+
 Welcome to the artifact of MASC (Paper Accepted in IEEE S&P 2022, to appear)
 
 ## Pre-print of the paper
@@ -8,6 +9,25 @@ https://www.adwaitnadkarni.com/pdf/ami-oakland22.pdf
 ## Online Appendix
 
 Additional details of our paper can be found in the [Online Appendix](Online_appendix.pdf) PDF File.
+
+## Citation
+
+```bib
+@inproceedings{masc-oakland'22,
+  title = {{Why Crypto-detectors Fail: A Systematic Evaluation of Cryptographic Misuse Detection Techniques}},
+  author = {Ami, {Amit Seal} and Cooper, Nathan and Kafle, Kaushal and Moran, Kevin and Poshyvanyk, Denys and Nadkarni, Adwait},
+  booktitle = {2022 IEEE Symposium on Security and Privacy (SP)},
+  year = {2022},
+  month = may,
+  sourcecode = {https://github.com/Secure-Platforms-Lab-W-M/masc-artifact},
+  pdf = {https://arxiv.org/pdf/2107.07065.pdf},
+  publisher = {IEEE Computer Society},
+  address = {Los Alamitos, CA, USA},
+  issn = {2375-1207},
+  pages = {397-414},
+  url = {https://doi.ieeecomputersociety.org/10.1109/SP46214.2022.00024}
+}
+```
 
 ## Artifact
 
@@ -59,3 +79,8 @@ However, the Coverity GUI configurations are included.
 `tools_and_scripts/script_descriptions.csv` contains descriptions each of the scripts included.
 
 **Note 2**: Any files/descriptions that refer to "reachability" is synonymous to "exhaustive". Similarly, we used "crysl" internally as synonymous to "cognicrypt".
+
+## Acknowledgement
+
+The authors have been supported in part by the NSF-1815336, NSF1815186 and NSF-1955853 grants; as well as COVA CCI Cyber Dissertation Fellowship.
+
