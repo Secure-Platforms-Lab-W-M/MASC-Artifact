@@ -23,7 +23,7 @@ import edu.wm.cs.masc.exhaustive.dataleak.support.Utility;
 import edu.wm.cs.masc.exhaustive.mdroid.ASTHelper;
 
 /*
- * We will be focusing on creating behavior based test cases. AAA pattern, i.e.
+ * We will be focusing on creating behavior based test cases. AAA pattern, i.e.,
  * Arrange the preconditions
  * Act on test Object
  * Assert the results
