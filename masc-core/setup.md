@@ -26,7 +26,8 @@ If all goes well, you will be asked if you want to trust the Gradle project.  Pr
 >Go to the navigation bar at the top of your screen. Click on IntelliJ IDEA and then select Prefrences or use the shortcut COMMAND, to get to Prefrences.
 
 ---
-On the left-hand side, click the 'Build, Execution, Deployment' drop-down.  From the sub-menu, select 'Build Tools' and then 'Gradle.'  In the right pane, at the bottom, you want to supply a Gradle JVM.  You can download one straight from Intelli J.  I am using and recommend corretto-15.  Hit Apply and OK.  Intelli J should automatically begin building your project.
+On the left-hand side, click the 'Build, Execution, Deployment' drop-down.  From the sub-menu, select 'Build Tools' and then 'Gradle.'  In the right pane, at the bottom, you want to supply a Gradle JVM.  You can download one straight from Intelli J. We use the most recent LTS version, which is JDK 11.  
+Hit Apply and OK.  Intelli J should automatically begin building your project.
 
 ## Running Masc-Core
 Open MASCBarebone.java.  It can be found at `masc-core > app > src > main > java > masc > edu.wm.cs.masc > barebone > MASCBarebone.java.`
