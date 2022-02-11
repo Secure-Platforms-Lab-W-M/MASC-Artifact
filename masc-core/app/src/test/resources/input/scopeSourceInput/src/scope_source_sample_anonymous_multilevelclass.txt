@@ -1,0 +1,35 @@
+package com.example.amit.helloworld.test;
+
+public class TestClass {
+    int methodA(){
+        return 1;
+    }
+    int methodB(){
+        return 2;
+    }
+    
+    Anonymous anonClass = new Anonymous() {
+   		public int methodC() {
+       		return 0;
+    	}
+	};
+	
+    class ChildClassLevelOne{
+        int methodConeA(){
+            return 1;
+        }
+        int methodCOneB(){
+            return 2;
+        }
+        class ChildClassLevelTwo{
+            int methodCTwoA(){
+                return 1;
+            }
+            int methodCTwoB(){
+                return 2;
+            }
+        }
+    }
+
+
+}

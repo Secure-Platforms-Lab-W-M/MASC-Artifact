@@ -1,0 +1,44 @@
+package com.example.amit.helloworld;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+enum Color 
+{ 
+    RED, GREEN, BLUE; 
+  
+    public static void methodA1() {
+    	 System.out.println(1); 
+    }
+} 
+
+public class MainActivity extends AppCompatActivity {
+    String dataLeAk2 = "";
+    
+    String dataLeAk1 = "";
+
+	String dataLeAk0 = "";
+    
+    int intA = 0;
+
+    int methodA2() {
+        return 1;
+    }
+
+    int intB = 0;
+
+    int methodB() {
+        return 0;
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        this.intA = 1;
+        this.methodA();
+        this.intB = 2;
+        this.methodB();
+        setContentView(R.layout.activity_main);
+    }
+}
