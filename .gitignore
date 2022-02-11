@@ -446,3 +446,5 @@ Muse/src/edu/wm/cs/muse/sample_config.properties
 Muse/test/output/output.txt
 Muse/src/edu/wm/cs/muse/sample_config.properties
 masc-core/app/src/test/resources/input/exhaustive/output/
+masc-web/.DS_Store
+.DS_Store
