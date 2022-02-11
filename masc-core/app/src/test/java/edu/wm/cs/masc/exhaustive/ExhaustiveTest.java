@@ -45,13 +45,13 @@ public class ExhaustiveTest {
     TextEdit edits;
     File processedOutput;
 
-    String rootPath = System.getProperty(
-            "user.dir") + "\\src\\test\\java\\mascDeprecated\\edu\\wm\\cs" +
-			"\\mascDeprecated\\muse\\";
-
-    String outputFilePath = rootPath + "output\\Hello.java";
-    String inputFilePath = rootPath + "input\\Hello.txt";
-    String expectedFilePath = rootPath + "expected\\Hello.txt";
+//    String rootPath = System.getProperty(
+//            "user.dir") + "\\src\\test\\java\\mascDeprecated\\edu\\wm\\cs" +
+//			"\\mascDeprecated\\muse\\";
+    String rootPath = "src/test/resources/input/exhaustive/";
+    String outputFilePath = rootPath + "output/Hello.java";
+    String inputFilePath = rootPath + "input/Hello.txt";
+    String expectedFilePath = rootPath + "expected/Hello.txt";
 
     // Muse output is written to this file in each test, and compared to the
 	// expected output.

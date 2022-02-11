@@ -34,6 +34,7 @@ public class ExhaustiveReachabilitySchemaTest {
         THIS, SUPER, ANONYMOUS, NULL
     }
 
+    String testFilesDirectory = "src/test/resources/input/";
     String content = null;
     CompilationUnit root;
     ASTRewrite rewriter;
@@ -253,8 +254,10 @@ public class ExhaustiveReachabilitySchemaTest {
         switch (component) {
             case STATICMETHOD:
                 content = FileUtility.readSourceFile(
-                                "test/input/taintSourceInput" +
-                                        "/taint_source_sample_static_method" +
+//                                "test/input/taintSourceInput/" +
+                                testFilesDirectory +
+                                        "/taintSourceInput/" +
+                                        "taint_source_sample_static_method" +
                                         ".txt")
                         .toString();
                 //content = FileUtility.readSourceFile
@@ -263,58 +266,72 @@ public class ExhaustiveReachabilitySchemaTest {
 
             case SWITCH:
                 content = FileUtility.readSourceFile(
-                                "test/input/taintSourceInput" +
-                                        "/taint_source_sample_switch.txt")
+//                                "test/input/taintSourceInput/" +
+                                testFilesDirectory +
+                                        "taintSourceInput/" +
+                                        "taint_source_sample_switch.txt")
                         .toString();
                 break;
 
             case SWITCHMETHOD:
                 content = FileUtility.readSourceFile(
-                                "test/input/taintSourceInput" +
-                                        "/taint_source_sample_switch_method" +
+//                                "test/input/taintSourceInput" +
+                                testFilesDirectory +
+                                        "taintSourceInput/" +
+                                        "taint_source_sample_switch_method" +
                                         ".txt")
                         .toString();
                 break;
 
             case TRY:
                 content = FileUtility.readSourceFile(
-                                "test/input/taintSourceInput" +
-                                        "/taint_source_sample_try.txt")
+//                                "test/input/taintSourceInput" +
+                                testFilesDirectory +
+                                        "taintSourceInput/" +
+                                        "taint_source_sample_try.txt")
                         .toString();
                 break;
 
             case TRYMETHOD:
                 content = FileUtility.readSourceFile(
-                                "test/input/taintSourceInput" +
-                                        "/taint_source_sample_try_method.txt")
+//                                "test/input/taintSourceInput" +
+                                testFilesDirectory +
+                                        "taintSourceInput/" +
+                                        "taint_source_sample_try_method.txt")
                         .toString();
                 break;
 
             case INTERFACE:
                 content = FileUtility.readSourceFile(
-                                "test/input/taintSourceInput" +
-                                        "/taint_source_sample_interface.txt")
+//                                "test/input/taintSourceInput" +
+                                testFilesDirectory +
+                                        "taintSourceInput/" +
+                                        "taint_source_sample_interface.txt")
                         .toString();
                 break;
 
             case THIS:
                 content = FileUtility.readSourceFile(
-                                "test/input/taintSourceInput" +
+//                                "test/input/taintSourceInput" +
+                                testFilesDirectory +
+                                        "taintSourceInput/" +
                                         "/taint_source_sample_this.txt")
                         .toString();
                 break;
 
             case SUPER:
                 content = FileUtility.readSourceFile(
-                                "test/input/taintSourceInput" +
-                                        "/taint_source_sample_super.txt")
+                                testFilesDirectory +
+                                        "taintSourceInput/" +
+                                        "taint_source_sample_super.txt")
                         .toString();
                 break;
 
             case ANONYMOUS:
                 content = FileUtility.readSourceFile(
-                                "test/input/taintSourceInput" +
-                                        "/taint_source_sample_anonymous.txt")
+                                testFilesDirectory +
+                                        "taintSourceInput/" +
+                                        "taint_source_sample_anonymous.txt")
                         .toString();
                 break;
 
