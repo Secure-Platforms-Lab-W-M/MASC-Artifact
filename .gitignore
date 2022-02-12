@@ -1,4 +1,4 @@
-
+*.DS_Store*
 masc-core/caches/6.8.1/executionHistory/executionHistory.lock
 masc-core/caches/6.8.1/file-changes/last-build.bin
 masc-core/caches/6.8.1/fileContent/fileContent.lock
