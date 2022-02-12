@@ -43,9 +43,7 @@ public class ExhaustiveReachabilitySchemaTest {
     ReachabilitySchema reachabilitySchema;
 
     /*
-     * There is currently not defined behavior for static classes. This test
-     * will need
-     * updating when a behavior is defined.
+     * This test will need updating when a behavior is defined.
      */
     @Test
     public void reachability_operation_on_hello_world_static()
