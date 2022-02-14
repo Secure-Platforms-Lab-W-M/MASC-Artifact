@@ -4,7 +4,7 @@ Welcome to the artifact of MASC (Paper Accepted in IEEE S&P 2022, to appear)
 
 ## Pre-print of the paper
 
-https://www.adwaitnadkarni.com/pdf/ami-oakland22.pdf
+https://arxiv.org/pdf/2107.07065.pdf
 
 ## Online Appendix
 
