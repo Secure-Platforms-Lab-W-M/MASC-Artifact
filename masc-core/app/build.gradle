@@ -1,12 +1,11 @@
 /*
 Gradle file for MASC
-
 */
 
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
-
+    id 'idea'
 }
 
 if (hasProperty('buildScan')) {
@@ -19,17 +18,31 @@ if (hasProperty('buildScan')) {
 //for java, automatically sets targetCompatibility as well.
 sourceCompatibility = 1.11
 
-
 repositories {
     // Use JCenter for resolving dependencies.
     mavenCentral()
 }
 
+// configuration for IntelliJ Idea
+idea {
+    module {
+        //excludes the following directories
+        excludeDirs += file('src/main/resources/input')
+        excludeDirs += file('src/main/resources/output')
+        excludeDirs += file('build')
+        excludeDirs += file('outputs')
+    }
+}
+
+clean {
+    delete "outputs"
+}
+
 dependencies {
-    // Use JUnit test framework.
+    // Use JUnit test framework
     testImplementation 'junit:junit:4.13'
 
-    // This dependency is used by the application.
+    // This dependency is used by the application
     implementation 'com.google.guava:guava:29.0-jre'
     implementation 'com.squareup:javapoet:1.12.0'
     implementation 'org.apache.commons:commons-configuration2:2.6'
@@ -37,7 +50,7 @@ dependencies {
     implementation group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.3'
     implementation group: 'commons-io', name: 'commons-io', version: '2.6'
     implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.1'
-    implementation group: 'com.google.code.maven-play-plugin.org.eclipse.jdt', name:'org.eclipse.jdt.core', version:'3.10.0.v20140604-1726'
+    implementation group: 'com.google.code.maven-play-plugin.org.eclipse.jdt', name: 'org.eclipse.jdt.core', version: '3.10.0.v20140604-1726'
     implementation group: 'org.apache.directory.studio', name: 'org.apache.commons.io', version: '2.4'
     implementation group: 'org.eclipse.core', name: 'contenttype', version: '3.4.200-v20140207-1251'
     implementation group: 'commons-io', name: 'commons-io', version: '2.4'
@@ -65,5 +78,5 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'mascDeprecated.edu.wm.cs.mascDeprecated.mainScope.MASCBarebone'
+    mainClass = 'edu.wm.cs.masc.MASC'
 }
