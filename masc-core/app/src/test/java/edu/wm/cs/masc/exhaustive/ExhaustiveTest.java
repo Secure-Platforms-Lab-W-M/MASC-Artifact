@@ -97,8 +97,8 @@ public class ExhaustiveTest {
         Arguments.setTestMode(true);
         rewriter = ASTRewrite.create(root.getAST());
         sourceDoc = new Document(content);
-        MuseRunner.operatorExecution(root, rewriter, sourceDoc.get(), output,
-                "System.out.println(\"This is a mutation\");");
+        MuseRunner.operatorExecution(root, rewriter, sourceDoc.get(), output);
+//                "System.out.println(\"This is a mutation\");");
         processedOutput = output;
     }
 

@@ -34,18 +34,18 @@ public class MASC {
     public static void runMain(String path) throws ConfigurationException, IOException, BadLocationException {
 
         PropertiesReader reader = new PropertiesReader(path);
-        String scope = reader.getValueForAKey("scope").toUpperCase();
+        String scope = reader.getValueForAKey("scope");
 
-        // Muse
-        if (scope.equals("EXHAUSTIVE")){
+        // MASC Exhaustive Layer
+        if (scope.equalsIgnoreCase("EXHAUSTIVE")){
             runExhaustiveScope(reader);
         }
-        // MDroid+
-        else if(scope.equals("SELECTIVE")){
+        // MASC Selective Layer
+        else if(scope.equalsIgnoreCase("SELECTIVE")){
             runSelectiveScope(reader);
         }
-        // MASC Barebones
-        else if(scope.equals("MAIN")){
+        // MASC MainScope
+        else if(scope.equalsIgnoreCase("MAIN")){
             runMainScope(reader, path);
         }
         else{
@@ -69,12 +69,13 @@ public class MASC {
 
     public static void runExhaustiveScope(PropertiesReader reader) throws ConfigurationException,
             IOException, BadLocationException {
-        StringOperatorProperties p = new StringOperatorProperties(
-                "Cipher.properties");
-        StringOperatorMutationMaker m = new StringOperatorMutationMaker(p);
+//        StringOperatorProperties p = new StringOperatorProperties(
+//                "Cipher.properties");
+//        StringOperatorMutationMaker mutationMaker = new StringOperatorMutationMaker(p);
         MuseRunner.setUpMuse(reader);
-        m.populateOperators();
-        MuseRunner.runMuse(m.operators);
+//        mutationMaker.populateOperators();
+//        MuseRunner.runMuse(mutationMaker.operators);
+        MuseRunner.runMuse();
     }
 
     public static void runMainScope(PropertiesReader reader, String path) throws ConfigurationException {
