@@ -1,4 +1,3 @@
-
 package edu.wm.cs.masc.exhaustive.input;
 
 class Hello{
