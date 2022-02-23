@@ -54,7 +54,7 @@ public class ExhaustiveReachabilitySchemaTest {
         ArrayList<ReachabilityNodeChangeContainers> reachabilityChanges =
                 reachabilitySchema.getNodeChanges();
 
-        assertEquals(4, reachabilityChanges.size());
+        assertEquals(3, reachabilityChanges.size());
 
 
     }
@@ -64,7 +64,7 @@ public class ExhaustiveReachabilitySchemaTest {
      * <p>
      * Method under test: visit
      * <p>
-     * Correct Behavior: 5 changes should be found in
+     * Correct Behavior: 4 changes should be found in
      * ReahcabilityNodeChangeContainers
      */
     @Test
@@ -76,7 +76,7 @@ public class ExhaustiveReachabilitySchemaTest {
         ArrayList<ReachabilityNodeChangeContainers> reachabilityChanges =
                 reachabilitySchema.getNodeChanges();
 
-        assertEquals(5, reachabilityChanges.size());
+        assertEquals(4, reachabilityChanges.size());
 
 
     }
@@ -86,7 +86,7 @@ public class ExhaustiveReachabilitySchemaTest {
      * <p>
      * Method under test: visit
      * <p>
-     * Correct Behavior: 6 changes should be found in
+     * Correct Behavior: 5 changes should be found in
      * ReachabilityNodeChangeContainer
      */
     @Test
@@ -98,7 +98,7 @@ public class ExhaustiveReachabilitySchemaTest {
         ArrayList<ReachabilityNodeChangeContainers> reachabilityChanges =
                 reachabilitySchema.getNodeChanges();
 
-        assertEquals(6, reachabilityChanges.size());
+        assertEquals(5, reachabilityChanges.size());
 
 
     }
@@ -108,7 +108,7 @@ public class ExhaustiveReachabilitySchemaTest {
      * <p>
      * Method under test: visit
      * <p>
-     * Correct behavior:  7 changes should be found in
+     * Correct behavior:  6 changes should be found in
      * ReachabilityNodeChangeContainer
      */
     @Test
@@ -120,7 +120,7 @@ public class ExhaustiveReachabilitySchemaTest {
         ArrayList<ReachabilityNodeChangeContainers> reachabilityChanges =
                 reachabilitySchema.getNodeChanges();
 
-        assertEquals(7, reachabilityChanges.size());
+        assertEquals(6, reachabilityChanges.size());
 
 
     }
@@ -131,7 +131,7 @@ public class ExhaustiveReachabilitySchemaTest {
      * <p>
      * Method under test: visit method
      * <p>
-     * Correct Behavior: 8 changes should be found in
+     * Correct Behavior: 7 changes should be found in
      * ReachabilityNodeChangeContainer
      */
     @Test
@@ -143,7 +143,7 @@ public class ExhaustiveReachabilitySchemaTest {
         ArrayList<ReachabilityNodeChangeContainers> reachabilityChanges =
                 reachabilitySchema.getNodeChanges();
 
-        assertEquals(8, reachabilityChanges.size());
+        assertEquals(7, reachabilityChanges.size());
 
 
     }
@@ -153,7 +153,7 @@ public class ExhaustiveReachabilitySchemaTest {
      * <p>
      * Method under test: visit
      * <p>
-     * Correct Behavior: 3 changes should be found in
+     * Correct Behavior: 2 changes should be found in
      * ReachabilityNodeChangeContainers
      */
     @Test
@@ -165,7 +165,7 @@ public class ExhaustiveReachabilitySchemaTest {
         ArrayList<ReachabilityNodeChangeContainers> reachabilityChanges =
                 reachabilitySchema.getNodeChanges();
 
-        assertEquals(3, reachabilityChanges.size());
+        assertEquals(2, reachabilityChanges.size());
 
 
     }
@@ -176,7 +176,7 @@ public class ExhaustiveReachabilitySchemaTest {
      * <p>
      * Method under test: visit
      * <p>
-     * Correct Behavior: 4 changes should be found in
+     * Correct Behavior: 3 changes should be found in
      * ReachabilityNodeChangeContainers
      */
     @Test
@@ -187,7 +187,7 @@ public class ExhaustiveReachabilitySchemaTest {
         ArrayList<ReachabilityNodeChangeContainers> reachabilityChanges =
                 reachabilitySchema.getNodeChanges();
 
-        assertEquals(4, reachabilityChanges.size());
+        assertEquals(3, reachabilityChanges.size());
 
 
     }
@@ -198,7 +198,7 @@ public class ExhaustiveReachabilitySchemaTest {
      * <p>
      * Method under test: visit
      * <p>
-     * Correct Behavior: 4 changes should be found in
+     * Correct Behavior: 3 changes should be found in
      * ReachabilityNodeChangeContainers
      */
     @Test
@@ -210,7 +210,7 @@ public class ExhaustiveReachabilitySchemaTest {
         ArrayList<ReachabilityNodeChangeContainers> reachabilityChanges =
                 reachabilitySchema.getNodeChanges();
 
-        assertEquals(4, reachabilityChanges.size());
+        assertEquals(3, reachabilityChanges.size());
 
 
     }
@@ -220,7 +220,7 @@ public class ExhaustiveReachabilitySchemaTest {
      * <p>
      * Method under test: visit
      * <p>
-     * Correct Behavior: 6 changes should be found in
+     * Correct Behavior: 5 changes should be found in
      * ReachabilityNodeChangeContainers
      */
     @Test
@@ -232,7 +232,7 @@ public class ExhaustiveReachabilitySchemaTest {
         ArrayList<ReachabilityNodeChangeContainers> reachabilityChanges =
                 reachabilitySchema.getNodeChanges();
 
-        assertEquals(6, reachabilityChanges.size());
+        assertEquals(4, reachabilityChanges.size());
 
 
     }
