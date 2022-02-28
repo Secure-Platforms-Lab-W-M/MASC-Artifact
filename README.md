@@ -15,20 +15,20 @@ Additional details of our paper can be found in the [Online Appendix](Online_app
 
 ## Citation
 
-```bib
-@inproceedings{masc-oakland'22,
-  title = {{Why Crypto-detectors Fail: A Systematic Evaluation of Cryptographic Misuse Detection Techniques}},
-  author = {Ami, {Amit Seal} and Cooper, Nathan and Kafle, Kaushal and Moran, Kevin and Poshyvanyk, Denys and Nadkarni, Adwait},
-  booktitle = {2022 IEEE Symposium on Security and Privacy (SP)},
-  year = {2022},
-  month = may,
+```tex
+@InProceedings{masc-oakland22,
+  author     = {Ami, {Amit Seal} and Cooper, Nathan and Kafle, Kaushal and Moran, Kevin and Poshyvanyk, Denys and Nadkarni, Adwait},
+  booktitle  = {2022 IEEE Symposium on Security and Privacy (S&P)},
+  title      = {{Why Crypto-detectors Fail: A Systematic Evaluation of Cryptographic Misuse Detection Techniques}},
+  year       = {2022},
+  address    = {Los Alamitos, CA, USA},
+  month      = may,
+  pages      = {397--414},
+  publisher  = {IEEE Computer Society},
+  issn       = {2375-1207},
+  pdf        = {https://arxiv.org/pdf/2107.07065.pdf},
   sourcecode = {https://github.com/Secure-Platforms-Lab-W-M/masc-artifact},
-  pdf = {https://arxiv.org/pdf/2107.07065.pdf},
-  publisher = {IEEE Computer Society},
-  address = {Los Alamitos, CA, USA},
-  issn = {2375-1207},
-  pages = {397-414},
-  url = {https://doi.ieeecomputersociety.org/10.1109/SP46214.2022.00024}
+  url        = {https://doi.ieeecomputersociety.org/10.1109/SP46214.2022.00024},
 }
 ```
 
