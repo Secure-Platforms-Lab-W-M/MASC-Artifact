@@ -1,6 +1,6 @@
 # MASC Artifact
 
-Welcome to the artifact of MASC (Paper Accepted in IEEE S&P 2022, to appear)
+Welcome to the artifact of the paper _Why Crypto-detectors Fail_: A Systematic Evaluation of Cryptographic Misuse Detection Techniques. It contains the source code, apps used for mutation, result logs of the **M**utation **A**nalysis for evaluating **S**tatic **C**rypto-API misuse detectors (MASC) framework as well as an online appendix. The paper has been accepted in [IEEE S&P 2022](https://www.ieee-security.org/TC/SP2022/) (to appear); and a poster in [NDSS'22](https://www.ndss-symposium.org/ndss2022/)!
 
 ## Pre-print of the paper
 
@@ -82,5 +82,5 @@ However, the Coverity GUI configurations are included.
 
 ## Acknowledgement
 
-The authors have been supported in part by the NSF-1815336, NSF1815186 and NSF-1955853 grants; as well as COVA CCI Cyber Dissertation Fellowship.
+The authors have been supported in part by the NSF-1815336, NSF1815186 and NSF-1955853 grants; as well as [COVA CCI](https://covacci.org/) Cybersecurity Dissertation Fellowship.
 
