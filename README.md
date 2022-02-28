@@ -1,6 +1,6 @@
 # MASC Artifact
 
-Welcome to the artifact of the paper _Why Crypto-detectors Fail_: A Systematic Evaluation of Cryptographic Misuse Detection Techniques. It contains the source code, apps used for mutation, result logs of the **M**utation **A**nalysis for evaluating **S**tatic **C**rypto-API misuse detectors (MASC) framework as well as an online appendix. The paper has been accepted in [IEEE S&P 2022](https://www.ieee-security.org/TC/SP2022/) (to appear); and a poster in [NDSS'22](https://www.ndss-symposium.org/ndss2022/)!
+Welcome to the artifact of the paper _Why Crypto-detectors Fail_: A Systematic Evaluation of Cryptographic Misuse Detection Techniques. It contains the source code, apps used for mutation, result logs of the **M**utation **A**nalysis for evaluating **S**tatic **C**rypto-API misuse detectors (MASC) framework as well as an online appendix. The paper has been accepted in [IEEE S&P 2022](https://www.ieee-security.org/TC/SP2022/) (to appear); and as a poster in [NDSS'22](https://www.ndss-symposium.org/ndss2022/)!
 
 ![](framework-only-colored.png)
 
