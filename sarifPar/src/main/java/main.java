@@ -53,6 +53,9 @@ class main {
         ArrayList afterMessages = extractResult(after,"message");
         ArrayList beforeLocations = extractResult(before,"locations");
         ArrayList afterLocations = extractResult(after,"locations");
+
+        beforeMessages = removeLineNumbers(beforeMessages);
+        afterMessages = removeLineNumbers(afterMessages);
         System.out.println("Before Loop (After):");
         for (int i = 0; i < afterMessages.size(); i++){
               System.out.println(afterMessages.get(i));
@@ -84,6 +87,41 @@ class main {
 
         //System.out.println(beforeMessages.get(0).toString().equals(afterMessages.get(0).toString()));
         //System.out.println(afterMessages);
+    }
+
+    //Gets the relevant text of the message that does not include line numbers since these change
+    static ArrayList removeLineNumbers(ArrayList messages){
+        ArrayList cleanMessages = new ArrayList();
+        for(int i = 0; i < messages.size(); i++){
+            String currMessage = messages.get(i).toString();
+            StringBuilder sb = new StringBuilder(currMessage);
+            ArrayList startIndex = new ArrayList();
+            ArrayList endIndex = new ArrayList();
+            for (int j = 0; j < currMessage.length(); j++){
+                if (currMessage.charAt(j) == '['){
+                    startIndex.add(j);
+
+                }
+                if (currMessage.charAt(j) == ']'){
+                    endIndex.add(j);
+
+                }
+
+            }
+            for (int j = startIndex.size()-1; j > -1; j--){
+                //int index = (int)endIndex.get(j) - (int)startIndex.get(j);
+                //System.out.println(index);
+                for (int k = (int) startIndex.get(j); k < (int)endIndex.get(j)+1; k++ ){
+                    sb.deleteCharAt((int)startIndex.get(j));
+                    currMessage = sb.toString();
+
+                }
+
+
+            }
+            cleanMessages.add(currMessage);
+        }
+        return cleanMessages;
     }
 
     static ArrayList extractResult(JSONArray results, String key){
