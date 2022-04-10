@@ -15,9 +15,10 @@ import java.io.IOException;
 class main {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         //System.out.println("Hello World!"); // Display the string.
-        JSONArray beforeMutation = getResult("/Users/scottmarsden/Documents/reports/class-report.sarif");
+        JSONArray beforeMutation = getResult("/Users/scottmarsden/Documents/reports/source-java-report.sarif");
         JSONArray afterMutation = getResult("/Users/scottmarsden/Documents/reports/class-report.sarif");
-        compareResult(beforeMutation,afterMutation);
+        ArrayList caughtMutations = compareResult(beforeMutation,afterMutation);
+        findMutation("main(String)",1,caughtMutations);
     }
 
 
@@ -47,12 +48,12 @@ class main {
 
     }
 
-    static void compareResult(JSONArray before, JSONArray after){
+    static ArrayList compareResult(JSONArray before, JSONArray after){
         //Bug in message. In the actual program the line numbers may differ
         ArrayList beforeMessages = extractResult(before,"message");
         ArrayList afterMessages = extractResult(after,"message");
-        ArrayList beforeLocations = extractResult(before,"locations");
-        ArrayList afterLocations = extractResult(after,"locations");
+        //ArrayList beforeLocations = extractResult(before,"locations");
+        //ArrayList afterLocations = extractResult(after,"locations");
 
         beforeMessages = removeLineNumbers(beforeMessages);
         afterMessages = removeLineNumbers(afterMessages);
@@ -84,7 +85,7 @@ class main {
         for (int i = 0; i < afterMessages.size(); i++){
             System.out.println(afterMessages.get(i));
         }
-
+        return afterMessages;
         //System.out.println(beforeMessages.get(0).toString().equals(afterMessages.get(0).toString()));
         //System.out.println(afterMessages);
     }
@@ -153,5 +154,27 @@ class main {
             }
         }
         return list;
+    }
+
+    static void findMutation(String mutationType,int mutationNumber, ArrayList results){
+        int mutCount = 0;
+        boolean found = false;
+        for (int i = 0; i < results.size(); i++){
+
+            if(results.get(i).toString().contains(mutationType)){
+                mutCount = mutCount + 1;
+                found = true;
+
+            }
+        }
+
+        if (found){
+
+                System.out.println("Mutation Found");
+                System.out.println("Number of Mutation Found: " + mutCount + "/" + mutationNumber + " times");
+        }
+        else{
+            System.out.println("Mutation Not Found");
+        }
     }
 }
