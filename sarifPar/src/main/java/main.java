@@ -19,6 +19,7 @@ class main {
         JSONArray afterMutation = getResult("/Users/scottmarsden/Documents/reports/class-report.sarif");
         ArrayList caughtMutations = compareResult(beforeMutation,afterMutation);
         findMutation("main(String)",1,caughtMutations);
+        dataFlowAnalysis("/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/app/src/main/resources/Cipher.properties");
     }
 
 
@@ -155,8 +156,110 @@ class main {
         }
         return list;
     }
+    static void dataFlowAnalysis(String propertiesFile) throws FileNotFoundException{
+        File file = new File(propertiesFile);
+        Scanner scnr = new Scanner(file);
+        String outputDirectory = "";
+        String type = "";
+        while (scnr.hasNext()){
+            String line = scnr.nextLine();
 
-    static void findMutation(String mutationType,int mutationNumber, ArrayList results){
+            if (line.contains("type") == true){
+
+                type = line;
+            }
+            if (line.contains("outputDir") == true){
+                outputDirectory = line;
+            }
+        }
+        //System.out.println(type);
+        //System.out.println(outputDirectory);
+        outputDirectory = outputDirectory.substring(12);
+        if (type.contains("StringOperator")){
+            stringFlowAnalysis(outputDirectory);
+
+        }
+
+
+    }
+    //Can be changed to create an array of files instead and utilize looping
+    //Performs analysis on the String type operator
+    static void stringFlowAnalysis(String outputDir) throws FileNotFoundException{
+        //Documents⁩ ▸ ⁨GitHub⁩ ▸ ⁨MASC-Spring21-635⁩ ▸ ⁨masc-core⁩ ▸ ⁨app⁩ ▸ ⁨outputs⁩
+        //Need to move sarifParse into Masc-core so just the output directory can be used as a relative file path
+        String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
+        File stringDifferentCase = new File(fullPath + "/StringDifferentCase/CryptoTest.java");
+        File stringNoiseReplace = new File(fullPath + "/StringNoiseReplace/CryptoTest.java");
+        File stringSafeReplaceWithUnsafe = new File(fullPath + "/StringSafeReplaceWithUnsafe/CryptoTest.java");
+        File stringCaseTransform = new File(fullPath + "/StringStringCaseTransform/CryptoTest.java");
+        File stringUnsafeReplaceWithUnsafe = new File(fullPath + "/StringUnsafeReplaceWithUnsafe/CryptoTest.java");
+        File stringValueInVariable = new File(fullPath + "/StringValueInVariable/CryptoTest.java");
+        //Scanner scnr = new Scanner(stringDifferentCase);
+
+        //Creates array of extracted mutant code
+        ArrayList mutationLevels = new ArrayList();
+        mutationLevels.add(getJavaMutant(stringDifferentCase));
+        mutationLevels.add(getJavaMutant(stringNoiseReplace));
+        mutationLevels.add(getJavaMutant(stringSafeReplaceWithUnsafe));
+        mutationLevels.add(getJavaMutant(stringCaseTransform));
+        mutationLevels.add(getJavaMutant(stringUnsafeReplaceWithUnsafe));
+        mutationLevels.add(getJavaMutant(stringValueInVariable));
+        //System.out.println(getJavaMutant(stringDifferentCase));
+        //String stringDiffCaseMutant = getJavaMutant(stringDifferentCase)
+        //String stringNoiseReplaceMutant = getJavaMutant(stringNoiseReplace);
+        //String stringSafeReplaceWithUnsafeMutant = getJavaMutant(stringSafeReplaceWithUnsafe);
+        //String stringCaseTransformMutant = getJavaMutant(stringCaseTransform);
+        //String stringUnsafeReplaceWithUnsafeMutant = getJavaMutant(stringUnsafeReplaceWithUnsafe);
+        //String stringValueInVariableMutant = getJavaMutant(stringValueInVariable);
+
+
+        //Place holder variable for testing. Will populate function with actual results
+        //Will be array list of results. Each index containing the sarif results
+        ArrayList stringResults = new ArrayList(6);
+        ArrayList blah = new ArrayList();
+        stringResults.add(blah);
+        stringResults.add(blah);
+        stringResults.add(blah);
+        stringResults.add(blah);
+        stringResults.add(blah);
+        stringResults.add(blah);
+        stringResults.add(blah);
+
+        //Compares levels of mutations starting with most basic
+        //Once it fails the program stops analysis
+        //Can be updated to make the call to the crypto api detector 
+        for (int i = 0; i < mutationLevels.size(); i++){
+            //System.out.println(mutationLevels.get(i));
+            if (findMutation(mutationLevels.get(i).toString(),1,(ArrayList) stringResults.get(0)) == false){
+                System.out.println("Failed at level: " + i);
+                System.out.println("Mutation: " + mutationLevels.get(i));
+                break;
+            }
+            else{
+                System.out.println("Found Mutation Level: " + i);
+                System.out.println("Mutation: " + mutationLevels.get(i));
+            }
+        }
+
+    }
+    //Can be changed to handle multiple mutations in a file
+    //Currently Only looks for one mutant
+    static String getJavaMutant(File javafile) throws FileNotFoundException{
+        String mutant = "";
+        Scanner scnr = new Scanner(javafile);
+        while (scnr.hasNext()){
+            String line = scnr.nextLine();
+            //System.out.println(line);
+            if (line.contains("javax.crypto.Cipher") == true){
+                mutant = line;
+                break;
+            }
+        }
+
+        return mutant;
+    }
+    //Look at MDROID and see the operators and enum approach 
+    static Boolean findMutation(String mutationType,int mutationNumber, ArrayList results){
         int mutCount = 0;
         boolean found = false;
         for (int i = 0; i < results.size(); i++){
@@ -172,9 +275,11 @@ class main {
 
                 System.out.println("Mutation Found");
                 System.out.println("Number of Mutation Found: " + mutCount + "/" + mutationNumber + " times");
+                return true;
         }
         else{
             System.out.println("Mutation Not Found");
+            return false;
         }
     }
 }
