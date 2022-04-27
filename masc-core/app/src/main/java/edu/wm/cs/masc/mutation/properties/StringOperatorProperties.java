@@ -15,7 +15,7 @@ public class StringOperatorProperties extends AOperatorProperties {
         super(path);
         invocation = reader.getValueForAKey("invocation");
 
-//        Note: insecureObjectName to be used by injectInsecureObject.java
+//        Note: insecureObjectName to be used by InjectInsecureObject.java
         insecureObjectName = reader.getValueForAKey("insecureObjectName");
 
 //        secureAPIName = reader.getValueForAKey("secureAPIName");

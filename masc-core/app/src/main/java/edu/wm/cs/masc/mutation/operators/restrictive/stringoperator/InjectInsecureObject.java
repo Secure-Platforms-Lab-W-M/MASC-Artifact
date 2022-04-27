@@ -2,9 +2,9 @@ package edu.wm.cs.masc.mutation.operators.restrictive.stringoperator;
 
 import edu.wm.cs.masc.mutation.properties.StringOperatorProperties;
 
-    public class injectInsecureObject extends AStringOperator {
+    public class InjectInsecureObject extends AStringOperator {
 
-        public injectInsecureObject(StringOperatorProperties properties) {
+        public InjectInsecureObject(StringOperatorProperties properties) {
             super(properties);
         }
 
@@ -18,7 +18,8 @@ import edu.wm.cs.masc.mutation.properties.StringOperatorProperties;
                     .append("=")
                     .append(" ")
                     .append("insecureObjectName")
-                    .append("()");
+                    .append("()")
+                    .append(";");
 
 
 //        Note: quick question: why do we not just build the insecure?
