@@ -14,12 +14,19 @@ import java.io.IOException;
 
 class main {
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        //System.out.println("Hello World!"); // Display the string.
-        JSONArray beforeMutation = getResult("/Users/scottmarsden/Documents/reports/source-java-report.sarif");
-        JSONArray afterMutation = getResult("/Users/scottmarsden/Documents/reports/class-report.sarif");
+
+        if  (args.length != 4){
+            System.out.println("Please Provide: SARIF files, properties file, and file path to MASC");
+        }
+        //"/Users/scottmarsden/Documents/reports/source-java-report.sarif"
+        //"/Users/scottmarsden/Documents/reports/class-report.sarif"
+        JSONArray beforeMutation = getResult(args[0]);
+        JSONArray afterMutation = getResult(args[1]);
         ArrayList caughtMutations = compareResult(beforeMutation,afterMutation);
-        findMutation("main(String)",1,caughtMutations);
-        dataFlowAnalysis("/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/app/src/main/resources/Cipher.properties");
+        //System.out.println(caughtMutations);
+        //findMutation("main(String)",1,caughtMutations);
+        dataFlowAnalysis(args[2]);
+        //"/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/app/src/main/resources/Cipher.properties"
     }
 
 
@@ -32,17 +39,7 @@ class main {
         JSONArray runs = (JSONArray) sarif.get("runs");
         JSONObject extract = runs.getJSONObject(0);
         JSONArray results = extract.getJSONArray("results");
-        //JSONArray result = (JSONArray) runs.get("result");
-        //JSONObject results = (JSONObject) runs.("results");
-        //System.out.println(runs.get(0));
-        //for (int i = 0; i < results.length(); i++){
-          //  System.out.println(results.get(i));
-        //}
 
-        //System.out.println(results.getJSONObject(0));
-        //JSONObject result0 = results.getJSONObject(0);
-        //System.out.println(result0.get("locations"));
-        //System.out.println(result0.get("message"));
         return results;
 
 
@@ -58,10 +55,10 @@ class main {
 
         beforeMessages = removeLineNumbers(beforeMessages);
         afterMessages = removeLineNumbers(afterMessages);
-        System.out.println("Before Loop (After):");
-        for (int i = 0; i < afterMessages.size(); i++){
-              System.out.println(afterMessages.get(i));
-        }
+        //System.out.println("Before Loop (After):");
+        //for (int i = 0; i < afterMessages.size(); i++){
+        //      System.out.println(afterMessages.get(i));
+        //}
         //System.out.println(beforeMessages);
         for(int i = 0; i < beforeMessages.size(); i++){
             for (int j = 0; j < afterMessages.size(); j++){
@@ -78,14 +75,14 @@ class main {
         }
         beforeMessages = clean(beforeMessages);
         afterMessages = clean(afterMessages);
-        System.out.println("After Loop (Before):");
+        /*System.out.println("After Loop (Before):");
         for (int i = 0; i < beforeMessages.size(); i++){
             System.out.println(beforeMessages.get(i));
         }
         System.out.println("After Loop 2 (After):");
         for (int i = 0; i < afterMessages.size(); i++){
             System.out.println(afterMessages.get(i));
-        }
+        } */
         return afterMessages;
         //System.out.println(beforeMessages.get(0).toString().equals(afterMessages.get(0).toString()));
         //System.out.println(afterMessages);
@@ -156,14 +153,26 @@ class main {
         }
         return list;
     }
+
+    //Currently designed with MAIN scope in mind
     static void dataFlowAnalysis(String propertiesFile) throws FileNotFoundException{
         File file = new File(propertiesFile);
         Scanner scnr = new Scanner(file);
         String outputDirectory = "";
         String type = "";
+        String className = "";
+        String apiName = "";
         while (scnr.hasNext()){
             String line = scnr.nextLine();
 
+            if (line.contains("apiName") == true){
+
+                apiName = line;
+            }
+            if (line.contains("className") == true){
+
+                className = line;
+            }
             if (line.contains("type") == true){
 
                 type = line;
@@ -172,11 +181,24 @@ class main {
                 outputDirectory = line;
             }
         }
-        //System.out.println(type);
-        //System.out.println(outputDirectory);
+
         outputDirectory = outputDirectory.substring(12);
+        apiName = apiName.substring(10);
+        className = className.substring(12);
         if (type.contains("StringOperator")){
-            stringFlowAnalysis(outputDirectory);
+            stringFlowAnalysis(outputDirectory, apiName, className);
+
+        }
+        if (type.contains("IntOperator")){
+            intFlowAnalysis(outputDirectory, apiName, className);
+
+        }
+        if (type.contains("Interproc")){
+            intFlowAnalysis(outputDirectory, apiName, className);
+
+        }
+        if (type.contains("ByteOperator")){
+            intFlowAnalysis(outputDirectory, apiName, className);
 
         }
 
@@ -184,33 +206,28 @@ class main {
     }
     //Can be changed to create an array of files instead and utilize looping
     //Performs analysis on the String type operator
-    static void stringFlowAnalysis(String outputDir) throws FileNotFoundException{
+
+    static void stringFlowAnalysis(String outputDir, String apiName, String className) throws FileNotFoundException{
         //Documents⁩ ▸ ⁨GitHub⁩ ▸ ⁨MASC-Spring21-635⁩ ▸ ⁨masc-core⁩ ▸ ⁨app⁩ ▸ ⁨outputs⁩
         //Need to move sarifParse into Masc-core so just the output directory can be used as a relative file path
         String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
-        File stringDifferentCase = new File(fullPath + "/StringDifferentCase/CryptoTest.java");
-        File stringNoiseReplace = new File(fullPath + "/StringNoiseReplace/CryptoTest.java");
-        File stringSafeReplaceWithUnsafe = new File(fullPath + "/StringSafeReplaceWithUnsafe/CryptoTest.java");
-        File stringCaseTransform = new File(fullPath + "/StringStringCaseTransform/CryptoTest.java");
-        File stringUnsafeReplaceWithUnsafe = new File(fullPath + "/StringUnsafeReplaceWithUnsafe/CryptoTest.java");
-        File stringValueInVariable = new File(fullPath + "/StringValueInVariable/CryptoTest.java");
+        File stringDifferentCase = new File(fullPath + "/StringDifferentCase/" + className.toString() + ".java");
+        File stringNoiseReplace = new File(fullPath + "/StringNoiseReplace/" +  className + ".java");
+        File stringSafeReplaceWithUnsafe = new File(fullPath + "/StringSafeReplaceWithUnsafe/" + className + ".java");
+        File stringCaseTransform = new File(fullPath + "/StringStringCaseTransform/" + className + ".java");
+        File stringUnsafeReplaceWithUnsafe = new File(fullPath + "/StringUnsafeReplaceWithUnsafe/" + className + ".java");
+        File stringValueInVariable = new File(fullPath + "/StringValueInVariable/" + className + ".java");
         //Scanner scnr = new Scanner(stringDifferentCase);
 
         //Creates array of extracted mutant code
         ArrayList mutationLevels = new ArrayList();
-        mutationLevels.add(getJavaMutant(stringDifferentCase));
-        mutationLevels.add(getJavaMutant(stringNoiseReplace));
-        mutationLevels.add(getJavaMutant(stringSafeReplaceWithUnsafe));
-        mutationLevels.add(getJavaMutant(stringCaseTransform));
-        mutationLevels.add(getJavaMutant(stringUnsafeReplaceWithUnsafe));
-        mutationLevels.add(getJavaMutant(stringValueInVariable));
-        //System.out.println(getJavaMutant(stringDifferentCase));
-        //String stringDiffCaseMutant = getJavaMutant(stringDifferentCase)
-        //String stringNoiseReplaceMutant = getJavaMutant(stringNoiseReplace);
-        //String stringSafeReplaceWithUnsafeMutant = getJavaMutant(stringSafeReplaceWithUnsafe);
-        //String stringCaseTransformMutant = getJavaMutant(stringCaseTransform);
-        //String stringUnsafeReplaceWithUnsafeMutant = getJavaMutant(stringUnsafeReplaceWithUnsafe);
-        //String stringValueInVariableMutant = getJavaMutant(stringValueInVariable);
+        mutationLevels.add(getJavaMutant(stringDifferentCase, apiName));
+        mutationLevels.add(getJavaMutant(stringNoiseReplace, apiName));
+        mutationLevels.add(getJavaMutant(stringSafeReplaceWithUnsafe, apiName));
+        mutationLevels.add(getJavaMutant(stringCaseTransform, apiName));
+        mutationLevels.add(getJavaMutant(stringUnsafeReplaceWithUnsafe, apiName));
+        mutationLevels.add(getJavaMutant(stringValueInVariable, apiName));
+
 
 
         //Place holder variable for testing. Will populate function with actual results
@@ -242,15 +259,154 @@ class main {
         }
 
     }
+    static void byteFlowAnalysis(String outputDir, String apiName, String className) throws FileNotFoundException{
+        //Documents⁩ ▸ ⁨GitHub⁩ ▸ ⁨MASC-Spring21-635⁩ ▸ ⁨masc-core⁩ ▸ ⁨app⁩ ▸ ⁨outputs⁩
+        //Need to move sarifParse into Masc-core so just the output directory can be used as a relative file path
+        String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
+        File byteLoop = new File(fullPath + "/ByteByteLoop/" + className + ".java");
+        File currentTime = new File(fullPath + "/ByteCurrentTime/" + className + ".java");
+
+        //Scanner scnr = new Scanner(stringDifferentCase);
+
+        //Creates array of extracted mutant code
+        ArrayList mutationLevels = new ArrayList();
+        mutationLevels.add(getJavaMutant(byteLoop, apiName));
+        mutationLevels.add(getJavaMutant(currentTime, apiName));
+
+
+
+        //Place holder variable for testing. Will populate function with actual results
+        //Will be array list of results. Each index containing the sarif results
+        ArrayList byteResults = new ArrayList(6);
+        ArrayList blah = new ArrayList();
+        byteResults.add(blah);
+        byteResults.add(blah);
+
+
+        //Compares levels of mutations starting with most basic
+        //Once it fails the program stops analysis
+        //Can be updated to make the call to the crypto api detector
+        for (int i = 0; i < mutationLevels.size(); i++){
+            //System.out.println(mutationLevels.get(i));
+            if (findMutation(mutationLevels.get(i).toString(),1,(ArrayList) byteResults.get(0)) == false){
+                System.out.println("Failed at level: " + i);
+                System.out.println("Mutation: " + mutationLevels.get(i));
+                break;
+            }
+            else{
+                System.out.println("Found Mutation Level: " + i);
+                System.out.println("Mutation: " + mutationLevels.get(i));
+            }
+        }
+
+    }
+    static void intFlowAnalysis(String outputDir, String apiName, String className) throws FileNotFoundException{
+        //Documents⁩ ▸ ⁨GitHub⁩ ▸ ⁨MASC-Spring21-635⁩ ▸ ⁨masc-core⁩ ▸ ⁨app⁩ ▸ ⁨outputs⁩
+        //Need to move sarifParse into Masc-core so just the output directory can be used as a relative file path
+        String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
+        File absoluteValue = new File(fullPath + "/IntAbsoluteValue/" + className + ".java");
+        File arithmetic = new File(fullPath + "/IntArithmetic/" +  className + ".java");
+        File fromString = new File(fullPath + "/IntFromString/" + className + ".java");
+        File iterationMultipleCall = new File(fullPath + "/IntIterationMultipleCall/" + className + ".java");
+        File MisuseType = new File(fullPath + "/IntMisuseType/" + className + ".java");
+        File nestedClass = new File(fullPath + "/IntNestedClass/" + className + ".java");
+        File overflow = new File(fullPath + "/IntOverflow/" + className + ".java");
+        File roundValue = new File(fullPath + "/IntRoundValue/" +  className + ".java");
+        File valueInVariable = new File(fullPath + "/IntValueInVariable/" + className + ".java");
+        File valueInVariableArithmetic = new File(fullPath + "/IntValueInVariableArithmetic/" + className + ".java");
+        File whileLoopAccumulation = new File(fullPath + "/IntWhileLoopAccumulation/" + className + ".java");
+        //Scanner scnr = new Scanner(stringDifferentCase);
+
+        //Creates array of extracted mutant code
+        ArrayList mutationLevels = new ArrayList();
+        mutationLevels.add(getJavaMutant(absoluteValue, apiName));
+        mutationLevels.add(getJavaMutant(arithmetic, apiName));
+        mutationLevels.add(getJavaMutant(fromString, apiName));
+        mutationLevels.add(getJavaMutant(iterationMultipleCall, apiName));
+        mutationLevels.add(getJavaMutant(MisuseType, apiName));
+        mutationLevels.add(getJavaMutant(nestedClass, apiName));
+        mutationLevels.add(getJavaMutant(overflow, apiName));
+        mutationLevels.add(getJavaMutant(roundValue, apiName));
+        mutationLevels.add(getJavaMutant(valueInVariable, apiName));
+        mutationLevels.add(getJavaMutant(valueInVariableArithmetic, apiName));
+        mutationLevels.add(getJavaMutant(whileLoopAccumulation, apiName));
+
+
+
+        //Place holder variable for testing. Will populate function with actual results
+        //Will be array list of results. Each index containing the sarif results
+        ArrayList intResults = new ArrayList(6);
+        ArrayList blah = new ArrayList();
+        intResults.add(blah);
+        intResults.add(blah);
+
+
+        //Compares levels of mutations starting with most basic
+        //Once it fails the program stops analysis
+        //Can be updated to make the call to the crypto api detector
+        for (int i = 0; i < mutationLevels.size(); i++){
+            //System.out.println(mutationLevels.get(i));
+            if (findMutation(mutationLevels.get(i).toString(),1,(ArrayList) intResults.get(0)) == false){
+                System.out.println("Failed at level: " + i);
+                System.out.println("Mutation: " + mutationLevels.get(i));
+                break;
+            }
+            else{
+                System.out.println("Found Mutation Level: " + i);
+                System.out.println("Mutation: " + mutationLevels.get(i));
+            }
+        }
+
+    }
+
+    static void interProcFlowAnalysis(String outputDir, String apiName, String className) throws FileNotFoundException{
+
+        //Need to move sarifParse into Masc-core so just the output directory can be used as a relative file path
+        String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
+        File interProc = new File(fullPath + "/InterProcOperator/" + className + ".java");
+
+
+        //Creates array of extracted mutant code
+        ArrayList mutationLevels = new ArrayList();
+        mutationLevels.add(getJavaMutant(interProc, apiName));
+
+
+
+
+        //Place holder variable for testing. Will populate function with actual results
+        //Will be array list of results. Each index containing the sarif results
+        ArrayList interProcResults = new ArrayList(6);
+        ArrayList blah = new ArrayList();
+        interProcResults.add(blah);
+        interProcResults.add(blah);
+
+
+        //Compares levels of mutations starting with most basic
+        //Once it fails the program stops analysis
+        //Can be updated to make the call to the crypto api detector
+        for (int i = 0; i < mutationLevels.size(); i++){
+            //System.out.println(mutationLevels.get(i));
+            if (findMutation(mutationLevels.get(i).toString(),1,(ArrayList) interProcResults.get(0)) == false){
+                System.out.println("Failed at level: " + i);
+                System.out.println("Mutation: " + mutationLevels.get(i));
+                break;
+            }
+            else{
+                System.out.println("Found Mutation Level: " + i);
+                System.out.println("Mutation: " + mutationLevels.get(i));
+            }
+        }
+
+    }
     //Can be changed to handle multiple mutations in a file
     //Currently Only looks for one mutant
-    static String getJavaMutant(File javafile) throws FileNotFoundException{
+    static String getJavaMutant(File javafile, String apiName) throws FileNotFoundException{
         String mutant = "";
         Scanner scnr = new Scanner(javafile);
         while (scnr.hasNext()){
             String line = scnr.nextLine();
             //System.out.println(line);
-            if (line.contains("javax.crypto.Cipher") == true){
+            if (line.contains(apiName) == true){
                 mutant = line;
                 break;
             }
@@ -258,7 +414,8 @@ class main {
 
         return mutant;
     }
-    //Look at MDROID and see the operators and enum approach 
+
+
     static Boolean findMutation(String mutationType,int mutationNumber, ArrayList results){
         int mutCount = 0;
         boolean found = false;
