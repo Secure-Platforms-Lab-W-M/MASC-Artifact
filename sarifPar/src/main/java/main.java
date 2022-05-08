@@ -13,6 +13,14 @@ import java.io.FileReader;
 import java.io.IOException;
 
 class main {
+    //NEED TO ADD HANDLING FOR MORE THAN TWO SARIF FILES FOR LEVELS
+    // This can be done within main. The results just need to be added and arguments can be changed
+    //This should not be difficult
+    // Results is an arrayList of ArrayList containing the caught mutations from SARIF file
+    // Can be changed to just be an ArrayList of combined results if changed
+    // logic in the operator flow analysis portions will need to be slightly altered to check
+    // the entire array before declaring failure
+    // Easiest way will be to add an arrayList to results of each result from each SARIF file produced
     public static void main(String[] args) throws FileNotFoundException, IOException {
 
         if  (args.length != 4){
@@ -23,9 +31,12 @@ class main {
         JSONArray beforeMutation = getResult(args[0]);
         JSONArray afterMutation = getResult(args[1]);
         ArrayList caughtMutations = compareResult(beforeMutation,afterMutation);
+        ArrayList results = new ArrayList();
+        results.add(caughtMutations);
+
         //System.out.println(caughtMutations);
         //findMutation("main(String)",1,caughtMutations);
-        dataFlowAnalysis(args[2], args[3]);
+        dataFlowAnalysis(args[2], args[3], results);
         //"/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/app/src/main/resources/Cipher.properties"
     }
 
@@ -78,8 +89,8 @@ class main {
         /*System.out.println("After Loop (Before):");
         for (int i = 0; i < beforeMessages.size(); i++){
             System.out.println(beforeMessages.get(i));
-        }
-        System.out.println("After Loop 2 (After):");
+        } */
+        /*System.out.println("After Loop 2 (After):");
         for (int i = 0; i < afterMessages.size(); i++){
             System.out.println(afterMessages.get(i));
         } */
@@ -155,7 +166,7 @@ class main {
     }
 
     //Currently designed with MAIN scope in mind
-    static void dataFlowAnalysis(String propertiesFile, String mascFilePath) throws FileNotFoundException{
+    static void dataFlowAnalysis(String propertiesFile, String mascFilePath, ArrayList results) throws FileNotFoundException{
         File file = new File(propertiesFile);
         Scanner scnr = new Scanner(file);
         String outputDirectory = "";
@@ -187,19 +198,19 @@ class main {
         className = className.substring(12);
         String fullPath = mascFilePath + outputDirectory;
         if (type.contains("StringOperator")){
-            stringFlowAnalysis(fullPath, apiName, className);
+            stringFlowAnalysis(fullPath, apiName, className, results);
 
         }
         if (type.contains("IntOperator")){
-            intFlowAnalysis(fullPath, apiName, className);
+            intFlowAnalysis(fullPath, apiName, className, results);
 
         }
         if (type.contains("Interproc")){
-            interprocFlowAnalysis(fullPath, apiName, className);
+            interprocFlowAnalysis(fullPath, apiName, className, results);
 
         }
         if (type.contains("ByteOperator")){
-            byteFlowAnalysis(fullPath, apiName, className);
+            byteFlowAnalysis(fullPath, apiName, className, results);
 
         }
 
@@ -208,7 +219,7 @@ class main {
     //Can be changed to create an array of files instead and utilize looping
     //Performs analysis on the String type operator
 
-    static void stringFlowAnalysis(String fullPath, String apiName, String className) throws FileNotFoundException{
+    static void stringFlowAnalysis(String fullPath, String apiName, String className, ArrayList results) throws FileNotFoundException{
         //Documents⁩ ▸ ⁨GitHub⁩ ▸ ⁨MASC-Spring21-635⁩ ▸ ⁨masc-core⁩ ▸ ⁨app⁩ ▸ ⁨outputs⁩
         //Need to move sarifParse into Masc-core so just the output directory can be used as a relative file path
         //String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
@@ -233,22 +244,15 @@ class main {
 
         //Place holder variable for testing. Will populate function with actual results
         //Will be array list of results. Each index containing the sarif results
-        ArrayList stringResults = new ArrayList(6);
-        ArrayList blah = new ArrayList();
-        stringResults.add(blah);
-        stringResults.add(blah);
-        stringResults.add(blah);
-        stringResults.add(blah);
-        stringResults.add(blah);
-        stringResults.add(blah);
-        stringResults.add(blah);
+        ArrayList stringResults = results;
+
 
         //Compares levels of mutations starting with most basic
         //Once it fails the program stops analysis
         //Can be updated to make the call to the crypto api detector 
         for (int i = 0; i < mutationLevels.size(); i++){
             //System.out.println(mutationLevels.get(i));
-            if (findMutation(mutationLevels.get(i).toString(),1,(ArrayList) stringResults.get(0)) == false){
+            if (findMutation(mutationLevels.get(i).toString(),1,(ArrayList) stringResults.get(i)) == false){
                 System.out.println("Failed at level: " + i);
                 System.out.println("Mutation: " + mutationLevels.get(i));
                 break;
@@ -260,7 +264,7 @@ class main {
         }
 
     }
-    static void byteFlowAnalysis(String fullPath, String apiName, String className) throws FileNotFoundException{
+    static void byteFlowAnalysis(String fullPath, String apiName, String className, ArrayList results) throws FileNotFoundException{
         //Documents⁩ ▸ ⁨GitHub⁩ ▸ ⁨MASC-Spring21-635⁩ ▸ ⁨masc-core⁩ ▸ ⁨app⁩ ▸ ⁨outputs⁩
         //Need to move sarifParse into Masc-core so just the output directory can be used as a relative file path
         //String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
@@ -278,10 +282,8 @@ class main {
 
         //Place holder variable for testing. Will populate function with actual results
         //Will be array list of results. Each index containing the sarif results
-        ArrayList byteResults = new ArrayList(6);
-        ArrayList blah = new ArrayList();
-        byteResults.add(blah);
-        byteResults.add(blah);
+        ArrayList byteResults = results;
+
 
 
         //Compares levels of mutations starting with most basic
@@ -301,7 +303,7 @@ class main {
         }
 
     }
-    static void intFlowAnalysis(String fullPath, String apiName, String className) throws FileNotFoundException{
+    static void intFlowAnalysis(String fullPath, String apiName, String className, ArrayList results) throws FileNotFoundException{
         //Documents⁩ ▸ ⁨GitHub⁩ ▸ ⁨MASC-Spring21-635⁩ ▸ ⁨masc-core⁩ ▸ ⁨app⁩ ▸ ⁨outputs⁩
         //Need to move sarifParse into Masc-core so just the output directory can be used as a relative file path
         //String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
@@ -336,10 +338,8 @@ class main {
 
         //Place holder variable for testing. Will populate function with actual results
         //Will be array list of results. Each index containing the sarif results
-        ArrayList intResults = new ArrayList(6);
-        ArrayList blah = new ArrayList();
-        intResults.add(blah);
-        intResults.add(blah);
+        ArrayList intResults = results;
+
 
 
         //Compares levels of mutations starting with most basic
@@ -360,7 +360,7 @@ class main {
 
     }
 
-    static void interprocFlowAnalysis(String fullPath, String apiName, String className) throws FileNotFoundException{
+    static void interprocFlowAnalysis(String fullPath, String apiName, String className, ArrayList results) throws FileNotFoundException{
 
         //Need to move sarifParse into Masc-core so just the output directory can be used as a relative file path
         //String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
@@ -376,10 +376,8 @@ class main {
 
         //Place holder variable for testing. Will populate function with actual results
         //Will be array list of results. Each index containing the sarif results
-        ArrayList interProcResults = new ArrayList(6);
-        ArrayList blah = new ArrayList();
-        interProcResults.add(blah);
-        interProcResults.add(blah);
+        ArrayList interProcResults = results;
+
 
 
         //Compares levels of mutations starting with most basic
