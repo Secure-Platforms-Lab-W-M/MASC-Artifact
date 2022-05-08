@@ -16,7 +16,7 @@ class main {
     public static void main(String[] args) throws FileNotFoundException, IOException {
 
         if  (args.length != 4){
-            System.out.println("Please Provide: SARIF files, properties file, and file path to MASC");
+            System.out.println("Please Provide: before/after SARIF files, properties file, and file path to MASC");
         }
         //"/Users/scottmarsden/Documents/reports/source-java-report.sarif"
         //"/Users/scottmarsden/Documents/reports/class-report.sarif"
@@ -25,7 +25,7 @@ class main {
         ArrayList caughtMutations = compareResult(beforeMutation,afterMutation);
         //System.out.println(caughtMutations);
         //findMutation("main(String)",1,caughtMutations);
-        dataFlowAnalysis(args[2]);
+        dataFlowAnalysis(args[2], args[3]);
         //"/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/app/src/main/resources/Cipher.properties"
     }
 
@@ -155,7 +155,7 @@ class main {
     }
 
     //Currently designed with MAIN scope in mind
-    static void dataFlowAnalysis(String propertiesFile) throws FileNotFoundException{
+    static void dataFlowAnalysis(String propertiesFile, String mascFilePath) throws FileNotFoundException{
         File file = new File(propertiesFile);
         Scanner scnr = new Scanner(file);
         String outputDirectory = "";
@@ -185,20 +185,21 @@ class main {
         outputDirectory = outputDirectory.substring(12);
         apiName = apiName.substring(10);
         className = className.substring(12);
+        String fullPath = mascFilePath + outputDirectory;
         if (type.contains("StringOperator")){
-            stringFlowAnalysis(outputDirectory, apiName, className);
+            stringFlowAnalysis(fullPath, apiName, className);
 
         }
         if (type.contains("IntOperator")){
-            intFlowAnalysis(outputDirectory, apiName, className);
+            intFlowAnalysis(fullPath, apiName, className);
 
         }
         if (type.contains("Interproc")){
-            intFlowAnalysis(outputDirectory, apiName, className);
+            interprocFlowAnalysis(fullPath, apiName, className);
 
         }
         if (type.contains("ByteOperator")){
-            intFlowAnalysis(outputDirectory, apiName, className);
+            byteFlowAnalysis(fullPath, apiName, className);
 
         }
 
@@ -207,10 +208,10 @@ class main {
     //Can be changed to create an array of files instead and utilize looping
     //Performs analysis on the String type operator
 
-    static void stringFlowAnalysis(String outputDir, String apiName, String className) throws FileNotFoundException{
+    static void stringFlowAnalysis(String fullPath, String apiName, String className) throws FileNotFoundException{
         //Documents⁩ ▸ ⁨GitHub⁩ ▸ ⁨MASC-Spring21-635⁩ ▸ ⁨masc-core⁩ ▸ ⁨app⁩ ▸ ⁨outputs⁩
         //Need to move sarifParse into Masc-core so just the output directory can be used as a relative file path
-        String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
+        //String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
         File stringDifferentCase = new File(fullPath + "/StringDifferentCase/" + className.toString() + ".java");
         File stringNoiseReplace = new File(fullPath + "/StringNoiseReplace/" +  className + ".java");
         File stringSafeReplaceWithUnsafe = new File(fullPath + "/StringSafeReplaceWithUnsafe/" + className + ".java");
@@ -259,10 +260,10 @@ class main {
         }
 
     }
-    static void byteFlowAnalysis(String outputDir, String apiName, String className) throws FileNotFoundException{
+    static void byteFlowAnalysis(String fullPath, String apiName, String className) throws FileNotFoundException{
         //Documents⁩ ▸ ⁨GitHub⁩ ▸ ⁨MASC-Spring21-635⁩ ▸ ⁨masc-core⁩ ▸ ⁨app⁩ ▸ ⁨outputs⁩
         //Need to move sarifParse into Masc-core so just the output directory can be used as a relative file path
-        String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
+        //String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
         File byteLoop = new File(fullPath + "/ByteByteLoop/" + className + ".java");
         File currentTime = new File(fullPath + "/ByteCurrentTime/" + className + ".java");
 
@@ -300,10 +301,10 @@ class main {
         }
 
     }
-    static void intFlowAnalysis(String outputDir, String apiName, String className) throws FileNotFoundException{
+    static void intFlowAnalysis(String fullPath, String apiName, String className) throws FileNotFoundException{
         //Documents⁩ ▸ ⁨GitHub⁩ ▸ ⁨MASC-Spring21-635⁩ ▸ ⁨masc-core⁩ ▸ ⁨app⁩ ▸ ⁨outputs⁩
         //Need to move sarifParse into Masc-core so just the output directory can be used as a relative file path
-        String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
+        //String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
         File absoluteValue = new File(fullPath + "/IntAbsoluteValue/" + className + ".java");
         File arithmetic = new File(fullPath + "/IntArithmetic/" +  className + ".java");
         File fromString = new File(fullPath + "/IntFromString/" + className + ".java");
@@ -359,10 +360,10 @@ class main {
 
     }
 
-    static void interProcFlowAnalysis(String outputDir, String apiName, String className) throws FileNotFoundException{
+    static void interprocFlowAnalysis(String fullPath, String apiName, String className) throws FileNotFoundException{
 
         //Need to move sarifParse into Masc-core so just the output directory can be used as a relative file path
-        String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
+        //String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
         File interProc = new File(fullPath + "/InterProcOperator/" + className + ".java");
 
 
