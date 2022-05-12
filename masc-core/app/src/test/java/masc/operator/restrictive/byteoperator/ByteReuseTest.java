@@ -22,12 +22,22 @@ public class ByteReuseTest {
 
     @Test
     public void byte_reuse() {
-        String expected = "String cryptoTemp= \"example\";\n" +
+        String expected = "String cryptoTemp= \"octogons\";\n" +
                 "javax.crypto.spec.IvParameterSpec ivSpec = " +
                 "new javax.crypto.spec.IvParameterSpec(cryptoTemp.getBytes(),0,8);\n" +
                 //* Note: Here is our mutated misuse. We reuse the cryptoTemp Byte input.
                 "javax.crypto.spec.IvParameterSpec ivSpec2 = " +
-                "new javax.crypto.spec.IvParameterSpec(cryptoTemp.getBytes(),0,8);";;
+                "new javax.crypto.spec.IvParameterSpec(cryptoTemp.getBytes(),0,8);\n"+
+
+                //* Note: Here we test for our base misuse case
+                "Cipher c = Cipher.getInstance(“AES”);\n"+
+                "c.init(Cipher.ENCRYPT_MODE, ivSpec);\n"+
+                "c.init(Cipher.ENCRYPT_MODE, ivSpec2);\n"+
+
+                //* Note: Here we test for our evasive developer
+                // emulation mutated misuse cases
+                "c.init(Cipher.ENCRYPT_MODE, Arrays.copyOf(ivSpec2, ivSpec2.length()));\n"+
+                "c.init(Cipher.ENCRYPT_MODE, ivSpec2.clone());";
         assertEquals(expected, operator.mutation());
     }
 
