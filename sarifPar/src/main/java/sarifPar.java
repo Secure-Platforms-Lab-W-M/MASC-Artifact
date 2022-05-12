@@ -1,18 +1,22 @@
-//import org.json.simple.JSONArray;
-//import org.json.simple.JSONObject;
-//import org.json.simple.parser.JSONParser;
-//import org.json.simple.parser.ParseException;
+/**
+ * File that helps automation evaluation by parsing SARIF files to obtain results.
+ * Compares results from SARIF and looks for specified mutations
+ * @author Scott Marsden
+ */
+
 import java.io.File;  // Import the File class
 import java.io.FileNotFoundException;
 import org.json.*;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.io.FileReader;
 import java.io.IOException;
 
-class main {
+// TODO Merge with MASC
+// TODO Refactoring
+// TODO AUTHOR
+class sarifPar {
+    // FUTURE WORK
     //NEED TO ADD HANDLING FOR MORE THAN TWO SARIF FILES FOR LEVELS
     // This can be done within main. The results just need to be added and arguments can be changed
     //This should not be difficult
@@ -26,27 +30,30 @@ class main {
         if  (args.length != 4){
             System.out.println("Please Provide: before/after SARIF files, properties file, and file path to MASC");
         }
-        //"/Users/scottmarsden/Documents/reports/source-java-report.sarif"
-        //"/Users/scottmarsden/Documents/reports/class-report.sarif"
+
         JSONArray beforeMutation = getResult(args[0]);
         JSONArray afterMutation = getResult(args[1]);
-        ArrayList caughtMutations = compareResult(beforeMutation,afterMutation);
+        ArrayList caughtMutations = compareSarifResults(beforeMutation,afterMutation);
         ArrayList results = new ArrayList();
         results.add(caughtMutations);
 
-        //System.out.println(caughtMutations);
-        //findMutation("main(String)",1,caughtMutations);
-        dataFlowAnalysis(args[2], args[3], results);
-        //"/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/app/src/main/resources/Cipher.properties"
+
+        misuseFlowAnalysis(args[2], args[3], results);
+
     }
 
 
+    /**
+     * Takes a SARIF file as input and extracts the results contained within the file
+     * @param sarifFile
+     * @return
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
+    static JSONArray getResult (String sarifFile) throws FileNotFoundException, IOException {
 
-    //gets results from sarif file
-    static JSONArray getResult (String file) throws FileNotFoundException, IOException {
-        //Scanner scnr = new Scanner();
 
-        JSONObject sarif = new JSONObject(getJson(file));
+        JSONObject sarif = new JSONObject(getJson(sarifFile));
         JSONArray runs = (JSONArray) sarif.get("runs");
         JSONObject extract = runs.getJSONObject(0);
         JSONArray results = extract.getJSONArray("results");
@@ -57,48 +64,47 @@ class main {
 
     }
 
-    static ArrayList compareResult(JSONArray before, JSONArray after){
-        //Bug in message. In the actual program the line numbers may differ
-        ArrayList beforeMessages = extractResult(before,"message");
-        ArrayList afterMessages = extractResult(after,"message");
-        //ArrayList beforeLocations = extractResult(before,"locations");
-        //ArrayList afterLocations = extractResult(after,"locations");
+    /**
+     * Takes two sets of results from getResult() as input and compares them to see if there is any overlap.
+     * It returns an ArrayList containing the results that did not overlap.
+     * @param beforeMutation
+     * @param afterMutation
+     * @return
+     */
+    static ArrayList compareSarifResults(JSONArray beforeMutation, JSONArray afterMutation){
+        ArrayList beforeMessages = extractResult(beforeMutation,"message");
+        ArrayList afterMessages = extractResult(afterMutation,"message");
+
 
         beforeMessages = removeLineNumbers(beforeMessages);
         afterMessages = removeLineNumbers(afterMessages);
-        //System.out.println("Before Loop (After):");
-        //for (int i = 0; i < afterMessages.size(); i++){
-        //      System.out.println(afterMessages.get(i));
-        //}
-        //System.out.println(beforeMessages);
+
         for(int i = 0; i < beforeMessages.size(); i++){
             for (int j = 0; j < afterMessages.size(); j++){
-                //System.out.println(beforeMessages.get(i));
-                //System.out.println(afterMessages.get(j));
+
                 if (beforeMessages.get(i).toString().equals(afterMessages.get(j).toString())){
-                    //System.out.println("Sucess");
+
                     beforeMessages.set(i,"");
                     afterMessages.set(j,"");
-                    //break;
+
                 }
             }
 
         }
-        beforeMessages = clean(beforeMessages);
-        afterMessages = clean(afterMessages);
-        /*System.out.println("After Loop (Before):");
-        for (int i = 0; i < beforeMessages.size(); i++){
-            System.out.println(beforeMessages.get(i));
-        } */
-        /*System.out.println("After Loop 2 (After):");
-        for (int i = 0; i < afterMessages.size(); i++){
-            System.out.println(afterMessages.get(i));
-        } */
+        beforeMessages = cleanList(beforeMessages);
+        afterMessages = cleanList(afterMessages);
+
         return afterMessages;
-        //System.out.println(beforeMessages.get(0).toString().equals(afterMessages.get(0).toString()));
-        //System.out.println(afterMessages);
+
     }
 
+    /**
+     * Removes line numbers from the result strings for comparison. This is used since we only care if the same results
+     * are found not the line numbers. This is because when a mutation is introduced we do not expect the line numbers
+     * to remain the same
+     * @param messages
+     * @return
+     */
     //Gets the relevant text of the message that does not include line numbers since these change
     static ArrayList removeLineNumbers(ArrayList messages){
         ArrayList cleanMessages = new ArrayList();
@@ -134,6 +140,12 @@ class main {
         return cleanMessages;
     }
 
+    /**
+     * Extracts the String contained in the specified key for the SARIF file
+     * @param results
+     * @param key
+     * @return
+     */
     static ArrayList extractResult(JSONArray results, String key){
         ArrayList extraction = new ArrayList();
         for(int i = 0; i < results.length(); i++){
@@ -144,6 +156,12 @@ class main {
         return extraction;
     }
 
+    /**
+     * Gets the JSON contained within a SARIF file or JSON file (nested JSON)
+     * @param fileName
+     * @return
+     * @throws FileNotFoundException
+     */
     static String getJson(String fileName) throws FileNotFoundException {
         File file = new File(fileName);
         Scanner scnr = new Scanner(file);
@@ -155,7 +173,12 @@ class main {
         return JSONtext;
     }
 
-    static ArrayList clean(ArrayList list){
+    /**
+     * removes empty values found within an ArrayList
+     * @param list
+     * @return
+     */
+    static ArrayList cleanList(ArrayList list){
         int len = list.size();
         for(int i = len-1; i > -1; i--){
             if(list.get(i).toString().equals("")){
@@ -165,8 +188,20 @@ class main {
         return list;
     }
 
+
+    // TODO add java doc to functions
+    // TODO add testing to cover everything
+
+    /**
+     * Looks at properties file to find class name, operator type, output directory, and api name. Based on the operator
+     * type it passes to either stringFlowAnalysis(), intFlowAnalysis(), byteFlowAnalysis(), or interprocFlowAnalysis()
+     * @param propertiesFile
+     * @param mascFilePath
+     * @param results
+     * @throws FileNotFoundException
+     */
     //Currently designed with MAIN scope in mind
-    static void dataFlowAnalysis(String propertiesFile, String mascFilePath, ArrayList results) throws FileNotFoundException{
+    static void misuseFlowAnalysis(String propertiesFile, String mascFilePath, ArrayList results) throws FileNotFoundException{
         File file = new File(propertiesFile);
         Scanner scnr = new Scanner(file);
         String outputDirectory = "";
@@ -198,19 +233,19 @@ class main {
         className = className.substring(12);
         String fullPath = mascFilePath + outputDirectory;
         if (type.contains("StringOperator")){
-            stringFlowAnalysis(fullPath, apiName, className, results);
+            stringOpFlowAnalysis(fullPath, apiName, className, results);
 
         }
         if (type.contains("IntOperator")){
-            intFlowAnalysis(fullPath, apiName, className, results);
+            intOpFlowAnalysis(fullPath, apiName, className, results);
 
         }
         if (type.contains("Interproc")){
-            interprocFlowAnalysis(fullPath, apiName, className, results);
+            interprocOpFlowAnalysis(fullPath, apiName, className, results);
 
         }
         if (type.contains("ByteOperator")){
-            byteFlowAnalysis(fullPath, apiName, className, results);
+            byteOpFlowAnalysis(fullPath, apiName, className, results);
 
         }
 
@@ -218,8 +253,18 @@ class main {
     }
     //Can be changed to create an array of files instead and utilize looping
     //Performs analysis on the String type operator
-
-    static void stringFlowAnalysis(String fullPath, String apiName, String className, ArrayList results) throws FileNotFoundException{
+    /**
+     * Locates all the output files produced by the operator. Using the api name found in the properties folder it calls
+     * getJavaMutant() to obtain the line that has the mutation for each file. Then it checks the SARIF results to see
+     * if the misuse was caught. The program stops if it fails to catch any misuse.
+     * @param fullPath
+     * @param apiName
+     * @param className
+     * @param results
+     * @throws FileNotFoundException
+     *
+     */
+    static void stringOpFlowAnalysis(String fullPath, String apiName, String className, ArrayList results) throws FileNotFoundException{
         //Documents⁩ ▸ ⁨GitHub⁩ ▸ ⁨MASC-Spring21-635⁩ ▸ ⁨masc-core⁩ ▸ ⁨app⁩ ▸ ⁨outputs⁩
         //Need to move sarifParse into Masc-core so just the output directory can be used as a relative file path
         //String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
@@ -242,8 +287,8 @@ class main {
 
 
 
-        //Place holder variable for testing. Will populate function with actual results
-        //Will be array list of results. Each index containing the sarif results
+
+        //Array list of results. Each index containing the sarif results
         ArrayList stringResults = results;
 
 
@@ -264,14 +309,25 @@ class main {
         }
 
     }
-    static void byteFlowAnalysis(String fullPath, String apiName, String className, ArrayList results) throws FileNotFoundException{
+
+    /**
+     * Locates all the output files produced by the operator. Using the api name found in the properties folder it calls
+     * getJavaMutant() to obtain the line that has the mutation for each file. Then it checks the SARIF results to see
+     * if the misuse was caught. The program stops if it fails to catch any misuse.
+     * @param fullPath
+     * @param apiName
+     * @param className
+     * @param results
+     * @throws FileNotFoundException
+     *
+     */
+    static void byteOpFlowAnalysis(String fullPath, String apiName, String className, ArrayList results) throws FileNotFoundException{
         //Documents⁩ ▸ ⁨GitHub⁩ ▸ ⁨MASC-Spring21-635⁩ ▸ ⁨masc-core⁩ ▸ ⁨app⁩ ▸ ⁨outputs⁩
         //Need to move sarifParse into Masc-core so just the output directory can be used as a relative file path
         //String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
         File byteLoop = new File(fullPath + "/ByteByteLoop/" + className + ".java");
         File currentTime = new File(fullPath + "/ByteCurrentTime/" + className + ".java");
 
-        //Scanner scnr = new Scanner(stringDifferentCase);
 
         //Creates array of extracted mutant code
         ArrayList mutationLevels = new ArrayList();
@@ -280,8 +336,7 @@ class main {
 
 
 
-        //Place holder variable for testing. Will populate function with actual results
-        //Will be array list of results. Each index containing the sarif results
+        //Array list of results. Each index containing the sarif results
         ArrayList byteResults = results;
 
 
@@ -303,10 +358,19 @@ class main {
         }
 
     }
-    static void intFlowAnalysis(String fullPath, String apiName, String className, ArrayList results) throws FileNotFoundException{
-        //Documents⁩ ▸ ⁨GitHub⁩ ▸ ⁨MASC-Spring21-635⁩ ▸ ⁨masc-core⁩ ▸ ⁨app⁩ ▸ ⁨outputs⁩
-        //Need to move sarifParse into Masc-core so just the output directory can be used as a relative file path
-        //String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
+
+    /**
+     * Locates all the output files produced by the operator. Using the api name found in the properties folder it calls
+     * getJavaMutant() to obtain the line that has the mutation for each file. Then it checks the SARIF results to see
+     * if the misuse was caught. The program stops if it fails to catch any misuse.
+     * @param fullPath
+     * @param apiName
+     * @param className
+     * @param results
+     * @throws FileNotFoundException
+     *
+     */
+    static void intOpFlowAnalysis(String fullPath, String apiName, String className, ArrayList results) throws FileNotFoundException{
         File absoluteValue = new File(fullPath + "/IntAbsoluteValue/" + className + ".java");
         File arithmetic = new File(fullPath + "/IntArithmetic/" +  className + ".java");
         File fromString = new File(fullPath + "/IntFromString/" + className + ".java");
@@ -318,7 +382,7 @@ class main {
         File valueInVariable = new File(fullPath + "/IntValueInVariable/" + className + ".java");
         File valueInVariableArithmetic = new File(fullPath + "/IntValueInVariableArithmetic/" + className + ".java");
         File whileLoopAccumulation = new File(fullPath + "/IntWhileLoopAccumulation/" + className + ".java");
-        //Scanner scnr = new Scanner(stringDifferentCase);
+
 
         //Creates array of extracted mutant code
         ArrayList mutationLevels = new ArrayList();
@@ -336,8 +400,7 @@ class main {
 
 
 
-        //Place holder variable for testing. Will populate function with actual results
-        //Will be array list of results. Each index containing the sarif results
+        //Array list of results. Each index containing the sarif results
         ArrayList intResults = results;
 
 
@@ -345,6 +408,7 @@ class main {
         //Compares levels of mutations starting with most basic
         //Once it fails the program stops analysis
         //Can be updated to make the call to the crypto api detector
+        // TODO: remove magic number replace with Enum
         for (int i = 0; i < mutationLevels.size(); i++){
             //System.out.println(mutationLevels.get(i));
             if (findMutation(mutationLevels.get(i).toString(),1,(ArrayList) intResults.get(0)) == false){
@@ -360,7 +424,18 @@ class main {
 
     }
 
-    static void interprocFlowAnalysis(String fullPath, String apiName, String className, ArrayList results) throws FileNotFoundException{
+    /**
+     * Locates all the output files produced by the operator. Using the api name found in the properties folder it calls
+     * getJavaMutant() to obtain the line that has the mutation for each file. Then it checks the SARIF results to see
+     * if the misuse was caught. The program stops if it fails to catch any misuse.
+     * @param fullPath
+     * @param apiName
+     * @param className
+     * @param results
+     * @throws FileNotFoundException
+     *
+     */
+    static void interprocOpFlowAnalysis(String fullPath, String apiName, String className, ArrayList results) throws FileNotFoundException{
 
         //Need to move sarifParse into Masc-core so just the output directory can be used as a relative file path
         //String fullPath = "/Users/scottmarsden/Documents/GitHub/MASC-Spring21-635/masc-core/" + outputDir;
@@ -374,8 +449,7 @@ class main {
 
 
 
-        //Place holder variable for testing. Will populate function with actual results
-        //Will be array list of results. Each index containing the sarif results
+        //Array list of results. Each index containing the sarif results
         ArrayList interProcResults = results;
 
 
@@ -397,8 +471,13 @@ class main {
         }
 
     }
-    //Can be changed to handle multiple mutations in a file
-    //Currently Only looks for one mutant
+    /**
+     *  Takes the api name in the properties file and one of the output files as input.
+     *  Then it outputs the line that contains that api
+     * @param javafile
+     */
+    // Can be updated to handle multiple mutations in a file
+    // Currently Only looks for one mutant
     static String getJavaMutant(File javafile, String apiName) throws FileNotFoundException{
         String mutant = "";
         Scanner scnr = new Scanner(javafile);
@@ -414,7 +493,14 @@ class main {
         return mutant;
     }
 
-
+    /**
+     * Takes an input of the String containing the mutation, the number contained within the file (in MAIN scope this is 1), and an ArrayList with the SARIF results.
+     * Then returns if the mutation is found within the ArrayList or not.
+     * @param mutationType
+     * @param mutationNumber
+     * @param results
+     * @return
+     */
     static Boolean findMutation(String mutationType,int mutationNumber, ArrayList results){
         int mutCount = 0;
         boolean found = false;
