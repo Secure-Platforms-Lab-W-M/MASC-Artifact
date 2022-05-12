@@ -20,6 +20,7 @@ public class ByteLoopTest {
 
     @Test
     public void loop_byte() {
+        // Note: Predictable or Constant IV Misuse
         String expected = "String cryptoTemp=\"\";\n" +
                 "for(int i = 65; i < 75; i++){\n" +
                 "    cryptoTemp += (char) i;\n" +
