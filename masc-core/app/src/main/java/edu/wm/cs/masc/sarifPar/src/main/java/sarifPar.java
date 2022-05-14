@@ -1,3 +1,4 @@
+package edu.wm.cs.masc.sarifPar.src.main.java;//package edu.wm.cs.masc.sarifPar.src.main.java;
 /**
  * File that helps automation evaluation by parsing SARIF files to obtain results.
  * Compares results from SARIF and looks for specified mutations
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.IOException;
 
-// TODO Merge with MASC
+
 
 class sarifPar {
     // FUTURE WORK
@@ -60,11 +61,11 @@ class sarifPar {
     }
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
-
+        //System.out.println(getResult("/Users/scottmarsden/Documents/GitHub/masc-core/app/src/main/resources/resultsSarif.sarif").toString());
         if  (args.length != 4){
             System.out.println("Please Provide: before/after SARIF files, properties file, and file path to MASC");
         }
-
+        //System.out.println(getResult("/src/main/resources/resultsSarif.sarif"));
         JSONArray beforeMutation = getResult(args[0]);
         JSONArray afterMutation = getResult(args[1]);
         ArrayList caughtMutations = compareSarifResults(beforeMutation,afterMutation);
@@ -298,7 +299,7 @@ class sarifPar {
      * @throws FileNotFoundException
      *
      */
-    static void stringOpFlowAnalysis(String fullPath, String apiName, String className, ArrayList results) throws FileNotFoundException{
+    static int stringOpFlowAnalysis(String fullPath, String apiName, String className, ArrayList results) throws FileNotFoundException{
         /*
         File stringDifferentCase = new File(fullPath + "/StringDifferentCase/" + className.toString() + ".java");
         File stringNoiseReplace = new File(fullPath + "/StringNoiseReplace/" +  className + ".java");
@@ -332,20 +333,23 @@ class sarifPar {
 
         //Compares levels of mutations starting with most basic
         //Once it fails the program stops analysis
-        //Can be updated to make the call to the crypto api detector 
+        //Can be updated to make the call to the crypto api detector
+        int level = 0;
         for (int i = 0; i < mutationLevels.size(); i++){
             //System.out.println(mutationLevels.get(i));
-            if (findMutation(mutationLevels.get(i).toString(),1,(ArrayList) stringResults.get(i)) == false){
-                System.out.println("Failed at level: " + 0 + " " + stringMutLevels[i]);
+            if (findMutation(mutationLevels.get(i).toString(),1, (ArrayList) stringResults) == false){
+                System.out.println("Failed at level: " + i + " " + stringMutLevels[i]);
                 System.out.println("Mutation: " + mutationLevels.get(i));
+                level = i;
                 break;
             }
             else{
                 System.out.println("Found Mutation Level: " + i + " " + stringMutLevels[i]);
                 System.out.println("Mutation: " + mutationLevels.get(i));
+                level = i;
             }
         }
-
+        return level;
     }
 
     /**
