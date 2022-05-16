@@ -40,45 +40,8 @@ public class ByteReuse extends AByteOperator {
                 "c.init(Cipher.ENCRYPT_MODE, Arrays.copyOf("+api_variable+"2, "+api_variable+"2.length()));\n"+
                 "c.init(Cipher.ENCRYPT_MODE, "+api_variable+"2.clone());";
 
-
-                // --------------------------------------------------
-                // Unused notes below -> TODO: delete when ready
-
-
-
-                // Cipher cipher = Cipher.getInstance("AES/CBC/PK...Padding")
-
-                // cipher.init(cipher.encrypt_mode, key, iv)
-                // cipher.init(cipher.encrypt_mode, key, iv)
-        // --------------------------------------------------
-
-
-                //        Cipher c1 = Cipher.getInstance(“AES”);
-                //        c.init(Cipher.ENCRYPT_MODE, iv);
-                //
-                //        c.init(Cipher.ENCRYPT_MODE, Arrays.copyOf(iv, iv.length()));
-                //
-                //        c.init(Cipher.ENCRYPT_MODE, iv.clone());
-
-        // --------------------------------------------------
-
-
-        //        String tempVarName = “Example1”;
-        //
-        //        KeyGenerator kg = KeyGenerator.getInstance(“AES”);
-        //        kg.init(tempVarName);
-        //        Secret key = kg.generateKey();
-        //
-        //        Cipher c1 = Cipher.getInstance(“AES”);
-        //        c.init(Cipher.ENCRYPT_MODE, iv);
-        //
-        //        c.init(Cipher.ENCRYPT_MODE, Arrays.copyOf(iv, iv.length()));
-        //
-        //        c.init(Cipher.ENCRYPT_MODE, iv.clone());
-
-                // http://soundiness.org/
-
-
+                //* Note: The test for this file exists in
+                // "masc/operator/restrictive/byteoperator/ByteReuseTest.java"
     }
 }
 
