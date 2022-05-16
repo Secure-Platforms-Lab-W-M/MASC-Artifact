@@ -16,7 +16,7 @@ if (hasProperty('buildScan')) {
 }
 
 //for java, automatically sets targetCompatibility as well.
-sourceCompatibility = 1.11
+sourceCompatibility = 1.8
 
 repositories {
     // Use JCenter for resolving dependencies.
@@ -40,42 +40,41 @@ clean {
 
 dependencies {
     // Use JUnit test framework
-    testImplementation 'junit:junit:4.13'
+    testImplementation 'junit:junit:4.13.2'
 
     // This dependency is used by the application
-    implementation 'com.google.guava:guava:29.0-jre'
-    implementation 'com.squareup:javapoet:1.12.0'
-    implementation 'org.apache.commons:commons-configuration2:2.6'
-    implementation 'org.reflections:reflections:0.9.12'
-    implementation group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.3'
-    implementation group: 'commons-io', name: 'commons-io', version: '2.6'
-    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.1'
+    implementation 'com.google.guava:guava:31.1-jre'
+    implementation 'com.squareup:javapoet:1.13.0'
+    implementation 'org.apache.commons:commons-configuration2:2.7'
+    implementation 'org.reflections:reflections:0.10.2'
+    implementation group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.4'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
     implementation group: 'com.google.code.maven-play-plugin.org.eclipse.jdt', name: 'org.eclipse.jdt.core', version: '3.10.0.v20140604-1726'
     implementation group: 'org.apache.directory.studio', name: 'org.apache.commons.io', version: '2.4'
     implementation group: 'org.eclipse.core', name: 'contenttype', version: '3.4.200-v20140207-1251'
-    implementation group: 'commons-io', name: 'commons-io', version: '2.4'
-    implementation group: 'org.eclipse.core', name: 'jobs', version: '3.5.300-v20130429-1813'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+    implementation group: 'org.eclipse.core', name: 'jobs', version: '3.6.0-v20140424-0053'
     implementation group: 'org.eclipse.core', name: 'resources', version: '3.3.0-v20070604'
-    implementation group: 'org.eclipse.core', name: 'runtime', version: '3.9.0-v20130326-1255'
+    implementation group: 'org.eclipse.core', name: 'runtime', version: '3.10.0-v20140318-2214'
     implementation group: 'org.eclipse.equinox', name: 'common', version: '3.6.200-v20130402-1505'
     implementation group: 'org.eclipse.equinox', name: 'preferences', version: '3.5.200-v20140224-1527'
 //    implementation group: 'org.eclipse.jdt', name: 'org.eclipse.jdt.core', version: '3.12.3'
     implementation group: 'com.google.code.maven-play-plugin.org.eclipse.jdt', name: 'org.eclipse.jdt.core', version: '3.10.0.v20140604-1726'
     implementation group: 'org.eclipse.text', name: 'org.eclipse.text', version: '3.5.101'
-    implementation group: 'org.eclipse.equinox', name: 'app', version: '1.0.0-v20070606'
-    implementation group: 'org.eclipse', name: 'osgi', version: '3.9.1-v20130814-1242'
-    implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
-    implementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.7.0'
-    implementation group: 'org.junit.platform', name: 'junit-platform-runner', version: '1.7.0'
+    implementation group: 'org.eclipse.equinox', name: 'app', version: '1.3.200-v20130910-1609'
+    implementation group: 'org.eclipse', name: 'osgi', version: '3.10.0-v20140606-1445'
+    implementation group: 'commons-cli', name: 'commons-cli', version: '1.5.0'
+    implementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.8.2'
+    implementation group: 'org.junit.platform', name: 'junit-platform-runner', version: '1.8.2'
 //    implementation group: 'junit', name: 'junit', version: '4.12'
-    implementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.4.0'
+    implementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.8.2'
     implementation group: 'org.apache.maven.plugins', name: 'maven-surefire-plugin', version: '3.0.0-M5'
     implementation group: 'org.openjfx', name: 'javafx-controls', version: '11.0.2'
     implementation group: 'org.openjfx', name: 'javafx-fxml', version: '11.0.2'
     implementation group: 'org.eclipse.jdt', name: 'org.eclipse.jdt.core', version: '3.21.0'
     // https://mvnrepository.com/artifact/org.json/json
     implementation group: 'org.json', name: 'json', version: '20211205'
-
 //    implementation group: 'org.eclipse.equinox', name: 'app', version: '1.0.0-v20070606'
 }
 

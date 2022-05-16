@@ -14,6 +14,13 @@ public class StringOperatorProperties extends AOperatorProperties {
             throws ConfigurationException {
         super(path);
         invocation = reader.getValueForAKey("invocation");
+
+//        Note: insecureObjectName to be used by InjectInsecureObject.java
+//        insecureObjectName = reader.getValueForAKey("insecureObjectName");
+
+//        secureAPIName = reader.getValueForAKey("secureAPIName");
+//        insecureAPIName = reader.getValueForAKey("insecureAPIName");
+
         secureParam = reader.getValueForAKey("secureParam");
         insecureParam = reader.getValueForAKey("insecureParam");
         noise = reader.getValueForAKey("noise");
