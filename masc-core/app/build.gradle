@@ -70,9 +70,11 @@ dependencies {
 //    implementation group: 'junit', name: 'junit', version: '4.12'
     implementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.8.2'
     implementation group: 'org.apache.maven.plugins', name: 'maven-surefire-plugin', version: '3.0.0-M5'
-    implementation group: 'org.openjfx', name: 'javafx-controls', version: '18.0.1'
-    implementation group: 'org.openjfx', name: 'javafx-fxml', version: '18.0.1'
-    implementation group: 'org.eclipse.jdt', name: 'org.eclipse.jdt.core', version: '3.29.0'
+    implementation group: 'org.openjfx', name: 'javafx-controls', version: '11.0.2'
+    implementation group: 'org.openjfx', name: 'javafx-fxml', version: '11.0.2'
+    implementation group: 'org.eclipse.jdt', name: 'org.eclipse.jdt.core', version: '3.21.0'
+    // https://mvnrepository.com/artifact/org.json/json
+    implementation group: 'org.json', name: 'json', version: '20211205'
 //    implementation group: 'org.eclipse.equinox', name: 'app', version: '1.0.0-v20070606'
 }
 
