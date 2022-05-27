@@ -4,6 +4,10 @@ Welcome to the artifact of the paper _Why Crypto-detectors Fail_: A Systematic E
 
 ![](masc-framework.jpg)
 
+## Note
+
+The source code of MASC is currently under active maintenance. We are streamlining the code to further automate it, which will be open-sourced soon! 
+
 ## Pre-print of the paper
 
 https://arxiv.org/pdf/2107.07065.pdf
