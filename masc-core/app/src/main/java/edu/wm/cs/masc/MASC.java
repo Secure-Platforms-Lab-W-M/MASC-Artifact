@@ -16,6 +16,8 @@ public class MASC {
 
     public static void main(String[] args) throws Exception{
 
+        System.out.println("ayo bro: " + args.length);
+
         if (args.length == 0){
             System.out.println("No properties file supplied");
         }
@@ -46,6 +48,7 @@ public class MASC {
         }
         // MASC MainScope
         else if(scope.equalsIgnoreCase("MAIN")){
+            System.out.println("Main scope");
             runMainScope(reader, path);
         }
         else{
