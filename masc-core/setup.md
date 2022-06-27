@@ -36,3 +36,8 @@ You should see a green play button beside the main method of the file.  Press th
 ## Resolving Initial Errors
 
 If you have made it this far in the setup process, then you aren't seeing any useful outputs yet.  Do not fear, the solution is simple.  Note that the program needs exactly one parameter, i.e., the name of the properties file. The default `Cipher.properties` file is given in src > main > resources.  Find the file in the resources folder and open it.  Notice that the `outputDir` field specifies a file path. Ensure that the file exists on your system. Then click on "edit build configuration" from the toolbar at the top, and add Cipher.properties in program arguments.  The program should now run without errors.  Look in the specified directory, and you will find all the mutations.
+
+## Building JAR
+
+If you want to create a JAR file for MASC, just run `gradlew shadowJar`. The output JAR can be found at `masc-core > app > build > libs > app-all.jar`.
+To run the JAR, place Cipher.properties in the same directory as the JAR and run `java -jar app-all.jar Cipher.properties`
