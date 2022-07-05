@@ -6,6 +6,7 @@ import edu.wm.cs.masc.mutation.properties.AOperatorProperties;
 import edu.wm.cs.masc.utils.file.CustomFileWriter;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**

@@ -29,7 +29,6 @@ public class StringOperatorMutationMaker extends AMutationMaker {
 
     public StringOperatorMutationMaker(StringOperatorProperties p) {
         this.p = p;
-
     }
 
     @Override
