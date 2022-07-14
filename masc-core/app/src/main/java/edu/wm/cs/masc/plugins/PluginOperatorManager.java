@@ -20,7 +20,6 @@ public class PluginOperatorManager {
     private PluginOperatorManager() {
         String packageName = "plugins";
         String folderDir = "app\\build\\libs";
-//        String folderDir = ".";
         File[] files = new File(folderDir + "\\" + packageName).listFiles();
         File folder = new File(folderDir);
 
@@ -74,15 +73,18 @@ public class PluginOperatorManager {
                 !Modifier.isInterface(customOPClass.getModifiers());
     }
 
-    public ArrayList<IOperator> initializeCustomPlugins(String path){
+    public ArrayList<IOperator> initializeCustomPlugins(String path, AOperatorProperties desiredOperatorProperties){
 
         for(Class customOperator: customOperators)
         {
             try {
                 Constructor c = customOperator.getDeclaredConstructors()[0];
-                AOperatorProperties shit = (AOperatorProperties) c.getParameterTypes()[0].getDeclaredConstructor(String.class).newInstance(path);
-                IOperator operator = (IOperator) customOperator.getDeclaredConstructor(shit.getClass()).newInstance(shit);
-                operators.add(operator);
+                String loadedOperatorProperties = c.getParameterTypes()[0].getName();
+                if(desiredOperatorProperties.getClass().getName().equals(loadedOperatorProperties)){
+                    AOperatorProperties operatorProperties = (AOperatorProperties) c.getParameterTypes()[0].getDeclaredConstructor(String.class).newInstance(path);
+                    IOperator operator = (IOperator) customOperator.getDeclaredConstructor(operatorProperties.getClass()).newInstance(operatorProperties);
+                    operators.add(operator);
+                }
             } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
                 e.printStackTrace();
             }

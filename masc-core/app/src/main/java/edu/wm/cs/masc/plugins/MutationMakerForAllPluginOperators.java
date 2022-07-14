@@ -26,14 +26,14 @@ import java.util.HashMap;
 public class MutationMakerForAllPluginOperators {
     public ArrayList<IOperator> operators;
     String path;
-    CustomGenericOperatorProperties operatorProperties;
+    // AOperatorProperties operatorProperties;
 
     public MutationMakerForAllPluginOperators(String path) throws ConfigurationException {
         this.path = path;
-        operatorProperties = new CustomGenericOperatorProperties(path);
+        // operatorProperties = new CustomGenericOperatorProperties(path);
     }
 
-    public String getContent(IOperator operator) {
+    public String getContent(IOperator operator, AOperatorProperties operatorProperties) {
         TypeSpec.Builder builder = BuilderMainClass
                 .getClassBody(operatorProperties.getClassName());
         System.out.println("Processing: " + getName(operator));
@@ -45,15 +45,15 @@ public class MutationMakerForAllPluginOperators {
     }
 
     //if multiple types of operators fall under same category, and we want them all to be created.
-     private void populateOperators(){
+     private void populateOperators(AOperatorProperties operatorProperties){
          PluginOperatorManager pluginOperatorManager = PluginOperatorManager.getInstance();
-         operators = pluginOperatorManager.initializeCustomPlugins(path);
+         operators = pluginOperatorManager.initializeCustomPlugins(path, operatorProperties);
      };
 
-    public void make() {
-        populateOperators();
+    public void make(AOperatorProperties operatorProperties) {
+        populateOperators(operatorProperties);
         for (IOperator operator: operators) {
-            String content = getContent(operator);
+            String content = getContent(operator, operatorProperties);
             writeOutput(operatorProperties.getOutputDir(), getName(operator),
                     operatorProperties.getClassName() + ".java",
                     content.replaceAll("%d", ""));

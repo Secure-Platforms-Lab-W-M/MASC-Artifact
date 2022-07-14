@@ -31,30 +31,6 @@ public class MASC {
         }
         else{
             String path = args[0];
-
-            // TODO Remove this crap
-//             File f = new File("app\\build\\classes\\java\\main\\edu\\wm\\cs\\masc\\plugins\\PluginA.class");
-//            File f = new File("edu\\wm\\cs\\masc\\plugins\\PluginA.class");
-//            File f = new File("plugins\\PluginA.class");
-//
-//            Scanner scanner = new Scanner(f);
-//            while (scanner.hasNext())
-//                System.out.println(scanner.nextLine());
-//            System.out.println("\n\n");
-//            System.out.println(System.getProperty("user.dir"));
-//
-//
-//            URL[] cp = {f.toURI().toURL()};
-//            URLClassLoader urlcl = new URLClassLoader(cp);
-//            Class CustomOPClass  = urlcl.loadClass("edu.wm.cs.masc.plugins.PluginA");
-////            Class CustomOPClass  = urlcl.loadClass("plugins.PluginA");
-//
-//
-//            AStringOperator customOP = (AStringOperator) CustomOPClass.getDeclaredConstructor(StringOperatorProperties.class).newInstance(new StringOperatorProperties(path));
-//            System.out.println(customOP.mutation());
-
-
-            // PluginB shit = new PluginB(null);
             runMain(path);
         }
     }
@@ -110,7 +86,8 @@ public class MASC {
     public static void runMainScope(PropertiesReader reader, String path) throws ConfigurationException {
         String type = reader.getValueForAKey("type");
         AMutationMaker m = null;
-        AOperatorProperties p = null;
+        AOperatorProperties p;
+        MutationMakerForAllPluginOperators customMutationMaker = new MutationMakerForAllPluginOperators(path);
 
         if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())){
             p = new IntOperatorProperties(path);
@@ -119,11 +96,6 @@ public class MASC {
         else if (type.equalsIgnoreCase(RootOperatorType.StringOperator.name())) {
             p = new StringOperatorProperties(path);
             m = new StringOperatorMutationMaker((StringOperatorProperties) p);
-
-//            PluginOperatorManager pluginOperatorManager = PluginOperatorManager.getInstance();
-            // pluginOperatorManager.printCustomStringOperators((StringOperatorProperties) p);
-            // pluginOperatorManager.printCustomGenericOperators(new CustomGenericOperatorProperties(path));
-//            pluginOperatorManager.die(path);
         }
         else if (type.equalsIgnoreCase(RootOperatorType.ByteOperator.name())) {
             p = new ByteOperatorProperties(path);
@@ -137,14 +109,18 @@ public class MASC {
             p = new FlexibleOperatorProperties(path);
             m = new FlexibleMutationMaker((FlexibleOperatorProperties) p);
         }
+        else if (type.equalsIgnoreCase(RootOperatorType.Custom.name())) {
+            p = new CustomGenericOperatorProperties(path);
+        }
         else{
             System.out.println("Unknown Operator Type: " + type);
             return;
         }
-        m.make(p);
 
-        MutationMakerForAllPluginOperators mm = new MutationMakerForAllPluginOperators(path);
-        mm.make();
+        if(m!=null)
+            m.make(p);
+
+        customMutationMaker.make(p);
     }
 
 }
