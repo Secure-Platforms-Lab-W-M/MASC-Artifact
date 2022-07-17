@@ -1,4 +1,22 @@
-.ok{
-    background-color: aqua;
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-
+.ok{
+    background-image: linear-gradient(to bottom, #83a9e1, #54c0eb, #3bd4e0, #67e3c4, #a7eca4); 
+}
+.bg-nav{
+    background-color: #312042;
+}
+.brand-nam-margin{
+    margin-left: 2%;
+}
+.align-cls{
+    display: flex; 
+    justify-content: flex-end;
+    margin-right: 4%;
+}
+.inner-nav-items{
+    margin-right: 3%;
+    margin-left: 3%;
+}
