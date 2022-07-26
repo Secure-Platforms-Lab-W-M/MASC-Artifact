@@ -1,12 +1,12 @@
 package edu.wm.cs.masc.mutation.operators.custom;
 
 import edu.wm.cs.masc.mutation.operators.IOperator;
-import edu.wm.cs.masc.mutation.properties.CustomGenericOperatorProperties;
+import edu.wm.cs.masc.mutation.properties.CustomOperatorProperties;
 
 public abstract class ACustomGenericOperator implements IOperator {
-    CustomGenericOperatorProperties properties;
+    CustomOperatorProperties properties;
 
-    public ACustomGenericOperator(CustomGenericOperatorProperties p){
+    public ACustomGenericOperator(CustomOperatorProperties p){
         this.properties = p;
     }
 

@@ -3,7 +3,7 @@ package edu.wm.cs.masc.mutation.properties;
 import org.apache.commons.configuration2.ex.ConfigurationException;
 
 public class InterprocProperties extends AOperatorProperties {
-
+    private final String otherClassName;
 //    private final ArrayList<String> imports;
 
 //    public ArrayList<String> getImports() {
@@ -34,6 +34,8 @@ public class InterprocProperties extends AOperatorProperties {
         return try_catch;
     }
 
+    public String getOtherClassName() {return otherClassName;}
+
     private final String propertyName;
     
     private final String secureParam;
@@ -52,6 +54,6 @@ public class InterprocProperties extends AOperatorProperties {
         variableName = reader.getValueForAKey("variableName");
         invocation = reader.getValueForAKey("invocation");
         try_catch  = Boolean.valueOf(reader.getValueForAKey("try_catch"));
-
+        otherClassName = reader.getValueForAKey("otherClassName");
     }
 }

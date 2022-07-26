@@ -73,7 +73,7 @@ public class PluginOperatorManager {
                 !Modifier.isInterface(customOPClass.getModifiers());
     }
 
-    public ArrayList<IOperator> initializeCustomPlugins(String path, AOperatorProperties desiredOperatorProperties){
+    public ArrayList<IOperator> initializePlugins(String path, AOperatorProperties desiredOperatorProperties){
 
         for(Class customOperator: customOperators)
         {

@@ -2,8 +2,8 @@ package edu.wm.cs.masc.mutation.properties;
 
 import org.apache.commons.configuration2.ex.ConfigurationException;
 
-public class CustomGenericOperatorProperties extends AOperatorProperties{
-    public CustomGenericOperatorProperties(String path) throws ConfigurationException {
+public class CustomOperatorProperties extends AOperatorProperties{
+    public CustomOperatorProperties(String path) throws ConfigurationException {
         super(path);
     }
 

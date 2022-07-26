@@ -5,16 +5,12 @@ import com.squareup.javapoet.TypeSpec;
 import edu.wm.cs.masc.mutation.builders.generic.BuilderMainClass;
 import edu.wm.cs.masc.mutation.builders.generic.BuilderMainMethod;
 import edu.wm.cs.masc.mutation.operators.IOperator;
-import edu.wm.cs.masc.mutation.operators.OperatorType;
 import edu.wm.cs.masc.mutation.properties.AOperatorProperties;
-import edu.wm.cs.masc.mutation.properties.CustomGenericOperatorProperties;
-import edu.wm.cs.masc.mutation.properties.StringOperatorProperties;
 import edu.wm.cs.masc.utils.file.CustomFileWriter;
 import org.apache.commons.configuration2.ex.ConfigurationException;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * Is the Abstract Mutation maker that
@@ -47,7 +43,7 @@ public class MutationMakerForAllPluginOperators {
     //if multiple types of operators fall under same category, and we want them all to be created.
      private void populateOperators(AOperatorProperties operatorProperties){
          PluginOperatorManager pluginOperatorManager = PluginOperatorManager.getInstance();
-         operators = pluginOperatorManager.initializeCustomPlugins(path, operatorProperties);
+         operators = pluginOperatorManager.initializePlugins(path, operatorProperties);
      };
 
     public void make(AOperatorProperties operatorProperties) {

@@ -11,10 +11,9 @@ public abstract class AOperatorProperties {
     protected final String apiName;
     protected final String className;
     protected PropertiesReader reader;
-    private final String otherClassName;
 
     public String getOtherClassName() {
-        return otherClassName;
+        return reader.getValueForAKey("otherClassName");
     }
 
     public String getType() {
@@ -46,7 +45,7 @@ public abstract class AOperatorProperties {
         outputDir = reader.getValueForAKey("outputDir");
         apiName = reader.getValueForAKey("apiName");
         className = reader.getValueForAKey("className");
-        otherClassName = reader.getValueForAKey("otherClassName");
+        // otherClassName = reader.getValueForAKey("otherClassName");
     }
 
     public AOperatorProperties(String type, String outputDir,
@@ -56,6 +55,6 @@ public abstract class AOperatorProperties {
         this.outputDir = outputDir;
         this.apiName = apiName;
         this.className = className;
-        this.otherClassName = otherClassName;
+        // this.otherClassName = otherClassName;
     }
 }
