@@ -1,0 +1,49 @@
+{% extends 'layout/auth-layout.html' %}
+
+{% block content %}
+
+    <div class="d-flex justify-content-center align-items-center welcome">
+            <h1><b>Welcome to MASC</b></h1>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+        <span>
+            <i>  
+                A Systematic Evaluation of Cryptographic Misuse Detection Techniques
+            </i>
+        </span>
+    </div>
+   
+    <div class="container mt-4">
+        <div class="card mt-3">
+            <div class="row">
+                <div class="col-lg-6 col-xl-6">
+                    <div class="d-flex justify-content-center align-items-center welcome">
+                        <h1><b>Welcome to MASC</b></h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6">
+                    <div class="d-flex justify-content-center align-items-center welcome">
+                        <form class="mt-3 mb-3">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+{% endblock content %}

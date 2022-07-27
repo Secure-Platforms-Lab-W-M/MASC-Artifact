@@ -40,6 +40,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'modules.home',
     'modules.MascLab',
+    'modules.MascEngine',
+    'modules.UserAuthentication',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
