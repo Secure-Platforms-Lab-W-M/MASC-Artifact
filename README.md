@@ -31,7 +31,8 @@ Additional details of our paper can be found in the [Online Appendix](Online_app
   issn       = {2375-1207},
   pdf        = {https://arxiv.org/pdf/2107.07065.pdf},
   sourcecode = {https://github.com/Secure-Platforms-Lab-W-M/masc-artifact},
-  url        = {https://doi.ieeecomputersociety.org/10.1109/SP46214.2022.00024},
+  url        = {https://ieeexplore.ieee.org/document/9833582},
+  doi        = {10.1109/SP46214.2022.9833582}
 }
 ```
 
