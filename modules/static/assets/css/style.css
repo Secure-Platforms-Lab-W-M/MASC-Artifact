@@ -4,10 +4,10 @@ body {
     overflow-x: hidden;
 }
 .ok{
-    background-image: linear-gradient(to bottom, #83a9e1, #54c0eb, #3bd4e0, #67e3c4, #a7eca4); 
+    background-image: linear-gradient(to bottom, #e9e9e9, #d4d4d4, #9a9a9a, #707070, #454545); 
 }
 .bg-nav{
-    background-color: #312042;
+    background-color: #010101;
 }
 .brand-nam-margin{
     margin-left: 2%;
