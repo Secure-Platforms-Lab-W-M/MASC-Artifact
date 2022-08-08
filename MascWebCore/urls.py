@@ -22,5 +22,6 @@ urlpatterns = [
     path('',include("modules.home.urls")),
     path('labs/',include("modules.MascLab.urls")),
     path('engine/',include("modules.MascEngine.urls")),
-    path('auth/',include("modules.UserAuthentication.urls"))
+    path('auth/',include("modules.UserAuthentication.urls")),
+    path('profile/',include("modules.UserProfile.urls"))
 ]
