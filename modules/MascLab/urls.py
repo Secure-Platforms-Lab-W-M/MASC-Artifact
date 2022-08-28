@@ -3,4 +3,5 @@ from modules.MascLab import views
 
 urlpatterns = [
     path('', views.index, name='MascLab'),
+    path('inputForm', views.input_Form, name='InputForm')
 ]
