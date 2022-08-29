@@ -35,10 +35,12 @@ def input_Form(request):
             run('java D:\8th\spl\masc\MASC-SFall2022\masc-core\\app\src\main\java\edu\wm\cs\masc\MASC.java cipher.properties'))
         # read the output file
         input_code = "public static main"
-        output_code = p
+        output_code = "Out put COde"
+        stdOut = p
         return render(request, "masc-lab/lab.html", {
             "input_code": input_code,
-            "output_code": output_code
+            "output_code": output_code,
+            "stdOut": stdOut
         })
     list_of_operators = ["StringOperator","ByteOperator", "InterprocOperator", "Flexible", "IntOperator"]
     properties_file = ["a","b","upload"]
