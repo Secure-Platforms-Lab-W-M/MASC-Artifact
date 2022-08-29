@@ -13,7 +13,6 @@ async def run(cmd):
     print(f'[{cmd!r} exited with {proc.returncode}]')
     if stdout:
         print(f'[stdout]\n{stdout.decode()}')
-        print(await proc.stdout.read())
         return stdout.decode()
     if stderr:
         print(f'[stderr]\n{stderr.decode()}')
@@ -27,7 +26,6 @@ def index(request):
     # read the output file
     input_code = "public static main"
     output_code = p
-    print(p)
     return render(request, "masc-lab/lab.html", {
         "input_code": input_code,
         "output_code": output_code

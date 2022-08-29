@@ -23,5 +23,6 @@ urlpatterns = [
     path('labs/',include("modules.MascLab.urls")),
     path('engine/',include("modules.MascEngine.urls")),
     path('auth/',include("modules.UserAuthentication.urls")),
-    path('profile/',include("modules.UserProfile.urls"))
+    path('profile/',include("modules.UserProfile.urls")),
+    path('properties/', include("modules.CipherManager.urls"))
 ]
