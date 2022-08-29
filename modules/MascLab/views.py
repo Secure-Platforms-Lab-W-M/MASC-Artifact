@@ -4,6 +4,9 @@ from django.shortcuts import render
 # Create your views here.
 import asyncio
 
+from modules.CipherManager.models import PropertiesList
+
+
 async def run(cmd):
     proc = await asyncio.create_subprocess_shell(
         cmd,
@@ -43,8 +46,8 @@ def input_Form(request):
             "stdOut": stdOut
         })
     list_of_operators = ["StringOperator","ByteOperator", "InterprocOperator", "Flexible", "IntOperator"]
-    properties_file = ["a","b","upload"]
+    records = PropertiesList.objects.all().values()
     return render(request, "masc-lab/input-form.html",{
         "list_of_operators": list_of_operators,
-        "properties_file": properties_file
+        "properties_file": records
     })

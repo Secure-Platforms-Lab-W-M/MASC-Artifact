@@ -42,9 +42,9 @@
                                     </label>
                                     <select class="form-control" id="exampleFormControlSelectProperties"
                                             name="properties">
-                                        {% for header in properties_file %}
+                                        {% for file in properties_file %}
                                         <option>
-                                            {{ header }}
+                                            {{ file.filename }}
                                         </option>
                                         {% endfor %}
                                     </select>
