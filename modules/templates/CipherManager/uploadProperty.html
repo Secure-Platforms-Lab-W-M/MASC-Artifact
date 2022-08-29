@@ -30,13 +30,13 @@
                             </div>
                             <div class="form-group mt-3">
                                 <label for="selectProperty">Select Property Type</label>
-                                <select class="form-control" id="selectProperty" name="type">
-                                    <option>String</option>
-                                    <option>Integer</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
+                                  <select class="form-control" id="selectProperty" name="type">
+                                        {% for header in list_of_operators %}
+                                        <option>
+                                            {{ header }}
+                                        </option>
+                                        {% endfor %}
+                                    </select>
                             </div>
                             <div class="form-group mt-3">
                                 <label for="fileUpload">Select Property Type</label>

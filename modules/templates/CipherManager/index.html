@@ -30,38 +30,35 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>
-                                <span class="badge bg-primary">Files Uploading</span>
-                            </td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>
-                                <span class="badge bg-warning">Process Running</span>
-                            </td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>
-                                <span class="badge bg-success">Completed</span>
-                            </td>
-                            <td>@twitter</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>
-                                <span class="badge bg-danger">Danger</span>
-                            </td>
-                            <td>@twitter</td>
-                        </tr>
+                        {% for file in records %}
+                            <tr>
+                                <th>{{ file.id }}</th>
+                                <td>{{ file.name }}</td>
+                                <td>{{ file.filename }}</td>
+                                <td>{{ file.path }}</td>
+                                {% if file.type == 'StringOperator' %}
+                                    <td>
+                                        <span class="badge bg-warning">{{ file.type }}</span>
+                                    </td>
+                                {% elif file.type == 'ByteOperator' %}
+                                    <td>
+                                        <span class="badge bg-success">{{ file.type }}</span>
+                                    </td>
+                                {% elif file.type == 'InterprocOperator' %}
+                                    <td>
+                                        <span class="badge bg-primary">{{ file.type }}</span>
+                                    </td>
+                                {% elif file.type == 'IntOperator' %}
+                                    <td>
+                                        <span class="badge bg-danger">{{ file.type }}</span>
+                                    </td>
+                                {% elif file.type == 'Flexible' %}
+                                    <td>
+                                        <span class="badge bg-info">{{ file.type }}</span>
+                                    </td>
+                                {% endif %}
+                            </tr>
+                        {% endfor %}
                         </tbody>
                     </table>
                 </div>
