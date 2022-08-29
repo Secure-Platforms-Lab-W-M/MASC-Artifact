@@ -20,16 +20,29 @@ async def run(cmd):
 
 def index(request):
     # operator
-    # make any.properties file 
-    s = asyncio.run(run('node --version'))
-    p = asyncio.run(run('java D:\8th\spl\masc\MASC-SFall2022\masc-core\\app\src\main\java\edu\wm\cs\masc\MASC.java cipher.properties'))
-    # read the output file
-    input_code = "public static main"
-    output_code = p
+    # make any.properties file
     return render(request, "masc-lab/lab.html", {
-        "input_code": input_code,
-        "output_code": output_code
+        "input_code": "NUll",
+        "output_code": "Null"
     })
 
 def input_Form(request):
-    return render(request, "masc-lab/input-form.html")
+    print(request.method)
+    if request.method == "POST":
+        print('her')
+        s = asyncio.run(run('node --version'))
+        p = asyncio.run(
+            run('java D:\8th\spl\masc\MASC-SFall2022\masc-core\\app\src\main\java\edu\wm\cs\masc\MASC.java cipher.properties'))
+        # read the output file
+        input_code = "public static main"
+        output_code = p
+        return render(request, "masc-lab/lab.html", {
+            "input_code": input_code,
+            "output_code": output_code
+        })
+    list_of_operators = ["StringOperator","ByteOperator", "InterprocOperator", "Flexible", "IntOperator"]
+    properties_file = ["a","b","upload"]
+    return render(request, "masc-lab/input-form.html",{
+        "list_of_operators": list_of_operators,
+        "properties_file": properties_file
+    })
