@@ -23,9 +23,8 @@ import java.util.HashMap;
 public abstract class AMutationMaker {
     public HashMap<OperatorType, IOperator> operators =
             new HashMap<>();
-    public AOperatorProperties p;
 
-    public String getContent(OperatorType operatorType){
+    public String getContent(OperatorType operatorType, AOperatorProperties p){
         TypeSpec.Builder builder = BuilderMainClass
                 .getClassBody(p.getClassName());
         System.out.println("Processing: " + operatorType.name());
@@ -42,7 +41,7 @@ public abstract class AMutationMaker {
     public void make(AOperatorProperties p) {
         populateOperators();
         for (OperatorType operatorType : operators.keySet()) {
-            String content = getContent(operatorType);
+            String content = getContent(operatorType, p);
             writeOutput(p.getOutputDir(), operatorType,
                     p.getClassName() + ".java",
                     content.replaceAll("%d", ""));

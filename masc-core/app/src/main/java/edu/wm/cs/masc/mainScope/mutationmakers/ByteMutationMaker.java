@@ -6,6 +6,7 @@ import edu.wm.cs.masc.mutation.builders.generic.BuilderMainClass;
 import edu.wm.cs.masc.mutation.builders.generic.BuilderMainMethod;
 import edu.wm.cs.masc.mutation.operators.OperatorType;
 import edu.wm.cs.masc.mutation.operators.restrictive.byteoperator.CurrentTime;
+import edu.wm.cs.masc.mutation.properties.AOperatorProperties;
 import edu.wm.cs.masc.mutation.properties.ByteOperatorProperties;
 
 public class ByteMutationMaker extends AMutationMaker {
@@ -17,7 +18,7 @@ public class ByteMutationMaker extends AMutationMaker {
     }
 
     @Override
-    public String getContent(OperatorType operatorType) {
+    public String getContent(OperatorType operatorType, AOperatorProperties p) {
         TypeSpec.Builder builder = BuilderMainClass
                 .getClassBody(p.getClassName());
         System.out.println("Processing: " + operatorType.name());

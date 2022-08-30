@@ -1,6 +1,7 @@
 package edu.wm.cs.masc;
 
 import edu.wm.cs.masc.plugins.MutationMakerForPluginOperators;
+import edu.wm.cs.masc.resultAnalysis.ResultAnalyzer;
 import edu.wm.cs.masc.similarity.MPlus;
 import edu.wm.cs.masc.mainScope.mutationmakers.*;
 import edu.wm.cs.masc.utils.config.PropertiesReader;
@@ -18,11 +19,10 @@ public class MASC {
     public static void main(String[] args) throws Exception{
 
 
-
         if (args.length == 0){
             System.out.println("No properties file supplied");
         }
-        else if (args.length > 1){
+        else if (args.length > 2){
             System.out.println("Too many arguments were provided");
         }
         else if (!args[0].endsWith(".properties")){
@@ -32,6 +32,14 @@ public class MASC {
             String path = args[0];
             runMain(path);
         }
+
+        if(args.length == 2)
+            runResultAnalysis(args[1]);
+    }
+
+    public static void runResultAnalysis(String path) throws ConfigurationException {
+        ResultAnalyzer resultAnalyzer = new ResultAnalyzer(path);
+        resultAnalyzer.analyzeResult();
     }
 
     public static void runMain(String path) throws ConfigurationException, IOException, BadLocationException {
@@ -55,6 +63,7 @@ public class MASC {
         else{
             System.out.println("Unknown Scope: " + scope);
         }
+
     }
 
     public static void runSelectiveScope(PropertiesReader reader) throws IOException {
