@@ -5,7 +5,7 @@
 //
 //public class NeverGonnaGiveYouUp extends AStringOperator {
 //
-//    public NeverGonnaGiveYouUp(StringOperatorProperties properties, String shit){
+//    public NeverGonnaGiveYouUp(StringOperatorProperties properties, String test){
 //        super(properties);
 //    }
 //

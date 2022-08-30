@@ -31,15 +31,4 @@ public class IntMutationMaker extends AMutationMaker{
         operators.put(OperatorType.Overflow, new Overflow(p));
     }
 
-    @Override
-    public String getContent(OperatorType operatorType) {
-        TypeSpec.Builder builder = BuilderMainClass
-                .getClassBody(p.getClassName());
-        System.out.println("Processing: " + operatorType.name());
-        MethodSpec.Builder mainMethod = BuilderMainMethod
-                .getMethodSpecWithException();
-        mainMethod.addCode(operators.get(operatorType).mutation());
-        builder.addMethod(mainMethod.build());
-        return builder.build().toString();
-    }
 }

@@ -1,6 +1,6 @@
 package edu.wm.cs.masc;
 
-import edu.wm.cs.masc.plugins.MutationMakerForAllPluginOperators;
+import edu.wm.cs.masc.plugins.MutationMakerForPluginOperators;
 import edu.wm.cs.masc.similarity.MPlus;
 import edu.wm.cs.masc.mainScope.mutationmakers.*;
 import edu.wm.cs.masc.utils.config.PropertiesReader;
@@ -86,7 +86,7 @@ public class MASC {
         String type = reader.getValueForAKey("type");
         AMutationMaker m = null;
         AOperatorProperties p;
-        MutationMakerForAllPluginOperators pluginOperatorsMutationMaker = new MutationMakerForAllPluginOperators(path);
+        MutationMakerForPluginOperators pluginOperatorsMutationMaker = new MutationMakerForPluginOperators(path);
 
         if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())){
             p = new IntOperatorProperties(path);
