@@ -19,12 +19,12 @@ import java.util.ArrayList;
  * it outputs an instance of mutation in mainScope format.
  */
 
-public class MutationMakerForAllPluginOperators {
+public class MutationMakerForPluginOperators {
     public ArrayList<IOperator> operators;
     String path;
     // AOperatorProperties operatorProperties;
 
-    public MutationMakerForAllPluginOperators(String path) throws ConfigurationException {
+    public MutationMakerForPluginOperators(String path) throws ConfigurationException {
         this.path = path;
         // operatorProperties = new CustomGenericOperatorProperties(path);
     }
