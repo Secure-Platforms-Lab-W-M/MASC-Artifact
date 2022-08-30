@@ -17,8 +17,6 @@ public class MASC {
 
     public static void main(String[] args) throws Exception{
 
-
-
         if (args.length == 0){
             System.out.println("No properties file supplied");
         }

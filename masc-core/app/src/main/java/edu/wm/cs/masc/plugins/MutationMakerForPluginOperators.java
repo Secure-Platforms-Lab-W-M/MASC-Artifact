@@ -14,9 +14,10 @@ import java.util.ArrayList;
 
 /**
  * Is the Abstract Mutation maker that
- * creates instances of mutations for bare-bone layer of MASC.
+ * creates instances of mutations for operators written by users as plugins.
  * To simplify, it is given the body of mutation, classname and other information,
  * it outputs an instance of mutation in mainScope format.
+ * @author: Yusuf Ahmed
  */
 
 public class MutationMakerForPluginOperators {
@@ -41,10 +42,10 @@ public class MutationMakerForPluginOperators {
     }
 
     //if multiple types of operators fall under same category, and we want them all to be created.
-     private void populateOperators(AOperatorProperties operatorProperties){
-         PluginOperatorManager pluginOperatorManager = PluginOperatorManager.getInstance();
-         operators = pluginOperatorManager.initializePlugins(path, operatorProperties);
-     };
+    private void populateOperators(AOperatorProperties operatorProperties){
+        PluginOperatorManager pluginOperatorManager = PluginOperatorManager.getInstance();
+        operators = pluginOperatorManager.initializePlugins(path, operatorProperties);
+    };
 
     public void make(AOperatorProperties operatorProperties) {
         populateOperators(operatorProperties);
@@ -62,15 +63,11 @@ public class MutationMakerForPluginOperators {
     }
 
     private void writeOutput(String path, String name, String fileName,
-                            String content) {
+                             String content) {
         String dir_path = path + File.separator + name + File.separator;
         if (!CustomFileWriter.WriteFile(dir_path, fileName, content)) {
             System.out.println("Something went wrong, check stack trace");
         }
     }
-
-//    private String getOperatorTypeName(IOperator operator){
-//        return p.getClassName() + operator.getClass().getName();
-//    }
 
 }
