@@ -2,9 +2,7 @@ package edu.wm.cs.masc.utils.config;
 
 import org.apache.commons.configuration2.Configuration;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Scanner;
+import java.util.*;
 
 public class ConfigurationProxy {
     Configuration configuration;
@@ -16,6 +14,7 @@ public class ConfigurationProxy {
     }
 
     public Iterator<String> getKeys() {
+        // should I do the same here?
         return configuration.getKeys();
     }
 
@@ -25,15 +24,31 @@ public class ConfigurationProxy {
             if(map.containsKey(key))
                 return map.get(key);
 
-            System.out.println("Key '" + key + "' not found in properties file. Enter value:");
-            value = scanner.nextLine();
-            map.put(key, value);
+            value = inputValueAndUpdateMap(key);
         }
 
         return value;
     }
 
+    private String inputValueAndUpdateMap(String key) {
+        String value;
+        System.out.println("Key '" + key + "' not found in properties file. Enter value:");
+        value = scanner.nextLine();
+        map.put(key, value);
+        return value;
+    }
+
     public String[] getStringArray(String key) {
-        return configuration.getStringArray(key);
+        String[] resultArr = configuration.getStringArray(key);
+        if(resultArr.length != 0)
+            return resultArr;
+
+        if(!map.containsKey(key))
+            inputValueAndUpdateMap(key);
+
+        ArrayList<String> resultArrayList = new ArrayList<>(Arrays.asList(resultArr));
+        resultArrayList.add(map.get(key));
+
+        return (String[]) resultArrayList.toArray();
     }
 }
