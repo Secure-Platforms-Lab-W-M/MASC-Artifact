@@ -8,6 +8,7 @@ from modules.CipherManager.models import PropertiesList
 
 
 async def run(cmd):
+    print(cmd)
     proc = await asyncio.create_subprocess_shell(
         cmd,
         stdout=asyncio.subprocess.PIPE,
@@ -29,15 +30,22 @@ def index(request):
         "output_code": "Null"
     })
 
+
+def read_selected_file(f):
+    with open('./modules/static/properties/'+f, 'r') as destination:
+        contents = destination.read()
+    return contents
+
+
 def input_Form(request):
     print(request.method)
     if request.method == "POST":
-        print('her')
-        s = asyncio.run(run('node --version'))
+        properties = request.POST['properties']
+        fileInput = read_selected_file(properties)
         p = asyncio.run(
-            run('java D:\8th\spl\masc\MASC-SFall2022\masc-core\\app\src\main\java\edu\wm\cs\masc\MASC.java cipher.properties'))
+            run('java D:\8th\spl\masc\MASC-SFall2022\masc-core\\app\src\main\java\edu\wm\cs\masc\MASC.java '+properties))
         # read the output file
-        input_code = "public static main"
+        input_code = fileInput
         output_code = "Out put COde"
         stdOut = p
         return render(request, "masc-lab/lab.html", {
