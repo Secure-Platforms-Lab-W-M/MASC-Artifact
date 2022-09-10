@@ -41,11 +41,11 @@ def input_Form(request):
     print(request.method)
     if request.method == "POST":
         properties = request.POST['properties']
-        fileInput = read_selected_file(properties)
+        fileinput = read_selected_file(properties)
         p = asyncio.run(
             run('java D:\8th\spl\masc\MASC-SFall2022\masc-core\\app\src\main\java\edu\wm\cs\masc\MASC.java '+properties))
         # read the output file
-        input_code = fileInput
+        input_code = fileinput
         output_code = "Out put COde"
         stdOut = p
         return render(request, "masc-lab/lab.html", {
