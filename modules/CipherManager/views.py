@@ -4,13 +4,28 @@ from modules.CipherManager.models import PropertiesList
 
 
 def index(request):
-    uploaded_files_header = ["Id", "Name", "File Name", "Path", "Type"]
+    uploaded_files_header = ["Id", "Name", "File Name", "Path", "Type", "Actions"]
     records = PropertiesList.objects.all().values()
-    print(records)
     return render(request, "CipherManager/index.html", {
         "uploaded_files_header": uploaded_files_header,
         "records": records
     })
+
+
+def editProperties(request, id):
+    if request.method == "POST":
+        return
+        # edit requested
+    record = PropertiesList.objects.get(id=id)
+    property_name = record.name
+    property_filename = record.filename
+    property_operator = record.type
+    return render(request, "CipherManager/edit.html", {
+        "name" : property_name,
+        "filename": property_filename,
+        "type": property_operator
+    })
+
 
 def handle_uploaded_file(f):
     with open('./modules/static/properties/'+f.name, 'wb') as destination:

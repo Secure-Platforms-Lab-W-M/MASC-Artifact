@@ -57,6 +57,10 @@
                                         <span class="badge bg-info">{{ file.type }}</span>
                                     </td>
                                 {% endif %}
+                                <td>
+                                    <a class="btn btn-primary" href="{% url 'editProperties' id=file.id %}">Edit</a>
+                                    <button class="warning">Delete</button>
+                                </td>
                             </tr>
                         {% endfor %}
                         </tbody>
