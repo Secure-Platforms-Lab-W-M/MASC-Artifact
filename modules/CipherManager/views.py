@@ -13,18 +13,40 @@ def index(request):
 
 
 def editProperties(request, id):
-    if request.method == "POST":
-        return
-        # edit requested
     record = PropertiesList.objects.get(id=id)
+    if request.method == "POST":
+        filename = record.filename
+        file_content = request.POST["content"]
+        update_file_content(filename,file_content)
+        uploaded_files_header = ["Id", "Name", "File Name", "Path", "Type", "Actions"]
+        records = PropertiesList.objects.all().values()
+        return render(request, "CipherManager/index.html", {
+            "uploaded_files_header": uploaded_files_header,
+            "records": records
+        })
+        # edit requested
     property_name = record.name
     property_filename = record.filename
     property_operator = record.type
+    content = read_data_from_uploaded_file(property_filename)
     return render(request, "CipherManager/edit.html", {
         "name" : property_name,
         "filename": property_filename,
-        "type": property_operator
+        "type": property_operator,
+        "content" : content
     })
+
+
+def read_data_from_uploaded_file(f):
+    with open('./modules/static/properties/'+f, 'r') as destination:
+        contents = destination.read()
+    return contents
+
+
+def update_file_content(filename, content):
+    arr = bytes(content, 'utf-8')
+    with open('./modules/static/properties/'+filename, 'wb') as destination:
+        destination.write(arr)
 
 
 def handle_uploaded_file(f):
