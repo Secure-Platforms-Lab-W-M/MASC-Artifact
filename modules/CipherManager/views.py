@@ -1,7 +1,9 @@
 import json
+import os
 from django.shortcuts import render
 from modules.CipherManager.models import PropertiesList
-
+from django.shortcuts import render, redirect
+from django.http import HttpResponse
 
 def index(request):
     uploaded_files_header = ["Id", "Name", "File Name", "Path", "Type", "Actions"]
@@ -18,12 +20,7 @@ def editProperties(request, id):
         filename = record.filename
         file_content = request.POST["content"]
         update_file_content(filename,file_content)
-        uploaded_files_header = ["Id", "Name", "File Name", "Path", "Type", "Actions"]
-        records = PropertiesList.objects.all().values()
-        return render(request, "CipherManager/index.html", {
-            "uploaded_files_header": uploaded_files_header,
-            "records": records
-        })
+        return redirect(index)
         # edit requested
     property_name = record.name
     property_filename = record.filename
@@ -55,6 +52,12 @@ def handle_uploaded_file(f):
             destination.write(chunk)
     return destination.name
 
+
+def delete_uploaded_file(f):
+    path = './modules/static/properties/'+f
+    if os.path.isfile(path):
+        os.remove(path)
+
 def uploadPropertyForm(request):
     if request.method == 'POST':
         name = request.POST['name']
@@ -70,3 +73,10 @@ def uploadPropertyForm(request):
         "list_of_operators": list_of_operators
     })
 # Create your views here.
+
+
+def deleteProperties(request,id):
+    record = PropertiesList.objects.get(id=id)
+    delete_uploaded_file(record.filename)
+    PropertiesList.objects.get(id=id).delete()
+    return redirect(index)
