@@ -34,12 +34,24 @@ public class ResultAnalyzer {
                         try {
                             int length = sarifPar.getResult(propertiesReader.getOutputReportFileWithDir()).length();
                             if(length == 0)
+                            {
                                 System.out.println("\t- Mutant for " + f.getName() + " is unkilled");
+                                if(
+                                        propertiesReader.stopCondition.equals(StopCondition.OnUnkilledMutant.name())
+                                        || propertiesReader.stopCondition.equals(StopCondition.OnError.name())
+                                )
+                                    break;
+                            }
                             else
                                 System.out.println("\t- Mutant killed");
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
+                    }
+                    else {
+                        System.out.println("Compilation failed");
+                        if(propertiesReader.stopCondition.equals(StopCondition.OnError.name()))
+                            break;
                     }
 //                                        break;
                 }
