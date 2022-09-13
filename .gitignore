@@ -28,3 +28,8 @@ staticfiles/*
 modules/static/assets/node_modules
 modules/static/assets/yarn.lock
 modules/static/assets/.temp
+modules/static/properties/app-all.jar
+modules/static/properties/app/outputs
+
+MainScope.log
+

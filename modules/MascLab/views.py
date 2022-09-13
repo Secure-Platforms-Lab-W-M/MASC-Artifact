@@ -43,7 +43,7 @@ def input_Form(request):
         properties = request.POST['properties']
         fileinput = read_selected_file(properties)
         p = asyncio.run(
-            run('java D:\8th\spl\masc\MASC-SFall2022\masc-core\\app\src\main\java\edu\wm\cs\masc\MASC.java '+properties))
+            run('java -jar ./modules/static/properties/app-all.jar '+properties))
         # read the output file
         input_code = fileinput
         output_code = "Out put COde"
