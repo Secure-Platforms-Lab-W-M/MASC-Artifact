@@ -17,11 +17,20 @@ public class PluginOperatorManager {
     private final ArrayList<Class> customOperators = new ArrayList<>();
     private final ArrayList<IOperator> operators = new ArrayList<>();
 
+    public boolean isInProd() {
+        String className = this.getClass().getName().replace('.', '/');
+        String classJar =
+                this.getClass().getResource("/" + className + ".class").toString();
+        return classJar.startsWith("jar:");
+    }
+
     private PluginOperatorManager() {
         String packageName = "plugins";
-        String folderDir = "app\\build\\libs";
-        File[] files = new File(folderDir + "\\" + packageName).listFiles();
+        String folderDir = "app/build/libs/";
+        if(isInProd()) folderDir = "";
+        File[] files = new File(folderDir + packageName).listFiles();
         File folder = new File(folderDir);
+
 
         if(files == null)
         {

@@ -192,7 +192,7 @@ You code for plugins refer to classes already within MASC's source code. Hence i
 # 3. Placing the class file in /plugins/ folder
 Place the  `.class` files in /plugins/ folder. Alternatively, you can place your .java files here and compile them here so that the class files are generated here. MASC will ignore all files with extension other than `.class`. 
 
-You can place as many plugins of different types in /plugins/. But only the plugins of the same type as specified in properties file + plugins of custom type will be run.
+You can place as many plugins of different types in /plugins/. But only the plugins of the same type as specified in properties file will be run.
 
 
 # 4. Running the jar
