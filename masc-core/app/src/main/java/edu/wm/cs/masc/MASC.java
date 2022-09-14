@@ -34,11 +34,19 @@ public class MASC {
         }
 
         if(args.length == 2)
-            runResultAnalysis(args[1]);
+            runResultAnalysis(args[1], args[0]);
     }
 
-    public static void runResultAnalysis(String path) throws ConfigurationException {
-        ResultAnalyzer resultAnalyzer = new ResultAnalyzer(path);
+    public static void runResultAnalysis(String pathOfResultAnalysisPropertiesFile, String pathOfFirstPropertiesFile) throws ConfigurationException {
+        String outputDir = null;
+        if(pathOfFirstPropertiesFile != null){
+            PropertiesReader reader = new PropertiesReader(pathOfFirstPropertiesFile);
+            outputDir = reader.getValueForAKey("outputDir");
+        }
+
+
+
+        ResultAnalyzer resultAnalyzer = new ResultAnalyzer(pathOfResultAnalysisPropertiesFile, outputDir);
         resultAnalyzer.analyzeResult();
     }
 

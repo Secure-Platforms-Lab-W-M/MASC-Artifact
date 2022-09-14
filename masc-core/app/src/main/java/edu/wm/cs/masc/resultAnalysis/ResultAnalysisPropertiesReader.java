@@ -6,7 +6,8 @@ import org.apache.commons.configuration2.ex.ConfigurationException;
 public class ResultAnalysisPropertiesReader {
     PropertiesReader propertiesReader;
     String toolName, toolLocation, toolRunCommand;
-    String codeCompileCommand, outputReportDirectory, outputFileName, stopCondition;
+    String codeCompileCommand, outputReportDirectory, outputFileName,
+            stopCondition, mutatedAppsLocation, directoryChangeCommand;
 
     public ResultAnalysisPropertiesReader(String path) throws ConfigurationException {
         propertiesReader = new PropertiesReader(path);
@@ -18,6 +19,8 @@ public class ResultAnalysisPropertiesReader {
         outputReportDirectory = propertiesReader.getValueForAKey("outputReportDirectory");
         outputFileName = propertiesReader.getValueForAKey("outputFileName");
         stopCondition = propertiesReader.getValueForAKey("stopCondition");
+        mutatedAppsLocation = propertiesReader.getValueForAKey("mutatedAppsLocation");
+        directoryChangeCommand = propertiesReader.getValueForAKey("directoryChangeCommand");
     }
 
     public String getToolRunCommand(String dir) {
@@ -26,6 +29,14 @@ public class ResultAnalysisPropertiesReader {
 
     public String getOutputReportFileWithDir(){
         return outputReportDirectory + "\\" + outputFileName;
+    }
+
+    public boolean stopOnError() {
+        return stopCondition.equalsIgnoreCase("OnError") || stopCondition.equalsIgnoreCase("OnErrorOrUnkilled");
+    }
+
+    public boolean stopOnUnkilled() {
+        return stopCondition.equalsIgnoreCase("OnUnkilledMutant") || stopCondition.equalsIgnoreCase("OnErrorOrUnkilled");
     }
 
 }
