@@ -6,6 +6,26 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class CommandPrompt {
+    private static final String OS = System.getProperty("os.name").toLowerCase();
+    private static final boolean IS_WINDOWS = (OS.contains("win"));
+    private static final boolean IS_MAC = (OS.contains("mac"));
+    private static final boolean IS_UNIX = (OS.contains("nix") || OS.contains("nux") || OS.indexOf("aix") > 0);
+    private static final boolean IS_SOLARIS = (OS.contains("sunos"));
+
+    String commandPrefix1, commandPrefix2;
+    int successCode;
+
+    public CommandPrompt(){
+        if(IS_WINDOWS) {
+            commandPrefix1 = "cmd";
+            commandPrefix2 = "/c";
+        }
+        else {
+            commandPrefix1 = "sh";
+            commandPrefix2 = "-c";
+        }
+        successCode = 0;
+    }
     private String getAllFromStream(InputStream inputStream) throws IOException {
         BufferedReader input = new BufferedReader(new InputStreamReader(inputStream));
 
@@ -18,29 +38,22 @@ public class CommandPrompt {
         return answer.toString();
     }
 
-    private String processCommandString(String command) {
-        String os = System.getProperty("os.name");
-        if(os.startsWith("Windows")){
-            command = command.replace("/", "\\");
-        }
-        return command;
-    }
-
     public CPOutput run_command(String command) {
         try {
-            command = processCommandString(command);
-            Runtime rt = Runtime.getRuntime();
-            Process pr = null;
-
-            if(System.getProperty("os.name").startsWith("Windows")){
-                pr = rt.exec("cmd /c " + command);
+            if(IS_WINDOWS)
+            {
+                command = command.replace("/", "\\");
+                command = command.replaceFirst("^cd ", "pushd ");
             }
 
+            ProcessBuilder builder = new ProcessBuilder(
+                    commandPrefix1, commandPrefix2, command);
+            builder.redirectErrorStream(true);
+            Process p = builder.start();
 
-            String err = getAllFromStream(pr.getErrorStream());
-            String inp = getAllFromStream(pr.getInputStream());
-
-            return new CPOutput(err, inp, command, pr.waitFor() != 0);
+            String err = getAllFromStream(p.getErrorStream());
+            String inp = getAllFromStream(p.getInputStream());
+            return new CPOutput(err, inp, command, p.waitFor() != successCode);
 
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();

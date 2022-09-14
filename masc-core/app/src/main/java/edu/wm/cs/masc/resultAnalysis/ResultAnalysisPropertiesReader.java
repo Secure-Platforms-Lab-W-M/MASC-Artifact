@@ -7,7 +7,7 @@ public class ResultAnalysisPropertiesReader {
     PropertiesReader propertiesReader;
     String toolName, toolLocation, toolRunCommand;
     String codeCompileCommand, outputReportDirectory, outputFileName,
-            stopCondition, mutatedAppsLocation, directoryChangeCommand;
+            stopCondition, mutatedAppsLocation;
 
     public ResultAnalysisPropertiesReader(String path) throws ConfigurationException {
         propertiesReader = new PropertiesReader(path);
@@ -20,15 +20,14 @@ public class ResultAnalysisPropertiesReader {
         outputFileName = propertiesReader.getValueForAKey("outputFileName");
         stopCondition = propertiesReader.getValueForAKey("stopCondition");
         mutatedAppsLocation = propertiesReader.getValueForAKey("mutatedAppsLocation");
-        directoryChangeCommand = propertiesReader.getValueForAKey("directoryChangeCommand");
     }
 
     public String getToolRunCommand(String dir) {
-        return toolRunCommand.replace("{}", System.getProperty("user.dir") + "\\app\\outputs\\" + dir);
+        return toolRunCommand.replace("{}", System.getProperty("user.dir") + "/app/outputs/" + dir);
     }
 
     public String getOutputReportFileWithDir(){
-        return outputReportDirectory + "\\" + outputFileName;
+        return outputReportDirectory + "/" + outputFileName;
     }
 
     public boolean stopOnError() {

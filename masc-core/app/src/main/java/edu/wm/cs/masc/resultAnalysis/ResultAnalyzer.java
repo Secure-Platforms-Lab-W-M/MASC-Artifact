@@ -34,11 +34,11 @@ public class ResultAnalyzer {
         if(files != null) {
             System.out.println("Analyzing results form mutated apps in - " + file.getAbsolutePath());
             for(File f: files) {
-                String compileCommand = propertiesReader.directoryChangeCommand + " " + mutatedAppsLocation + "/" + f.getName() + " & " + propertiesReader.codeCompileCommand;
+                String compileCommand = "cd " + mutatedAppsLocation + "/" + f.getName() + " && " + propertiesReader.codeCompileCommand;
                 CPOutput output = cp.run_command(compileCommand);
 
                 if(!output.error) {
-                    CPOutput output2 = cp.run_command( propertiesReader.directoryChangeCommand + " " + propertiesReader.toolLocation + " & " + propertiesReader.getToolRunCommand(f.getName()));
+                    CPOutput output2 = cp.run_command( "cd " + propertiesReader.toolLocation + " && " + propertiesReader.getToolRunCommand(f.getName()));
                     if(!output2.error) {
                         try {
                             int length = sarifPar.getResult(propertiesReader.getOutputReportFileWithDir()).length();
