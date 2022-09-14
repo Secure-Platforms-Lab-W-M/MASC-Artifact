@@ -12,7 +12,7 @@ public abstract class AMultiClassMutationMakerOptionalDependencies
     public void make(AOperatorProperties p) {
         populateOperators();
         for (OperatorType operatorType : operators.keySet()) {
-            String content = getContent(operatorType);
+            String content = getContent(operatorType, p);
             writeOutput(p.getOutputDir(), operatorType,
                     p.getClassName() + ".java",
                     content);

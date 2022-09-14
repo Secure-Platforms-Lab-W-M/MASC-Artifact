@@ -30,7 +30,7 @@ public class ByteReuseTest {
                 "new javax.crypto.spec.IvParameterSpec(cryptoTemp.getBytes(),0,8);\n"+
 
                 //* Note: Here we test for our base misuse case
-                "Cipher c = Cipher.getInstance(“AES”);\n"+
+                "Cipher c = Cipher.getInstance(“AES“);\n"+
                 "c.init(Cipher.ENCRYPT_MODE, ivSpec);\n"+
                 "c.init(Cipher.ENCRYPT_MODE, ivSpec2);\n"+
 

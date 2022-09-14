@@ -1,5 +1,6 @@
 package edu.wm.cs.masc;
 
+import edu.wm.cs.masc.plugins.MutationMakerForPluginOperators;
 import edu.wm.cs.masc.similarity.MPlus;
 import edu.wm.cs.masc.mainScope.mutationmakers.*;
 import edu.wm.cs.masc.utils.config.PropertiesReader;
@@ -46,6 +47,7 @@ public class MASC {
         }
         // MASC MainScope
         else if(scope.equalsIgnoreCase("MAIN")){
+            System.out.println("Main scope");
             runMainScope(reader, path);
         }
         else{
@@ -81,7 +83,8 @@ public class MASC {
     public static void runMainScope(PropertiesReader reader, String path) throws ConfigurationException {
         String type = reader.getValueForAKey("type");
         AMutationMaker m = null;
-        AOperatorProperties p = null;
+        AOperatorProperties p;
+        MutationMakerForPluginOperators pluginOperatorsMutationMaker = new MutationMakerForPluginOperators(path);
 
         if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())){
             p = new IntOperatorProperties(path);
@@ -103,11 +106,18 @@ public class MASC {
             p = new FlexibleOperatorProperties(path);
             m = new FlexibleMutationMaker((FlexibleOperatorProperties) p);
         }
+        else if (type.equalsIgnoreCase(RootOperatorType.Custom.name())) {
+            p = new CustomOperatorProperties(path);
+        }
         else{
             System.out.println("Unknown Operator Type: " + type);
             return;
         }
-        m.make(p);
+
+        if(m!=null)
+            m.make(p);
+
+        pluginOperatorsMutationMaker.make(p);
     }
 
 }

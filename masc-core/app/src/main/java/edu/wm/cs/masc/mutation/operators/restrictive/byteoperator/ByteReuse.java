@@ -28,7 +28,7 @@ public class ByteReuse extends AByteOperator {
                 "(" + tempVariableName + ".getBytes(),0,8);\n" +
 
                 //* Now, instantiate the base misuse case of eg. reusing iv
-                "Cipher c = Cipher.getInstance(“AES”);\n" +
+                "Cipher c = Cipher.getInstance(“AES“);\n" +
                 //* Note: We use api_variable first (eg. ivSpec)
                 "c.init(Cipher.ENCRYPT_MODE, "+api_variable+");\n"+
                 //* Note: We use api_variable2 second (eg. ivSpec2)

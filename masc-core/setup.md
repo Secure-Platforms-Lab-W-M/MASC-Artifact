@@ -30,9 +30,14 @@ On the left-hand side, click the 'Build, Execution, Deployment' drop-down.  From
 Hit Apply and OK.  Intelli J should automatically begin building your project.
 
 ## Running Masc-Core
-Open MASCBarebone.java.  It can be found at `masc-core > app > src > main > java > masc > edu.wm.cs.masc > barebone > MASCBarebone.java.`
-You should see a green play button beside the main method of the file.  Press this button.  Select the first option from the menu.  Congratulations, you just ran Masc-Core, but wait, you got lots of runtime errors... Continue to the next section to resolve these.
+Open MASC.java.  It can be found at `masc-core > app > src > main > java > edu.wm.cs.masc > MASC.java.`
+You should see a green play button beside the main method of the file.  Press this button.  Select the first option from the menu.  Congratulations, you just ran Masc-Core, but wait, Nothing really happened, except for a message saying "No properties file supplied". Continue to the next section to resolve these.
 
 ## Resolving Initial Errors
 
-If you have made it this far in the setup process, then you are seeing lots of runtime errors in your Intelli J console.  Do not fear, the solution is simple.  Note that the program takes the `Cipher.properties` file as input by default.  Find the file in the resources folder and open it.  Notice that the `outputDir` field specifies a file path that is not on your system.  Change this line to an appropriate file path.  Make sure that it exists!  Save the file and rerun the project.  The program should now run without error.  Look in the specified directory and you will find all of the mutations.
+If you have made it this far in the setup process, then you aren't seeing any useful outputs yet.  Do not fear, the solution is simple.  Note that the program needs exactly one parameter, i.e., the name of the properties file. The default `Cipher.properties` file is given in src > main > resources.  Find the file in the resources folder and open it.  Notice that the `outputDir` field specifies a file path. Ensure that the file exists on your system. Then click on "edit build configuration" from the toolbar at the top, and add Cipher.properties in program arguments.  The program should now run without errors.  Look in the specified directory, and you will find all the mutations.
+
+## Building JAR
+
+If you want to create a JAR file for MASC, just run `gradlew shadowJar`. The output JAR can be found at `masc-core > app > build > libs > app-all.jar`.
+To run the JAR, place Cipher.properties in the same directory as the JAR and run `java -jar app-all.jar Cipher.properties`

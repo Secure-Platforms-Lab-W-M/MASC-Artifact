@@ -4,10 +4,13 @@ import org.apache.commons.configuration2.ex.ConfigurationException;
 
 public class FlexibleOperatorProperties extends AOperatorProperties {
     private final boolean booleanReturn;
+    private final String otherClassName;
 
     public String getSpecificCondition() {
         return specificCondition;
     }
+
+    public String getOtherClassName() {return otherClassName;}
 
     private final String specificCondition;
     public boolean getBooleanInCondition() {
@@ -34,6 +37,7 @@ public class FlexibleOperatorProperties extends AOperatorProperties {
         booleanInCondition = Boolean
                 .parseBoolean(reader.getValueForAKey("booleanInCondition"));
         specificCondition = reader.getValueForAKey("specificCondition");
+        this.otherClassName = reader.getValueForAKey("otherClassName");
 //        hasDependencies = Boolean
 //                .parseBoolean(reader.getValueForAKey("hasDependencies"));
     }

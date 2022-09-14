@@ -8,8 +8,11 @@ import org.apache.commons.configuration2.builder.fluent.Parameters;
 import org.apache.commons.configuration2.convert.DefaultListDelimiterHandler;
 import org.apache.commons.configuration2.ex.ConfigurationException;
 
+import java.util.Scanner;
+
 public class PropertiesReader {
-    Configuration config;
+    // Configuration config;
+    ConfigurationProxy config;
 
     public PropertiesReader(String filename) throws ConfigurationException {
         Parameters params = new Parameters();
@@ -19,7 +22,8 @@ public class PropertiesReader {
                         .configure(params.properties()
                                 .setFileName(filename)
                                 .setListDelimiterHandler(new DefaultListDelimiterHandler(',')));
-        config = builder.getConfiguration();
+        // config = builder.getConfiguration();
+        config = new ConfigurationProxy(builder.getConfiguration());
     }
 
     public java.util.Iterator<String> getKeys() {
