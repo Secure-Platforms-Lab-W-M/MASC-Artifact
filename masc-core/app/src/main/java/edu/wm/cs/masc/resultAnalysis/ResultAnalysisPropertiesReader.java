@@ -7,7 +7,8 @@ public class ResultAnalysisPropertiesReader {
     PropertiesReader propertiesReader;
     String toolName, toolLocation, toolRunCommand;
     String codeCompileCommand, outputReportDirectory, outputFileName,
-            stopCondition, mutatedAppsLocation;
+            stopCondition;
+    private String mutatedAppsLocation = null;
 
     public ResultAnalysisPropertiesReader(String path) throws ConfigurationException {
         propertiesReader = new PropertiesReader(path);
@@ -19,7 +20,6 @@ public class ResultAnalysisPropertiesReader {
         outputReportDirectory = propertiesReader.getValueForAKey("outputReportDirectory");
         outputFileName = propertiesReader.getValueForAKey("outputFileName");
         stopCondition = propertiesReader.getValueForAKey("stopCondition");
-        mutatedAppsLocation = propertiesReader.getValueForAKey("mutatedAppsLocation");
     }
 
     public String getToolRunCommand(String dir) {
@@ -36,6 +36,12 @@ public class ResultAnalysisPropertiesReader {
 
     public boolean stopOnUnkilled() {
         return stopCondition.equalsIgnoreCase("OnUnkilledMutant") || stopCondition.equalsIgnoreCase("OnErrorOrUnkilled");
+    }
+
+    public String getMutatedAppsLocation() {
+        if(mutatedAppsLocation == null)
+            mutatedAppsLocation = propertiesReader.getValueForAKey("mutatedAppsLocation");
+        return mutatedAppsLocation;
     }
 
 }

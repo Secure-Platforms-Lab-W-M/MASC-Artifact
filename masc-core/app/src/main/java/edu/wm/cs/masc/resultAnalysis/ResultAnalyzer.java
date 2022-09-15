@@ -18,7 +18,7 @@ public class ResultAnalyzer {
         if(outputDir!=null)
             this.mutatedAppsLocation = outputDir;
         else
-            this.mutatedAppsLocation = propertiesReader.mutatedAppsLocation;
+            this.mutatedAppsLocation = propertiesReader.getMutatedAppsLocation();
     }
 
     public void analyzeResult() {
