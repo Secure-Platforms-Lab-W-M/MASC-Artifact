@@ -47,6 +47,7 @@ def get_final_output(paths):
             output = output + '\n' + '\n' + header + '\n' + item
     return output
 
+
 def read_logs():
     outputPaths = []
     with open('./MainScope.log', 'r') as destination:
@@ -56,6 +57,7 @@ def read_logs():
             x = line.split('#')
             outputPaths.append(x[len(x)-1].strip('\n'))
     return get_final_output(outputPaths)
+
 
 def input_Form(request):
     print(request.method)
