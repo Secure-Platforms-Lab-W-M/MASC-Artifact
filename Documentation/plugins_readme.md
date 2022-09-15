@@ -1,4 +1,5 @@
 # Plugin architecture
+You can code and run your own operators as plugins for MASC for **main scope**. Let's see how it's done!
 
 ## Running own plugins
 MASC supports 6 types of operators - 5 predefined operator types plus one more for any custom operator type that does not fall within these five. You can write your own operators for each of the 6 types.
