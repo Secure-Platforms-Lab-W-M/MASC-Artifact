@@ -38,7 +38,14 @@ def read_selected_file(f):
 
 
 def get_final_output(paths):
-    return paths
+    output = ''
+    for path in paths:
+        with open('./'+path, 'r') as destination:
+            item = destination.read()
+            h = path.split('/')
+            header = '============='+h[len(h)-2]+'================'
+            output = output + '\n' + '\n' + header + '\n' + item
+    return output
 
 def read_logs():
     outputPaths = []
@@ -47,8 +54,8 @@ def read_logs():
     for line in contents:
         if "[OutputPath]" in line:
             x = line.split('#')
-            outputPaths.append(x[len(x)-1])
-    return outputPaths
+            outputPaths.append(x[len(x)-1].strip('\n'))
+    return get_final_output(outputPaths)
 
 def input_Form(request):
     print(request.method)
