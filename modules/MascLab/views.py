@@ -37,6 +37,19 @@ def read_selected_file(f):
     return contents
 
 
+def get_final_output(paths):
+    return paths
+
+def read_logs():
+    outputPaths = []
+    with open('./MainScope.log', 'r') as destination:
+        contents = destination.readlines()
+    for line in contents:
+        if "[OutputPath]" in line:
+            x = line.split('#')
+            outputPaths.append(x[len(x)-1])
+    return outputPaths
+
 def input_Form(request):
     print(request.method)
     if request.method == "POST":
@@ -46,7 +59,7 @@ def input_Form(request):
             run('java -jar ./modules/static/properties/app-all.jar '+properties))
         # read the output file
         input_code = fileinput
-        output_code = "Out put COde"
+        output_code = read_logs()
         stdOut = p
         return render(request, "masc-lab/lab.html", {
             "input_code": input_code,
