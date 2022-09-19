@@ -30,11 +30,22 @@ public class MASC {
         }
         else{
             String path = args[0];
-            runMain(path);
+            try {
+                runMain(path);
+            } catch (ConfigurationException e) {
+                System.out.printf("Filed to load the properties file %s", path);
+                return;
+            }
+
         }
 
         if(args.length == 2)
-            runResultAnalysis(args[1], args[0]);
+            try {
+                runResultAnalysis(args[1], args[0]);
+            } catch (ConfigurationException e) {
+                System.out.printf("Filed to load the properties file %s%n", args[1]);
+                System.out.println("Stopping result analysis...");
+            }
     }
 
     public static void runResultAnalysis(String pathOfResultAnalysisPropertiesFile, String pathOfFirstPropertiesFile) throws ConfigurationException {
@@ -50,7 +61,7 @@ public class MASC {
         resultAnalyzer.analyzeResult();
     }
 
-    public static void runMain(String path) throws ConfigurationException, IOException, BadLocationException {
+    public static void runMain(String path) throws IOException, BadLocationException, ConfigurationException {
 
         PropertiesReader reader = new PropertiesReader(path);
         String scope = reader.getValueForAKey("scope");
@@ -88,7 +99,7 @@ public class MASC {
 
     }
 
-    public static void runExhaustiveScope(PropertiesReader reader) throws ConfigurationException,
+    public static void runExhaustiveScope(PropertiesReader reader) throws
             IOException, BadLocationException {
 //        StringOperatorProperties p = new StringOperatorProperties(
 //                "Cipher.properties");
