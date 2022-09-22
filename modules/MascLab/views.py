@@ -65,7 +65,7 @@ def input_Form(request):
         properties = request.POST['properties']
         fileinput = read_selected_file(properties)
         p = asyncio.run(
-            run('java -jar ./modules/static/properties/app-all.jar '+properties))
+            run('java -jar ./modules/static/properties/app-all.jar ./modules/static/properties/'+properties))
         # read the output file
         input_code = fileinput
         output_code = read_logs()
