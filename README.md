@@ -15,6 +15,11 @@ Django => (4, 0, 5, 'final', 0)
 python3 -m venv venv
 source venv/bin/activate
 ```
+for windows 
+```sh
+python3 -m venv venv
+.\venv\Scripts\activate
+```
 
 - Install dependecies
 ```sh
