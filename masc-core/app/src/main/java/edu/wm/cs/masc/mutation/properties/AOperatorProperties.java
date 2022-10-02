@@ -45,6 +45,7 @@ public abstract class AOperatorProperties {
         outputDir = reader.getValueForAKey("outputDir");
         apiName = reader.getValueForAKey("apiName");
         className = reader.getValueForAKey("className");
+//        reader.getValueForAKey("test");
         // otherClassName = reader.getValueForAKey("otherClassName");
     }
 

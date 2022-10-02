@@ -25,12 +25,12 @@ public class sarifParTest {
 //    }
     @Test
     public void compareSarifResults() throws IOException {
-        JSONArray before = sarifPar.getResult("src/main/resources/sarifTests/testSarif.sarif");
-        JSONArray after = sarifPar.getResult("src/main/resources/sarifTests/testSarif.sarif");
+        JSONArray before = SARIFPar.getResult("src/main/resources/sarifTests/testSarif.sarif");
+        JSONArray after = SARIFPar.getResult("src/main/resources/sarifTests/testSarif.sarif");
         JSONArray test = new JSONArray();
         //System.out.println(sarifPar.compareSarifResults(before,after).toString());
         //System.out.println(test.toString());
-        int result = test.toString().compareTo(sarifPar.compareSarifResults(before,after).toString());
+        int result = test.toString().compareTo(SARIFPar.compareSarifResults(before,after).toString());
         assertSame(0,result);
 
 
@@ -41,7 +41,7 @@ public class sarifParTest {
         test.add("System.out.println(\"Hello World\");");
         test.add("public static void main(java.lang.String[] args) throws java.lang.Exception {");
         test.add("javax.crypto.Cipher.getInstance(\"A~ES\".replace(\"~\", \"\");");
-        Boolean results = sarifPar.findMutation("javax.crypto.Cipher",1,test);
+        Boolean results = SARIFPar.findMutation("javax.crypto.Cipher",1,test);
         assertSame(true,results);
 
     }
@@ -49,7 +49,7 @@ public class sarifParTest {
     @Test
     public void getJavaMutant() throws IOException {
         File f = new File("src/main/resources/sarifTests/CryptoTest.java");
-        String test = sarifPar.getJavaMutant(f,"javax.crypto.Cipher");
+        String test = SARIFPar.getJavaMutant(f,"javax.crypto.Cipher");
         //javax.crypto.Cipher.getInstance("A~ES".replace("~", "");
         //System.out.println(test);
         test = test.substring(4);

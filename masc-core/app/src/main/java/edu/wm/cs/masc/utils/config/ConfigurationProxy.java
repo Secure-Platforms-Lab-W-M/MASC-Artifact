@@ -30,6 +30,10 @@ public class ConfigurationProxy {
         return value;
     }
 
+    public boolean contains(String key) {
+        return configuration.getString(key) != null;
+    }
+
     private String inputValueAndUpdateMap(String key) {
         String value;
         System.out.println("Key '" + key + "' not found in properties file. Enter value:");

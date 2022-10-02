@@ -157,7 +157,7 @@ public class MyStrOperatorPlugin extends AStringOperator {
 
     @Override
     public String mutation() {
-        return "Cipher.getInstance("AES")";
+        return "javax.crypto.Cipher.getInstance(\"aes\");";
     }
 }
 ```

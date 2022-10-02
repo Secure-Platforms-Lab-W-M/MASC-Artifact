@@ -1,4 +1,4 @@
-package edu.wm.cs.masc.resultAnalysis;
+package edu.wm.cs.masc.automatedAnalysis;
 
 public enum StopCondition {
     OnError,

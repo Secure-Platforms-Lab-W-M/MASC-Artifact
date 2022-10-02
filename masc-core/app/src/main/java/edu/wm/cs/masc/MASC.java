@@ -1,7 +1,7 @@
 package edu.wm.cs.masc;
 
 import edu.wm.cs.masc.plugins.MutationMakerForPluginOperators;
-import edu.wm.cs.masc.resultAnalysis.ResultAnalyzer;
+import edu.wm.cs.masc.automatedAnalysis.ResultAnalyzer;
 import edu.wm.cs.masc.similarity.MPlus;
 import edu.wm.cs.masc.mainScope.mutationmakers.*;
 import edu.wm.cs.masc.utils.config.PropertiesReader;
@@ -17,12 +17,10 @@ import java.io.IOException;
 public class MASC {
 
     public static void main(String[] args) throws Exception{
-
-
         if (args.length == 0){
             System.out.println("No properties file supplied");
         }
-        else if (args.length > 2){
+        else if (args.length > 1){
             System.out.println("Too many arguments were provided");
         }
         else if (!args[0].endsWith(".properties")){
@@ -34,31 +32,19 @@ public class MASC {
                 runMain(path);
             } catch (ConfigurationException e) {
                 System.out.printf("Filed to load the properties file %s", path);
-                return;
             }
-
         }
-
-        if(args.length == 2)
-            try {
-                runResultAnalysis(args[1], args[0]);
-            } catch (ConfigurationException e) {
-                System.out.printf("Filed to load the properties file %s%n", args[1]);
-                System.out.println("Stopping result analysis...");
-            }
     }
 
-    public static void runResultAnalysis(String pathOfResultAnalysisPropertiesFile, String pathOfFirstPropertiesFile) throws ConfigurationException {
-        String outputDir = null;
-        if(pathOfFirstPropertiesFile != null){
-            PropertiesReader reader = new PropertiesReader(pathOfFirstPropertiesFile);
-            outputDir = reader.getValueForAKey("outputDir");
+    public static void runResultAnalysis(PropertiesReader propertiesReader) throws ConfigurationException {
+        try {
+            ResultAnalyzer resultAnalyzer = new ResultAnalyzer(propertiesReader);
+            resultAnalyzer.runAnalysis();
         }
-
-
-
-        ResultAnalyzer resultAnalyzer = new ResultAnalyzer(pathOfResultAnalysisPropertiesFile, outputDir);
-        resultAnalyzer.analyzeResult();
+        catch (ConfigurationException e){
+            System.out.println(e.getMessage());
+            System.out.println("Skipping automated analysis...");
+        }
     }
 
     public static void runMain(String path) throws IOException, BadLocationException, ConfigurationException {
@@ -77,12 +63,20 @@ public class MASC {
         // MASC MainScope
         else if(scope.equalsIgnoreCase("MAIN")){
             System.out.println("Main scope");
-            runMainScope(reader, path);
+
+            if (reader.contains("mutantGeneration") && reader.getValueForAKey("mutantGeneration").equalsIgnoreCase("true"))
+                runMainScope(reader, path);
+            else
+                System.out.println("Skipping mutant generation");
+
+            if (reader.contains("automatedAnalysis") && reader.getValueForAKey("automatedAnalysis").equalsIgnoreCase("true"))
+                runResultAnalysis(reader);
+            else
+                System.out.println("Skipping automated analysis...");
         }
         else{
             System.out.println("Unknown Scope: " + scope);
         }
-
     }
 
     public static void runSelectiveScope(PropertiesReader reader) throws IOException {

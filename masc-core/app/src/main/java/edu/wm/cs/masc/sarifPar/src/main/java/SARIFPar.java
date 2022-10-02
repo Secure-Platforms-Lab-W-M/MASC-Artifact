@@ -15,7 +15,7 @@ import java.io.IOException;
 
 
 
-public class sarifPar {
+public class SARIFPar {
     // FUTURE WORK
     //NEED TO ADD HANDLING FOR MORE THAN TWO SARIF FILES FOR LEVELS
     // This can be done within main. The results just need to be added and arguments can be changed
@@ -87,17 +87,20 @@ public class sarifPar {
      * @throws IOException
      */
     public static JSONArray getResult (String sarifFile) throws FileNotFoundException, IOException {
-
-
         JSONObject sarif = new JSONObject(getJson(sarifFile));
         JSONArray runs = (JSONArray) sarif.get("runs");
         JSONObject extract = runs.getJSONObject(0);
         JSONArray results = extract.getJSONArray("results");
 
         return results;
+    }
 
+    public static JSONArray getResultFromString (String sarifFileContents) {
+        JSONObject sarif = new JSONObject(sarifFileContents);
+        JSONArray runs = (JSONArray) sarif.get("runs");
+        JSONObject extract = runs.getJSONObject(0);
 
-
+        return extract.getJSONArray("results");
     }
 
     /**

@@ -34,7 +34,18 @@ public class PropertiesReader {
         return config.getString(key);
     }
 
+    public String getValueForAKeyNoInput(String key) {
+        if (contains(key))
+            return getValueForAKey(key);
+        else
+            return null;
+    }
+
     public String[] getArrayValuesForAKey(String key) {
         return config.getStringArray(key);
+    }
+
+    public boolean contains(String key) {
+        return config.contains(key);
     }
 }

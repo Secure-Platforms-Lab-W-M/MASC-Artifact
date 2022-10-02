@@ -1,4 +1,4 @@
-package edu.wm.cs.masc.resultAnalysis;
+package edu.wm.cs.masc.automatedAnalysis;
 
 import edu.wm.cs.masc.utils.config.PropertiesReader;
 import org.apache.commons.configuration2.ex.ConfigurationException;
@@ -8,11 +8,19 @@ public class ResultAnalysisPropertiesReader {
     String toolName, toolLocation, toolRunCommand;
     String codeCompileCommand, outputReportDirectory, outputFileName,
             stopCondition;
-    private String mutatedAppsLocation = null;
+    String wrapper;
+
+    public ResultAnalysisPropertiesReader(PropertiesReader propertiesReader) {
+        this.propertiesReader = propertiesReader;
+        initializeValues();
+    }
 
     public ResultAnalysisPropertiesReader(String path) throws ConfigurationException {
-        propertiesReader = new PropertiesReader(path);
+        this.propertiesReader = new PropertiesReader(path);
+        initializeValues();
+    }
 
+    private void initializeValues() {
         toolName = propertiesReader.getValueForAKey("toolName");
         toolLocation = propertiesReader.getValueForAKey("toolLocation");
         toolRunCommand = propertiesReader.getValueForAKey("toolRunCommand");
@@ -20,6 +28,8 @@ public class ResultAnalysisPropertiesReader {
         outputReportDirectory = propertiesReader.getValueForAKey("outputReportDirectory");
         outputFileName = propertiesReader.getValueForAKey("outputFileName");
         stopCondition = propertiesReader.getValueForAKey("stopCondition");
+
+        wrapper = propertiesReader.getValueForAKeyNoInput("wrapper");
     }
 
     public String getToolRunCommand(String dir) {
@@ -39,9 +49,10 @@ public class ResultAnalysisPropertiesReader {
     }
 
     public String getMutatedAppsLocation() {
-        if(mutatedAppsLocation == null)
-            mutatedAppsLocation = propertiesReader.getValueForAKey("mutatedAppsLocation");
-        return mutatedAppsLocation;
+        return propertiesReader.getValueForAKey("outputDir");
     }
 
+    public String getWrapper() {
+        return wrapper;
+    }
 }
