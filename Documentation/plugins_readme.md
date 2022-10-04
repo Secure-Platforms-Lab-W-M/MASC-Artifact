@@ -204,5 +204,6 @@ To run the jar, execute the command:
 Generated mutated apps will be produces in `app/output/`
 Output from plugins will have `plugins.` prefixed in their names.
 
-
+# 6. Sample operators
+Some sample code for plugins are given with the documentation. The code for some of the plugins are simple and some are complicated. Such examples are deliberately chosen to give you an idea of how the plugins can be of varying complexity. But please note that these operators are examples only, so your plugins may be of higher or lower complexity and size. 
 
