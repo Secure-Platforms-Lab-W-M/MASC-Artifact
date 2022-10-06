@@ -33,18 +33,18 @@
                                         <label for="scope">Selected Scope</label>
                                         <input type="text" class="form-control" id="scope"
                                                name="scope"
-                                               aria-describedby="selectedScope" value="{{ scope }}" disabled>
+                                               aria-describedby="selectedScope" value="{{ scope }}">
                                     </div>
                                     <div class="form-group">
                                         <label for="filename">Property File Name</label>
                                         <input type="text" class="form-control" id="filename" name="file_name"
-                                               aria-describedby="Property File Name" value="{{ filename }}" disabled>
+                                               aria-describedby="Property File Name" value="{{ filename }}">
                                     </div>
                                     <br>
                                     <div class="form-group">
                                         <label for="source"><b>Upload Source Code Zip</b></label>
                                         <input type="file" accept=".zip,.rar,.7zip" class="form-control" id="source" name="sourcecode"
-                                               aria-describedby="Upload Zip File">
+                                               aria-describedby="Upload Zip File" required>
                                     </div>
                                     <div class="d-flex justify-content-center align-items-center">
                                         <button type="submit" class="btn btn-warning mt-3">Submit</button>
