@@ -14,4 +14,4 @@ class SourceCode(models.Model):
     zip_file_directory = models.CharField(max_length=100, db_index=True)
     input_path = models.CharField(max_length=500)
     output_path = models.CharField(max_length=500)
-    appName = models.CharField(max_length=50)
+    appName = models.CharField(max_length=50, unique=True)
