@@ -16,6 +16,15 @@ def read_selected_file(f):
             content = content + line + '\n'
     return content
 
+
+def runMASCEngine(request):
+    if request.method == 'POST':
+        scope = request.POST['scope']
+    custome_operator_headers = ["Uploaded File", "Selected Operator", "Status", "Actions"]
+    return render(request, "masc-engine/history.html", {
+        "custome_operator_headers": custome_operator_headers
+    })
+
 def index(request):
     if request.method == 'POST':
         scope = request.POST['scopes']
@@ -35,8 +44,3 @@ def index(request):
 
 
 # Create your views here.
-def history(request):
-    custome_operator_headers = ["Uploaded File", "Selected Operator", "Status", "Actions"]
-    return render(request, "masc-engine/history.html", {
-        "custome_operator_headers": custome_operator_headers
-    })

@@ -3,5 +3,5 @@ from modules.MascEngine import views
 
 urlpatterns = [
     path('', views.index, name='MascEngine'),
-    path('history', views.history, name='MascEngineHistory'),
+    path('history', views.runMASCEngine, name='MASCEngine'),
 ]
