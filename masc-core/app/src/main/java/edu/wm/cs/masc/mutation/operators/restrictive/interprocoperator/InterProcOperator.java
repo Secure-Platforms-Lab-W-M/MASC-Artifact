@@ -3,12 +3,10 @@ package edu.wm.cs.masc.mutation.operators.restrictive.interprocoperator;
 import edu.wm.cs.masc.mutation.operators.IOperator;
 import edu.wm.cs.masc.mutation.properties.InterprocProperties;
 
-public class InterProcOperator implements IOperator {
-
-    private final InterprocProperties p;
+public class InterProcOperator extends AInterProcOperator {
 
     public InterProcOperator(InterprocProperties p) {
-        this.p = p;
+        super(p);
     }
 
     public String insecure_call() {

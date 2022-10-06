@@ -32,7 +32,7 @@ public class NoiseReplace extends AStringOperator {
                 .append("\"")
                 .append(".replace(\"")
                 .append(this.noise)
-                .append("\", \"\");");
+                .append("\", \"\"));");
         return mutation.toString();
     }
 }

@@ -15,7 +15,7 @@ import java.io.IOException;
 
 
 
-class sarifPar {
+public class sarifPar {
     // FUTURE WORK
     //NEED TO ADD HANDLING FOR MORE THAN TWO SARIF FILES FOR LEVELS
     // This can be done within main. The results just need to be added and arguments can be changed
@@ -49,7 +49,7 @@ class sarifPar {
         IntWhileLoopAccumulation;
 
 
-        }
+    }
     public enum interprocMutationLevels{
         InterProcOperator;
 
@@ -64,6 +64,7 @@ class sarifPar {
         //System.out.println(getResult("/Users/scottmarsden/Documents/GitHub/masc-core/app/src/main/resources/resultsSarif.sarif").toString());
         if  (args.length != 4){
             System.out.println("Please Provide: before/after SARIF files, properties file, and file path to MASC");
+            return;
         }
         //System.out.println(getResult("/src/main/resources/resultsSarif.sarif"));
         JSONArray beforeMutation = getResult(args[0]);
@@ -85,7 +86,7 @@ class sarifPar {
      * @throws FileNotFoundException
      * @throws IOException
      */
-    static JSONArray getResult (String sarifFile) throws FileNotFoundException, IOException {
+    public static JSONArray getResult (String sarifFile) throws FileNotFoundException, IOException {
 
 
         JSONObject sarif = new JSONObject(getJson(sarifFile));
@@ -574,9 +575,9 @@ class sarifPar {
 
         if (found){
 
-                System.out.println("Mutation Found");
-                System.out.println("Number of Mutation Found: " + mutCount + "/" + mutationNumber + " times");
-                return true;
+            System.out.println("Mutation Found");
+            System.out.println("Number of Mutation Found: " + mutCount + "/" + mutationNumber + " times");
+            return true;
         }
         else{
             System.out.println("Mutation Not Found");

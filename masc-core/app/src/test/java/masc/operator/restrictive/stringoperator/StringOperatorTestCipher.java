@@ -37,7 +37,7 @@ public class StringOperatorTestCipher {
     @Test
     public void noiseReplace() {
         String expected = "javax.crypto.Cipher.getInstance(\"A~ES\".replace" +
-                "(\"~\", \"\");";
+                "(\"~\", \"\"));";
         assertEquals(expected, new NoiseReplace(p).mutation().replace("%d",""));
     }
 
@@ -52,7 +52,7 @@ public class StringOperatorTestCipher {
     public void stringCaseTransform() {
         String expected = "javax.crypto.Cipher.getInstance(\"aes\"" +
                 ".toUpperCase(java.util" +
-                ".Locale.English));";
+                ".Locale.ENGLISH));";
         assertEquals(expected, new StringCaseTransform(p).mutation().replace("%d",""));
     }
 

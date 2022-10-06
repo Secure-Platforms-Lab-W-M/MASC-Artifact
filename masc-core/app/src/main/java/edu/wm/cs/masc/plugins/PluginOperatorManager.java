@@ -22,19 +22,23 @@ public class PluginOperatorManager {
     private final ArrayList<Class> customOperators = new ArrayList<>();
     private final ArrayList<IOperator> operators = new ArrayList<>();
 
-    private PluginOperatorManager() {
-        String packageName = "plugins";
-        String folderDir = "app\\build\\libs";
-        // folderDir = ".";
-        load_custom_classes(packageName, folderDir);
+    public boolean isInProd() {
+        String className = this.getClass().getName().replace('.', '/');
+        String classJar =
+                this.getClass().getResource("/" + className + ".class").toString();
+        return classJar.startsWith("jar:");
     }
 
     /**
      * Constructor calls this function to load all custom .class files provided by the user in plugins/
      */
-    private void load_custom_classes(String packageName, String folderDir) {
-        File[] files = new File(folderDir + "\\" + packageName).listFiles();
+    private PluginOperatorManager() {
+        String packageName = "plugins";
+        String folderDir = "app/build/libs/";
+        if(isInProd()) folderDir = "";
+        File[] files = new File(folderDir + packageName).listFiles();
         File folder = new File(folderDir);
+
 
         if(files == null)
         {

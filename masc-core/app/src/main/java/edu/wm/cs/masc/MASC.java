@@ -9,6 +9,8 @@ import edu.wm.cs.masc.mutation.properties.*;
 import edu.wm.cs.masc.exhaustive.MuseRunner;
 import org.apache.commons.configuration2.ex.ConfigurationException;
 import org.eclipse.jface.text.BadLocationException;
+import edu.wm.cs.masc.resultAnalysis.ResultAnalyzer;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -16,11 +18,10 @@ import java.io.IOException;
 public class MASC {
 
     public static void main(String[] args) throws Exception{
-
         if (args.length == 0){
             System.out.println("No properties file supplied");
         }
-        else if (args.length > 1){
+        else if (args.length > 2){
             System.out.println("Too many arguments were provided");
         }
         else if (!args[0].endsWith(".properties")){
@@ -28,11 +29,38 @@ public class MASC {
         }
         else{
             String path = args[0];
-            runMain(path);
+            try {
+                runMain(path);
+            } catch (ConfigurationException e) {
+                System.out.printf("Filed to load the properties file %s", path);
+                return;
+            }
+
         }
+
+        if(args.length == 2)
+            try {
+                runResultAnalysis(args[1], args[0]);
+            } catch (ConfigurationException e) {
+                System.out.printf("Filed to load the properties file %s%n", args[1]);
+                System.out.println("Stopping result analysis...");
+            }
     }
 
-    public static void runMain(String path) throws ConfigurationException, IOException, BadLocationException {
+    public static void runResultAnalysis(String pathOfResultAnalysisPropertiesFile, String pathOfFirstPropertiesFile) throws ConfigurationException {
+        String outputDir = null;
+        if(pathOfFirstPropertiesFile != null){
+            PropertiesReader reader = new PropertiesReader(pathOfFirstPropertiesFile);
+            outputDir = reader.getValueForAKey("outputDir");
+        }
+
+
+
+        ResultAnalyzer resultAnalyzer = new ResultAnalyzer(pathOfResultAnalysisPropertiesFile, outputDir);
+        resultAnalyzer.analyzeResult();
+    }
+
+    public static void runMain(String path) throws IOException, BadLocationException, ConfigurationException {
 
         PropertiesReader reader = new PropertiesReader(path);
         String scope = reader.getValueForAKey("scope");
@@ -53,6 +81,7 @@ public class MASC {
         else{
             System.out.println("Unknown Scope: " + scope);
         }
+
     }
 
     public static void runSelectiveScope(PropertiesReader reader) throws IOException {
@@ -69,7 +98,7 @@ public class MASC {
 
     }
 
-    public static void runExhaustiveScope(PropertiesReader reader) throws ConfigurationException,
+    public static void runExhaustiveScope(PropertiesReader reader) throws
             IOException, BadLocationException {
 //        StringOperatorProperties p = new StringOperatorProperties(
 //                "Cipher.properties");
