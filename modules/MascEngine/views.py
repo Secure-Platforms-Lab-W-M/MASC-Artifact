@@ -1,11 +1,30 @@
+from asgiref.sync import sync_to_async
 from django.shortcuts import render
 
 from modules.CipherManager.models import PropertiesList
 from modules.MascEngine.models import SourceCode
+from modules.MascEngine.models import ProcessLog
 from zipfile import ZipFile
-
+import asyncio
+import time
 
 # Create your views here.
+
+async def run(cmd):
+    print(cmd)
+    proc = await asyncio.create_subprocess_shell(
+        cmd,
+        stdout=asyncio.subprocess.PIPE,
+        stderr=asyncio.subprocess.PIPE)
+    stdout, stderr = await proc.communicate()
+    print(await proc.communicate())
+    print(f'[{cmd!r} exited with {proc.returncode}]')
+    if stdout:
+        print(f'[stdout]\n{stdout.decode()}')
+        return stdout.decode()
+    if stderr:
+        print(f'[stderr]\n{stderr.decode()}')
+        return stderr.decode()
 
 def read_selected_file(f):
     with open('./modules/static/properties/' + f, 'r') as destination:
@@ -15,7 +34,7 @@ def read_selected_file(f):
         if 'scope' in line.lower() or 'appsrc' in line.lower() or 'outputdir' in line.lower() or 'appname' in line.lower():
             continue
         else:
-            content = content + line +'\n'
+            content = content + line + '\n'
     return content
 
 
@@ -25,20 +44,27 @@ def handle_uploaded_file(f, app_name):
             destination.write(chunk)
     with ZipFile('./modules/static/sourcecodes/' + f.name, 'r') as zipObj:
         zipObj.extractall('./modules/static/unzippedCodes/' + app_name)
-    inputPath = './modules/static/unzippedCodes/' + app_name + f.name.split('.')[0]
+    inputPath = 'D:/8th/spl/masc-web-client-django/MascWebCore/modules/static/unzippedCodes/' + app_name
     data = SourceCode(zip_file_name=f.name, zip_file_directory='./modules/static/sourcecodes/' + f.name,
                       input_path=inputPath, output_path='', appName=app_name);
     data.save()
     return data.id, inputPath
 
 
-def build_properties(app_name, scope, input_path, contents):
-    initial =  'appName=' + app_name + '\n' + 'scope=' + scope + '\n' + 'appSrc=' + input_path + '\n' + 'outputDir=./app/outputs\n'
+async def build_properties(app_name, scope, input_path, contents):
+    initial = 'appName=' + app_name + '\n' + 'scope=' + scope + '\n' + 'appSrc=' + input_path + '\n' + 'outputDir=app/outputs/'+app_name+'\n'
     contents = initial + contents
     with open('./modules/static/properties/' + app_name + '.properties', 'w') as destination:
         destination.write(contents)
     print(contents)
-    return './modules/static/properties/' + app_name + '.properties'
+    return 'D:/8th/spl/masc-web-client-django/MascWebCore/modules/static/properties/' + app_name + '.properties'
+
+
+def run_sub_process_masc_engine(build_properties_path, source_code_id, scope, input_path):
+    source = SourceCode.objects.get(id=source_code_id)
+    data = ProcessLog(properties=build_properties_path, scope=scope, status='running', source_code=source)
+    data.save()
+    return ''
 
 
 def runMASCEngine(request):
@@ -48,7 +74,11 @@ def runMASCEngine(request):
         app_name = request.POST['appName']
         contents = request.POST['content']
         source_code_id, input_path = handle_uploaded_file(request.FILES['sourcecode'], app_name)
-        build_properties_path = build_properties(app_name, scopes, input_path, contents)
+        build_properties_path = asyncio.run(build_properties(app_name, scopes, input_path, contents))
+        time.sleep(5)
+        print('********************************************************')
+        p = asyncio.run(
+            run('java -jar D:/8th/spl/masc-web-client-django/MascWebCore/modules/static/properties/app-all.jar '+build_properties_path))
     custome_operator_headers = ["Uploaded File", "Selected Operator", "Status", "Actions"]
     return render(request, "masc-engine/history.html", {
         "custome_operator_headers": custome_operator_headers
@@ -65,7 +95,7 @@ def index(request):
             "filename": properties,
             "content": contents,
         })
-    scopes = ['Similarity', 'Exhaustive']
+    scopes = ['SIMILARITY', 'EXHAUSTIVE']
     records = PropertiesList.objects.all().values()
     return render(request, "masc-engine/engine.html", {
         "scopes": scopes,
