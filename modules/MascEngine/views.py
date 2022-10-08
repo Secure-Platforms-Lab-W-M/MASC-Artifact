@@ -26,6 +26,7 @@ async def run(cmd):
         print(f'[stderr]\n{stderr.decode()}')
         return stderr.decode()
 
+
 def read_selected_file(f):
     with open('./modules/static/properties/' + f, 'r') as destination:
         item = destination.read().split("\n")
