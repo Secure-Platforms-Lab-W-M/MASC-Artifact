@@ -5,6 +5,7 @@ from modules.CipherManager.models import PropertiesList
 from modules.MascEngine.models import SourceCode
 from modules.MascEngine.models import ProcessLog
 from zipfile import ZipFile
+from datetime import datetime
 import asyncio
 import time
 
@@ -61,14 +62,17 @@ async def build_properties(app_name, scope, input_path, contents):
     return 'D:/8th/spl/masc-web-client-django/MascWebCore/modules/static/properties/' + app_name + '.properties'
 
 
-def run_sub_process_masc_engine(build_properties_path, source_code_id, scope, input_path):
+def run_sub_process_masc_engine(build_properties_path, source_code_id, scope):
     source = SourceCode.objects.get(id=source_code_id)
-    data = ProcessLog(properties=build_properties_path, scope=scope, status='running', source_code=source)
+    p = asyncio.run(
+        run('java -jar D:/8th/spl/masc-web-client-django/MascWebCore/modules/static/properties/app-all.jar ' + build_properties_path))
+    data = ProcessLog(properties=build_properties_path, scope=scope, status='running', source_code=source, start_time=datetime.now())
     data.save()
     return ''
 
 
 def runMASCEngine(request):
+    custome_operator_headers = ["Id", "Scope", "Properties", "App Name","Status","Actions"]
     if request.method == 'POST':
         scopes = request.POST['scope']
         properties_file = request.POST['file_name']
@@ -76,11 +80,7 @@ def runMASCEngine(request):
         contents = request.POST['content']
         source_code_id, input_path = handle_uploaded_file(request.FILES['sourcecode'], app_name)
         build_properties_path = asyncio.run(build_properties(app_name, scopes, input_path, contents))
-        time.sleep(5)
-        print('********************************************************')
-        p = asyncio.run(
-            run('java -jar D:/8th/spl/masc-web-client-django/MascWebCore/modules/static/properties/app-all.jar '+build_properties_path))
-    custome_operator_headers = ["Uploaded File", "Selected Operator", "Status", "Actions"]
+        run_sub_process_masc_engine(build_properties_path,source_code_id,scopes)
     return render(request, "masc-engine/history.html", {
         "custome_operator_headers": custome_operator_headers
     })
@@ -96,7 +96,7 @@ def index(request):
             "filename": properties,
             "content": contents,
         })
-    scopes = ['SIMILARITY', 'EXHAUSTIVE']
+    scopes = ['SELECTIVE', 'EXHAUSTIVE']
     records = PropertiesList.objects.all().values()
     return render(request, "masc-engine/engine.html", {
         "scopes": scopes,

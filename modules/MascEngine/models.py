@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.db import models
 
 
@@ -7,6 +9,7 @@ class ProcessLog(models.Model):
     scope = models.CharField(max_length=50)
     status = models.CharField(max_length=20)
     source_code = models.ForeignKey('SourceCode', on_delete=models.CASCADE)
+    start_time = models.DateTimeField(default=datetime.now())
 
 
 class SourceCode(models.Model):
