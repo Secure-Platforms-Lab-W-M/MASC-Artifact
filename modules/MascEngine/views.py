@@ -81,8 +81,18 @@ def runMASCEngine(request):
         source_code_id, input_path = handle_uploaded_file(request.FILES['sourcecode'], app_name)
         build_properties_path = asyncio.run(build_properties(app_name, scopes, input_path, contents))
         run_sub_process_masc_engine(build_properties_path,source_code_id,scopes)
+    data = ProcessLog.objects.all().values()
+    records = []
+    for x in data:
+        source = SourceCode.objects.get(id=x['source_code_id'])
+        x['source_code'] = source
+        arr = x['properties'].split('/')
+        x['properties_name'] = arr[len(arr)-1]
+        records.append(x)
+    print(records)
     return render(request, "masc-engine/history.html", {
-        "custome_operator_headers": custome_operator_headers
+        "custome_operator_headers": custome_operator_headers,
+        "records": records
     })
 
 
