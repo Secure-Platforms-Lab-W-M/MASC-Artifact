@@ -18,3 +18,5 @@ class SourceCode(models.Model):
     input_path = models.CharField(max_length=500)
     output_path = models.CharField(max_length=500)
     appName = models.CharField(max_length=50, unique=True)
+
+

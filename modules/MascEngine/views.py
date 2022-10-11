@@ -1,3 +1,5 @@
+import sys
+
 from asgiref.sync import sync_to_async
 from django.shortcuts import render
 
@@ -11,6 +13,28 @@ import time
 
 # Create your views here.
 
+import threading
+
+class thread(threading.Thread):
+    def __init__(self, app_name, build_properties_path,log_id):
+        threading.Thread.__init__(self)
+        self.app_name = app_name
+        self.build_properties_path = build_properties_path
+        self.log_id = log_id
+        # helper function to execute the threads
+
+    def run(self):
+        print(str(self.app_name) + " " + str(self.build_properties_path))
+        p, status_code = asyncio.run(
+            run('java -jar D:/8th/spl/masc-web-client-django/MascWebCore/modules/static/properties/app-all.jar ' + self.build_properties_path))
+        record =ProcessLog.objects.get(id=self.log_id)
+        if status_code == 0:
+            record['status'] = 'completed'
+        else:
+            record['status'] = 'failed'
+        sys.exit()
+        print(self.is_alive)
+
 async def run(cmd):
     print(cmd)
     proc = await asyncio.create_subprocess_shell(
@@ -22,10 +46,10 @@ async def run(cmd):
     print(f'[{cmd!r} exited with {proc.returncode}]')
     if stdout:
         print(f'[stdout]\n{stdout.decode()}')
-        return stdout.decode()
+        return stdout.decode(), proc.returncode
     if stderr:
         print(f'[stderr]\n{stderr.decode()}')
-        return stderr.decode()
+        return stderr.decode(), proc.returncode
 
 
 def read_selected_file(f):
@@ -64,11 +88,10 @@ async def build_properties(app_name, scope, input_path, contents):
 
 def run_sub_process_masc_engine(build_properties_path, source_code_id, scope):
     source = SourceCode.objects.get(id=source_code_id)
-    p = asyncio.run(
-        run('java -jar D:/8th/spl/masc-web-client-django/MascWebCore/modules/static/properties/app-all.jar ' + build_properties_path))
     data = ProcessLog(properties=build_properties_path, scope=scope, status='running', source_code=source, start_time=datetime.now())
     data.save()
-    return ''
+    threadMASC = thread(source.appName,build_properties_path,data.id)
+    threadMASC.start()
 
 
 def runMASCEngine(request):
@@ -89,7 +112,6 @@ def runMASCEngine(request):
         arr = x['properties'].split('/')
         x['properties_name'] = arr[len(arr)-1]
         records.append(x)
-    print(records)
     return render(request, "masc-engine/history.html", {
         "custome_operator_headers": custome_operator_headers,
         "records": records
