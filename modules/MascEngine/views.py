@@ -29,9 +29,10 @@ class thread(threading.Thread):
             run('java -jar D:/8th/spl/masc-web-client-django/MascWebCore/modules/static/properties/app-all.jar ' + self.build_properties_path))
         record =ProcessLog.objects.get(id=self.log_id)
         if status_code == 0:
-            record['status'] = 'completed'
+            record.status = 'completed'
         else:
-            record['status'] = 'failed'
+            record.status = 'failed'
+        record.save()
         sys.exit()
         print(self.is_alive)
 
