@@ -1,14 +1,9 @@
 package edu.wm.cs.masc.pluginArchitecture;
 
-import edu.wm.cs.masc.mutation.operators.IOperator;
-import edu.wm.cs.masc.mutation.operators.restrictive.stringoperator.SafeReplaceWithUnsafe;
 import edu.wm.cs.masc.mutation.properties.*;
 import edu.wm.cs.masc.plugins.MutationMakerForPluginOperators;
 import org.apache.commons.configuration2.ex.ConfigurationException;
 import org.junit.Test;
-import sun.tools.jstat.Operator;
-
-import java.util.HashMap;
 
 import static org.junit.Assert.assertEquals;
 
