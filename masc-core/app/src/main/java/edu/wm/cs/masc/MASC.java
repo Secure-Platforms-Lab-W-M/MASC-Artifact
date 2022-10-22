@@ -1,5 +1,6 @@
 package edu.wm.cs.masc;
 
+import edu.wm.cs.masc.plugins.MultiClassMutationMakerForPluginOperators;
 import edu.wm.cs.masc.plugins.MutationMakerForPluginOperators;
 import edu.wm.cs.masc.automatedAnalysis.ResultAnalyzer;
 import edu.wm.cs.masc.similarity.MPlus;
@@ -81,7 +82,7 @@ public class MASC {
 
     public static void runSelectiveScope(PropertiesReader reader) throws IOException {
         File lib4ast = new File("libs4ast/");
-        File opDir = new File("resources/");
+        File opDir = new File("app/src/main/resources/");
         System.out.println(opDir.getAbsolutePath());
         String[] args = {lib4ast.getAbsolutePath(),
                 reader.getValueForAKey("appSrc"),
@@ -108,7 +109,7 @@ public class MASC {
         String type = reader.getValueForAKey("type");
         AMutationMaker m = null;
         AOperatorProperties p;
-        MutationMakerForPluginOperators pluginOperatorsMutationMaker = new MutationMakerForPluginOperators(path);
+        MutationMakerForPluginOperators pluginOperatorsMutationMaker = new MutationMakerForPluginOperators(path, "app/build/libs/");
 
         if (type.equalsIgnoreCase(RootOperatorType.IntOperator.name())){
             p = new IntOperatorProperties(path);
@@ -125,6 +126,7 @@ public class MASC {
         else if (type.equalsIgnoreCase(RootOperatorType.Interproc.name())) {
             p = new InterprocProperties(path);
             m = new InterprocMutationMaker((InterprocProperties) p);
+            pluginOperatorsMutationMaker = new MultiClassMutationMakerForPluginOperators(path, "app/build/libs/");
         }
         else if (type.equalsIgnoreCase(RootOperatorType.Flexible.name())) {
             p = new FlexibleOperatorProperties(path);
