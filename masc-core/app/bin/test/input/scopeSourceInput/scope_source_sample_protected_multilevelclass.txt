@@ -1,0 +1,28 @@
+package com.example.amit.helloworld.test;
+
+public class TestClass {
+    protected int methodA(){
+        return 1;
+    }
+    int methodB(){
+        return 2;
+    }
+    class ChildClassLevelOne{
+        int methodConeA(){
+            return 1;
+        }
+        int methodCOneB(){
+            return 2;
+        }
+        protected class ChildClassLevelTwo{
+            int methodCTwoA(){
+                return 1;
+            }
+            int methodCTwoB(){
+                return 2;
+            }
+        }
+    }
+
+
+}

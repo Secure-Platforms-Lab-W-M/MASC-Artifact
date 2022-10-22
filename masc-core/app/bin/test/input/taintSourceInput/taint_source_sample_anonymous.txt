@@ -1,0 +1,35 @@
+package com.example.amit.helloworld;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {	
+    int intA = 0;
+
+    int methodA() {
+        return 1;
+    }
+
+    int intB = 0;
+
+    int methodB() {
+        return 0;
+    }
+
+	Anonymous anonClass = new Anonymous() {
+   		public int methodC() {
+       		return 0;
+    	}
+	};
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+		
+        this.intA = 1;
+        this.methodA();
+        this.intB = 2;
+        this.methodB();
+        setContentView(R.layout.activity_main);
+    }
+}

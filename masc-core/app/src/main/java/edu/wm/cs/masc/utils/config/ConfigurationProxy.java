@@ -44,6 +44,11 @@ public class ConfigurationProxy {
         return value;
     }
 
+
+    public boolean contains(String key) {
+        return configuration.getString(key) != null;
+    }
+
     /**
      * Takes input from user and updates the in-memory cache for the given key.
      * @param key the key against which the user input is to be cached in memory.
