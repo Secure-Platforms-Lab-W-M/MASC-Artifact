@@ -2,12 +2,26 @@ package edu.wm.cs.masc.pluginArchitecture;
 
 import edu.wm.cs.masc.mutation.properties.*;
 import edu.wm.cs.masc.plugins.MutationMakerForPluginOperators;
+import edu.wm.cs.masc.utils.commandPrompt.CPOutput;
+import edu.wm.cs.masc.utils.commandPrompt.CommandPrompt;
 import org.apache.commons.configuration2.ex.ConfigurationException;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 public class PluginArchitectureTest {
+    @BeforeClass
+    public static void setUp() {
+        System.out.println("What are you doing");
+        CommandPrompt cp = new CommandPrompt();
+        CPOutput output = cp.run_command("cd src/test/resources/plugins && javac -cp app-all.jar *.java");
+        assertFalse(output.error);
+//        System.out.println(output.getCombinedOutput());
+    }
+
     @Test
     public void pluginStringOperator() throws ConfigurationException {
         String propName = "Cipher.properties";
@@ -51,6 +65,22 @@ public class PluginArchitectureTest {
 
         String path = "src/test/resources/" + propName;
         AOperatorProperties p = new ByteOperatorProperties(path);
+        MutationMakerForPluginOperators pluginOperatorsMutationMaker = new MutationMakerForPluginOperators(path, "src/test/resources/");
+        pluginOperatorsMutationMaker.populateOperators(p);
+
+        assertEquals(1, pluginOperatorsMutationMaker.operators.size());
+
+        String obtainedResult = pluginOperatorsMutationMaker.operators.get(0).mutation().replace("%d", "");
+        assertEquals(expected, obtainedResult);
+    }
+
+    @Test
+    public void pluginCustomOperator() throws ConfigurationException {
+        String propName = "Custom.properties";
+        String expected = "javax.crypto.Cipher.getInstance(\"aes\");";
+
+        String path = "src/test/resources/" + propName;
+        AOperatorProperties p = new CustomOperatorProperties(path);
         MutationMakerForPluginOperators pluginOperatorsMutationMaker = new MutationMakerForPluginOperators(path, "src/test/resources/");
         pluginOperatorsMutationMaker.populateOperators(p);
 
@@ -110,6 +140,12 @@ public class PluginArchitectureTest {
         assertEquals(expected, obtainedResult);
     }
 
-
+    @AfterClass
+    public static void end() {
+        System.out.println("What are you doing");
+        CommandPrompt cp = new CommandPrompt();
+        CPOutput output = cp.run_command("cd src/test/resources/plugins && del *.class");
+        assertFalse(output.error);
+    }
 
 }
