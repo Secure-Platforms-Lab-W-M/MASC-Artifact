@@ -29,11 +29,11 @@ public abstract class AMultiClassMutationMaker extends AMutationMaker {
             writeOutput(p.getOutputDir(), operatorType,
                     p.getClassName() + ".java",
                     content);
-            writeDependencyClasses(operatorType, p);
+            writeDependencyClasses(operatorType);
         }
     }
 
-    public void writeDependencyClasses(OperatorType operatorType, AOperatorProperties p) {
+    public void writeDependencyClasses(OperatorType operatorType) {
         if (filePacks == null || filePacks.size() < 1) {
             throw new IllegalArgumentException(
                     "Need at least one dependency class. Set FilePacks");

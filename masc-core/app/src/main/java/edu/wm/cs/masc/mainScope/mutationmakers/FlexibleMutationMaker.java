@@ -10,6 +10,7 @@ import edu.wm.cs.masc.mutation.operators.OperatorType;
 import edu.wm.cs.masc.mutation.properties.FlexibleOperatorProperties;
 import edu.wm.cs.masc.mutation.reflection.ClassReflection;
 import edu.wm.cs.masc.mutation.reflection.EnumClassType;
+import edu.wm.cs.masc.mutation.suppliers.MutationSupplier;
 
 public class FlexibleMutationMaker
         extends AMultiClassMutationMakerOptionalDependencies {
@@ -21,71 +22,77 @@ public class FlexibleMutationMaker
     }
 
 
+//    @Override
+//    public void populateOperators() {
+//        /*
+//                AIOEmptyAbstractClassExtendsAbstractClass,
+//                AIOGenericAbstractClassExtendsAbstractClass,
+//                AIOSpecificAbstractClassExtendsAbstractClass
+//
+//                AIOEmptyAbstractClassImplementsInterface,
+//                AIOEmptyInterfaceExtendsInterface,
+//
+//            AIOGenericAbstractClassImplementsInterface,
+//            AIOGenericInterfaceExtendsInterface,
+//
+//            AIOSpecificAbstractClassImplementsInterface,
+//            AIOSpecificInterfaceExtendsInterface,
+//         */
+//        EnumClassType apiType = ClassReflection.getType(p.getApiName());
+//        // basic
+//        this.operators.put(OperatorType.AIOEmptyFromAbstractType,
+//                new AIOEmptyFromAbstractType(this.p));
+//
+//        // only if the parent type is abstract class, we can use extension
+//        if (apiType == EnumClassType.Abstract) {
+//            this.operators
+//                    .put(OperatorType
+//                                    .AIOEmptyAbstractClassExtendsAbstractClass,
+//                            new AIOEmptyAbstractClassExtendsAbstractClass(
+//                                    this.p));
+//            this.operators
+//                    .put(OperatorType.AIOGenericAbstractClassExtendsAbstractClass,
+//                            new AIOGeneric(
+//                                    this.p));
+//            this.operators
+//                    .put(OperatorType
+//                                    .AIOSpecificAbstractClassExtendsAbstractClass,
+//                            new AIOSpecific(
+//                                    this.p));
+//        }
+//
+//        // if the type is of Interface, we can either extend / implement via
+//        // other abstract types
+//
+//        // interface that extends interface
+//
+//        this.operators.put(OperatorType
+//                        .AIOEmptyInterfaceExtendsInterface,
+//                new AIOEmptyInterfaceExtendsInterface(this.p));
+////        abstract class that implements interface
+//        this.operators.put(OperatorType
+//                        .AIOEmptyAbstractClassImplementsInterface,
+//                new AIOEmptyAbstractClassImplementsInterface(this.p));
+//        this.operators
+//                .put(OperatorType.AIOGenericAbstractClassImplementsInterface,
+//                        new AIOGeneric(this.p));
+//
+//        this.operators
+//                .put(OperatorType.AIOGenericInterfaceExtendsInterface,
+//                        new AIOGeneric(this.p));
+//        this.operators
+//                .put(OperatorType.AIOSpecificAbstractClassImplementsInterface,
+//                        new AIOSpecific(
+//                                this.p));
+//        this.operators.put(OperatorType.AIOSpecificInterfaceExtendsInterface,
+//                new AIOSpecific(this.p));
+//
+//    }
+
+
     @Override
     public void populateOperators() {
-        /*
-                AIOEmptyAbstractClassExtendsAbstractClass,
-                AIOGenericAbstractClassExtendsAbstractClass,
-                AIOSpecificAbstractClassExtendsAbstractClass
-
-                AIOEmptyAbstractClassImplementsInterface,
-                AIOEmptyInterfaceExtendsInterface,
-
-            AIOGenericAbstractClassImplementsInterface,
-            AIOGenericInterfaceExtendsInterface,
-
-            AIOSpecificAbstractClassImplementsInterface,
-            AIOSpecificInterfaceExtendsInterface,
-         */
-        EnumClassType apiType = ClassReflection.getType(p.getApiName());
-        // basic
-        this.operators.put(OperatorType.AIOEmptyFromAbstractType,
-                new AIOEmptyFromAbstractType(this.p));
-
-        // only if the parent type is abstract class, we can use extension
-        if (apiType == EnumClassType.Abstract) {
-            this.operators
-                    .put(OperatorType
-                                    .AIOEmptyAbstractClassExtendsAbstractClass,
-                            new AIOEmptyAbstractClassExtendsAbstractClass(
-                                    this.p));
-            this.operators
-                    .put(OperatorType.AIOGenericAbstractClassExtendsAbstractClass,
-                            new AIOGeneric(
-                                    this.p));
-            this.operators
-                    .put(OperatorType
-                                    .AIOSpecificAbstractClassExtendsAbstractClass,
-                            new AIOSpecific(
-                                    this.p));
-        }
-
-        // if the type is of Interface, we can either extend / implement via
-        // other abstract types
-
-        // interface that extends interface
-
-        this.operators.put(OperatorType
-                        .AIOEmptyInterfaceExtendsInterface,
-                new AIOEmptyInterfaceExtendsInterface(this.p));
-//        abstract class that implements interface
-        this.operators.put(OperatorType
-                        .AIOEmptyAbstractClassImplementsInterface,
-                new AIOEmptyAbstractClassImplementsInterface(this.p));
-        this.operators
-                .put(OperatorType.AIOGenericAbstractClassImplementsInterface,
-                        new AIOGeneric(this.p));
-
-        this.operators
-                .put(OperatorType.AIOGenericInterfaceExtendsInterface,
-                        new AIOGeneric(this.p));
-        this.operators
-                .put(OperatorType.AIOSpecificAbstractClassImplementsInterface,
-                        new AIOSpecific(
-                                this.p));
-        this.operators.put(OperatorType.AIOSpecificInterfaceExtendsInterface,
-                new AIOSpecific(this.p));
-
+        operators = new MutationSupplier(p).getOperators();
     }
 
     @Override

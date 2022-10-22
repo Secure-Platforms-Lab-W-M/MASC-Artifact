@@ -18,7 +18,7 @@ import java.net.URLClassLoader;
 import java.util.ArrayList;
 
 public class PluginOperatorManager {
-    private static final PluginOperatorManager SINGLE_INSTANCE = new PluginOperatorManager();
+//    private static final PluginOperatorManager SINGLE_INSTANCE = new PluginOperatorManager();
     private final ArrayList<Class> customOperators = new ArrayList<>();
     private final ArrayList<IOperator> operators = new ArrayList<>();
 
@@ -32,12 +32,14 @@ public class PluginOperatorManager {
     /**
      * Constructor calls this function to load all custom .class files provided by the user in plugins/
      */
-    private PluginOperatorManager() {
+    public PluginOperatorManager(String folderDir) {
         String packageName = "plugins";
-        String folderDir = "app/build/libs/";
+//        String folderDir = "app/build/libs/";
         if(isInProd()) folderDir = "";
         File[] files = new File(folderDir + packageName).listFiles();
         File folder = new File(folderDir);
+        System.out.println(folder.getAbsolutePath());
+
 
 
         if(files == null)
@@ -131,12 +133,5 @@ public class PluginOperatorManager {
 
         return operators;
     }
-
-    /**
-     * Get instance of single object
-     * @return a instance of this class
-     */
-    public static PluginOperatorManager getInstance() {
-        return SINGLE_INSTANCE;
-    }
 }
+

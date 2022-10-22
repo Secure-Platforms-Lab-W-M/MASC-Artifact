@@ -8,6 +8,7 @@ import edu.wm.cs.masc.mutation.operators.OperatorType;
 import edu.wm.cs.masc.mutation.operators.restrictive.byteoperator.CurrentTime;
 import edu.wm.cs.masc.mutation.properties.AOperatorProperties;
 import edu.wm.cs.masc.mutation.properties.ByteOperatorProperties;
+import edu.wm.cs.masc.mutation.suppliers.MutationSupplier;
 
 public class ByteMutationMaker extends AMutationMaker {
 
@@ -31,7 +32,8 @@ public class ByteMutationMaker extends AMutationMaker {
 
     @Override
     public void populateOperators() {
-        operators.put(OperatorType.ByteCurrentTime, new CurrentTime(p));
-        operators.put(OperatorType.ByteLoop, new CurrentTime(p));
+//        operators.put(OperatorType.ByteCurrentTime, new CurrentTime(p));
+//        operators.put(OperatorType.ByteLoop, new CurrentTime(p));
+        operators = new MutationSupplier(p).getOperators();
     }
 }
