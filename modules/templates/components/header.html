@@ -1,30 +1,79 @@
 <nav class="navbar top-navbar navbar-expand-lg navbar-dark bg-nav">
     <div class="container-fluid">
         <div class="brand-wrapper d-flex justify-content-center align-items-center brand-nam-margin">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                {% load bootstrap_icons %}
+
+                {% bs_icon 'list' color='white' %}
+
+            </button>
             <a class="navbar-brand" href="/">MASC</a>
             <div class="navbar-text">
-                Mutation Analysis for evaluating Static Crypto-API misuse detectors
+                A Systematic Evaluation of Cryptographic Misuse Detection Techniques
             </div>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse align-cls" id="navbarText">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item inner-nav-items">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
-                </li>
-                <li class="nav-item inner-nav-items">
-                    <a class="nav-link" aria-current="page" href="#">Docs</a>
-                </li>
-                <li class="nav-item inner-nav-items">
-                    <a class="nav-link" aria-current="page" href="/auth/login">Login</a>
-                </li>
-                <li class="nav-item inner-nav-items">
-                    <a class="nav-link" aria-current="page" href="/properties">Properties</a>
-                </li>
-            </ul>
-        </div>
+        <!--        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"-->
+        <!--                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">-->
+        <!--            <span class="navbar-toggler-icon"></span>-->
+        <!--        </button>-->
+        <!--        <div class="collapse navbar-collapse align-cls" id="navbarText">-->
+        <!--            <ul class="navbar-nav mb-2 mb-lg-0">-->
+        <!--                <li class="nav-item inner-nav-items">-->
+        <!--                    <a class="nav-link active" aria-current="page" href="#">About</a>-->
+        <!--                </li>-->
+        <!--&lt;!&ndash;                <li class="nav-item inner-nav-items">&ndash;&gt;-->
+        <!--&lt;!&ndash;                    <a class="nav-link" aria-current="page" href="#">Docs</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;                </li>&ndash;&gt;-->
+        <!--&lt;!&ndash;                <li class="nav-item inner-nav-items">&ndash;&gt;-->
+        <!--&lt;!&ndash;                    <a class="nav-link" aria-current="page" href="/auth/login">Login</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;                </li>&ndash;&gt;-->
+        <!--                <li class="nav-item inner-nav-items">-->
+        <!--                    <a class="nav-link" aria-current="page" href="/properties">Properties</a>-->
+        <!--                </li>-->
+        <!--            </ul>-->
+        <!--        </div>-->
     </div>
 </nav>
+{% load static %}
+<link rel="stylesheet" href="{% static 'bootstrap_icons/css/bootstrap_icons.css' %}">
+<div class="offcanvas offcanvas-start custom-canvas" tabindex="-1" id="offcanvasExample"
+     aria-labelledby="offcanvasExampleLabel" style="max-width: 250px; background-color: #DBE6E7;">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title" id="offcanvasExampleLabel"><b><i>MASC</i></b></h4>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div>
+            A Systematic Evaluation of Cryptographic Misuse Detection Techniques
+        </div>
+        <div style="margin-top: 10%;">
+            <div style="padding: 3px; text-color:white;">
+                {% bs_icon 'bezier2' extra_classes="bi-valign-default"%}
+                <a href="labs/inputForm" style="color: black; text-decoration:none; font-size:20px; margin-left: 5px;">MASC
+                    Lab</a>
+            </div>
+            <hr>
+            <div style="padding: 3px; text-color:white;">
+                {% bs_icon 'cpu' extra_classes="bi-valign-default"%}
+                <a href="/engine/" style="color: black; text-decoration:none; font-size:20px; margin-left: 5px;">MASC
+                    Engine</a>
+            </div>
+            <hr>
+            <div style="padding: 3px; text-color:white;">
+                {% bs_icon 'archive' extra_classes="bi-valign-default"%}
+                <a href="/properties" style="color: black; text-decoration:none; font-size:20px; margin-left: 5px;">Property
+                    Manger</a>
+            </div>
+            <hr>
+            <div style="padding: 3px; text-color:white;">
+                {% bs_icon 'file-code' extra_classes="bi-valign-default"%}
+                <a href="/engine/history" style="color: black; text-decoration:none; font-size:20px; margin-left: 5px;">History</a>
+            </div>
+            <hr>
+
+        </div>
+
+    </div>
+</div>

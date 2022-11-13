@@ -39,18 +39,22 @@ body {
 }
 
 .l-bg-blue-dark {
-    background: linear-gradient(to right, #373b44, #4286f4) !important;
-    color: #fff;
+    background: #F0D7D1 !important;
+    color: #000;
 }
 
 .l-bg-green-dark {
-    background: linear-gradient(to right, #0a504a, #38ef7d) !important;
-    color: #fff;
+    background: #D2F0D1 !important;
+    color: #000;
 }
 
 .l-bg-orange-dark {
-    background: linear-gradient(to right, #a86008, #ffba56) !important;
-    color: #fff;
+    background: #D2D1F0 !important;
+    color: #000;
+}
+.l-bg-yellow-dark {
+    background: #F0EED1 !important;
+    color: #000;
 }
 
 .card .card-statistic-3 .card-icon-large .fas, .card .card-statistic-3 .card-icon-large .far, .card .card-statistic-3 .card-icon-large .fab, .card .card-statistic-3 .card-icon-large .fal {
@@ -89,4 +93,7 @@ body {
 }
 .long {
     width: 250px;
+}
+.custom-canvas{
+    max-width: 150px;
 }
