@@ -38,7 +38,7 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'bootstrap_icons/css/bootstrap_icons.css' %}">
 <div class="offcanvas offcanvas-start custom-canvas" tabindex="-1" id="offcanvasExample"
-     aria-labelledby="offcanvasExampleLabel" style="max-width: 250px; background-color: #DBE6E7;">
+     aria-labelledby="offcanvasExampleLabel" style="max-width: 300px; background-color: #DBE6E7;">
     <div class="offcanvas-header">
         <h4 class="offcanvas-title" id="offcanvasExampleLabel"><b><i>MASC</i></b></h4>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
@@ -51,7 +51,7 @@
         <div style="margin-top: 10%;">
             <div style="padding: 3px; text-color:white;">
                 {% bs_icon 'bezier2' extra_classes="bi-valign-default"%}
-                <a href="labs/inputForm" style="color: black; text-decoration:none; font-size:20px; margin-left: 5px;">MASC
+                <a href="/labs/inputForm" style="color: black; text-decoration:none; font-size:20px; margin-left: 5px;">MASC
                     Lab</a>
             </div>
             <hr>
@@ -70,6 +70,11 @@
             <div style="padding: 3px; text-color:white;">
                 {% bs_icon 'file-code' extra_classes="bi-valign-default"%}
                 <a href="/engine/history" style="color: black; text-decoration:none; font-size:20px; margin-left: 5px;">History</a>
+            </div>
+            <hr>
+            <div style="padding: 3px; text-color:white;">
+                {% bs_icon 'plugin' extra_classes="bi-valign-default"%}
+                <a href="/plugins" style="color: black; text-decoration:none; font-size:20px; margin-left: 5px;">Custom Plugin</a>
             </div>
             <hr>
 
