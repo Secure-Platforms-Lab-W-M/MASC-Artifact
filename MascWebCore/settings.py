@@ -40,6 +40,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'django_bootstrap_icons',
     'modules.plugins',
+    'modules.toolprofile',
     'modules.CipherManager',
     'modules.home',
     'modules.MascLab',

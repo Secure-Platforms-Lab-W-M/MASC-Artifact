@@ -25,5 +25,6 @@ urlpatterns = [
     path('auth/',include("modules.UserAuthentication.urls")),
     path('profile/',include("modules.UserProfile.urls")),
     path('properties/', include("modules.CipherManager.urls")),
-    path('plugins/', include("modules.plugins.urls"))
+    path('plugins/', include("modules.plugins.urls")),
+    path('toolprofile/', include("modules.toolprofile.urls"))
 ]

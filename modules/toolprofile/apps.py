@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class ToolprofileConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'toolprofile'
+    name = 'modules.toolprofile'
