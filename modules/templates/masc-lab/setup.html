@@ -1,0 +1,73 @@
+{% extends 'layout/base.html' %}
+
+{% block content %}
+<div class="container pb-2 pt-4">
+    <div class="row">
+        <div class="col-xl-9 col-lg-9">
+            <h2 class="title">MASC Lab</h2>
+            <div>
+                <span>
+                    Inspect selected file, make changes if necessary
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-12 col-xl-12">
+                <d-card class="card">
+                    <div class="p-4">
+                        <form class="mt-3 mb-3" action="setup" method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-lg-7 col-xl-7">
+                                    <div class="form-group">
+                                        <label for="fileElements"><b><i>File Contents</i></b></label>
+                                        <textarea class="form-control" id="fileElements" rows="18"
+                                                  name="content">{{ content }}</textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-xl-5">
+                                    <div class="form-group">
+                                        <label for="selected_properties">Property File Name</label>
+                                        <input type="text" class="form-control" id="selected_properties" name="selected_properties"
+                                               aria-describedby="Property File Name" value="{{ properties }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="type">Selected Operator Type</label>
+                                        <input type="text" class="form-control" id="type" name="type"
+                                               aria-describedby="Property File Name" value="{{ selected_type }}">
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for="excluded_operators"><b>Select Operators to be Excluded</b></label>
+                                        <!--                                        <select multiple="multiple" name="excluded_operators" id="excluded_operators" size="5">-->
+                                        <!--                                            {% for item in operatorList %}-->
+                                        <!--                                            <option value="{{item}}">{{item}}</option>-->
+                                        <!--                                            {% endfor %}-->
+                                        <!--                                        </select>-->
+                                        {{ form.as_p }}
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        {{ save_check_box.as_p }}
+<!--                                        <input class="form-check-input" type="radio" name="save_check_box" id="save_check_box" value="{{ save_check_box }}">-->
+<!--                                        <label class="form-check-label" for="save_check_box">-->
+<!--                                            Save Changes Made-->
+<!--                                        </label>-->
+                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button type="submit" class="btn btn-warning mt-3">Run Masc Lab</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </d-card>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
