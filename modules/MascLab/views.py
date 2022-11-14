@@ -45,6 +45,7 @@ def update_file_content(filename, content):
     with open('./modules/static/properties/' + filename, 'wb') as destination:
         destination.write(arr)
 
+
 def get_operator_type_selected_file(f):
     with open('./modules/static/properties/' + f, 'r') as destination:
         item = destination.read().split("\n")
@@ -54,7 +55,20 @@ def get_operator_type_selected_file(f):
             return temp[1]
     return "no_operator"
 
+
 def read_selected_file(f):
+    with open('./modules/static/properties/' + f, 'r') as destination:
+        item = destination.read().split("\n")
+    content = ''
+    for line in item:
+        if 'mutantGeneration' in line or 'automatedAnalysis' in line or 'excludedOperators' in line:
+            continue
+        else:
+            content = content + line + '\n'
+    return content
+
+
+def read_file(f):
     with open('./modules/static/properties/' + f, 'r') as destination:
         contents = destination.read()
     return contents
@@ -148,20 +162,23 @@ def set_up(request):
         else:
             excluded_operator = "empty"
 
-        checkForm = CheckSave(request.POST)
-        do_save = "not_selected"
-        if checkForm.is_valid():
-            do_save = form.cleaned_data.get('Save_Changes')
+        # checkForm = CheckSave(request.POST)
+        # do_save = "not_selected"
+        # if checkForm.is_valid():
+        #     do_save = form.cleaned_data.get('Save_Changes')
+        #
+        # if do_save != "not_selected":
+        #     update_file_content(properties,file_content)
 
-        if do_save != "not_selected":
-            update_file_content(properties,file_content)
-
-       
         fileinput = read_selected_file(properties)
+        print(fileinput)
+        initial = 'mutantGeneration = true' + '\n' + 'automatedAnalysis = false' + '\n' + 'excludedOperators=' + excluded_operator + '\n'
+        contents = initial+fileinput
+        update_file_content(properties, contents)
         p = asyncio.run(
             run('java -jar ./modules/static/properties/app-all.jar ./modules/static/properties/' + properties))
         # read the output file
-        input_code = fileinput
+        input_code = read_file(properties)
         output_code = read_logs()
         stdOut = p
         return render(request, "masc-lab/lab.html", {
@@ -169,5 +186,3 @@ def set_up(request):
             "output_code": output_code,
             "stdOut": stdOut
         })
-
-
