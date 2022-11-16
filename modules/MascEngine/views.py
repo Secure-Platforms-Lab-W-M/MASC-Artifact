@@ -1,6 +1,7 @@
 import sys
 import os
 from asgiref.sync import sync_to_async
+from django.http import HttpResponse
 from django.shortcuts import render
 
 from modules.CipherManager.models import PropertiesList
@@ -9,6 +10,8 @@ from modules.MascEngine.models import ProcessLog
 from zipfile import ZipFile
 from datetime import datetime
 import asyncio
+from shutil import make_archive
+from wsgiref.util import FileWrapper
 import time
 
 # Create your views here.
@@ -144,6 +147,8 @@ def delete_uploaded_file(f):
     path = './app/outputs/'+f
     if os.path.isdir(path):
         os.system("rm -rf "+path)
+    if os.path.isfile('./app/outputs/'+f+'./zip'):
+        os.remove('./app/outputs/'+f+'./zip')
 
 
 def delete_source_code(request,id,name):
@@ -163,5 +168,14 @@ def delete_source_code(request,id,name):
         "records": records
     })
 
+
+def download(request, app_name):
+    files_path = "./app/outputs/"+app_name
+    path_to_zip = make_archive(files_path, "zip", files_path)
+    response = HttpResponse(FileWrapper(open(path_to_zip,'rb')), content_type='application/zip')
+    response['Content-Disposition'] = 'attachment; filename="{filename}.zip"'.format(
+        filename = app_name.replace(" ", "_")
+    )
+    return response
 # Create your views here.
 
