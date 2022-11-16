@@ -1,5 +1,5 @@
 import sys
-
+import os
 from asgiref.sync import sync_to_async
 from django.shortcuts import render
 
@@ -28,6 +28,7 @@ class thread(threading.Thread):
         p, status_code = asyncio.run(
             run('java -jar D:/8th/spl/masc-web-client-django/MascWebCore/modules/static/properties/app-all.jar ' + self.build_properties_path))
         record =ProcessLog.objects.get(id=self.log_id)
+        print('Hello =>'+record.status)
         if status_code == 0:
             record.status = 'completed'
         else:
@@ -45,12 +46,14 @@ async def run(cmd):
     stdout, stderr = await proc.communicate()
     print(await proc.communicate())
     print(f'[{cmd!r} exited with {proc.returncode}]')
+    utf = 'utf-8'
+    status = 'ignore'
     if stdout:
-        print(f'[stdout]\n{stdout.decode()}')
-        return stdout.decode(), proc.returncode
+        print(f'[stdout]\n{stdout.decode(utf,status)}')
+        return stdout.decode(utf,status), proc.returncode
     if stderr:
-        print(f'[stderr]\n{stderr.decode()}')
-        return stderr.decode(), proc.returncode
+        print(f'[stderr]\n{stderr.decode(utf,status)}')
+        return stderr.decode(utf,status), proc.returncode
 
 
 def read_selected_file(f):
@@ -79,7 +82,7 @@ def handle_uploaded_file(f, app_name):
 
 
 async def build_properties(app_name, scope, input_path, contents):
-    initial = 'appName=' + app_name + '\n' + 'scope=' + scope + '\n' + 'appSrc=' + input_path + '\n' + 'outputDir=app/outputs/'+app_name+'\n'
+    initial = 'appName=' + app_name + '\n' + 'scope=' + scope + '\n' + 'appSrc=' + input_path + '\n' + 'outputDir=./app/outputs/'+app_name+'\n'
     contents = initial + contents
     with open('./modules/static/properties/' + app_name + '.properties', 'w') as destination:
         destination.write(contents)
@@ -136,4 +139,29 @@ def index(request):
         "properties_file": records
     })
 
+
+def delete_uploaded_file(f):
+    path = './app/outputs/'+f
+    if os.path.isdir(path):
+        os.system("rm -rf "+path)
+
+
+def delete_source_code(request,id,name):
+    SourceCode.objects.get(id=id).delete()
+    delete_uploaded_file(name)
+    data = ProcessLog.objects.all().values()
+    records = []
+    for x in data:
+        source = SourceCode.objects.get(id=x['source_code_id'])
+        x['source_code'] = source
+        arr = x['properties'].split('/')
+        x['properties_name'] = arr[len(arr) - 1]
+        records.append(x)
+    custome_operator_headers = ["Id", "Scope", "Properties", "App Name","Status","Actions"]
+    return render(request, "masc-engine/history.html", {
+        "custome_operator_headers": custome_operator_headers,
+        "records": records
+    })
+
 # Create your views here.
+

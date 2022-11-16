@@ -1,14 +1,8 @@
-Nov 14, 2022 1:11:24 PM edu.wm.cs.masc.MASC runMainScope
+Nov 16, 2022 6:07:33 PM edu.wm.cs.masc.MASC runMainScope
 SEVERE: [ValueForAKey]#StringOperator
-Nov 14, 2022 1:11:24 PM edu.wm.cs.masc.mainScope.mutationmakers.AMutationMaker writeOutput
-INFO: [OutputPath]#app/outputs/StringUnsafeReplaceWithUnsafe/CryptoTest.java
-Nov 14, 2022 1:11:24 PM edu.wm.cs.masc.mainScope.mutationmakers.AMutationMaker writeOutput
-INFO: [OutputPath]#app/outputs/StringDifferentCase/CryptoTest.java
-Nov 14, 2022 1:11:24 PM edu.wm.cs.masc.mainScope.mutationmakers.AMutationMaker writeOutput
-INFO: [OutputPath]#app/outputs/StringNoiseReplace/CryptoTest.java
-Nov 14, 2022 1:11:24 PM edu.wm.cs.masc.mainScope.mutationmakers.AMutationMaker writeOutput
-INFO: [OutputPath]#app/outputs/StringStringCaseTransform/CryptoTest.java
-Nov 14, 2022 1:11:24 PM edu.wm.cs.masc.mainScope.mutationmakers.AMutationMaker writeOutput
+Nov 16, 2022 6:07:33 PM edu.wm.cs.masc.mainScope.mutationmakers.AMutationMaker writeOutput
 INFO: [OutputPath]#app/outputs/StringValueInVariable/CryptoTest.java
-Nov 14, 2022 1:11:24 PM edu.wm.cs.masc.mainScope.mutationmakers.AMutationMaker writeOutput
-INFO: [OutputPath]#app/outputs/StringSafeReplaceWithUnsafe/CryptoTest.java
+Nov 16, 2022 6:07:33 PM edu.wm.cs.masc.mainScope.mutationmakers.AMutationMaker writeOutput
+INFO: [OutputPath]#app/outputs/StringUnsafeReplaceWithUnsafe/CryptoTest.java
+Nov 16, 2022 6:07:33 PM edu.wm.cs.masc.mainScope.mutationmakers.AMutationMaker writeOutput
+INFO: [OutputPath]#app/outputs/StringStringCaseTransform/CryptoTest.java

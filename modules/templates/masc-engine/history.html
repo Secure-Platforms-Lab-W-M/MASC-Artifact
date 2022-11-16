@@ -46,9 +46,14 @@
                                 {% endif %}
                             </td>
                             <td>
-                                <a class="btn btn-primary" href="#">Details</a>
+<!--                                <a class="btn btn-primary" href="#">Details</a>-->
+                                <a class="btn btn-danger" href="{% url 'MascEngine:deleteCode' id=record.source_code.id name=record.source_code.appName %}">
+                                    {% load bootstrap_icons %}
+
+                                    {% bs_icon 'trash' color='white' %}
+                                </a>
                                 {% if record.status == 'completed' %}
-                                <a class="btn btn-danger" href="#">Download</a>
+                                <a class="btn btn-success" href="#">Download</a>
                                 {% endif %}
                             </td>
                         </tr>

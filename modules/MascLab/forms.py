@@ -8,6 +8,7 @@ class StringOperatorForm(forms.Form):
         ("StringSafeReplaceWithUnsafe", "StringSafeReplaceWithUnsafe"),
         ("StringStringCaseTransform", "StringStringCaseTransform"),
         ("StringValueInVariable", "StringValueInVariable"),
+        ("StringUnsafeReplaceWithUnsafe", "StringUnsafeReplaceWithUnsafe"),
     )
     Operators_List = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple,
                                                choices=OPTIONS)
