@@ -41,6 +41,7 @@ def index(request):
 
 
 def update_file_content(filename, content):
+    print(content)
     arr = bytes(content, 'utf-8')
     with open('./modules/static/properties/' + filename, 'wb') as destination:
         destination.write(arr)
@@ -170,10 +171,10 @@ def set_up(request):
         # if do_save != "not_selected":
         #     update_file_content(properties,file_content)
 
-        fileinput = read_selected_file(properties)
-        print(fileinput)
+        # fileinput = read_selected_file(properties)
+        # print(fileinput)
         initial = 'mutantGeneration = true' + '\n' + 'automatedAnalysis = false' + '\n' + 'excludedOperators=' + excluded_operator + '\n'
-        contents = initial+fileinput
+        contents = initial+file_content
         update_file_content(properties, contents)
         p = asyncio.run(
             run('java -jar ./modules/static/properties/app-all.jar ./modules/static/properties/' + properties))
