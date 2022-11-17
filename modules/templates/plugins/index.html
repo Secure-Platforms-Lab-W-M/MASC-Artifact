@@ -59,6 +59,16 @@
 
                                     {% bs_icon 'trash' color='white' %}
                                 </a>
+                                {% if file.status == 'active' %}
+                                <a class="btn btn-danger" href="{% url 'status' id=file.id %}">
+                                    Inactivate
+                                </a>
+                                {% endif %}
+                                {% if file.status != 'active' %}
+                                <a class="btn btn-success" href="{% url 'status' id=file.id %}">
+                                    Activate
+                                </a>
+                                {% endif %}
                             </td>
                         </tr>
                         {% endfor %}

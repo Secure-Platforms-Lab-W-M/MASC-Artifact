@@ -1,4 +1,5 @@
 import os
+import shutil
 
 from django.shortcuts import render, redirect
 
@@ -81,4 +82,19 @@ def compile_class(request, id):
         record.classfile = record.filename.split('.')[0]+'.class'
     record.save()
     return redirect(index)
+
+
+def update_status(request, id):
+    record = PluginsList.objects.get(id=id)
+    if record.status == 'active':
+        if os.path.isfile('./plugins/'+record.classfile):
+            shutil.move('./plugins/'+record.classfile,'./plugins-inactive/'+record.classfile)
+        record.status = 'inactive'
+    else:
+        if os.path.isfile('./plugins-inactive/' + record.classfile):
+            shutil.move('./plugins-inactive/' + record.classfile,'./plugins/' + record.classfile)
+        record.status = 'active'
+    record.save()
+    return redirect(index)
+
 
