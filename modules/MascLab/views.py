@@ -69,6 +69,16 @@ def read_selected_file(f):
     return content
 
 
+def sanitize_content(initial_content):
+    item = initial_content.split("\n")
+    content = ''
+    for line in item:
+        if 'mutantGeneration' in line or 'automatedAnalysis' in line or 'excludedOperators' in line:
+            continue
+        else:
+            content = content + line + '\n'
+    return content
+
 def read_file(f):
     with open('./modules/static/properties/' + f, 'r') as destination:
         contents = destination.read()
@@ -174,7 +184,7 @@ def set_up(request):
         # fileinput = read_selected_file(properties)
         # print(fileinput)
         initial = 'mutantGeneration = true' + '\n' + 'automatedAnalysis = false' + '\n' + 'excludedOperators=' + excluded_operator + '\n'
-        contents = initial+file_content
+        contents = initial+sanitize_content(file_content)
         update_file_content(properties, contents)
         p = asyncio.run(
             run('java -jar ./modules/static/properties/app-all.jar ./modules/static/properties/' + properties))

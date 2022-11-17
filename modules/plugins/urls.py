@@ -4,5 +4,6 @@ from modules.plugins import views
 urlpatterns = [
     path('', views.index, name='plugins'),
     path('upload/', views.uploadPlugins, name='uploadPropertyForm'),
-    # path('delete/<str:id>', views.deletePlugins, name='deleteProperties')
+    path('delete/<int:id>', views.delete_plugin, name='delete'),
+    path('compile/<int:id>', views.compile_class, name='compile')
 ]

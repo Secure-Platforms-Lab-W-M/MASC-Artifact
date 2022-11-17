@@ -34,14 +34,27 @@
                         <tr>
                             <td>{{ file.name }}</td>
                             <td>{{ file.filename }}</td>
-                            <td>{{ file.path }}</td>
+                            <td>{{ file.status }}</td>
+                            {% if file.compilation == 'false' %}
                             <td>
-                                <a class="btn btn-primary" href="{% url 'editProperties' id=file.id %}">
+                                {% load bootstrap_icons %}
+
+                                {% bs_icon 'exclamation-circle' color='red' %}
+                            </td>
+                            {% elif file.compilation == 'true' %}
+                            <td>
+                                {{ file.classfile }}
+                            </td>
+                            {% endif %}
+                            <td>
+                                {% if file.compilation == 'false' %}
+                                <a class="btn btn-primary" href="{% url 'compile' id=file.id %}">
                                     {% load bootstrap_icons %}
 
-                                    {% bs_icon 'code-slash' color='white' %}
+                                    {% bs_icon 'google-play' color='white' %}
                                 </a>
-                                <a class="btn btn-danger" href="{% url 'deleteProperties' id=file.id %}">
+                                {% endif %}
+                                <a class="btn btn-danger" href="{% url 'delete' id=file.id %}">
                                     {% load bootstrap_icons %}
 
                                     {% bs_icon 'trash' color='white' %}
