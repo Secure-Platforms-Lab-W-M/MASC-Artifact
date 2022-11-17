@@ -62,7 +62,7 @@ def read_selected_file(f):
         item = destination.read().split("\n")
     content = ''
     for line in item:
-        if 'mutantGeneration' in line or 'automatedAnalysis' in line or 'excludedOperators' in line:
+        if 'mutantGeneration' in line or 'excludedOperators' in line:
             continue
         else:
             content = content + line + '\n'
@@ -73,11 +73,14 @@ def sanitize_content(initial_content):
     item = initial_content.split("\n")
     content = ''
     for line in item:
-        if 'mutantGeneration' in line or 'automatedAnalysis' in line or 'excludedOperators' in line:
+        if 'mutantGeneration' in line or 'excludedOperators' in line:
             continue
         else:
             content = content + line + '\n'
-    return content
+    if 'automatedAnalysis' in content:
+        return content
+    else:
+        return 'automatedAnalysis = false' + '\n'+ content
 
 def read_file(f):
     with open('./modules/static/properties/' + f, 'r') as destination:
@@ -172,18 +175,7 @@ def set_up(request):
                 excluded_operator = ''.join(operators)
         else:
             excluded_operator = "empty"
-
-        # checkForm = CheckSave(request.POST)
-        # do_save = "not_selected"
-        # if checkForm.is_valid():
-        #     do_save = form.cleaned_data.get('Save_Changes')
-        #
-        # if do_save != "not_selected":
-        #     update_file_content(properties,file_content)
-
-        # fileinput = read_selected_file(properties)
-        # print(fileinput)
-        initial = 'mutantGeneration = true' + '\n' + 'automatedAnalysis = false' + '\n' + 'excludedOperators=' + excluded_operator + '\n'
+        initial = 'mutantGeneration = true' + '\n' + 'excludedOperators=' + excluded_operator + '\n'
         contents = initial+sanitize_content(file_content)
         update_file_content(properties, contents)
         p = asyncio.run(

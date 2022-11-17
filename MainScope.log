@@ -1,6 +1,16 @@
-Nov 17, 2022 11:54:19 AM edu.wm.cs.masc.MASC runMainScope
+Nov 17, 2022 12:01:59 PM edu.wm.cs.masc.MASC runMainScope
 SEVERE: [ValueForAKey]#StringOperator
-Nov 17, 2022 11:54:19 AM edu.wm.cs.masc.mainScope.mutationmakers.AMutationMaker writeOutput
+Nov 17, 2022 12:01:59 PM edu.wm.cs.masc.mainScope.mutationmakers.AMutationMaker writeOutput
+INFO: [OutputPath]#app/outputs/test/StringValueInVariable/CryptoTest.java
+Nov 17, 2022 12:01:59 PM edu.wm.cs.masc.mainScope.mutationmakers.AMutationMaker writeOutput
+INFO: [OutputPath]#app/outputs/test/StringNoiseReplace/CryptoTest.java
+Nov 17, 2022 12:01:59 PM edu.wm.cs.masc.mainScope.mutationmakers.AMutationMaker writeOutput
+INFO: [OutputPath]#app/outputs/test/StringUnsafeReplaceWithUnsafe/CryptoTest.java
+Nov 17, 2022 12:01:59 PM edu.wm.cs.masc.mainScope.mutationmakers.AMutationMaker writeOutput
+INFO: [OutputPath]#app/outputs/test/StringSafeReplaceWithUnsafe/CryptoTest.java
+Nov 17, 2022 12:01:59 PM edu.wm.cs.masc.mainScope.mutationmakers.AMutationMaker writeOutput
+INFO: [OutputPath]#app/outputs/test/StringStringCaseTransform/CryptoTest.java
+Nov 17, 2022 12:01:59 PM edu.wm.cs.masc.mainScope.mutationmakers.AMutationMaker writeOutput
 INFO: [OutputPath]#app/outputs/test/StringDifferentCase/CryptoTest.java
-Nov 17, 2022 11:54:19 AM edu.wm.cs.masc.plugins.MutationMakerForPluginOperators writeOutput
+Nov 17, 2022 12:01:59 PM edu.wm.cs.masc.plugins.MutationMakerForPluginOperators writeOutput
 INFO: [OutputPath]#app/outputs/test\plugins.StringOperatorExample\/CryptoTest.java
