@@ -2,88 +2,112 @@
 
 {% block content %}
 
-    <div class="d-flex justify-content-center align-items-center welcome">
-            <h1><b>MASC</b></h1>
-    </div>
-    <div class="d-flex justify-content-center align-items-center">
+<div class="d-flex justify-content-center align-items-center welcome">
+    <h1><b>MASC</b></h1>
+</div>
+<div class="d-flex justify-content-center align-items-center">
         <span>
             <i>
                 Mutation Analysis for evaluating Static Crypto-API misuse detectors
             </i>
         </span>
-    </div>
+</div>
 
-    <div class="welcome">
-        <div class="row">
-            <div class="col-xl-6 col-lg-6" style="padding-left: 10%;padding-top: 3%;">
-                <div class="card l-bg-blue-dark">
-                    <div class="card-statistic-3 p-4">
-                        <div class="card-icon card-icon-large"><i class="fas fa-users"></i></div>
-                        <div class="mb-4">
-                            <h5 class="card-title mb-0"><b>MASC Lab</b></h5>
-                        </div>
-                        <div class="row align-items-center mb-2 d-flex">
-                            <p class="card-text">Define your configuration and explore the charisma of MASC</p>
-                        </div>
-                        <div >
-                            <a href="labs/inputForm" class="btn btn-primary">Explore Masc Lab</a>
-                        </div>
+<div class="welcome">
+    <div class="row">
+        <div class="col-xl-6 col-lg-6" style="padding-left: 10%;padding-top: 3%;">
+            <div class="card l-bg-blue-dark">
+                <div class="card-statistic-3 p-4">
+                    <div class="card-icon card-icon-large"><i class="fas fa-users"></i></div>
+                    <div class="mb-2">
+                        {% load bootstrap_icons %}
+                        {% bs_icon 'bezier2' extra_classes="bi-valign-default"%}
+                        <span class="card-title mb-0" style="color: black; font-size:22px; margin-left: 5px;"><b>MASC Lab</b></span>
+                    </div>
+                    <div class="row align-items-center mb-2 d-flex">
+                        <p class="card-text">Define your configuration and explore the charisma of MASC</p>
+                    </div>
+                    <div>
+                        <a href="labs/inputForm" class="btn btn-primary">Explore Masc Lab</a>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-6" style="padding-right: 10%;padding-top: 3%;">
-                <div class="card l-bg-green-dark">
-                    <div class="card-statistic-3 p-4">
-                        <div class="card-icon card-icon-large"><i class="fas fa-ticket-alt"></i></div>
-                        <div class="mb-4">
-                            <h5 class="card-title mb-0"><b>MASC Engine</b></h5>
-                        </div>
-                        <div class="row align-items-center mb-2 d-flex">
-                            <p class="card-text">Mutate your source code and with MASC operators</p>
-                        </div>
-                        <div>
-                            <a href="engine/" class="btn btn-primary">Explore MASC Engine</a>                        </div>
+        </div>
+        <div class="col-xl-6 col-lg-6" style="padding-right: 10%;padding-top: 3%;">
+            <div class="card l-bg-green-dark">
+                <div class="card-statistic-3 p-4">
+                    <div class="card-icon card-icon-large"><i class="fas fa-ticket-alt"></i></div>
+                    <div class="mb-2">
+                        {% load bootstrap_icons %}
+                        {% bs_icon 'cpu' extra_classes="bi-valign-default"%}
+                        <span class="card-title mb-0" style="color: black; font-size:22px; margin-left: 5px;"><b>MASC Engine</b></span>
+                    </div>
+                    <div class="row align-items-center mb-2 d-flex">
+                        <p class="card-text">Mutate your source code and with MASC operators</p>
+                    </div>
+                    <div>
+                        <a href="engine/" class="btn btn-primary">Explore MASC Engine</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="row">
+        <div class="col-xl-6 col-lg-6" style="padding-left: 10%;">
+            <div class="card l-bg-orange-dark">
+                <div class="card-statistic-3 p-4">
+                    <div class="card-icon card-icon-large"><i class="fas fa-users"></i></div>
+                    <div class="mb-2">
+                        {% load bootstrap_icons %}
+                        {% bs_icon 'plugin' extra_classes="bi-valign-default"%}
+                        <span class="card-title mb-0" style="color: black; font-size:22px; margin-left: 5px;"><b>Plugin Manager</b></span>
+                    </div>
+                    <div class="row align-items-center mb-2 d-flex">
+                        <p class="card-text">Use your plugins to inspect changes of MASC</p>
+                    </div>
+                    <div>
+                        <a href="plugins/" class="btn btn-primary">Explore Plugins</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--            <div class="col-xl-6 col-lg-6" style="padding-right: 10%;">-->
+        <!--                <div class="card l-bg-yellow-dark">-->
+        <!--                    <div class="card-statistic-3 p-4">-->
+        <!--                        <div class="card-icon card-icon-large"><i class="fas fa-ticket-alt"></i></div>-->
+        <!--                        <div class="mb-4">-->
+        <!--                            <h5 class="card-title mb-0"><b>Tool Profiling</b></h5>-->
+        <!--                        </div>-->
+        <!--                        <div class="row align-items-center mb-2 d-flex">-->
+        <!--                            <p class="card-text">Test your tools with the mutations of MASC</p>-->
+        <!--                        </div>-->
+        <!--                        <div>-->
+        <!--                            <a href="toolprofile/" class="btn btn-primary">Run Tests</a>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <div class="col-xl-6 col-lg-6" style="padding-right: 10%;">
+            <div class="card l-bg-yellow-dark">
+                <div class="card-statistic-3 p-4">
+                    <div class="card-icon card-icon-large"><i class="fas fa-ticket-alt"></i></div>
+                    <div class="mb-2">
+                        {% load bootstrap_icons %}
+                        {% bs_icon 'archive' extra_classes="bi-valign-default"%}
+                        <span class="card-title mb-0" style="color: black; font-size:22px; margin-left: 5px;"><b>Configuration Manager</b></span>
+                    </div>
+                    <div class="row align-items-center mb-2 d-flex">
+                        <p class="card-text">Manage all of your configuration files from a single place</p>
+                    </div>
+                    <div>
+                        <a href="engine/history" class="btn btn-primary">Explore Configurations</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-     <div>
-        <div class="row">
-            <div class="col-xl-6 col-lg-6" style="padding-left: 10%;">
-                <div class="card l-bg-orange-dark">
-                    <div class="card-statistic-3 p-4">
-                        <div class="card-icon card-icon-large"><i class="fas fa-users"></i></div>
-                        <div class="mb-4">
-                            <h5 class="card-title mb-0"><b>Custom Plugins</b></h5>
-                        </div>
-                        <div class="row align-items-center mb-2 d-flex">
-                            <p class="card-text">Use your plugins to inspect changes of MASC</p>
-                        </div>
-                        <div >
-                            <a href="plugins/" class="btn btn-primary">Test Plugins</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-6 col-lg-6" style="padding-right: 10%;">
-                <div class="card l-bg-yellow-dark">
-                    <div class="card-statistic-3 p-4">
-                        <div class="card-icon card-icon-large"><i class="fas fa-ticket-alt"></i></div>
-                        <div class="mb-4">
-                            <h5 class="card-title mb-0"><b>Tool Profiling</b></h5>
-                        </div>
-                        <div class="row align-items-center mb-2 d-flex">
-                            <p class="card-text">Test your tools with the mutations of MASC</p>
-                        </div>
-                        <div>
-                            <a href="toolprofile/" class="btn btn-primary">Run Tests</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
 
 {% endblock content %}
