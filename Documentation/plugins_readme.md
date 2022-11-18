@@ -17,7 +17,9 @@ Let us see each of these steps in detail.
 # 0. The operator types
 
 Running the jar requires normally requires a properties file to be supplied as command line argument. The properties file specifies the type of operator to be run like this - 
-> `type = StringOperator`
+```
+type = StringOperator
+```
 
 StringOperator is just one of the total 6 operator types. The other five are - IntOperator, ByteOperator, Interproc, Flexible, and Custom.
 
@@ -188,7 +190,9 @@ Values can be fetched from properties file using the operatorProperties as shown
 
 # 2. Compiling the code
 You code for plugins refer to classes already within MASC's source code. Hence it won't compile without reference to those classes. This can be easily solved by adding the MASC.jar to classpath as such. Open a command prompt in folder where your code is, and run this command: 
-> ` javac -cp directory/MASC.jar *.java   `
+``` 
+javac -cp directory/MASC.jar *.java   
+```
 
 # 3. Placing the class file in /plugins/ folder
 Place the  `.class` files in /plugins/ folder. Alternatively, you can place your .java files here and compile them here so that the class files are generated here. MASC will ignore all files with extension other than `.class`. 
@@ -198,7 +202,9 @@ You can place as many plugins of different types in /plugins/. But only the plug
 
 # 4. Running the jar
 To run the jar, execute the command: 
-> `java -jar MASC.jar propertiesFileName.properties`
+```
+java -jar MASC.jar propertiesFileName.properties
+```
 
 # 5. The output
 Generated mutated apps will be produces in `app/output/`
