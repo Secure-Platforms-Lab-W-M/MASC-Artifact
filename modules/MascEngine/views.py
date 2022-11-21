@@ -12,6 +12,7 @@ from datetime import datetime
 import asyncio
 from shutil import make_archive
 from wsgiref.util import FileWrapper
+from django.conf import settings
 import time
 
 # Create your views here.
@@ -28,10 +29,13 @@ class thread(threading.Thread):
 
     def run(self):
         print(str(self.app_name) + " " + str(self.build_properties_path))
+        jar_path = settings.CORE_DIR + '/modules/static/properties/app-all.jar'
         p, status_code = asyncio.run(
-            run('java -jar D:/8th/spl/masc-web-client-django/MascWebCore/modules/static/properties/app-all.jar ' + self.build_properties_path))
+            run('java -jar '+jar_path+' ' + self.build_properties_path))
         record =ProcessLog.objects.get(id=self.log_id)
         print('Hello =>'+record.status)
+        print(settings.BASE_DIR)
+        print(settings.CORE_DIR)
         if status_code == 0:
             record.status = 'completed'
         else:
@@ -77,7 +81,7 @@ def handle_uploaded_file(f, app_name):
             destination.write(chunk)
     with ZipFile('./modules/static/sourcecodes/' + f.name, 'r') as zipObj:
         zipObj.extractall('./modules/static/unzippedCodes/' + app_name)
-    inputPath = 'D:/8th/spl/masc-web-client-django/MascWebCore/modules/static/unzippedCodes/' + app_name
+    inputPath = './modules/static/unzippedCodes/' + app_name
     data = SourceCode(zip_file_name=f.name, zip_file_directory='./modules/static/sourcecodes/' + f.name,
                       input_path=inputPath, output_path='', appName=app_name);
     data.save()
@@ -89,8 +93,7 @@ async def build_properties(app_name, scope, input_path, contents):
     contents = initial + contents
     with open('./modules/static/properties/' + app_name + '.properties', 'w') as destination:
         destination.write(contents)
-    print(contents)
-    return 'D:/8th/spl/masc-web-client-django/MascWebCore/modules/static/properties/' + app_name + '.properties'
+    return './modules/static/properties/' + app_name + '.properties'
 
 
 def run_sub_process_masc_engine(build_properties_path, source_code_id, scope):
