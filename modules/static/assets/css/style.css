@@ -13,7 +13,7 @@ body {
     margin-left: 2%;
 }
 .align-cls{
-    display: flex; 
+    display: flex;
     justify-content: flex-end;
     margin-right: 4%;
 }
@@ -96,4 +96,7 @@ body {
 }
 .custom-canvas{
     max-width: 150px;
+}
+.bg-warning{
+    color: black;
 }
