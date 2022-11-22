@@ -4,7 +4,7 @@
 <div class="container pb-2 pt-4">
     <div class="row">
         <div class="col-xl-9 col-lg-9">
-            <h2 class="title">Properties File Manager</h2>
+            <h2 class="title">🧰 Configurations Manager</h2>
             <div>
             <span>
                 Dot propeties file currently available to your system
@@ -13,7 +13,7 @@
         </div>
         <div class="col-xl-3 col-lg-3 pt-4">
             <div class="d-flex justify-content-end align-items-end">
-                <a href="/properties/upload" class="btn btn-primary">Upload New Propeties File</a>
+                <a href="/properties/upload" class="btn btn-primary">Upload</a>
             </div>
         </div>
     </div>
@@ -58,7 +58,7 @@
                                     </td>
                                 {% endif %}
                                 <td>
-                                    <a class="btn btn-primary" href="{% url 'editProperties' id=file.id %}">Edit</a>
+                                    <a class="btn btn-primary" href="{% url 'editProperties' id=file.id %}">&nbsp; &nbsp;Edit&nbsp;</a>
                                     <a class="btn btn-danger" href="{% url 'deleteProperties' id=file.id %}">Delete</a>
                                 </td>
                             </tr>

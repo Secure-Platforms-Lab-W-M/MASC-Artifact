@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>
-    MASC -  Mutation Analysis for evaluating Static Crypto-API misuse detectors 
-  </title>
-   
-  {% load static %}
-  <link id="pagestyle" href="{% static 'assets/css/style.css' %}" type="text/css" rel="stylesheet" />
-
-  {% load static %}
-  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">  
-  <script src="{% static 'js/bootstrap.min.js' %}"></script>
-  <link rel="stylesheet" href="{% static 'bootstrap_icons/css/bootstrap_icons.css' %}">
+    <title>
+      MASC - Mutation Analysis for evaluating Static Crypto-API misuse detectors
+    </title>
 
 
-  <!-- Specific CSS goes HERE -->
-  <!-- {% block stylesheets %}{% endblock stylesheets %} -->
+    {% load static %}
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'bootstrap_icons/css/bootstrap_icons.css' %}">
 
-</head>
-<body class="ok">
+    {% load static %}
+    <link id="pagestyle" href="{% static 'assets/css/style.css' %}" type="text/css" rel="stylesheet" />
 
-  {% include 'components/header.html' %}
+    <!-- Specific CSS goes HERE -->
+    <!-- {% block stylesheets %}{% endblock stylesheets %} -->
 
-  {% block content %}{% endblock content %}
+  </head>
 
-  {% include 'components/footer.html' %}
-</body>
+  <body class="ok">
+
+    {% include 'components/header.html' %}
+
+    {% block content %}{% endblock content %}
+
+    {% include 'components/footer.html' %}
+  </body>
+
 </html>
