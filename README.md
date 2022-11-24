@@ -4,6 +4,13 @@ Welcome to the artifact of the paper _Why Crypto-detectors Fail_: A Systematic E
 
 ![](masc-framework.jpg)
 
+## Branches
+
+- [masc-web-django](https://github.com/Secure-Platforms-Lab-W-M/MASC-Artifact/tree/masc-web-django) branch contains the django based front-end of MASC, which in the backend uses the binary generated from the icse-demo branch.
+- [icse-demo](https://github.com/Secure-Platforms-Lab-W-M/MASC-Artifact/tree/icse-demo) branch contains the latest changes related to customization, and integration of scopes within MASC. 
+- [Oakland](https://github.com/Secure-Platforms-Lab-W-M/MASC-Artifact/tree/oakland22) Branch is the Oakland Snapshot of MASC.
+
+
 ## Note
 
 The source code of MASC is currently under active maintenance. We are streamlining the code to further automate it, which will be open-sourced soon! 
