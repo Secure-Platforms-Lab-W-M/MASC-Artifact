@@ -12,11 +12,6 @@ We are actively enhancing MASC after our oakland paper to make it better in term
 - [icse-demo](https://github.com/Secure-Platforms-Lab-W-M/MASC-Artifact/tree/icse-demo) contains the latest changes related to customization, and integration of scopes within MASC. 
 - [oakland22](https://github.com/Secure-Platforms-Lab-W-M/MASC-Artifact/tree/oakland22) is the IEEE S&P'22 Snapshot of MASC.
 
-
-## Note
-
-The source code of MASC is currently under active maintenance. We are streamlining the code to further automate it, which will be open-sourced soon! 
-
 ## Pre-print of the paper
 
 https://arxiv.org/pdf/2107.07065.pdf
@@ -30,7 +25,7 @@ Additional details of our paper can be found in the [Online Appendix](Online_app
 ```tex
 @inproceedings{ami-masc-oakland22,
   author = {Ami, {Amit Seal} and Cooper, Nathan and Kafle, Kaushal and Moran, Kevin and Poshyvanyk, Denys and Nadkarni, Adwait},
-  booktitle = {2022 IEEE Symposium on Security and Privacy (S&P)},
+  booktitle = {2022 IEEE Symposium on Security and Privacy (S\&P)},
   title = {{Why Crypto-detectors Fail: A Systematic Evaluation of Cryptographic Misuse Detection Techniques}},
   year = {2022},
   address = {San Francisco, CA, USA},
